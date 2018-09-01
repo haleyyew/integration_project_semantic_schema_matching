@@ -1,6 +1,9 @@
 const program = require('commander');
 const rp = require('request-promise');
 var fs = require('fs');
+var http = require('http');
+var mkdirp = require('mkdirp');
+var getDirName = require('path').dirname;
 
 const checkResourceFormat = (format) => {
 	//console.log(format.toLowerCase());
@@ -156,18 +159,92 @@ const surreyGetData = function() {
 	});
 }
 
+const downloadResource = function(filepath, url) {
+
+	mkdirp(getDirName(filepath), function (err) {
+		if (err) throw err;
+
+		var file = fs.createWriteStream(filepath);
+		console.log(filepath + " " + url);
+
+		var request = http.get(url, function(response) {
+			// if (request.statusCode != 200) {
+			// 	console.log("error " + url);
+			// }
+		  	response.pipe(file);
+		  	//console.log("success " + url + " " + filepath);
+		})
+		.on("error", function (){console.log("error " + url)}); 					
+	});		
+}
+
 program
-  .version('1');
+  .version('1')
+  .description('Project: Schema Integration for Heterogenous Data Sources');
 
 // node index.js downloadCatalogue
 program
   .command('downloadCatalogue')
-  .description('Project: Schema Integration for Heterogenous Data Sources')
+  .description('download the URLs of the datasets')
   .action(function(){
     //console.log('calling surreyGetData()');
 
     surreyGetData()
     
+  })
+
+// node index.js downloadDatasets
+program
+  .command('downloadDatasets')
+  .description('download the datasets using URL')
+  .action(function(){
+
+	fs.readFile('./downloadResourceURL.json', 'utf8', function(err, data) {  
+	    if (err) throw err;
+	    var catalogue = JSON.parse(data);
+
+		var catalogueKeys = [];
+		for(var k in catalogue) catalogueKeys.push(k);
+		//console.log(catalogueKeys.length + catalogueKeys)
+
+	    for (var i = 0; i < catalogueKeys.length; i++) {
+	    	var dataset = catalogue[catalogueKeys[i]];
+	    	//console.log(dataset.title);
+
+
+
+
+
+	    	for (var j = 0; j < dataset.resources.length; j++) {
+	    		var resource = dataset.resources[j];
+
+	    		//console.log(resource.url);
+	    		var n = resource.url.lastIndexOf('/');
+				var filename = resource.url.substring(n + 1);
+
+				var filepath = "./" + catalogueKeys[i] + "/" + filename
+				downloadResource(filepath, resource.url)
+
+	    		if (resource.format === "json") {
+
+	    		}
+	    		if (resource.format === "csv") {
+
+	    		}
+	    	}
+
+
+
+
+
+
+	    	
+	    }
+  
+	});
+
+
+
   })
 
 program.parse(process.argv);
