@@ -211,10 +211,6 @@ program
 	    	var dataset = catalogue[catalogueKeys[i]];
 	    	//console.log(dataset.title);
 
-
-
-
-
 	    	for (var j = 0; j < dataset.resources.length; j++) {
 	    		var resource = dataset.resources[j];
 
@@ -223,6 +219,19 @@ program
 				var filename = resource.url.substring(n + 1);
 
 				var filepath = "./" + catalogueKeys[i] + "/" + filename
+
+				// var missingResources = ["http://cosmos.surrey.ca/geo_ref/Images/OpenDataArchives/morgan_heights_neighbourhood_concept_plan_json.zip",
+				// "http://cosmos.surrey.ca/geo_ref/Images/OpenDataArchives/park_lights_JSON.zip",
+				// "http://data.surrey.ca/dataset/229124d3-982c-4e81-919f-d0bfb9eb28a9/resource/739c894b-bf00-45d3-9501-5123a0d15933/download/qsustainabilitycharter-implementationdashboarddata-sheets--open-datacsv-files-consolidated-for-ckanp",
+				// "http://cosmos.surrey.ca/geo_ref/Images/OpenDataArchives/town_centre_densities_JSON.zip",
+				// "http://cosmos.surrey.ca/geo_ref/Images/OpenDataArchives/traffic_calming_JSON.zip",
+				// "http://cosmos.surrey.ca/geo_ref/Images/OpenDataArchives/town_centre_land_use_plans_JSON.zip"];
+				// if (missingResources.indexOf(resource.url) >= 0) {
+				//     console.log("download resource " + resource.url);
+				// } else {
+				// 	continue;
+				// }
+
 				downloadResource(filepath, resource.url)
 
 	    		if (resource.format === "json") {
@@ -232,17 +241,10 @@ program
 
 	    		}
 	    	}
-
-
-
-
-
-
 	    	
 	    }
   
 	});
-
 
 
   })
