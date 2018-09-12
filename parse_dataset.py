@@ -231,7 +231,9 @@ def parse_models():
         else:
             continue
 
-    data_model.print_data_model()
+    # data_model.print_data_model()
+
+    return data_model
 
 
 if __name__ == "__main__":
