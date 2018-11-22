@@ -249,5 +249,48 @@ program
 
   })
 
+const requestMetadata = function() {
+
+    for (i = 0; i < 250; i++) {
+
+		var requestLink = 'http://cosmos.surrey.ca/cosrest/rest/services/OpenData/MapServer/_?f=json';
+        requestLink = requestLink.replace(/_/i, i.toString());
+        console.log("requestLink: " + requestLink);
+
+		requestPromise(requestLink)
+			.then( (response) => {
+				var responseStr = JSON.stringify(response);
+
+                var filename = "./metadata/_.json";
+                filename = filename.replace(/_/i, response.body.id + ' ' + response.body.name);
+                console.log("response: " + response.body.name);
+				fs.writeFile(filename, responseStr, function(err) {
+					if(err) {
+						return console.log(err);
+					}
+				});
+				return responseStr;
+			}).catch(function(err){
+			console.log("error " + err);
+
+			});
+    }
+}
+
+// node index.js downloadMetadata
+program
+    .command('downloadMetadata')
+    .description('download the metadata for the datasets using URL')
+    .action(function(){
+        return new Promise((resolve, reject) => {
+            requestMetadata((err, result) => {
+                if (err) {
+                    return reject(err)
+                }
+                return resolve(result)
+            });
+        });
+    })
+
 program.parse(process.argv);
 

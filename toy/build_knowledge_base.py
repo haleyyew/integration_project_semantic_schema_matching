@@ -349,10 +349,6 @@ def metadata_enhancer(datasources, knowledge_base, coverage_threshold, covered_b
         cluster_concepts_in_knowledge_base(knowledge_base)
         # if all covered_by_concepts True for all datasources, then break
 
-        # ----- for testing purposes -----
-        break
-        # --------------------------------
-
     # delete unused concepts in knowledge base
     return
 
