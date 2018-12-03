@@ -150,21 +150,20 @@ class AttributeEdge(object):
         self.node1 = -1
         self.similarity = 0
 
-class SimilarityMatrix:
-    def __init__(self, source_name, source_attributes, source_values, target_name, target_attributes, target_values):
-        self.source_datasource = pd.DataFrame(columns=source_attributes, data=source_values)
-        self.source_name = source_name
-        self.target_datasource = pd.DataFrame(columns=target_attributes, data=target_values)
-        self.target_name = target_name
+# class DataMatrix:
+#     def __init__(self, source_name, source_attributes, source_values):
+#         self.source_datasource = pd.DataFrame(columns=source_attributes, data=source_values)
+#         self.source_name = source_name
 
 
 
-def build_similarity_matrices(data_model, kb_concepts):
-    L = []
-    for key in data_model.datasets:
-        data_instance = data_model.datasets[key]
-        L.append(key)
-        similarity_matrix = (kb_concepts, key)
+
+# def build_similarity_matrices(data_model, kb_concepts):
+#     L = []
+#     for key in data_model.datasets:
+#         data_instance = data_model.datasets[key]
+#         L.append(key)
+#         similarity_matrix = (kb_concepts, key)
 
     # datasource_pairs = itertools.combinations(L, 2)
     # for pair in datasource_pairs:
@@ -320,6 +319,8 @@ def find_synonyms_antonyms(word):
                 for ant in l.antonyms():
                     antonyms.append(ant.name())
     return (synonyms, antonyms)
+
+
 
 if __name__ == "__main__":
     # data_model = parse_dataset.parse_models()
@@ -491,3 +492,4 @@ if __name__ == "__main__":
 
     # measuring precision and recall, need to know real concepts and mappings
         # need to find differences in terms of number of concepts and number of wrong mappings
+
