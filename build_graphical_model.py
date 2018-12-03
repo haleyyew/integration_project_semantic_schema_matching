@@ -16,6 +16,9 @@ import sklearn.cluster as cluster
 import numpy as np
 import matplotlib.pyplot
 
+import pprint
+pp = pprint.PrettyPrinter(indent=2)
+
 
 class GraphicalModel(object):
     def __init__(self):
@@ -154,6 +157,8 @@ class SimilarityMatrix:
         self.target_datasource = pd.DataFrame(columns=target_attributes, data=target_values)
         self.target_name = target_name
 
+
+
 def build_similarity_matrices(data_model, kb_concepts):
     L = []
     for key in data_model.datasets:
@@ -178,12 +183,24 @@ def build_similarity_matrices(data_model, kb_concepts):
     #         first_row = data[0]
 
 from difflib import SequenceMatcher
+from similarity.ngram import NGram
+twogram = NGram(2)
+fourgram = NGram(4)
+
+from similarity.metric_lcs import MetricLCS
+metric_lcs = MetricLCS()
 def build_local_similarity_matrix(source_schema, target_schema):
     matrix= np.zeros((len(source_schema), len(target_schema)))
 
     for i in range(len(source_schema)):
             for j in range(len(target_schema)):
-                matrix[i,j] = np.int(100*SequenceMatcher(None,source_schema[i],target_schema[j]).ratio())
+                sim_score = 1 - twogram.distance(source_schema[i],target_schema[j])
+                # matrix[i,j] = np.int(100*SequenceMatcher(None,source_schema[i],target_schema[j]).ratio())
+                matrix[i, j] = sim_score
+
+                if matrix[i, j] >= 0.5:
+                    print('matrix[i, j]', source_schema[i], target_schema[j], matrix[i, j])
+
                 # if target_schema[j] == 'tree_species':
                 #     print(source_schema[i], target_schema[j], matrix[i, j])
 
@@ -232,14 +249,15 @@ def match_table_by_values_beta(source_instance, target_instance, source_schema, 
             tar_value = tar_values[j]
             tar_ind = j // tar_val_len
             tar_attr = target_keys[tar_ind]
-            sim_score = np.int( SequenceMatcher(None, str(src_value), str(tar_value)).ratio())
+            # sim_score = np.int( SequenceMatcher(None, str(src_value), str(tar_value)).ratio())
+            sim_score = 1 - twogram.distance(str(src_value), str(tar_value))
 
             if str(src_value) == 'None' or str(tar_value) == 'None':
                 sim_score = 0
             sim_matrix[src_ind, tar_ind] += sim_score
 
             if sim_score >= 0.5:
-                print(src_attr, tar_attr, src_value, tar_value, sim_score)
+                print('sim_score >= 0.5', src_attr, tar_attr, src_value, tar_value, sim_score)
 
     return sim_matrix
 
@@ -252,7 +270,7 @@ def find_potential_matches(sim_matrix, threshold, src_attrs, tar_attrs, src_name
         max_indices = [ind for ind, val in enumerate(row) if val == max_score]
         max_rm = [val for ind, val in enumerate(row) if ind not in max_indices]
         matched = all(val < max_score/threshold for val in max_rm)
-        matched = matched or max_score >= 0.5
+        matched = matched or max_score >= 0.5 and not (max_score == 0)
         if matched:
             for ind in max_indices:
                 matches.append({'i': i, 'j': ind, 'val[i]': src_attrs[i], 'val[j]': tar_attrs[ind], 'src_name': src_name, 'tar_name': tar_name, 'sim_score': sim_matrix[i][ind]})
@@ -284,8 +302,24 @@ def populate_concept_with_samples(matches_list, dataset, kb_concepts):
 
             # use summarization and sampling
             if coded_values == False:
-                concept_source['coded_values'] = values[attr_name]
+                # DO NOT DO THIS, if no coded values, then do not populate
+                # concept_source['coded_values'] = values[attr_name]
+                concept_source['coded_values'] = []
             concept_source['sim_score'] = match['sim_score']
+
+import nltk
+nltk.data.path.append('/Users/haoran/Documents/nltk_data/')
+from nltk.corpus import wordnet
+def find_synonyms_antonyms(word):
+    synonyms = []
+    antonyms = []
+    for syn in wordnet.synsets(word):
+        for l in syn.lemmas():
+            synonyms.append(l.name())
+            if l.antonyms():
+                for ant in l.antonyms():
+                    antonyms.append(ant.name())
+    return (synonyms, antonyms)
 
 if __name__ == "__main__":
     # data_model = parse_dataset.parse_models()
@@ -349,7 +383,9 @@ if __name__ == "__main__":
         matches = find_potential_matches(matrix[0], 3, matrix[1], matrix[2], matrix[3], matrix[4])
         matches_list.append(matches)
 
-    print(matches_list)
+    print('---matches_list---')
+    pp.pprint(matches_list)
+    # TODO get all matches, include probabilities
 
     metadata_files = ['211 Important Trees.json', '239 Park Specimen Trees.json', '244 Parks.json']
     metadata_files = ['./metadata/'+file for file in metadata_files]
@@ -367,7 +403,10 @@ if __name__ == "__main__":
 
     populate_concept_with_samples(matches_list, dataset, kb_concepts)
 
-    # print(kb_concepts)
+    # print('[kb_concepts]')
+    # pp.pprint(kb_concepts)
+    # exit(0)
+
     # print(similarity_matrices[0])
     # print(metadata_parks)
     # # print(schema_sources_clean[0])
@@ -392,7 +431,19 @@ if __name__ == "__main__":
             if 'coded_values' in source:
                 kb_concept_values[(concept, source['source_name'])] = source['coded_values']
 
-    print('kb_concept_values', kb_concept_values)
+    print('---kb_concept_values---')
+    pp.pprint(kb_concept_values)
+
+    # find synonyms for concept
+    synonyms_antonyms = {}
+    for concept in kb_concept_values.keys():
+        if len(kb_concept_values[concept]) < 1:
+            continue
+        synonyms_antonyms[concept] = find_synonyms_antonyms(concept[0])
+        # print('synonyms', concept, ': ', synonyms_antonyms[concept])
+
+
+    print('---match_table_by_values_beta---')
     for data_source_name in dataset:
         data_source = dataset[data_source_name]
         src = kb_concept_values
@@ -401,8 +452,42 @@ if __name__ == "__main__":
         src_schema = [key for key in src.keys()]
         tar_schema = [key for key in tar.keys()]
         matrix = match_table_by_values_beta(src, tar, src_schema, tar_schema)
-        print(data_source_name, matrix)
+        pp.pprint({'name':data_source_name, 'src':src_schema, 'tar':tar_schema, 'matrix':matrix})
 
     # summarization:
     # 1) get unique values for an attribute column
     # 2) rank the attribute names by num of non-null values in column
+
+    # training with imperfect labels
+    # kb values for concept - probabilities generation and propagation
+    # use thesaurus wordnet to find related concepts names, cluster
+    # correct knowledge base errors by imperfect training
+    # get new concepts from summarization
+
+    # train classifier
+    # better distance functions
+
+    # use actual complete datasource values
+    # fix potential matrix bug
+
+    # use numpy and pandas
+
+    # create mappings as training data
+
+    # ignore the many-to-one mapping constraint when mapping
+
+    # improve schema matching
+
+    # overcome np-completeness
+    # use iterative algorithm
+    # use greedy algorithms
+    # run in small batches
+
+    # dataset: flat csv or json
+    # metadata concepts
+    # schema has sample values
+    # need some training data!
+    # need run on server!
+
+    # measuring precision and recall, need to know real concepts and mappings
+        # need to find differences in terms of number of concepts and number of wrong mappings
