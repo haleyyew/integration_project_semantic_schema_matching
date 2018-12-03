@@ -378,6 +378,6 @@ def parse_metadata(file):
 
 if __name__ == "__main__":
     # unzip_and_rename()
-    data_model = parse_models()
+    data_models = parse_models()
 
     pass
