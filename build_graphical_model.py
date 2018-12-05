@@ -464,39 +464,39 @@ if __name__ == "__main__":
     # summarization:
     # 1) get unique values for an attribute column
     # 2) rank the attribute names by num of non-null values in column
-
+    #
     # training with imperfect labels
     # kb values for concept - probabilities generation and propagation
     # use thesaurus wordnet to find related concepts names, cluster
     # correct knowledge base errors by imperfect training
     # get new concepts from summarization
-
+    #
     # train classifier
     # better distance functions
-
+    #
     # use actual complete datasource values
     # fix potential matrix bug
-
+    #
     # use numpy and pandas
-
+    #
     # create mappings as training data
-
+    #
     # ignore the many-to-one mapping constraint when mapping
-
+    #
     # improve schema matching
-
+    #
     # overcome np-completeness
     # use iterative algorithm
     # use greedy algorithms
     # run in small batches
-
+    #
     # dataset: flat csv or json
     # metadata concepts
     # schema has sample values
     # need some training data!
     # need run on server!
-
+    #
     # measuring precision and recall, need to know real concepts and mappings
-        # need to find differences in terms of number of concepts and number of wrong mappings
+    #     need to find differences in terms of number of concepts and number of wrong mappings
 
 
