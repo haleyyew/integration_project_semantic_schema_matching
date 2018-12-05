@@ -14,7 +14,8 @@ import collections
 
 import sklearn.cluster as cluster
 import numpy as np
-import matplotlib.pyplot
+# import tkinter
+# import matplotlib.pyplot
 
 import pprint
 pp = pprint.PrettyPrinter(indent=2)
@@ -307,7 +308,12 @@ def populate_concept_with_samples(matches_list, dataset, kb_concepts):
             concept_source['sim_score'] = match['sim_score']
 
 import nltk
-nltk.data.path.append('/Users/haoran/Documents/nltk_data/')
+import platform
+pltfm = platform.system()
+if pltfm == 'Linux':
+    nltk.data.path.append('/home/haoran/Documents/venv/nltk_data/')
+else:
+    nltk.data.path.append('/Users/haoran/Documents/nltk_data/')
 from nltk.corpus import wordnet
 def find_synonyms_antonyms(word):
     synonyms = []
