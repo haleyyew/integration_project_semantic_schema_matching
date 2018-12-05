@@ -32,8 +32,10 @@ class DataInstance(object):
         self.notes = ''
         self.tags = []
         self.groups = []
-        self.group_descriptions = []
-        self.resources = []
+        # self.group_descriptions = []
+        # self.resources = []
+        self.source_filename = []
+
 
     def set_name(self, name):
         self.name = name
@@ -46,6 +48,23 @@ class DataInstance(object):
         self.tags = tags
         self.groups = groups
         self.group_descriptions = group_descriptions
+
+    def set_tags(self, notes, tags, groups):
+        self.notes = notes
+        self.tags = tags
+        self.groups = groups
+
+    def set_source_filename(self, name):
+        self.source_filename.append(name)
+
+    def to_json(self):
+        return {'name':self.name,
+                'notes':self.notes,
+                'tags':self.tags,
+                'groups':self.groups,
+                # 'group_descriptions':self.group_descriptions,
+                'source_filename':self.source_filename
+                }
 
 def print_data_instance(data_instance):
     print('Data Instance:')
@@ -170,91 +189,246 @@ def unzip_and_rename():
                 print('error: unzip_and_rename ' + str(e))
 
 
+def select_datasources():
+    import os
+    ls = os.listdir('./metadata')
+    ls_dict = {}
+    for st in ls:
+        st = st.replace('-', ' ')
+        st = st.replace('.', ' ')
+        st = st.split(' ')
+        st = st[1:-1]
+        st = ' '.join(st)
+        st = st.lower()
+        ls_dict[st] = {'csv':[], 'json':[]}
+
+    from similarity.ngram import NGram
+    twogram = NGram(2)
+    metadata_sources = ls_dict.keys()
+
+    for root, dirs, files in os.walk("../thesis_project_dataset"):
+        curr_dir_path = root.split("/")
+        curr_dir_name = curr_dir_path[-1]
+        for file in files:
+            filename, file_extension = os.path.splitext(file)
+            dataset = root.split('/')
+            dataset = dataset[2:3]
+            if len(dataset) != 0 and dataset[0] != '.git':
+                dataset = dataset[0]
+                dataset = dataset.replace('-', ' ')
+
+                found = False
+                found_val = None
+                curr_score = 0
+                found_datasource = None
+
+                if dataset in ls_dict:
+                    found = True
+
+                if found:
+                    dataset_collection = ls_dict[dataset]
+                    found = True
+                    found_val = dataset_collection
+                    found_datasource = dataset
+                    curr_score = 1
+
+                if not found:
+                    curr_score = 0
+                    for metadata_source in metadata_sources:
+                        dist = 1 - twogram.distance(dataset, metadata_source)
+                        if dist < 0.85:
+                            print('skip', root + '/' + file)
+                            continue
+                        if dist > curr_score:
+                            found = True
+                            found_val = ls_dict[metadata_source]
+                            curr_score = dist
+                            found_datasource = metadata_source
+
+                            print('found', found, found_datasource, curr_score, file_extension, root + '/' + file)
+
+                if not found:
+                    continue
+
+                if file_extension == '.json':
+                    found_val['json'].append((root + '/' + file, curr_score))
+
+                if file_extension == '.csv':
+                    found_val['csv'].append((root + '/' + file, curr_score))
+
+
+
+    print(ls_dict)
+    for key in ls_dict:
+        val = ls_dict[key]
+        val['csv'] = sorted(val['csv'], key=lambda x: x[1])
+        val['json'] = sorted(val['json'], key=lambda x: x[1])
+
+    import json
+    with open('datasource_and_metadata.json', 'w') as fp:
+        json.dump(ls_dict, fp, sort_keys=True, indent=2)
 
 
 def parse_models():
-
-    data_to_parse = ['important-trees', 'parks', 'park-specimen-trees']
+    import json
+    # data_to_parse = ['important-trees', 'parks', 'park-specimen-trees']
     data_model = DataModel()
 
     with open('./downloadResourceURL.json', 'r') as f:
 
         data = json.load(f)
         for key in data:
-            if key in data_to_parse:
-                data_instance = DataInstance()
+            # if key not in data_to_parse:
+            #     continue
 
-                # print(key)
-                value = data[key]
-                data_instance.set_name(key)
-                tags = create_tags(value['tags'], data_model.tags)
-                groups, group_descriptions = create_groups(value['groups'], data_model.groups)
-                data_instance.set_metadata(value['notes'], tags, groups, group_descriptions)
+            data_instance = DataInstance()
+            value = data[key]
 
-                data_model.add_dataset(key, data_instance)
+            # print(key)
+            key = key.replace('-', ' ')
+            key = key.lower()
 
 
-    added_datasource = {}
+            data_instance.set_name(key)
+            # tags = create_tags(value['tags'], data_model.tags)
+            # groups, group_descriptions = create_groups(value['groups'], data_model.groups)
+            # data_instance.set_metadata(value['notes'], tags, groups, group_descriptions)
+
+            data_instance.set_tags(value['notes'], value['tags'], value['groups'])
+
+            data_model.add_dataset(key, data_instance)
+
+
+    # added_datasource = {}
+
+
+    error_list = []
+    file_list = []
 
     for root, dirs, files in os.walk("../thesis_project_dataset"):
         curr_dir_path = root.split("/")
-        curr_dir_name = curr_dir_path[-1]
+        # curr_dir_name = curr_dir_path[-1]
 
-        if curr_dir_name in data_to_parse:
-            for file in files:
-
-                filename, file_extension = os.path.splitext(file)
-
-                if curr_dir_name in added_datasource:
-                    print('break', curr_dir_name)
-                    # print(added_datasource)
-                    break
-                if file_extension == '.json' or file_extension == '.csv':
-                    added_datasource[curr_dir_name] = 1
-                    # print('added', curr_dir_name, 'during', file)
+        dataset = root.split('/')
 
 
 
-
-                try:
-                    if file_extension == '.json':
-                        print(curr_dir_name + '/' + file)
-                        with open(root + '/' + file, mode='r') as json_file:
-                            json_data = json.load(json_file)
-
-
-
-                            dataset_name = curr_dir_name
-                            data_inst = data_model.datasets[dataset_name]
-
-                            resource = create_resource_from_json(json_data, data_inst, data_model)
-                            data_inst.add_resource(resource)
-
-
-
-
-                    elif file_extension == '.csv':
-                        print(curr_dir_name + '/' + file)
-                        csv_data = []
-                        with open(root + '/' + file, mode='r', encoding='unicode_escape') as csv_file:
-                            csv_reader = csv.DictReader(csv_file)
-                            for row in csv_reader:
-                                csv_data.append(row)
-
-                        dataset_name = curr_dir_name
-                        data_inst = data_model.datasets[dataset_name]
-
-                        resource = create_resource_from_csv(csv_data, data_inst, data_model)
-                        data_inst.add_resource(resource)
-
-                    else:
-                        pass
-
-                except Exception as e:
-                    print('error: parse_models ' + str(e))
-
-        else:
+        if len(dataset) < 3:
+            print('  error', dataset)
             continue
+        curr_dir_name = dataset[2:3]
+        dataset_name = curr_dir_name[0]
+        if dataset_name == '.git':
+            continue
+
+
+        # for testing only
+        # if curr_dir_name not in data_to_parse:
+        #     continue
+
+            # from os import listdir
+            # from os.path import isfile, join
+            # onlyfiles = [f for f in listdir(root) if isfile(join(root, f))]
+            # print(onlyfiles)
+            # contains_csv = False
+            # contains_json = False
+            # onlyfiles.sort()
+            # for file_name in onlyfiles:
+            #     name, ext = os.path.splitext(file_name)
+            #     if ext == '.json':
+            #         contains_json = True
+            #     if ext == '.csv':
+            #         contains_csv = True
+
+
+
+
+        for file in files:
+
+            file_list.append(root + '/' + file)
+
+            filename, file_extension = os.path.splitext(file)
+
+            # if curr_dir_name in added_datasource:
+            #     print('break', curr_dir_name)
+            #     # print(added_datasource)
+            #     break
+            # if file_extension == '.json' or file_extension == '.csv':
+            #     added_datasource[curr_dir_name] = 1
+            #     # print('added', curr_dir_name, 'during', file)
+
+            dataset_name = dataset_name.replace('-', ' ')
+            dataset_name = dataset_name.lower()
+
+
+            if dataset_name not in data_model.datasets:
+                # print('error dataset_name', root + '/' + file)
+                error_list.append(root + '/' + file)
+                print('error', dataset_name)
+                continue
+
+            data_inst = data_model.datasets[dataset_name]
+            data_inst.set_source_filename(root + '/' + file)
+            continue
+
+
+            # try:
+            #     if file_extension == '.json':
+            #         print(curr_dir_name + '/' + file)
+            #         with open(root + '/' + file, mode='r') as json_file:
+            #             json_data = json.load(json_file)
+            #
+            #
+            #
+            #             dataset_name = curr_dir_name
+            #             data_inst = data_model.datasets[dataset_name]
+            #
+            #             resource = create_resource_from_json(json_data, data_inst, data_model)
+            #             data_inst.add_resource(resource)
+            #
+            #
+            #
+            #
+            #     elif file_extension == '.csv':
+            #         print(curr_dir_name + '/' + file)
+            #         csv_data = []
+            #         with open(root + '/' + file, mode='r', encoding='unicode_escape') as csv_file:
+            #             csv_reader = csv.DictReader(csv_file)
+            #             for row in csv_reader:
+            #                 csv_data.append(row)
+            #
+            #         dataset_name = curr_dir_name
+            #         data_inst = data_model.datasets[dataset_name]
+            #
+            #         resource = create_resource_from_csv(csv_data, data_inst, data_model)
+            #         data_inst.add_resource(resource)
+            #
+            #     else:
+            #         pass
+            #
+            # except Exception as e:
+            #     print('error: parse_models ' + str(e))
+
+    datasets_json_obj = {}
+    for key in data_model.datasets:
+        dataset = data_model.datasets[key]
+        dataset_json = dataset.to_json()
+        datasets_json_obj[dataset_json['name']] = dataset_json
+
+    print(datasets_json_obj)
+    error_list.sort()
+    print(error_list)
+    print(len(error_list))
+
+    file_list.sort()
+    print(file_list)
+    print(len(file_list))
+
+    with open('datasource_and_tags.json', 'w') as fp:
+        json.dump(datasets_json_obj, fp, sort_keys=True, indent=2)
+
+        # else:
+        #     continue
 
     # data_model.print_data_model()
     # TODO: json doesn't print
@@ -376,8 +550,100 @@ def parse_metadata(file):
 
     return metadata
 
+def parse_metadata_files():
+    return
+
+import numpy
+import pandas as pd
+
+def format_json(json_data):
+    resource_json = []
+    keys = None
+
+    first = json_data[0]
+    keys = list(first['properties'].keys())
+    keys.sort()
+
+    for row in json_data:
+        # row = json_data[element]
+        row_vals = []
+        for key in keys:
+            value = row['properties'][key]
+            if isinstance(value, dict) or type(value)==list:
+                continue
+            row_vals.append(value)
+        resource_json.append(row_vals)
+
+    y = numpy.array([numpy.array(xi) for xi in resource_json])
+
+    print(y[0])
+    print(keys)
+    dataframe = pd.DataFrame(data=y, columns=keys)
+
+    return dataframe
+
+
+def format_csv(csv_data):
+    y = numpy.array([numpy.array(xi) for xi in csv_data])
+    print(y[0, 0:])
+    dataframe = pd.DataFrame(data=y[1:, 0:], columns=y[0, 0:])
+
+    return dataframe
+
+def to_csv_format():
+    with open('./datasource_and_metadata.json', 'r') as f:
+        metadata = json.load(f)
+
+        for source in metadata:
+            num_datasources = 0
+            num_csv = metadata[source]['csv']
+            num_datasources += len(num_csv)
+            num_json = metadata[source]['json']
+            num_datasources += len(num_json)
+
+            datasource = None
+            resource = None
+            type = None
+            if num_datasources == 0:
+                continue
+            if len(num_csv) == 0:
+                # then convert json to csv
+                datasource = num_json[-1]
+                # print(datasource)
+                datasource = ''.join(datasource[0])
+
+                with open(datasource, mode='r') as json_file:
+                    json_data = json.load(json_file)
+                    resource = format_json(json_data['features'])
+                type = 'json'
+
+            elif len(num_csv) > 0:
+                datasource = num_csv[-1]
+                # print(datasource)
+                datasource = ''.join(datasource[0])
+
+                csv_data = []
+                with open(datasource, mode='r', encoding='unicode_escape') as csv_file:
+                    # csv_reader = csv.reader(csv_file)
+                    csv_data = list(list(rec) for rec in csv.reader(csv_file, delimiter=','))
+
+                    # csv_reader = csv.DictReader(csv_file)
+                    # for row in csv_reader:
+                    #     csv_data.append(row)
+
+                print(csv_data[0])
+                resource = format_csv(csv_data)
+                type = 'csv'
+
+            resource.to_csv('../thesis_project_dataset_clean/' + source + '.csv', sep=',', encoding='utf-8')
+            print('write', type, '../thesis_project_dataset_clean/' + source + '.csv')
+
+    return
+
 if __name__ == "__main__":
     # unzip_and_rename()
-    data_models = parse_models()
+    # select_datasources()
+    # parse_models()
+    to_csv_format()
 
     pass
