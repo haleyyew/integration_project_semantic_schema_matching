@@ -2,12 +2,17 @@ pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
 
-pip3 install langdetect googletrans networkx==2.2 numpy scipy matplotlib ipython jupyter pandas sympy nose scikit-learn strsim nltk
+pip3 install langdetect networkx==2.2 numpy scipy matplotlib ipython jupyter pandas sympy nose scikit-learn strsim nltk pyenchant
 sudo apt-get install python3-tk
 
 python3
 import nltk
 nltk.download("wordnet", "/home/haoran/Documents/venv/nltk_data/")
+nltk.download("words", "/home/haoran/Documents/venv/nltk_data/")
 nltk.data.path.append('/home/haoran/Documents/venv/nltk_data/')
+
+//git clone https://github.com/BoseCorp/py-googletrans.git
+//cd ./py-googletrans
+//python setup.py install
 
 deactivate

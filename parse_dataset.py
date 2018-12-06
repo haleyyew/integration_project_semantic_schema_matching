@@ -439,18 +439,50 @@ class KnowledgeBase:
     def __init__(self):
         pass
 
-from langdetect import detect
-from googletrans import Translator
 
+# import enchant
+# d = enchant.Dict("en_US")
+import nltk
+nltk.data.path.append('/home/haoran/Documents/venv/nltk_data/')
+from nltk.corpus import words
 def translate_to_english(str):
-    translator = Translator()
+    str_clean = clean_name(str, False, False)
+    str_clean = str_clean.split(' ')
+    str_clean_len = len(str_clean)
+    english_words = []
+    for el in str_clean:
+        if el in words.words():
+            english_words.append(el)
+    english_words_len = len(english_words)
+    english_words = ' '.join(english_words)
+
+    is_num = False
     try:
-        translated = translator.translate(str, dest='en')
-    except Exception:
-        return {'2.origin': str}
+        str_strip = str.strip()
+        int(str_strip)
+        is_num = True
+    except ValueError:
+        is_num = False
 
-    return {'1.src': translated.src, '2.origin': translated.origin, '3.dest': translated.dest, '4.text': translated.text}
+    print('done', str, english_words_len/str_clean_len, is_num)
+    return {'english': english_words, 'percent': english_words_len/str_clean_len, 'is_num': is_num}
 
+    # if d.check(str):
+    #     return str
+    # else:
+    #     return None
+    # from googletrans import Translator
+    # translator = Translator()
+    # try:
+    #     translated = translator.translate(str, dest='en')
+    # except Exception as e:
+    #     print('error googletrans', str, e)
+    #     return {'2.origin': str}
+    #
+    # print('googletrans done', str)
+    # return {'1.src': translated.src, '2.origin': translated.origin, '3.dest': translated.dest, '4.text': translated.text}
+
+    # from langdetect import detect
     # print(str)
     #
     # try:
@@ -474,7 +506,8 @@ def collect_concepts():
     list_of_groups = []
     with open('./metadata/tag_list.json', 'r') as f:
         data = json.load(f)
-        list_of_tags = [translate_to_english(key) for key in data['result']]
+        # list_of_tags = [translate_to_english(key) for key in data['result']]
+        list_of_tags = dict((el, translate_to_english(el)) for el in data['result'])
 
         # cnt = 0
         # for key in data['result']:
@@ -487,7 +520,8 @@ def collect_concepts():
 
     with open('./metadata/group_list.json', 'r') as f:
         data = json.load(f)
-        list_of_groups = [translate_to_english(key) for key in data['result']]
+        # list_of_groups = [translate_to_english(key) for key in data['result']]
+        list_of_groups = dict((el, translate_to_english(el)) for el in data['result'])
 
         # cnt = 0
         # for key in data['result']:
@@ -526,15 +560,19 @@ def parse_metadata(file):
     metadata = []
 
     with open(file, 'r') as f:
-        data = json.load(f)
+        # print(file)
+        data = json.load(f, strict=False)
 
+        if data['body']['fields'] == None:
+            return []
 
         for item in data['body']['fields']:
             attr = {}
-            attr['name'] = item['name'].lower()
-            if item['alias'] == item['name']:
+            if item['name'] != None:
+                attr['name'] = item['name'].lower()
+            if item['alias'] != None and item['alias'] == item['name']:
                 attr['alias'] = None
-            else:
+            elif item['alias'] != None:
                 attr['alias'] = item['alias'].lower()
             try:
                 if item['domain'] == None:
@@ -543,12 +581,14 @@ def parse_metadata(file):
                     attr['domain'] = 'coded_values'
                     attr['coded_values'] = [value['name'] for value in item['domain']['codedValues']]
             except Exception as e:
-                print('error', 'parse_metadata domain', file, e)
+                print('error', 'parse_metadata domain None', file, e)
 
             try:
                 attr['data_type'] = item['type']
             except Exception as e:
-                print('error', 'parse_metadata type', file, e)
+                print('error', 'parse_metadata type None', file, e)
+
+            attr['datasource'] = file
 
             metadata.append(attr)
 
@@ -570,12 +610,16 @@ def parse_metadata_files():
     all_metadata = {}
     for root, dirs, files in os.walk("./metadata"):
         for file in files:
+            if file == '.DS_Store':
+                continue
+
             st, file_extension = os.path.splitext(file)
             if st == 'group_list' or st == 'tag_list':
                 continue
             metadata = parse_metadata(root + '/' + file)
             key = clean_name(st, True, False)
             all_metadata[key] = metadata
+            print('done metadata', root + '/' + file)
 
     with open('./metadata_complete_list.json', 'w') as fp:
         json.dump(all_metadata, fp, sort_keys=True, indent=2)
@@ -711,7 +755,8 @@ if __name__ == "__main__":
     # select_datasources()
     # parse_models()
     # to_csv_format()
+    # parse_metadata_files()
     collect_concepts()
-    parse_metadata_files()
+
 
     pass
