@@ -1,0 +1,481 @@
+,AMENDMENT_DATE,AMENDMENT_DESCRIPTION,AMENDMENT_RESOLUTION,CRE_DATE,DENSITY_HIGH,DENSITY_LOW,DENSITY_UNITS,FOLDER,LAND_USE,MOD_DATE,PLAN_AREA,PLAN_STATUS,PLAN_TYPE,PLAN_YEAR
+0,, , ,,,,, ,Buffers,20160803,South Newton,Approved,Neighbourhood Concept Plan,1999
+1,, , ,20120112,,,, ,Buffers,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+2,,, ,20150122,,,,,Buffers,20150122,South Newton,Approved,Neighbourhood Concept Plan,1999
+3,20130729,Amend fromTownhouses (15 u.p.a. max) to Single Family Small Lots,RES.R13-1706,20130730,,,,7912-0037-00,Single Family Small Lots,20150326,South Newton,Approved,Neighbourhood Concept Plan,1999
+4,20130807, Amendment fromTownhouses (15 u.p.a. max) to Townhouses (25 u.p.a. max),RES.R13-1251,20130729,25,,UPA,7910-0100-00,Townhouses (25 u.p.a. max),20130729,South Newton,Approved,Neighbourhood Concept Plan,1999
+5,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+6,, , ,,,,, ,Creeks & Riparian Set Backs,20140509,South Newton,Approved,Neighbourhood Concept Plan,1999
+7,, , ,,,,, ,Buffers,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+8,, , ,,6,,UPA, ,Single Family Residential,20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+9,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+10,20131125,Amendment From Institutional To Office Park, ,20131128,,,,7913-0121-00,Office Park,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+11,, , ,20130730,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130730,South Newton,Approved,Neighbourhood Concept Plan,1999
+12,20130128,Amendment,RES.R13-127,,10,8,UPA,7910-0175-00,Single Family Small Lots,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+13,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+14,, , ,,,,, ,Detention Ponds,,South Newton,Approved,Neighbourhood Concept Plan,1999
+15,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130315,South Newton,Approved,Neighbourhood Concept Plan,1999
+16,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+17,20290713,Amendment From Single Family Residential Flex 6-14.5 u.p.a. to Townhouses (25 u.p.a. max),RES.R13-1709,,25,25,UPA,7911-0247-00,Townhouses (25 u.p.a. max),20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+18,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+19,, , ,20151120,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+20,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+21,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+22,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+23,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+24,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+25,20130128,Amended From Townhouses (15 u.p.a. max) to Townhouses (30 u.p.a. max), ,,30,,UPA,7912-0202-00,Townhouses (30 u.p.a. max),20150507,South Newton,Approved,Neighbourhood Concept Plan,1999
+26,20031201,Rezone from RA to RF & RF-12 (B/L-12000);NCP from Suburban Residential Half Acre to Single Family Residential (Max 6 upa),R04-1599,,6,,UPA,02-0104-00,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+27,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+28,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+29,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+30,, , ,20120606,6,,UPA, ,Single Family Residential,20120606,South Newton,Approved,Neighbourhood Concept Plan,1999
+31,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+32,20050221,"Rezone from RA to RF-9, RF-12 & RF (B/L-12000); NCP from Single Family  Residential to SingleFamily Residential Flex 6 to 14.5 upa",R05-1935,,14.5,6,UPA,04-0039-00,Single Family Residential Flex 6-14.5 u.p.a.,20120606,South Newton,Approved,Neighbourhood Concept Plan,1999
+33,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+34,, , ,,,,, ,Proposed Parks & Walkways,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+35,, , ,,,,, ,Creeks & Riparian Set Backs,20130315,South Newton,Approved,Neighbourhood Concept Plan,1999
+36,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+37,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+38,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+39,20070212,From Single Family Residential Flex 6 to 14.5 u.p.a. to Proposed Schoool,R07-263,,,,,03-0191-00,Existing & Future School,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+40,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+41,20020708,Rezone from  RS & RA (B/L-12000) & CD (B/L-12285) to CD (B/L-12000); NCP from Single Family Residential to Single Family Small Lots,R03-821,,10,8,UPA,02-0124-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+42,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+43,20070626,From SIngle Family Residential to Single Family Residential Flex (6-14.5 upa),R07-1994,,14.5,6,UPA,06-0180-00,Single Family Residential Flex 6-14.5 u.p.a.,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+44,, , ,,,,, ,Institutional,,South Newton,Approved,Neighbourhood Concept Plan,1999
+45,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+46,, , ,,,,, ,Buffers,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+47,, , ,,45,,UPA, ,Apartments (45 u.p.a. max.),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+48,, , ,,25,,UPA, ,Townhouses (25 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+49,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+50,, , ,,,,, ,Mixed Commercial-Residential (Apartments),20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+51,20010522,"Rezone from CTA, RA (B/L-12000) & RS (B/L-5942) to CD (B/L-12000); NCP from Townhouse to Single Family Small Lots",R01-2806,,10,8,UPA,01-0052-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+52,, , ,,10,8,UPA, ,Single Family Small Lots,20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+53,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+54,20150223,Amended From Road to Single Family Small Lots,RES.R16-2559,20171212,10,8,UPA,7911-0111-00,Single Family Small Lots,20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+55,, , ,,10,8,UPA, ,Single Family Small Lots,20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+56,,, ,,15,,UPA, ,Townhouses (15 u.p.a. max),20130605,South Newton,Approved,Neighbourhood Concept Plan,1999
+57,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+58,, , ,20130130,,,, ,Buffers,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+59,, , ,20130130,,,, ,Buffers,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+60,20130128,Amendment,RES.R13-127,20130130,10,8,UPA,7910-0175-00,Single Family Small Lots,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+61,, , ,20130130,6,,UPA, ,Single Family Residential,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+62,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+63,, , ,,,,, ,Office Park,,South Newton,Approved,Neighbourhood Concept Plan,1999
+64,20150223,Amendment from Institutional to Office Park, ,20150304,,,,7914-0065-00,Office Park,20150304,South Newton,Approved,Neighbourhood Concept Plan,1999
+65,20131125,Amendment From Institutional To Office Park, ,20131128,,,,7913-0121-00,Office Park,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+66,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+67,, , ,,,,, ,Existing & Future Parks,20140730,South Newton,Approved,Neighbourhood Concept Plan,1999
+68,, , ,,,,, ,Institutional,20150304,South Newton,Approved,Neighbourhood Concept Plan,1999
+69,, , ,20130508,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130508,South Newton,Approved,Neighbourhood Concept Plan,1999
+70,, , ,20160205,10,8,UPA, ,Single Family Small Lots,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+71,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+72,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+73,, , ,20130315,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130315,South Newton,Approved,Neighbourhood Concept Plan,1999
+74,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20161117,South Newton,Approved,Neighbourhood Concept Plan,1999
+75,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+76,20151116,Amended From Single Family Residential Flex 6-14.5 u.p.a.& Single Family Small Lots to Townhouses (25 u.p.a. max), ,,25,25,UPA,7909-0132-00,Townhouses (25 u.p.a. max),20151120,South Newton,Approved,Neighbourhood Concept Plan,1999
+77,, , ,,10,8,UPA, ,Single Family Small Lots,20150618,South Newton,Approved,Neighbourhood Concept Plan,1999
+78,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+79,, , ,20120112,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+80,, , ,20120112,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+81,, , ,,,,, ,Proposed School & Parks,20150623,South Newton,Approved,Neighbourhood Concept Plan,1999
+82,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+83,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+84,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+85,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+86,, , ,,,,, ,Creeks & Riparian Set Backs,20140509,South Newton,Approved,Neighbourhood Concept Plan,1999
+87,, , ,,,,, ,Creeks & Riparian Set Backs,20140509,South Newton,Approved,Neighbourhood Concept Plan,1999
+88,, , ,,,,, ,Creeks & Riparian Set Backs,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+89,, , ,20131128,,,, ,Institutional,,South Newton,Approved,Neighbourhood Concept Plan,1999
+90,,,,,,,,,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+91,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+92,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+93,, , ,,45,,UPA, ,Apartments (45 u.p.a. max.),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+94,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+95,,,,,6,,UPA,,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+96,, , ,,,,, ,Creeks & Riparian Set Backs,,South Newton,Approved,Neighbourhood Concept Plan,1999
+97,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+98,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+99,20041213,From Single Family Residential to Single Family Residential Small Lots,R04-3480,,14.5,6,UPA,04-0008-00,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+100,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+101,, , ,20140116,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+102,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+103,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+104,20020903,Rezone from RA to RF-12 (B/L-12000); NCP from Schools & Parks to Single Family Small Lots,R04-841,,10,8,UPA,02-0094-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+105,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+106,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+107,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+108,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+109,, , ,,,,, ,Mixed Commercial-Recreational,,South Newton,Approved,Neighbourhood Concept Plan,1999
+110,, , ,,10,8,UPA, ,Single Family Small Lots,20130716,South Newton,Approved,Neighbourhood Concept Plan,1999
+111,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+112,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+113,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+114,20081103,"From TH 15 u.p.a., Creek and Rip. Setback and Proposed Park and Walkways",R08-2424,,25,,UPA,05-0182-00,Townhouses (25 u.p.a. max),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+115,, , ,,25,,UPA, ,Townhouses (25 u.p.a. max),20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+116,, , ,20170518,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20170518,South Newton,Approved,Neighbourhood Concept Plan,1999
+117,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+118,, , ,,,,, ,Existing & Future School,,South Newton,Approved,Neighbourhood Concept Plan,1999
+119,20170206, Amendment from Institutional to Existing & Future Parks, ,20170208,,,,7914-0286-00,Existing & Future Parks,20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+120,20170206,Amendment from Institutional to Commercial, ,20170208,,,,7914-0286-00,Commercial,20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+121,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+122,20151214,From Townhouses (15 u.p.a. max) to , ,20151216,,,,7910-0270-00,Creeks & Riparian Set Backs,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+123,20151214,From Creeks & Riparian Set Backs to , ,20151216,,,,7910-0270-00,Creeks & Riparian Set Backs,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+124,, , ,20151216,,,, ,Creeks & Riparian Set Backs,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+125,, , ,20130730,,,, ,Creeks & Riparian Set Backs,20130807,South Newton,Approved,Neighbourhood Concept Plan,1999
+126,, , ,20171212,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+127,, , ,20160803,6,,UPA, ,Single Family Residential,20150611,South Newton,Approved,Neighbourhood Concept Plan,1999
+128,, , ,,6,,UPA, ,Single Family Residential,20160803,South Newton,Approved,Neighbourhood Concept Plan,1999
+129,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+130,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+131,20130527,Amendment from Office Park to Townhouses (25 u.p.a. max), ,,25,25,UPA,7910-0309-00,Townhouses (25 u.p.a. max),20130605,South Newton,Approved,Neighbourhood Concept Plan,1999
+132,20131125,Amendment From Institutional To Office Park, ,,,,,7913-0121-00,Office Park,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+133,, , ,20130508,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+134,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130315,South Newton,Approved,Neighbourhood Concept Plan,1999
+135,20130311,Portion amended from Dentention Pond to Single Family Residential Flex 6-14.5 u.p.a., ,20130315,14.5,6,UPA,7905-0300-00,Single Family Residential Flex 6-14.5 u.p.a.,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+136,, , ,20160205,,,, ,Utility R/W / Greenway,20151120,South Newton,Approved,Neighbourhood Concept Plan,1999
+137,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+138,, , ,20150618,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20150618,South Newton,Approved,Neighbourhood Concept Plan,1999
+139,,Amended from Townhouses (15 u.p.a. max) to Townhouses (25 u.p.a. max),RES.R16-2929,20150507,25,,UPA,7915-0246-00,Townhouses (25 u.p.a. max),20170424,South Newton,Approved,Neighbourhood Concept Plan,1999
+140,,,,20110726,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+141,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+142,, , ,,,,, ,Buffers,20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+143,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+144,, , ,20140509,,,, ,Creeks & Riparian Set Backs,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+145,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+146,20130311,Amended from Townhouses (15 u.p.a. max) toTownhouses (20 u.p.a. max), ,,20,,UPA,7911-0044-00,Townhouses (20 u.p.a. max),20130318,South Newton,Approved,Neighbourhood Concept Plan,1999
+147,20031027,NCP (Omit Lane),R03-2580,,10,8,UPA,02-0224-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+148,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+149,20150223,Amended from Proposed School & Parks to Townhouses (25 u.p.a. max), ,20150304,25,,UPA,7913-0092-00,Townhouses (25 u.p.a. max),20150304,South Newton,Approved,Neighbourhood Concept Plan,1999
+150,, , ,,,,, ,Existing & Future School,,South Newton,Approved,Neighbourhood Concept Plan,1999
+151,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+152,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+153,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+154,20140113,Amend from Townhouses (15 u.p.a. max) to Commercial, ,20110726,,,,11-0285-00,Commercial,20140116,South Newton,Approved,Neighbourhood Concept Plan,1999
+155,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+156,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+157,, , ,20111117,,,, ,Mixed Commercial-Residential (Townhouses) ALTERNATIVE LAND USE OPTION,20111117,South Newton,Approved,Neighbourhood Concept Plan,1999
+158,, , ,,,,, ,Detention Ponds,,South Newton,Approved,Neighbourhood Concept Plan,1999
+159,20080808,From Proposed School to Single Family Small Lots,R08-2009 ,,10,8,UPA,03-0015-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+160,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+161,, , ,,,,, ,Mixed Commercial-Recreational,,South Newton,Approved,Neighbourhood Concept Plan,1999
+162,20170206,Amendment from Institutional to Townhouses (25 u.p.a. max), ,20170208,25,25,UPA,7914-0286-00,Townhouses (25 u.p.a. max),20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+163,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+164,,,,20120112,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+165,20120507,Amend Single Family Residential Flex 6-14.5 u.p.a. to Townhouses (25 u.p.a. max)   7910-0293-00   Mike Newall,RES.R12-1021,,25,25,UPA,7910-0293-00,Townhouses (25 u.p.a. max),20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+166,, , ,20120518,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120518,South Newton,Approved,Neighbourhood Concept Plan,1999
+167,20070625,From Single Family Residential to Single Family Residential Flex 6-14.5 u.p.a.,R07-1797,,14.5,6,UPA,06-0181-00,Single Family Residential Flex 6-14.5 u.p.a.,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+168,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+169,, , ,,,,, ,Industrial,,South Newton,Approved,Neighbourhood Concept Plan,1999
+170,20170206,Amendment from Institutional to Townhouses (25 u.p.a. max), ,,25,25,UPA,7914-0286-00,Townhouses (25 u.p.a. max),20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+171,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+172,, , ,20120403,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+173,, , ,,45,,UPA, ,Apartments (45 u.p.a. max.),20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+174,20151214,Amendment from Detention Ponds to Single Family Small Lots, ,20151216,,,,7910-0270-00,Single Family Small Lots,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+175,20150303,Amend fromunopenRoad Allowance to Single Family Small Lots,,20150326,,,,12-0069-00,Single Family Small Lots,20150326,South Newton,Approved,Neighbourhood Concept Plan,1999
+176,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+177,20130729,Amend fromTownhouses (15 u.p.a. max) to Single Family Small Lots,RES.R13-1706,20111206,,,,7912-0037-00,Single Family Small Lots,20130826,South Newton,Approved,Neighbourhood Concept Plan,1999
+178,20130729,Amend fromTownhouses (15 u.p.a. max) to Single Family Small Lots,RES.R13-1706,20130730,,,,7912-0037-00,Single Family Small Lots,20130826,South Newton,Approved,Neighbourhood Concept Plan,1999
+179,, , ,20130729,15,,UPA, ,Townhouses (15 u.p.a. max),20140509,South Newton,Approved,Neighbourhood Concept Plan,1999
+180,, , ,,,,, ,Creeks & Riparian Set Backs,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+181,, , ,20161005,,,, ,Creeks & Riparian Set Backs,20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+182,20130128,Amendment,RES.R13-127,20130130,10,8,UPA,7910-0175-00,Single Family Small Lots,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+183,20150615,Amended from Single Family Residential to Single Family Small Lots, ,20150618,10,8,UPA,7912-0266-00,Single Family Small Lots,20150618,South Newton,Approved,Neighbourhood Concept Plan,1999
+184,, , ,,6,,UPA, ,Single Family Residential,20150611,South Newton,Approved,Neighbourhood Concept Plan,1999
+185,20160725,Amended from Single Family Residential to Single Family Small Lots, ,20160803,6,,UPA,7914-0263-00,Single Family Small Lots,20160803,South Newton,Approved,Neighbourhood Concept Plan,1999
+186,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+187,, , ,20130730,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130508,South Newton,Approved,Neighbourhood Concept Plan,1999
+188,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+189,20130311, , ,,,,,7905-0300-00,Creeks & Riparian Set Backs,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+190,, , ,,10,8,UPA, ,Single Family Small Lots,20161117,South Newton,Approved,Neighbourhood Concept Plan,1999
+191,, , ,,,,, ,Utility R/W / Greenway,20150618,South Newton,Approved,Neighbourhood Concept Plan,1999
+192,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+193,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+194,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+195,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+196,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20150618,South Newton,Approved,Neighbourhood Concept Plan,1999
+197,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20180514,South Newton,Approved,Neighbourhood Concept Plan,1999
+198,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+199,20130527,Amendment From Townhouses (15 u.p.a. max) to Single Family Small Lots, ,20130605,,,UPA,7912-0018-00,Single Family Small Lots,20130605,South Newton,Approved,Neighbourhood Concept Plan,1999
+200,,,,,10,8,UPA,,Single Family Small Lots,20130605,South Newton,Approved,Neighbourhood Concept Plan,1999
+201,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+202,, , ,,,,, ,Creeks & Riparian Set Backs,,South Newton,Approved,Neighbourhood Concept Plan,1999
+203,, , ,20140509,,,, ,Creeks & Riparian Set Backs,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+204,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+205,20120109,NCP Amendment from Townhouse 15upa to Townhouse 25 upa   7906-0324-00   Ron Gill,RES.R12-38,20110726,25,,UPA,7906-0324-00,Townhouses (25 u.p.a. max),20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+206,, , ,,,,, ,Detention Ponds,20140509,South Newton,Approved,Neighbourhood Concept Plan,1999
+207,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+208,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+209,20150223,Amended from Proposed School & Parks to Townhouses (15 u.p.a. max),RES.R15-342,20150623,15,,UPA,,Townhouses (15 u.p.a. max),20150623,South Newton,Approved,Neighbourhood Concept Plan,1999
+210,, , ,,45,,UPA, ,Apartments (45 u.p.a. max.),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+211,,from Townhouses 15 upa max to Townhouses 20 upa max, ,,20,,UPA, ,Townhouses (20 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+212,, , ,20130318,15,,UPA, ,Townhouses (15 u.p.a. max),20120606,South Newton,Approved,Neighbourhood Concept Plan,1999
+213,20130311,Amend from Townhouses (15 u.p.a. max) to Townhouses (25 u.p.a. max), ,,25,,UPA,7911-0257-00,Townhouses (25 u.p.a. max),20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+214,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+215,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+216,, , ,20120113,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+217,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+218,,,,,,,,,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+219,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+220,20070611,From Residential Half Acre to Urban Single Family Residential,R07-1654,,6,,UPA,04-0151-00 ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+221,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+222,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+223,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+224,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+225,, , ,,,,, ,Commercial,,South Newton,Approved,Neighbourhood Concept Plan,1999
+226,, , ,,10,8,UPA, ,Single Family Small Lots,20130716,South Newton,Approved,Neighbourhood Concept Plan,1999
+227,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+228,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20170518,South Newton,Approved,Neighbourhood Concept Plan,1999
+229,,,,,6,,UPA,,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+230,20070626,From Single Family Residential to Single Family Residential Flex (6-14.5 upa),R07-1988,,14.5,6,UPA,06-0157-00,Single Family Residential Flex 6-14.5 u.p.a.,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+231,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+232,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+233,20151214,Amended from Townhouses (15 u.p.a. max) to Single Family Small Lots, ,20111206,,,,7910-0270-00,Single Family Small Lots,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+234,20151214,From Detention Ponds to , ,20151216,,,,7910-0270-00,Creeks & Riparian Set Backs,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+235,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+236,, , ,20130411,,,, ,Buffers,20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+237,20130128,Amendment,RES.R13-127,20130130,10,8,UPA,7910-0175-00,Single Family Small Lots,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+238,20150525,Amended from Single Family Residential to Single Family Small Lots, ,20130130,10,8,UPA,7911-0268-00,Single Family Small Lots,20160803,South Newton,Approved,Neighbourhood Concept Plan,1999
+239,, , ,20130130,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+240,, , ,20130508,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130508,South Newton,Approved,Neighbourhood Concept Plan,1999
+241,, , ,,,,, ,Detention Ponds,20130508,South Newton,Approved,Neighbourhood Concept Plan,1999
+242,20150525,Amended from Single Family Residential to Single Family Small Lots, ,20160205,10,8,UPA,7911-0268-00,Single Family Small Lots,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+243,20130311, , ,20130315,14.5,6,UPA,7905-0300-00,Single Family Residential Flex 6-14.5 u.p.a.,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+244,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+245,, , ,,10,8,UPA, ,Single Family Small Lots,20161117,South Newton,Approved,Neighbourhood Concept Plan,1999
+246,, , ,20150618,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+247,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+248,, , ,,,,, ,Utility R/W / Greenway,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+249,, , ,20160205,,,, ,Proposed Parks & Walkways,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+250,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+251,, , ,,,,, ,Mixed Commercial-Residential (Townhouses),,South Newton,Approved,Neighbourhood Concept Plan,1999
+252,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+253,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+254,, , ,20160205,10,8,UPA, ,Single Family Small Lots,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+255,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+256,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+257,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+258,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+259,20110725,AMENDMENT Single Family Residential to Single Family Small Lots   7911-0046-00 Taryn Hayes,RES.R11-1327,,10,8,UPA,7911-0046-00,Single Family Small Lots,20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+260,,,,,,,,,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+261,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+262,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+263,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+264,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+265,20180507,Amended From Single Family Residential Flex 6-14.5 u.p.a. to Existing & Future Parks, ,20180514,14.5,6,UPA,7916-0326-00,Existing & Future Parks,20180514,South Newton,Approved,Neighbourhood Concept Plan,1999
+266,20070625,From Single Family Residential to Single Family Residential Flex (6-14.5 upa),R07-1807,,14.5,6,UPA,06-0075-00,Single Family Residential Flex 6-14.5 u.p.a.,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+267,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+268,, , ,,,,, ,Proposed Parks & Walkways,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+269,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+270,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+271,,,,,,,,,Detention Ponds,,South Newton,Approved,Neighbourhood Concept Plan,1999
+272,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+273,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+274,20030707,Rezone from RA & CD to CD (B/L-12000); NCP from Single Family Residential to Single Family Small Lots,R04-681,,10,8,UPA,03-0118-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+275,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+276,20170206,Amendment from Institutional to Townhouses (25 u.p.a. max), ,20170208,25,25,UPA,7914-0286-00,Townhouses (25 u.p.a. max),20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+277,20070626,From SIngle Family Residential to Single Family Residential Flex (6-14.5 upa),R07-1991,,14.5,6,UPA,05-0378-00,Single Family Residential Flex 6-14.5 u.p.a.,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+278,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+279,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+280,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+281,, , ,,,,, ,Mixed Commercial-Residential (Townhouses),20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+282,, , ,,10,8,UPA, ,Single Family Small Lots,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+283,, , ,,25,,UPA, ,Townhouses (25 u.p.a. max),20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+284,, , ,,,,, ,Proposed Parks & Walkways,20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+285,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+286,, , ,,10,8,UPA, ,Single Family Small Lots,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+287,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+288,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+289,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+290,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+291,, , ,,,,, ,Commercial,,South Newton,Approved,Neighbourhood Concept Plan,1999
+292,20141215,Amended from Townhouses (15 u.p.a. max) to Townhouses (20 u.p.a. max), ,20130730,20,,UPA,7912-0119-00,Townhouses (20 u.p.a. max),20150122,South Newton,Approved,Neighbourhood Concept Plan,1999
+293,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),20130730,South Newton,Approved,Neighbourhood Concept Plan,1999
+294,, , ,20130730,,,, ,Creeks & Riparian Set Backs,20130729,South Newton,Approved,Neighbourhood Concept Plan,1999
+295,, , ,,,,, ,Mixed Commercial-Residential (Apartments),20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+296,20150223,Amended From Townhouses (15 u.p.a. max) to Townhouses (25 u.p.a. max),RES.R16-2559,,25,,UPA,7911-0111-00,Townhouses (25 u.p.a. max),20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+297,20130128,Amendment,RES.R13-127,20130130,6,,UPA,7910-0175-00,Single Family Residential,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+298,,,,,,,,,Commercial,,South Newton,Approved,Neighbourhood Concept Plan,1999
+299,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+300,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+301,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+302,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+303,, , ,20160205,10,8,UPA, ,Single Family Small Lots,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+304,, , ,,10,8,UPA, ,Single Family Small Lots,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+305,, , ,20130130,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+306,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+307,, , ,,,,, ,Proposed Parks & Walkways,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+308,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+309,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20150618,South Newton,Approved,Neighbourhood Concept Plan,1999
+310,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+311,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+312,, , ,20130411,,,, ,Buffers,20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+313,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+314,,,,,,,,,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+315,,,,,,,,,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+316,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+317,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+318,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+319,, , ,,,,, ,Existing & Future School,,South Newton,Approved,Neighbourhood Concept Plan,1999
+320,, , ,,6,,UPA, ,Single Family Residential,20120606,South Newton,Approved,Neighbourhood Concept Plan,1999
+321,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+322,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+323,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+324,20150223,Amended from Proposed School & Parks to Townhouses (15 u.p.a. max), ,20150311,15,,UPA,7913-0092-00,Townhouses (15 u.p.a. max),20150311,South Newton,Approved,Neighbourhood Concept Plan,1999
+325,, , ,,20,,UPA, ,Townhouses (20 u.p.a. max),20110726,South Newton,Approved,Neighbourhood Concept Plan,1999
+326,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+327,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+328,20110711,Amendment From Townhouse 15 upa max To Townhouse 25 upa max,R11-1229,,25,,UPA,10-0294-00,Townhouses (25 u.p.a. max),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+329,, , ,,,,, ,Creeks & Riparian Set Backs,,South Newton,Approved,Neighbourhood Concept Plan,1999
+330,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+331,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+332,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+333,, , ,,45,,UPA, ,Apartments (45 u.p.a. max.),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+334,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+335,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120113,South Newton,Approved,Neighbourhood Concept Plan,1999
+336,, , ,,,,, ,Mixed Commercial-Residential (Apartments),20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+337,20120507,Amend Proposed Parks & Walkways to Townhouses (25 u.p.a. max)   7910-0293-00   Mike Newall,RES.R12-1021,,25,25,UPA,7910-0293-00,Townhouses (25 u.p.a. max),20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+338,, , ,20120125,,,, ,Mixed Commercial-Residential (Townhouses),20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+339,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+340,, , ,20110914,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+341,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+342,20170206,Amendment from Institutional to Apartments (65 u.p.a. max.), ,20170208,,,,7914-0286-00,Apartments (65 u.p.a. max.),20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+343,, , ,20170208,,,, ,Buffers,20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+344,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+345,, , ,,,,, ,Buffers,20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+346,20070625,From Townhouses (15 upa max) to Institutional,R07-1798,,,,,06-0338-00,Institutional,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+347,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+348,, , ,20150122,,,, ,Buffers,20141219,South Newton,Approved,Neighbourhood Concept Plan,1999
+349,, , ,,,,, ,Creeks & Riparian Set Backs,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+350,20130729,Amend fromTownhouses (15 u.p.a. max) to Single Family Small Lots,RES.R13-1706,20130730,,,,7912-0037-00,Single Family Small Lots,20130826,South Newton,Approved,Neighbourhood Concept Plan,1999
+351,, , ,20130730,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+352,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),20130807,South Newton,Approved,Neighbourhood Concept Plan,1999
+353,, , ,,,,, ,Detention Ponds,20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+354,, , ,,,,, ,Creeks & Riparian Set Backs,20130605,South Newton,Approved,Neighbourhood Concept Plan,1999
+355,,Amended From Buffers to Single Family Small Lots, ,20160803,,,,7914-0200-00,Single Family Small Lots,20160803,South Newton,Approved,Neighbourhood Concept Plan,1999
+356,20130128,Amendment,RES.R13-127,20130130,10,8,UPA,7910-0175-00,Single Family Small Lots,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+357,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+358,20130729,Amend from Single Family Residential Flex 6-14.5 u.p.a.to Creeks & Riparian Set Backs,RES.R13-1706,,14.5,6,UPA,7912-0037-00,Creeks & Riparian Set Backs,20130826,South Newton,Approved,Neighbourhood Concept Plan,1999
+359,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+360,, , ,20130130,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+361,20130128,Amendment,RES.R13-127,,10,8,UPA,7910-0175-00,Single Family Small Lots,20130417,South Newton,Approved,Neighbourhood Concept Plan,1999
+362,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+363,20130311, , ,,14.5,6,UPA,7905-0300-00,Single Family Residential Flex 6-14.5 u.p.a.,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+364,, , ,,10,8,UPA, ,Single Family Small Lots,20161117,South Newton,Approved,Neighbourhood Concept Plan,1999
+365,, , ,,,,, ,Mixed Commercial-Residential (Townhouses),20151120,South Newton,Approved,Neighbourhood Concept Plan,1999
+366,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+367,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+368,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+369,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+370,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,20110726,South Newton,Approved,Neighbourhood Concept Plan,1999
+371,, , ,,,,, ,Row Housing,,South Newton,Approved,Neighbourhood Concept Plan,1999
+372,, , ,,25,,UPA, ,Townhouses (25 u.p.a. max),20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+373,, , ,,,,, ,Creeks & Riparian Set Backs,,South Newton,Approved,Neighbourhood Concept Plan,1999
+374,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+375,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+376,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+377,, , ,,25,,UPA, ,Townhouses (25 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+378,, , ,,10,8,UPA, ,Single Family Small Lots,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+379,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+380,, , ,,,,, ,Creeks & Riparian Set Backs,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+381,20110725,AMENDMENT Single Family Residential to Single Family Small Lots   7911-0046-00 Taryn Hayes,RES.R11-1327,20120606,6,8,UPA,7911-0046-00,Single Family Small Lots,20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+382,20130311,Amended from Single Family Residential to Single Family Residential Flex 6-14.5 u.p.a., ,,14.5,6,UPA,7911-0044-00,Single Family Residential Flex 6-14.5 u.p.a.,20130318,South Newton,Approved,Neighbourhood Concept Plan,1999
+383,, , ,,,,, ,Creeks & Riparian Set Backs,20130318,South Newton,Approved,Neighbourhood Concept Plan,1999
+384,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+385,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+386,, , ,20110726,,,, ,Creeks & Riparian Set Backs,,South Newton,Approved,Neighbourhood Concept Plan,1999
+387,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+388,, , ,,,,, ,Detention Ponds,,South Newton,Approved,Neighbourhood Concept Plan,1999
+389,20150223,Amended from Townhouses (15 u.p.a. max) to Townhouses (25 u.p.a. max), ,20150304,25,,UPA,7913-0092-00,Townhouses (25 u.p.a. max),20150304,South Newton,Approved,Neighbourhood Concept Plan,1999
+390,, , ,,,,, ,Mixed Commercial-Residential (Apartments),20140730,South Newton,Approved,Neighbourhood Concept Plan,1999
+391,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+392,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+393,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+394,20080830,From TH. 15 u.p.a. to Commercial,R08-1937,,,,,03-0454,Commercial,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+395,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+396,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+397,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+398,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+399,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+400,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+401,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+402,20010709,Rezone from RA to CD (B/L-12000); NCP from Townhouses to Small Lots,R02-479,,10,8,UPA,01-0127-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+403,, , ,,45,,UPA, ,Apartments (45 u.p.a. max.),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+404,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+405,, , ,,10,8,UPA, ,Single Family Small Lots,20130716,South Newton,Approved,Neighbourhood Concept Plan,1999
+406,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+407,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+408,, , ,20120112,,,, ,Creeks & Riparian Set Backs,20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+409,20120507,Amend Single Family Residential Flex 6-14.5 u.p.a. to Townhouses (25 u.p.a. max)   7910-0293-00   Mike Newall,RES.R12-1021,20120518,25,25,UPA,7910-0293-00,Townhouses (25 u.p.a. max),20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+410,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+411,20110912,From TH 15 u.p.a. to TH 25 u.p.a.,R11-1536,,25,,UPA,10-0205-00,Townhouses (25 u.p.a. max),20120112,South Newton,Approved,Neighbourhood Concept Plan,1999
+412,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+413,20061120,From Townhouses 15 upa to TH 25 u.p.a,R06-2628,,25,,UPA,05-0218-00,Townhouses (25 u.p.a. max),20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+414,20110314,Amended fromTownhouse (15 upa max) to Townhouse (20 upa max)  7906-0037-00   Helen Popple,RES.R11-428,,15,,UPA,7906-0037-00,Townhouses (20 u.p.a. max),20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+415,, , ,,,,, ,Buffers,20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+416,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+417,20140908,Amended From Townhouses (15 u.p.a. max) toTownhouses (20 u.p.a. max),RES.R14-1578,,20,,UPA,7912-0082-00,Townhouses (20 u.p.a. max),20150715,South Newton,Approved,Neighbourhood Concept Plan,1999
+418,20040705,Rezone from CD & RA to RF-12 & RF-9 (B/L-12000); NCP from Townhouses (15 upa) & Single Family Residential to Single Family Residential Small Lots,R05-617,,10,8,UPA,03-0054-00,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+419,, , ,,,,, ,Detention Ponds,,South Newton,Approved,Neighbourhood Concept Plan,1999
+420,, , ,,,,, ,Creeks & Riparian Set Backs,20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+421,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+422,, , ,,,,, ,Detention Ponds,20151216,South Newton,Approved,Neighbourhood Concept Plan,1999
+423,20111128,Townhouse 15 upa to Townhouse 25 upa 7907-0020-00 Catherina Lisiak,R09-2293,,25,,UPA,7907-0020-00,Townhouses (25 u.p.a. max),20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+424,, , ,20130730,15,,UPA, ,Townhouses (15 u.p.a. max),20130729,South Newton,Approved,Neighbourhood Concept Plan,1999
+425,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+426,, , ,,6,,UPA, ,Single Family Residential,20161005,South Newton,Approved,Neighbourhood Concept Plan,1999
+427,, , ,20171212,,,, ,Buffers,20171212,South Newton,Approved,Neighbourhood Concept Plan,1999
+428,, , ,20160803,6,,UPA, ,Single Family Residential,20150611,South Newton,Approved,Neighbourhood Concept Plan,1999
+429,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+430,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+431,, , ,20140509,15,,UPA, ,Townhouses (15 u.p.a. max),20130729,South Newton,Approved,Neighbourhood Concept Plan,1999
+432,, , ,20130508,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130508,South Newton,Approved,Neighbourhood Concept Plan,1999
+433,, , ,20171212,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+434,, , ,20130130,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+435,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,20130508,South Newton,Approved,Neighbourhood Concept Plan,1999
+436,, , ,,,,, ,Creeks & Riparian Set Backs,,South Newton,Approved,Neighbourhood Concept Plan,1999
+437,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+438,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+439,20130311,Portion amended from Dentention Pond to Single Family Residential Flex 6-14.5 u.p.a., ,,14.5,6,UPA,7905-0300-00,Single Family Residential Flex 6-14.5 u.p.a.,20160331,South Newton,Approved,Neighbourhood Concept Plan,1999
+440,, , ,,10,8,UPA, ,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+441,, , ,,,,, ,Utility R/W / Greenway,,South Newton,Approved,Neighbourhood Concept Plan,1999
+442,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+443,,,,,14.5,6,UPA,,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+444,, , ,,10,8,UPA, ,Single Family Small Lots,20180514,South Newton,Approved,Neighbourhood Concept Plan,1999
+445,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),20130411,South Newton,Approved,Neighbourhood Concept Plan,1999
+446,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+447,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+448,, , ,,,,, ,Creeks & Riparian Set Backs,20160205,South Newton,Approved,Neighbourhood Concept Plan,1999
+449,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+450,20120206,NCP Amendment from Townhouse15 upa to Townhouse 25 upa   7910-0017-00   Helen Popple,RES.R12-284,,25,,UPA,7910-0017-00,Townhouses (25 u.p.a. max),20140509,South Newton,Approved,Neighbourhood Concept Plan,1999
+451,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+452,, , ,,,,, ,Existing & Future Parks,,South Newton,Approved,Neighbourhood Concept Plan,1999
+453,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+454,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+455,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+456,, , ,20150304,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+457,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+458,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),20150304,South Newton,Approved,Neighbourhood Concept Plan,1999
+459,, , ,20130315,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+460,, , ,,6,,UPA, ,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+461,20120528,AMENDMENT Creeks & Riparian Set Backs to Single Family Residential Flex 6-14.5 u.p.a.7908-0091-00 Taryn Hayes,RES.R12-1165,20120606,14.5,6,UPA,7908-0091-00,Single Family Residential Flex 6-14.5 u.p.a.,20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+462,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+463,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+464,, , ,,2,,UPA, ,Suburban Residential 1/2 Acre,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+465,, , ,,,,, ,Industrial,,South Newton,Approved,Neighbourhood Concept Plan,1999
+466,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+467,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+468,20021021,Rezone from RH to RF (B/L-12000); NCP (Road Pattern Change),R03-1925,,6,,UPA,02-0192-00,Single Family Residential,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+469,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+470,,,,,10,8,UPA,,Single Family Small Lots,20110928,South Newton,Approved,Neighbourhood Concept Plan,1999
+471,20120507,Amend ownhouses (15 u.p.a. max) to Townhouses (25 u.p.a. max)   7910-0293-00   Mike Newall,RES.R12-1021,,25,25,UPA,7910-0293-00,Townhouses (25 u.p.a. max),20121218,South Newton,Approved,Neighbourhood Concept Plan,1999
+472,, , ,,,,, ,Creeks & Riparian Set Backs,20120518,South Newton,Approved,Neighbourhood Concept Plan,1999
+473,, , ,,14.5,6,UPA, ,Single Family Residential Flex 6-14.5 u.p.a.,,South Newton,Approved,Neighbourhood Concept Plan,1999
+474,, , ,,15,,UPA, ,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+475,20030526,"Rezone from RA & IL to CD (B/L-12000); NCP from Detention Pond, Single Family Residential & Townhouses (25 upa maximum) to Townhouses (15 upa maximum)",R03-2769,,15,,UPA,02-0392-00,Townhouses (15 u.p.a. max),,South Newton,Approved,Neighbourhood Concept Plan,1999
+476,, , ,20170208,,,, ,Buffers,20170208,South Newton,Approved,Neighbourhood Concept Plan,1999
+477,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999
+478,, , ,,,,, ,Proposed Parks & Walkways,,South Newton,Approved,Neighbourhood Concept Plan,1999
+479,, , ,,,,, ,Buffers,,South Newton,Approved,Neighbourhood Concept Plan,1999

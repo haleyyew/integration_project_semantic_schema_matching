@@ -576,8 +576,8 @@ def format_json(json_data):
 
     y = numpy.array([numpy.array(xi) for xi in resource_json])
 
-    print(y[0])
-    print(keys)
+    # print(y[0])
+    # print(keys)
     dataframe = pd.DataFrame(data=y, columns=keys)
 
     return dataframe
@@ -585,16 +585,36 @@ def format_json(json_data):
 
 def format_csv(csv_data):
     y = numpy.array([numpy.array(xi) for xi in csv_data])
-    print(y[0, 0:])
+    # print(y[0, 0:])
     dataframe = pd.DataFrame(data=y[1:, 0:], columns=y[0, 0:])
 
     return dataframe
 
+def check_added():
+    added = {}
+    for root, dirs, files in os.walk("../thesis_project_dataset_clean"):
+        for file in files:
+            filename, file_extension = os.path.splitext(file)
+            added[filename] = True
+
+    # with open('./datasource_and_metadata.json', 'r') as f:
+    #     metadata = json.load(f)
+    #     for source in metadata:
+    #         if source in added:
+    #             print('already added', source)
+    return added
+
 def to_csv_format():
+
+    added = check_added()
     with open('./datasource_and_metadata.json', 'r') as f:
         metadata = json.load(f)
 
         for source in metadata:
+            if source in added:
+                print('already added', source)
+                continue
+
             num_datasources = 0
             num_csv = metadata[source]['csv']
             num_datasources += len(num_csv)
@@ -612,9 +632,25 @@ def to_csv_format():
                 # print(datasource)
                 datasource = ''.join(datasource[0])
 
+                print('parsing json', datasource)
                 with open(datasource, mode='r') as json_file:
-                    json_data = json.load(json_file)
-                    resource = format_json(json_data['features'])
+                    json_data = json.load(json_file, strict=False)
+                    # multiple datasets here
+                    candidate_json = None
+                    if isinstance(json_data, dict):
+                        candidate_json = json_data
+                    elif not isinstance(json_data, dict) and isinstance(json_data, list):
+                        for dataset in json_data:
+                            if not isinstance(dataset['features'], dict):
+                                continue
+                            features = dataset['features']
+                            if 'properties' not in features:
+                                continue
+                            candidate_json = dataset
+                    if candidate_json == None:
+                        print('[skip]', datasource)
+                        continue
+                    resource = format_json(candidate_json['features'])
                 type = 'json'
 
             elif len(num_csv) > 0:
@@ -622,6 +658,7 @@ def to_csv_format():
                 # print(datasource)
                 datasource = ''.join(datasource[0])
 
+                print('parsing csv', datasource)
                 csv_data = []
                 with open(datasource, mode='r', encoding='unicode_escape') as csv_file:
                     # csv_reader = csv.reader(csv_file)
@@ -631,7 +668,7 @@ def to_csv_format():
                     # for row in csv_reader:
                     #     csv_data.append(row)
 
-                print(csv_data[0])
+                # print(csv_data[0])
                 resource = format_csv(csv_data)
                 type = 'csv'
 

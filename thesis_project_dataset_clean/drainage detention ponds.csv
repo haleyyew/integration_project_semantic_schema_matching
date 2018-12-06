@@ -1,0 +1,807 @@
+,ANCILLARYROLE,ENABLED,DETENTION_POND_TYPE,DETENTION_POND_TYPE2,FACILITYID,LEGACYID,NODE_NO,LIVE_STORAGE_CAPACITY,MAX_STORAGE_DEPTH,PEAK_DISCHARGE,STATUS,OPERATING_STATUS,YR,OWNER,PROJECT_NO,LOCATION,COMMENTS,GIS_ENTRY_STAGE,WARRANTYDATE,CONDITION,CONDITIONDATE,LAST_INSP_DATE,OPS_POND_TYPE,SPILLWAY,FENCE,CRE_DATE,MOD_DATE,LEGACY_POND_NO,LEGACY_DETAIL_REPORT,Latitude,Longitude
+0,,1,1,Above Ground Private,1000429559,229304,1384607025,,,,In Service,Open,1987,Private,7885-2890,,,Final AB,,,,,,,,20060629,20101026,0455,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0455.pdf,49.130135,-122.838312
+1,,1,3,Below Ground Private,1001147375,,1955206125,,,,In Service,Open,2009,Private,7806-0377-00,,BRENTWOOD RAINWATER CHAMBER,Final AB,,,,,,,,20100121,20101026,,,49.113506,-122.681076
+2,,1,2,Below Ground Municipal,1001408235,,1420808939,,,,In Service,Open,1988,Surrey,7886-0225-00,,1050 RCP,Final AB,,,,,,,,20120416,20140514,1061,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1061.pdf,49.164740,-122.828205
+3,,0,2,Below Ground Municipal,1000429393,370751,1397705663,,,,Abandoned,Closed,2000,Surrey,7893-0479-00,,,Final AB,,,,,,,,20031125,20100913,,,49.105468,-122.834763
+4,,0,2,Below Ground Municipal,1001172253,1000429393,1397805665,,,,Abandoned,Closed,2000,Surrey,7893-0479-00,,,Final AB,,,,,,,,20100913,20100913,,,49.105504,-122.834735
+5,,1,0,Above Ground Municipal,1001180801,,1604402718,,,,In Service,Open,2010,Surrey,7805-0126-00,,,Final AB,,,,,,,,20101105,20101105,,,49.052083,-122.778046
+6,,1,1,Above Ground Private,1001155352,,1689606604,,,,In Service,Open,2010,Private,7802-0040-00,,,Final AB,,,,,,,,20100414,20100414,,,49.122354,-122.754232
+7,,1,1,Above Ground Private,1001148374,,1837209790,,3368,0.284,In Service,Open,2009,Translink,1R03,,,Final AB,,,,,,,,20100128,20100128,,,49.179919,-122.713224
+8,,1,0,Above Ground Municipal,1001180236,,1615502542,,,,In Service,Open,2010,Surrey,7805-0126-00,Morgan Heights,,Final AB,,,,,,,,20101103,20101103,,,49.048905,-122.774991
+9,,1,0,Above Ground Municipal,1001180237,,1616102596,,,,In Service,Open,2010,Surrey,7805-0126-00,Morgan Heights,,Final AB,,,,,,,,20101103,20101103,,,49.049881,-122.774842
+10,,1,3,Below Ground Private,1001217188,,1310710847,,18.4,,In Service,Open,2011,Private,7807-0227-00,,600 Conc,Final AB,,,,,,,,20111027,20111027,,,49.199314,-122.858492
+11,,1,0,Above Ground Municipal,1000429331,246157,1204306038,,,,In Service,Open,1988,Surrey,7883-077,,,Final AB,,,,,,,,20060629,,0290,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0290.pdf,49.112324,-122.888049
+12,,1,0,Above Ground Municipal,1000429342,108634,1378009406,,,,In Service,Open,1981,Surrey,A420,,,Final AB,,,,,,,,20060629,20140515,0651,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0651.pdf,49.173208,-122.839988
+13,,1,0,Above Ground Municipal,1000429337,355526,1553301924,,,,In Service,Open,1984,Surrey,7883-038,,,Final AB,,,,,,,,20060629,,0050,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0050.pdf,49.037737,-122.792182
+14,,1,0,Above Ground Municipal,1000429350,108643,1361209094,,,,In Service,Open,1990,Surrey,7887-0439-00,,,Final AB,,,,,,,,20060629,20140515,0650,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0650.pdf,49.167583,-122.844629
+15,,1,0,Above Ground Municipal,1000429340,370784,1945502034,1000,,,In Service,Open,2006,Surrey,4805-6010-00,,,Final AB,,,,,,,,20060530,,no_id1p129,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p129.pdf,49.039497,-122.684202
+16,,1,0,Above Ground Municipal,1001408359,,1398508923,,,,In Service,Open,1980,Surrey,9404,,,Final AB,,,,,,,,20120417,20140515,1110,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1110.pdf,49.164473,-122.834345
+17,,1,0,Above Ground Municipal,1001408363,,1398408883,,,,In Service,Open,1980,Surrey,9404,,,Final AB,,,,,,,,20120417,20140515,1111,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1111.pdf,49.163750,-122.834384
+18,,1,2,Below Ground Municipal,1001843977,,1898003621,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180209,20180215,,,49.068238,-122.697105
+19,,1,2,Below Ground Municipal,1001843981,,1899003681,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.069331,-122.696825
+20,,1,2,Below Ground Municipal,1001843982,,1899103681,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.069331,-122.696798
+21,,1,2,Below Ground Municipal,1001843983,,1897903728,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070179,-122.697121
+22,,1,3,Below Ground Private,1001719478,,1581408064,,,,In Service,Open,2013,Private,7812-0141-00,,,Final AB,,,,,,,,20131121,20160128,,,49.148834,-122.783950
+23,,1,3,Below Ground Private,1001719480,,1580408065,,,,In Service,Open,2013,Private,7812-0141-00,,,Final AB,,,,,,,,20131121,20160128,,,49.148861,-122.784235
+24,,1,1,Above Ground Private,1001861523,,1756010389,,,,In Service,Open,2013,Provincial,SFPR Seg. F1,SE Corner 104 Ave & 176 St,,Final AB,,,,,,,,20160224,20160224,,,49.190820,-122.735560
+25,,1,1,Above Ground Private,1001872467,,1536310835,,,,In Service,Open,2015,Surrey,Gateway E1,,,Final AB,,,,,,,,20160422,20160422,,,49.199001,-122.796200
+26,,1,0,Above Ground Municipal,1000429424,38674,1580710569,,,,In Service,Open,1987,Surrey,7887-3361-00,,,Final AB,,,,,,,,20060629,20160426,0646,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0646.pdf,49.194173,-122.783956
+27,,1,2,Below Ground Municipal,1001816252,,1910103473,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065550,-122.693793
+28,,1,2,Below Ground Municipal,1001816251,,1910003473,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065549,-122.693821
+29,,1,2,Below Ground Municipal,1001843984,,1898003728,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070179,-122.697093
+30,,1,2,Below Ground Municipal,1001843988,,1898803768,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070908,-122.696882
+31,,1,2,Below Ground Municipal,1001843994,,1900103766,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070868,-122.696509
+32,,1,2,Below Ground Municipal,1001843993,,1900103767,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070883,-122.696525
+33,,1,2,Below Ground Municipal,1001843989,,1899503761,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070775,-122.696691
+34,,1,2,Below Ground Municipal,1001843990,,1899503760,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070764,-122.696667
+35,,1,2,Below Ground Municipal,1001843991,,1899303775,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.071027,-122.696737
+36,,1,2,Below Ground Municipal,1001843992,,1899303774,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.071013,-122.696721
+37,,1,2,Below Ground Municipal,1001843995,,1902603783,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.071168,-122.695829
+38,,1,2,Below Ground Municipal,1001843996,,1902603782,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.071150,-122.695829
+39,,1,2,Below Ground Municipal,1001843999,,1902603771,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070952,-122.695826
+40,,1,2,Below Ground Municipal,1001843998,,1902603772,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.070971,-122.695826
+41,,1,2,Below Ground Municipal,1001844001,,1907103783,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180213,20180215,,,49.071175,-122.694581
+42,,1,1,Above Ground Private,1001408138,,1864806020,,,,,,,Surrey,,,,,,,,,,,,20120416,,0095,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0095.pdf,49.111680,-122.705990
+43,,1,1,Above Ground Private,1001408431,,1218708173,,,,,,,Surrey,,,,,,,,,,,,20120417,,0976,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0976.pdf,49.150964,-122.884008
+44,,1,0,Above Ground Municipal,1000429507,370746,1391703594,1000,,,In Service,Open,2002,Surrey,4898-3170-00,,,Final AB,,,,,,,,20030211,,no_id1p102,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p102.pdf,49.068047,-122.836538
+45,,1,0,Above Ground Municipal,1000429461,370744,1591603759,,,,In Service,Open,1996,Surrey,7899-0248-00,,,Final AB,,,,,,,,20021016,20111115,no_id1p104,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p104.pdf,49.070942,-122.781487
+46,,1,1,Above Ground Private,1001408089,,1812501995,,,,,,,Surrey,,,,,,,,,,,,20120413,,no_id1p127,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p127.pdf,49.038884,-122.720812
+47,,1,1,Above Ground Private,1001408066,,1767300075,,,,In Service,,,Surrey,,,,,,,,,,,,20120413,20120413,no_id1p147,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p147.pdf,49.004166,-122.733438
+48,,1,0,Above Ground Municipal,1000429374,370752,1660308318,,,,In Service,Open,2000,Surrey,7893-0064-00,,,Final AB,,,,,,,,20040119,,no_id1p45,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p45.pdf,49.153384,-122.762166
+49,,1,0,Above Ground Municipal,1001408495,,1702508786,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id1p46,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p46.pdf,49.161829,-122.750475
+50,,1,0,Above Ground Municipal,1001216949,,1249306939,,,,In Service,Open,2001,Surrey,4897-603,12490 69 Ave,Cougar Creek Pond East,Final AB,,,,,,,,20111025,20111115,no_id1p60,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p60.pdf,49.128623,-122.875611
+51,,1,1,Above Ground Private,1001408174,,1278807214,,,,,,,Surrey,,,,,,,,,,,,20120416,,no_id1p61,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p61.pdf,49.133589,-122.867474
+52,,1,0,Above Ground Municipal,1000429576,370774,1767606305,,,,In Service,Open,2006,Surrey,99029,,,Final AB,,,,,,,,20060213,,no_id1p77,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p77.pdf,49.116810,-122.734376
+53,,1,0,Above Ground Municipal,1000429463,370758,1421510602,1000,,,In Service,Open,1999,Surrey,4898-605,,,Final AB,,,,,,,,20040325,,no_id2p12,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p12.pdf,49.194832,-122.827893
+54,,1,1,Above Ground Private,1001408088,,1822802108,,,,,,,Surrey,,,,,,,,,,,,20120413,,no_id2p127,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p127.pdf,49.040912,-122.717977
+55,,1,0,Above Ground Municipal,1000429422,370766,1721310402,4115,,2384,In Service,Open,2002,Surrey,4899-6030-00,,SEE ALSO SS-026-460,Final AB,,,,,,,,20041018,,no_id2p26,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p26.pdf,49.191059,-122.745138
+56,,1,3,Below Ground Private,1001596194,,1368006727,,,,In Service,Open,2013,Private,7807-0309-00,,,Final AB,,,,,,,,20130523,20130523,,,49.124737,-122.842891
+57,,1,0,Above Ground Municipal,1001854257,,1343306205,,,,,,,Surrey,,,,,,,,,,,,20160118,,,,49.115303,-122.849749
+58,,1,2,Below Ground Municipal,1000429371,156229,1445408210,,,,In Service,Open,,Surrey,4397,,,Final AB,,,,,,,,20060629,,no_id1p42,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p42.pdf,49.151549,-122.821455
+59,,1,0,Above Ground Municipal,1000429518,181746,1231707406,,,,In Service,Open,1988,Surrey,7887-0970-00,,,Final AB,,,,,,,,20060629,20100107,0280,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0280.pdf,49.137071,-122.880441
+60,,1,0,Above Ground Municipal,1000429519,181747,1224307400,,,,In Service,Open,1986,Surrey,7884-0780-00,,,Final AB,,,,,,,,20060629,20100107,0278,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0278.pdf,49.136967,-122.882489
+61,,1,2,Below Ground Municipal,1000429522,181750,1238307337,,,,In Service,Open,1990,Surrey,7887-5790-00,,,Final AB,,,,,,,,20060629,20100107,0281,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0281.pdf,49.135826,-122.878625
+62,,1,2,Below Ground Municipal,1001145098,,1205907072,,,,In Service,Open,2007,Surrey,D-3400,,,Final AB,,,,,,,,20100107,20100107,no_id3p60,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id3p60.pdf,49.131037,-122.887579
+63,,1,0,Above Ground Municipal,1000429372,156230,1496108056,,,,In Service,Open,1989,Surrey,7887-5790,,,Final AB,,,,,,,,20060629,,0934,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0934.pdf,49.148733,-122.807484
+64,,1,0,Above Ground Municipal,1000429383,252597,1305806373,,,,In Service,Open,1981,Surrey,A-263,,,Final AB,,,,,,,,20060629,,0267,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0267.pdf,49.118363,-122.860081
+65,,1,0,Above Ground Municipal,1001583354,,1403306318,,,,In Service,Open,2014,Surrey,7812-0328-00,,McLeod Detention Pond,Final AB,,,,,,,,20140602,20180111,,,49.117324,-122.833181
+66,,1,2,Below Ground Municipal,1001844002,,1907103782,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180213,20180215,,,49.071158,-122.694580
+67,,1,2,Below Ground Municipal,1001844003,,1907103772,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180213,20180215,,,49.070978,-122.694594
+68,,1,2,Below Ground Municipal,1001844004,,1907103771,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180213,20180215,,,49.070959,-122.694593
+69,,1,2,Below Ground Municipal,1001844005,,1908003773,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180213,20180215,,,49.070979,-122.694342
+70,,1,2,Below Ground Municipal,1001844006,,1908003772,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180213,20180215,,,49.070961,-122.694342
+71,,1,2,Below Ground Municipal,1001844007,,1911303784,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.071181,-122.693422
+72,,1,2,Below Ground Municipal,1001844008,,1911303783,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.071164,-122.693422
+73,,1,2,Below Ground Municipal,1001844009,,1911303773,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.070984,-122.693419
+74,,1,2,Below Ground Municipal,1001844010,,1911303772,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.070966,-122.693419
+75,,1,2,Below Ground Municipal,1001844015,,1914303773,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.070989,-122.692590
+76,,1,2,Below Ground Municipal,1001844016,,1914303772,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.070969,-122.692590
+77,,1,2,Below Ground Municipal,1001844013,,1914303784,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.071186,-122.692593
+78,,1,2,Below Ground Municipal,1001844014,,1914303783,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.071169,-122.692593
+79,,1,2,Below Ground Municipal,1001843959,,1887103586,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.067609,-122.700125
+80,,1,2,Below Ground Municipal,1001843960,,1887103585,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.067592,-122.700118
+81,,1,2,Below Ground Municipal,1001843957,,1891803579,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.067497,-122.698808
+82,,1,2,Below Ground Municipal,1001843958,,1891803580,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180215,,,49.067515,-122.698808
+83,,1,2,Below Ground Municipal,1001843961,,1900803581,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067524,-122.696343
+84,,1,2,Below Ground Municipal,1001843962,,1900803580,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067507,-122.696343
+85,,1,3,Below Ground Private,1001408364,,1368909245,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id2p32,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p32.pdf,49.170304,-122.842499
+86,,1,0,Above Ground Municipal,1001408493,,1679108242,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id2p45,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p45.pdf,49.152007,-122.756990
+87,,1,2,Below Ground Municipal,1000813227,,1285706800,,,,In Service,Open,1978,Surrey,9279,,,Final AB,,,,,,,,20061123,20070420,no_id2p61,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p61.pdf,49.126083,-122.865577
+88,,1,0,Above Ground Municipal,1000429332,370782,1265606039,1000,,,In Service,Open,,Surrey,7803-0412-00,,SEE SS-070-617,Final AB,20070820,,,,,,,20060315,,no_id2p70,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p70.pdf,49.112322,-122.871153
+89,,1,0,Above Ground Municipal,1000429575,370773,1767606305,,,,In Service,Open,2006,Surrey,99029,,,Final AB,,,,,,,,20060213,,no_id2p77,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p77.pdf,49.116910,-122.732760
+90,,1,1,Above Ground Private,1000429351,108644,1433709013,,,,History,Open,1988,Surrey,7886-5100,14340 90 Ave,,Final AB,,,,,,,,20060629,20111116,no_id3p32,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id3p32.pdf,49.166074,-122.824630
+91,,1,0,Above Ground Municipal,1001408370,,1432908978,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id4p32,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id4p32.pdf,49.165445,-122.824850
+92,,1,1,Above Ground Private,1000429440,200278,1456507917,,,,,,1992,Private,7891-0103-00,,,Final AB,,,,,,,,20060629,20101026,1134,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1134.pdf,49.146233,-122.818407
+93,,1,0,Above Ground Municipal,1000429470,370747,1490507885,,,,In Service,Open,2000,Surrey,7899-0172-00,,,Final AB,,,,,,,,20030729,,no_id1p53,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p53.pdf,49.145648,-122.809049
+94,,1,2,Below Ground Municipal,1001408148,,1262005615,,,,,,,Surrey,,,,,,,,,,,,20120416,,no_id1p70,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p70.pdf,49.104651,-122.872165
+95,,1,3,Below Ground Private,1001596167,,1362506722,,,,In Service,Open,2013,Private,7807-0309-00,,7.32m X 3.66m X 0.91m,Final AB,,,,,,,,20130523,20130523,,,49.124660,-122.844409
+96,,1,2,Below Ground Municipal,1001718493,,1901103300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062431,-122.696286
+97,,1,2,Below Ground Municipal,1001718494,,1901103299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062411,-122.696286
+98,,1,2,Below Ground Municipal,1001718495,,1901103288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062215,-122.696293
+99,,1,2,Below Ground Municipal,1001718496,,1901103289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062236,-122.696293
+100,,1,2,Below Ground Municipal,1001718497,,1902103289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062235,-122.696025
+101,,1,2,Below Ground Municipal,1001718498,,1902103288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062215,-122.696025
+102,,1,3,Below Ground Private,1001562834,,1422911381,,,,In Service,Open,2012,Surrey,7808-0070-00,,Size: 6.4x2.74x0.45,Final AB,,,,,,,,20130111,20130111,,,49.208938,-122.827477
+103,,1,0,Above Ground Municipal,1000429396,370750,1604409908,68.5,,,In Service,Open,2003,Surrey,7801-0194-00,,,Final AB,,,,,,,,20031119,,,,49.182188,-122.777462
+104,,1,2,Below Ground Municipal,1000429397,370771,1608409782,,,,In Service,Open,2005,Surrey,7802-0008-00,,2400 X 2400 BOX CULVERT,Final AB,,,,,,,,20050812,,,,49.179918,-122.776367
+105,,1,1,Above Ground Private,1001408086,,1838202097,,,,,,,Surrey,,,,,,,,,,,,20120413,,no_id4p127,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id4p127.pdf,49.040699,-122.713724
+106,,1,3,Below Ground Private,1001593224,,1377806159,,,,In Service,Open,,Private,7807-0020-00,,,Final AB,,,,,,,,20130425,20130425,,,49.114467,-122.840227
+107,,1,2,Below Ground Municipal,1000429415,370754,1520508132,108,,5,In Service,Open,2001,Surrey,7897-0079-00,,,Final AB,,,,,,,,20040322,,no_id1p44,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p44.pdf,49.150097,-122.800737
+108,,1,2,Below Ground Municipal,1000429416,370755,1524708132,135,,5,In Service,Open,2001,Surrey,7897-0079-00,,,Final AB,,,,,,,,20040322,,,,49.150102,-122.799559
+109,,1,0,Above Ground Municipal,1000429418,349443,1476401940,,,,In Service,Open,1993,Surrey,D-2402,,,Final AB,,,,,,,,20060629,,0002,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0002.pdf,49.038062,-122.813347
+110,,1,0,Above Ground Municipal,1000429419,349444,1510302255,,,,In Service,Open,1985,Surrey,7884-456,,,Final AB,,,,,,,,20060629,,0009,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0009.pdf,49.043760,-122.803991
+111,,1,0,Above Ground Municipal,1000429420,349445,1490001636,,,,In Service,Open,1980,Surrey,9171,,,Final AB,,,,,,,,20060629,,0003,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0003.pdf,49.032565,-122.809621
+112,,1,0,Above Ground Municipal,1000429421,349446,1485601581,,,,In Service,Open,1980,Surrey,9171,,,Final AB,,,,,,,,20060629,,0004,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0004.pdf,49.031575,-122.810815
+113,,1,0,Above Ground Municipal,1000429426,370762,1580110890,623,,,In Service,Open,2001,Surrey,7800-0139-00,,,Final AB,,,,,,,,20040513,,no_id1p14,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p14.pdf,49.199967,-122.784098
+114,,1,0,Above Ground Municipal,1000429427,46063,1618610458,,,,In Service,Open,1981,Surrey,7881-256,,,Final AB,,,,,,,,20060629,20090302,0649,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0649.pdf,49.192140,-122.773484
+115,,1,1,Above Ground Private,1001408069,,1753700114,,,,,,,Surrey,,,,,,,,,,,,20120413,,,,49.004874,-122.737193
+116,,1,0,Above Ground Municipal,1001408072,,1651701232,,,,,,,Surrey,,,,,,,,,,,,20120413,,0019,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0019.pdf,49.025164,-122.765134
+117,,1,2,Below Ground Municipal,1001408073,,1632800845,,,,,,,Surrey,,,,,,,,,,,,20120413,,0021,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0021.pdf,49.018186,-122.770386
+118,,1,1,Above Ground Private,1001408085,,1838202148,,,,,,,Surrey,,,,,,,,,,,,20120413,,no_id5p127,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id5p127.pdf,49.041639,-122.713737
+119,,1,2,Below Ground Municipal,1001408074,,1634701371,,,,,,,Surrey,,,,,,,,,,,,20120413,,0020,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0020.pdf,49.027693,-122.769799
+120,,1,1,Above Ground Private,1001408195,,1541110607,,,,,,,Surrey,,,,,,,,,,,,20120416,,0648,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0648.pdf,49.194870,-122.794886
+121,,1,3,Below Ground Private,1001722475,,1818206599,,,,In Service,Open,2013,Private,7811-0229-00,,,Initial AB,,,,,,,,20140103,20140103,,,49.122187,-122.718780
+122,,1,3,Below Ground Private,1001722476,,1817006599,,,,In Service,Open,2013,Private,7811-0229-00,,,Final AB,,,,,,,,20140103,20140103,,,49.122186,-122.719123
+123,,1,2,Below Ground Municipal,1001408146,,1357406080,,,,,,,Surrey,,,,,,,,,,,,20120416,20140113,no_id1p71,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p71.pdf,49.113039,-122.845847
+124,,0,0,Above Ground Municipal,1000429441,266774,1731005913,,,,Abandoned,Closed,1984,Surrey,7883-250,,,Final AB,,,,,,,,20060629,20140212,0078,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0078.pdf,49.109830,-122.742884
+125,,1,3,Below Ground Private,1001729346,,1838206214,,,,In Service,Open,2000,Private,7898-0097-00,,,Final AB,,,,,,,,20140213,20140213,,,49.115206,-122.713318
+126,,1,3,Below Ground Private,1001729345,,1839106214,,,,In Service,Open,2000,Private,7898-0097-00,,,Final AB,,,,,,,,20140213,20140213,,,49.115206,-122.713067
+127,,1,0,Above Ground Municipal,1001730860,,1888902475,,,,,,,Surrey,,,,,,,,,,,,20140220,,,,49.047511,-122.699744
+128,,1,2,Below Ground Municipal,1001735196,,1563211246,,,,In Service,Open,2008,Surrey,7804-0324-00,,,Final AB,,,,,,,,20140318,20140318,,,49.206428,-122.788720
+129,,1,3,Below Ground Private,1001739237,,1953106524,,,,In Service,Open,2014,Surrey,7809-0193-00,,,Final AB,,,,,,,,20140403,,,,49.120733,-122.681595
+130,,1,0,Above Ground Municipal,1000429455,281119,1851105667,,,,In Service,Open,1987,Surrey,7886-0442-00,,,Final AB,,,,,,,,20060629,20140723,0076,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0076.pdf,49.105301,-122.709810
+131,,1,0,Above Ground Municipal,1000429449,281113,1853005958,,,,In Service,Open,1990,Surrey,7886-0680-00,,,Final AB,,,,,,,,20060629,20140723,0077,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0077.pdf,49.110571,-122.709249
+132,,1,0,Above Ground Municipal,1000429446,281110,1846606027,,,,In Service,Open,1990,Surrey,7887-0563-00,,,Final AB,,,,,,,,20060629,20140723,0092,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0092.pdf,49.111810,-122.711021
+133,,1,0,Above Ground Municipal,1000429451,281115,1865105818,,,,In Service,Open,1990,Surrey,7888-0574-00,,,Final AB,,,,,,,,20060629,20140723,0067,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0067.pdf,49.108022,-122.705942
+134,,1,0,Above Ground Municipal,1000429452,281116,1906905800,,,,In Service,Open,1988,Surrey,7887-0134-00,,,Final AB,,,,,,,,20060629,20140723,0064,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0064.pdf,49.107662,-122.694422
+135,,1,0,Above Ground Municipal,1000429454,281118,1879205715,,,,In Service,Open,1989,Surrey,7887-0139-00,,,Final AB,,,,,,,,20060629,20140723,0066,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0066.pdf,49.106158,-122.702055
+136,,1,2,Below Ground Municipal,1000429450,281114,1884505832,,,,In Service,Open,1990,Surrey,7887-0134-00,,WITH BAFFLES,Final AB,,,,,,,,20060629,20140723,0103,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0103.pdf,49.108267,-122.700586
+137,,1,0,Above Ground Municipal,1000429448,281112,1911406013,,,,In Service,Open,1988,Surrey,7886-0347-00,,,Final AB,,,,,,,,20060629,20140723,0062,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0062.pdf,49.111520,-122.693164
+138,,1,1,Above Ground Private,1001408087,,1820102150,,,,,,,Surrey,,,,,,,,,,,,20120413,,no_id3p127,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id3p127.pdf,49.041687,-122.718714
+139,,1,3,Below Ground Private,1001408101,,1524101919,,,,,,,Surrey,,,,,,,,,,,,20120413,,no_id1p124,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p124.pdf,49.037670,-122.800213
+140,,1,1,Above Ground Private,1001408104,,1554202316,,,,,,,Surrey,,,,,,,,,,,,20120413,,,,49.044830,-122.791896
+141,,1,0,Above Ground Municipal,1001408107,,1579702002,,,,,,,Surrey,,,,,,,,,,,,20120413,,0048,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0048.pdf,49.039135,-122.784891
+142,,1,1,Above Ground Private,1001408109,,1509801974,,,,,,,Surrey,,,,,,,,,,,,20120413,,0006,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0006.pdf,49.038666,-122.804130
+143,,1,3,Below Ground Private,1001408114,,1397001653,,,,,,,Surrey,,,,,,,,,,,,20120413,,0042,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0042.pdf,49.032909,-122.835219
+144,,1,1,Above Ground Private,1001408115,,1291801573,,,,,,,Surrey,,,,,,,,,,,,20120413,,0034,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0034.pdf,49.031496,-122.864176
+145,,1,1,Above Ground Private,1001408117,,1290801594,,,,,,,Surrey,,,,,,,,,,,,20120413,,0036,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0036.pdf,49.031879,-122.864436
+146,,1,0,Above Ground Municipal,1001408122,,1522202914,,,,,,,Surrey,,,,,,,,,,,,20120413,,0056,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0056.pdf,49.055679,-122.800655
+147,,1,1,Above Ground Private,1001408123,,1542002467,,,,,,,Surrey,,,,,,,,,,,,20120413,,0058,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0058.pdf,49.047578,-122.795233
+148,,1,1,Above Ground Private,1001408125,,1494102975,,,,,,,Surrey,,,,,,,,,,,,20120413,,0013,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0013.pdf,49.056789,-122.808380
+149,,1,2,Below Ground Municipal,1001408126,,1494802574,,,,,,,Surrey,,,,,,,,,,,,20120413,,0012,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0012.pdf,49.049543,-122.808214
+150,,1,1,Above Ground Private,1001408128,,1341805488,,,,,,,Surrey,,,,,,,,,,,,20120413,,0536,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0536.pdf,49.102330,-122.850194
+151,,1,1,Above Ground Private,1001408129,,1932606141,,,,,,,Surrey,,,,,,,,,,,,20120413,,0118,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0118.pdf,49.113816,-122.687301
+152,,1,0,Above Ground Municipal,1001408137,,1920306149,,,,,,,Surrey,,,,,,,,,,,,20120416,,0074,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0074.pdf,49.113978,-122.690681
+153,,1,0,Above Ground Municipal,1001408139,,1862606224,,,,,,,Surrey,,,,,,,,,,,,20120416,,0100,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0100.pdf,49.115373,-122.706587
+154,,1,0,Above Ground Municipal,1001408140,,1830505873,,,,,,,Surrey,,,,,,,,,,,,20120416,,0081,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0081.pdf,49.109037,-122.715463
+155,,1,2,Below Ground Municipal,1001408145,,1518006378,,,,,,,Surrey,,,,,,,,,,,,20120416,,0507,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0507.pdf,49.118357,-122.801571
+156,,1,2,Below Ground Municipal,1000429444,281108,1916206170,,,,In Service,Open,1988,Surrey,7887-0126-00,,,Final AB,,,,,,,,20060629,20140723,0069,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0069.pdf,49.114365,-122.691815
+157,,1,0,Above Ground Municipal,1000429456,281120,1917705641,,,,In Service,Open,1988,Surrey,7886-0340-00,,,Final AB,,,,,,,,20060629,20140723,0068,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0068.pdf,49.104776,-122.691466
+158,,1,0,Above Ground Municipal,1000429460,290286,1944506173,,,,In Service,Open,1982,Surrey,A-428,,,Final AB,,,,,,,,20060629,20140723,0119,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0119.pdf,49.114393,-122.684012
+159,,1,0,Above Ground Municipal,1001819835,,1476411620,,,,In Service,Open,,Provincial,,,,,,,,,,,,20150424,20160401,,,49.213237,-122.812685
+160,,1,0,Above Ground Municipal,1001819836,,1478011565,,,,In Service,Open,,Provincial,,,,,,,,,,,,20150424,20160401,,,49.212236,-122.812241
+161,,1,2,Below Ground Municipal,1001816533,,1897203569,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067295,-122.697346
+162,,1,2,Below Ground Municipal,1001816560,,1899903568,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067292,-122.696602
+163,,1,2,Below Ground Municipal,1001816561,,1899903567,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067274,-122.696602
+164,,1,2,Below Ground Municipal,1001816583,,1905203568,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067287,-122.695129
+165,,1,2,Below Ground Municipal,1001816584,,1905203567,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067268,-122.695129
+166,,1,2,Below Ground Municipal,1001816599,,1911903567,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067263,-122.693300
+167,,1,2,Below Ground Municipal,1001816600,,1911903568,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067281,-122.693299
+168,,1,2,Below Ground Municipal,1001816616,,1914703568,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067278,-122.692525
+169,,1,2,Below Ground Municipal,1001816617,,1914703567,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20160706,,,49.067260,-122.692525
+170,,1,2,Below Ground Municipal,1001816325,,1911903420,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160728,,,49.064598,-122.693302
+171,,1,2,Below Ground Municipal,1001816326,,1911903419,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160728,,,49.064580,-122.693302
+172,,1,2,Below Ground Municipal,1001816327,,1905203419,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160728,,,49.064590,-122.695142
+173,,1,2,Below Ground Municipal,1001816328,,1905203418,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160728,,,49.064572,-122.695142
+174,,1,2,Below Ground Municipal,1001816324,,1914703419,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160728,,,49.064582,-122.692534
+175,,1,2,Below Ground Municipal,1001816323,,1914703420,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160728,,,49.064600,-122.692534
+176,,1,4,Unknown,1001408152,,1869006796,,,,,,,Surrey,,,,,,,,,,,,20120416,,6730,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/6730.pdf,49.125712,-122.704751
+177,,1,2,Below Ground Municipal,1001815874,,1897803445,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160630,20160630,,,49.065065,-122.697179
+178,,1,2,Below Ground Municipal,1001815875,,1897903445,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160630,20160630,,,49.065066,-122.697152
+179,,1,3,Below Ground Private,1001408156,,1366606827,,,,,,,Surrey,,,,,,,,,,,,20120416,,0453,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0453.pdf,49.126550,-122.843292
+180,,1,3,Below Ground Private,1001408157,,1381706838,,,,,,,Surrey,,,,,,,,,,,,20120416,,0310,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0310.pdf,49.126749,-122.839128
+181,,1,1,Above Ground Private,1001408162,,1385007093,,,,,,,Surrey,,,,,,,,,,,,20120416,,0456,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0456.pdf,49.131363,-122.838197
+182,,1,0,Above Ground Municipal,1001408163,,1437007027,,,,,,,Surrey,,,,,,,,,,,,20120416,,1126,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1126.pdf,49.130134,-122.823860
+183,,1,0,Above Ground Municipal,1001408165,,1365006683,,,,,,,Surrey,,,,,,,,,,,,20120416,,0472,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0472.pdf,49.123950,-122.843716
+184,,1,2,Below Ground Municipal,1001816122,,1897803542,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066815,-122.697169
+185,,1,1,Above Ground Private,1001408176,,1335907125,,,,,,,Surrey,,,,,,,,,,,,20120416,,0393,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0393.pdf,49.131958,-122.851741
+186,,1,1,Above Ground Private,1001408177,,1336707164,,,,,,,Surrey,,,,,,,,,,,,20120416,,0391,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0391.pdf,49.132667,-122.851492
+187,,1,2,Below Ground Municipal,1001816123,,1897903542,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066815,-122.697141
+188,,1,2,Below Ground Municipal,1001816120,,1899203503,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066106,-122.696790
+189,,1,3,Below Ground Private,1001408181,,1210306435,,,,,,,Surrey,,,,,,,,,,,,20120416,,0539,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0539.pdf,49.119507,-122.886386
+190,,1,1,Above Ground Private,1001408183,,1197207104,,,,,,,Surrey,,,,,,,,,,,,20120416,,0379,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0379.pdf,49.131625,-122.889985
+191,,1,1,Above Ground Private,1001408185,,1267007147,,,,,,,Surrey,,,,,,,,,,,,20120416,,0288,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0288.pdf,49.132369,-122.870719
+192,,1,1,Above Ground Private,1001408186,,1259207212,,,,,,,Surrey,,,,,,,,,,,,20120416,,0286,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0286.pdf,49.133552,-122.872871
+193,,1,0,Above Ground Municipal,1001408189,,1227107183,,,,,,,Surrey,,,,,,,,,,,,20120416,,0373,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0373.pdf,49.133032,-122.881716
+194,,1,0,Above Ground Municipal,1001408190,,1608907830,,,,,,,Surrey,,,,,,,,,,,,20120416,,no_id1p55,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p55.pdf,49.144597,-122.776389
+195,,1,1,Above Ground Private,1001408191,,1385510432,,,,,,,Surrey,,,,,,,,,,,,20120416,,0681,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0681.pdf,49.191772,-122.837850
+196,,1,4,Unknown,1001408198,,1615310857,,,,,,,Surrey,,,,,,,,,,,,20120416,,,,49.199365,-122.774361
+197,,1,1,Above Ground Private,1001408199,,1288309639,,,,,,,Surrey,,,,,,,,,,,,20120416,,0578,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0578.pdf,49.177471,-122.864740
+198,,1,1,Above Ground Private,1001408201,,1414010284,,,,,,,Surrey,,,,,,,,,,,,20120416,,0686,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0686.pdf,49.189094,-122.829996
+199,,1,1,Above Ground Private,1001408206,,1491510077,,,,,,,Surrey,,,,,,,,,,,,20120416,,0747,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0747.pdf,49.185314,-122.808613
+200,,1,1,Above Ground Private,1001408207,,1497510031,,,,,,,Surrey,,,,,,,,,,,,20120416,,0748,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0748.pdf,49.184482,-122.806952
+201,,1,1,Above Ground Private,1001408217,,1512309885,,,,,,,Surrey,,,,,,,,,,,,20120416,,0691,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0691.pdf,49.181818,-122.802876
+202,,1,1,Above Ground Private,1001408218,,1504910048,,,,,,,Surrey,,,,,,,,,,,,20120416,,0745,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0745.pdf,49.184771,-122.804908
+203,,1,1,Above Ground Private,1001408219,,1511310034,,,,,,,Surrey,,,,,,,,,,,,20120416,,no_id3p23,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id3p23.pdf,49.184519,-122.803143
+204,,1,1,Above Ground Private,1001408220,,1521910049,,,,,,,Surrey,,,,,,,,,,,,20120416,,0640,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0640.pdf,49.184791,-122.800219
+205,,1,1,Above Ground Private,1001408221,,1531410249,,,,,,,Surrey,,,,,,,,,,,,20120416,,0642,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0642.pdf,49.188407,-122.797579
+206,,1,4,Unknown,1001408222,,1546610072,,,,,,,Surrey,,,,,,,,,,,,20120416,,,,49.185202,-122.793409
+207,,1,0,Above Ground Municipal,1001408223,,1549309894,,,,,,,Surrey,,,,,,,,,,,,20120416,,1060,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1060.pdf,49.181966,-122.792657
+208,,1,0,Above Ground Municipal,1001408224,,1560509628,,,,,,,Surrey,,,,,,,,,,,,20120416,,0789,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0789.pdf,49.177152,-122.789587
+209,,1,0,Above Ground Municipal,1001408225,,1587009752,,,,,,,Surrey,,,,,,,,,,,,20120416,,0636,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0636.pdf,49.179389,-122.782263
+210,,1,1,Above Ground Private,1001408227,,1543710109,,,,,,,Surrey,,,,,,,,,,,,20120416,,0641,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0641.pdf,49.185856,-122.794210
+211,,1,2,Below Ground Municipal,1001408228,,1608110178,,,,,,,Surrey,,,,,,,,,,,,20120416,,0808,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0808.pdf,49.187081,-122.776410
+212,,1,1,Above Ground Private,1001408231,,1198509368,,,,,,,Surrey,,,,,,,,,,,,20120416,,0583,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0583.pdf,49.172593,-122.889518
+213,,1,1,Above Ground Private,1001408232,,1197809356,,,,,,,Surrey,,,,,,,,,,,,20120416,,0584,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0584.pdf,49.172373,-122.889728
+214,,1,1,Above Ground Private,1001408233,,1221709265,,,,,,,Surrey,,,,,,,,,,,,20120416,,0814,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0814.pdf,49.170718,-122.883128
+215,,1,0,Above Ground Municipal,1000429414,164548,1524708052,,,,In Service,Open,1986,Surrey,7888-0442,,,Final AB,,,,,,,,20060629,20120606,0596,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0596.pdf,49.148655,-122.799586
+216,,1,1,Above Ground Private,1001862606,,1525511072,,,,In Service,Open,2015,Provincial,Gateway E1,,,Final AB,,,,,,,,20160302,20160302,,,49.203297,-122.799163
+217,,1,3,Below Ground Private,1001788764,,1215810064,,,,In Service,Open,2009,Private,7806-0117-00,,,Final AB,,,,,,,,20141002,20141002,,,49.185180,-122.884723
+218,,1,0,Above Ground Municipal,1001593475,,1679507655,,,,,,,Surrey,,,,,,,,,,,,20130430,,no_id2p55,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p55.pdf,49.141385,-122.756939
+219,,1,0,Above Ground Municipal,1001593477,,1217408188,,,,,,,Surrey,,,,,,,,,,,,20130430,,0677,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0677.pdf,49.151234,-122.884356
+220,,1,0,Above Ground Municipal,1000429376,195244,1429507881,,,,In Service,Open,1987,Surrey,7885-2890-00,,,Final AB,,,,,,,,20060629,20140721,0659,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0659.pdf,49.145605,-122.825870
+221,,1,0,Above Ground Municipal,1001593481,,1547808874,,,,,,,Surrey,,,,,,,,,,,,20130430,,0611,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0611.pdf,49.163516,-122.793176
+222,,1,0,Above Ground Municipal,1001593484,,1225505613,,,,,,,Surrey,,,,,,,,,,,,20130430,,0533,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0533.pdf,49.104632,-122.882240
+223,,1,0,Above Ground Municipal,1001593485,,1796206662,,,,,,,Surrey,,,,,,,,,,,,20130430,,2027,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/2027.pdf,49.123351,-122.724850
+224,,1,0,Above Ground Municipal,1001593486,,1548308952,,,,,,,Surrey,,,,,,,,,,,,20130430,,1065,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1065.pdf,49.164928,-122.793030
+225,,1,0,Above Ground Municipal,1000429498,261674,1530006269,,,,In Service,Open,1980,Surrey,9370,,,Final AB,,,,,,,,20060629,20140724,0277,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0277.pdf,49.116385,-122.798259
+226,,1,0,Above Ground Municipal,1001408515,,1417807482,,,,In Service,Open,1979,Surrey,3486,,,Final AB,,,,,,,,20120417,20140721,0660,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0660.pdf,49.138384,-122.829132
+227,,1,0,Above Ground Municipal,1000429481,337103,1325901760,,,,In Service,Open,1980,Surrey,9536,,,Final AB,,,,,,,,20060629,20130606,0030,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0030.pdf,49.034876,-122.854759
+228,,1,1,Above Ground Private,1000429364,148852,1372608122,,,,In Service,Open,1989,Private,7886-0720,,,Final AB,,,,,,,,20060629,20130712,0668,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0668.pdf,49.149978,-122.841537
+229,,1,2,Below Ground Municipal,1001733552,,1933406577,,,,In Service,Open,2006,Surrey,7803-0073-00,,,Final AB,,,,,,,,20140310,20140310,,,49.121713,-122.687026
+230,,1,2,Below Ground Municipal,1000429369,156227,1482808475,,,,In Service,Open,1991,Surrey,7887-5450,,,Final AB,,,,,,,,20060629,20140312,0674,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0674.pdf,49.156332,-122.811120
+231,,1,3,Below Ground Private,1001788763,,1215710080,,,,In Service,Open,2009,Private,7806-0117-00,,,Final AB,,,,,,,,20141002,20141002,,,49.185463,-122.884751
+232,,1,0,Above Ground Municipal,1000429381,195251,1421207365,,,,In Service,Open,1980,Surrey,9462,,,Final AB,,,,,,,,20060629,20140721,0661,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0661.pdf,49.136263,-122.828203
+233,,1,0,Above Ground Municipal,1000429380,195250,1406507372,,,,In Service,Open,1979,Surrey,9463,,,Final AB,,,,,,,,20060629,20140721,1008,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1008.pdf,49.136404,-122.832233
+234,,1,0,Above Ground Municipal,1000429379,195249,1406507390,,,,In Service,Open,1979,Surrey,9463,,,Final AB,,,,,,,,20060629,20140721,1007,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1007.pdf,49.136723,-122.832251
+235,,1,2,Below Ground Municipal,1001416724,,1572602292,,,,In Service,Open,2004,Surrey,7802-0354-00,,,Final AB,,,,,,,,20120627,20120627,,,49.044402,-122.786839
+236,,1,3,Below Ground Private,1001598875,,1289102274,,,,In Service,Open,1990,Private,7887-0641-00,,1650 ,Final AB,,,,,,,,20130604,20130604,,,49.044182,-122.864859
+237,,1,1,Above Ground Private,1001408134,,1939705693,,,,In Service,,,Surrey,,,,,,,,,,,,20120416,20130708,0075,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0075.pdf,49.105699,-122.685379
+238,,1,2,Below Ground Municipal,1001718547,,1905203289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062233,-122.695162
+239,,1,2,Below Ground Municipal,1001718548,,1905203288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062213,-122.695162
+240,,1,2,Below Ground Municipal,1001718549,,1906203288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062213,-122.694897
+241,,1,2,Below Ground Municipal,1001718550,,1906203289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062233,-122.694897
+242,,1,2,Below Ground Municipal,1001718705,,1910203288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062210,-122.693793
+243,,1,2,Below Ground Municipal,1001718706,,1910203289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062231,-122.693793
+244,,1,2,Below Ground Municipal,1001718707,,1910203299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062406,-122.693791
+245,,1,2,Below Ground Municipal,1001718708,,1910203300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062426,-122.693791
+246,,1,2,Below Ground Municipal,1001718709,,1911103300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062426,-122.693529
+247,,1,2,Below Ground Municipal,1001718710,,1911103299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062406,-122.693529
+248,,1,2,Below Ground Municipal,1001718711,,1911103289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062230,-122.693530
+249,,1,2,Below Ground Municipal,1001718712,,1911103288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062210,-122.693530
+250,,1,2,Below Ground Municipal,1001718713,,1913603300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062424,-122.692843
+251,,1,2,Below Ground Municipal,1001718714,,1913603299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062404,-122.692844
+252,,1,2,Below Ground Municipal,1001718715,,1913603289,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062229,-122.692846
+253,,1,2,Below Ground Municipal,1001718716,,1913603288,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131115,,,,49.062209,-122.692846
+254,,1,2,Below Ground Municipal,1001719048,,1910203408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064379,-122.693775
+255,,1,2,Below Ground Municipal,1001718893,,1902103408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064391,-122.696015
+256,,1,2,Below Ground Municipal,1001718896,,1905203409,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064394,-122.695146
+257,,1,2,Below Ground Municipal,1001719041,,1915803408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064385,-122.692228
+258,,1,2,Below Ground Municipal,1001719042,,1915803410,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064405,-122.692228
+259,,1,2,Below Ground Municipal,1001719045,,1911203408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064380,-122.693510
+260,,1,2,Below Ground Municipal,1001719046,,1911203409,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064400,-122.693510
+261,,1,0,Above Ground Municipal,1000429394,370761,1386406284,2.3,,15.7,In Service,Open,2002,Surrey,4898-6070-00,,,Final AB,,,,,,,,20040402,20120625,no_id1p72,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p72.pdf,49.116726,-122.837851
+262,,1,0,Above Ground Municipal,1000429370,156228,1482508244,,,,In Service,Open,1982,Surrey,A-531,,,Final AB,,,,,,,,20060629,20140313,0672,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0672.pdf,49.152151,-122.811231
+263,,1,2,Below Ground Municipal,1001593480,,1596809494,,,,In Service,Open,1990,Surrey,7888-0199-00,,,,,,,,,,,20130430,20140319,0613,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0613.pdf,49.174700,-122.779599
+264,,1,3,Below Ground Private,1001597221,,1230810112,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,,,,49.186038,-122.880582
+265,,1,3,Below Ground Private,1001597223,,1230410109,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,,,,49.185994,-122.880687
+266,,1,3,Below Ground Private,1001597219,,1232310112,,,,In Service,Open,,Private,7809-0124-00,,5.17mX2.29mX1.37m,Final AB,,,,,,,,20130528,,,,49.186048,-122.880175
+267,,1,3,Below Ground Private,1001597217,,1230310149,,,,In Service,Open,,Private,7809-0124-00,,5.17mX2.29mX1.37m,Final AB,,,,,,,,20130528,,,,49.186704,-122.880725
+268,,1,3,Below Ground Private,1001597218,,1230410132,,,,In Service,Open,,Private,7809-0124-00,,5.17mX2.29mX1.37m,Final AB,,,,,,,,20130528,,,,49.186408,-122.880679
+269,,1,3,Below Ground Private,1001597220,,1230410146,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,20130528,,,49.186647,-122.880691
+270,,1,0,Above Ground Municipal,1000429458,370765,1894106147,2820,,,In Service,Open,1990,Surrey,D-1301,,,Final AB,,,,,,,,20040714,20130702,,,49.113962,-122.697909
+271,,1,2,Below Ground Municipal,1000429445,281109,1897506096,,,,In Service,Open,1984,Surrey,7882-212,,1500 X 3050 BOX,Final AB,,,,,,,,20060629,20130702,0070,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0070.pdf,49.113035,-122.696967
+272,,1,2,Below Ground Municipal,1001604912,,1906506168,,,,In Service,Open,1990,Surrey,7888-0362-00,,1200,Final AB,,,,,,,,20130702,20130702,,,49.114328,-122.694486
+273,,1,0,Above Ground Municipal,1000429457,370764,1890306143,729,,,In Service,Open,1990,Surrey,D-1301,,,Final AB,,,,,,,,20040714,20130702,,,49.113884,-122.698962
+274,,1,0,Above Ground Municipal,1001202006,,1914306689,,,,In Service,Open,2013,Surrey,7807-0204-00,,,Initial AB,,,,,,,,20130717,20130717,,,49.123748,-122.692289
+275,,1,0,Above Ground Municipal,1000429524,181752,1235607248,,,,In Service,Open,1988,Surrey,7887-0970-00,,,Final AB,,,,,,,,20060629,20130723,0317,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0317.pdf,49.134205,-122.879384
+276,,1,0,Above Ground Municipal,1000429339,355528,1552101587,,,,In Service,Open,1990,Surrey,7887-3810,,,Final AB,,,,,,,,20060629,20130723,0053,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0053.pdf,49.031654,-122.792527
+277,,1,3,Below Ground Private,1001597226,,1231710131,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,20140313,,,49.186388,-122.880339
+278,,1,3,Below Ground Private,1001597222,,1232010110,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,20140313,,,49.185995,-122.880243
+279,,1,3,Below Ground Private,1001597224,,1231610101,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,20140313,,,49.185835,-122.880359
+280,,1,2,Below Ground Municipal,1000429366,370785,1400308538,1000,,,In Service,Open,1991,Surrey,7889-0326-00,,,Final AB,,,,,,,,20060612,20120214,0669,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0669.pdf,49.157502,-122.833869
+281,,1,2,Below Ground Municipal,1001360652,,1402408450,,,,In Service,Open,1991,Surrey,7898-0312-00,,,Final AB,,,,,,,,20120214,20120214,0953,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0953.pdf,49.155905,-122.833314
+282,,1,3,Below Ground Private,1001422444,,1232209884,,,,In Service,Open,2012,Private,7810-0065-00,,,Initial AB,,,,,,,,20120821,20120821,,,49.181920,-122.880195
+283,,1,3,Below Ground Private,1001567169,,1325006228,,,,In Service,Open,2012,Private,7809-0262-00,,600mm pipe,Final AB,,,,,,,,20130213,20130213,,,49.115719,-122.854771
+284,,1,3,Below Ground Private,1001567176,,1324106236,,,,In Service,Open,2012,Surrey,7809-0262-00,,450mm pipe,Final AB,,,,,,,,20130213,20130213,,,49.115865,-122.855042
+285,,1,3,Below Ground Private,1001567180,,1324206246,,,,In Service,Open,2012,Private,7809-0262-00,,450mm pipe,Final AB,,,,,,,,20130213,20130213,,,49.116051,-122.855012
+286,,1,3,Below Ground Private,1001567191,,1561809704,,,,In Service,Open,2012,Private,7810-0093-00,,2.743m X 3.2m x 0.46m,Final AB,,,,,,,,20130213,20130213,,,49.178524,-122.789239
+287,,1,1,Above Ground Private,1001408135,,1918205938,,,,,,,Surrey,,,,,,,,,,,,20120416,20130705,0071,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0071.pdf,49.110152,-122.691286
+288,,1,3,Below Ground Private,1001699257,,1519502195,,,,In Service,Open,1990,Private,7886-6270,,,Final AB,,,,,,,,20130820,20130820,,,49.042667,-122.801454
+289,,1,3,Below Ground Private,1001699617,,1639208688,,,,In Service,Open,2013,Private,7810-0075-00,,,Final AB,,,,,,,,20130823,20130823,,,49.160097,-122.767960
+290,,1,3,Below Ground Private,1001699618,,1639208699,,,,In Service,Open,2013,Private,7810-0075-00,,,Final AB,,,,,,,,20130823,20130823,,,49.160301,-122.767967
+291,,1,0,Above Ground Municipal,1001432391,,1254510000,,,,In Service,Open,2010,Surrey,4801-6010-00,Robson Park Det. Pond A,,Final AB,,,,,,,,20120904,20131107,,,49.184011,-122.874049
+292,,1,0,Above Ground Municipal,1001432392,,1258709984,,,,In Service,Open,2010,Surrey,4801-6010-00,Robson Park Det. Pond B,,Final AB,,,,,,,,20120904,20131107,,,49.183713,-122.872887
+293,,1,0,Above Ground Municipal,1001432393,,1267709949,,,,In Service,Open,2011,Surrey,4801-6010-00,Robson Park Det. Pond C,,Final AB,,,,,,,,20120904,20131107,,,49.183073,-122.870408
+294,,1,0,Above Ground Municipal,1001432394,,1267109932,,,,In Service,Open,2010,Surrey,4801-6010-00,Robson Park Det. Pond D,,Final AB,,,,,,,,20120904,20131107,,,49.182774,-122.870575
+295,,1,2,Below Ground Municipal,1001717948,,1899203348,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131107,,,,49.063298,-122.696807
+296,,1,2,Below Ground Municipal,1001717949,,1899103349,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131107,,,,49.063313,-122.696837
+297,,1,2,Below Ground Municipal,1001717950,,1899103395,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131107,,,,49.064148,-122.696832
+298,,1,2,Below Ground Municipal,1001717951,,1899203394,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131107,,,,49.064134,-122.696802
+299,,1,3,Below Ground Private,1001204445,,1471603267,,,,In Service,Open,2013,Private,7809-0236-00,,,Final AB,,,,,,,,20130816,20130816,,,49.062078,-122.814566
+300,,1,2,Below Ground Municipal,1001726587,,1610510141,51.95,1050,10,In Service,Open,2005,Surrey,7802-0163-00,,,Final AB,,,,,,,No,20140128,20140128,,,49.186404,-122.775770
+301,,1,0,Above Ground Municipal,1000429378,195248,1410607413,,,,In Service,Open,1983,Surrey,3486,,,Final AB,,,,,,,,20060629,20140721,1006,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1006.pdf,49.137146,-122.831098
+302,,1,0,Above Ground Municipal,1001593487,,1382007396,,,,,,,Surrey,,,,,,,,,,,,20130430,20140721,1024,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1024.pdf,49.136847,-122.839012
+303,,1,2,Below Ground Municipal,1001756792,,1625008820,,,,In Service,Open,1998,Surrey,7896-0289-00,,,Final AB,,,,,,,,20140721,20140721,,,49.162488,-122.771873
+304,,1,1,Above Ground Private,1001756865,,1347607254,,,,In Service,Open,2000,Surrey,7898-0293-00,,,Final AB,,,,,,,,20140721,20140721,,,49.134279,-122.848484
+305,,1,0,Above Ground Municipal,1000429558,188522,1282107320,,,,In Service,Open,1984,Surrey,7883-2290-00,,,Final AB,,,,,,,,20060629,20140721,0314,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0314.pdf,49.135497,-122.866542
+306,,1,0,Above Ground Municipal,1000429447,281111,1871406017,,,,In Service,Open,1988,Surrey,7887-0288-00,,,Final AB,,,,,,,,20060629,20140721,0063,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0063.pdf,49.111613,-122.704190
+307,,1,3,Below Ground Private,1001788765,,1215910045,,,,In Service,Open,2009,Private,7806-0117-00,,,Final AB,,,,,,,,20141002,20141002,,,49.184841,-122.884698
+308,,1,0,Above Ground Municipal,1000429587,317883,1428003101,,,,In Service,Open,1990,Surrey,7887-3083,,,Final AB,,,,,,,,20060629,20141107,0022,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0022.pdf,49.059102,-122.826584
+309,,1,0,Above Ground Municipal,1001724735,,1643903141,,,,In Service,Open,2014,Surrey,7813-0071-00,,,Final AB,,,,,,,,20141208,20141208,,,49.059723,-122.767134
+310,,1,3,Below Ground Private,1001800992,,1538210515,40.6,,,In Service,Open,2014,Private,7811-0160-00,,,Final AB,,,,,,,,20150108,,,,49.193207,-122.795685
+311,,1,1,Above Ground Private,1001818306,,1360611629,,,,In Service,Open,2014,Provincial,SFPR Seg. 7,,,Final AB,,,,,,,,20150415,20150415,,,49.213445,-122.844653
+312,,1,3,Below Ground Private,1001818011,,1336111615,,,,In Service,Open,2014,Provincial,SFPR Seg. 7,,1200 Conc.,Final AB,,,,,,,,20150415,20150415,,,49.213209,-122.851437
+313,,1,3,Below Ground Private,1001818004,,1332111616,,,,In Service,Open,2014,Provincial,SFPR Seg. 7,,1200 Conc.,Final AB,,,,,,,,20150414,20150415,,,49.213214,-122.852525
+314,,1,3,Below Ground Private,1001819178,,1402211690,,,,In Service,Open,2014,Provincial,SFPR Seg. 7,,2.4 X 1.5 Conc. Box Culv.,Final AB,,,,,,,,20150421,20150421,,,49.214530,-122.833160
+315,,1,3,Below Ground Private,1001819187,1001819178,1402211689,,,,In Service,Open,2014,Provincial,SFPR Seg. 7,,2.4 X 1.5 Conc. Box Culv.,Final AB,,,,,,,,20150421,20150421,,,49.214509,-122.833161
+316,,1,3,Below Ground Private,1001819309,,1428711677,,,,In Service,Open,2013,Provincial,SFPR Seg. 7,,1800 X 1200 Conc. Box Culvert,Final AB,,,,,,,,20150421,20150421,,,49.214283,-122.825859
+317,,1,3,Below Ground Private,1001819310,,1428711677,,,,In Service,Open,2013,Provincial,SFPR Seg. 7,,1800 X 1200 Conc. Box Culvert,Final AB,,,,,,,,20150421,20150421,,,49.214298,-122.825860
+318,,1,2,Below Ground Municipal,1000429429,370756,1590408037,27.6,,,In Service,Open,2000,Surrey,7897-0114-00,,TO BE REMOVED WHEN DOWNSTREAM WORKS COMPLETED,Final AB,,,,,,,,20040322,,,,49.148346,-122.781462
+319,,1,3,Below Ground Private,1001818030,,1339111615,,,,In Service,Open,2014,Provincial,SFPR Seg. 7,,1200 Conc.,Final AB,,,,,,,,20150415,20150812,,,49.213206,-122.850597
+320,,1,3,Below Ground Private,1001834839,,1506008857,,,,In Service,Open,2015,Private,7808-0302-00,,,Final AB,,,,,,,,20150818,20151006,,,49.163223,-122.804685
+321,,1,2,Below Ground Municipal,1001815873,,1897903475,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065595,-122.697149
+322,,1,2,Below Ground Municipal,1001815872,,1897803475,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065595,-122.697176
+323,,1,2,Below Ground Municipal,1001815897,,1899103443,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065031,-122.696823
+324,,1,0,Above Ground Municipal,1000429437,370776,1490009781,,,,In Service,Open,1981,Surrey,A-296,,,Final AB,,,,,,,,19940224,,0687,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0687.pdf,49.179949,-122.809048
+325,,1,2,Below Ground Municipal,1001718897,,1905203407,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064374,-122.695146
+326,,1,2,Below Ground Municipal,1001815896,,1899203444,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065031,-122.696796
+327,,1,2,Below Ground Municipal,1001718895,,1906203409,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064395,-122.694883
+328,,1,2,Below Ground Municipal,1000822423,,1392509137,,,,In Service,Open,1991,Surrey,7888-0226-00,,,Final AB,,,,,,,,20070404,20140514,,,49.168341,-122.836005
+329,,1,2,Below Ground Municipal,1001815898,,1899103473,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065560,-122.696820
+330,,1,2,Below Ground Municipal,1001815899,,1899203473,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065560,-122.696793
+331,,1,0,Above Ground Municipal,1000429355,108649,1416708850,,,,In Service,Open,1990,Surrey,7887-0523-00,,,Final AB,,,,,,,,20060629,20140514,0654,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0654.pdf,49.163131,-122.829342
+332,,1,2,Below Ground Municipal,1001816117,,1897803498,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066009,-122.697173
+333,,1,2,Below Ground Municipal,1001816118,,1897903498,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066009,-122.697146
+334,,1,2,Below Ground Municipal,1001816129,,1897803530,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066598,-122.697170
+335,,1,2,Below Ground Municipal,1001816128,,1897903530,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066598,-122.697142
+336,,1,0,Above Ground Municipal,1000429356,108650,1404608845,,,,In Service,Open,1988,Surrey,7886-0225-00,,,Final AB,,,,,,,,20060629,20140514,0655,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0655.pdf,49.163045,-122.832664
+337,,1,0,Above Ground Municipal,1000429462,370768,1604303033,,,,In Service,Open,2003,Surrey,7899-0179-00,,,Final AB,,,,,,,,20041021,,no_id1p115,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p115.pdf,49.057791,-122.778055
+338,,1,0,Above Ground Municipal,1000429464,370759,1429210568,1000,,,In Service,Open,1999,Surrey,4898-605,,,Final AB,,,,,,,,20040325,,no_id1p12,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p12.pdf,49.194819,-122.825530
+339,,1,3,Below Ground Private,1001608656,,1203206451,,,,In Service,Open,2013,Private,7807-0175-00,,,Final AB,,,,,,,,20130813,20130813,,,49.119797,-122.888352
+340,,1,2,Below Ground Municipal,1000429409,123531,1595008863,,,,In Service,Open,1990,Surrey,7884-1091-00,15966 88A Avenue,,Final AB,,,,,,,,20060629,20120619,0612,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0612.pdf,49.163274,-122.780138
+341,,1,0,Above Ground Municipal,1001562334,,1608402188,,1.5,,In Service,Open,2008,Surrey,7804-0112-00,,,Final AB,,,,,,,Yes,20130103,20130103,,,49.042498,-122.776990
+342,,1,2,Below Ground Municipal,1001578499,,1618303131,,,,In Service,Open,2013,Surrey,7805-0349-00,,,Final AB,,,,,,,,20130306,20130306,,,49.059561,-122.774188
+343,,1,3,Below Ground Private,1001603849,,1563811188,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.205383,-122.788566
+344,,1,3,Below Ground Private,1001603850,,1563511184,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.205311,-122.788646
+345,,1,3,Below Ground Private,1001603851,,1563411179,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.205218,-122.788676
+346,,1,3,Below Ground Private,1001603852,,1561711196,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.205523,-122.789152
+347,,1,3,Below Ground Private,1001603853,,1561711187,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.205370,-122.789153
+348,,1,3,Below Ground Private,1001603854,,1561711181,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.205253,-122.789153
+349,,1,3,Below Ground Private,1001603855,,1561711172,,,,In Service,Open,2013,Private,7811-0049-00,,,Initial AB,,,,,,,,20130625,,,,49.205086,-122.789160
+350,,1,3,Below Ground Private,1001603856,,1561711163,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.204928,-122.789159
+351,,1,3,Below Ground Private,1001603857,,1561711156,,,,In Service,Open,2013,Private,7811-0049-00,,,Final AB,,,,,,,,20130625,,,,49.204792,-122.789151
+352,,1,2,Below Ground Municipal,1001604965,,1889305850,,,,In Service,Open,1990,Surrey,7887-0134-00,,,Final AB,,,,,,,,20130703,20130703,,,49.108578,-122.699249
+353,,1,0,Above Ground Municipal,1000820555,,1413402759,,,,In Service,Open,1980,Surrey,9444,,,Final AB,,,,,,,,20070307,20130723,0024,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0024.pdf,49.052914,-122.830616
+354,,1,3,Below Ground Private,1001713781,,1299708086,,,,,Open,2013,Private,7810-0158-00,,,Final AB,,,,,,,,20131010,20131010,,,49.149354,-122.861670
+355,,1,3,Below Ground Private,1001713716,,1231809956,5.56,,0.66,In Service,Open,2013,Private,7810-0172-00,,,Final AB,,,,,,,,20131010,20131010,,,49.183222,-122.880303
+356,,1,3,Below Ground Private,1001713717,,1231809964,5.56,,0.66,In Service,Open,2013,Private,7810-0172-00,,,Final AB,,,,,,,,20131010,20131010,,,49.183356,-122.880302
+357,,1,0,Above Ground Municipal,1000429544,69068,1370409935,,,,In Service,Open,2010,Surrey,4801-6050-00,9920blk Whalley Blvd,,Final AB,,,,,,,,20131106,20131106,1057,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1057.pdf,49.182791,-122.842041
+358,,1,2,Below Ground Municipal,1001717817,,1899103235,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131106,,,,49.061262,-122.696849
+359,,1,2,Below Ground Municipal,1001717816,,1899203234,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131106,,,,49.061247,-122.696819
+360,,1,2,Below Ground Municipal,1001717810,,1899103260,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131106,,,,49.061704,-122.696847
+361,,1,2,Below Ground Municipal,1001717846,,1899103308,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131106,20131106,,,49.062584,-122.696842
+362,,1,0,Above Ground Municipal,1000429578,142922,1347108637,,,,In Service,Open,1978,Surrey,9438,,,Final AB,,,,,,,,20060629,20140717,1114,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1114.pdf,49.159304,-122.848564
+363,,1,2,Below Ground Municipal,1001788491,,1477205988,,,,In Service,Open,2003,Surrey,7801-0225-00,,,Final AB,,,,,,,,20141001,20141001,,,49.111331,-122.812840
+364,,1,3,Below Ground Private,1001739236,,1953206524,,,,In Service,Open,2014,Surrey,7809-0193-00,,,Final AB,,,,,,,,20140403,,,,49.120733,-122.681563
+365,,1,0,Above Ground Municipal,1000429363,148851,1402508142,,,,In Service,Open,1985,Surrey,A505,,,Final AB,,,,,,,,20060629,20140717,0935,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0935.pdf,49.150335,-122.833290
+366,,1,2,Below Ground Municipal,1001726639,,1897903210,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141017,20141017,,,49.060813,-122.697174
+367,,1,2,Below Ground Municipal,1001408410,,1648209340,,,,,,,Surrey,,,,,,,,,,,,20120417,,0619,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0619.pdf,49.171886,-122.765431
+368,,1,1,Above Ground Private,1001408425,,1216608277,,,,,,,Surrey,,,,,,,,,,,,20120417,,0678,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0678.pdf,49.152841,-122.884584
+369,,1,1,Above Ground Private,1001408439,,1327408584,,,,,,,Surrey,,,,,,,,,,,,20120417,,0663,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0663.pdf,49.158363,-122.854001
+370,,1,0,Above Ground Municipal,1001408442,,1318008406,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id2p41,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p41.pdf,49.155149,-122.856587
+371,,1,2,Below Ground Municipal,1001408455,,1400008760,,,,,,,Surrey,,,,,,,,,,,,20120417,,0948,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0948.pdf,49.161514,-122.833964
+372,,1,0,Above Ground Municipal,1001408458,,1471208103,,,,,,,Surrey,,,,,,,,,,,,20120417,,6063,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/6063.pdf,49.149593,-122.814361
+373,,1,1,Above Ground Private,1001408491,,1629408628,,,,,,,Surrey,,,,,,,,,,,,20120417,,1068,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1068.pdf,49.159023,-122.770672
+374,,1,0,Above Ground Municipal,1001408498,,1238107413,,,,,,,Surrey,,,,,,,,,,,,20120417,,0316,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0316.pdf,49.137191,-122.878681
+375,,1,1,Above Ground Private,1001408504,,1201507906,,,,,,,Surrey,,,,,,,,,,,,20120417,,0321,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0321.pdf,49.146131,-122.888757
+376,,1,1,Above Ground Private,1001408506,,1210707913,,,,,,,Surrey,,,,,,,,,,,,20120417,,0323,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0323.pdf,49.146262,-122.886218
+377,,1,1,Above Ground Private,1001408509,,1273307741,,,,,,,Surrey,,,,,,,,,,,,20120417,,1000,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1000.pdf,49.143117,-122.868968
+378,,1,0,Above Ground Municipal,1001408511,,1225607478,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id1p50,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p50.pdf,49.138376,-122.882135
+379,,1,0,Above Ground Municipal,1001408512,,1226607381,,,,,,,Surrey,,,,,,,,,,,,20120417,,no_id2p50,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p50.pdf,49.136616,-122.881856
+380,,1,0,Above Ground Municipal,1000429553,79502,1570809755,,,,In Service,Open,1981,Surrey,A-352,,,Final AB,,,,,,,,20060629,20140422,0635,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0635.pdf,49.179451,-122.786740
+381,,1,1,Above Ground Private,1001713498,,1731505731,,,,,,,Surrey,,,,,,,,,,,,20131004,,,,49.106543,-122.742753
+382,,1,0,Above Ground Municipal,1000429550,79499,1587909883,,,,In Service,Open,1984,Surrey,A-572,,,Final AB,,,,,,,,20060629,20140422,0637,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0637.pdf,49.181750,-122.782016
+383,,1,3,Below Ground Private,1000429552,79501,1523809788,,,,In Service,Open,1988,Private,7887-0450-00,,,Final AB,,,,,,,,20060629,20140422,0780,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0780.pdf,49.180066,-122.799723
+384,,1,0,Above Ground Municipal,1000429511,92944,1224009145,,,,In Service,Open,1983,Surrey,A-363,,,Final AB,,,,,,,,20060629,20140430,0815,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0815.pdf,49.168535,-122.882509
+385,,1,0,Above Ground Municipal,1000429430,73568,1477810169,,,,In Service,Open,1980,Surrey,9373,,,Final AB,,,,,,,,20060629,20140509,0749,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0749.pdf,49.186974,-122.812400
+386,,1,1,Above Ground Private,1000429431,73569,1501709999,,,,In Service,Open,1980,Surrey,A-094,150 St & 100 Ave,2 DPs,Final AB,,,,,,,,20060629,20140509,0623,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0623.pdf,49.183900,-122.805804
+387,,1,1,Above Ground Private,1000429432,73570,1501509965,,,,In Service,Open,1980,Surrey,A-094,150 St & 100 Ave,2 DPs,Final AB,,,,,,,,20060629,20140509,0624,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0624.pdf,49.183276,-122.805865
+388,,1,0,Above Ground Municipal,1000429433,73571,1480909910,,,,In Service,Open,1986,Surrey,7884-2140-00,,,Final AB,,,,,,,,20060629,20140509,0628,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0628.pdf,49.182293,-122.811549
+389,,1,0,Above Ground Municipal,1000429434,73572,1506209894,,,,In Service,Open,1982,Surrey,A-478,,,Final AB,,,,,,,,20060629,20140509,0625,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0625.pdf,49.181998,-122.804554
+390,,1,0,Above Ground Municipal,1000429436,73576,1501109681,,,,In Service,Open,1983,Surrey,A-419,,,Final AB,,,,,,,,20060629,20140509,0688,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0688.pdf,49.178138,-122.805996
+391,,1,1,Above Ground Private,1001408212,,1505810002,,,,In Service,,,Private,,,,,,,,,,,,20120416,20140509,0629,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0629.pdf,49.183947,-122.804669
+392,,1,3,Below Ground Private,1001750457,,1335207284,,,,In Service,Open,2014,Surrey,7811-0175-00,,,Final AB,,,,,,,,20140526,,,,49.134824,-122.851902
+393,,1,2,Below Ground Municipal,1000862510,,1385909638,,,,In Service,Open,,Surrey,3291,,,Final AB,,,,,,,,20081113,20140526,,,49.177405,-122.837793
+394,,1,2,Below Ground Municipal,1001827596,,1639709279,,,,In Service,Open,1991,Surrey,7887-0389-00,,1.5 X 2.4 Conc. Box,Final AB,,,,,,,,20150610,20150610,,,49.170788,-122.767756
+395,,1,0,Above Ground Municipal,1000429385,252599,1342106196,,,,In Service,Open,1986,Surrey,7882-0140-00,,,Final AB,,,,,,,,20060629,20150924,0273,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0273.pdf,49.115149,-122.850071
+396,,1,2,Below Ground Municipal,1000429471,360076,1620901625,,,,In Service,Open,1990,Surrey,7888-0180,,,Final AB,,,,,,,,20060629,,0061,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0061.pdf,49.032299,-122.773602
+397,,1,0,Above Ground Municipal,1000429479,337101,1299302221,,,,In Service,Open,1990,Surrey,7886-2240 / 7886-453,,,Final AB,,,,,,,,20060629,,0025,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0025.pdf,49.043216,-122.862068
+398,,1,0,Above Ground Municipal,1000429482,337104,1313901729,,,,In Service,Open,1980,Surrey,9536,,,Final AB,,,,,,,,20060629,,0027,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0027.pdf,49.034319,-122.858070
+399,,1,0,Above Ground Municipal,1000429483,337105,1325801602,,,,In Service,Open,1979,Surrey,9366,,,Final AB,,,,,,,,20060629,,0031,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0031.pdf,49.032016,-122.854807
+400,,1,0,Above Ground Municipal,1000429484,337106,1313201597,,,,In Service,Open,1980,Surrey,9536,,,Final AB,,,,,,,,20060629,,0028,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0028.pdf,49.031929,-122.858270
+401,,1,0,Above Ground Municipal,1000429485,337107,1335701595,,,,In Service,Open,1980,Surrey,9367,,,Final AB,,,,,,,,20060629,,0032,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0032.pdf,49.031878,-122.852089
+402,,1,0,Above Ground Municipal,1000429486,337108,1311101581,,,,In Service,Open,1980,Surrey,9536,,,Final AB,,,,,,,,20060629,,0029,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0029.pdf,49.031641,-122.858848
+403,,1,0,Above Ground Municipal,1000429487,343208,1376701868,,,,In Service,Open,1989,Surrey,7887-6390,,,Final AB,,,,,,,,20060629,,0043,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0043.pdf,49.036809,-122.840776
+404,,1,0,Above Ground Municipal,1000429491,343212,1424601653,,,,In Service,Open,1981,Surrey,A440,,,Final AB,,,,,,,,20060629,,,,49.032892,-122.827607
+405,,1,2,Below Ground Municipal,1000429493,343214,1404101586,,,,In Service,Open,1986,Surrey,7885-5190,,,Final AB,,,,,,,,20060629,,0041,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0041.pdf,49.031682,-122.833267
+406,,1,0,Above Ground Municipal,1000429499,261675,1524606228,,,,In Service,Open,1988,Surrey,7881-1281,,,Final AB,,,,,,,,20060629,,0502,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0502.pdf,49.115641,-122.799746
+407,,1,0,Above Ground Municipal,1000429500,321071,1500602579,,,,In Service,Open,1990,Surrey,7888-0020,,,Final AB,,,,,,,,20060629,,0011,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0011.pdf,49.049617,-122.806627
+408,,1,0,Above Ground Municipal,1000429502,370739,1620201170,,,,In Service,Open,1981,Surrey,A166,,,Final AB,,,,,,,,20060629,,0015,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0015.pdf,49.024071,-122.773831
+409,,1,0,Above Ground Municipal,1000429503,370740,1620101310,,,,In Service,Open,1983,Surrey,A387,,,Final AB,,,,,,,,20060629,,0014,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0014.pdf,49.026604,-122.773848
+410,,1,0,Above Ground Municipal,1000429504,370741,1625901089,,,,In Service,Open,1984,Surrey,A522,,,Final AB,,,,,,,,20060629,,0016,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0016.pdf,49.022605,-122.772267
+411,,1,0,Above Ground Municipal,1000429506,370743,1609900985,,,,In Service,Open,1985,Surrey,7883-342,,,Final AB,,,,,,,,20060629,,0018,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0018.pdf,49.020727,-122.776663
+412,,1,0,Above Ground Municipal,1000429590,317886,1367702428,,,,In Service,Open,1995,Surrey,4895-602,Chantrell Park ,,Final AB,,,,,,,,20060629,20120315,1136,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1136.pdf,49.046947,-122.843238
+413,,1,2,Below Ground Municipal,1001717809,,1899203259,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131106,,,,49.061689,-122.696816
+414,,1,2,Below Ground Municipal,1001717845,,1899203309,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131106,20131106,,,49.062598,-122.696811
+415,,1,2,Below Ground Municipal,1001718894,,1906203408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064375,-122.694883
+416,,1,2,Below Ground Municipal,1001718891,,1901103407,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064370,-122.696274
+417,,1,2,Below Ground Municipal,1001719047,,1910203409,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064399,-122.693775
+418,,1,2,Below Ground Municipal,1001719044,,1913603408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064383,-122.692829
+419,,1,2,Below Ground Municipal,1001719043,,1913503409,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064403,-122.692851
+420,,1,2,Below Ground Municipal,1001718890,,1901103408,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064390,-122.696274
+421,,1,2,Below Ground Municipal,1001718892,,1902103407,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131118,,,,49.064371,-122.696015
+422,,1,2,Below Ground Municipal,1001726630,,1897803270,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.061894,-122.697195
+423,,1,2,Below Ground Municipal,1001724632,,1352606058,,,,In Service,Open,1991,Surrey,7888-0270-00,,,Final AB,,,,,,,,20140115,20140115,,,49.112636,-122.847188
+424,,1,0,Above Ground Municipal,1000429569,229314,1410506615,,,,,,1986,Surrey,7884-078,,,Final AB,,,,,,,,20060629,20140123,0307,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0307.pdf,49.122698,-122.831191
+425,,1,2,Below Ground Municipal,1000429567,229312,1424706663,,,,,,1981,Surrey,A-246,,,Final AB,,,,,,,,20060629,20140123,0452,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0452.pdf,49.123562,-122.827262
+426,,1,2,Below Ground Municipal,1000429565,229310,1424006693,,,,In Service,Open,1988,Surrey,7886-3401,,,Final AB,,,,,,,,20060629,20140123,0302,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0302.pdf,49.124107,-122.827457
+427,,1,0,Above Ground Municipal,1000429564,229309,1410206694,,,,,,1982,Surrey,A-019,,,Final AB,,,,,,,,20060629,20140124,0308,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0308.pdf,49.124120,-122.831262
+428,,1,2,Below Ground Municipal,1001726633,,1897903253,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.061584,-122.697169
+429,,1,2,Below Ground Municipal,1001726631,,1897903270,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.061893,-122.697167
+430,,1,2,Below Ground Municipal,1001726632,,1897803253,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.061583,-122.697197
+431,,1,1,Above Ground Private,1001408514,,1353307504,,,,,,,Surrey,,,,,,,,,,,,20120417,,1003,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1003.pdf,49.138805,-122.846897
+432,,1,2,Below Ground Municipal,1001726637,,1897803210,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141017,20141017,,,49.060812,-122.697201
+433,,1,0,Above Ground Municipal,1001408516,,1424707751,,,,,,,Surrey,,,,,,,,,,,,20120417,,0662,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0662.pdf,49.143252,-122.827196
+434,,1,1,Above Ground Private,1001408517,,1389307311,,,,,,,Surrey,,,,,,,,,,,,20120417,,0315,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0315.pdf,49.135309,-122.836992
+435,,1,1,Above Ground Private,1001408518,,1393107311,,,,,,,Surrey,,,,,,,,,,,,20120417,,1026,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1026.pdf,49.135303,-122.835933
+436,,1,2,Below Ground Municipal,1001726973,,1887103419,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064590,-122.700125
+437,,1,1,Above Ground Private,1001408524,,1362307432,,,,,,,Surrey,,,,,,,,,,,,20120417,,1016,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1016.pdf,49.137507,-122.844443
+438,,1,1,Above Ground Private,1001408525,,1368107662,,,,,,,Surrey,,,,,,,,,,,,20120417,,1035,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1035.pdf,49.141658,-122.842807
+439,,1,1,Above Ground Private,1001408526,,1380207445,,,,,,,Surrey,,,,,,,,,,,,20120417,,1023,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1023.pdf,49.137736,-122.839504
+440,,1,1,Above Ground Private,1001408527,,1389307388,,,,,,,Surrey,,,,,,,,,,,,20120417,,1025,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1025.pdf,49.136694,-122.836976
+441,,1,1,Above Ground Private,1001408528,,1390307366,,,,,,,Surrey,,,,,,,,,,,,20120417,,,,49.136298,-122.836716
+442,,1,1,Above Ground Private,1001408529,,1387507333,,,,,,,Surrey,,,,,,,,,,,,20120417,,,,49.135700,-122.837487
+443,,1,0,Above Ground Municipal,1000429585,370753,1452006722,,,,In Service,Open,2003,Surrey,7801-0135-00,,,Final AB,,,,,,,,20040301,20120628,,,49.124615,-122.819736
+444,,1,2,Below Ground Municipal,1001718487,,1906203300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062428,-122.694898
+445,,1,2,Below Ground Municipal,1001718488,,1906203299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062408,-122.694898
+446,,1,2,Below Ground Municipal,1001727026,,1889203408,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064391,-122.699559
+447,,1,2,Below Ground Municipal,1001726970,,1890403419,,,,In Service,Open,2014,Surrey,7810-0172-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064587,-122.699228
+448,,1,3,Below Ground Private,1001581319,,1388506798,,,,In Service,Open,2013,Private,7805-0301-00,,,Final AB,,,,,,,,20130320,20130320,,,49.126017,-122.837236
+449,,1,3,Below Ground Private,1001581255,,1561509987,,,,In Service,Open,2013,Private,7810-0290-00,,,Final AB,,,,,,,,20130320,20130320,,,49.183650,-122.789307
+450,,1,2,Below Ground Municipal,1001726971,,1890403418,,,,In Service,Open,2014,Surrey,7810-0172-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064569,-122.699226
+451,,1,2,Below Ground Municipal,1001726972,,1887103418,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064572,-122.700125
+452,,1,0,Above Ground Municipal,1000429375,195243,1430407995,,,,In Service,Open,1994,Surrey,7891-0032-00,14324 Hawkstream Dr,John Tompson Park,Final AB,,,,,,Sod,Yes,20060629,20111117,1133,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1133.pdf,49.147663,-122.825611
+453,,1,0,Above Ground Municipal,1000429501,321072,1500302500,,,,In Service,Open,1990,Surrey,7888-0020,,,Final AB,,,,,,,,20060629,20130506,0010,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0010.pdf,49.048192,-122.806724
+454,,1,2,Below Ground Municipal,1000429588,317884,1384202950,,,,In Service,Open,1995,Surrey,7890-0465-00,,,Final AB,,,,,,,,20060629,20130515,1135,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1135.pdf,49.056378,-122.838641
+455,,1,2,Below Ground Municipal,1001595632,,1387502838,,,,In Service,Open,1987,Surrey,7896-0178-00,,1200,Final AB,,,,,,,,20130521,20130521,,,49.054361,-122.837749
+456,,1,2,Below Ground Municipal,1001595633,,1388702856,,,,In Service,Open,1999,Surrey,7897-0247-00,,1200,Final AB,,,,,,,,20130521,20130521,,,49.054679,-122.837421
+457,,1,3,Below Ground Private,1001790151,,1305011514,,,,In Service,Open,2014,Private,7811-0048-00,,,Final AB,,,,,,,,20141010,20141010,,,49.211389,-122.860016
+458,,1,2,Below Ground Municipal,1001816249,,1911103505,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.066143,-122.693516
+459,,1,2,Below Ground Municipal,1001816250,,1911203505,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.066143,-122.693489
+460,,1,2,Below Ground Municipal,1001816241,,1911203559,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067121,-122.693483
+461,,1,2,Below Ground Municipal,1001816242,,1911103559,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067121,-122.693510
+462,,1,2,Below Ground Municipal,1001816329,,1899903419,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.064584,-122.696610
+463,,1,2,Below Ground Municipal,1001816330,,1899903418,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.064566,-122.696610
+464,,1,2,Below Ground Municipal,1001816253,,1911103471,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.065524,-122.693520
+465,,1,2,Below Ground Municipal,1001816254,,1911203471,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.065524,-122.693492
+466,,1,2,Below Ground Municipal,1001816247,,1910003503,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.066096,-122.693817
+467,,1,2,Below Ground Municipal,1001816248,,1910103503,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.066096,-122.693790
+468,,1,2,Below Ground Municipal,1001816245,,1910103533,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.066642,-122.693787
+469,,1,2,Below Ground Municipal,1001816246,,1910003533,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.066642,-122.693814
+470,,1,2,Below Ground Municipal,1001816243,,1910103561,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067146,-122.693784
+471,,1,2,Below Ground Municipal,1001816244,,1910003561,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067146,-122.693811
+472,,1,0,Above Ground Municipal,1000429508,366584,1334101391,,,,In Service,Open,1980,Surrey,3822,,,Final AB,,,,,,,,20060629,,0001,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0001.pdf,49.028195,-122.852528
+473,,1,0,Above Ground Municipal,1000429495,212298,1238207006,,,,,,1990,Surrey,7885-0277-00,,,Final AB,,,,,,,,20060629,20140722,0372,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0372.pdf,49.129824,-122.878681
+474,,1,0,Above Ground Municipal,1000429466,115633,1504609298,,,,In Service,Open,1978,Surrey,9004,,,Final AB,,,,,,,,20060629,20140502,1064,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1064.pdf,49.171214,-122.805052
+475,,1,0,Above Ground Municipal,1000429515,181743,1254307961,,,,In Service,Open,1981,Surrey,A-249,,,Final AB,,,,,,,,20060629,20140722,0621,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0621.pdf,49.147107,-122.874192
+476,,1,0,Above Ground Municipal,1000429512,100412,1308708904,,,,In Service,Open,1980,Surrey,9496,,,Final AB,,,,,,,,20060629,,1100,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1100.pdf,49.164148,-122.859130
+477,,1,2,Below Ground Municipal,1000429513,370757,1345209192,1000,,,In Service,Open,2001,Surrey,7897-0128-00,,,Final AB,,,,,,,,20040323,,,,49.169347,-122.849048
+478,,1,2,Below Ground Municipal,1000429514,370783,1318408847,,,,In Service,Open,1990,Surrey,7888-0332-00,,,Final AB,,,,,,,,20060511,,0657,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0657.pdf,49.163121,-122.856463
+479,,1,3,Below Ground Private,1001906357,,1634610376,,,,In Service,Open,2013,Provincial,Treo Building,,,Final AB,,,,,,,,20170214,20170214,,,49.190642,-122.769085
+480,,1,2,Below Ground Municipal,1000429523,181751,1240707250,,,,In Service,Open,1990,Surrey,7888-0080,,,Final AB,,,,,,,,20060629,20061025,0318,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0318.pdf,49.134251,-122.877980
+481,,1,0,Above Ground Municipal,1000429525,370778,1274607443,,,,In Service,Open,2001,Surrey,48996040-00,,,Final AB,,,,,,,,20030101,,0319,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0319.pdf,49.137722,-122.868611
+482,,1,0,Above Ground Municipal,1000429516,181744,1218107724,,,,In Service,Open,1986,Surrey,7883-2820-00,,,Final AB,,,,,,,,20060629,20140722,0311,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0311.pdf,49.142829,-122.884197
+483,,1,3,Below Ground Private,1001906358,,1633210381,,,,In Service,Open,2013,Provincial,Treo Building,,,Final AB,,,,,,,,20170214,20170214,,,49.190733,-122.769479
+484,,1,3,Below Ground Private,1001906382,,1633210391,,,,In Service,Open,2013,Provincial,Treo Building,,,Final AB,,,,,,,,20170214,20170214,,,49.190929,-122.769473
+485,,1,0,Above Ground Municipal,1000429551,79500,1531009804,,,,In Service,Open,1986,Surrey,7884-214,,,Final AB,,,,,,,,20060629,,0632,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0632.pdf,49.180350,-122.797725
+486,,1,2,Below Ground Municipal,1001727886,,1885103255,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061635,-122.700689
+487,,1,2,Below Ground Municipal,1001727887,,1885203282,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.062123,-122.700659
+488,,1,2,Below Ground Municipal,1001726635,,1897803230,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.061165,-122.697199
+489,,1,2,Below Ground Municipal,1001727888,,1885103282,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.062123,-122.700686
+490,,1,2,Below Ground Municipal,1001726636,,1897903230,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.061166,-122.697172
+491,,1,2,Below Ground Municipal,1001727971,,1886303294,,,,In Service,Open,2013,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.062334,-122.700356
+492,,1,2,Below Ground Municipal,1001726628,,1897803315,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.062705,-122.697189
+493,,1,3,Below Ground Private,1001726779,,1649410326,,,,In Service,Open,2004,Private,7802-0215-00,,,Final AB,,,,,,,,20140129,20140129,,,49.189739,-122.764991
+494,,1,2,Below Ground Municipal,1001727972,,1886203294,,,,In Service,Open,2013,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.062334,-122.700384
+495,,1,2,Below Ground Municipal,1001727976,,1886203261,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061744,-122.700387
+496,,1,2,Below Ground Municipal,1001727977,,1886303261,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061744,-122.700360
+497,,1,2,Below Ground Municipal,1001727980,,1886303223,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061055,-122.700364
+498,,1,2,Below Ground Municipal,1001727981,,1886203223,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061055,-122.700391
+499,,1,2,Below Ground Municipal,1001726629,,1897903315,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.062706,-122.697162
+500,,1,2,Below Ground Municipal,1001726837,,1897803401,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.064255,-122.697180
+501,,1,2,Below Ground Municipal,1001726838,,1897903401,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.064256,-122.697153
+502,,1,2,Below Ground Municipal,1001726839,,1897803368,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.063673,-122.697184
+503,,1,2,Below Ground Municipal,1001726840,,1897903368,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.063673,-122.697156
+504,,1,2,Below Ground Municipal,1001726841,,1897803344,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.063230,-122.697186
+505,,1,2,Below Ground Municipal,1001726842,,1897903344,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141020,20141020,,,49.063230,-122.697159
+506,,1,2,Below Ground Municipal,1001727881,,1885103202,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.060674,-122.700694
+507,,1,2,Below Ground Municipal,1001727882,,1885203202,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.060674,-122.700667
+508,,1,2,Below Ground Municipal,1001727883,,1885203229,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061155,-122.700664
+509,,1,2,Below Ground Municipal,1001727884,,1885103229,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061155,-122.700692
+510,,1,2,Below Ground Municipal,1001727885,,1885203255,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.061635,-122.700661
+511,,1,2,Below Ground Municipal,1001408136,,1924805786,,,,,,,Surrey,,,,,,,,,,,,20120416,,0123,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0123.pdf,49.107396,-122.689491
+512,,1,0,Above Ground Municipal,1000429505,370742,1619501037,,,,In Service,Open,1983,Surrey,A558,,,Final AB,,,,,,,,20060629,,0017,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0017.pdf,49.021661,-122.774024
+513,,1,0,Above Ground Municipal,1000429478,337100,1300601803,,,,In Service,Open,1984,Surrey,7881-135,,,Final AB,,,,,,,,20060629,,0026,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0026.pdf,49.035655,-122.861728
+514,,1,1,Above Ground Private,1001408147,,1306306028,,,,,,,Surrey,,,,,,,,,,,,20120416,,0271,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0271.pdf,49.112115,-122.859942
+515,,1,2,Below Ground Municipal,1001727728,,1895203408,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064386,-122.697898
+516,,1,2,Below Ground Municipal,1001728258,,1885103317,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.062759,-122.700682
+517,,1,2,Below Ground Municipal,1000429388,252602,1348406095,,,,,,1982,Surrey,A-019,,,Final AB,,,,,,,,20060629,,0276,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0276.pdf,49.113310,-122.848348
+518,,1,2,Below Ground Municipal,1001728259,,1885203317,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.062759,-122.700655
+519,,1,0,Above Ground Municipal,1000429520,181748,1227807399,,,,In Service,Open,1988,Surrey,7885-1620-00,,,Final AB,,,,,,,,20060629,20100107,0279,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0279.pdf,49.136943,-122.881513
+520,,1,0,Above Ground Municipal,1000429496,212299,1246006976,,,,,,1988,Surrey,7887-1980-00,,,Final AB,,,,,,,,20060629,20100107,0283,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0283.pdf,49.129290,-122.876526
+521,,1,1,Above Ground Private,1001408187,,1238107124,,,,,,,Surrey,,,,,,,,,,,,20120416,,0285,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0285.pdf,49.131967,-122.878701
+522,,1,2,Below Ground Municipal,1001727027,,1889203407,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064373,-122.699559
+523,,1,2,Below Ground Municipal,1001727028,,1890303408,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064390,-122.699265
+524,,1,2,Below Ground Municipal,1000813235,,1307406755,,,,In Service,Open,1983,Surrey,A-417,,,Final AB,,,,,,,,20061123,20061123,0297,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0297.pdf,49.125273,-122.859601
+525,,1,2,Below Ground Municipal,1001727029,,1890303407,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064372,-122.699265
+526,,1,2,Below Ground Municipal,1001727707,,1896703419,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064582,-122.697493
+527,,1,2,Below Ground Municipal,1001727708,,1896703418,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064564,-122.697494
+528,,1,2,Below Ground Municipal,1001727710,,1895203407,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141021,20141021,,,49.064368,-122.697898
+529,,1,2,Below Ground Municipal,1001728260,,1885103338,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.063140,-122.700680
+530,,1,2,Below Ground Municipal,1001728261,,1885203338,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.063140,-122.700653
+531,,1,0,Above Ground Municipal,1000429386,252600,1307706188,,,,In Service,Open,1981,Surrey,A-205,,,Final AB,,,,,,,,20060629,20140724,0270,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0270.pdf,49.114999,-122.859559
+532,,1,0,Above Ground Municipal,1000429390,252606,1324305838,,,,In Service,Open,1988,Surrey,7883-0472-00,,,Final AB,,,,,,,,20060629,20140724,0275,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0275.pdf,49.108669,-122.855007
+533,,1,0,Above Ground Municipal,1000429541,237885,1793306620,,,,In Service,Open,2012,Surrey,3809-6020-00,,,Final AB,,,,,,,,20060629,20140724,1127,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1127.pdf,49.122593,-122.725657
+534,,1,0,Above Ground Municipal,1000429384,252598,1354806325,,,,In Service,Open,1984,Surrey,7883-4140-00,,,Final AB,,,,,,,,20060629,20140724,0274,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0274.pdf,49.117470,-122.846575
+535,,1,0,Above Ground Municipal,1000429389,252603,1328106066,,,,In Service,Open,1982,Surrey,7881-2760-00,,,Final AB,,,,,,,,20060629,20140724,0272,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0272.pdf,49.112801,-122.853945
+536,,1,0,Above Ground Municipal,1000429387,252601,1310206187,,,,In Service,Open,1981,Surrey,A-205,,,Final AB,,,,,,,,20060629,20140724,0269,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0269.pdf,49.114991,-122.858872
+537,,1,0,Above Ground Municipal,1001593474,,1387902653,,,,In Service,Open,2001,Surrey,7899-0033-00,,,Final AB,,,,,,,,20130430,20140725,no_id1p112,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p112.pdf,49.051012,-122.837639
+538,,1,2,Below Ground Municipal,1001816497,,1887103566,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067260,-122.700122
+539,,1,2,Below Ground Municipal,1001816498,,1887103565,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067241,-122.700122
+540,,1,2,Below Ground Municipal,1001816511,,1891903569,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067301,-122.698807
+541,,1,2,Below Ground Municipal,1001816512,,1891903570,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160705,20160705,,,49.067319,-122.698807
+542,,1,0,Above Ground Municipal,1001216935,,1210006938,,,,In Service,Open,2001,Surrey,4897-6020-00,,,Final AB,,,,,,,,20111025,20140722,no_id2p60,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p60.pdf,49.128618,-122.886449
+543,,1,0,Above Ground Municipal,1000429554,79503,1550309749,,,,In Service,Open,1980,Surrey,9204,,,Final AB,,,,,,,,20060629,20080429,0633,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0633.pdf,49.179352,-122.792414
+544,,1,0,Above Ground Municipal,1000429562,229307,1436606955,,,,,,1982,Surrey,A-019,,,Final AB,,,,,,,,20060629,,,,49.128831,-122.823983
+545,,1,0,Above Ground Municipal,1000429568,229313,1429406630,,,,,,1986,Surrey,7885-018,,,Final AB,,,,,,,,20060629,,0451,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0451.pdf,49.122964,-122.825973
+546,,1,0,Above Ground Municipal,1000429571,229316,1388006572,,,,,,1983,Surrey,3486,,,Final AB,,,,,,,,20060629,,0305,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0305.pdf,49.121935,-122.837399
+547,,1,0,Above Ground Municipal,1000429572,229317,1408706553,,,,,,1982,Surrey,A-019,,,Final AB,,,,,,,,20060629,,0306,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0306.pdf,49.121571,-122.831686
+548,,1,0,Above Ground Municipal,1000429573,229318,1365406538,,,,In Service,Open,1982,Surrey,A-467,,,Final AB,,,,,,,,20060629,,0546,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0546.pdf,49.121315,-122.843636
+549,,1,0,Above Ground Municipal,1000429574,229319,1386906537,,,,,,1991,Surrey,7889-0575-00,,,Final AB,,,,,,,,20060629,,0304,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0304.pdf,49.121297,-122.837703
+550,,1,0,Above Ground Municipal,1001408496,,1223607563,,,,In Service,Open,1988,Surrey,7886-4892-00,,,Final AB,,,,,,,,20120417,20140722,0312,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0312.pdf,49.139920,-122.882668
+551,,1,3,Below Ground Private,1001408505,,1205007834,,,,,,,Surrey,,,,,,,,,,,,20120417,20140722,0322,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0322.pdf,49.144833,-122.887790
+552,,1,0,Above Ground Municipal,1000429583,370745,1314108638,885,,,In Service,Open,1999,Surrey,5097-134,,,Final AB,,,,,,,,20030108,,no_id3p41,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id3p41.pdf,49.159339,-122.857656
+553,,1,4,Unknown,1000429584,,1354308092,,,,,,,Surrey,,,,Final AB,,,,,,,,20060629,20060802,,,49.149448,-122.846610
+554,,1,0,Above Ground Municipal,1000429586,370769,1517906534,2900,,1.43,In Service,Open,1999,Surrey,7898-0110-00,,,Final AB,,,,,,,,20050321,,no_id2p63,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id2p63.pdf,49.121182,-122.801589
+555,,1,0,Above Ground Municipal,1000429589,317885,1417302853,,,,In Service,Open,1990,Surrey,7887-3087,,,Final AB,,,,,,,,20060629,,0023,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0023.pdf,49.054612,-122.829540
+556,,1,2,Below Ground Municipal,1000813236,,1307806743,,,,In Service,Open,1983,Surrey,A-417,,,Final AB,,,,,,,,20061123,20061123,,,49.125051,-122.859491
+557,,1,2,Below Ground Municipal,1000801587,,1437007625,,,,In Service,Open,2006,Surrey,7804-0202-00,,,Final AB,,,,,,,,20060926,20060926,,,49.140964,-122.823819
+558,,1,3,Below Ground Private,1001608368,,1879606169,,,,In Service,Open,2013,Private,7810-0276-00,,,Final AB,,,,,,,,20130809,20130809,,,49.114370,-122.701905
+559,,1,3,Below Ground Private,1001798523,,1369706224,,,,In Service,Open,2014,Private,7806-0338-00,,,Initial AB,,,,,,,,20141203,20141203,,,49.115633,-122.842457
+560,,1,2,Below Ground Municipal,1000860749,,1336209231,,,,In Service,Open,1978,Surrey,9066,,,Final AB,,,,,,,,20081013,20150107,,,49.170059,-122.851530
+561,,1,0,Above Ground Municipal,1001408202,,1415910180,,,,,,,Surrey,,,,,,,,,,,,20120416,20150107,no_id1p22,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p22.pdf,49.187210,-122.829473
+562,,1,2,Below Ground Municipal,1001816256,,1910103443,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065020,-122.693796
+563,,1,0,Above Ground Municipal,1001220476,,1468703092,,,,In Service,Open,1997,Surrey,4896-5110-00,3132 Semiahmoo Trail,,Final AB,,,,,,,,20111115,20170202,no_id1p113,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p113.pdf,49.058922,-122.815376
+564,,1,0,Above Ground Municipal,1001913306,,1665303147,,,,In Service,Open,2016,Surrey,7811-0223-00,,,Initial AB,,,,,,,,20170315,20170315,,,49.059808,-122.761224
+565,,1,2,Below Ground Municipal,1001816255,,1910003443,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.065020,-122.693824
+566,,1,0,Above Ground Municipal,1000429577,138568,1255808216,,,,In Service,Open,2004,Surrey,7802-0271-00,,,Final AB,,,,,,,,20180124,20180124,0675,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0675.pdf,49.151717,-122.873772
+567,,1,2,Below Ground Municipal,1001843963,,1905203581,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067520,-122.695129
+568,,1,3,Below Ground Private,1001839855,,1561502552,,,,In Service,Open,2015,Private,7812-0093-00,,,Final AB,,,,,,,,20150921,20150921,,,49.049105,-122.789876
+569,,1,3,Below Ground Private,1001820728,,1647811326,,,,In Service,Open,2014,Provincial,SFPR Seg. 8,,,Final AB,,,,,,,,20150429,20150429,,,49.207839,-122.765354
+570,,1,3,Below Ground Private,1001820729,,1647711326,,,,In Service,Open,2014,Provincial,SFPR Seg. 8,,,Final AB,,,,,,,,20150429,20150429,,,49.207828,-122.765374
+571,,1,3,Below Ground Private,1001597225,,1232810101,,,,In Service,Open,,Private,7809-0124-00,,5.17mX1.83mX0.914m,Final AB,,,,,,,,20130528,20150615,,,49.185836,-122.880034
+572,,1,0,Above Ground Municipal,1001838198,,1285702227,,,,,,,Surrey,,,,,,,,,,,,20150911,,,,49.043338,-122.865802
+573,,1,0,Above Ground Municipal,1001840130,,1522105118,,,,In Service,Open,2015,Surrey,1708-3080-00,,,Initial AB,,,,,,,,20150923,20150923,,,49.095552,-122.800536
+574,,1,2,Below Ground Municipal,1001728402,,1497607030,,,,In Service,Open,2006,Surrey,7804-0136-00,,,Final AB,,,,,,,,20140206,20140206,,,49.130178,-122.807140
+575,,1,2,Below Ground Municipal,1001816119,,1899103503,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066106,-122.696817
+576,,1,2,Below Ground Municipal,1001816127,,1899103533,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066656,-122.696814
+577,,1,2,Below Ground Municipal,1001816126,,1899203533,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066653,-122.696786
+578,,1,2,Below Ground Municipal,1001816124,,1899103545,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066869,-122.696812
+579,,1,2,Below Ground Municipal,1001727986,,1886203202,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.060669,-122.700393
+580,,1,2,Below Ground Municipal,1001727987,,1886303202,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141022,20141022,,,49.060670,-122.700366
+581,,1,2,Below Ground Municipal,1001816125,,1899203545,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160704,20160704,,,49.066869,-122.696785
+582,,1,2,Below Ground Municipal,1001408173,,1421806822,,,,,,,Surrey,,,,,,,,,,,,20120416,,0301,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0301.pdf,49.126431,-122.828072
+583,,1,0,Above Ground Municipal,1001408500,,1237707578,,,,,,,Surrey,,,,,,,,,,,,20120417,,0313,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0313.pdf,49.140183,-122.878790
+584,,1,0,Above Ground Municipal,1000429480,337102,1358701799,,,,In Service,Open,1979,Surrey,9445,,,Final AB,,,,,,,,20060629,,0033,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0033.pdf,49.035564,-122.845738
+585,,1,1,Above Ground Private,1001408116,,1293801596,,,,,,,Surrey,,,,,,,,,,,,20120413,,0035,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0035.pdf,49.031912,-122.863616
+586,,1,0,Above Ground Municipal,1001408513,,1287507347,,,,,,,Surrey,,,,,,,,,,,,20120417,,0354,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0354.pdf,49.135986,-122.865069
+587,,1,2,Below Ground Municipal,1001408118,,1291102295,,,,,,,Surrey,,,,,,,,,,,,20120413,,0037,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0037.pdf,49.044573,-122.864333
+588,,1,0,Above Ground Municipal,1001408188,,1238206995,,,,,,,Surrey,,,,,,,,,,,,20120416,,0371,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0371.pdf,49.129635,-122.878685
+589,,1,1,Above Ground Private,1001408184,,1208507136,,,,,,,Surrey,,,,,,,,,,,,20120416,,0376,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0376.pdf,49.132193,-122.886864
+590,,1,0,Above Ground Municipal,1000429490,343211,1430601682,,,,In Service,Open,1980,Surrey,A440,,,Final AB,,,,,,,,20060629,,0038,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0038.pdf,49.033424,-122.825959
+591,,1,1,Above Ground Private,1001408182,,1275807106,,,,,,,Surrey,,,,,,,,,,,,20120416,,0390,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0390.pdf,49.131631,-122.868298
+592,,1,1,Above Ground Private,1001408175,,1335907132,,,,,,,Surrey,,,,,,,,,,,,20120416,,0392,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0392.pdf,49.132087,-122.851733
+593,,1,1,Above Ground Private,1000429530,220573,1335907076,,,,,,1992,Private,7890-0097-00,,,Final AB,,,,,,,,20060629,20101026,0394,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0394.pdf,49.131061,-122.851744
+594,,1,1,Above Ground Private,1000429528,220571,1333707101,,,,,,1987,Private,7881-330,,,Final AB,,,,,,,,20060629,20101026,0396,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0396.pdf,49.131509,-122.852344
+595,,1,1,Above Ground Private,1000429527,220570,1328407133,,,,,,1990,Private,7888-0094,,,Final AB,,,,,,,,20060629,20101026,0399,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0399.pdf,49.132097,-122.853788
+596,,1,0,Above Ground Municipal,1000429489,343210,1368201694,,,,In Service,Open,1988,Surrey,7887-0300,,,Final AB,,,,,,,,20060629,,0044,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0044.pdf,49.033656,-122.843142
+597,,1,2,Below Ground Municipal,1001816532,,1897203570,,,,In Service,Open,2015,Surrey,7812-0159-00,,,Final AB,,,,,,,,20160706,20180208,,,49.067313,-122.697346
+598,,1,0,Above Ground Municipal,1001831898,,1369208094,,,,In Service,Open,2001,Surrey,7800-0054-00,8085 136A St,,Final AB,,,,,,,,20150722,20150722,,,49.149482,-122.842476
+599,,1,1,Above Ground Private,1001819833,,1488611632,,,,In Service,Open,2015,Provincial,Gateway NB,,,Final AB,,,,,,,,20150424,20160502,,,49.213454,-122.809311
+600,,1,3,Below Ground Private,1001885741,,1526402556,456,,,In Service,Open,1999,Private,7897-0113-00,,120m 2200 CMP,Final AB,,,,,,,,20160803,20160803,,,49.049189,-122.799541
+601,,1,0,Above Ground Municipal,1001898457,,1482111568,,,,In Service,Open,2017,Surrey,4810-3130-00,East Bon Accord Creek,,Final AB,,,,,,,,20171012,20171012,,,49.212286,-122.811116
+602,,1,2,Below Ground Municipal,1000813234,,1304306763,,,,In Service,Open,1983,Surrey,A-417,,,Final AB,,,,,,,,20061123,20061123,0297,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0297.pdf,49.125406,-122.860452
+603,,1,2,Below Ground Municipal,1000429566,229311,1437406691,,,,,,,Surrey,D-1301,,,Final AB,,,,,,,,20060629,20061128,0303,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0303.pdf,49.124062,-122.823775
+604,,1,2,Below Ground Municipal,1000429494,212297,1240007208,,,,,,1979,Surrey,7885-2760,,,Final AB,,,,,,,,20060629,20061115,0289,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0289.pdf,49.133478,-122.878182
+605,,1,2,Below Ground Municipal,1000812802,,1243007162,,,,In Service,Open,2006,Surrey,7888-0169,,900 X 1800 BOX 34m LONG,Final AB,,,,,,,,20061115,20061115,,,49.132660,-122.877334
+606,,1,2,Below Ground Municipal,1000813023,,1203206480,,,,In Service,Open,1991,Surrey,7890-0108,,1200 CONCRETE,Final AB,,,,,,,,20061116,20061116,,,49.120331,-122.888338
+607,,1,0,Above Ground Municipal,1001408407,,1609109391,,,,,,,Surrey,,,,,,,,,,,,20120417,20140321,0616,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0616.pdf,49.172832,-122.776193
+608,,1,2,Below Ground Municipal,1000822996,,1287707029,,,,In Service,Open,1988,Surrey,7887-3860,,,Final AB,,,,,,,,20070423,20070423,0291,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0291.pdf,49.130242,-122.865023
+609,,1,0,Above Ground Municipal,1000839595,,1932606548,,3474.62,,In Service,Open,2007,Surrey,7804-0086-01,,,Final AB,20080506,,,,,,,20071218,20071218,,,49.121177,-122.687244
+610,,1,0,Above Ground Municipal,1000429398,123520,1573009539,,,,In Service,Open,1986,Surrey,7883-1740-00,,,Final AB,,,,,,Sod,,20060629,20140425,0606,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0606.pdf,49.175532,-122.786166
+611,,1,0,Above Ground Municipal,1000429354,108648,1429708850,,,,In Service,Open,1988,Surrey,7886-0225-00,,,Final AB,,,,,,,,20060629,20140514,0653,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0653.pdf,49.163137,-122.825762
+612,,1,2,Below Ground Municipal,1001748717,,1429109089,,,,In Service,Open,1991,Surrey,7888-0311-00,,750 RCP,Final AB,,,,,,,,20140514,20140514,,,49.167466,-122.825914
+613,,1,2,Below Ground Municipal,1001748718,,1422409088,,,,In Service,Open,1991,Surrey,7888-0311-00,,900 RCP,Final AB,,,,,,,,20140514,20140514,,,49.167451,-122.827758
+614,,1,2,Below Ground Municipal,1000827893,,1389102851,,,,In Service,Open,1997,Surrey,7894-0338-00,,2400 X 1200 BOX CULVERT,Final AB,,,,,,,,20070627,20070627,,,49.054592,-122.837308
+615,,1,2,Below Ground Municipal,1000841255,,1927706742,,,,In Service,Open,2007,Surrey,7806-0116-00,,1.2m X 2.4m BOX,Final AB,,,,,,,,20080116,20080116,,,49.124704,-122.688573
+616,,1,0,Above Ground Municipal,1000429438,370777,1517309794,,,,In Service,Open,1987,Surrey,7883-127,,,Final AB,,,,,,,,20060227,20081024,0627,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0627.pdf,49.180169,-122.801512
+617,,1,2,Below Ground Municipal,1001748720,,1420409100,,,,In Service,Open,1991,Surrey,7888-0311-00,,900 RCP,Final AB,,,,,,,,20140514,20140514,,,49.167666,-122.828305
+618,,1,2,Below Ground Municipal,1000840309,,1634300904,,,,In Service,Open,2007,Surrey,7806-0312-00,,,Final AB,,,,,,,,20071221,20071221,,,49.019238,-122.769975
+619,,1,2,Below Ground Municipal,1001737203,,1675608415,,,,In Service,Open,2000,Surrey,7895-0249-00,,,Final AB,,,,,,,,20140325,20140325,,,49.155145,-122.757932
+620,,1,3,Below Ground Private,1001732504,,1252409444,,,,In Service,Open,2013,Surrey,7807-0382-00,,,Final AB,,,,,,,,20140304,,,,49.173944,-122.874643
+621,,1,3,Below Ground Private,1001732505,,1253909443,,,,In Service,Open,2013,Surrey,7807-0382-00,,,Final AB,,,,,,,,20140304,,,,49.173920,-122.874241
+622,,1,3,Below Ground Private,1001732506,,1255309438,,,,In Service,Open,2013,Surrey,7807-0382-00,,,Final AB,,,,,,,,20140304,,,,49.173834,-122.873859
+623,,1,3,Below Ground Private,1001732507,,1255209435,,,,In Service,Open,2013,Surrey,7807-0382-00,,,Final AB,,,,,,,,20140304,,,,49.173782,-122.873862
+624,,1,0,Above Ground Municipal,1001408141,,1446106389,,,,In Service,Open,2006,Surrey,,Sullivan Heights Park,,Final AB,,,,,,,,20120416,20140306,no_id1p73,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p73.pdf,49.118601,-122.821385
+625,,1,2,Below Ground Municipal,1001735880,,1608009609,,,,In Service,Open,1989,Surrey,7887-0408-00,,,Final AB,,,,,,,,20140319,20140319,,,49.176786,-122.776483
+626,,1,2,Below Ground Municipal,1001735891,,1639209189,,,,In Service,Open,2005,Surrey,7803-0072-00,,,Final AB,,,,,,,,20140319,20140319,,,49.169169,-122.767906
+627,,1,2,Below Ground Municipal,1001408411,,1620609611,,,,In Service,Open,1989,Surrey,7888-0069-00,,,Final AB,,,,,,,,20120417,20140320,0617,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0617.pdf,49.176818,-122.773026
+628,,1,2,Below Ground Municipal,1001736149,,1629009510,,,,In Service,Open,1999,Surrey,7897-0287-00,,,Final AB,,,,,,,,20140320,20140320,,,49.174977,-122.770706
+629,,1,0,Above Ground Municipal,1000429410,131054,1611009541,,,,In Service,Open,1991,Surrey,7887-0501-00,,,Final AB,,,,,,,,20060629,20140321,0615,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0615.pdf,49.175550,-122.775655
+630,,1,0,Above Ground Municipal,1001408406,,1607809542,,,,In Service,Open,1988,Surrey,7887-0431-00,,,Final AB,,,,,,,,20120417,20140321,0614,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0614.pdf,49.175580,-122.776544
+631,,1,0,Above Ground Municipal,1000429411,,,,,,In Service,Open,1990,Surrey,7888-0070-00,,,Final AB,,,,,,,,20060222,20140321,0906,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0906.pdf,49.175555,-122.774844
+632,,1,2,Below Ground Municipal,1001408377,,1605409027,,,,In Service,Open,1990,Surrey,7888-0342-00,,750 Pipe,Final AB,,,,,,,,20120417,20140321,1066,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1066.pdf,49.166254,-122.777257
+633,,1,2,Below Ground Municipal,1001736559,1001735880,1608009610,,,,In Service,Open,1989,Surrey,7887-0408-00,,,Final AB,,,,,,,,20140321,20140321,,,49.176797,-122.776483
+634,,1,0,Above Ground Municipal,1001408473,,1638608798,,,,In Service,Open,1990,Surrey,7888-0220-00,,,Final AB,,,,,,,,20120417,20140325,0620,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0620.pdf,49.162088,-122.768122
+635,,1,0,Above Ground Municipal,1000429413,164547,1524508451,,,,In Service,Open,1982,Surrey,A-467,,,Final AB,,,,,,,,20060629,20140402,0594,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0594.pdf,49.155865,-122.799615
+636,,1,0,Above Ground Municipal,1001214497,,1456906371,,,,In Service,Open,2008,Surrey,4804-6030-00,W of 146 St & S of 64 Ave,,Final AB,,,,,,,No,20110929,20140407,no_id3p63,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id3p63.pdf,49.118257,-122.818423
+637,,1,0,Above Ground Municipal,1000429561,229306,1420307013,,,,,,1990,Surrey,7887-5970,,,Final AB,,,,,,,,20060629,,0449,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0449.pdf,49.129890,-122.828461
+638,,1,0,Above Ground Municipal,1001408172,,1433306826,,,,,,,Surrey,,,,,,,,,,,,20120416,,0450,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0450.pdf,49.126506,-122.824901
+639,,1,1,Above Ground Private,1001408169,,1394607026,,,,,,,Surrey,,,,,,,,,,,,20120416,,0454,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0454.pdf,49.130134,-122.835548
+640,,1,1,Above Ground Private,1001408161,,1384907190,,,,,,,Surrey,,,,,,,,,,,,20120416,,0457,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0457.pdf,49.133112,-122.838213
+641,,1,0,Above Ground Municipal,1001408102,,1584102170,,,,,,,Surrey,,,,,,,,,,,,20120413,,0049,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0049.pdf,49.042188,-122.783677
+642,,1,2,Below Ground Municipal,1000429570,229315,1403206612,,,,,,1988,Surrey,7886-2250,,,Final AB,,,,,,,,20060629,,0499,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0499.pdf,49.122648,-122.833215
+643,,1,1,Above Ground Private,1001408108,,1518701978,,,,,,,Surrey,,,,,,,,,,,,20120413,,0005,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0005.pdf,49.038742,-122.801700
+644,,1,0,Above Ground Municipal,1001408103,,1522401785,,,,,,,Surrey,,,,,,,,,,,,20120413,,0052,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0052.pdf,49.035242,-122.800682
+645,,1,1,Above Ground Private,1001408150,,1198906317,,,,,,,Surrey,,,,,,,,,,,,20120416,,0528,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0528.pdf,49.117372,-122.889540
+646,,1,1,Above Ground Private,1000429338,355527,1534001604,,,,In Service,Open,1990,Private,7885-5220,,,Final AB,,,,,,,,20060629,20101026,0054,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0054.pdf,49.031959,-122.797505
+647,,1,4,Unknown,1000429391,,1349506034,,,,,,,Surrey,,,,Final AB,,,,,,,,20060629,20060802,0547,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0547.pdf,49.112210,-122.848042
+648,,1,1,Above Ground Private,1001408121,,1535902543,,,,,,,Surrey,,,,,,,,,,,,20120413,,0057,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0057.pdf,49.048953,-122.796926
+649,,1,0,Above Ground Municipal,1000429579,142923,1345408514,,,,In Service,Open,1990,Surrey,7888-0094-00,,,Final AB,,,,,,,,20060629,20140717,0664,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0664.pdf,49.157088,-122.849032
+650,,1,1,Above Ground Private,1001408124,,1543502510,,,,,,,Surrey,,,,,,,,,,,,20120413,,0059,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0059.pdf,49.048346,-122.794824
+651,,1,0,Above Ground Municipal,1000429412,164546,1530408477,,,,In Service,Open,1997,Surrey,1796-013,,,Final AB,,,,,,,,20060629,,0595,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0595.pdf,49.156335,-122.798002
+652,,1,0,Above Ground Municipal,1001926477,,1376706927,,,,In Service,Open,2016,Surrey,4811-6010-00,Newton Town Centre Detention Pond,,Initial AB,,,,,,,,20170411,20170411,,,49.128365,-122.840477
+653,,1,0,Above Ground Municipal,1000840529,,1188610174,,,,In Service,Open,2004,Surrey,7801-0267-00,,,Final AB,,,,,,,,20080110,20080110,,,49.187174,-122.892229
+654,,1,0,Above Ground Municipal,1000429399,123521,1576809539,,,,In Service,Open,1986,Surrey,7883-1740-00,,,Final AB,,,,,,Sod,,20060629,20140425,0605,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0605.pdf,49.175533,-122.785108
+655,,1,2,Below Ground Municipal,1000429492,343213,1387101613,,,,In Service,Open,1988,Surrey,7886-3290,,,Final AB,,,,,,,,20060629,20081027,0045,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0045.pdf,49.032187,-122.837925
+656,,0,0,Above Ground Municipal,1001593489,,1570809285,,,,History,Closed,,Surrey,,,,,,,,,,,,20130430,20140428,0888,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0888.pdf,49.170948,-122.786774
+657,,1,0,Above Ground Municipal,1000429488,343209,1395301853,,,,In Service,Open,1986,Surrey,7885-2880,,,Final AB,,,,,,,,20060629,20081028,0040,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0040.pdf,49.036527,-122.835651
+658,,1,2,Below Ground Municipal,1001121330,,1351908063,,,,In Service,Open,2006,Surrey,7804-0356-00,,,Final AB,,,,,,,,20090506,20090506,,,49.148921,-122.847250
+659,,1,0,Above Ground Municipal,1001083727,,1952706860,,,,In Service,Open,2009,Surrey,7807-0056-00,,TURFSTONE SPILLWAY,Final AB,,,,,,,,20090304,20090304,,,49.126813,-122.681673
+660,,1,2,Below Ground Municipal,1001084160,,1618903140,,377,,In Service,Open,2008,Surrey,7805-0250-00,,,Final AB,,,,,,,,20090310,20090310,,,49.059710,-122.774021
+661,,1,2,Below Ground Municipal,1001084166,,1617703150,,,,In Service,Open,2008,Surrey,7805-0250-00,,,Final AB,,,,,,,,20090310,20090310,,,49.059891,-122.774348
+662,,1,0,Above Ground Municipal,1001122271,,1593402739,,,,In Service,Open,2009,Surrey,7806-0250-00,,,Final AB,,,,,,,,20090522,20090522,,,49.052474,-122.781073
+663,,1,0,Above Ground Municipal,1001204286,,1937206877,,,,In Service,Open,2010,Surrey,4805-6030-00,,NW Cor. of 68 Ave & 194A St,Final AB,,,,,,,,20110715,20110715,,,49.127130,-122.685935
+664,,0,0,Above Ground Municipal,1000429497,212300,1248006932,,,,History,,1988,Surrey,7887-2570-00,,,Final AB,,,,,,,,20060629,20111025,0284,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0284.pdf,49.128498,-122.875984
+665,,1,0,Above Ground Municipal,1000429401,123523,1534809538,,,,In Service,Open,1996,Surrey,A-158,,,Final AB,,,,,,,,20060629,20111116,0597,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0597.pdf,49.175541,-122.796695
+666,,1,0,Above Ground Municipal,1000429405,123527,1542709538,,,,In Service,Open,1989,Surrey,A-158,,,Final AB,,,,,,,,20060629,20111116,0599,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0599.pdf,49.175537,-122.794507
+667,,1,2,Below Ground Municipal,1001741503,,1529110467,,,,In Service,Open,1992,Surrey,7889-0425-00,,,Final AB,,,,,,,,20140415,20140415,,,49.192345,-122.798207
+668,,1,2,Below Ground Municipal,1000429417,38672,1557110837,,,,In Service,Open,1990,Surrey,7887-0394-00,,1800 X 900,Final AB,,,,,,,,20060629,20140415,0683,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0683.pdf,49.199038,-122.790437
+669,,1,0,Above Ground Municipal,1000429423,38673,1550110743,,,,In Service,Open,1988,Surrey,7883-0358-00,,,Final AB,,,,,,,,20060629,20140410,0645,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0645.pdf,49.197331,-122.792391
+670,,1,0,Above Ground Municipal,1000429548,79497,1588610066,,,,In Service,Open,1990,Surrey,D889,,,Final AB,,,,,,,,20060629,20140416,0639,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0639.pdf,49.185068,-122.781802
+671,,1,0,Above Ground Municipal,1000429549,79498,1566909932,,,,In Service,Open,1981,Surrey,A-312,,,Final AB,,,,,,,,20060629,20140416,0638,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0638.pdf,49.182653,-122.787801
+672,,1,2,Below Ground Municipal,1001742264,,1594709932,,,,In Service,Open,1991,Surrey,7889-0167-00,,1500 CONC,Final AB,,,,,,,,20140417,20140417,,,49.182637,-122.780139
+673,,1,0,Above Ground Municipal,1000429475,123517,1569309540,,,,In Service,Open,1986,Surrey,7880-5360-00,,,Final AB,,,,,,,,20060629,20140425,0603,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0603.pdf,49.175551,-122.787185
+674,,1,0,Above Ground Municipal,1000429476,123518,1553509539,,,,In Service,Open,1980,Surrey,A-158,,,Final AB,,,,,,,,20060629,20140425,0602,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0602.pdf,49.175537,-122.791547
+675,,1,0,Above Ground Municipal,1000429477,123519,1584309541,,,,In Service,Open,1982,Surrey,A-431,,,Final AB,,,,,,,,20060629,20140425,0607,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0607.pdf,49.175566,-122.783037
+676,,1,0,Above Ground Municipal,1000429473,123515,1587909541,,,,In Service,Open,1987,Surrey,7886-0267-00,,,Final AB,,,,,,,,20060629,20140425,0608,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0608.pdf,49.175571,-122.782035
+677,,1,0,Above Ground Municipal,1000429406,123528,1532909328,,,,In Service,Open,1986,Surrey,7885-0172-00,,,Final AB,,,,,,,,20060629,20140428,0609,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0609.pdf,49.171730,-122.797253
+678,,1,0,Above Ground Municipal,1000429400,123522,1550109537,,,,In Service,Open,1984,Surrey,A358,,,Final AB,,,,,,,,20060629,20140428,0601,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0601.pdf,49.175517,-122.792471
+679,,1,0,Above Ground Municipal,1000429404,123526,1546709538,,,,In Service,Open,1980,Surrey,A-158,,,Final AB,,,,,,,,20060629,20140428,0600,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0600.pdf,49.175527,-122.793429
+680,,1,0,Above Ground Municipal,1000429407,123529,1546909097,,,,In Service,Open,1985,Surrey,7883-4060-00,,,Final AB,,,,,,,,20060629,20140428,0610,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0610.pdf,49.167551,-122.793391
+681,,1,0,Above Ground Municipal,1000429402,123524,1539209538,,,,In Service,Open,1980,Surrey,A-158,,,Final AB,,,,,,,,20060629,20140428,0598,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0598.pdf,49.175541,-122.795473
+682,,1,2,Below Ground Municipal,1000429581,142926,1346708399,,,,In Service,Open,1990,Surrey,7888-0554-00,,,Final AB,,,,,,,,20060629,20140717,0666,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0666.pdf,49.155000,-122.848693
+683,,1,2,Below Ground Municipal,1001408413,,1223408362,,,,In Service,Open,1988,Surrey,7887-0345-00,,,Final AB,,,,,,,,20120417,20140717,0680,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0680.pdf,49.154368,-122.882701
+684,,1,1,Above Ground Private,1001408437,,1218508424,,,,,,,Surrey,,,,,,,,,,,,20120417,20140717,0977,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0977.pdf,49.155492,-122.884059
+685,,1,3,Below Ground Private,1001755524,,1394511512,,,,In Service,Open,2014,Private,7810-0091-00,,,Final AB,,,,,,,,20140707,20140922,,,49.211327,-122.835292
+686,,1,3,Below Ground Private,1001755525,,1395611512,,,,In Service,Open,2014,Private,7810-0091-00,,,Final AB,,,,,,,,20140707,20140922,,,49.211326,-122.834998
+687,,1,2,Below Ground Municipal,1001728262,,1885103368,,,,In Service,Open,2013,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.063681,-122.700677
+688,,1,2,Below Ground Municipal,1001728263,,1885203368,,,,In Service,Open,2013,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.063680,-122.700649
+689,,1,2,Below Ground Municipal,1001408409,,1640909256,,,,,,,Surrey,,,,,,,,,,,,20120417,,0618,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0618.pdf,49.170371,-122.767442
+690,,1,2,Below Ground Municipal,1001728341,,1886203401,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Initial AB,,,,,,,,20140206,20141023,,,49.064268,-122.700372
+691,,1,2,Below Ground Municipal,1001728264,,1885103402,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.064289,-122.700673
+692,,1,0,Above Ground Municipal,1000429526,370780,1274707565,,,,In Service,Open,1980,Surrey,9550,,,,,,,,,,,20030101,,0622,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0622.pdf,49.139911,-122.868586
+693,,1,2,Below Ground Municipal,1001728265,,1885203402,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20141023,20141023,,,49.064289,-122.700646
+694,,1,0,Above Ground Municipal,1000429555,79504,1556109745,,,,In Service,Open,1980,Surrey,9204,,,Final AB,,,,,,,,20060629,20080429,0634,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0634.pdf,49.179268,-122.790808
+695,,1,2,Below Ground Municipal,1001728335,,1886203324,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20140206,20141023,,,49.062878,-122.700379
+696,,1,2,Below Ground Municipal,1001728336,,1886303324,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20140206,20141023,,,49.062879,-122.700353
+697,,1,2,Below Ground Municipal,1001728338,,1886303348,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20140206,20141023,,,49.063307,-122.700351
+698,,1,2,Below Ground Municipal,1001728337,,1886203348,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20140206,20141023,,,49.063306,-122.700378
+699,,1,2,Below Ground Municipal,1001728339,,1886203372,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20140206,20141023,,,49.063744,-122.700375
+700,,1,2,Below Ground Municipal,1001728340,,1886303372,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Final AB,,,,,,,,20140206,20141023,,,49.063744,-122.700348
+701,,1,2,Below Ground Municipal,1001728342,,1886303401,,,,In Service,Open,2014,Surrey,7812-0160-00,,,Initial AB,,,,,,,,20140206,20141023,,,49.064268,-122.700345
+702,,1,0,Above Ground Municipal,1000429465,115632,1498509313,,,,In Service,Open,1978,Surrey,4264,Barry Mathers Park,,Final AB,,,,,,,,20060629,20111116,1112,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1112.pdf,49.171482,-122.806737
+703,,1,0,Above Ground Municipal,1000429361,148848,1401408366,,,,History,Closed,,Surrey,D-1301,60B Ave & 190 St,,Final AB,,,,,,,,20060629,20111116,,,49.154381,-122.833584
+704,,1,0,Above Ground Municipal,1000429362,148849,1402608311,,,,In Service,Open,1991,Surrey,7888-0113,,,Final AB,,,,,,,,20060629,20111116,0667,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0667.pdf,49.153393,-122.833275
+705,,1,3,Below Ground Private,1001220278,,1943706547,,,,In Service,Open,2010,Private,7806-0342-00,,,Final AB,,,,,,,,20111114,20111114,,,49.121154,-122.684184
+706,,1,0,Above Ground Municipal,1000429557,370767,1545610332,3.4,,5.25,In Service,Open,2002,Surrey,4899-062,Guildford Heights Park,,Final AB,,,,,,,,20041019,20111115,no_id1p24,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p24.pdf,49.189892,-122.793667
+707,,1,0,Above Ground Municipal,1001217792,,1558003021,,,,In Service,Open,2011,Surrey,7806-0137-00,,,Final AB,,,,,,Sod,Yes,20111102,20111115,,,49.057590,-122.790796
+708,,1,0,Above Ground Municipal,1001126781,,1465503330,,,,In Service,Open,1998,Surrey,7895-0272-00,3387 KGB,,Final AB,,,,,,,,20090629,20111115,no_id1p103,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p103.pdf,49.063231,-122.816247
+709,,1,1,Above Ground Private,1000429472,360077,1609802252,,,,History,Open,1988,Surrey,7887-0811,,,Final AB,,,,,,,,20060629,20111117,1139,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1139.pdf,49.043649,-122.776580
+710,,1,0,Above Ground Municipal,1000429348,108640,1424209119,,,,In Service,Open,1990,Surrey,7888-0672,Behind 9072 142A St,Now with a walkway/Path through park,Final AB,,,,,,,,20060629,20111117,1106,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1106.pdf,49.167996,-122.827244
+711,,1,0,Above Ground Municipal,1000429335,355524,1529202102,,,,In Service,Open,1984,Surrey,7883-202,,,Final AB,,,,,,,,20060629,20111117,,,49.040969,-122.798780
+712,,1,0,Above Ground Municipal,1000429474,123516,1580309538,,,,In Service,Open,1986,Surrey,7883-1740-00,,,Final AB,,,,,,Sod,,20060629,20140425,0604,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0604.pdf,49.175519,-122.784140
+713,,1,0,Above Ground Municipal,1000429510,92943,1242709355,,,,In Service,Open,1981,Surrey,A-375,,,Final AB,,,,,,,,20060629,20140429,0816,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0816.pdf,49.172332,-122.877326
+714,,1,0,Above Ground Municipal,1001408127,,1401202820,,,,In Service,Open,2014,Surrey,4898-6060-00,Chantrell Detention Pond,,Final AB,,,,,,,,20120413,20140505,2030,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/2030.pdf,49.054023,-122.833978
+715,,1,0,Above Ground Municipal,1000429468,115635,1439509041,,,,In Service,Open,1979,Surrey,9427,,,Final AB,,,,,,,,20060629,20140506,0853,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0853.pdf,49.166591,-122.823044
+716,,1,0,Above Ground Municipal,1001408373,,1457408914,,,,In Service,Open,1981,Surrey,A364,,,Final AB,,,,,,,,20120417,20140506,0854,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0854.pdf,49.164286,-122.818104
+717,,1,0,Above Ground Municipal,1000429358,148845,1416808527,,,,In Service,Open,1991,Surrey,7886-0459-00,,,Final AB,,,,,,,,20060629,20140507,1118,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1118.pdf,49.157285,-122.829337
+718,,1,0,Above Ground Municipal,1000429359,148846,1421008522,,,,In Service,Open,1991,Surrey,7886-0459-00,,,Final AB,,,,,,,,20060629,20140507,,,49.157199,-122.828166
+719,,1,0,Above Ground Municipal,1000429467,115634,1439809201,,,,In Service,Open,1987,Surrey,7886-1370-00,,,Final AB,,,,,,,,20060629,20140507,0852,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0852.pdf,49.169485,-122.822946
+720,,1,0,Above Ground Municipal,1000429367,156225,1461508589,,,,In Service,Open,1984,Surrey,7882-2120-00,,,Final AB,,,,,,,,20060629,20140507,0670,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0670.pdf,49.158397,-122.816990
+721,,1,0,Above Ground Municipal,1000429435,73574,1506909780,,,,In Service,Open,1980,Surrey,A-032,,,Final AB,,,,,,,,20060629,20140508,0626,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0626.pdf,49.179920,-122.804387
+722,,1,2,Below Ground Municipal,1001748761,,1420109026,,,,In Service,Open,1990,Surrey,7887-0495-00,,750 RCP,Final AB,,,,,,,,20140515,20140515,,,49.166313,-122.828380
+723,,1,0,Above Ground Municipal,1001748811,,1405809110,,,,In Service,Open,2002,Surrey,7800-0352-00,,,Final AB,,,,,,,,20140515,20140515,,,49.167851,-122.832340
+724,,1,0,Above Ground Municipal,1001752462,,1584402949,,,,In Service,Open,2014,Surrey,7812-0166-00,,,Final AB,,,,,,,,20140605,20140605,,,49.056286,-122.783526
+725,,1,3,Below Ground Private,1001749776,,1350409186,,,,In Service,Open,2000,Private,7897-0128-00,,,Final AB,,,,,,,,20140521,20140521,,,49.169241,-122.847616
+726,,1,2,Below Ground Municipal,1001749755,,1337008868,,,,In Service,Open,1990,Surrey,7888-0332-00,,6000 X 2000 Conc Box,Final AB,,,,,,,,20140521,20140522,,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0658.pdf,49.163491,-122.851317
+727,,1,1,Above Ground Private,1001749969,,1351609603,,,,In Service,Open,2007,Private,7803-0369-00,,,Final AB,,,,,,,,20140522,20140522,,,49.176793,-122.847262
+728,,1,0,Above Ground Municipal,1000429543,69067,1419510179,,,,In Service,Open,1983,Surrey,A-324,,,Final AB,,,,,,,,20060629,20140523,0631,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0631.pdf,49.187194,-122.828477
+729,,1,0,Above Ground Municipal,1001752463,,1588202967,,,,,,,Surrey,,,Digitized Via 7812-0166-00,,,,,,,,,20140605,20140605,,,49.056593,-122.782481
+730,,1,1,Above Ground Private,1001408192,,1434110435,,,,History,,,Surrey,,,,,,,,,,,,20120416,20140605,,,49.191820,-122.824450
+731,,1,0,Above Ground Municipal,1001408180,,1293206732,,,,In Service,Open,1984,Surrey,7882-1920-00,,,Final AB,,,,,,,,20120416,20140722,0296,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0296.pdf,49.124859,-122.863521
+732,,1,1,Above Ground Private,1001408194,,1536210605,,,,,,,Surrey,,,,,,,,,,,,20120416,,0647,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0647.pdf,49.194843,-122.796240
+733,,1,0,Above Ground Municipal,1000429453,281117,1881805738,,,,In Service,Open,1988,Surrey,7886-4520,,,Final AB,,,,,,,,20060629,20081028,0065,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0065.pdf,49.106572,-122.701334
+734,,1,0,Above Ground Municipal,1000429333,252596,1313606394,,,,In Service,Open,1981,Surrey,A-205,,,Final AB,,,,,,,,20060629,20140722,0268,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0268.pdf,49.118735,-122.857919
+735,,1,0,Above Ground Municipal,1000429539,220582,1305106519,,,,,,1986,Surrey,7881-3910-00,,,Final AB,,,,,,,,20060629,20140722,0300,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0300.pdf,49.120997,-122.860259
+736,,1,0,Above Ground Municipal,1001408155,,1839306938,,,,,,,Surrey,,,,,,,,,,,,20120416,,6602,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/6602.pdf,49.128311,-122.712923
+737,,1,0,Above Ground Municipal,1000429537,220580,1305406576,,,,In Service,Open,1982,Surrey,A-531,,,Final AB,,,,,,,,20060629,20140722,0299,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0299.pdf,49.122036,-122.860155
+738,,1,0,Above Ground Municipal,1000429582,142927,1325908261,,,,In Service,Open,1999,Surrey,4898-605,,,Final AB,,,,,,,,20060629,20081001,0665,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0665.pdf,49.152509,-122.854422
+739,,1,0,Above Ground Municipal,1000429536,220579,1306106670,,,,In Service,,1982,Surrey,A-531,,,Final AB,,,,,,,,20060629,20140722,0298,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0298.pdf,49.123728,-122.859981
+740,,1,0,Above Ground Municipal,1000429373,156224,1479308644,,,,In Service,Open,1988,Surrey,7886-2250,,,Final AB,,,,,,,,20060629,20080928,0671,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0671.pdf,49.159387,-122.812074
+741,,1,0,Above Ground Municipal,1000429535,220578,1304706708,,,,In Service,Open,1983,Surrey,A-417,,,Final AB,,,,,,,,20060629,20140723,0297,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0297.pdf,49.124413,-122.860351
+742,,1,1,Above Ground Private,1001408419,,1197208436,,,,,,,Surrey,,,,,,,,,,,,20120417,,0676,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0676.pdf,49.155726,-122.889926
+743,,1,0,Above Ground Municipal,1001408193,,1517810589,,,,,,,Surrey,,,,,,,,,,,,20120416,,0682,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0682.pdf,49.194553,-122.801307
+744,,1,0,Above Ground Municipal,1000429534,220577,1328806733,,,,In Service,Open,1979,Surrey,9187,,,Final AB,,,,,,,,20060629,20140723,0293,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0293.pdf,49.124863,-122.853717
+745,,1,0,Above Ground Municipal,1000429538,220581,1335306566,,,,In Service,Open,1984,Surrey,7881-0030-00,,,Final AB,,,,,,,,20060629,20140723,0294,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0294.pdf,49.121835,-122.851922
+746,,1,0,Above Ground Municipal,1001408179,,1327606574,,,,In Service,Open,1981,Surrey,A-225,,,Final AB,,,,,,,,20120416,20140723,0295,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0295.pdf,49.121979,-122.854042
+747,,1,0,Above Ground Municipal,1000429442,266775,1737005720,,,,History,Open,1990,Surrey,D-994,174 St & 57 Ave,"May not have been built. New dyke construction over location, Project 4897-304.",Final AB,,,,,,,,20060629,20111117,1132,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1132.pdf,49.106340,-122.741243
+748,,1,1,Above Ground Private,1001146658,,1761606756,,,,In Service,Open,2007,Provincial,MOTH 71101-2005,,,Final AB,,,,,,,,20100114,20100428,,,49.125062,-122.734385
+749,,1,0,Above Ground Municipal,1000429382,370748,1861006939,18950,,0.34,In Service,Open,2002,Surrey,7801-0198-00,,,Final AB,,,,,,Concrete,,20030930,20101129,,,49.128315,-122.706960
+750,,1,0,Above Ground Municipal,1001183335,,1866606915,,,,In Service,Open,2005,Surrey,7803-0060-00,,,Final AB,,,,,,Concrete,,20101129,20101129,no_id1p68,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id1p68.pdf,49.127865,-122.705403
+751,,0,1,Above Ground Private,1000429336,355525,1538002083,,,,History,Closed,1980,Private,9389,,,Final AB,,,,,,,,20060629,20111118,1138,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1138.pdf,49.040632,-122.796366
+752,,0,0,Above Ground Municipal,1000429334,355523,1532802085,,,,History,Closed,1980,Surrey,9389,,,Final AB,,,,,,,,20060629,20111118,1137,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1137.pdf,49.040674,-122.797812
+753,,1,1,Above Ground Private,1000429377,195246,1373707661,,,,,,1987,Private,7886-1370,,,Final AB,,,,,,,,20060629,20101026,1036,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1036.pdf,49.141647,-122.841278
+754,,1,1,Above Ground Private,1000429428,73567,1488810130,,,,In Service,Open,1972,Private,1873,,,Final AB,,,,,,,,20060629,20101026,0630,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0630.pdf,49.186276,-122.809361
+755,,1,3,Below Ground Private,1000429439,370772,1596308624,1000,,,In Service,Open,2005,Private,7801-0237-00,,SEE SS-044-732,Final AB,20060713,,,,,,,20060110,20101026,,,49.158963,-122.779810
+756,,1,1,Above Ground Private,1000429459,290285,1948506251,,,,In Service,Open,1980,Private,A-094,,,Final AB,,,,,,,,20060629,20101026,0120,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0120.pdf,49.115795,-122.682909
+757,,1,1,Above Ground Private,1000429529,220572,1327107100,,,,,,1990,Private,7887-3361,,,Final AB,,,,,,,,20060629,20101026,0400,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0400.pdf,49.131507,-122.854168
+758,,1,1,Above Ground Private,1000429531,220574,1333507074,,,,,,1981,Private,A-352,,,Final AB,,,,,,,,20060629,20101026,0395,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0395.pdf,49.131037,-122.852397
+759,,1,1,Above Ground Private,1000429532,220575,1335707051,,,,,,1982,Private,A-019,,,Final AB,,,,,,,,20060629,20101026,0397,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0397.pdf,49.130627,-122.851790
+760,,1,1,Above Ground Private,1000429533,220576,1334107045,,,,,,1980,Private,9204,,,Final AB,,,,,,,,20060629,20101026,0398,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0398.pdf,49.130513,-122.852232
+761,,1,1,Above Ground Private,1000429547,79496,1558710097,,,,In Service,Open,1981,Private,A168,,,Final AB,,,,,,,,20060629,20101026,0644,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0644.pdf,49.185645,-122.790055
+762,,1,3,Below Ground Private,1000860259,,1602209684,22,,,In Service,Open,2006,Private,7804-0258-00,,,Final AB,,,,,,,,20080930,20101026,,,49.178144,-122.778076
+763,,1,3,Below Ground Private,1000860260,,1604409685,22,,,In Service,Open,2006,Private,7804-0258-00,,,Final AB,,,,,,,,20080930,20101026,,,49.178158,-122.777490
+764,,1,3,Below Ground Private,1000835199,,1765010255,,,,In Service,Open,2007,Private,7805-0086-00,,,Final AB,,,,,,,,20071018,20101026,,,49.188388,-122.733088
+765,,1,0,Above Ground Municipal,1000429403,123525,1554909538,,,,In Service,Open,1990,Surrey,7888-0001-00,,,Final AB,,,,,,,,20060629,20140617,0871,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0871.pdf,49.175530,-122.791147
+766,,1,0,Above Ground Municipal,1000429509,63222,1288309655,,,,In Service,Open,1981,Surrey,A-464,,,Final AB,,,,,,,,20060629,20140627,0577,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0577.pdf,49.177751,-122.864733
+767,,1,3,Below Ground Private,1001755874,,1269910703,,,,In Service,Open,2014,Private,7807-0167-00,,,Final AB,,,,,,,,20140710,20140710,,,49.196731,-122.869763
+768,,0,0,Above Ground Municipal,1001408457,,1410708685,,,,History,Closed,,Surrey,,,,,,,,,,,,20120417,20140718,1117,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1117.pdf,49.160150,-122.830998
+769,,1,3,Below Ground Private,1001408523,,1429607704,,,,In Service,Open,1990,Surrey,7887-0133-00,,,Final AB,,,,,,,,20120417,20140718,1009,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1009.pdf,49.142394,-122.825850
+770,,1,0,Above Ground Municipal,1001780685,,1859902389,,,,In Service,Open,2014,Surrey,7810-0301-00,,,Initial AB,,,,,,,,20140912,20140912,,,49.045970,-122.707723
+771,,1,2,Below Ground Municipal,1001843964,,1905203580,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067503,-122.695129
+772,,1,2,Below Ground Municipal,1001843986,,1899103728,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180213,,,49.070183,-122.696793
+773,,1,2,Below Ground Municipal,1001843985,,1899003728,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180213,,,49.070183,-122.696820
+774,,1,2,Below Ground Municipal,1001844011,,1909603784,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180214,,,49.071179,-122.693886
+775,,1,2,Below Ground Municipal,1001844012,,1909603783,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180214,20180214,,,49.071161,-122.693887
+776,,1,2,Below Ground Municipal,1001843955,,1897103580,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180215,20180215,,,49.067510,-122.697350
+777,,1,2,Below Ground Municipal,1001843956,,1897103579,,,,In Service,Open,2017,Surrey,7814-0294-00,2017,,Initial AB,,,,,,,,20180215,20180215,,,49.067492,-122.697350
+778,,1,2,Below Ground Municipal,1001843979,,1897903681,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180213,,,49.069337,-122.697126
+779,,1,2,Below Ground Municipal,1001843980,,1898003681,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180213,,,49.069337,-122.697098
+780,,1,2,Below Ground Municipal,1001843965,,1910603581,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067515,-122.693630
+781,,1,2,Below Ground Municipal,1001843966,,1910603580,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067497,-122.693631
+782,,1,2,Below Ground Municipal,1001843968,,1914703581,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067511,-122.692527
+783,,1,2,Below Ground Municipal,1001843969,,1914703580,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180215,20180215,,,49.067494,-122.692527
+784,,1,2,Below Ground Municipal,1001843987,,1898703769,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180213,,,49.070919,-122.696904
+785,,1,2,Below Ground Municipal,1001843973,,1899103604,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.067938,-122.696806
+786,,1,2,Below Ground Municipal,1001843974,,1899003604,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180213,20180215,,,49.067938,-122.696833
+787,,1,2,Below Ground Municipal,1001843976,,1897903621,,,,In Service,Open,2017,Surrey,7814-0294-00,,,Initial AB,,,,,,,,20180209,20180215,,,49.068238,-122.697132
+788,,1,1,Above Ground Private,1000429425,38675,1534710458,,,,In Service,Open,1990,Private,7887-6340,,,Final AB,,,,,,,,20060629,20101026,0684,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0684.pdf,49.192181,-122.796669
+789,,1,0,Above Ground Municipal,1000429540,370760,1334106871,1000,,,In Service,Open,2001,Surrey,4899-6040-00,,,Final AB,,,,,,,,20040331,20140723,no_id4p61,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/no_id4p61.pdf,49.127354,-122.852229
+790,,1,1,Above Ground Private,1001408214,,1484009825,,,,,,,Surrey,,,,,,,,,,,,20120416,,0689,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0689.pdf,49.180757,-122.810712
+791,,1,1,Above Ground Private,1001408132,,1931906207,,,,,,,Surrey,,,,,,,,,,,,20120416,,0072,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0072.pdf,49.115017,-122.687489
+792,,1,1,Above Ground Private,1001408208,,1501410134,,,,,,,Surrey,,,,,,,,,,,,20120416,,0744,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0744.pdf,49.186344,-122.805882
+793,,1,1,Above Ground Private,1001408209,,1517010040,,,,,,,Surrey,,,,,,,,,,,,20120416,,0746,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0746.pdf,49.184632,-122.801586
+794,,1,0,Above Ground Municipal,1001135007,,1347106884,,,,In Service,Open,1982,Surrey,A-389,,,Final AB,,,,,,,,20091019,20140723,0292,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0292.pdf,49.127585,-122.848643
+795,,1,2,Below Ground Municipal,1001718489,,1905203299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062409,-122.695157
+796,,1,1,Above Ground Private,1001408203,,1481710035,,,,,,,Surrey,,,,,,,,,,,,20120416,,0764,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0764.pdf,49.184560,-122.811311
+797,,1,2,Below Ground Municipal,1001718490,,1905203300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062429,-122.695157
+798,,1,0,Above Ground Municipal,1001408226,,1598210247,,,,,,,Surrey,,,,,,,,,,,,20120416,,0802,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0802.pdf,49.188338,-122.779149
+799,,1,0,Above Ground Municipal,1000429545,79494,1568610237,,,,In Service,Open,1989,Surrey,A-493,,,Final AB,,,,,,,,20060629,20080411,0805,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0805.pdf,49.188173,-122.787323
+800,,1,0,Above Ground Municipal,1001408229,,1669110298,,,,,,,Surrey,,,,,,,,,,,,20120416,,0811,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0811.pdf,49.189215,-122.759556
+801,,1,0,Above Ground Municipal,1001408178,,1351506730,,,,In Service,Open,1979,Surrey,9323,,,Final AB,,,,,,,,20140723,20140723,0441,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0441.pdf,49.124793,-122.847448
+802,,1,2,Below Ground Municipal,1001718491,,1902103300,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062431,-122.696025
+803,,1,0,Above Ground Municipal,1000429368,156226,1499308501,,,,In Service,Open,1984,Surrey,A-572,,,Final AB,,,,,,,,20060629,,0933,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/0933.pdf,49.156788,-122.806567
+804,,1,0,Above Ground Municipal,1000429542,259321,1447805644,,,,In Service,Open,1991,Surrey,7883-0204-00,,,Final AB,,,,,,,,20060629,20140723,1131,http://cosmos.surrey.ca/geo_ref/images/drainage/detentionponds/datasheets/1131.pdf,49.105110,-122.820980
+805,,1,2,Below Ground Municipal,1001718492,,1902103299,,,,In Service,Open,2013,Surrey,7810-0179-00,,,Final AB,,,,,,,,20131114,,,,49.062410,-122.696025

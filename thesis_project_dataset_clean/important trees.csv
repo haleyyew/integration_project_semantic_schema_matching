@@ -1,0 +1,407 @@
+,SITE_NAME,TREE_SPECIES,TREE_STATUS,SIGNIFICANT_TREE_NO,HERITAGE_TREE_NO,HERITAGE_PLAQUE_NO,OWNER,CRE_DATE,MOD_DATE,Latitude,Longitude
+0,Green Timbers RCMP E Division,European Ash,Operating,288,197,Group 9,Federal,,20110318,49.179344,-122.829397
+1,Green Timbers RCMP E Division,Sugar Maple,Operating,289,198,Group 9,Federal,,20110318,49.179388,-122.829352
+2,Green Timbers RCMP E Division,European Ash,Operating,290,199,Group 9,Federal,,20110318,49.179439,-122.829300
+3,Green Timbers RCMP E Division,American Elm,Operating,291,200,Group 9,Federal,,20110318,49.179529,-122.829222
+4,Green Timbers RCMP E Division,Red Maple,Operating,292,201,Group 9,Federal,,20110318,49.179673,-122.829076
+5,Green Timbers RCMP E Division,London Plane,Operating,293,202,Group 9,Federal,,20110318,49.179898,-122.828870
+6,Green Timbers RCMP E Division,Sugar Maple,Operating,294,203,Group 9,Federal,,20110318,49.179971,-122.828814
+7,Surrey Nature Centre at Green Timbers,Dawn Redwood,Operating,264,173,Group 9,City of Surrey,,20110318,49.178776,-122.830244
+8,King George Blvd - 2569,English Oak,Operating,351,Yes,,City of Surrey,20100224,20110318,49.048368,-122.797335
+9,King George Blvd - 2571,English Oak,Operating,353,Yes,,City of Surrey,20100224,20110318,49.048569,-122.797593
+10,King George Blvd - 2591,English Oak,Operating,354,Yes,,City of Surrey,20100224,20110318,49.048781,-122.797834
+11,King George Blvd - 2641,English Oak,Operating,355,Yes,,City of Surrey,20100224,20110318,49.049621,-122.798883
+12,King George Blvd - 2645,English Oak,Operating,356,Yes,,City of Surrey,20100224,20110318,49.049778,-122.799074
+13,King George Blvd - 2649,English Oak,Operating,357,Yes,,City of Surrey,20100224,20110318,49.049934,-122.799274
+14,King George Blvd - 2651,English Oak,Operating,359,Yes,,City of Surrey,20100224,20110318,49.050130,-122.799431
+15,King George Blvd - 2655,English Oak,Operating,360,Yes,,City of Surrey,20100224,20110318,49.050370,-122.799739
+16,King George Blvd - 2675,English Oak,Operating,363,Yes,,City of Surrey,20100224,20110318,49.050947,-122.800527
+17,King George Blvd - 2428,English Oak,Operating,336,Yes,,City of Surrey,20100224,20110318,49.046121,-122.793991
+18,King George Blvd - 2430,English Oak,Operating,337,Yes,,City of Surrey,20100224,20110318,49.046363,-122.794280
+19,King George Blvd - 2460,English Oak,Operating,339,Yes,,City of Surrey,20100224,20110318,49.046803,-122.794775
+20,King George Blvd - 2466,English Oak,Operating,341,Yes,,City of Surrey,20100224,20110318,49.047000,-122.795024
+21,King George Blvd - 2480,English Oak,Operating,343,Yes,,City of Surrey,20100224,20110318,49.047256,-122.795341
+22,King George Blvd - 2498,English Oak,Operating,345,Yes,,City of Surrey,20100224,20110318,49.047484,-122.795625
+23,King George Blvd - 2500,English Oak,Operating,346,Yes,,City of Surrey,20100224,20110318,49.047732,-122.795935
+24,King George Blvd - 2524,English Oak,Operating,347,Yes,,City of Surrey,20100224,20110318,49.047972,-122.796234
+25,King George Blvd - 2530,English Oak,Operating,348,Yes,,City of Surrey,20100224,20110318,49.048184,-122.796499
+26,King George Blvd - 2536,English Oak,Operating,349,Yes,,City of Surrey,20100224,20110318,49.048414,-122.796785
+27,King George Blvd - 2546,English Oak,Operating,350,Yes,,City of Surrey,20100224,20110318,49.048684,-122.797117
+28,King George Blvd - 2570,English Oak,Operating,352,Yes,,City of Surrey,20100224,20110318,49.048963,-122.797459
+29,King George Blvd - 2650,English Oak,Operating,358,Yes,,City of Surrey,20100224,20110318,49.050541,-122.799348
+30,King George Blvd - 2660,English Oak,Operating,361,Yes,,City of Surrey,20100224,20110318,49.050742,-122.799603
+31,King George Blvd - 2670,English Oak,Operating,362,Yes,,City of Surrey,20100224,20110318,49.050950,-122.799859
+32,King George Blvd - 1300,English Oak,Operating,093,Yes,,City of Surrey,,20110318,49.026669,-122.769888
+33,King George Blvd - 2925,English Oak,Operating,029,Yes,,City of Surrey,,20110318,49.054622,-122.805029
+34,King George Blvd - 1293,English Oak,Operating,090,Yes,,City of Surrey,,20110318,49.026670,-122.770421
+35,King George Blvd - 3387,English Oak,Operating,057,Yes,,City of Surrey,,20110318,49.063459,-122.816037
+36,King George Blvd - 3189,English Oak,Operating,037,Yes,,City of Surrey,,20110318,49.060101,-122.811867
+37,King George Blvd - 1276,English Oak,Operating,083,Yes,,City of Surrey,,20110318,49.025758,-122.768770
+38,King George Blvd - 1284,English Oak,Operating,086,Yes,,City of Surrey,,20110318,49.026056,-122.769138
+39,King George Blvd - 2962,English Oak,Operating,032,Yes,,City of Surrey,,20110318,49.054926,-122.804783
+40,King George Blvd - 1195,English Oak,Operating,069,Yes,,City of Surrey,,20110318,49.023649,-122.766674
+41,King George Blvd - 1280,English Oak,Operating,085,Yes,,City of Surrey,,20110318,49.025903,-122.768948
+42,King George Blvd - 2855,English Oak,Operating,026,Yes,,City of Surrey,,20110318,49.053737,-122.803898
+43,King George Blvd - 3269,English Oak,Operating,040,Yes,,City of Surrey,,20110318,49.061390,-122.813477
+44,King George Blvd - 1231,English Oak,Operating,074,Yes,,City of Surrey,,20110318,49.024542,-122.767778
+45,King George Blvd - 3389,English Oak,Operating,058,Yes,,City of Surrey,,20110318,49.063679,-122.816288
+46,King George Blvd - 1288,English Oak,Operating,087,Yes,,City of Surrey,,20110318,49.026209,-122.769329
+47,King George Blvd - 2015,English Oak,Operating,004,Yes,,City of Surrey,,20110318,49.038636,-122.785267
+48,King George Blvd - 1292,English Oak,Operating,089,Yes,,City of Surrey,,20110318,49.026363,-122.769520
+49,King George Blvd - 3237,English Oak,Operating,038,Yes,,City of Surrey,,20110318,49.060741,-122.812672
+50,King George Blvd - 2825,English Oak,Operating,024,Yes,,City of Surrey,,20110318,49.053259,-122.803352
+51,King George Blvd - 1211,English Oak,Operating,072,Yes,,City of Surrey,,20110318,49.024100,-122.767232
+52,King George Blvd - 3395,English Oak,Operating,061,Yes,,City of Surrey,,20110318,49.064319,-122.817094
+53,King George Blvd - 3333,English Oak,Operating,056,Yes,,City of Surrey,,20110318,49.062472,-122.814801
+54,King George Blvd - 2812,English Oak,Operating,023,Yes,,City of Surrey,,20110318,49.053132,-122.802600
+55,King George Blvd - 1275,English Oak,Operating,082,Yes,,City of Surrey,,20110318,49.026075,-122.769713
+56,King George Blvd - 3391,English Oak,Operating,059,Yes,,City of Surrey,,20110318,49.063878,-122.816548
+57,King George Blvd - 1201,English Oak,Operating,070,Yes,,City of Surrey,,20110318,49.023920,-122.767001
+58,King George Blvd - 2885,English Oak,Operating,028,Yes,,City of Surrey,,20110318,49.054377,-122.804716
+59,King George Blvd - 2970,English Oak,Operating,033,Yes,,City of Surrey,,20110318,49.055845,-122.805888
+60,King George Blvd - 1296,English Oak,Operating,091,Yes,,City of Surrey,,20110318,49.026516,-122.769711
+61,King George Blvd - 1299,English Oak,Operating,092,Yes,,City of Surrey,,20110318,49.026851,-122.770653
+62,King George Blvd - 2952,English Oak,Operating,030,Yes,,City of Surrey,,20110318,49.054495,-122.804244
+63,King George Blvd - 2009,English Oak,Operating,003,Yes,,City of Surrey,,20110318,49.038447,-122.785035
+64,King George Blvd - 1255,English Oak,Operating,077,Yes,,City of Surrey,,20110318,49.025245,-122.768677
+65,King George Blvd - 1289,English Oak,Operating,088,Yes,,City of Surrey,,20110318,49.026472,-122.770190
+66,King George Blvd - 3061,English Oak,Operating,035,Yes,,City of Surrey,,20110318,49.057469,-122.808605
+67,King George Blvd - 2986,English Oak,Operating,034,Yes,,City of Surrey,,20110318,49.056269,-122.806433
+68,King George Blvd - 1272,English Oak,Operating,081,Yes,,City of Surrey,,20110318,49.025614,-122.768593
+69,King George Blvd - 3331,English Oak,Operating,042,Yes,,City of Surrey,,20110318,49.062237,-122.814528
+70,King George Blvd - 2678,Monkey Puzzle Tree,Decommissioned,173,086,27,Private,,20110203,49.051518,-122.800389
+71,King George Blvd - 3155,English Oak,Operating,036,Yes,,City of Surrey,,20110318,49.059001,-122.810488
+72,King George Blvd - 3247,English Oak,Operating,039,Yes,,City of Surrey,,20110318,49.061156,-122.813190
+73,King George Blvd - 2845,English Oak,Operating,025,Yes,,City of Surrey,,20110318,49.053458,-122.803625
+74,King George Blvd - 2958,English Oak,Operating,031,Yes,,City of Surrey,,20110318,49.054717,-122.804526
+75,King George Blvd - 2875,English Oak,Operating,027,Yes,,City of Surrey,,20110318,49.054162,-122.804476
+76,King George Blvd - 1221,English Oak,Operating,073,Yes,,City of Surrey,,20110318,49.024290,-122.767478
+77,King George Blvd - 3393,English Oak,Operating,060,Yes,,City of Surrey,,20110318,49.064121,-122.816821
+78,King George Blvd - 1984,English Oak,Operating,001,Yes,,City of Surrey,,20110318,49.037987,-122.784476
+79,King George Blvd - 1279,English Oak,Operating,084,Yes,,City of Surrey,,20110318,49.026265,-122.769945
+80,King George Blvd - 3329,English Oak,Operating,041,Yes,,City of Surrey,,20110318,49.062030,-122.814268
+81,King George Blvd - 2713,English Oak,Operating,368,Yes,,City of Surrey,20100224,20110318,49.051175,-122.800819
+82,King George Blvd - 2680,English Oak,Operating,364,Yes,,City of Surrey,20100224,20110318,49.051127,-122.800080
+83,King George Blvd - 2690,English Oak,Operating,365,Yes,,City of Surrey,20100224,20110318,49.051350,-122.800351
+84,King George Blvd - 2700,English Oak,Operating,366,Yes,,City of Surrey,20100224,20110318,49.051568,-122.800628
+85,King George Blvd - 2710,English Oak,Operating,367,Yes,,City of Surrey,20100224,20110318,49.051763,-122.800878
+86,King George Blvd - 2770,English Oak,Operating,375,Yes,,City of Surrey,20100225,20110318,49.052298,-122.801589
+87,King George Blvd - 2780,English Oak,Operating,376,Yes,,City of Surrey,20100225,20110318,49.052431,-122.801761
+88,King George Blvd - 2790,English Oak,Operating,377,Yes,,City of Surrey,20100225,20110318,49.052746,-122.802155
+89,King George Blvd - 2800,English Oak,Operating,378,Yes,,City of Surrey,20100225,20110318,49.052945,-122.802408
+90,King George Blvd - 2751,English Oak,Operating,369,Yes,,City of Surrey,20100225,20110318,49.051870,-122.801668
+91,King George Blvd - 2755,English Oak,Operating,370,Yes,,City of Surrey,20100225,20110318,49.052067,-122.801899
+92,King George Blvd - 2759,English Oak,Operating,371,Yes,,City of Surrey,20100225,20110318,49.052240,-122.802123
+93,King George Blvd - 2763,English Oak,Operating,372,Yes,,City of Surrey,20100225,20110318,49.052430,-122.802357
+94,King George Blvd - 2765,English Oak,Operating,373,Yes,,City of Surrey,20100225,20110318,49.052611,-122.802585
+95,King George Blvd - 2769,English Oak,Operating,374,Yes,,City of Surrey,20100225,20110318,49.052790,-122.802801
+96,King George Blvd - 1269,English Oak,Operating,080,Yes,,City of Surrey,,20110318,49.025838,-122.769420
+97,King George Blvd - 1265,English Oak,Operating,079,Yes,,City of Surrey,,20110318,49.025645,-122.769165
+98,King George Blvd - 1250,English Oak,Operating,075,Yes,,City of Surrey,20100331,20110318,49.025331,-122.768239
+99,King George Blvd - 1259,English Oak,Operating,078,Yes,,City of Surrey,,20110318,49.025425,-122.768913
+100,King George Blvd - 1985,English Oak,Operating,002,Yes,,City of Surrey,,20110318,49.037814,-122.783574
+101,King George Blvd - 2227,English Oak,Operating,315,Yes,,City of Surrey,20100224,20110318,49.042344,-122.789788
+102,King George Blvd - 2225,English Oak,Operating,314,Yes,,City of Surrey,20100224,20110318,49.042173,-122.789613
+103,Port Kells Park - 19340 88 Ave,English Oak,Operating,207,119,Group 14,City of Surrey,,20110318,49.161730,-122.687550
+104,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152702,-122.701668
+105,18385 80 Ave.,White Ash,Operating,251,,,City of Surrey,20110315,20110316,49.148266,-122.712525
+106,12973 56 Ave.,Copperleaf European Beech,Operating,248,,,City of Surrey,20110316,20110316,49.105159,-122.863032
+107,8850 Harvie Road,Douglas Fir,Operating,249,,,City of Surrey,20110316,20110316,49.163908,-122.696544
+108,8850 Harvie Road,Douglas Fir,Operating,250,,,City of Surrey,20110316,20110316,49.163864,-122.696310
+109,Port Kells Park - 19340 88 Ave,Douglas Fir,Operating,235,147,Group 14,City of Surrey,,20110318,49.159840,-122.686538
+110,Dart's Hill Garden Park - 1660 168 St,Incense Cedar,Operating,108,019,Group 1,City of Surrey,,20110318,49.032417,-122.756728
+111,Port Kells Park - 19340 88 Ave,English Oak,Operating,222,134,Group 14,City of Surrey,,20110318,49.162388,-122.685987
+112,The Glades - 561 172 St,Western redcedar,Operating,169,081,Group 8,City of Surrey,,20110318,49.011986,-122.747405
+113,Elgin Recreation Centre - 3530 144 St,Various,Operating,047,,,City of Surrey,,20110318,49.065947,-122.822249
+114,Mound Farm Park - 5288 168 St,Western Redcedar,Operating,157,068,Group 7,City of Surrey,,20110318,49.097657,-122.745902
+115,Port Kells Park - 19340 88 Ave,English Oak,Operating,219,131,Group 14,City of Surrey,,20110318,49.162772,-122.686121
+116,Dart's Hill Garden Park - 1660 168 St,California Bay Tree,Operating,121,032,Group 1,City of Surrey,,20110318,49.032342,-122.754991
+117,Semiahmoo Trail,Various,Operating,202,,,City of Surrey,,20110318,49.057227,-122.814998
+118,12649 25 Ave,Coulter Pine,Operating,185,098,,Private,,20110318,49.048488,-122.871359
+119,Colebrook Park - 13275 Colebrook Rd,English Oak,Operating,200,113,Group 12,City of Surrey,,20110318,49.096307,-122.855591
+120,Dart's Hill Garden Park - 1660 168 St,Weeping Giant Sequoia,Operating,123,034,Group 1,City of Surrey,,20110318,49.032063,-122.755252
+121,St. Oswald's Church - 19016 96 Ave,Douglas Fir,Operating,127,038,Group 2,City of Surrey,,20110318,49.176417,-122.695928
+122,Dart's Hill Garden Park - 1660 168 St,China Fir,Operating,122,033,Group 1,City of Surrey,,20110318,49.031828,-122.754419
+123,Port Kells Library - 18885 88 Ave,Douglas Fir,Operating,243,155,30,City of Surrey,,20110318,49.162934,-122.699713
+124,Elgin Community Hall - 14250 Crescent Rd,Various,Operating,046,,,City of Surrey,,20110318,49.066953,-122.827283
+125,Redwood Park - 17900 20 Ave,Wych Elm,Operating,148,058,Group 5,City of Surrey,,20110318,49.034071,-122.727674
+126,Redwood Park - 17900 20 Ave,English Walnut,Operating,143,053,Group 5,City of Surrey,,20110318,49.034287,-122.728070
+127,St. Oswald's Church - 19016 96 Ave,Douglas Fir,Operating,126,037,Group 2,City of Surrey,,20110318,49.176354,-122.695928
+128,Robert Dougal MacKenzie House - 5418 184 St,Various,Operating,055,,,Private,,20110318,49.100888,-122.712130
+129,Christ Church & Cemetery - 16631 Old McLellan Rd,Various,Operating,045,,,Synod of the Diocese of New Westminster,,20110318,49.108747,-122.762041
+130,Crescent Road - as per Bylaw No. 7716 (1983),Various,Operating,049,,,City of Surrey,,20110318,49.054069,-122.875149
+131,18029 Hwy 10 - Bourassa Property,English Walnut,Operating,178,091,,Private,,20110318,49.104968,-122.721491
+132,Green Timbers,Babylon Weeping Willow,Decommissioned,,168,Group 9,City of Surrey,,20110325,49.178997,-122.829410
+133,19083 68b Ave,White Ash,Operating,303,,,City of Surrey,20110323,20110328,49.127792,-122.694428
+134,Dart's Hill Garden Park - 1660 168 St,White Mulberry,Operating,112,023,Group 1,City of Surrey,,20110318,49.031965,-122.755307
+135,Avenue of Trees - 16600 blk Old McLellan Rd,Various,Operating,054,,,City of Surrey,,20110318,49.108468,-122.761666
+136,7572 146 St (53A - Greenbelt),English Walnut,Operating,182,095,18,City of Surrey,,20110318,49.140664,-122.816868
+137,Dart's Hill Garden Park - 1660 168 St,Corkscrew Hazel,Operating,109,020,Group 1,City of Surrey,,20110318,49.032353,-122.756249
+138,10375 133 St,Giant Sequoia,Operating,,002,,Private,,20110318,49.191038,-122.854684
+139,Redwood Park - 17900 20 Ave,Sweet Chestnut,Operating,141,051,Group 5,City of Surrey,,20110318,49.035532,-122.729431
+140,Hazelmere Cemetery - 19184 16 Ave,Bigleaf Maple,Operating,194,106,25,City of Surrey,,20110318,49.030915,-122.692423
+141,St. Oswald's Church - 19016 96 Ave,Douglas Fir,Operating,125,036,Group 2,City of Surrey,,20110318,49.176273,-122.695915
+142,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152369,-122.701670
+143,8495 144 St,Sugar Maple,Operating,253,114,Group 13,City of Surrey,,20110318,49.157342,-122.823513
+144,Surrey Archives-1912 Municipal Hall - 17671 56 Ave,Various,Operating,043,,,City of Surrey,,20120718,49.104404,-122.733299
+145,Semiahmoo Trail,Various,Operating,202,,,City of Surrey,,20110318,49.048821,-122.806982
+146,Crescent Road - as per Bylaw No. 7716 (1983),Various,Operating,049,,,City of Surrey,,20110318,49.054128,-122.863173
+147,Peace Arch Park - Hwy 99 @ Canada-US border,European Beech,Operating,131,041,Group 3,Province of BC,,20110318,49.003162,-122.755941
+148,Colebrook Park - 13275 Colebrook Rd,Purple Beech,Operating,198,111,Group 12,City of Surrey,,20110318,49.096396,-122.854358
+149,Port Kells Park - 19340 88 Ave,Hedge Maple,Operating,215,127,Group 14,City of Surrey,,20110318,49.162773,-122.686637
+150,13642 55a Ave,Douglas Fir,Operating,187,100,29,City of Surrey,,20110318,49.102960,-122.845242
+151,Port Kells Community Hall - 18918 88 Ave,Douglas Fir,Operating,240,152,Group 15,City of Surrey,,20110318,49.162390,-122.698461
+152,Peace Arch Park - Hwy 99 @ Canada-US border,Lawson's Cypress,Operating,138,048,Group 3,Province of BC,,20110318,49.005330,-122.760565
+153,Stewart House / Ward's Marina - 13723 Crescent Rd,Various,Operating,050,,,City of Surrey,,20110318,49.065246,-122.841828
+154,2865 164 St,Weeping Willow,Operating,102,013,15,Private,,20110318,49.054445,-122.768569
+155,18600 blk Hwy #1 - south side,Douglas Fir (dead),Operating,191,,,Province of BC,,20110318,49.174435,-122.708919
+156,Port Kells Elementary School - 19076 88 Ave,Douglas Fir,Operating,245,157,Group 16,School District #36,,20110318,49.161894,-122.694384
+157,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152243,-122.701671
+158,Port Kells Park - 19340 88 Ave,Hedge Maple,Operating,213,125,Group 14,City of Surrey,,20110318,49.162774,-122.686847
+159,Port Kells Park - 19340 88 Ave,Common Beech,Operating,226,138,Group 14,City of Surrey,,20110318,49.161926,-122.685997
+160,Redwood Park - 17900 20 Ave,Golden Lawson's Cypress,Operating,142,052,Group 5,City of Surrey,,20110318,49.034736,-122.727616
+161,Port Kells Park - 19340 88 Ave,Douglas Fir,Operating,237,149,Group 14,City of Surrey,,20110318,49.159760,-122.686607
+162,12691 14 Ave,Beech,Operating,190,104,23,Private,,20110318,49.028528,-122.870291
+163,12237 91a Ave,Western Redcedar,Operating,201,,,Private,,20110318,49.169707,-122.883872
+164,Redwood Park - 17900 20 Ave,Red Oak,Operating,145,055,Group 5,City of Surrey,,20110525,49.034798,-122.727705
+165,13124 14A Ave,Western Red Cedar,Operating,308,,,City of Surrey,20110316,20110323,49.028222,-122.858734
+166,8375 168 St,Weeping Willow,Operating,295,,,City of Surrey,20110323,20110323,49.154997,-122.756771
+167,The Glades - 561 172 St,California Bay Tree,Operating,166,078,Group 8,City of Surrey,,20110323,49.011634,-122.746928
+168,Royal Kwantlen Park,Western Red Cedar,Operating,298,,,City of Surrey,20110323,20110323,49.192573,-122.861338
+169,Enver Creek Park,Giant Sequoia,Operating,299,,,City of Surrey,20110323,20110323,49.151852,-122.816497
+170,Sullivan Park - 6272 152 St,Butternut/White Walnut,Operating,095,005,1,City of Surrey,,20110323,49.116280,-122.796376
+171,Laronde Park,Giant Sequoia,Operating,301,,,City of Surrey,20110323,20110323,49.035948,-122.859210
+172,Cloverdale Athletic Park,Douglas Fir,Operating,302,,,City of Surrey,20110323,20110323,49.116342,-122.753251
+173,Hjorth Road Park,Dawn Redwood,Operating,305,,,City of Surrey,20110323,20110323,49.189771,-122.814106
+174,Unwin Park,Giant Sequoia,Operating,306,,,City of Surrey,20110323,20110323,49.127448,-122.854014
+175,8135 132 St,American Elm,Operating,296,,,City of Surrey,20110323,20110323,49.150460,-122.856990
+176,Elgin Heritage Park,White Spruce,Operating,297,,,City of Surrey,20110323,20110323,49.063232,-122.846936
+177,Tynehead Regional Park,Sitka Spruce,Operating,174,087,,Metro Vancouver,,20140509,49.179470,-122.763033
+178,Tynehead Regional Park,Sitka Spruce,Operating,175,088,,Metro Vancouver,,20140509,49.184208,-122.770325
+179,12645 14B Ave,Common Horse Chestnut,Operating,379,,,City of Surrey,20140527,,49.029207,-122.871569
+180,9700 Block - 168 St,Giant Sequoia,Operating,380,,,City of Surrey,20140527,,49.178679,-122.756635
+181,Sullivan Park,Yellow Buckeye,Operating,300,,,City of Surrey,20110323,20110323,49.116372,-122.795751
+182,Surrey Nature Centre at Green Timbers,Cockspur Thorn,Operating,304,,,City of Surrey,20110323,20110323,49.179080,-122.829873
+183,Hillcrest Park,Jeffrey Pine,Operating,307,,,City of Surrey,20110323,20110323,49.122629,-122.706246
+184,Redwood Park - 17900 20 Ave,Dawn Redwood,Operating,144,054,Group 5,City of Surrey,,20110318,49.035523,-122.725464
+185,King George Blvd - 2050,English Oak,Operating,006,Yes,,City of Surrey,,20110318,49.039212,-122.785333
+186,Port Kells Elementary School - 19076 88 Ave,Douglas Fir,Operating,244,156,Group 16,School District #36,,20110318,49.161976,-122.694452
+187,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152576,-122.701669
+188,Port Kells Park - 19340 88 Ave,Douglas Fir,Operating,236,148,Group 14,City of Surrey,,20110318,49.159741,-122.686525
+189,Port Kells Park - 19340 88 Ave,Hedge Maple,Operating,210,122,Group 14,City of Surrey,,20110318,49.162766,-122.687452
+190,Port Kells Park - 19340 88 Ave,English Oak,Operating,224,136,Group 14,City of Surrey,,20110318,49.162116,-122.686002
+191,Port Kells Park - 19340 88 Ave,English Oak,Operating,227,139,Group 14,City of Surrey,,20110318,49.161867,-122.685995
+192,Port Kells Park - 19340 88 Ave,Common Beech,Operating,228,140,Group 14,City of Surrey,,20110318,49.161811,-122.685986
+193,Port Kells Park - 19340 88 Ave,English Oak,Operating,205,117,Group 14,City of Surrey,,20110318,49.161471,-122.687544
+194,Port Kells Park - 19340 88 Ave,English Oak,Operating,216,128,Group 14,City of Surrey,,20110318,49.162773,-122.686533
+195,18029 Hwy 10 - Bourassa Property,Black Walnut,Operating,180,093,,Private,,20110318,49.105697,-122.721569
+196,Dart's Hill Garden Park - 1660 168 St,Oriental Spruce,Operating,118,029,Group 1,City of Surrey,,20110318,49.032163,-122.755511
+197,Port Kells Park - 19340 88 Ave,English Oak,Operating,229,141,Group 14,City of Surrey,,20110318,49.161730,-122.685991
+198,Heritage Stump - 8920 Queen Mary Blvd,Western Redcedar (stump),Operating,051,,,City of Surrey,,20110318,49.164825,-122.862279
+199,Dart's Hill Garden Park - 1660 168 St,Sweet Chestnut,Operating,111,022,Group 1,City of Surrey,,20110318,49.032082,-122.755402
+200,6091 181a St,Butternut,Operating,172,084,28,Private,,20110318,49.113286,-122.720129
+201,Port Kells Park - 19340 88 Ave,English Oak,Operating,208,120,Group 14,City of Surrey,,20110318,49.162362,-122.687564
+202,Dart's Hill Garden Park - 1660 168 St,Variegated Hiba Arborvitae,Operating,120,031,Group 1,City of Surrey,,20110318,49.032009,-122.755074
+203,Port Kells Park - 19340 88 Ave,Hedge Maple,Operating,217,129,Group 14,City of Surrey,,20110318,49.162773,-122.686423
+204,Colebrook Park - 13275 Colebrook Rd,Purple Beech,Operating,197,110,Group 12,City of Surrey,,20110318,49.096261,-122.854276
+205,18029 Hwy 10 - Bourassa Property,Horse Chestnut,Operating,177,090,,Private,,20110318,49.104895,-122.721190
+206,Bell Park - 1782 136 St,Douglas Fir,Operating,184,097,Group 11,City of Surrey,,20110318,49.034278,-122.844443
+207,King George Blvd - 2078,English Oak,Operating,007,Yes,,City of Surrey,,20110318,49.039663,-122.785864
+208,King George Blvd - 2205,English Oak,Operating,015,Yes,,City of Surrey,,20110318,49.041972,-122.789426
+209,King George Blvd - 2525,English Oak,Operating,017,Yes,,City of Surrey,,20110318,49.047870,-122.796695
+210,King George Blvd - 2023,English Oak,Operating,005,Yes,,City of Surrey,,20110318,49.038861,-122.785526
+211,King George Blvd - 2130,English Oak,Operating,010,Yes,,City of Surrey,,20110318,49.040366,-122.786732
+212,King George Blvd - 2195,English Oak,Operating,014,Yes,,City of Surrey,,20110318,49.041747,-122.789126
+213,King George Blvd - 2620,English Oak,Operating,021,Yes,,City of Surrey,,20110318,49.049823,-122.798452
+214,King George Blvd - 2155,English Oak,Operating,013,Yes,,City of Surrey,,20110318,49.041098,-122.788307
+215,King George Blvd - 2619,English Oak,Operating,020,Yes,,City of Surrey,,20110318,49.049410,-122.798618
+216,King George Blvd - 2121,English Oak,Operating,009,Yes,,City of Surrey,,20110318,49.040205,-122.787175
+217,Crescent Road - as per Bylaw No. 7716 (1983),Various,Operating,049,,,City of Surrey,,20110318,49.062402,-122.847668
+218,14166 Hyland Rd,Douglas Fir,Operating,193,105,24,City of Surrey,,20110318,49.125598,-122.829876
+219,1614 184 St,Western Redcedar,Operating,153,064,13,Private,,20110318,49.031318,-122.712996
+220,9353 160 St (Hemlock Park),English Oak,Operating,104,015,8,City of Surrey,,20110318,49.172693,-122.779007
+221,18029 Hwy 10 - Bourassa Property,English Walnut,Operating,179,092,,Private,,20110318,49.105248,-122.721763
+222,10648 127 St,,Operating,124,035,,Private,,20110318,49.196371,-122.869410
+223,Semiahmoo Trail,Various,Operating,202,,,City of Surrey,,20110318,49.040648,-122.803675
+224,12731 Beckett Rd,Brewer's Weeping Spruce,Operating,195,107,26,Private,,20110318,49.054657,-122.869399
+225,19587 0 Ave,Western Redcedar,Operating,130,040,9,Private,,20110318,49.003880,-122.681350
+226,Crescent Road - as per Bylaw No. 7716 (1983),Various,Operating,049,,,City of Surrey,,20110318,49.065852,-122.837541
+227,Peace Arch Park - Hwy 99 @ Canada-US border,Crimson King Maple,Operating,136,046,Group 3,Province of BC,,20110318,49.004003,-122.757974
+228,Semiahmoo Trail,Various,Operating,202,,,City of Surrey,,20110318,49.044499,-122.804043
+229,Mound Farm Park - 5288 168 St,Douglas Fir,Operating,160,071,Group 7,City of Surrey,,20110318,49.098343,-122.746981
+230,St. Helen's Church - 10787 Old Yale Rd,Various,Operating,044,,,Synod of the Diocese of New Westminster,,20110318,49.198944,-122.868033
+231,Mound Farm Park - 5288 168 St,Douglas Fir,Operating,158,069,Group 7,City of Surrey,,20110318,49.099432,-122.747427
+232,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152846,-122.701667
+233,Mound Farm Park - 5288 168 St,Western Redcedar,Operating,156,067,Group 7,City of Surrey,,20110318,49.097671,-122.745964
+234,King George Blvd - 2511,English Oak,Operating,016,Yes,,City of Surrey,,20110318,49.047652,-122.796436
+235,18029 Hwy 10 - Bourassa Property,Black Walnut,Operating,181,094,,Private,,20110318,49.105157,-122.721490
+236,Peace Arch Park - Hwy 99 @ Canada-US border,Maidenhair Tree,Operating,137,047,Group 3,Province of BC,,20110318,49.003261,-122.756090
+237,Dart's Hill Garden Park - 1660 168 St,Chinese Elm,Operating,119,030,Group 1,City of Surrey,,20110318,49.032449,-122.754689
+238,Port Kells Park - 19340 88 Ave,Sitka Spruce,Operating,234,146,Group 14,City of Surrey,,20110318,49.161027,-122.686174
+239,Colebrook Park - 13275 Colebrook Rd,Purple Beech,Operating,196,109,Group 12,City of Surrey,,20110318,49.096297,-122.854413
+240,Peace Arch Park - Hwy 99 @ Canada-US border,Western White Pine,Operating,132,042,Group 3,Province of BC,,20110318,49.003530,-122.755720
+241,Redwood Park - 17900 20 Ave,Hiba Arborvitae,Operating,147,057,Group 5,City of Surrey,,20110318,49.034844,-122.727711
+242,Peace Arch Park - Hwy 99 @ Canada-US border,Atlas Cedar,Operating,135,045,Group 3,Province of BC,,20110318,49.005047,-122.758352
+243,Dart's Hill Garden Park - 1660 168 St,Bigleaf Magnolia,Operating,113,024,Group 1,City of Surrey,,20110318,49.032215,-122.754731
+244,Port Kells Community Hall - 18918 88 Ave,Douglas Fir,Operating,239,151,Group 15,City of Surrey,,20110318,49.162414,-122.698607
+245,Pillath House - 11113 148 St,Various,Operating,048,,,City of Surrey,,20110318,49.204588,-122.813405
+246,King George Blvd - 2140,English Oak,Operating,011,Yes,,City of Surrey,,20110318,49.040615,-122.787040
+247,King George Blvd - 2601,English Oak,Operating,019,Yes,,City of Surrey,,20110318,49.049194,-122.798345
+248,King George Blvd - 2646,English Oak,Operating,022,Yes,,City of Surrey,,20110318,49.050274,-122.798984
+249,King George Blvd - 2120,English Oak,Operating,008,Yes,,City of Surrey,,20110318,49.039906,-122.786164
+250,King George Blvd - 2150,English Oak,Operating,012,Yes,,City of Surrey,,20110318,49.040889,-122.787391
+251,King George Blvd - 1210,English Oak,Operating,071,Yes,,City of Surrey,,20110318,49.024180,-122.766753
+252,King George Blvd - 1187,English Oak,Operating,068,Yes,,City of Surrey,,20110318,49.023388,-122.766333
+253,The Glades - 561 172 St,Mirbeck's Oak,Operating,167,079,Group 8,City of Surrey,,20110318,49.011238,-122.746657
+254,Port Kells Park - 19340 88 Ave,English Oak,Operating,209,121,Group 14,City of Surrey,,20110318,49.162524,-122.687563
+255,Dart's Hill Garden Park - 1660 168 St,Ironwood,Operating,116,027,Group 1,City of Surrey,,20110318,49.032318,-122.756619
+256,Colebrook Park - 13275 Colebrook Rd,Weeping Linden,Operating,199,112,Group 12,City of Surrey,,20110318,49.095838,-122.854332
+257,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152774,-122.701667
+258,Dart's Hill Garden Park - 1660 168 St,Sekkan Sugi Japanese Cedar,Operating,110,021,Group 1,City of Surrey,,20110318,49.031873,-122.754692
+259,Port Kells Park - 19340 88 Ave,Common Beech,Operating,231,143,Group 14,City of Surrey,,20110318,49.161518,-122.686005
+260,Dart's Hill Garden Park - 1660 168 St,Nordmann Fir,Operating,106,017,Group 1,City of Surrey,,20110318,49.031505,-122.755022
+261,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152109,-122.701671
+262,Port Kells Park - 19340 88 Ave,Common Beech,Operating,203,115,Group 14,City of Surrey,,20110318,49.161219,-122.687544
+263,Redwood Park - 17900 20 Ave,Incense Cedar,Operating,140,050,Group 5,City of Surrey,,20110318,49.034565,-122.727658
+264,Port Kells Park - 19340 88 Ave,English Oak,Operating,212,124,Group 14,City of Surrey,,20110318,49.162774,-122.686944
+265,13398 Vine Maple Dr,Sitka Spruce,Operating,103,014,7,Private,,20110318,49.054604,-122.851253
+266,Dart's Hill Garden Park - 1660 168 St,Spanish Fir,Operating,107,018,Group 1,City of Surrey,,20110318,49.031812,-122.755513
+267,Port Kells Community Hall - 18918 88 Ave,Douglas Fir,Operating,242,154,Group 15,City of Surrey,,20110318,49.162389,-122.698325
+268,Crescent Road - as per Bylaw No. 7716 (1983),Various,Operating,049,,,City of Surrey,,20110318,49.057436,-122.853939
+269,1990 134 St,Douglas Fir,Operating,099,010,16,Private,,20110318,49.038379,-122.850300
+270,Peace Arch Park - Hwy 99 @ Canada-US border,Red Japanese Maple,Operating,134,044,Group 3,Province of BC,,20110318,49.003614,-122.757388
+271,15438 Kildare Dr (74C - Greenbelt),Douglas Fir,Operating,094,004,2,City of Surrey,,20110318,49.109933,-122.794180
+272,Dart's Hill Garden Park - 1660 168 St,Antarctic Beech,Operating,115,026,Group 1,City of Surrey,,20110318,49.032310,-122.756865
+273,Semiahmoo Trail,Various,Operating,202,,,City of Surrey,,20110318,49.064874,-122.820870
+274,Robert Dougal MacKenzie House - 5418 184 St,Scotch Elm,Operating,105,016,12,Private,,20110318,49.100745,-122.712514
+275,King George Blvd - 2337,English Oak,Operating,331,Yes,,City of Surrey,20100224,20110318,49.044468,-122.792512
+276,Green Timbers - Arboretum - 14266 96 Ave,Various,Operating,170,082,Group 9,City of Surrey,,20110318,49.179070,-122.831648
+277,8495 144 St,Sugar Maple,Decommissioned,,114,Group 13,City of Surrey,,20110318,49.157100,-122.823500
+278,8495 144 St,Sugar Maple,Decommissioned,,114,Group 13,City of Surrey,,20110318,49.157172,-122.823500
+279,The Glades - 561 172 St,Eastern White Pine,Decommissioned,165,076,Group 8,City of Surrey,,20110318,49.011886,-122.747173
+280,Green Timbers Way,Black Locust,Operating,282,191,Group 9,Province of BC,,20110318,49.179787,-122.831505
+281,Surrey Nature Centre at Green Timbers,European Beech,Operating,261,170,Group 9,City of Surrey,,20110318,49.178955,-122.830545
+282,Surrey Nature Centre at Green Timbers,Whitebeam Mountain Ash,Operating,257,165,Group 9,City of Surrey,,20110318,49.179106,-122.829749
+283,King George Blvd - 1251,English Oak,Operating,076,Yes,,City of Surrey,,20110318,49.025038,-122.768418
+284,King George Blvd - 2567,English Oak,Operating,018,Yes,,City of Surrey,,20110318,49.048086,-122.796981
+285,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152306,-122.701670
+286,12101 Sullivan St,Madrone,Operating,098,009,17,Private,,20110318,49.056609,-122.886654
+287,Port Kells Park - 19340 88 Ave,English Oak,Operating,232,144,Group 14,City of Surrey,,20110318,49.161460,-122.686002
+288,Port Kells Park - 19340 88 Ave,English Oak,Operating,218,130,Group 14,City of Surrey,,20110318,49.162772,-122.686327
+289,12976 Old Yale Rd,Tulip Tree,Operating,188,102,20,City of Surrey,,20110318,49.191156,-122.862960
+290,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152630,-122.701668
+291,Port Kells Park - 19340 88 Ave,Sitka Spruce,Operating,233,145,Group 14,City of Surrey,,20110318,49.161027,-122.686242
+292,The Glades - 561 172 St,Kobus Magnolia,Operating,162,073,Group 8,City of Surrey,,20110318,49.011764,-122.748801
+293,Port Kells Community Hall - 18918 88 Ave,Douglas Fir,Operating,241,153,Group 15,City of Surrey,,20110318,49.162348,-122.698343
+294,Dart's Hill Garden Park - 1660 168 St,Incense Cedar,Operating,108,019,Group 1,City of Surrey,,20110318,49.032437,-122.756877
+295,13722 56 Ave,English Oak,Operating,186,099,,Private,,20110318,49.104764,-122.842332
+296,The Glades - 561 172 St,Dove Tree,Operating,163,074,Group 8,City of Surrey,,20110318,49.011869,-122.747624
+297,Dart's Hill Garden Park - 1660 168 St,Incense Cedar,Operating,108,019,Group 1,City of Surrey,,20110318,49.032432,-122.756808
+298,The Glades - 561 172 St,Dawn Redwood,Operating,164,075,Group 8,City of Surrey,,20110318,49.011771,-122.747693
+299,Port Kells Park - 19340 88 Ave,English Oak,Operating,214,126,Group 14,City of Surrey,,20110318,49.162772,-122.686738
+300,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152441,-122.701669
+301,Hunter Park - 5480 184a St,Douglas Fir,Operating,151,062,21,City of Surrey,,20110318,49.102299,-122.708203
+302,9016 164 St,Douglas Fir,Operating,100,011,5,Private,,20110318,49.166361,-122.765716
+303,Semiahmoo Trail (123A) - 15100 22 Ave,Douglas Fir,Operating,096,007,3,City of Surrey,,20110318,49.042020,-122.804613
+304,Port Kells Community Hall - 18918 88 Ave,Douglas Fir,Operating,238,150,Group 15,City of Surrey,,20110318,49.162507,-122.698671
+305,Port Kells Park - 19340 88 Ave,Common Beech,Operating,204,116,Group 14,City of Surrey,,20110318,49.161377,-122.687543
+306,4117 152 St,Oriental Plane,Operating,152,063,10,Private,,20110318,49.076861,-122.801835
+307,The Glades - 561 172 St,Weeping Norway Spruce,Operating,161,072,Group 8,City of Surrey,,20110318,49.011557,-122.748720
+308,8261 188 St,Sugar Maple,Operating,247,159,Group 17,City of Surrey,,20110318,49.152162,-122.701671
+309,19251 76 Ave,English Walnut,Operating,189,103,,Private,,20110318,49.141272,-122.689164
+310,Cloverdale Elementary School,Horse Chestnut,Operating,139,049,Group 4,School District #36,,20110318,49.104314,-122.728366
+311,Redwood Park - 17900 20 Ave,Giant Sequoia,Operating,146,056,Group 5,City of Surrey,,20110318,49.034620,-122.728082
+312,King George Blvd - 2200,English Oak,Operating,309,Yes,,City of Surrey,20100224,20110318,49.042056,-122.788888
+313,King George Blvd - 2202,English Oak,Operating,310,Yes,,City of Surrey,20100224,20110318,49.042235,-122.789122
+314,King George Blvd - 2204,English Oak,Operating,311,Yes,,City of Surrey,20100224,20110318,49.042376,-122.789288
+315,King George Blvd - 2206,English Oak,Operating,312,Yes,,City of Surrey,20100224,20110318,49.042555,-122.789507
+316,Surrey Nature Centre at Green Timbers,Sawara False Cypress,Operating,266,175,Group 9,City of Surrey,,20110318,49.178765,-122.830122
+317,Surrey Nature Centre at Green Timbers,European Mountain Ash,Operating,263,172,Group 9,City of Surrey,,20110318,49.178913,-122.830441
+318,Surrey Nature Centre at Green Timbers,Golden Atlas Cedar,Operating,265,174,Group 9,City of Surrey,,20110318,49.178802,-122.830204
+319,King George Blvd - 1150,English Oak,Decommissioned,062,Yes,,City of Surrey,20110318,20110318,49.022724,-122.764911
+320,King George Blvd - 1160,English Oak,Decommissioned,063,Yes,,City of Surrey,20110318,20110318,49.023109,-122.765365
+321,King George Blvd - 1170,English Oak,Decommissioned,064,Yes,,City of Surrey,20110318,20110318,49.023278,-122.765589
+322,King George Blvd - 1180,English Oak,Decommissioned,065,Yes,,City of Surrey,20110318,20110318,49.023643,-122.766061
+323,King George Blvd - 1190,English Oak,Decommissioned,066,Yes,,City of Surrey,20110318,20110318,49.023834,-122.766295
+324,King George Blvd - 1200,English Oak,Decommissioned,067,Yes,,City of Surrey,20110318,20110318,49.024011,-122.766515
+325,8261 152 St,Ponderosa Pine,Operating,,061,,Private,,20110318,49.153034,-122.801586
+326,14239 Melrose Dr,Golden Locust,Operating,149,059,,Private,,20110318,49.206193,-122.827580
+327,Port Kells Park - 19340 88 Ave,Hedge Maple,Operating,220,132,Group 14,City of Surrey,,20110318,49.162771,-122.686012
+328,Dart's Hill Garden Park - 1660 168 St,Medlar,Operating,114,025,Group 1,City of Surrey,,20110318,49.032326,-122.756290
+329,Port Kells Park - 19340 88 Ave,English Oak,Operating,223,135,Group 14,City of Surrey,,20110318,49.162250,-122.686006
+330,Port Kells Park - 19340 88 Ave,English Oak,Operating,206,118,Group 14,City of Surrey,,20110318,49.161624,-122.687541
+331,Surrey Nature Centre at Green Timbers,Thornless Honeylocust,Operating,259,167,Group 9,City of Surrey,,20110318,49.179099,-122.830024
+332,Surrey Nature Centre at Green Timbers,Sawara False Cypress,Operating,260,169,Group 9,City of Surrey,,20110318,49.178944,-122.830622
+333,Surrey Nature Centre at Green Timbers,Weeping White Mulberry,Operating,267,176,Group 9,City of Surrey,,20110318,49.178601,-122.829977
+334,Surrey Nature Centre at Green Timbers,Silver Maple,Operating,254,162,Group 9,City of Surrey,,20110318,49.179279,-122.830198
+335,Green Timbers Way,Northern Red Oak,Operating,277,186,Group 9,Province of BC,,20110318,49.180047,-122.832209
+336,Green Timbers Way,American Elm,Operating,268,177,Group 9,Province of BC,,20110318,49.180765,-122.834073
+337,Surrey Nature Centre at Green Timbers,Weeping American Elm,Operating,258,166,Group 9,City of Surrey,,20110318,49.179041,-122.829750
+338,Green Timbers Way,Northern Red Oak,Operating,269,178,Group 9,Province of BC,,20110318,49.180715,-122.833921
+339,Surrey Nature Centre at Green Timbers,Hedge Maple,Operating,256,164,Group 9,City of Surrey,,20110318,49.179171,-122.829914
+340,Green Timbers Way,White Hawthorne,Operating,270,179,Group 9,Province of BC,,20110318,49.180684,-122.833840
+341,Surrey Nature Centre at Green Timbers,Norway Maple,Operating,255,163,Group 9,City of Surrey,,20110318,49.179200,-122.829979
+342,Green Timbers Way,Common Horse Chestnut,Operating,271,180,Group 9,Province of BC,,20110318,49.180554,-122.833497
+343,Green Timbers Block H,Atlas Cedar,Operating,283,192,Group 9,Province of BC,,20110318,49.179966,-122.831489
+344,Green Timbers Way,Northern Red Oak,Operating,272,181,Group 9,Province of BC,,20110318,49.180519,-122.833404
+345,Green Timbers Block H,Deodar Cedar,Operating,284,193,Group 9,Province of BC,,20110318,49.180015,-122.831617
+346,King George Blvd - 2208,English Oak,Operating,313,Yes,,City of Surrey,20100224,20110318,49.042720,-122.789710
+347,King George Blvd - 2300,English Oak,Operating,321,Yes,,City of Surrey,20100224,20110318,49.043194,-122.790310
+348,King George Blvd - 2302,English Oak,Operating,323,Yes,,City of Surrey,20100224,20110318,49.043375,-122.790531
+349,King George Blvd - 2304,English Oak,Operating,324,Yes,,City of Surrey,20100224,20110318,49.043564,-122.790762
+350,Port Kells Park - 19340 88 Ave,English Oak,Operating,225,137,Group 14,City of Surrey,,20110318,49.161995,-122.685998
+351,Port Kells Park - 19340 88 Ave,English Oak,Operating,230,142,Group 14,City of Surrey,,20110318,49.161581,-122.686002
+352,10375 133 St,Ponderosa Pine,Operating,,001,,Private,,20110318,49.191073,-122.854382
+353,16647 Old McLellan Rd,Royal Oak,Operating,053,066,19,City of Surrey,,20110318,49.109102,-122.760788
+354,St. Oswald's Church - 19016 96 Ave,Douglas Fir,Operating,128,039,Group 2,City of Surrey,,20110318,49.176597,-122.695926
+355,Port Kells Park - 19340 88 Ave,English Oak,Operating,211,123,Group 14,City of Surrey,,20110318,49.162766,-122.687356
+356,19587 0 Ave,Douglas Fir,Operating,101,012,6,Private,,20110318,49.003628,-122.681256
+357,8970 144 St,English Walnut,Operating,,003,,Private,,20110318,49.165902,-122.823194
+358,Dart's Hill Garden Park - 1660 168 St,Canadian/Japanese Walnut,Operating,097,008,4,City of Surrey,,20110318,49.032073,-122.755621
+359,Semiahmoo Trail,Various,Operating,202,,,City of Surrey,,20110318,49.062335,-122.819209
+360,Old Anniedale School - 9744 176 St,Various,Operating,052,,,School District #36,,20110318,49.179523,-122.733560
+361,Port Kells Park - 19340 88 Ave,Common Beech,Operating,221,133,Group 14,City of Surrey,,20110318,49.162480,-122.685977
+362,Mound Farm Park - 5288 168 St,Douglas Fir,Operating,159,070,Group 7,City of Surrey,,20110318,49.099424,-122.747756
+363,St. Oswald's Church - 19016 96 Ave,English Oak,Operating,129,160,31,City of Surrey,,20110318,49.176831,-122.695939
+364,Green Timbers Way,Black Locust,Operating,273,182,Group 9,Province of BC,,20110318,49.180489,-122.833331
+365,Green Timbers Block H,Colorado Blue Spruce,Operating,285,194,Group 9,Province of BC,,20110318,49.180048,-122.831488
+366,Green Timbers Way,Western Catalpa,Operating,274,183,Group 9,Province of BC,,20110318,49.180417,-122.833151
+367,Green Timbers Block H,Weeping Giant Sequoia,Operating,286,195,Group 9,Province of BC,,20110318,49.180261,-122.831400
+368,Green Timbers Way,Red Maple,Operating,275,184,Group 9,Province of BC,,20110318,49.180336,-122.832943
+369,Green Timbers Way,Purple Leaf English Oak,Operating,276,185,Group 9,Province of BC,,20110318,49.180097,-122.832352
+370,Surrey Nature Centre at Green Timbers,Weeping Cut-leaf Birch,Operating,262,171,Group 9,City of Surrey,,20110318,49.178840,-122.830200
+371,Green Timbers Way,Northern Red Oak,Operating,278,187,Group 9,Province of BC,,20110318,49.180003,-122.832089
+372,Green Timbers Way,Northern Red Oak,Operating,279,188,Group 9,Province of BC,,20110318,49.179946,-122.831946
+373,Green Timbers Way,Tulip Poplar,Operating,280,189,Group 9,Province of BC,,20110318,49.179840,-122.831646
+374,Green Timbers Way,Norway Maple,Operating,281,190,Group 9,Province of BC,,20110318,49.179814,-122.831577
+375,Port Kells Elementary School - 19076 88 Ave,Douglas Fir,Operating,246,158,Group 16,School District #36,,20110318,49.162057,-122.694740
+376,Crescent Road - as per Bylaw No. 7716 (1983),Various,Operating,049,,,City of Surrey,,20110318,49.067273,-122.824791
+377,18029 Hwy 10 - Bourassa Property,Common Apple,Operating,176,089,,Private,,20110318,49.104616,-122.721205
+378,English Oak Grove - 140 St & 96 Ave,English Oak,Operating,150,060,Group 6,Federal,,20110318,49.177912,-122.833950
+379,Dart's Hill Garden Park - 1660 168 St,Empress Tree,Operating,117,028,Group 1,City of Surrey,,20110318,49.031649,-122.754994
+380,Bell Park - 1782 136 St,Douglas Fir,Operating,183,096,Group 11,City of Surrey,,20110318,49.034547,-122.843868
+381,9012 160 St,English Oak,Operating,252,,32,City of Surrey,,20110318,49.166538,-122.778457
+382,13997 90 Ave,English Oak,Operating,171,083,11,City of Surrey,,20110318,49.166651,-122.834783
+383,8495 144 St,Sugar Maple,Operating,253,114,Group 13,City of Surrey,,20110318,49.157279,-122.823513
+384,4100 152 St,White/American Elm,Operating,,006,Group 10,Private,,20110318,49.076417,-122.800248
+385,King George Blvd - 2306,English Oak,Operating,325,Yes,,City of Surrey,20100224,20110318,49.043790,-122.791042
+386,King George Blvd - 2308,English Oak,Operating,326,Yes,,City of Surrey,20100224,20110318,49.043967,-122.791270
+387,King George Blvd - 2310,English Oak,Operating,327,Yes,,City of Surrey,20100224,20110318,49.044276,-122.791658
+388,King George Blvd - 2320,English Oak,Operating,329,Yes,,City of Surrey,20100224,20110318,49.044495,-122.791968
+389,King George Blvd - 2336,English Oak,Operating,330,Yes,,City of Surrey,20100224,20110318,49.044682,-122.792202
+390,King George Blvd - 2251,English Oak,Operating,316,Yes,,City of Surrey,20100224,20110318,49.042877,-122.790481
+391,King George Blvd - 2255,English Oak,Operating,317,Yes,,City of Surrey,20100224,20110318,49.043077,-122.790727
+392,King George Blvd - 2281,English Oak,Operating,318,Yes,,City of Surrey,20100224,20110318,49.043278,-122.790979
+393,King George Blvd - 2293,English Oak,Operating,319,Yes,,City of Surrey,20100224,20110318,49.043490,-122.791247
+394,King George Blvd - 2297,English Oak,Operating,320,Yes,,City of Surrey,20100224,20110318,49.043771,-122.791638
+395,King George Blvd - 2301,English Oak,Operating,322,Yes,,City of Surrey,20100224,20110318,49.043950,-122.791860
+396,King George Blvd - 2315,English Oak,Operating,328,Yes,,City of Surrey,20100224,20110318,49.044110,-122.792063
+397,King George Blvd - 2355,English Oak,Operating,332,Yes,,City of Surrey,20100224,20110318,49.044737,-122.792826
+398,King George Blvd - 2377,English Oak,Operating,333,Yes,,City of Surrey,20100224,20110318,49.044948,-122.793091
+399,King George Blvd - 2381,English Oak,Operating,334,Yes,,City of Surrey,20100224,20110318,49.045365,-122.793614
+400,King George Blvd - 2423,English Oak,Operating,335,Yes,,City of Surrey,20100224,20110318,49.046126,-122.794549
+401,King George Blvd - 2451,English Oak,Operating,338,Yes,,City of Surrey,20100224,20110318,49.046385,-122.794870
+402,King George Blvd - 2461,English Oak,Operating,340,Yes,,City of Surrey,20100224,20110318,49.046692,-122.795257
+403,King George Blvd - 2471,English Oak,Operating,342,Yes,,City of Surrey,20100224,20110318,49.046869,-122.795482
+404,King George Blvd - 2491,English Oak,Operating,344,Yes,,City of Surrey,20100224,20110318,49.047215,-122.795910
+405,Green Timbers RCMP E Division,Sugar Maple,Operating,287,196,Group 9,Federal,,20110318,49.179252,-122.829472

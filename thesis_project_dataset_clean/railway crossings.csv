@@ -1,0 +1,72 @@
+,MISC_ASSET_TYPE,MISC_ASSET_TYPE2,FACILITYID,LEGACYID,MATERIAL,LENGTH,NAME,RESPONSIBILITY,ROTATION,STATUS,PROJECT_NO,YR,OWNER,LOCATION,COMMENTS,GIS_ENTRY_STAGE,WARRANTYDATE,CONDITION,CONDITIONDATE,YTD_COST,LIFECYCLE_COST,CRE_DATE,MOD_DATE,Latitude,Longitude
+0,0,Railway Crossing,1001855130,,,,BCR @ KING GEORGE BLVD,British Columbia Railway,,In Service,,,Surrey,KING GEORGE BLVD OVERPASS MILE: 4.53,,,,,,,,20160121,20160126,49.097574,-122.818255
+1,0,Railway Crossing,1000959778,,Concrete,,CNR @ TANNERY RD,Canadian National Railway,60,In Service,,,Surrey,11828 TANNERY RD MILE: 1.32 (117.63),"SURRY 50%, OTHER 50%: SENIOR",,,,,,,20081203,20160126,49.196800,-122.894309
+2,0,Railway Crossing,1000959780,,Asphalt,,CNR @ TIMBERLAND RD,Canadian National Railway,125,In Service,,,Surrey,10780 TIMBERLAND RD MILE: 1.21 (117.7),"SURREY 50%, OTHER 50%: JUNIOR",,,,,,,20081203,20160126,49.198479,-122.894639
+3,0,Railway Crossing,1001417698,,Rubber Panel,,SRBC @ 138 ST,Southern Railway British Columbia,93,In Service,,,Surrey,6841 138 ST MILE: 8.24,SURREY 100%: SENIOR,,,,,,,20120706,20160126,49.127159,-122.840462
+4,0,Railway Crossing,1001417704,,Concrete,,SRBC @ 152 ST,Southern Railway British Columbia,98,In Service,,,Surrey,152 ST & 64 AVE MILE: 10.2,SURREY 100%: SENIOR,,,,,,,20120706,20160126,49.118838,-122.800992
+5,0,Railway Crossing,1001417838,,Concrete,,SRBC @ 132 ST,Southern Railway British Columbia,142,In Service,,,Surrey,132 ST & 76 AVE MILE: 7.04,"SURREY 0%, OTHER 100%: JUNIOR",,,,,,,20120710,20160126,49.140933,-122.856760
+6,0,Railway Crossing,1001417965,,Concrete,,BNR @ MCBRIDE DR,Burlington Northern Railway,70,In Service,,,Surrey,MCBRIDE DR & BAYVIEW ST MILE: 126.8,"SURREY 50%, BNR 50%: JUNIOR",,,,,,,20120710,20160120,49.049908,-122.882861
+7,0,Railway Crossing,1001417706,,Concrete,,SRBC @ KING GEORGE BLVD,Southern Railway British Columbia,145,In Service,,,Surrey,7118 KING GEORGE BLVD MILE: 7.88,"0% SURREY, 100% SRBC: SENIOR",,,,,,,20120706,20160120,49.131454,-122.845582
+8,0,Railway Crossing,1001417971,,Rubber Panel,,CNR @ 179 ST,Canadian National Railway,90,In Service,,,Surrey,DALY RD & 179 ST MILE: 109.84,"SURREY 50%, OTHER 50%: JUNIOR",,,,,,,20120710,20160120,49.186669,-122.724768
+9,0,Railway Crossing,1001417970,,Concrete,,CNR @ 132 ST,Canadian National Railway,38,In Service,,,Surrey,13477 116 AVE MILE: 116.53,MAINT UNKNOWN,,,,,,,20120710,20160120,49.214096,-122.855814
+10,0,Railway Crossing,1001417969,,Asphalt,,CPR @ 130 ST,Canadian National Railway,90,In Service,,,Surrey,11731 130 ST MILE: 116.81,MAINT UNKNOWN,,,,,,,20120710,20160120,49.215541,-122.861814
+11,0,Railway Crossing,1001417968,,Asphalt,,CNR @ ELEVATOR RD,Canadian National Railway,,In Service,,,Surrey,"11045 ELEVATOR RD MILE: 2.82, 2.5, 2.06","SURREY 0%, OTHER 100%",,,,,,,20120710,20160120,49.178078,-122.915736
+12,0,Railway Crossing,1001417967,,Concrete,,BNR @ ELEVATOR RD,Burlington Northern Railway,90,In Service,,,Surrey,NEAR ROBSON RD & ELEVATOR RD MILE: 138.9,"SURREY 100%, OTHER 0%: JUNIOR",,,,,,,20120710,20160120,49.178080,-122.912832
+13,0,Railway Crossing,1001417966,,Concrete,,BNR & CRESCENT RD,Burlington Northern Railway,158,In Service,,,Surrey,CRESCENT RD & BAYVIEW ST MILE: 13.72,"SURREY 25%, BNR 75%: JUNIOR",,,,,,,20120710,20160120,49.053519,-122.878673
+14,0,Railway Crossing,1001417964,,Asphalt,,CNR @ PARTON RD,Canadian National Railway,90,In Service,,,Surrey,10732 PARTON RD MILE: 1.29,MAINT UNKNOWN: JUNIOR,,,,,,,20120710,20160120,49.197384,-122.894265
+15,0,Railway Crossing,1001417963,,Asphalt,,BCR @ 168 ST,British Columbia Railway,90,In Service,,,Surrey,COLEBROOK RD & 168 ST MILE: 1.74,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120710,20160120,49.100418,-122.756625
+16,0,Railway Crossing,1001417962,,Asphalt,,BCR @ 164 ST,British Columbia Railway,90,In Service,,,Surrey,COLEBROOK RD & 164 ST MILE: 2.24,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120710,20160120,49.100495,-122.767726
+17,0,Railway Crossing,1001417959,,Asphalt,,BCR @ 160 ST,British Columbia Railway,86,In Service,,,Surrey,COLEBROOK RD & 160 ST MILE: 2.75,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120710,20160120,49.099860,-122.779018
+18,0,Railway Crossing,1001417957,,Asphalt,,SRBC @ 90 AVE,Southern Railway British Columbia,,In Service,,,Surrey,HOLT RD & 90 AVE MILE: 4.64,,,,,,,,20120710,20160120,49.166825,-122.889832
+19,0,Railway Crossing,1001417956,,Wood,,BCR @ 157 ST,British Columbia Railway,88,In Service,,,Surrey,COLEBROOK RD & 157 ST MILE: 3.16,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120710,20160120,49.099344,-122.787954
+20,0,Railway Crossing,1001417955,,Concrete,,SRBC @ NORDEL WAY,Southern Railway British Columbia,,In Service,,,Surrey,12130 NORDEL WAY MILE: 5.05,"SURREY 100%, OTHER 0%: JUNIOR",,,,,,,20120710,20160120,49.162100,-122.886173
+21,0,Railway Crossing,1001417954,,Asphalt,,CNR @ ROBSON RD,Canadian National Railway,30,In Service,,,Surrey,"9815 ROBSON ROAD MILE: 2.82, 2.5, 2.06","SURREY 0%, OTHER 100%",,,,,,,20120710,20160120,49.178561,-122.912991
+22,0,Railway Crossing,1001417952,,Asphalt,,CPR @ 192 ST,British Columbia Railway,82,In Service,,,Surrey,5390 152 ST MILE: 3.75,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120710,20160120,49.098576,-122.801098
+23,0,Railway Crossing,1001417951,,Wood,,CPR @ 148 ST,British Columbia Railway,86,In Service,,,Surrey,COLEBROOK RD & 148 ST MILE: 4.25,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120710,20160120,49.097914,-122.812420
+24,0,Railway Crossing,1001417950,,Asphalt,,CNR @ 124 ST,Canadian National Railway,90,In Service,,,Surrey,116 AV & 124 ST MILE: 117.54,MAINT UNKNOWN: JUNIOR,,,,,,,20120710,20160120,49.212736,-122.878150
+25,0,Railway Crossing,1001417948,,Concrete,,CPR @ 184 ST,Canadian Pacific Railway,98,In Service,,,Surrey,5235 184 ST MILE: 23.59,MAINT % UNKNOWN: JUNIOR,,,,,,,20120710,20160120,49.096995,-122.712778
+26,0,Railway Crossing,1001417947,,Asphalt,,CNR @ MUSQUEM,Canadian National Railway,90,In Service,,,Surrey,12195 MUSQUEM MILE: 118.7,MAINT UNKNOWN,,,,,,,20120710,20160120,49.208987,-122.885679
+27,0,Railway Crossing,1001417840,,Concrete,,CPR @ 56 AVE,Canadian Pacific Railway,112,In Service,,,Surrey,19458 56 AVE MILE: 21.98,"SURREY 50%, CPR 50%: SENIOR",,,,,,,20120710,20160120,49.104432,-122.683771
+28,0,Railway Crossing,1001417837,,Asphalt,,SRBC @ 168 ST,Southern Railway British Columbia,90,In Service,,,Surrey,HWY 10 & 168 ST MILE: 12.52,"SURREY 34%, OTHER 66%: SENIOR",,,,,,,20120710,20160120,49.104004,-122.756624
+29,0,Railway Crossing,1001417712,,Concrete,,CPR @ 192 ST,Canadian Pacific Railway,89,In Service,,,Surrey,52 AVE & 192 ST MILE: 22.62 (108.15),"SURREY 0%, OTHER 100%: JUNIOR",,,,,,,20120706,20160120,49.097235,-122.691259
+30,0,Railway Crossing,1001417711,,Asphalt,,BCR@ 131A ST,British Columbia Railway,133,In Service,,,Surrey,COLEBROOK RD & 131A ST MILE: 6.88,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120706,20160120,49.094957,-122.857850
+31,0,Railway Crossing,1001417700,,Asphalt,,SRBC @ 144 ST,Southern Railway British Columbia,124,In Service,,,Surrey,6630 144 ST MILE: 9.08,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120706,20160120,49.124249,-122.823305
+32,0,Railway Crossing,1001417697,,Concrete,,SRBC @ 128 ST,Southern Railway British Columbia,142,In Service,,,Surrey,8155 128 ST MILE: 6.21,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120706,20160120,49.150386,-122.867980
+33,0,Railway Crossing,1001417696,,Concrete,,SRBC @ 80 ST,Southern Railway British Columbia,57,In Service,,,Surrey,12920 80 AVE MILE: 6.53,"SURREY 0%, OTHER 100%: SENIOR",,,,,,,20120706,20160120,49.148160,-122.865342
+34,0,Railway Crossing,1001417695,,Concrete,,SRBC @ 72 AVE,Southern Railway British Columbia,50,In Service,,,Surrey,13501 72 AVE MILE: 7.68,"SURREY 17.5%, OTHER 82.5%: SENIOR",,,,,,,20120706,20160120,49.133575,-122.848090
+35,0,Railway Crossing,1001193917,,Concrete,,SRBC @ 64 AVE,Southern Railway British Columbia,115,In Service,,,Surrey,14772 64 AVE MILE: 9.76,SURREY 100%: JUNIOR,,,,,,,20110329,20160120,49.119118,-122.810875
+36,0,Railway Crossing,1001193916,,Concrete,,SRBC @ 148 ST,Southern Railway British Columbia,16,In Service,,,Surrey,6448 148 ST MILE: 9.69,SURREY 100%: SENIOR,,,,,,,20110329,20160120,49.119457,-122.812178
+37,0,Railway Crossing,1001192255,,Concrete,,CRP @ 56 AVE,Canadian Pacific Railway,,In Service,MOTH 71101-1004,,Surrey,HIGHWAY 10 (56 AVE) & OLD MCLELLAN RD MILE: 12.04,,Final AB,,,,,,20110318,20160120,49.104418,-122.767509
+38,0,Railway Crossing,1001082173,,Asphalt,,SRBC @ TANNERY RD,Southern Railway British Columbia,90,In Service,,2009,Surrey,TANNERY & TIMBERLAND MILE: 117.69,MAINT % UNKNOWN,,,,,,,20090212,20160120,49.197608,-122.895827
+39,0,Railway Crossing,1000959798,,Asphalt,,SRBC @ OLD YALE RD,Southern Railway British Columbia,120,In Service,,,Surrey,12538 OLD YALE RD MILE: 1.97,"SURREY 0%,  OTHER 100%: JUNIOR",,,,,,,20081203,20160120,49.197510,-122.874321
+40,0,Railway Crossing,1000959797,,Concrete,,SRBC @ 120 ST,Southern Railway British Columbia,168,In Service,,,Surrey,9010 120 ST MILE: 4.57,"SURREY 25%, OTHER 75%:SENIOR",,,,,,,20081203,20160120,49.168317,-122.890286
+41,0,Railway Crossing,1000959796,,Asphalt,,SRBC @ 88 AVE,Southern Railway British Columbia,50,In Service,,,Surrey,12057 88 AVE MILE: 4.94,"SURREY 0%, OTHER 100%:JUNIOR",,,,,,,20081203,20160120,49.163210,-122.887971
+42,0,Railway Crossing,1000959794,,Asphalt,,SRBC @ 96 AVE,Southern Railway British Columbia,60,In Service,,,Surrey,11895 96 AVE MILE: 3.94,"SURREY 0%, OTHER 100%: JUNIOR",,,,,,,20081203,20160120,49.177141,-122.893286
+43,0,Railway Crossing,1000959792,,Asphalt,,SRBC @ 104 AVE,Southern Railway British Columbia,112,In Service,,,Surrey,12442 104 AVE MILE: 2.63,"SURREY 0%, OTHER 100%: JUNIOR",,,,,,,20081203,20160120,49.191838,-122.877885
+44,0,Railway Crossing,1000959789,,Asphalt,,SRBC @ BRIDGE RD,Southern Railway British Columbia,35,In Service,,,Surrey,11105 BRIDGE RD,MAINT UNKNOWN: JUNIOR,,,,,,,20081203,20160120,49.204203,-122.885282
+45,0,Railway Crossing,1000959788,,Wood,,CNR @ OLD YALE RD,Canadian National Railway,100,In Service,,,,11939 OLD YALE RD MILE: 0.77,MAINT UNKNOWN,,,,,,,20081203,20160120,49.204050,-122.892162
+46,0,Railway Crossing,1000959787,,,,BNR @ OLD YALE RD,Burlington Northern Railway,90,In Service,,,,12045 OLD YALE RD MILE: 117.63,TRESTLE OVERHEAD,,,,,,,20081203,20160120,49.202040,-122.888195
+47,0,Railway Crossing,1001082172,,,,,Southern Railway British Columbia,,In Service,,2009,Surrey,,,,,,,,,20090212,20160120,49.204621,-122.884828
+48,0,Railway Crossing,1001082171,,Asphalt,,,,,In Service,,2009,Surrey,12007 OLD YALE RD,JUNIOR,,,,,,,20090212,20160120,49.202411,-122.888941
+49,0,Railway Crossing,1000959775,,,,CNR @ MUSQEUM TRESTLE,Canadian National Railway,,In Service,,,Surrey,MILE 118.2,TRESTLE OVERHEAD,,,,,,,20081203,20160120,49.206385,-122.886077
+50,0,Railway Crossing,1000959793,,Concrete,,CNR @ 104 AVE,Canadian National Railway,40,In Service,,,Surrey,104 AVE & DALY RD MILE: 109.84,"SURREY 50%, OTHER 50%: JUNIOR",,,,,,,20081203,20160121,49.191450,-122.733369
+51,0,Railway Crossing,1001417705,,Asphalt,,SRBC @ 156 ST,Southern Railway British Columbia,,Abandoned,,,Surrey,60 AVE & 156 ST,,,,,,,,20120706,20160121,49.114325,-122.789857
+52,0,Railway Crossing,1001855129,,,,CNR @ 104 AVE,Canadian National Railway,,In Service,,,Surrey,104 AVE & DALY RD MILE: 110.35,,,,,,,,20160121,20160121,49.191452,-122.733469
+53,0,Railway Crossing,1001855131,,,,BNR @ WEST OF SFPR,Burlington Northern Railway,,In Service,,,Private,BNR WEST OF SFPR WEST OF GRACE RD (ROW),,,,,,,,20160121,20160121,49.178083,-122.912829
+54,0,Railway Crossing,1000959795,,Concrete,,SRBC @ 120 ST,Southern Railway British Columbia,34,In Service,,,Surrey,120 ST & 99 AVE MILE: 3.51,"SURREY 0%, OTHER 100%:SENIOR",,,,,,,20081203,20160122,49.182614,-122.890102
+55,0,Railway Crossing,1001855373,,,,SRBC @ 120 ST,Southern Railway British Columbia,,In Service,,,Surrey,120 ST & 99 AVE,,,,,,,,20160122,20160122,49.182517,-122.890200
+56,0,Railway Crossing,1001855133,,,,SRBC @ 176 ST,Southern Railway British Columbia,,Abandoned,,,Surrey,176 ST SOUTH OF HWY 10,,,,,,,,20160121,20160122,49.103803,-122.734958
+57,0,Railway Crossing,1000959782,,Concrete,,BNR @ TANNERY RD,Burlington Northern Railway,86,In Service,,,Surrey,11876 TANNERY RD MILE: 140.5,"SURREY 50%, OTHER 50%: SENIOR",,,,,,,20081203,20160122,49.196558,-122.893830
+58,0,Railway Crossing,1001143943,,Metal,,,Canadian National Railway,,In Service,1E04,2009,Translink,,,Final AB,,,,,,20091216,20160122,49.181350,-122.690295
+59,0,Railway Crossing,1000959790,,Concrete,,SRBC @ SCOTT RD,Southern Railway British Columbia,95,In Service,,,,10943 SCOTT RD MILE: 1.82,"SURREY 100%, OTHER 0%: JUNIOR",,,,,,,20081203,20160122,49.201670,-122.879751
+60,0,Railway Crossing,1001417961,,,,,,,In Service,,,Surrey,,,,,,,,,20120710,20160122,49.093928,-122.874743
+61,0,Railway Crossing,1001417960,,,,CPR @ TELEGRAPH TRAIL,British Columbia Railway,,In Service,,,Surrey,TELEGRAPH TRAIL MILE: 107.86,"SURREY 50%, OTHER 50%",,,,,,,20120710,20160122,49.182037,-122.679351
+62,0,Railway Crossing,1001417839,,,,,,,In Service,,,Surrey,,,,,,,,,20120710,20160122,49.109314,-122.778702
+63,0,Railway Crossing,1001417958,,,,,,,In Service,,,Surrey,,,,,,,,,20120710,20160122,49.093330,-122.884763
+64,0,Railway Crossing,1001417953,,,,CPR @ 54 AVE,Canadian Pacific Railway,,In Service,,,Surrey,19355 54 AVE MILE: 15.96,"SURREY 100%, OTHER 0%",,,,,,,20120710,20160122,49.100612,-122.686213
+65,0,Railway Crossing,1001417949,,,,CPR @ KING GEORGE BLVD,British Columbia Railway,,In Service,,,Surrey,5228 KING GEORGE BLVD MILE: 4.42,,,,,,,,20120710,20160122,49.097528,-122.819053
+66,0,Railway Crossing,1001417708,,,,,,,In Service,,,Surrey,,,,,,,,,20120706,20160122,49.094265,-122.869603
+67,0,Railway Crossing,1001417707,,,,,,,In Service,,,Surrey,,,,,,,,,20120706,20160122,49.094032,-122.869610
+68,0,Railway Crossing,1000959791,,,,SRBC @ 106 AVE,Southern Railway British Columbia,,In Service,,,,12548 106 AVE MILE: 2.19,PED XING,,,,,,,20081203,20160122,49.195422,-122.875039
+69,0,Railway Crossing,1001859659,,,,CNR @ 182A ST,Canadian National Railway,,In Service,,,Surrey,182A ST MILE: 109.41,,,,,,,,20160216,20160216,49.183170,-122.716929
+70,0,Railway Crossing,1001859662,,,,CNR @ 126A ST,Canadian National Railway,,In Service,,,Surrey,,,,,,,,,20160216,20160216,49.214733,-122.870907

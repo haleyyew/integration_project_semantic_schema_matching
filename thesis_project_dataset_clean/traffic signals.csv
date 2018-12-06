@@ -1,0 +1,531 @@
+,SIGNAL_TYPE,SIGNAL_TYPE2,FACILITYID,LEGACYID,SIGNAL_ID,CONSTRUCTION_STATUS,RADIO_CONTROL,OPTICOM,ROTATION,STATUS,PROJECT_NO,YR,OWNER,LOCATION,COMMENTS,GIS_ENTRY_STAGE,WARRANTYDATE,CONDITION,CONDITIONDATE,YTD_COST,LIFECYCLE_COST,CRE_DATE,MOD_DATE,Latitude,Longitude
+0,4,Traffic,1001734582, ,465,Constructed, , ,0,In Service,SFPR Seg. 6,2013,Provincial,SFPR & Tannery Rd Ramps, ,Final AB,, ,,0,0,20140314,20171123,49.196401,-122.893522
+1,4,Traffic,1001868559, ,488,Constructed, , ,0,In Service,SFPR Seg. 7,2014,Provincial,136 St & SFPR, ,Final AB,, ,,0,0,20160407,20171123,49.213119,-122.845202
+2,4,Traffic,1001146942, ,499,Constructed,No, ,0,In Service, ,0,Provincial,192 St & Golden Ears Way, , ,, ,,0,0,20100118,20171123,49.181035,-122.690292
+3,4,Traffic,1001146944, ,542,Constructed,No, ,0,In Service, ,0,Provincial,96 Ave & Golden Ears Way, , ,, ,,0,0,20100118,20171123,49.179061,-122.713325
+4,4,Traffic,1001147060, ,511,Constructed, , ,0,In Service, ,0,Provincial,hwy 99 near border, , ,, ,,0,0,20100119,20171123,49.002565,-122.757416
+5,4,Traffic,1001567079, ,566,Constructed, , ,0,In Service,SFPR Seg. F1,2014,Provincial,104 Ave & South Fraser Perimeter Rd, ,Final AB,, ,,0,0,20130212,20171123,49.191492,-122.738171
+6,4,Traffic,1000963612, ,288,Constructed,No, ,0,In Service,MOTH Gateway E1,2015,Provincial,"Hwy 1 EB Off Ramp to 160 St, 104 Ave", ,Final AB,, ,,0,0,,20171123,49.191738,-122.780827
+7,4,Traffic,1001132066, ,628,Constructed,No,No,0,In Service,1E04,2009,Provincial,192 St @ Golden Ears Way, ,Final AB,, ,,0,0,20090915,20171123,49.181035,-122.690292
+8,4,Traffic,1001132065, ,575,Constructed,No,No,0,In Service,1E03,2009,Provincial,Golden Ears Way @ 96 Ave Connector, ,Final AB,, ,,0,0,20090915,20171123,49.179061,-122.713325
+9,4,Traffic,1000963634, ,419,Constructed,No, ,0,In Service,MOTH 71101-2005,2007,Provincial,58A Ave @ Cloverdale Bypass, ,Final AB,, ,,0,0,,20171123,49.108312,-122.736786
+10,4,Traffic,1000963477, ,271,Constructed,No, ,0,In Service,MOTH 71101-2005,2007,Provincial,64 Ave & Hwy 15, ,Final AB,, ,,0,0,,20171123,49.118775,-122.734960
+11,4,Traffic,1000963572, ,32,Constructed,No, ,0,In Service,MOTH 71101-2005,2007,Provincial,60 Ave @ Hwy 15, ,Final AB,, ,,0,0,,20171123,49.111478,-122.734865
+12,4,Traffic,1000963650, ,300,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 10 & 120 St, ,Final AB,, ,,0,0,,20171123,49.108258,-122.890422
+13,4,Traffic,1001899407, ,631,Constructed, , ,0,In Service,MOTH 12449-2014,2014,Provincial,16 Ave & HWY 99 West Side, ,Final AB,, ,,0,0,20161207,20171123,49.031089,-122.770247
+14,4,Traffic,1001899414, ,484,Constructed, , ,0,In Service,MOTH 12449-2014,2014,Provincial, , ,Final AB,, ,,0,0,20161207,20171123,49.031092,-122.768412
+15,4,Traffic,1001419824, ,512,Constructed, ,Yes,0,In Service,7806-0376-00,2013,Surrey,70 Avenue and120 Street, ,Final AB,, ,,0,0,20120730,20171123,49.130354,-122.890360
+16,4,Traffic,1000963461, ,165,Constructed,No,Yes,0,In Service, ,0,Surrey,64 Avenue and 177B Street, ,Final AB,, ,,0,0,,20171123,49.118770,-122.730814
+17,4,Traffic,1000963351, ,210,Constructed,No,Yes,0,In Service, ,0,Surrey,70 Avenue and 138 Street, ,Final AB,, ,,0,0,,20171123,49.129961,-122.838646
+18,4,Traffic,1000963566, ,323,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 184 Street, ,Final AB,, ,,0,0,,20171123,49.118742,-122.712567
+19,4,Traffic,1000963652, ,254,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 188 Street, ,Final AB,, ,,0,0,,20171123,49.118960,-122.701723
+20,4,Traffic,1001147049, ,592,Constructed, ,Yes,0,In Service, ,0,Surrey,64 Avenue and 194 Street, , ,, ,,0,0,20100119,20171123,49.119102,-122.685382
+21,4,Traffic,1000963343, ,174,Constructed,No,Yes,0,In Service,1709-3140-00,2014,Surrey,64 Avenue and 196 Street, ,Final AB,, ,,0,0,,20171123,49.119076,-122.679968
+22,4,Traffic,1000963404, ,97,Constructed,Yes,Yes,0,In Service, ,0,Surrey,66 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.122853,-122.867814
+23,4,Traffic,1001567081, ,525,Constructed, ,Yes,0,In Service,7808-0128-00,2012,Surrey,66A Avenue and 152 Street, ,Final AB,, ,,0,0,20130219,20171123,49.123519,-122.801021
+24,4,Traffic,1000963459, ,121,Constructed,Yes,Yes,0,In Service, ,0,Surrey,68 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.126715,-122.890366
+25,4,Traffic,1000963408, ,108,Constructed,No,Yes,0,In Service, ,0,Surrey,68 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.126653,-122.878985
+26,4,Traffic,1000963529, ,90,Constructed,Yes,Yes,0,In Service, ,0,Surrey,68 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.126586,-122.867786
+27,4,Traffic,1000963656, ,284,Constructed,Yes,Yes,0,In Service, ,0,Surrey,68 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.126403,-122.856618
+28,4,Traffic,1000963382, ,188,Constructed,No,Yes,0,In Service, ,0,Surrey,68 Avenue and 184 Street, ,Final AB,, ,,0,0,,20171123,49.125902,-122.712573
+29,4,Traffic,1001435158, ,597,Constructed, ,Yes,0,In Service,3812-4050-00,0,Surrey,70 Avenue and 192 Street, ,EC,, ,,0,0,20120927,20171123,49.130037,-122.690828
+30,4,Traffic,1000963548, ,171,Constructed,Yes,Yes,0,In Service,1711-7090-00,2015,Surrey,72 Avenue and 122 Street, ,Final AB,, ,,0,0,,20171123,49.134018,-122.884821
+31,4,Traffic,1000963532, ,299,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.133947,-122.879103
+32,4,Traffic,1000963610, ,269,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 126 Street, ,Final AB,, ,,0,0,,20171123,49.133921,-122.873467
+33,4,Traffic,1000963596, ,259,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.133895,-122.867842
+34,4,Traffic,1000963365, ,452,Constructed,Yes,Yes,0,In Service,3807-4000-00,2009,Surrey,72 Avenue and 130 Street, ,Final AB,, ,,0,0,,20171123,49.133801,-122.862276
+35,4,Traffic,1000963681, ,57,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.133713,-122.856710
+36,4,Traffic,1001435152, ,547,Constructed, ,Yes,0,In Service,3809-4080-00,0,Surrey,68 Avenue and 192 Street, ,EC,, ,,0,0,20120927,20171123,49.126393,-122.690870
+37,4,Traffic,1000963410, ,187,Constructed,No,Yes,0,In Service, ,0,Surrey,68 Avenue and 137A Street, ,Final AB,, ,,0,0,,20171123,49.126474,-122.841551
+38,4,Traffic,1000963592, ,274,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 134 Street, ,Final AB,, ,,0,0,,20171123,49.133624,-122.851148
+39,4,Traffic,1000963503, ,93,Constructed,Yes,Yes,0,In Service, ,0,Surrey,68 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.126358,-122.801038
+40,4,Traffic,1000963598, ,61,Constructed,Yes,Yes,0,In Service, ,0,Surrey,80 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.148375,-122.879090
+41,4,Traffic,1000963616, ,43,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 137 Street, ,Final AB,, ,,0,0,,20171123,49.133559,-122.842797
+42,4,Traffic,1000963490, ,192,Constructed,Yes,Yes,0,In Service, ,0,Surrey,80 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.148157,-122.867970
+43,4,Traffic,1000963698, ,41,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 138 Street, ,Final AB,, ,,0,0,,20171123,49.133596,-122.838653
+44,4,Traffic,1000963578, ,135,Constructed,Yes,Yes,0,In Service,3807-4060-00,2009,Surrey,72 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.133633,-122.834454
+45,4,Traffic,1000963329, ,205,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.133733,-122.823330
+46,4,Traffic,1000963672, ,130,Constructed,Yes,Yes,0,In Service,3803-4150-00,2009,Surrey,72 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.133738,-122.812169
+47,4,Traffic,1000963324, ,220,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.134087,-122.890355
+48,4,Traffic,1000963665, ,4,Constructed,Yes,Yes,0,In Service, ,0,Surrey,72 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.133678,-122.801081
+49,4,Traffic,1001435161, ,510,Constructed, ,Yes,0,In Service,3809-4090-00,0,Surrey,72 Avenue and 192 Street, ,EC,, ,,0,0,20120927,20171123,49.133682,-122.690788
+50,4,Traffic,1000963497, ,280,Constructed,Yes,Yes,0,In Service, ,0,Surrey,82 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.151909,-122.801293
+51,4,Traffic,1000963584, ,137,Constructed,Yes,Yes,0,In Service, ,0,Surrey,74 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.137458,-122.867874
+52,4,Traffic,1000963556, ,422,Constructed,Yes,Yes,0,In Service,3805-4050-00,2009,Surrey,King George Blvd and 74 Avenue, ,Final AB,, ,,0,0,,20171123,49.137187,-122.845605
+53,4,Traffic,1000963527, ,36,Constructed,No,Yes,0,In Service, ,0,Surrey,74 Avenue and 137 Street, ,Final AB,, ,,0,0,,20171123,49.137210,-122.842827
+54,4,Traffic,1000963479, ,243,Constructed,No,Yes,0,In Service, ,0,Surrey,74 Avenue and 138 Street, ,Final AB,, ,,0,0,,20171123,49.137242,-122.838681
+55,4,Traffic,1000963384, ,242,Constructed,No,Yes,0,In Service, ,0,Surrey,74 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.137274,-122.834481
+56,4,Traffic,1000963395, ,255,Constructed,Yes,Yes,0,In Service, ,0,Surrey,75 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.139266,-122.879058
+57,4,Traffic,1000963568, ,153,Constructed,No,Yes,0,In Service, ,0,Surrey,75 Avenue and 121A Street, ,Final AB,, ,,0,0,,20171123,49.139418,-122.885720
+58,4,Traffic,1000963703, ,49,Constructed,Yes,Yes,0,In Service, ,0,Surrey,75A Avenueand 120 Street, ,Final AB,, ,,0,0,,20171123,49.140189,-122.890353
+59,4,Traffic,1000963667, ,131,Constructed,Yes,Yes,0,In Service, ,0,Surrey,76 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.141025,-122.867906
+60,4,Traffic,1000963478, ,218,Constructed,Yes,Yes,0,In Service, ,0,Surrey,76 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.140933,-122.856760
+61,4,Traffic,1000963379, ,225,Constructed,No,Yes,0,In Service, ,0,Surrey,76 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.140986,-122.823385
+62,4,Traffic,1000963560, ,235,Constructed,Yes,Yes,0,In Service, ,0,Surrey,76 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.141082,-122.801062
+63,4,Traffic,1000963385, ,253,Constructed,No,Yes,0,In Service, ,0,Surrey,77 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.142734,-122.834523
+64,4,Traffic,1000963323, ,399,Constructed,No,Yes,0,In Service,3805-4070-00,2009,Surrey,King George Blvd and 78 Avenue, ,Final AB,, ,,0,0,,20171123,49.144496,-122.845658
+65,4,Traffic,1000963624, ,21,Constructed,Yes,Yes,0,In Service, ,0,Surrey,80 Avenue and 120A Street, ,Final AB,, ,,0,0,,20171123,49.148540,-122.888125
+66,4,Traffic,1000963595, ,217,Constructed,Yes,Yes,0,In Service, ,0,Surrey,80 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.148172,-122.856814
+67,4,Traffic,1000963318, ,329,Constructed,Yes,Yes,0,In Service, ,0,Surrey,84 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.155460,-122.778840
+68,4,Traffic,1001146939, ,641,Constructed, ,Yes,0,In Service,3808-4030-00,2012,Surrey,84 Avenue and 168 Street, ,Final AB,, ,,0,0,20100118,20171123,49.155490,-122.756623
+69,4,Traffic,1000963637, ,186,Constructed,Yes,Yes,0,In Service, ,0,Surrey,80 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.148580,-122.890359
+70,4,Traffic,1001419412, ,602,Constructed, ,Yes,0,In Service,3809-4110-00,0,Surrey,86 Avenue and 128 Street, ,Final AB,, ,,0,0,20120726,20171123,49.158946,-122.868013
+71,4,Traffic,1000963381, ,448,Constructed,No,Yes,0,In Service,3807-4020-00,2009,Surrey,82 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.152040,-122.879095
+72,4,Traffic,1000963493, ,252,Constructed,Yes,Yes,0,In Service,3804-4020-00,2007,Surrey,88 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.162566,-122.868026
+73,4,Traffic,1000963530, ,66,Constructed,Yes,Yes,0,In Service, ,0,Surrey,82 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.150320,-122.867980
+74,4,Traffic,1000963435, ,214,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.162639,-122.856910
+75,4,Traffic,1000963377, ,307,Constructed,Yes,Yes,0,In Service, ,0,Surrey,82 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.152284,-122.890365
+76,4,Traffic,1000963534, ,138,Constructed,Yes,Yes,0,In Service, ,0,Surrey,84 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.155988,-122.890373
+77,4,Traffic,1000963388, ,109,Constructed,No,Yes,0,In Service, ,0,Surrey,88 Avenue and 133A Street, ,Final AB,, ,,0,0,,20171123,49.162683,-122.852827
+78,4,Traffic,1000963480, ,197,Constructed,Yes,Yes,0,In Service, ,0,Surrey,84 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.155366,-122.867999
+79,4,Traffic,1000963420, ,277,Constructed,Yes,Yes,0,In Service, ,0,Surrey,84 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.155413,-122.856862
+80,4,Traffic,1000963476, ,77,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.162782,-122.834643
+81,4,Traffic,1000963369, ,184,Constructed,No,Yes,0,In Service, ,0,Surrey,84 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.155494,-122.834601
+82,4,Traffic,1000963491, ,23,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.162861,-122.823428
+83,4,Traffic,1000963414, ,126,Constructed,No,Yes,0,In Service, ,0,Surrey,88 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.162822,-122.812382
+84,4,Traffic,1000963502, ,325,Constructed,No,Yes,0,In Service, ,0,Surrey,84 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.155522,-122.823351
+85,4,Traffic,1000963614, ,40,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.162801,-122.790180
+86,4,Traffic,1000963540, ,215,Constructed,No,Yes,0,In Service, ,0,Surrey,84 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.155526,-122.812457
+87,4,Traffic,1000963344, ,282,Constructed,Yes,Yes,0,In Service, ,0,Surrey,84 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.155534,-122.801420
+88,4,Traffic,1000963678, ,18,Constructed,No,Yes,0,In Service, ,0,Surrey,84 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.155497,-122.790116
+89,4,Traffic,1000963539, ,428,Constructed,No,Yes,0,In Service,7811-0053-00,2014,Surrey,96 Avenue and 137A Street, ,Final AB,, ,,0,0,,20171123,49.177025,-122.842119
+90,4,Traffic,1000963571, ,58,Constructed,Yes,Yes,0,In Service, ,0,Surrey,96 Avenue and 138 Street, ,Final AB,, ,,0,0,,20171123,49.177014,-122.839967
+91,4,Traffic,1000963338, ,302,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.162747,-122.778863
+92,4,Traffic,1000963336, ,162,Constructed,Yes,Yes,0,In Service, ,0,Surrey,96 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.176987,-122.834541
+93,4,Traffic,1000963488, ,96,Constructed,No,Yes,0,In Service, ,0,Surrey,88 Avenue and 168 Street, ,Final AB,, ,,0,0,,20171123,49.162856,-122.756617
+94,4,Traffic,1000963413, ,3,Constructed,No,Yes,0,In Service,7804-0437-00,0,Surrey,96 Avenue and Green Timbers Way, ,Final AB,, ,,0,0,,20171123,49.177005,-122.825009
+95,4,Traffic,1000963589, ,224,Constructed,No,Yes,0,In Service, ,0,Surrey,96 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.176871,-122.812234
+96,4,Traffic,1000963594, ,201,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Nordel Way and 120 Street, ,Final AB,, ,,0,0,,20171123,49.162027,-122.890362
+97,4,Traffic,1000963550, ,414,Constructed,Yes,Yes,0,In Service, ,0,Surrey,90 Avenueand 120 Street, ,Final AB,, ,,0,0,,20171123,49.166824,-122.890306
+98,4,Traffic,1000963457, ,238,Constructed,Yes,Yes,0,In Service, ,0,Surrey,91 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.168285,-122.801330
+99,4,Traffic,1000963682, ,24,Constructed,Yes,Yes,0,In Service, ,0,Surrey,92 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.170438,-122.890253
+100,4,Traffic,1000963431, ,147,Constructed,No,Yes,0,In Service, ,0,Surrey,92 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.169927,-122.856873
+101,4,Traffic,1000963470, ,304,Constructed,No,Yes,0,In Service, ,0,Surrey,92 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.170099,-122.834616
+102,4,Traffic,1000963671, ,35,Constructed,Yes,Yes,0,In Service, ,0,Surrey,96 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.176841,-122.801027
+103,4,Traffic,1000963691, ,273,Constructed,No,Yes,0,In Service, ,0,Surrey,92 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.170119,-122.790067
+104,4,Traffic,1000963693, ,212,Constructed,Yes,Yes,0,In Service, ,0,Surrey,92 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.170069,-122.778866
+105,4,Traffic,1000963587, ,19,Constructed,No,Yes,0,In Service,1E05,2009,Surrey,94 Avenue and 192 Street, ,Final AB,, ,,0,0,,20171123,49.173382,-122.690584
+106,4,Traffic,1000963397, ,330,Constructed,No, ,0,In Service, ,0,Surrey,96 Ave & 116 St, ,Final AB,, ,,0,0,,20171123,49.177128,-122.901171
+107,4,Traffic,1000963626, ,292,Constructed,No,Yes,0,In Service,3810-4110-00,2014,Surrey,96 Avenue and 168 Street, ,Final AB,, ,,0,0,,20171123,49.177055,-122.756593
+108,4,Traffic,1000963673, ,240,Constructed,No,Yes,0,In Service, ,0,Surrey,96 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.177172,-122.867989
+109,4,Traffic,1000963579, ,386,Constructed,No,Yes,0,In Service,3804-4160-00,2011,Surrey,96 Avenue and Prince Charles Blvd, ,Final AB,, ,,0,0,,20171123,49.177146,-122.864102
+110,4,Traffic,1000963325, ,239,Constructed,Yes,Yes,0,In Service, ,0,Surrey,96 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.177097,-122.856851
+111,4,Traffic,1000963350, ,230,Constructed,No,Yes,0,In Service, ,0,Surrey,96 Avenue and 134 Street, ,Final AB,, ,,0,0,,20171123,49.177063,-122.851266
+112,4,Traffic,1001740222, ,579,Constructed, ,Yes,0,In Service,7811-0053-00,2014,Surrey,96 Avenue and 137 Street, ,Final AB,, ,,0,0,20140407,20171123,49.177031,-122.843396
+113,4,Traffic,1000963472, ,154,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and 150 Street, ,Final AB,, ,,0,0,,20171123,49.184178,-122.806486
+114,4,Traffic,1000963332, ,11,Constructed,Yes,Yes,0,In Service,3810-4010-00,2011,Surrey,96 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.176896,-122.789961
+115,4,Traffic,1000963644, ,106,Constructed,Yes,Yes,0,In Service,3814-4200-00,2016,Surrey,160 St & 96 Ave, ,Final AB,, ,,0,0,,20171123,49.176906,-122.778871
+116,4,Traffic,1001434220, ,529,Constructed, ,Yes,0,In Service,3810-4130-00,2012,Surrey,96 Avenue and 162A Street, ,Final AB,, ,,0,0,20120920,20171123,49.176939,-122.771925
+117,4,Traffic,1000963555, ,107,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.184198,-122.800916
+118,4,Traffic,1000963321, ,27,Constructed,No,Yes,0,In Service, ,0,Surrey,100 Avenue and 154 Street, ,Final AB,, ,,0,0,,20171123,49.184265,-122.795355
+119,4,Traffic,1001224667, ,508,Constructed,No,Yes,0,In Service,3810-4110-00,2011,Surrey,96 Avenue and 172 Street, ,Final AB,, ,,0,0,20111222,20171123,49.177049,-122.745856
+120,4,Traffic,1000963402, ,62,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.184361,-122.789792
+121,4,Traffic,1000963425, ,85,Constructed,No,Yes,0,In Service,3814-4230-00,2016,Surrey,100 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.184350,-122.778599
+122,4,Traffic,1000963661, ,115,Constructed,No,Yes,0,In Service, ,0,Surrey,101 Avenue and 150 Street, ,Final AB,, ,,0,0,,20171123,49.186125,-122.806471
+123,0,Beacons,1001927723, ,613,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20171016,49.151048,-122.834576
+124,4,Traffic,1000963451, ,281,Constructed,Yes,Yes,0,In Service, ,0,Surrey,101 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.186128,-122.800906
+125,4,Traffic,1000963359, ,53,Constructed,Yes,Yes,0,In Service, ,0,Surrey,102 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.188041,-122.867695
+126,4,Traffic,1000963603, ,155,Constructed,Yes,Yes,0,In Service, ,0,Surrey,102 Avenue and University Drive, ,Final AB,, ,,0,0,,20171123,49.188526,-122.850077
+127,4,Traffic,1000963631, ,72,Constructed,Yes,Yes,0,In Service, ,0,Surrey,102 Avenue and Whalley Boulevard,input via opticom table update,Final AB,, ,,0,0,,20171123,49.187811,-122.843234
+128,4,Traffic,1000963362, ,190,Constructed,Yes,Yes,0,In Service, ,0,Surrey,102 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.187722,-122.834164
+129,4,Traffic,1000963574, ,462,Constructed,No,Yes,0,In Service,7806-0413-00,2013,Surrey,102A Avenue and 150 Street, ,Final AB,, ,,0,0,20140123,20171123,49.188875,-122.806451
+130,4,Traffic,1000963474, ,80,Constructed,Yes,Yes,0,In Service,7806-0413-00,2013,Surrey,102A Avenue and 152 Street, ,Final AB,, ,,0,0,20140123,20171123,49.188736,-122.800893
+131,4,Traffic,1000963516, ,358,Constructed,No,Yes,0,In Service, ,2013,Surrey,102A Avenue and 154 Street, ,Final AB,, ,,0,0,,20171123,49.188800,-122.795331
+132,4,Traffic,1001165760, ,513,Constructed, ,Yes,0,In Service,7805-0143-00,2010,Surrey,103A Avenue and Grace Road, ,Final AB,, ,,0,0,20100629,20171123,49.190741,-122.893194
+133,4,Traffic,1000963438, ,25,Constructed,No,Yes,0,In Service,1E05,2009,Surrey,96 Avenue and 192 Street, ,Final AB,, ,,0,0,,20171123,49.176997,-122.690487
+134,4,Traffic,1000963495, ,313,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.184440,-122.867658
+135,4,Traffic,1000963625, ,20,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.184403,-122.856522
+136,4,Traffic,1000963544, ,161,Constructed,Yes,Yes,0,In Service,3808-4110-00,2010,Surrey,100 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.184228,-122.834174
+137,4,Traffic,1000963705, ,142,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.184174,-122.812052
+138,4,Traffic,1001739655, ,570,Constructed, ,Yes,0,In Service,3810-4080-00,2012,Surrey,104 Avenue and Old Yale Road, ,Final AB,, ,,0,0,20140404,20171123,49.191687,-122.863404
+139,4,Traffic,1000963664, ,91,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.191665,-122.856437
+140,4,Traffic,1000963647, ,167,Constructed,No,Yes,0,In Service,3804-4200-00,2013,Surrey,104 Avenue and City Parkway, ,Final AB,, ,,0,0,,20171123,49.191622,-122.847686
+141,4,Traffic,1000963441, ,164,Constructed,Yes,Yes,0,In Service,7805-0143-00,2009,Surrey,103A Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.190593,-122.890275
+142,4,Traffic,1000963430, ,268,Constructed,No,Yes,0,In Service,MOTH Gateway E1,2015,Surrey,103 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.189338,-122.778570
+143,4,Traffic,1000963489, ,70,Constructed,Yes, ,0,In Service, ,0,Surrey,104 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.191699,-122.867731
+144,4,Traffic,1000963364, ,82,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.191474,-122.834133
+145,4,Traffic,1000963563, ,73,Constructed,No,Yes,0,In Service,3809-4100-00,2012,Surrey,104 Avenue and 142 Street, ,Final AB,, ,,0,0,,20171123,49.191503,-122.828612
+146,4,Traffic,1000963460, ,81,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.191526,-122.823101
+147,4,Traffic,1000963456, ,194,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 146 Street, ,Final AB,, ,,0,0,,20171123,49.191510,-122.817505
+148,4,Traffic,1000963635, ,189,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.191495,-122.812430
+149,4,Traffic,1000963376, ,287,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 150 Street, ,Final AB,, ,,0,0,,20171123,49.191485,-122.806432
+150,4,Traffic,1000963403, ,257,Constructed,Yes,Yes,0,In Service,1705-3150-00,2013,Surrey,104 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.191476,-122.800880
+151,4,Traffic,1000963419, ,177,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 154 Street, ,Final AB,, ,,0,0,,20171123,49.191537,-122.795317
+152,4,Traffic,1000963619, ,207,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.191599,-122.789750
+153,4,Traffic,1001419622, ,538,Constructed, ,Yes,0,In Service,3811-4050-00,0,Surrey,104 Avenue and 168 Street, ,EC,, ,,0,0,20120727,20171123,49.191614,-122.756474
+154,4,Traffic,1000963588, ,98,Constructed,No,Yes,0,In Service,7812-0030-00,2014,Surrey,105 Avenue and 150 Street, ,Final AB,, ,,0,0,,20171123,49.193060,-122.806378
+155,4,Traffic,1000963342, ,16,Constructed,Yes,Yes,0,In Service, ,0,Surrey,105 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.193195,-122.800871
+156,4,Traffic,1000963573, ,5,Constructed,Yes,Yes,0,In Service, ,0,Surrey,108 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.198961,-122.856477
+157,4,Traffic,1000963432, ,327,Constructed,Yes,Yes,0,In Service, ,0,Surrey,108 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.198850,-122.834105
+158,4,Traffic,1000963620, ,200,Constructed,Yes,Yes,0,In Service, ,0,Surrey,108 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.198786,-122.823024
+159,4,Traffic,1000963363, ,637,Constructed, , ,0,In Service, ,0,Surrey,108 Ave & 148 St, ,Final AB,, ,,0,0,,20171123,49.198729,-122.812509
+160,4,Traffic,1000963580, ,123,Constructed,Yes,Yes,0,In Service,3806-4050-00,2009,Surrey,108 Avenue and 150 Street, ,Final AB,, ,,0,0,,20171123,49.198736,-122.806174
+161,4,Traffic,1000963651, ,180,Constructed,No,Yes,0,In Service, ,0,Surrey,108 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.198799,-122.778671
+162,4,Traffic,1000963418, ,435,Constructed,No,Yes,0,In Service,3806-4030-00,2009,Surrey,108 Avenue and Oriole Drive, ,Final AB,, ,,0,0,,20171123,49.198731,-122.808619
+163,4,Traffic,1000963464, ,46,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.162850,-122.801487
+164,4,Traffic,1001779572, ,516,Constructed, , ,0,In Service, ,0,Surrey,Colebrook Road & 152 St, , ,, ,,0,0,,20171123,49.098273,-122.800786
+165,4,Traffic,1000963452, ,324,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and Whalley Blvd, ,Final AB,, ,,0,0,,20171123,49.180743,-122.841407
+166,4,Traffic,1000963371, ,26,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and Fleetwood Way, ,Final AB,, ,,0,0,,20171123,49.164748,-122.797932
+167,4,Traffic,1000963582, ,321,Constructed,No,Yes,0,In Service,3808-4140-00,2010,Surrey,Green Timbers Way and 140 Street, ,Final AB,, ,,0,0,,20171123,49.180845,-122.834364
+168,4,Traffic,1000963632, ,92,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 159 Street, ,Final AB,, ,,0,0,,20171123,49.158640,-122.782198
+169,4,Traffic,1000963415, ,258,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Panorama Drive and 152 Street, ,Final AB,, ,,0,0,,20171123,49.108448,-122.801008
+170,4,Traffic,1000963428, ,143,Constructed,Yes,Yes,0,In Service,3807-4080-00,2010,Surrey,Fraser Highway and 64 Avenue, ,Final AB,, ,,0,0,,20171123,49.118967,-122.691353
+171,4,Traffic,1001182393, ,478,Constructed,No,Yes,0,In Service,3804-4150-00,2010,Surrey,Fraser Highway and 68 Avenue, ,Final AB,, ,,0,0,20101119,20171123,49.125715,-122.706173
+172,4,Traffic,1000963590, ,219,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 84 Avenue, ,Final AB,, ,,0,0,,20171123,49.155751,-122.774784
+173,4,Traffic,1000963700, ,644,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and University Dr, , ,, ,,0,0,,20171130,49.202665,-122.850992
+174,2,Pedestrian,1000963367, ,643,Constructed,No, ,0,In Service, ,0,Surrey,93A Avenue and 140 Street, ,Final AB,, ,,0,0,,20171130,49.172457,-122.834606
+175,4,Traffic,1000963602, ,646,Constructed,No,Yes,0,In Service, ,0,Surrey,King George Blvd and 26 Avenue, ,Final AB,, ,,0,0,,20171130,49.049086,-122.797887
+176,4,Traffic,1000963538, ,645,Constructed,No,Yes,0,In Service,3812-4110-00,2014,Surrey,88 Avenue and 162 Street, ,Final AB,, ,,0,0,,20171130,49.162775,-122.773214
+177,4,Traffic,1000963585, ,237,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 88 Avenue, ,Final AB,, ,,0,0,,20171123,49.163070,-122.793647
+178,4,Traffic,1000963686, ,37,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 96 Avenue, ,Final AB,, ,,0,0,,20171123,49.176549,-122.828437
+179,4,Traffic,1000963360, ,248,Constructed,Yes,Yes,0,In Service,3807-4070-00,2010,Surrey,Fraser Highway and 140 Street, ,Final AB,, ,,0,0,,20171123,49.178801,-122.834361
+180,4,Traffic,1000963346, ,267,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 148 Street, ,Final AB,, ,,0,0,,20171123,49.170316,-122.812287
+181,4,Traffic,1000963424, ,116,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 152 Street, ,Final AB,, ,,0,0,,20171123,49.166106,-122.801401
+182,4,Traffic,1000963473, ,328,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 156 Street, ,Final AB,, ,,0,0,,20171123,49.161755,-122.790179
+183,4,Traffic,1000963601, ,203,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 160 Street, ,Final AB,, ,,0,0,,20171123,49.157351,-122.778846
+184,4,Traffic,1000963454, ,78,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 164 Street, ,Final AB,, ,,0,0,,20171123,49.152996,-122.767746
+185,4,Traffic,1000963699, ,175,Constructed,No,Yes,0,In Service, ,0,Surrey,Fraser Highway and 166 Street, ,Final AB,, ,,0,0,,20171123,49.150780,-122.762066
+186,4,Traffic,1000963533, ,47,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 168 Street, ,Final AB,, ,,0,0,,20171123,49.147970,-122.756465
+187,4,Traffic,1000963606, ,168,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 184 Street, ,Final AB,, ,,0,0,,20171123,49.128733,-122.712543
+188,4,Traffic,1000963629, ,55,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Fraser Highway and 188 Street, ,Final AB,, ,,0,0,,20171123,49.123715,-122.701720
+189,1,Fire,1000963354, ,440,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.191676,-122.860149
+190,1,Fire,1000963475, ,390,Constructed,No, ,0,In Service, ,0,Surrey, , , ,, ,,0,0,,20171123,49.119003,-122.698719
+191,1,Fire,1001224382, ,636,Constructed, , ,0,In Service, ,0,Surrey, , , ,, ,,0,0,20111220,20171123,49.038886,-122.735231
+192,4,Traffic,1000963622, ,38,Constructed,Yes,Yes,0,In Service,3806-4040-00,2009,Surrey,King George Blvd and 104 Avenue, ,Final AB,, ,,0,0,,20171123,49.191621,-122.845349
+193,4,Traffic,1000963341, ,270,Constructed,Yes,Yes,0,In Service,1713-3030-00,2014,Surrey,King George Blvd and 16 Avenue, ,Final AB,, ,,0,0,,20171123,49.031071,-122.775558
+194,4,Traffic,1000963449, ,256,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 20 Avenue, ,Final AB,, ,,0,0,,20171123,49.038321,-122.784544
+195,4,Traffic,1000963400, ,144,Constructed,Yes,Yes,0,In Service,1705-3110-00,2009,Surrey,King George Blvd and 24 Avenue, ,Final AB,, ,,0,0,,20171123,49.045595,-122.793560
+196,4,Traffic,1000963331, ,216,Constructed,No,Yes,0,In Service, ,0,Surrey,KGB & 148 Street/32A Avenue, ,Final AB,, ,,0,0,,20171123,49.061301,-122.813035
+197,4,Traffic,1000963507, ,51,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 105A Avenue, ,Final AB,, ,,0,0,,20171123,49.194447,-122.845319
+198,4,Traffic,1000963562, ,278,Constructed,No,Yes,0,In Service,3804-4170-00,2008,Surrey,King George Blvd and 60 Avenue, ,Final AB,, ,,0,0,,20171123,49.111856,-122.840261
+199,4,Traffic,1000963653, ,436,Constructed,No,Yes,0,In Service,3805-4010-0,2008,Surrey,King George Blvd and 62 Avenue, ,Final AB,, ,,0,0,,20171123,49.115450,-122.844396
+200,4,Traffic,1000963526, ,86,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 64 Avenue, ,Final AB,, ,,0,0,,20171123,49.119039,-122.845486
+201,4,Traffic,1000963373, ,76,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 68 Avenue, ,Final AB,, ,,0,0,,20171123,49.126230,-122.845548
+202,4,Traffic,1000963677, ,264,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 108 Avenue, ,Final AB,, ,,0,0,,20171123,49.198866,-122.845952
+203,4,Traffic,1000963352, ,127,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 72 Avenue, ,Final AB,, ,,0,0,,20171123,49.133534,-122.845578
+204,4,Traffic,1000963537, ,283,Constructed,Yes,Yes,0,In Service,3813-4130-00,2015,Surrey,King George Blvd and 76 Avenue, ,Final AB,, ,,0,0,,20171123,49.140840,-122.845632
+205,4,Traffic,1000963374, ,79,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 80 Avenue, ,Final AB,, ,,0,0,,20171123,49.148149,-122.845684
+206,4,Traffic,1000963641, ,290,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 84 Avenue, ,Final AB,, ,,0,0,,20171123,49.155462,-122.845731
+207,4,Traffic,1000963429, ,319,Constructed,Yes, ,0,In Service,3810-4090-00,2016,Surrey,King George Blvd and 88 Avenue, ,Final AB,, ,,0,0,,20171123,49.162759,-122.845788
+208,4,Traffic,1000963345, ,122,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 92 Avenue, ,Final AB,, ,,0,0,,20171123,49.170056,-122.845837
+209,4,Traffic,1000963466, ,456,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 94A Avenue, ,Final AB,, ,,0,0,,20171123,49.174687,-122.845806
+210,4,Traffic,1000963586, ,317,Constructed,Yes,Yes,0,In Service,3810-4100-00,2012,Surrey,King George Blvd and 96 Avenue, ,Final AB,, ,,0,0,20121221,20171123,49.177042,-122.845718
+211,4,Traffic,1000963316, ,285,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 100 Avenue, ,Final AB,, ,,0,0,,20171123,49.184292,-122.845434
+212,4,Traffic,1000963458, ,231,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 102 Avenue, ,Final AB,, ,,0,0,,20171123,49.187835,-122.845404
+213,4,Traffic,1001734840, ,576,Constructed, ,Yes,0,In Service,3811-4060-00,2013,Surrey,King George Blvd and 103 Avenue, ,Final AB,, ,,0,0,20140317,20171123,49.190077,-122.845371
+214,4,Traffic,1000963648, ,64,Constructed,Yes,Yes,0,In Service, ,0,Surrey,99 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.182623,-122.890208
+215,2,Pedestrian,1000963557, ,425,Constructed,No, ,0,In Service, ,0,Surrey,76A Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.142320,-122.890354
+216,2,Pedestrian,1001132063, ,476,Constructed,No,No,0,In Service,3808-4040-00,2009,Surrey,99 Avenue and 152 Street, ,Final AB,, ,,0,0,20090915,20171123,49.182535,-122.800941
+217,2,Pedestrian,1001132064, ,483,Constructed,No,No,0,In Service,3808-4050-00,2012,Surrey,100 Avenue and 153 Street, ,Final AB,, ,,0,0,20090915,20171123,49.184231,-122.798135
+218,2,Pedestrian,1000963688, ,459,Constructed,No, ,0,In Service, ,0,Surrey,108 Avenue and 139 Street, ,Final AB,, ,,0,0,,20171123,49.198853,-122.836932
+219,2,Pedestrian,1000963687, ,377,Constructed,No, ,0,In Service, ,0,Surrey,91 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.168268,-122.778865
+220,2,Pedestrian,1000963515, ,356,Constructed,Yes, ,0,In Service, ,0,Surrey,Fraser Highway and 194 Street, , ,, ,,0,0,,20171123,49.116124,-122.684783
+221,4,Traffic,1001955886, ,554,Constructed, , ,0,In Service, ,0,Surrey,106A Ave & King George Blvd, , ,, ,,0,0,,20171123,49.196119,-122.845303
+222,4,Traffic,1001955885, ,505,Constructed, , ,0,In Service, ,0,Surrey,68 Ave & 148 St, , ,, ,,0,0,,20171123,49.126383,-122.812201
+223,4,Traffic,1001955884, ,599,Constructed, , ,0,In Service, ,0,Surrey,58 Ave & 144 St, , ,, ,,0,0,,20171123,49.108190,-122.823361
+224,4,Traffic,1001955883, ,615,Constructed, , ,0,In Service, ,0,Surrey,64 Ave & 140 street, , ,, ,,0,0,,20171123,49.119085,-122.834311
+225,4,Traffic,1001946518, ,609,Constructed, , ,0,In Service, ,2017,Provincial,179 Street & Hwy 17, , ,, ,,0,0,20170912,20171129,49.186438,-122.725011
+226,4,Traffic,1001801228, ,619,Constructed, ,Yes,0,In Service,3813-4060-00,2016,Surrey,72 Avenue & 194A Street,input via opticom table update,EC,, ,,0,0,20150109,20171129,49.133635,-122.683754
+227,0,Beacons,1001955887, ,493,Constructed, , ,0,In Service, ,0,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20170529,20171129,49.060243,-122.834442
+228,2,Pedestrian,1000963547, ,431,Constructed,No, ,0,In Service, ,0,Provincial, , , ,, ,,0,0,,20171129,49.038460,-122.735228
+229,3,Special Crosswalk,1001928083, ,480,Constructed, , ,0,In Service, ,2015,Surrey,63A Ave 144 St, , ,, ,,0,0,20170424,20171123,49.118079,-122.823300
+230,3,Special Crosswalk,1001602520, ,474,Constructed, , ,0,In Service,3812-4160-00,2014,Surrey,80 Ave @  133A St, ,Final AB,, ,,0,0,20130612,20171123,49.148166,-122.852820
+231,3,Special Crosswalk,1001602523, ,571,Constructed, , ,0,In Service,3812-4170-00,2014,Surrey,10700blk @  150 St, ,Final AB,, ,,0,0,20130612,20171123,49.197253,-122.806227
+232,3,Special Crosswalk,1001928086, ,504,Constructed, , ,0,In Service, ,2015,Surrey,72 Ave 195 St, , ,, ,,0,0,20170424,20171123,49.133623,-122.681972
+233,3,Special Crosswalk,1001928087, ,530,Constructed, , ,0,In Service, ,2016,Surrey,2900 Blk King George Blvd, , ,, ,,0,0,20170424,20171123,49.055446,-122.805769
+234,3,Special Crosswalk,1001928111, ,477,Constructed, , ,0,In Service, ,2016,Surrey,72 ave 146 st, , ,, ,,0,0,20170424,20171123,49.133744,-122.817871
+235,3,Special Crosswalk,1001928090, ,605,Constructed, , ,0,In Service, ,2016,Surrey,75 A Ave 120 A St, , ,, ,,0,0,20170424,20171123,49.140153,-122.888862
+236,3,Special Crosswalk,1001779484, ,629,Constructed, , ,0,In Service, ,2014,Surrey,88 Ave  158 St, , ,, ,,0,0,20140909,20171123,49.162778,-122.785188
+237,3,Special Crosswalk,1001779488, ,607,Constructed, , ,0,In Service, ,2014,Surrey,64 Ave 12500 Blk, , ,, ,,0,0,20140909,20171123,49.119200,-122.876106
+238,3,Special Crosswalk,1001928094, ,553,Constructed, , ,0,In Service, ,2016,Surrey,9900 Blk 156 St, , ,, ,,0,0,20170424,20171123,49.182704,-122.789829
+239,3,Special Crosswalk,1001928099, ,572,Constructed, , ,0,In Service, ,2016,Surrey,62 Ave 144 St, , ,, ,,0,0,20170424,20171123,49.115485,-122.823486
+240,3,Special Crosswalk,1001928105, ,612,Constructed, , ,0,In Service, ,2016,Surrey,98 Ave 156 St, , ,, ,,0,0,20170424,20171123,49.180691,-122.789876
+241,3,Special Crosswalk,1001928106, ,543,Constructed, , ,0,In Service, ,2016,Surrey,20 Ave 136 St, , ,, ,,0,0,20170424,20171123,49.038491,-122.845325
+242,3,Special Crosswalk,1001779490, ,633,Constructed, , ,0,In Service, ,2014,Surrey,69A Ave  124 St, , ,, ,,0,0,20140909,20171123,49.129115,-122.879025
+243,3,Special Crosswalk,1001779491, ,468,Constructed, , ,0,In Service, ,2014,Surrey,70A Ave  124 St, , ,, ,,0,0,20140909,20171123,49.131105,-122.879057
+244,3,Special Crosswalk,1001412993, ,521,Constructed, , ,0,In Service,3810-7020-00,2011,Surrey,96 Ave & 153A St, ,Final AB,, ,,0,0,20120516,20171123,49.176872,-122.796999
+245,3,Special Crosswalk,1001413047, ,528,Constructed, , ,0,In Service,3810-7040-00,2011,Surrey,15910blk 96 Ave, ,Final AB,, ,,0,0,20120516,20171123,49.176903,-122.781452
+246,3,Special Crosswalk,1000963689, ,384,Constructed,No, ,0,In Service, ,0,Surrey,28 Ave 184 St, ,Final AB,, ,,0,0,,20171123,49.052802,-122.713443
+247,3,Special Crosswalk,1001928089, ,473,Constructed, , ,0,In Service, ,2016,Surrey,72 Ave 124 St, , ,, ,,0,0,20170424,20171123,49.134137,-122.879106
+248,3,Special Crosswalk,1001928353, ,532,Constructed, , ,0,In Service,3809-6050-00,2016,Surrey, , ,Final AB,, ,,0,0,20170425,20171123,49.067459,-122.824452
+249,3,Special Crosswalk,1000963696, ,439,Constructed,No, ,0,In Service, ,0,Surrey,~ 11104 Scott Rd, ,Final AB,, ,,0,0,,20171123,49.204608,-122.877673
+250,3,Special Crosswalk,1001928110, ,550,Constructed, , ,0,In Service, ,2016,Surrey,24 Ave 150 St, , ,, ,,0,0,20170424,20171123,49.045637,-122.804117
+251,3,Special Crosswalk,1001165790, ,569,Constructed, , ,0,In Service, ,2010,Surrey,Whalley Blv 103 ave,It was Yellow Beacon before, ,, ,,0,0,20100629,20171123,49.189694,-122.841900
+252,3,Special Crosswalk,1000963333, ,366,Constructed,No, ,0,In Service, ,0,Surrey,Southmere Cr E Martin Dr, ,Final AB,, ,,0,0,,20171123,49.034647,-122.803077
+253,3,Special Crosswalk,1001928082, ,517,Constructed, , ,0,In Service, ,2014,Surrey,90 Ave 140 St, , ,, ,,0,0,20170424,20171123,49.166414,-122.834628
+254,2,Pedestrian,1000963409, ,432,Constructed,No, ,0,In Service, ,0,Surrey,96 Avenue and 123A Street, ,Final AB,, ,,0,0,,20171123,49.177169,-122.880505
+255,0,Beacons,1001927715, ,635,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20171027,49.115386,-122.856585
+256,4,Traffic,1001955891, ,578,Constructed, , ,0,In Service, ,0,Surrey,92 Ave & 152 St, , ,, ,,0,0,,20171123,49.170096,-122.801276
+257,4,Traffic,1001955888, ,472,Constructed, , ,0,In Service, ,0,Surrey,20 Ave & 154, , ,, ,,0,0,,20171123,49.038354,-122.795699
+258,4,Traffic,1001955889, ,573,Constructed, , ,0,In Service, ,0,Surrey,20 Ave & 156 St, , ,, ,,0,0,,20171123,49.038331,-122.790204
+259,2,Pedestrian,1000963676, ,370,Constructed,No, ,0,In Service, ,0,Surrey,86 Avenue and120 Street, ,Final AB,, ,,0,0,,20171123,49.159597,-122.890366
+260,2,Pedestrian,1001750921, ,614,Constructed, , ,0,In Service,3813-4120-00,2014,Surrey,88 Avenue and 130 Street, ,Final AB,, ,,0,0,20141215,20171123,49.162631,-122.862465
+261,2,Pedestrian,1000963706, ,410,Constructed,No, ,0,In Service, ,0,Surrey,66 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.123018,-122.890370
+262,2,Pedestrian,1000963542, ,411,Constructed,No, ,0,In Service, ,0,Surrey,88 Avenue and 142A Street, ,Final AB,, ,,0,0,,20171123,49.162830,-122.827702
+263,1,Fire,1000963561, ,369,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.198758,-122.818003
+264,1,Fire,1000963349, ,367,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.034748,-122.802149
+265,1,Fire,1000963469, ,338,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.135118,-122.856713
+266,1,Fire,1000963496, ,378,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.162639,-122.856910
+267,1,Fire,1000963358, ,331,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.166367,-122.801393
+268,1,Fire,1000963633, ,417,Constructed,No, ,0,In Service, ,0,Surrey, , , ,, ,,0,0,,20171123,49.184807,-122.734434
+269,1,Fire,1000963339, ,394,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.061085,-122.797964
+270,1,Fire,1000963355, ,442,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.119094,-122.809799
+271,2,Pedestrian,1000963663, ,380,Constructed,No, ,0,In Service, ,0,Surrey,96 Avenue and 150 Street, ,Final AB,, ,,0,0,,20171123,49.176850,-122.806632
+272,2,Pedestrian,1000963623, ,413,Constructed,No, ,0,In Service, ,0,Surrey,93A Avenue and 120 Street, , ,, ,,0,0,,20171123,49.172984,-122.890215
+273,2,Pedestrian,1000963330, ,371,Constructed,Yes, ,0,In Service, ,0,Surrey,19 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.036556,-122.801186
+274,2,Pedestrian,1000963607, ,379,Constructed,No, ,0,In Service, ,0,Surrey,84 Avenue and 146 Street, ,Final AB,, ,,0,0,,20171123,49.155525,-122.817562
+275,2,Pedestrian,1000963436, ,404,Constructed,No, ,0,In Service, ,0,Surrey,106 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.195376,-122.856458
+276,2,Pedestrian,1001602528, ,501,Constructed, , ,0,In Service,3812-4180-00,2014,Surrey,16 Avenue and 132 Street, ,Final AB,, ,,0,0,20130612,20171123,49.031262,-122.856470
+277,2,Pedestrian,1001602533, ,518,Constructed, , ,0,In Service,3812-4190-00,2014,Surrey,18A Avenue and 148 Street, ,Final AB,, ,,0,0,20130612,20171123,49.035675,-122.812230
+278,2,Pedestrian,1000963440, ,420,Constructed,No, ,0,In Service, ,0,Surrey,98 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.180468,-122.800972
+279,2,Pedestrian,1000963565, ,349,Constructed,No, ,0,In Service, ,0,Surrey,100 Avenue and 151 Street, ,Final AB,, ,,0,0,,20171123,49.184187,-122.803949
+280,2,Pedestrian,1001165772, ,560,Constructed, , ,0,In Service,3809-4130-00,2012,Surrey,64 Avenue and 180 Street, ,Final AB,, ,,0,0,20121025,20171123,49.118757,-122.723795
+281,2,Pedestrian,1000963417, ,376,Constructed,No, ,0,In Service, ,0,Surrey, , ,Final AB,, ,,0,0,,20171123,49.131714,-122.838649
+282,0,Beacons,1001927717, ,522,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.134912,-122.842803
+283,2,Pedestrian,1001202930, ,482,Constructed, , ,0,In Service,3810-4160-00,2012,Surrey,105 Avenue and 154 Street, ,Final AB,, ,,0,0,20121221,20171123,49.193349,-122.795317
+284,2,Pedestrian,1001202903, ,625,Constructed, , ,0,In Service,3810-4040-00,2012,Surrey,62 Avenue and 128 Street, ,Final AB,, ,,0,0,20121220,20171123,49.115462,-122.867845
+285,2,Pedestrian,1001202899, ,568,Constructed, , ,0,In Service,3810-4030-00,2012,Surrey,108 Avenue and 162 Street, ,Final AB,, ,,0,0,20121220,20171123,49.198824,-122.773088
+286,2,Pedestrian,1001567077, ,624,Constructed, , ,0,In Service, ,2012,Surrey,Green Timbers Way and Staff Access, ,Final AB,, ,,0,0,20131016,20171123,49.179067,-122.829337
+287,2,Pedestrian,1001779568, ,556,Constructed, , ,0,In Service, ,0,Surrey,96 Avenue and 122 Street, , ,, ,,0,0,20140909,20171123,49.177159,-122.884623
+288,2,Pedestrian,1001779570, ,551,Constructed, , ,0,In Service, ,0,Surrey,105 Avenue and 132 Street, , ,, ,,0,0,20140909,20171123,49.193263,-122.856446
+289,4,Traffic,1000963467, ,191,Constructed,No,Yes,0,In Service, ,0,Surrey,14 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.027434,-122.779204
+290,4,Traffic,1000963674, ,445,Constructed,No,Yes,0,In Service,3801-4130-00,2011,Surrey,16 Avenue and 136 Street, ,Final AB,, ,,0,0,20121220,20171123,49.031225,-122.845419
+291,4,Traffic,1000963704, ,110,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.031204,-122.834343
+292,4,Traffic,1000963577, ,318,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.031154,-122.812216
+293,4,Traffic,1000963375, ,33,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.031115,-122.801172
+294,4,Traffic,1000963600, ,102,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and 154 Street, ,Final AB,, ,,0,0,,20171123,49.031104,-122.795685
+295,4,Traffic,1000963583, ,68,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.031092,-122.790196
+296,4,Traffic,1000963680, ,289,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.031060,-122.779194
+297,4,Traffic,1000963546, ,125,Constructed,No,Yes,0,In Service, ,0,Surrey,16 Avenue and 168 Street, , ,, ,,0,0,,20171123,49.031098,-122.757130
+298,4,Traffic,1000963498, ,291,Constructed,No,Yes,0,In Service, ,0,Surrey,16 Avenue and 184 Street, , ,, ,,0,0,,20171123,49.031205,-122.713360
+299,4,Traffic,1000963611, ,251,Constructed,No,Yes,0,In Service, ,0,Surrey,16 Avenue and 192 Street, ,Final AB,, ,,0,0,,20171123,49.031063,-122.691292
+300,4,Traffic,1000963690, ,119,Constructed,Yes,Yes,0,In Service, ,0,Surrey,16 Avenue and Martin Drive, ,Final AB,, ,,0,0,,20171123,49.031130,-122.805301
+301,4,Traffic,1000963322, ,75,Constructed,Yes,Yes,0,In Service, ,0,Surrey,17 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.032941,-122.801182
+302,4,Traffic,1000963484, ,196,Constructed,Yes,Yes,0,In Service, ,0,Surrey,18 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.034749,-122.801190
+303,4,Traffic,1000963513, ,157,Constructed,No,Yes,0,In Service, ,0,Surrey,20 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.038531,-122.867450
+304,4,Traffic,1000963519, ,112,Constructed,No,Yes,0,In Service, ,0,Surrey,20 Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.038476,-122.834375
+305,4,Traffic,1000963645, ,159,Constructed,No,Yes,0,In Service, ,0,Surrey,20 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.038409,-122.812239
+306,4,Traffic,1000963630, ,202,Constructed,Yes,Yes,0,In Service, ,0,Surrey,20 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.038355,-122.801192
+307,3,Special Crosswalk,1001218098, ,561,Constructed, ,Y,0,In Service,7806-0137-00,2011,Surrey,Croydon Drive and Mall Access,It was Yellow Beacon,Final AB,, ,,0,0,20111107,20171123,49.046757,-122.784464
+308,2,Pedestrian,1000963569, ,457,Constructed,No, ,0,In Service, ,0,Surrey,16 Avenue and 146 Street, ,Final AB,, ,,0,0,,20171123,49.031170,-122.817572
+309,2,Pedestrian,1000963535, ,363,Constructed,No, ,0,In Service, ,0,Surrey,80 Avenue and Serpentine Greenway, ,Final AB,, ,,0,0,,20171123,49.148259,-122.873145
+310,2,Pedestrian,1000963499, ,421,Constructed,Yes, ,0,In Service, ,0,Surrey,95 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.175517,-122.801075
+311,4,Traffic,1000963593, ,9,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and Fraser Hwy, ,Final AB,, ,,0,0,,20171123,49.180551,-122.845531
+312,4,Traffic,1000963347, ,170,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 128 Street, , ,, ,,0,0,,20171123,49.206354,-122.867331
+313,4,Traffic,1000963366, ,151,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 132 Street, ,Final AB,, ,,0,0,,20171123,49.204995,-122.854474
+314,4,Traffic,1000963597, ,487,Constructed, , ,0,In Service, ,0,Surrey,King George Blvd & 148 St, ,Final AB,, ,,0,0,,20171123,49.058827,-122.809929
+315,4,Traffic,1000963486, ,244,Constructed,Yes,Yes,0,In Service,1705-3110-00,2009,Surrey,King George Blvd and 152 Street, ,Final AB,, ,,0,0,,20171123,49.051781,-122.801228
+316,4,Traffic,1001146928, ,503,Constructed, ,Yes,0,In Service,3803-4180-00,2008,Surrey,King George Blvd and 156 Street, ,Final AB,, ,,0,0,20100118,20171123,49.042792,-122.790085
+317,4,Traffic,1001602507, ,463,Constructed, ,Yes,0,In Service,3812-4120-00,2013,Surrey,King George Blvd and 160 Street, ,Final AB,, ,,0,0,20130612,20171123,49.034008,-122.779198
+318,4,Traffic,1000963334, ,29,Constructed,Yes, ,0,In Service, ,0,Surrey,King George Blvd and Crescent Road, ,Final AB,, ,,0,0,,20171123,49.067451,-122.820648
+319,4,Traffic,1000963448, ,183,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Grosvenor Road and Hansen Road, , ,, ,,0,0,,20171123,49.203998,-122.836162
+320,4,Traffic,1001201151, ,481,Constructed, ,Yes,0,In Service,1713-3180-00,2015,Surrey,Old Yale Road and 124 Street, ,Final AB,, ,,0,0,20160128,20171123,49.197543,-122.878709
+321,4,Traffic,1000963692, ,132,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Old Yale Road and 132 Street, ,Final AB,, ,,0,0,,20171123,49.187699,-122.856485
+322,4,Traffic,1001893327, ,595,Constructed, ,Yes,0,In Service,3814-4020-00,2015,Surrey,135 Street & 76 Avenue, ,Final AB,, ,,0,0,20160928,20171123,49.140863,-122.848414
+323,4,Traffic,1001146935, ,526,Constructed,No,Yes,0,History, ,2010,Surrey,Bridgeview Dr & 115 Ave,input via opticom table update,Final AB,, ,,0,0,20100118,20171123,49.211230,-122.861874
+324,4,Traffic,1001779567, ,549,Constructed, ,Yes,0,In Service,3813-4160-00,2015,Surrey,80 Ave & 192 St, ,Final AB,, ,,0,0,20160316,20171123,49.148170,-122.690714
+325,4,Traffic,1001740374, ,539,Constructed, ,Yes,0,In Service,SFPR Seg. 6,2014,Surrey,Tannery Road & Pine Road, ,Final AB,, ,,0,0,20140408,20171123,49.196595,-122.896915
+326,4,Traffic,1001779561, ,507,Constructed, ,Yes,0,In Service,3813-4140-00,2015,Surrey,128 St & 24 Ave, ,Final AB,, ,,0,0,20140909,20171123,49.111803,-122.867847
+327,4,Traffic,1001893333, ,593,Constructed, ,Yes,0,In Service,3814-4140-00,2016,Surrey,105A Avenue & University Drive,input via opticom table update,Final AB,, ,,0,0,20160928,20171123,49.194465,-122.850865
+328,4,Traffic,1001893334, ,626,Constructed, ,Yes,0,In Service,3814-4120-00,2016,Surrey,60 Avenue & 172 Street,input via opticom table update,Final AB,, ,,0,0,20160928,20171123,49.111514,-122.746025
+329,4,Traffic,1001893335, ,610,Constructed, ,Yes,0,In Service,3814-4170-00,2016,Surrey,84 Avenue & 158 Street,input via opticom table update,Final AB,, ,,0,0,20160928,20171123,49.155479,-122.784457
+330,0,Beacons,1001927724, ,464,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.115473,-122.812199
+331,0,Beacons,1000963640, ,352,Constructed,No, ,0,In Service, ,0,Surrey, ,Side Mounted Beacon,Final AB,, ,,0,0,,20140407,49.048110,-122.867374
+332,0,Beacons,1001750925, ,540,Constructed, , ,0,In Service, ,0,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20140527,20140527,49.153642,-122.778837
+333,0,Beacons,1001146887, ,471,Constructed, , ,0,In Service, ,2010,Surrey, ,Side Mounted Beacon,Final AB,, ,,0,0,20100118,20100629,49.045762,-122.850951
+334,0,Beacons,1001146946, ,534,Constructed, , ,0,In Service, ,2010,Surrey, ,Side Mounted Beacon,Final AB,, ,,0,0,20100118,20100629,49.002140,-122.731087
+335,0,Beacons,1001750906, ,627,Constructed, , ,0,In Service, ,0,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20140527,20140527,49.108244,-122.812267
+336,0,Beacons,1001146889, ,604,Constructed, , ,0,In Service, ,2010,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20100118,20100629,49.045757,-122.845469
+337,0,Beacons,1001740214, ,475,Constructed, , ,0,In Service, ,0,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20140407,20140407,49.198867,-122.762724
+338,0,Beacons,1001927759, ,590,Constructed, , ,0,In Service, ,0,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20170420,20170420,49.016715,-122.724242
+339,0,Beacons,1001750907, ,623,Constructed, , ,0,In Service, ,0,Surrey, ,Side Mounted Beacon, ,, ,,0,0,20140527,20140527,49.120766,-122.701717
+340,0,Beacons,1001927726, ,506,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.198976,-122.862432
+341,0,Beacons,1001927743, ,470,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.111757,-122.806597
+342,0,Beacons,1001927747, ,608,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.034706,-122.790201
+343,0,Beacons,1001750903, ,494,Constructed, , ,0,In Service, ,0,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20140527,20140527,49.140913,-122.834508
+344,3,Special Crosswalk,1000960519, ,584,Constructed,No, ,0,In Service,2857,0,Surrey,24 ave 15300 Blk, ,Final AB,, ,,0,0,20081210,20171123,49.045608,-122.797523
+345,3,Special Crosswalk,1001146915, ,600,Constructed, , ,0,In Service,3808-7010-00,2009,Surrey,61 Ave 168 St, ,Final AB,, ,,0,0,20100118,20171123,49.113353,-122.756610
+346,3,Special Crosswalk,1001202932, ,562,Constructed, , ,0,In Service,3810-4050-00,2012,Surrey,90 Ave & 140 St, ,Initial AB,, ,,0,0,20121220,20171123,49.166480,-122.834627
+347,3,Special Crosswalk,1001202931, ,467,Constructed, , ,0,In Service,3810-4150-00,2012,Surrey,102B Ave & 156 St, ,Final AB,, ,,0,0,20121221,20171123,49.189318,-122.789763
+348,3,Special Crosswalk,1001779560, ,491,Constructed, , ,0,In Service, ,0,Surrey,24 ave 150 st, , ,, ,,0,0,20140909,20171123,49.045642,-122.806730
+349,3,Special Crosswalk,1001779566, ,557,Constructed, , ,0,In Service, ,0,Surrey,72 ave 125 st, , ,, ,,0,0,20140909,20171123,49.133934,-122.876230
+350,3,Special Crosswalk,1001779569, ,587,Constructed, , ,0,In Service, ,0,Surrey,101 Ave  Whalley Blvd, , ,, ,,0,0,20140909,20171123,49.186115,-122.843234
+351,3,Special Crosswalk,1001779575, ,642,Constructed, , ,0,In Service, ,0,Surrey,University Dr 102 a ave, , ,, ,,0,0,20140909,20171123,49.189155,-122.849858
+352,4,Traffic,1000963543, ,118,Constructed,No,Yes,0,In Service,MOTH Gateway E1,2015,Provincial,"152 St & Guildford Dr, South of Hwy 1", ,Final AB,, ,,0,0,,20171123,49.196985,-122.800515
+353,4,Traffic,1001733844, ,583,Constructed, , ,0,In Service,SFPR Seg. 7,2014,Provincial, , ,Final AB,, ,,0,0,20140311,20171123,49.213234,-122.861854
+354,4,Traffic,1000963356, ,42,Constructed,No, ,0,In Service,MOTH Gateway E2,2015,Provincial,"Hwy 15, Hwy 1 South Side Exit", ,Final AB,, ,,0,0,,20171123,49.179996,-122.734709
+355,4,Traffic,1001799634, ,546,Constructed, , ,0,In Service,MOTH Gateway E2,2015,Provincial,"Hwy 1 WB Off Ramp to 176 St, North of Hwy 1", ,Final AB,, ,,0,0,20141217,20171123,49.183035,-122.734692
+356,4,Traffic,1000963501, ,297,Constructed,No, ,0,In Service,MOTH Gateway E2,2009,Provincial,176 St & 96 Ave, ,Final AB,, ,,0,0,,20171123,49.176425,-122.734703
+357,4,Traffic,1000963658, ,275,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 10 & 177B St, ,Final AB,, ,,0,0,,20171123,49.104166,-122.730278
+358,4,Traffic,1000963389, ,7,Constructed,No, ,0,In Service,MOTH Gateway E1,2015,Provincial,"Hwy 1 WB On Ramp & 160 St, 104 Ave North", ,Final AB,, ,,0,0,,20171123,49.193371,-122.777270
+359,4,Traffic,1000963399, ,337,Constructed,No, ,0,In Service,7805-0094-00,2013,Provincial, , ,Final AB,, ,,0,0,20130301,20171123,49.104147,-122.701634
+360,4,Traffic,1000963679, ,134,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 15 & 16 Ave, ,Final AB,, ,,0,0,,20171123,49.031236,-122.735175
+361,4,Traffic,1000963536, ,65,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 15 & 24 Ave, , ,, ,,0,0,,20171123,49.045689,-122.735284
+362,4,Traffic,1001946516, ,601,Constructed, , ,0,In Service, ,2017,Provincial,176 Street & Hwy 17, , ,, ,,0,0,20170912,20171123,49.191215,-122.734741
+363,4,Traffic,1001946517, ,524,Constructed, , ,0,In Service, ,2017,Provincial,177B Street & Hwy 17, , ,, ,,0,0,20170912,20171123,49.189352,-122.730402
+364,4,Traffic,1000963416, ,87,Constructed,Yes,Yes,0,In Service, ,0,Surrey,36 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.067370,-122.801181
+365,4,Traffic,1001750911, ,574,Constructed, ,Yes,0,In Service,1709-3130-00,2014,Surrey,54 Avenue and 192 Street, ,Final AB,, ,,0,0,20140527,20171123,49.101226,-122.691148
+366,4,Traffic,1000963670, ,160,Constructed,No,Yes,0,In Service, ,0,Surrey,24 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.045770,-122.867385
+367,4,Traffic,1000963443, ,305,Constructed,No,Yes,0,In Service, ,0,Surrey,24 Avenue and 140 Street, , ,, ,,0,0,,20171123,49.045728,-122.834408
+368,4,Traffic,1001893336, ,520,Constructed, ,Yes,0,In Service,3814-4110-00,2016,Surrey,105A Avenue & Whalley Boulevard,input via opticom table update,Final AB,, ,,0,0,20160928,20171123,49.194422,-122.842418
+369,4,Traffic,1001955890, ,620,Constructed, , ,0,In Service, ,0,Surrey,22 Ave & 152 St, , ,, ,,0,0,,20171123,49.041994,-122.801207
+370,2,Pedestrian,1001121318, ,497,Constructed,No,No,0,In Service,3808-4170-00,2009,Surrey,70 Avenue and 188 Street, ,Final AB,, ,,0,0,20110929,20171123,49.129821,-122.701671
+371,2,Pedestrian,1000963444, ,401,Constructed,No, ,0,In Service, ,0,Surrey,16 Avenue andKent Street, ,Final AB,, ,,0,0,,20171123,49.031076,-122.784655
+372,2,Pedestrian,1001779492, ,502,Constructed, , ,0,In Service, ,2014,Surrey,64 Ave  13300 Blk, , ,, ,,0,0,20140909,20171123,49.119012,-122.853711
+373,2,Pedestrian,1000963434, ,447,Constructed,No, ,0,In Service, ,0,Surrey,16 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.031177,-122.823283
+374,2,Pedestrian,1000963370, ,423,Constructed,No,Yes,0,In Service, ,0,Surrey,88 Avenue and 153 Street, , ,, ,,0,0,,20171123,49.162834,-122.797767
+375,2,Pedestrian,1001845195, ,490,Constructed, , ,0,In Service,3814-4150-00,2016,Surrey,67A Ave & 128 St, ,Final AB,, ,,0,0,20151028,20171123,49.124910,-122.867799
+376,2,Pedestrian,1000963468, ,446,Constructed,No, ,0,In Service, ,0,Surrey,16 Avenue and 142 Street, ,Final AB,, ,,0,0,,20171123,49.031186,-122.828217
+377,2,Pedestrian,1000960518, ,563,Constructed,No, ,0,In Service,3812-4200-00,2014,Surrey,17 Avenue and 148 Street, ,Final AB,, ,,0,0,20081210,20171123,49.032963,-122.812222
+378,2,Pedestrian,1001146934, ,594,Constructed, , ,0,In Service,3808-4160-00,2012,Surrey,Huntley Avenue and 132 Street, ,Final AB,, ,,0,0,20100118,20171123,49.172343,-122.856858
+379,2,Pedestrian,1001146937, ,630,Constructed, , ,0,In Service, ,0,Surrey,99 Ave & 152 St, ,Final AB,, ,,0,0,20100118,20171123,49.182535,-122.800941
+380,2,Pedestrian,1001146940, ,638,Constructed, , ,0,In Service,3808-7020-00,2009,Surrey,63 Avenue and 168 Street, ,Final AB,, ,,0,0,20121213,20171123,49.116485,-122.756579
+381,2,Pedestrian,1000963520, ,565,Constructed,No, ,0,In Service, ,0,Surrey,84 Avenue and 142 Street, ,Final AB,, ,,0,0,,20171123,49.155507,-122.828964
+382,2,Pedestrian,1001779587, ,559,Constructed, , ,0,In Service, ,0,Surrey,17A Ave  152 St, , ,, ,,0,0,20140909,20171123,49.033842,-122.801184
+383,2,Pedestrian,1000963423, ,412,Constructed,No, ,0,In Service, ,0,Surrey,88 Avenue and 146 Street, ,Final AB,, ,,0,0,,20171123,49.162841,-122.817903
+384,2,Pedestrian,1000963455, ,409,Constructed,No, ,0,In Service, ,0,Surrey,98 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.180761,-122.856676
+385,2,Pedestrian,1000963483, ,427,Constructed,No, ,0,In Service, ,0,Surrey,70B Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.131203,-122.856678
+386,2,Pedestrian,1000963505, ,340,Constructed,No, ,0,In Service, ,0,Surrey,108 Avenue and 146 Street, ,Final AB,, ,,0,0,,20171123,49.198754,-122.817426
+387,2,Pedestrian,1000963361, ,389,Constructed,No, ,0,In Service, ,0,Surrey,78A Avenue and 140 Street, ,Final AB,, ,,0,0,,20171123,49.145441,-122.834542
+388,2,Pedestrian,1001419635, ,606,Constructed, , ,0,In Service,3812-4010-00,2013,Surrey,16 Avenue and Foster Street, ,EC,, ,,0,0,20120727,20171123,49.031125,-122.803932
+389,2,Pedestrian,1001900534, ,523,Constructed, , ,0,In Service,1711-3090-00,2016,Surrey, , ,Final AB,, ,,0,0,20161220,20171123,49.055505,-122.805844
+390,0,Beacons,1001146949, ,519,Constructed, , ,0,In Service,3808-4090-00,2009,Surrey,68 Ave & 134 St,Overhead Flashing Beacon,Final AB,, ,,0,0,20100118,20121213,49.126317,-122.851115
+391,0,Beacons,1001927738, ,485,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.042522,-122.867414
+392,0,Beacons,1001165791, ,466,Constructed, , ,0,In Service, ,2010,Surrey,92 Ave & 124 St,Overhead Flashing Beacon, ,, ,,0,0,20100629,20100629,49.170229,-122.879269
+393,0,Beacons,1001146948, ,544,Constructed, , ,0,In Service,3808-4080-00,2009,Surrey,68 Ave & 130 St,Overhead Flashing Beacon,Final AB,, ,,0,0,20100118,20121213,49.126494,-122.862200
+394,0,Beacons,1001146947, ,611,Constructed, , ,0,In Service, ,0,Surrey,60 Ave & 132 St,Overhead Flashing Beacon,Final AB,, ,,0,0,20100118,20100629,49.111896,-122.856655
+395,0,Beacons,1001927741, ,558,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.155797,-122.882374
+396,0,Beacons,1001927707, ,545,Constructed, , ,0,In Service, ,2014,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.031286,-122.865345
+397,0,Beacons,1001927713, ,580,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.174693,-122.843922
+398,0,Beacons,1001927730, ,634,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.186202,-122.856515
+399,0,Beacons,1001927739, ,632,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.139039,-122.834498
+400,0,Beacons,1001927711, ,617,Constructed, , ,0,In Service, ,2014,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.033055,-122.867523
+401,0,Beacons,1001927721, ,535,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.148197,-122.834565
+402,0,Beacons,1001927729, ,527,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.166526,-122.790136
+403,0,Beacons,1001927753, ,552,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.206176,-122.845303
+404,0,Beacons,1001927754, ,500,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.206148,-122.839772
+405,0,Beacons,1001927716, ,586,Constructed, , ,0,In Service, ,2015,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.150070,-122.856838
+406,0,Beacons,1001927736, ,495,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.126640,-122.876216
+407,0,Beacons,1001927746, ,585,Constructed, , ,0,In Service, ,2016,Surrey, ,Rapid Flashing Beacon, ,, ,,0,0,20170420,20170420,49.112368,-122.712623
+408,0,Beacons,1001563867, ,603,Constructed, , ,0,In Service,3811-4040-00,2012,Surrey,60 Ave & 142 St,Overhead Flashing Beacon,Final AB,, ,,0,0,20130118,20130212,49.111845,-122.828835
+409,4,Traffic,1000963564, ,234,Constructed,No,Yes,0,In Service, ,0,Surrey,24 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.045661,-122.812262
+410,4,Traffic,1000963337, ,94,Constructed,Yes,Yes,0,In Service, ,0,Surrey,24 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.045620,-122.801196
+411,4,Traffic,1000963639, ,322,Constructed,Yes,Yes,0,In Service, ,0,Surrey,24 Avenue and 154 Street, ,Final AB,, ,,0,0,,20171123,49.045602,-122.795698
+412,4,Traffic,1000963487, ,309,Constructed,No,Yes,0,In Service,3808-4190-00,2009,Surrey,24 Avenue and 156 Street, ,Final AB,, ,,0,0,,20171123,49.045583,-122.790201
+413,4,Traffic,1000963317, ,13,Constructed,No,Yes,0,In Service, ,0,Surrey,24 Avenue and Croydon Drive, ,Final AB,, ,,0,0,,20171123,49.045559,-122.782800
+414,4,Traffic,1000963567, ,89,Constructed,No,Yes,0,In Service, ,0,Surrey,24 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.045547,-122.779228
+415,4,Traffic,1000963398, ,548,Constructed, , ,0,In Service, ,0,Surrey,24 Ave & 161A St, ,Final AB,, ,,0,0,,20171123,49.045571,-122.775350
+416,4,Traffic,1000963353, ,326,Constructed,No,Yes,0,In Service, ,0,Surrey,24 Avenue and 168 Street, ,Final AB,, ,,0,0,,20171123,49.045681,-122.757031
+417,4,Traffic,1000963683, ,514,Constructed, , ,0,In Service, ,0,Surrey,24 Ave & 192 St, ,Final AB,, ,,0,0,,20171123,49.045662,-122.691403
+418,4,Traffic,1000963521, ,156,Constructed,No,Yes,0,In Service,7806-0137-00,2011,Surrey,26 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.049177,-122.779200
+419,4,Traffic,1000963581, ,101,Constructed,No,Yes,0,In Service, ,0,Surrey,28 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.052917,-122.812193
+420,4,Traffic,1001598488, ,589,Constructed, ,Yes,0,In Service,3813-6140-00,2014,Surrey,28 Avenue and 160 Street, ,Final AB,, ,,0,0,20130603,20171123,49.052809,-122.779189
+421,4,Traffic,1000963411, ,312,Constructed,Yes,Yes,0,In Service, ,0,Surrey,32 Avenue Diversion and 152 Street, ,Final AB,, ,,0,0,,20171123,49.061578,-122.801190
+422,4,Traffic,1000963462, ,266,Constructed,Yes,Yes,0,In Service, ,0,Surrey,32 Avenue and 154 Street, ,Final AB,, ,,0,0,,20171123,49.060634,-122.797404
+423,4,Traffic,1000963485, ,622,Constructed, , ,0,In Service, ,0,Surrey,32 Ave & 32 Ave, ,Final AB,, ,,0,0,,20171123,49.060269,-122.807140
+424,4,Traffic,1000963551, ,117,Constructed,No,Yes,0,In Service,1707-3270-00,2009,Surrey,32 Avenue and 160 Street, ,Final AB,, ,,0,0,,20171123,49.060065,-122.779165
+425,4,Traffic,1000963328, ,169,Constructed,No,Yes,0,In Service,3801-4060-00,2009,Surrey,32 Avenue and 168 Street, ,Final AB,, ,,0,0,,20171123,49.060311,-122.756860
+426,4,Traffic,1000963618, ,260,Constructed,No,Yes,0,In Service, ,0,Surrey,32 Avenue and 184 Street, ,Final AB,, ,,0,0,,20171123,49.060162,-122.713436
+427,4,Traffic,1000963642, ,211,Constructed,No,Yes,0,In Service,1713-3100-00,2015,Surrey,32 Avenue and 192 Street, ,Final AB,, ,,0,0,,20171123,49.060118,-122.691534
+428,4,Traffic,1000963327, ,308,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and 34 Avenue, ,Final AB,, ,,0,0,,20171123,49.064761,-122.817312
+429,4,Traffic,1000963605, ,71,Constructed,Yes,Yes,0,In Service, ,0,Surrey,34 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.063740,-122.801187
+430,4,Traffic,1001946521, ,489,Constructed, , ,0,In Service, ,2017,Provincial,180 Street & Golden Ears Way, , ,, ,,0,0,20170912,20171123,49.175561,-122.723760
+431,4,Traffic,1000963406, ,67,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 10 & 180 St, ,Final AB,, ,,0,0,,20171123,49.104162,-122.723828
+432,4,Traffic,1000963613, ,14,Constructed,No, ,0,In Service, ,0,Provincial,32 Ave Diversion & Hwy 99, ,Final AB,, ,,0,0,,20171123,49.061302,-122.805084
+433,4,Traffic,1000963481, ,45,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 10 & 184 St, , ,, ,,0,0,,20171123,49.104106,-122.712685
+434,4,Traffic,1000963445, ,124,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 10 & 192 St, ,Final AB,, ,,0,0,,20171123,49.104495,-122.691126
+435,2,Pedestrian,1001146936, ,567,Constructed, , ,0,In Service,3807-4100-00,2009,Surrey,King George Blvd and 107A Avenue, ,Final AB,, ,,0,0,20100118,20171123,49.197393,-122.845336
+436,2,Pedestrian,1000963558, ,223,Constructed,No, ,0,In Service, ,0,Surrey,24 Avenue and 161 Street, ,Final AB,, ,,0,0,,20171123,49.045563,-122.776964
+437,2,Pedestrian,1000963450, ,591,Constructed,No, ,0,In Service, ,0,Surrey, , , ,, ,,0,0,,20171123,49.189044,-122.848949
+438,4,Traffic,1001740202, ,618,Constructed, ,Yes,0,In Service,3813-4100-00,2013,Surrey,103 Avenue and University Drive, ,Final AB,, ,,0,0,20140407,20171123,49.190145,-122.849850
+439,4,Traffic,1000963621, ,54,Constructed,Yes,Yes,0,In Service, ,0,Surrey,108 Avenue and University Drive, ,Final AB,, ,,0,0,,20171123,49.198911,-122.850850
+440,4,Traffic,1001893338, ,533,Constructed, ,Yes,0,In Service,3813-4070-00,2016,Surrey,196 Street & 72 Avenue,input via opticom table update, ,, ,,0,0,20160928,20171123,49.133605,-122.679573
+441,4,Traffic,1000963494, ,145,Constructed,Yes,Yes,0,In Service, ,0,Surrey,108 Avenue and Whalley Boulevard, ,Final AB,, ,,0,0,,20171123,49.198859,-122.842633
+442,4,Traffic,1001893339, ,581,Constructed, ,Yes,0,In Service,1711-3090-00,2016,Surrey,28 Avenue & King George Boulevard,input via opticom table update,Final AB,, ,,0,0,20160928,20171123,49.054008,-122.803988
+443,4,Traffic,1001945916, ,596,Constructed, , ,0,In Service, ,0,Surrey,98 Ave & 160 St, , ,, ,,0,0,,20171123,49.180610,-122.778713
+444,4,Traffic,1000963426, ,388,Constructed,No,Yes,0,In Service,3810-4070-00,2012,Surrey,92 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.169795,-122.868019
+445,4,Traffic,1000960520, ,577,Constructed,No,Yes,0,In Service,2857,0,Surrey,Mall Access and 160 Street, , ,, ,,0,0,20081210,20171123,49.046863,-122.779211
+446,4,Traffic,1000963695, ,59,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Mall Access and 152 Street, ,Final AB,, ,,0,0,,20171123,49.056342,-122.801174
+447,4,Traffic,1001779493, ,541,Constructed, ,Yes,0,In Service,3814-4010-00,2014,Surrey,128 St and 70B Ave, ,Final AB,, ,,0,0,20140909,20171123,49.131424,-122.867828
+448,4,Traffic,1000963669, ,310,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Mall Access and 120 Street, ,Final AB,, ,,0,0,,20171123,49.137084,-122.890360
+449,4,Traffic,1000963500, ,181,Constructed,Yes,Yes,0,In Service, ,0,Surrey,77 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.142796,-122.856774
+450,4,Traffic,1000963559, ,150,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.163213,-122.879056
+451,4,Traffic,1000963511, ,31,Constructed,Yes,Yes,0,In Service,3804-4040-00,2007,Surrey,88 Avenue and Mall Access, ,Final AB,, ,,0,0,,20171123,49.163056,-122.876215
+452,4,Traffic,1000963514, ,114,Constructed,Yes,Yes,0,In Service, ,0,Surrey,88 Avenue and Bear Crk Park Access, ,Final AB,, ,,0,0,,20171123,49.162770,-122.841011
+453,4,Traffic,1001790077, ,555,Constructed, ,Yes,0,In Service, ,0,Surrey,Nordel Way and Mall Access, , ,, ,,0,0,20141010,20171123,49.161963,-122.887914
+454,4,Traffic,1000963427, ,185,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 15 & 2 Ave, ,Final AB,, ,,0,0,,20171123,49.005547,-122.735372
+455,4,Traffic,1000963506, ,236,Constructed,No, ,0,In Service,MOTH 71101-2011,2008,Provincial,Hwy 15 & 88 Ave, ,Final AB,, ,,0,0,,20171123,49.162588,-122.734712
+456,4,Traffic,1000963553, ,320,Constructed,No, ,0,In Service,MOTH 71101-2011,2008,Provincial,Hwy 15 & 80 Ave, ,Final AB,, ,,0,0,,20171123,49.148037,-122.734801
+457,4,Traffic,1000963636, ,311,Constructed,No, ,0,In Service,MOTH 71101-2011,2008,Provincial,Hwy 15 & Fraser Hwy, ,Final AB,, ,,0,0,,20171123,49.138130,-122.734745
+458,4,Traffic,1000963655, ,148,Constructed,No, ,0,In Service,MOTH 71101-2011,2008,Provincial,Hwy 15 & 68A Ave, ,Final AB,, ,,0,0,,20171123,49.127225,-122.734802
+459,4,Traffic,1000963446, ,294,Constructed,No, ,0,In Service,MOTH 71101-2011,2008,Provincial,Hwy 15 & 32 Ave, ,Final AB,, ,,0,0,,20171123,49.060150,-122.735383
+460,4,Traffic,1000963378, ,222,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & 144 St, ,Final AB,, ,,0,0,,20171123,49.104542,-122.823423
+461,4,Traffic,1000963552, ,387,Constructed,No, ,0,In Service,MOTH 71101-2010,2009,Provincial,57 Ave @ Hwy 15, ,Final AB,, ,,0,0,,20171123,49.105991,-122.738254
+462,4,Traffic,1000963387, ,315,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & KGB, ,Final AB,, ,,0,0,,20171123,49.105230,-122.832176
+463,4,Traffic,1000963662, ,263,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & 128 St, ,Final AB,, ,,0,0,,20171123,49.108124,-122.867842
+464,4,Traffic,1000963492, ,272,Constructed,No, ,0,In Service,MOTH 11257,2006,Provincial,8 Ave & 172 St, ,Final AB,, ,,0,0,,20171123,49.016621,-122.746308
+465,4,Traffic,1000963646, ,279,Constructed,No, ,0,In Service,MOTH 71101-2005,2007,Provincial,62 Ave @ Hwy 15, ,Final AB,, ,,0,0,,20171123,49.115725,-122.734917
+466,4,Traffic,1000963523, ,128,Constructed,Yes, ,0,In Service,SFPR Seg. 6,2013,Provincial,SFPR @ Tannery Rd Ramps, ,Final AB,, ,,0,0,,20171123,49.195872,-122.892479
+467,4,Traffic,1000963575, ,139,Constructed,No, ,0,In Service, ,0,Provincial,KGB & Park & Ride, , ,, ,,0,0,,20171123,49.072450,-122.823419
+468,4,Traffic,1000963701, ,152,Constructed,No, ,0,In Service,MOTH Gateway E1,2015,Provincial,160 St & 104 Ave South, ,Final AB,, ,,0,0,,20171123,49.190860,-122.778385
+469,4,Traffic,1000963638, ,182,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 15 & 4 Ave, ,Final AB,, ,,0,0,,20171123,49.009404,-122.735411
+470,4,Traffic,1000963591, ,140,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & 152 St, ,Final AB,, ,,0,0,,20171123,49.104443,-122.801020
+471,4,Traffic,1000963694, ,204,Constructed,No, ,0,In Service,MOTH 11257,2006,Provincial,Hwy 15 & 8 Ave, ,Final AB,, ,,0,0,,20171123,49.016661,-122.735274
+472,4,Traffic,1000963654, ,276,Constructed,Yes, ,0,In Service,SFPR Seg. 6,2013,Provincial,Bridge Rd @ Old Yale Rd (SFPR - proposed?), ,Final AB,, ,,0,0,,20171123,49.201781,-122.887675
+473,4,Traffic,1000963643, ,408,Constructed,No, ,0,In Service,MOTH 192 St - 5077,2016,Provincial,"Harvie Rd, 192 St, Hwy 1", ,Final AB,, ,,0,0,,20171123,49.169761,-122.693098
+474,4,Traffic,1000963522, ,198,Constructed,No,Yes,0,In Service, ,0,Surrey,54A Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.101698,-122.801068
+475,4,Traffic,1001750912, ,479,Constructed, ,Yes,0,In Service,1709-3140-00,2014,Surrey,56 Avenue and 196 Street, ,Final AB,, ,,0,0,20140527,20171123,49.104401,-122.679958
+476,4,Traffic,1000963510, ,158,Constructed,No,Yes,0,In Service,1705-3190-00,2010,Surrey,60 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.111842,-122.823317
+477,4,Traffic,1000963627, ,199,Constructed,Yes,Yes,0,In Service, ,0,Surrey,60 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.111719,-122.800976
+478,4,Traffic,1000963412, ,44,Constructed,No,Yes,0,In Service,3803-4060-00,2005,Surrey,64 Avenue and 172 Street, ,Final AB,, ,,0,0,,20171123,49.118837,-122.746002
+479,4,Traffic,1000963471, ,69,Constructed,Yes,Yes,0,In Service, ,0,Surrey,96 Avenue and120 Street, ,Final AB,, ,,0,0,,20171123,49.177149,-122.890167
+480,4,Traffic,1000963541, ,306,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and Whalley Boulevard, ,Final AB,, ,,0,0,,20171123,49.184271,-122.843242
+481,3,Special Crosswalk,1001602516, ,616,Constructed, , ,0,In Service,3812-4150-00,2014,Surrey,58 Ave @  Panorama Dr, ,Final AB,, ,,0,0,20130612,20171123,49.106533,-122.804782
+482,4,Traffic,1001218128, ,598,Constructed, ,Yes,0,In Service,7806-0137-00,2011,Surrey,NW Mall Access & Croydon Drive, ,Final AB,, ,,0,0,20111107,20171123,49.048035,-122.787427
+483,4,Traffic,1001567076, ,492,Constructed, , ,0,In Service, ,0,Surrey,Green Timber Way & Major Access, ,Final AB,, ,,0,0,,20171123,49.178354,-122.827430
+484,4,Traffic,1000963504, ,149,Constructed,Yes,Yes,0,In Service, ,0,Surrey,King George Blvd and Mall Access, ,Final AB,, ,,0,0,,20171123,49.186229,-122.845431
+485,4,Traffic,1001146933, ,537,Constructed, ,Yes,0,In Service, ,0,Surrey,120 Street and Boundary Park Gate, ,Final AB,, ,,0,0,20100118,20171123,49.112913,-122.890452
+486,4,Traffic,1000963528, ,88,Constructed,Yes,Yes,0,In Service, ,0,Surrey,110 Avenue and 120 Street, , ,, ,,0,0,,20171123,49.202876,-122.878333
+487,4,Traffic,1000963668, ,63,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Scott Road and Old Yale Road, ,Final AB,, ,,0,0,,20171123,49.199212,-122.882496
+488,4,Traffic,1000963439, ,232,Constructed,Yes,Yes,0,In Service,1713-3070-00,2014,Surrey,Scott Road and Tannery Road, ,Final AB,, ,,0,0,,20171123,49.193898,-122.888781
+489,4,Traffic,1000963433, ,146,Constructed,Yes, ,0,In Service, ,0,Surrey,Scott Rd and King George Hwy, , ,, ,,0,0,,20171123,49.205949,-122.874944
+490,4,Traffic,1000963549, ,261,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Southmere Crescent and Martin Dr, ,Final AB,, ,,0,0,,20171123,49.032728,-122.805071
+491,4,Traffic,1000963453, ,56,Constructed,Yes,Yes,0,In Service, ,0,Surrey,University Drive and Mall Entrance, ,Final AB,, ,,0,0,,20171123,49.187745,-122.851088
+492,4,Traffic,1001889284, ,536,Constructed, ,Yes,0,In Service, ,0,Surrey,King George Blvd  & 98B St,Added Via 2016 Ortho -C9W, ,, ,,0,0,20160826,20171123,49.182096,-122.845457
+493,4,Traffic,1001893432, ,564,Constructed, ,Yes,0,In Service, ,0,Surrey,32 Avenue & 15800 Block, , ,, ,,0,0,20160929,20171123,49.060074,-122.785345
+494,4,Traffic,1000963599, ,298,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and University Drive, ,Final AB,, ,,0,0,,20171123,49.191641,-122.850571
+495,4,Traffic,1000963608, ,293,Constructed,Yes,Yes,0,In Service, ,0,Surrey,104 Avenue and Whalley Boulevard, ,Final AB,, ,,0,0,,20171123,49.191580,-122.841910
+496,4,Traffic,1000963615, ,247,Constructed,Yes,Yes,0,In Service, ,0,Surrey,Old Yale Road and University Drive, ,Final AB,, ,,0,0,,20171123,49.186062,-122.851789
+497,4,Traffic,1000963465, ,173,Constructed,Yes,Yes,0,In Service, ,0,Surrey,102 Avenue and City Parkway, ,Final AB,, ,,0,0,,20171123,49.187837,-122.847674
+498,4,Traffic,1000963394, ,120,Constructed,Yes,Yes,0,In Service, ,0,Surrey,100 Avenue and Mall Access, ,Final AB,, ,,0,0,,20171123,49.184352,-122.847191
+499,4,Traffic,1000963617, ,163,Constructed,No,Yes,0,In Service, ,0,Surrey,Whalley Blvd and Skytrain Access, ,Final AB,, ,,0,0,,20171123,49.182063,-122.842095
+500,4,Traffic,1001945978, ,640,Constructed, , ,0,In Service, ,0,Surrey,101A & 160 St, , ,, ,,0,0,,20171123,49.187035,-122.778585
+501,4,Traffic,1001837443, ,469,Constructed, , ,0,In Service, ,0,Surrey,152 Ftg E & 152 St, , ,, ,,0,0,,20171123,49.095106,-122.801140
+502,3,Special Crosswalk,1001945917, ,498,Constructed, , ,0,In Service,3814-4210-00,2016,Surrey,160 St @ 9650blk, ,Initial AB,, ,,0,0,20170831,20171123,49.178037,-122.778830
+503,3,Special Crosswalk,1001602510, ,588,Constructed, , ,0,In Service,3812-4130-00,2014,Surrey,86A Ave @  144 St,Yellow Beacon,Final AB,, ,,0,0,20130612,20171123,49.160115,-122.823399
+504,4,Traffic,1000963390, ,178,Constructed,No,Yes,0,In Service, ,0,Surrey,60 Avenue and 177B Street, ,Final AB,, ,,0,0,,20171123,49.111465,-122.730302
+505,4,Traffic,1000963660, ,228,Constructed,No,Yes,0,In Service, ,0,Surrey,60 Avenue and 192 Street, ,Final AB,, ,,0,0,,20171123,49.111311,-122.691190
+506,4,Traffic,1000963372, ,1,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & 148 St, ,Final AB,, ,,0,0,,20171123,49.104501,-122.812306
+507,4,Traffic,1001750913, ,509,Constructed, ,Yes,0,In Service,1709-3140-00,2014,Surrey,60 Avenue and 196 Street, ,Final AB,, ,,0,0,20140527,20171123,49.111237,-122.679944
+508,4,Traffic,1000963609, ,227,Constructed,No,Yes,0,In Service,3804-4240-00,2009,Surrey,60 Avenue and 168 Street, ,Final AB,, ,,0,0,,20171123,49.111544,-122.756627
+509,4,Traffic,1000963396, ,74,Constructed,No,Yes,0,In Service, ,0,Surrey,60 Avenue and 180 Street, ,Final AB,, ,,0,0,,20171123,49.111440,-122.723803
+510,4,Traffic,1000963512, ,95,Constructed,No,Yes,0,In Service, ,0,Surrey,60 Avenue and 184 Street, ,Final AB,, ,,0,0,,20171123,49.111425,-122.712633
+511,4,Traffic,1000963348, ,105,Constructed,No,Yes,0,In Service, ,0,Surrey,60 Avenue and 188 Street, ,Final AB,, ,,0,0,,20171123,49.111334,-122.701682
+512,4,Traffic,1000963554, ,22,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 120 Street, ,Final AB,, ,,0,0,,20171123,49.119338,-122.890375
+513,4,Traffic,1000963442, ,301,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & 132 St, ,Final AB,, ,,0,0,,20171123,49.108202,-122.856717
+514,4,Traffic,1000963326, ,39,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & KGB, ,Final AB,, ,,0,0,,20171123,49.104522,-122.831301
+515,4,Traffic,1000963545, ,221,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 124 Street, ,Final AB,, ,,0,0,,20171123,49.119228,-122.878991
+516,4,Traffic,1000963319, ,621,Constructed,No,Yes,0,In Service,3812-4100-00,2014,Surrey,64 Avenue and 126 Street, ,Final AB,, ,,0,0,,20171123,49.119173,-122.873415
+517,4,Traffic,1000963401, ,34,Constructed,No, ,0,In Service,MOTH 71101-1004,2007,Provincial,Hwy 10 & 168 St, ,Final AB,, ,,0,0,,20171123,49.104285,-122.756653
+518,4,Traffic,1000963508, ,50,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 128 Street, ,Final AB,, ,,0,0,,20171123,49.119119,-122.867843
+519,4,Traffic,1000963421, ,245,Constructed,No, ,0,In Service,MOTH 71101-2010,2009,Provincial,Hwy 10 @ Hwy 15, ,Final AB,, ,,0,0,,20171123,49.104081,-122.738296
+520,4,Traffic,1000963383, ,17,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 132 Street, ,Final AB,, ,,0,0,,20171123,49.119003,-122.856511
+521,4,Traffic,1000963335, ,60,Constructed,No,Yes,0,In Service,3808-4070-00,2011,Surrey,64 Avenue and 134 Street,Pedestrian Signal,Final AB,, ,,0,0,,20171123,49.119021,-122.850996
+522,4,Traffic,1000963531, ,393,Constructed,No,Yes,0,In Service,3812-4090-00,2014,Surrey,64 Avenue and 142 Street, ,Final AB,, ,,0,0,,20171123,49.119107,-122.828810
+523,4,Traffic,1000963391, ,265,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 144 Street, ,Final AB,, ,,0,0,,20171123,49.119124,-122.823299
+524,4,Traffic,1000963437, ,100,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 148 Street, ,Final AB,, ,,0,0,,20171123,49.119127,-122.812178
+525,4,Traffic,1000963524, ,314,Constructed,No, ,0,In Service, ,0,Provincial,Hwy 10 & 176 St, ,Final AB,, ,,0,0,,20171123,49.104147,-122.734957
+526,4,Traffic,1000963684, ,250,Constructed,Yes,Yes,0,In Service, ,0,Surrey,64 Avenue and 152 Street, ,Final AB,, ,,0,0,,20171123,49.119066,-122.800993
+527,4,Traffic,1000963482, ,403,Constructed,No,Yes,0,In Service, ,0,Surrey,64 Avenue and 166 Street, ,Final AB,, ,,0,0,,20171123,49.118922,-122.762405
+528,4,Traffic,1000963407, ,103,Constructed,Yes,Yes,0,In Service,3804-4260-00,2009,Surrey,64 Avenue and 168 Street, ,Final AB,, ,,0,0,,20171123,49.118899,-122.756556
+529,3,Special Crosswalk,1001602513, ,639,Constructed, , ,0,In Service,3812-4140-00,2014,Surrey,57 Ave @  Panorama Dr, ,Final AB,, ,,0,0,20130612,20171123,49.105627,-122.805994

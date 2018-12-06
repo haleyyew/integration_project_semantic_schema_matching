@@ -1,0 +1,710 @@
+,BIKE_INFRASTRUCTURE_TYPE,COMMENTS,CORRIDOR_FUNCTION,CORRIDOR_NAME,CORRIDOR_TYPE,FACILITYID,HABITAT,INSERVICE_COST,INSERVICE_DATE,LENGTH,LOCATION,MATERIAL,OPERATOR,PROJECT_NO,ROUTE_TYPE2,STATUS,TREES_PLANTED,WIDTH,YR
+0,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Colebrook Greenway,Greenway,1001402592,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+1,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Colebrook Greenway,Greenway,1001402490,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+2,,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402800,,,,,,Other,Parks,,Multi-use Pathway,Proposed,,,
+3,,Part of the Trans Canada Trail,Multi-use,Colebrook Greenway,Greenway,1001403281,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+4,,,Multi-use,Riverside Greenway,Greenway,1001402865,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+5,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001950809,,,,,,Asphalt,Engineering,1799-2230-00,Multi-use Pathway,In Service,No,,2001
+6,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001950806,,,,,,Asphalt,Engineering,1799-2230-00,Multi-use Pathway,In Service,No,,2001
+7,,,Multi-use,King George Greenway,Greenway,1001402844,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+8,,,Multi-use,Colebrook Greenway,Greenway,1001402945,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+9,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402521,,,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,,2009
+10,,Previous duplicate FACILITYID 1001402922,Multi-use,Interurban Greenway,Greenway,1001563801,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+11,,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402936,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+12,Boulevard Separated Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001859470,,,,,,Concrete,Engineering,3805-6070-00,Multi-use Pathway,In Service,No,,2009
+13,Cycling-Permitted Sidewalk,,Multi-use,BC Parkway,Greenway,1001402198,,,,,,Concrete,Engineering,,Bike Route,In Service,No,,2009
+14,Boulevard Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001402311,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+15,Off-Street Multi-Use Pathway,,Multi-use,Nicomekl Greenway,Greenway,1001402216,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+16,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001402396,,,,,,Asphalt,Engineering,7805-0402-00,Multi-use Pathway,In Service,No,,2009
+17,,,Multi-use,Nicomekl Greenway,Greenway,1001402847,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+18,Off-Street Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001402571,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+19,, ,Multi-use,Panorama Greenway,Greenway,1001419122,,,,,,,Engineering,,Multi-use Pathway,Proposed,,,
+20,Off-Street Multi-Use Pathway,,Multi-use,Panorama Greenway,Greenway,1001951907,,,,,,Asphalt,Engineering,3816-6340-00,Multi-use Pathway,In Service,,,2017
+21,, ,Multi-use,Newton Greenway,Greenway,1001721902,,,,,,Other,Engineering,,Multi-use Pathway,,,,
+22,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,,Greenway,1001484940,,0,,,from south parking lot on 140 St to P28,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2009
+23,,,Multi-use,Quibble Creek Greenway,Greenway,1001699405,,,,25,,Other,,,Pedestrian Bridge,In Service,,,1997
+24,,,Multi-use,Quibble Creek Greenway,Greenway,1001402819,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,2009
+25,Off-Street Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001402514,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+26,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001859271,,,,,,Asphalt,Engineering,3805-6070-00,Multi-use Pathway,In Service,,,2007
+27,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001402471,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+28,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001859364,,,,,,Asphalt,Parks,3805-6050-00,Multi-use Pathway,In Service,,,2007
+29,Off-Street Multi-Use Pathway,,Multi-use,Bon Accord Greenway,Greenway,1001401997,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+30,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001840382,,,,,,Asphalt,Engineering,3809-6100-00,Multi-use Pathway,In Service,,,2015
+31,Off-Street Multi-Use Pathway,,Multi-use,Hawthorne Greenway,Greenway,1001422903,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+32,Bike Lanes, ,Multi-use,Bon Accord Greenway,Greenway,1001881014,,,,,,Other,Engineering,,Bike Route,In Service,,,
+33,,,Multi-use,Hawthorne Greenway,Greenway,1001940777,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+34,Boulevard Separated Multi-Use Pathway,,Multi-use,Hawthorne Greenway,Greenway,1001753846,,,,,,Asphalt,Engineering,7812-0158-00,Multi-use Pathway,In Service,,,2016
+35,Off-Street Multi-Use Pathway,,Multi-use,Port Mann Greenway,Greenway,1001732796,,,,,,,,MOTH Gateway E1,Multi-use Pathway,In Service,,,2015
+36,Off-Street Multi-Use Pathway, ,Multi-use,Semiahmoo Trail,Greenway,1001402977,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,,,
+37,,Previous duplicate FACILITYID 1001404828,Multi-use,Sunnyside Greenway,Greenway,1001563795,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+38,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001723774,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+39,Boulevard Multi-Use Pathway, ,Multi-use,Wills Brook Greenway,Greenway,1001419313,,,,,,Asphalt,Engineering,7811-0062-00,Multi-use Pathway,In Service,,,2014
+40,Off-Street Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001840379,,,,,,Asphalt,Engineering,7810-0020-00,Multi-use Pathway,In Service,,,2012
+41,Off-Street Multi-Use Pathway, ,Multi-use,Oliver Greenway,Greenway,1001835109,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+42,, ,Multi-use,Oliver Greenway,Greenway,1001911920,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+43,Off-Street Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001408557,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+44,, ,Multi-use,Fleetwood Greenway,Greenway,1001594037,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+45,Boulevard Multi-Use Pathway,2.35m Asp Path,Multi-use,Fraser Heights Greenway,Greenway,1001905054,,,,,,Asphalt,Engineering,3815-6020-00,Multi-use Pathway,In Service,,,2016
+46,Boulevard Multi-Use Pathway,,Multi-use,Clow Greenway,Greenway,1001402317,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+47,Boulevard Separated Multi-Use Pathway,,Multi-use,,Greenway,1001956638,,,,,,Asphalt,Engineering,7813-0189-00,Multi-use Pathway,Proposed,,,
+48,Off-Street Multi-Use Pathway,SEE FT01574,Multi-use,Douglas Greenway,Greenway,1001792055,,,,,,Asphalt Concrete,Engineering,7804-0411-00,Multi-use Pathway,In Service,,,2009
+49,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001403092,,,,,,Asphalt Concrete,Engineering,7806-0319-00,Multi-use Pathway,In Service,No,,2011
+50,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001990851,,,,,,Asphalt,Engineering,7815-0143-00,Multi-use Pathway,Proposed,,,
+51,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001812855,,,,,,Asphalt,Engineering,7814-0257-00,Multi-use Pathway,In Service,No,,2016
+52,, ,Multi-use,Hook Greenway,Greenway,1001404833,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+53,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,Hook Greenway,Greenway,1001484987,,0,20020417,,along 176 St edge of site,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2009
+54,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001402496,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+55,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001434530,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+56,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001778213,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+57,Boulevard Multi-Use Pathway,,Multi-use,Fleetwood Greenway,Greenway,1001952753,,0,20050201,,,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2011
+58,Boulevard Multi-Use Pathway,,Multi-use,Green Timbers Greenway,Greenway,1001567556,,,,,,Asphalt,Engineering,1709-3090-00,Multi-use Pathway,In Service,No,,2012
+59,Off-Street Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001878750,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+60,,,Multi-use,Abbey Ridge Greenway,Greenway,1001954881,,,,,,Asphalt,Engineering,7816-0197-00,Multi-use Pathway,Proposed,,,
+61,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001402320,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+62,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Tynehead Perimeter Trail,Greenway,1001700004,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+63,, ,Multi-use,Douglas Greenway,Greenway,1001819475,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+64,Boulevard Multi-Use Pathway,,,,Greenway,1001708093,,,,,,Asphalt,Engineering,7812-0160-00,Multi-use Pathway,In Service,No,,2014
+65,,,,,Greenway,1001855896,,,,,,,,,Multi-use Pathway,Proposed,,,
+66,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001402500,,,,,throughout park,Asphalt,Engineering,3808-6070-00,Multi-use Pathway,In Service,No,,2009
+67,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001434511,,,,,,Asphalt,Engineering,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+68,Boulevard Multi-Use Pathway,3.0m Path + 1.0m Asph. Blvd.,Multi-use,Cloverdale Greenway,Greenway,1001434513,,,,,,Asphalt,Engineering,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+69,Neighbourhood Bike Route,,Multi-use,North Creek Greenway,Greenway,1001402663,,,,,,Asphalt,Engineering,,Bike Route,In Service,No,,2009
+70,Cycling-Permitted Sidewalk,,Multi-use,Bose Greenway,Greenway,1001558077,,,,,,Asphalt,Engineering,1710-3010-00,Bike Route,In Service,,,2012
+71,,,Multi-use,Hazelgrove Greenway,Greenway,1001819481,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+72,,,Multi-use,Great Northern Greenway,Greenway,1001402883,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+73,,,Multi-use,Serpentine Flats Greenway,Greenway,1001819483,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+74,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001413440,,,,,,Asphalt,Engineering,7810-0179-00,Multi-use Pathway,In Service,,4,2013
+75,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001421192,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2016
+76,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001434689,,,,,,Asphalt,Engineering,7805-0382-00,Multi-use Pathway,In Service,No,,2012
+77,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001434674,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2011
+78,,,Multi-use,Katzie Greenway,Greenway,1001896234,,,,,,Asphalt,Engineering,7815-0306-00,Multi-use Pathway,Proposed,,,
+79,Boulevard Multi-Use Pathway,3.0m,Multi-use,Clayton Greenway,Greenway,1001758911,,,,,,Clay,Engineering,1709-3160-00,Multi-use Pathway,In Service,,,2013
+80,Off-Street Multi-Use Pathway,,Multi-use,Katzie Greenway,Greenway,1001713577,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+81,, ,Multi-use,Riverside Greenway,Greenway,1001401838,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+82,Off-Street Multi-Use Pathway,"(lbob new) As of July 2009, T1 now includes the segment at the north end that used to be called T3.
+
+Northeast end fades into open, sandy area w/ sparse veg.",Multi-use,,Greenway,1001484931,,0,,,"From north most parking lot, heading northeast to*",Gravel,Parks,,Multi-use Pathway,In Service,No,3.6,2009
+83,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402462,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,2009
+84,,Part of the Trans Canada Trail - Previous duplicate FACILITYID 1001402800,Multi-use,Newton Greenway,Greenway,1001563797,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,No,,
+85,, ,Multi-use,Interurban Greenway,Greenway,1001402922,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+86,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402551,,,,,,Asphalt,Engineering,1704-3040-00,Multi-use Pathway,In Service,No,,2007
+87,, ,Multi-use,Bear Creek Greenway,Greenway,1001402793,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+88,Boulevard Separated Multi-Use Pathway, ,Multi-use,BC Parkway,Greenway,1001731788,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,2013
+89,,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001403010,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+90,,,Multi-use,Bridgeview Greenway,Greenway,1001819512,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+91,Boulevard Separated Multi-Use Pathway, ,Multi-use,BC Parkway,Greenway,1001359490,,,,,,Asphalt,Engineering,3811-6160-00,Multi-use Pathway,In Service,,,2012
+92,Boulevard Separated Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001404371,,,,,,Asphalt,Engineering,3811-6160-00,Multi-use Pathway,In Service,No,,2012
+93,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001833236,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+94,Boulevard Multi-Use Pathway,,Multi-use,Nicomekl Greenway,Greenway,1001422931,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+95,Off-Street Multi-Use Pathway,,Multi-use,Nicomekl Greenway,Greenway,1001422930,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+96,Bike Lanes,,Multi-use,Semiahmoo Trail,Greenway,1001941561,,,,,,Concrete,Engineering,3809-6050-00,Multi-use Pathway,In Service,No,,2016
+97,Bike Lanes,,Multi-use,Semiahmoo Trail,Greenway,1001941560,,,,,,Asphalt,Engineering,3809-6050-00,Multi-use Pathway,In Service,No,,2016
+98,Off-Street Multi-Use Pathway, ,Multi-use,Semiahmoo Trail,Greenway,1001402960,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,,,
+99,, ,Multi-use,Panorama Greenway,Greenway,1001951908,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+100,,,Multi-use,Surrey Lake Greenway,Greenway,1001854697,,,,,,,Engineering,,Multi-use Pathway,Proposed,,,
+101,Off-Street Multi-Use Pathway,,Multi-use,Bear Creek Greenway,Greenway,1001401986,,0,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,3,
+102,Off-Street Multi-Use Pathway,,,Surrey Lake Greenway,Greenway,1001953298,,,,,,Asphalt,Parks,3812-6040-00,Multi-use Pathway,In Service,,,2016
+103,Off-Street Multi-Use Pathway,,,Surrey Lake Greenway,Greenway,1001953311,,,,,,Asphalt,Parks,,Multi-use Pathway,Abandoned,,,
+104,,,Multi-use,Fleetwood Greenway,Greenway,1001403062,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+105,Off-Street Multi-Use Pathway,,Multi-use,Fleetwood Greenway,Greenway,1001402928,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+106,,,Multi-use,Fraser Greenway,Greenway,1001403080,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+107,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001947971,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+108,, ,Multi-use,Bon Accord Greenway,Greenway,1001827799,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+109,, ,Multi-use,Port Mann Greenway,Greenway,1001819519,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+110,,,Multi-use,Semiahmoo Trail,Greenway,1001402868,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+111,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001560533,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+112,,"Asphalt w/ Flat Concrete Curb, both sides",Multi-use,Rosemary Greenway,Greenway,1001780619,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+113,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001819474,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+114,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001723775,,,,,,Asphalt,Engineering,7812-0311-00,Multi-use Pathway,In Service,No,,2013
+115,,,Multi-use,Rosemary Greenway,Greenway,1001402924,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+116,Boulevard Multi-Use Pathway, ,Multi-use,Wills Brook Greenway,Greenway,1001757959,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+117,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001847111,,,,,,Asphalt,Engineering,7811-0269-00,Multi-use Pathway,In Service,No,4,2015
+118,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001896199,,,,,,Asphalt,Engineering,7815-0157-00,Multi-use Pathway,In Service,,,2017
+119,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001434647,,,,,,Asphalt,Engineering,7806-0306-00,Multi-use Pathway,In Service,No,,2009
+120,Cycling-Permitted Sidewalk,,Multi-use,Hook Greenway,Greenway,1001422884,,,,,,Asphalt Concrete,Engineering,,Bike Route,In Service,No,,2009
+121,Neighbourhood Bike Route,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402579,,,,,,Asphalt,Engineering,,Bike Route,In Service,,,
+122,Boulevard Separated Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001402316,,,,,,Asphalt,Engineering,3815-6020-00,Multi-use Pathway,In Service,No,,2016
+123,Boulevard Multi-Use Pathway,2.35m Asp Path,Multi-use,Fraser Heights Greenway,Greenway,1001905070,,,,,,Asphalt,Engineering,3815-6020-00,Multi-use Pathway,In Service,,,2016
+124,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001951067,,,,,,Asphalt,Engineering,MOTH 11807,Multi-use Pathway,In Service,No,,2007
+125,Boulevard Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1001943299,,,,,,Asphalt Concrete,Engineering,7814-0159-00,Multi-use Pathway,In Service,No,4,2016
+126,,Previous duplicate FACILITYID 1001404828,Multi-use,Sunnyside Greenway,Greenway,1001933872,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+127,,Previous duplicate FACILITYID 1001404828,Multi-use,Pioneer Greenway,Greenway,1001563796,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+128,, ,Multi-use,Coast Meridian Greenway,Greenway,1002124541,,,,,,Other,Engineering,7816-0312-00,Multi-use Pathway,Proposed,,,
+129,,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1001413475,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+130,,,Multi-use,Grandview Heights Greenway,Greenway,1001887574,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2009
+131,,,Multi-use,Grandview Heights Greenway,Greenway,1001972090,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+132,Boulevard Multi-Use Pathway, ,Multi-use,Bose Greenway,Greenway,1001403136,,,,,,Asphalt,Engineering,7813-0013-00,Multi-use Pathway,In Service,,,2014
+133,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001402495,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+134,,,Multi-use,Coast Meridian Greenway,Greenway,1001402913,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+135,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001561909,,,,,,Asphalt,Engineering,3809-6070-00,Multi-use Pathway,In Service,No,,2012
+136,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001567570,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,
+137,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001880104,,,,,,,Engineering,,Multi-use Pathway,In Service,,,
+138,Off-Street Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001878374,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+139,,,Multi-use,Abbey Ridge Greenway,Greenway,1001997178,,,,,,Asphalt,Engineering,7813-0193-00,Multi-use Pathway,Proposed,,,
+140,,,Multi-use,Abbey Ridge Greenway,Greenway,1001878749,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,,,
+141,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001434512,,,,,throughout park,Asphalt,Parks,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+142,Neighbourhood Bike Route,,Multi-use,North Creek Greenway,Greenway,1001402664,,,,,,Asphalt,Engineering,,Bike Route,In Service,No,,2009
+143,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001792483,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+144,Boulevard Multi-Use Pathway,Previous duplicate FACILITYID 1001402817,Multi-use,Bose Greenway,Greenway,1001778027,,,,0,,Asphalt,Engineering,3809-6020-00,Multi-use Pathway,In Service,,,2011
+145,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001402493,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+146,,,Multi-use,Abbey Ridge Greenway,Greenway,1001878747,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+147,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Golden Ears Greenway,Greenway,1001432459,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+148,,,Multi-use,Latimer Greenway,Greenway,1001403022,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+149,, ,Multi-use,Cloverdale Greenway,Greenway,1001789124,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+150,,,Multi-use,Fraser Greenway,Greenway,1001402933,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+151,Boulevard Multi-Use Pathway,3.0m,Multi-use,Clayton Greenway,Greenway,1001598706,,,,,,Asphalt,Engineering,1709-3170-00,Multi-use Pathway,In Service,,,2013
+152,Boulevard Multi-Use Pathway,3.0m,Multi-use,Clayton Greenway,Greenway,1001402807,,,,,,Clay,Engineering,1709-3160-00,Multi-use Pathway,In Service,,,
+153,,,,Katzie Greenway,Greenway,1001832410,,,,,,,,,Multi-use Pathway,Proposed,,,
+154,,,,Katzie Greenway,Greenway,1001832409,,,,,,,,,Multi-use Pathway,Proposed,,,
+155,Boulevard Multi-Use Pathway,,Multi-use,Golden Ears Greenway,Greenway,1001432458,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+156,Off-Street Multi-Use Pathway,,Multi-use,Crescent Beach Greenway,Greenway,1001402263,,0,,,along coast from Wickson Rd to Maple St,Gravel,Parks,,Multi-use Pathway,In Service,No,,2009
+157,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Mud Bay Dike Trail,Greenway,1001402523,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,,,
+158,Boulevard Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001422907,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2009
+159,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,,Greenway,1001484884,,0,,,"From southeast corner of boat lot, south to acces*",Limestone,Parks,,Multi-use Pathway,In Service,No,3,2009
+160,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,,Greenway,1001994158,,,,,from 64 Ave to 62A Ave,Asphalt,Parks,,Multi-use Pathway,In Service,,,2009
+161,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402464,,,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,,
+162,Off-Street Multi-Use Pathway,,Multi-use,Scottsdale Greenway,Greenway,1001406771,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+163,, ,Multi-use,Surrey Lake Greenway,Greenway,1001403137,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+164,Boulevard Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001402236,,,,,,Concrete,Engineering,3805-6070-00,Multi-use Pathway,In Service,No,,2009
+165,Boulevard Separated Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001603124,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+166,, ,Multi-use,Elgin Greenway,Greenway,1001403017,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+167,,,Multi-use,Pioneer Greenway,Greenway,1001954843,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+168,, ,Multi-use,Elgin Greenway,Greenway,1001890783,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+169,Boulevard Multi-Use Pathway, ,Multi-use,Newton Greenway,Greenway,1001800608,,,,,,Asphalt,Engineering,7810-0309-00,Multi-use Pathway,In Service,,,2014
+170,, ,Multi-use,Bear Creek Greenway,Greenway,1001402909,,,,,,Mulch,Engineering,,Multi-use Pathway,Proposed,,,
+171,,,Multi-use,Bear Creek Greenway,Greenway,1001403016,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+172,Off-Street Multi-Use Pathway,Input Requested by Tim Kooistra. As built not in yet. Greenway is built. Jan 20116,,Surrey Lake Greenway,Greenway,1001951103,,,,,,,Engineering,5012-1010-00,Multi-use Pathway,In Service,,,2015
+173,Off-Street Multi-Use Pathway,,,Surrey Lake Greenway,Greenway,1001953299,,,,,,Asphalt,Parks,3812-6040-00,Multi-use Pathway,In Service,,,2016
+174,,,Multi-use,Quibble Creek Greenway,Greenway,1001402826,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,2009
+175,Off-Street Multi-Use Pathway,,Multi-use,Green Timbers Greenway,Greenway,1001832211,,0,,,,Asphalt,Parks,3811-6590-00,Multi-use Pathway,In Service,No,,2014
+176,Off-Street Multi-Use Pathway,,Multi-use,,Greenway,1001605757,,,20121001,,from P2 to 102 Ave entrance (east side),Gravel,Parks,,Multi-use Pathway,In Service,,,2012
+177,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402475,,0,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+178,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001947970,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+179,,,Multi-use,,Greenway,1001955047,,,20171001,,along 139 and 140 St park entrances,Asphalt,Parks,,Multi-use Pathway,In Service,,3,
+180,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001994760,,,,,,,Engineering,1717-7040-00,Multi-use Pathway,Proposed,,,
+181,Off-Street Multi-Use Pathway,,Multi-use,Bon Accord Greenway,Greenway,1001819611,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+182,,,Multi-use,Hawthorne Greenway,Greenway,1001402884,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+183,,,Multi-use,Marine Greenway,Greenway,1001402886,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+184,Off-Street Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001402571,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+185,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001840380,,,,,,Asphalt,Engineering,7810-0020-00,Multi-use Pathway,In Service,,,2012
+186,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001607328,,,,,,Asphalt,Engineering,7810-0320-00,Multi-use Pathway,In Service,,,2013
+187,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001422881,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+188,Boulevard Multi-Use Pathway,,Multi-use,Johnston Greenway,Greenway,1001402148,,,,,,Asphalt Concrete,Engineering,,Multi-use Pathway,In Service,,,
+189,, ,Multi-use,Surrey Lake Greenway,Greenway,1001865200,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+190,Neighbourhood Bike Route,,Multi-use,Port Mann Greenway,Greenway,1001779164,,,,,,Other,Engineering,MOTH Ped. Opass 5926,Bike Route,In Service,,,2015
+191,Boulevard Multi-Use Pathway,2.35m Asp Path with 1.1m blvd Strip,Multi-use,Fraser Heights Greenway,Greenway,1001905043,,,,,,Asphalt,Engineering,3815-6020-00,Multi-use Pathway,In Service,,,2016
+192,Boulevard Multi-Use Pathway,2.35m Asp Path,Multi-use,Fraser Heights Greenway,Greenway,1001951490,,,,,,Asphalt,Engineering,3815-6020-00,Multi-use Pathway,In Service,,,2016
+193,Boulevard Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001951486,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+194,, ,Multi-use,Coast Meridian Greenway,Greenway,1001404828,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+195,, ,Multi-use,Douglas Greenway,Greenway,1001792054,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+196,,,Multi-use,Douglas Greenway,Greenway,1001402830,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+197,Boulevard Separated Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1001927694,,,,,along 163 St,Asphalt,Parks,7814-0257-00,Multi-use Pathway,In Service,No,,2016
+198,Boulevard Separated Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1001938426,,,,,"within Natural Area, along 163 St",Asphalt,Parks,7814-0257-00,Multi-use Pathway,In Service,No,,2016
+199,,Previous duplicate FACILITYID 1001404828,Multi-use,Sunnyside Greenway,Greenway,1001933871,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+200,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001992674,,,,,,Asphalt,Engineering,7815-0084-00,Multi-use Pathway,In Service,,,2017
+201,, ,Multi-use,Coast Meridian Greenway,Greenway,1002124537,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+202,Boulevard Multi-Use Pathway, ,Multi-use,Coast Meridian Greenway,Greenway,1001947528,,,,,,Asphalt,Engineering,7816-0191-00,Multi-use Pathway,In Service,,,2017
+203,,,Multi-use,Grandview Heights Greenway,Greenway,1001901556,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+204,,,Multi-use,Grandview Heights Greenway,Greenway,1001422938,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+205,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001947773,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+206,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001758299,,,,,,Asphalt,Engineering,7811-0330-00,Multi-use Pathway,In Service,,,2014
+207,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001402497,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+208,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001434531,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+209,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001402407,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+210,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001947088,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+211,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001403117,,,,,,Asphalt,Engineering,1704-3310-00,Multi-use Pathway,In Service,No,,2013
+212,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001778255,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+213,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001830699,,,,,,Asphalt,Engineering,3810-6130-00,Multi-use Pathway,In Service,,,2015
+214,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001830661,,,,,,Asphalt,,3810-6130-00,Multi-use Pathway,In Service,,,2015
+215,Off-Street Multi-Use Pathway,,Multi-use,Fleetwood Greenway,Greenway,1001402244,,0,20050201,,,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2011
+216,,,Multi-use,Fraser Heights Greenway,Greenway,1001992633,,,,,,,Engineering,7814-0322-00,Multi-use Pathway,Proposed,No,,
+217,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001402238,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+218,Off-Street Multi-Use Pathway,,,Tynehead Pedestrian Bridge,Greenway,1001402965,,,,,Hwy 1 at 168 St,Asphalt,Engineering,3809-6090-00,Pedestrian Bridge,In Service,No,,2011
+219,,,Multi-use,Fraser Heights Greenway,Greenway,1001992632,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+220,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001402302,,,,,Tynehead Pedestrian Bridge,Asphalt,Engineering,3809-6090-00,Multi-use Pathway,In Service,No,,2009
+221,Boulevard Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001851233,,,,,,Concrete,,3809-6080-00,Multi-use Pathway,In Service,,,2015
+222,,,Multi-use,Abbey Ridge Greenway,Greenway,1001997179,,,,,,Asphalt,Engineering,7813-0193-00,Multi-use Pathway,Proposed,,,
+223,,,Multi-use,Abbey Ridge Greenway,Greenway,1001997177,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,,,
+224,,,Multi-use,Abbey Ridge Greenway,Greenway,1001402974,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+225,,,Multi-use,Abbey Ridge Greenway,Greenway,1001955836,,,,,,Asphalt,Engineering,7816-0197-00,Multi-use Pathway,Proposed,,,
+226,,Previous null FACILITYID,Multi-use,Bothwell Loop Greenway,Greenway,1001563789,,,,0,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+227,,,Multi-use,Surrey Bend Greenway,Greenway,1001402898,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+228,Boulevard Multi-Use Pathway,,,,Greenway,1001836606,,,,,,Concrete,Engineering,1713-3100-00,Multi-use Pathway,In Service,No,,2015
+229,Boulevard Multi-Use Pathway,,,,Greenway,1001836605,,,,,,Asphalt,Engineering,1713-3100-00,Multi-use Pathway,In Service,No,,2015
+230,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001995645,,,,,,Asphalt,Engineering,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+231,,,Multi-use,Great Northern Greenway,Greenway,1001819482,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+232,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001723591,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+233,,,Multi-use,Armstrong Greenway,Greenway,1001402873,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+234,,,Multi-use,Fraser Greenway,Greenway,1001402882,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+235,,,,Siddons Greenway,Greenway,1001832403,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+236,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001422503,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+237,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001598709,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+238,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Golden Ears Greenway,Greenway,1001402304,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+239,Boulevard Multi-Use Pathway,,Multi-use,,Greenway,1001850437,,,,,,Asphalt,Engineering,7813-0287-00,Multi-use Pathway,In Service,,,2015
+240,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001413440,,,,,,Asphalt,Engineering,7810-0179-00,Multi-use Pathway,In Service,,,2013
+241,Boulevard Multi-Use Pathway,RBRC,Multi-use,Latimer Greenway,Greenway,1001841650,,,,,,Asphalt,Engineering,1709-3130-00,Multi-use Pathway,In Service,No,,2014
+242,Boulevard Multi-Use Pathway,RBRC,Multi-use,Cloverdale Greenway,Greenway,1001950877,,,,,,Other,Engineering,1709-7090-00,Multi-use Pathway,In Service,,,2014
+243,,,,Katzie Greenway,Greenway,1001896235,,,,,,,,,Multi-use Pathway,Proposed,,,
+244,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001850252,,,,,,Asphalt,Engineering,1709-3170-00,Multi-use Pathway,In Service,No,,2013
+245,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001433188,,,,,,Asphalt,Engineering,1709-3170-00,Multi-use Pathway,In Service,No,,2013
+246,,4.0m,Multi-use,Clayton Greenway,Greenway,1001402825,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,
+247,Boulevard Multi-Use Pathway,3.0m,Multi-use,Clayton Greenway,Greenway,1001598707,,,,,,Clay,Engineering,1709-3170-00,Multi-use Pathway,In Service,,,2013
+248,Boulevard Multi-Use Pathway,3.0m,Multi-use,Clayton Greenway,Greenway,1001434588,,,,,,Other,Engineering,7807-0054-00,Multi-use Pathway,In Service,,,2009
+249,Boulevard Multi-Use Pathway,,Multi-use,Green Timbers Greenway,Greenway,1001402296,,,,,,Asphalt,Engineering,1704-7000-00,Multi-use Pathway,In Service,No,,2009
+250,,,Multi-use,Riverside Greenway,Greenway,1001811851,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+251,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001402312,,,,,,Asphalt,Engineering,1799-2230-00,Multi-use Pathway,In Service,No,,2001
+252,Boulevard Multi-Use Pathway,,Multi-use,Riverside Greenway,Greenway,1001805298,,,,,,Asphalt,Engineering,1713-3070-00,Multi-use Pathway,In Service,No,,2014
+253,,,Multi-use,BC Parkway,Greenway,1001403194,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+254,,,Multi-use,Mud Bay Dike Trail,Greenway,1001741950,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+255,Neighbourhood Bike Route,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402540,,,,,,Asphalt,Engineering,,Bike Route,In Service,,,
+256,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402520,,0,20000711,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,4,
+257,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,Green Timbers Greenway,Greenway,1001484980,,0,,,from 89 Ave to 128 St,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2009
+258,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402248,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+259,,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001422988,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+260,Off-Street Multi-Use Pathway,,Multi-use,Bear Creek Greenway,Greenway,1001402517,,,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,,
+261,Off-Street Multi-Use Pathway,,Multi-use,Bear Creek Greenway,Greenway,1001402518,,,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,,
+262,Boulevard Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001402491,,,,,,Asphalt,Engineering,7802-0222-00,Multi-use Pathway,In Service,No,,2011
+263,Boulevard Multi-Use Pathway,,Multi-use,Bridgeview Greenway,Greenway,1001421131,,,,,,Asphalt,Engineering,7811-0022-00,Multi-use Pathway,In Service,No,,2013
+264,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001402813,,,,,,Other,Engineering,3811-6010-00,Multi-use Pathway,In Service,,,2014
+265,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001726512,,,,,,Other,Engineering,1705-7110-00,Multi-use Pathway,In Service,,,2007
+266,, ,Multi-use,Sunnyside Greenway,Greenway,1001403005,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+267,Bike Lanes,,Multi-use,Semiahmoo Trail,Greenway,1001402866,,,,,,Asphalt,Engineering,3809-6050-00,Multi-use Pathway,In Service,No,,2016
+268,,Conceptual overpass,Multi-use,Nicomekl Greenway,Greenway,1001403093,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+269,, ,Multi-use,Panorama Greenway,Greenway,1001412196,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+270,Boulevard Multi-Use Pathway,,,,Greenway,1001605055,,,,,,Asphalt,Engineering,7811-0147-00,Multi-use Pathway,In Service,,,2013
+271,Boulevard Multi-Use Pathway, ,Multi-use,Panorama Greenway,Greenway,1001419136,,,,,,Asphalt,Engineering,7810-0309-00,Multi-use Pathway,In Service,,,2014
+272,Boulevard Multi-Use Pathway,,Multi-use,King George Greenway,Greenway,1001413476,,,,,,Asphalt,Engineering,3808-6050-00,Multi-use Pathway,In Service,No,,2012
+273,, ,Multi-use,Newton Greenway,Greenway,1001402948,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+274,,,Multi-use,Bose Greenway,Greenway,1001775307,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+275,,,Multi-use,Bose Greenway,Greenway,1001850256,,,,,,Asphalt,Engineering,7812-0066-00,Multi-use Pathway,Proposed,No,3,2015
+276,,,Multi-use,Bose Greenway,Greenway,1001402931,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+277,,,Multi-use,Quibble Creek Greenway,Greenway,1001402824,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,2009
+278,,,Multi-use,Quibble Creek Greenway,Greenway,1001402827,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,2009
+279,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001402507,,,,,,Asphalt,Engineering,3805-6050-00,Multi-use Pathway,In Service,,,2007
+280,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001402515,,,,,from 102 Ave to 100 Ave,Asphalt,Parks,,Multi-use Pathway,In Service,,,2009
+281,Cycling-Permitted Sidewalk,,Multi-use,Bon Accord Greenway,Greenway,1001402197,,,,,,Concrete,Engineering,,Bike Route,In Service,,,
+282,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402474,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+283,, ,Multi-use,Quibble Creek Greenway,Greenway,1001986362,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+284,Off-Street Multi-Use Pathway,,Multi-use,Hawthorne Greenway,Greenway,1001402596,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+285,, ,Multi-use,Port Mann Greenway,Greenway,1001819608,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+286,Boulevard Multi-Use Pathway,,,,Greenway,1001831799,,,,,,Asphalt,,7812-0324-00,Multi-use Pathway,In Service,,,2015
+287,Off-Street Multi-Use Pathway,,Multi-use,Semiahmoo Trail,Greenway,1001403087,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2009
+288,Off-Street Multi-Use Pathway, ,Multi-use,Semiahmoo Trail,Greenway,1001787824,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,,,
+289,Boulevard Multi-Use Pathway,4.0m,Multi-use,Pioneer Greenway,Greenway,1001402268,,,,,,Asphalt,Engineering,7804-0112-00,Multi-use Pathway,In Service,No,,2009
+290,,Previous duplicate FACILITYID 1001404828,Multi-use,Pioneer Greenway,Greenway,1001819473,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+291,Boulevard Multi-Use Pathway,"Asphalt w/ Flat Concrete Curb, both sides",Multi-use,Pioneer Greenway,Greenway,1001404829,,,,,,Asphalt Concrete,Engineering,7811-0241-00,Multi-use Pathway,In Service,,7.3,2014
+292,Off-Street Multi-Use Pathway,"Asphalt w/ Flat Concrete Curb, both sides",Multi-use,Pioneer Greenway,Greenway,1001780609,,,,,,Other,Engineering,7811-0241-00,Multi-use Pathway,In Service,,,2014
+293,,,Multi-use,Pioneer Greenway,Greenway,1001950910,,,,,,,Engineering,7811-0241-00,Multi-use Pathway,Proposed,No,,2014
+294,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001798012,,,,,,Asphalt,Engineering,7811-0327-00,Multi-use Pathway,In Service,No,,2014
+295,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001608072,,,,,,Concrete,Engineering,7808-0254-00,Multi-use Pathway,In Service,No,,2013
+296,,,Multi-use,Oliver Greenway,Greenway,1001791308,,,,,,Asphalt,Engineering,7811-0269-00,Multi-use Pathway,In Service,No,4,2014
+297,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001791311,,,,,,Asphalt,Engineering,7813-0083-00,Multi-use Pathway,In Service,No,3,2015
+298,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001413115,,,,,,Asphalt,Engineering,7811-0051-00,Multi-use Pathway,In Service,No,,2013
+299,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001402831,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+300,,,Multi-use,Pioneer Greenway,Greenway,1001729976,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+301,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001805351,,,,,,Asphalt,Engineering,7811-0255-00,Multi-use Pathway,In Service,No,4,2015
+302,Boulevard Multi-Use Pathway, ,Multi-use,Oliver Greenway,Greenway,1001419315,,,,,,Asphalt,Engineering,7811-0062-00,Multi-use Pathway,In Service,,,2014
+303,Boulevard Multi-Use Pathway, ,Multi-use,Oliver Greenway,Greenway,1001835110,,,,,,Asphalt,Engineering,7812-0208-00,Multi-use Pathway,In Service,,4,2016
+304,Boulevard Multi-Use Pathway,Temp. Walkway,Multi-use,Oliver Greenway,Greenway,1001414188,,,,,,Asphalt,Engineering,7810-0020-00,Multi-use Pathway,In Service,,,2012
+305,Boulevard Multi-Use Pathway, ,Multi-use,Oliver Greenway,Greenway,1001835108,,,,,,Asphalt,Engineering,7812-0208-00,Multi-use Pathway,In Service,,4,2016
+306,,,Multi-use,Fleetwood Greenway,Greenway,1001402914,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+307,Neighbourhood Bike Route,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402578,,,,,,Asphalt,Engineering,,Bike Route,In Service,,,
+308,,,Multi-use,Mitchell Greenway,Greenway,1001936184,,,,,,,Metro Vancouver,,Multi-use Pathway,Proposed,No,,2009
+309,,,Multi-use,Surrey Bend Greenway,Greenway,1001402881,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+310,,,Multi-use,Douglas Greenway,Greenway,1001403165,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+311,,,Multi-use,Douglas Greenway,Greenway,1001403104,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+312,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001403103,,,,,,Asphalt,Engineering,7809-0171-00,Multi-use Pathway,In Service,No,,2011
+313,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001950960,,,,,,Asphalt,Engineering,MOTH 11807,Multi-use Pathway,In Service,No,,2007
+314,Boulevard Separated Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1002021739,,,,,,Asphalt,Engineering,7814-0257-00,Multi-use Pathway,In Service,No,,2016
+315,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001990858,,,,,,Asphalt,Engineering,7815-0143-00,Multi-use Pathway,Proposed,,,
+316,Boulevard Multi-Use Pathway, ,Multi-use,Coast Meridian Greenway,Greenway,1001792679,,,,,,Asphalt Concrete,Engineering,7812-0153-00,Multi-use Pathway,In Service,,4,2014
+317,, ,Multi-use,Coast Meridian Greenway,Greenway,1001715181,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+318,,,Multi-use,Hook Greenway,Greenway,1002125882,,,,,,,Engineering,7815-0410-00,Multi-use Pathway,Proposed,No,,
+319,, ,Multi-use,Hook Greenway,Greenway,1001930966,,,,,,Other,Engineering,7815-0146-00,Multi-use Pathway,Proposed,,,
+320,,,Multi-use,Hook Greenway,Greenway,1001956657,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+321,, ,Multi-use,Hook Greenway,Greenway,1001930965,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+322,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001404319,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2011
+323,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001607322,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+324,,,Multi-use,Bose Greenway,Greenway,1001403029,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+325,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001422531,,,,,,Asphalt,Engineering,1701-3210-00,Multi-use Pathway,In Service,No,,2004
+326,,Previous duplicate FACILITYID 1001402916,Multi-use,Serpentine Flats Greenway,Greenway,1001563799,,,,0,,,Engineering,,Multi-use Pathway,Proposed,No,,
+327,Off-Street Multi-Use Pathway,,Multi-use,Green Timbers Greenway,Greenway,1001402237,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+328,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001419362,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+329,,,Multi-use,Abbey Ridge Greenway,Greenway,1001954879,,,,,,Asphalt,Engineering,7816-0197-00,Multi-use Pathway,Proposed,,,
+330,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Tynehead Perimeter Trail,Greenway,1001402321,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+331,,,Multi-use,Anniedale Greenway,Greenway,1001402900,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+332,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001422529,,,,,throughout park,Asphalt,Parks,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+333,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001995644,,,,,,Asphalt,Engineering,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+334,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001422530,,,,,Throughout park,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2009
+335,Neighbourhood Bike Route,,Multi-use,North Creek Greenway,Greenway,1001402657,,,,,,Asphalt,Engineering,,Bike Route,In Service,No,,2009
+336,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001402409,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+337,Off-Street Multi-Use Pathway,4.0m,Multi-use,Cloverdale Greenway,Greenway,1001561708,,,,,,Asphalt,Engineering,3809-6020-00,Multi-use Pathway,In Service,No,,2012
+338,Off-Street Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001728795,,,,,,Asphalt,Engineering,3809-6020-00,Multi-use Pathway,In Service,No,,2011
+339,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001723601,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+340,,,Multi-use,Armstrong Greenway,Greenway,1001819480,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+341,,,Multi-use,Great Northern Greenway,Greenway,1001859631,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+342,,,Multi-use,Anniedale Greenway,Greenway,1001402880,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+343,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001775581,,,,,,Asphalt,Engineering,7813-0270-00,Multi-use Pathway,In Service,No,4,2015
+344,Boulevard Multi-Use Pathway,,,,Greenway,1001836640,,,,,,Asphalt,Engineering,1713-3100-00,Multi-use Pathway,In Service,No,,2015
+345,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001835287,,,,,,Asphalt,Engineering,7814-0294-00,Multi-use Pathway,In Service,No,4,2017
+346,, ,Multi-use,Clayton Greenway,Greenway,1001434629,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+347,,4.0m,Multi-use,Anniedale Greenway,Greenway,1001805262,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,
+348,, ,Multi-use,Crescent Beach Greenway,Greenway,1001402808,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+349,, ,Multi-use,Riverside Greenway,Greenway,1001402954,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+350,Boulevard Multi-Use Pathway,,Multi-use,Riverside Greenway,Greenway,1001402863,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2009
+351,, ,Multi-use,Elgin Greenway,Greenway,1001403055,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+352,Neighbourhood Bike Route,,Multi-use,Green Timbers Greenway,Greenway,1001402098,,,,,,Asphalt,Engineering,,Bike Route,In Service,No,,2009
+353,Boulevard Multi-Use Pathway,,Multi-use,Surrey Lake Greenway,Greenway,1001402599,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+354,Boulevard Multi-Use Pathway,,Multi-use,Surrey Lake Greenway,Greenway,1001609562,,,,,,Asphalt,Engineering,7812-0242-00,Multi-use Pathway,In Service,,4,2014
+355,, ,Multi-use,Bear Creek Greenway,Greenway,1001745709,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+356,, ,Multi-use,BC Parkway,Greenway,1000961212,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+357,,,Multi-use,BC Parkway,Greenway,1001951289,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+358,,,Multi-use,Bridgeview Greenway,Greenway,1001826903,,,,,,,Engineering,7812-0207-00,Multi-use Pathway,Proposed,No,3,2015
+359,,,Multi-use,Bridgeview Greenway,Greenway,1001826904,,,,,,,Engineering,7812-0207-00,Multi-use Pathway,Proposed,No,4,2015
+360,, ,Multi-use,BC Parkway,Greenway,1001802071,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+361,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001951298,,,,,,Other,Engineering,1705-7110-00,Multi-use Pathway,In Service,,,2007
+362,,,Multi-use,Sunnyside Greenway,Greenway,1001402910,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+363,Off-Street Multi-Use Pathway, ,Multi-use,Elgin Greenway,Greenway,1001403090,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+364,,,Multi-use,Pioneer Greenway,Greenway,1001845124,,,,,,Asphalt,Engineering,7811-0165-00,Multi-use Pathway,Proposed,No,4,2015
+365,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001997562,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+366,,,Multi-use,King George Greenway,Greenway,1001405979,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+367,, ,Multi-use,Panorama Greenway,Greenway,1001402956,,,,,,Asphalt,Engineering,7815-0212-00,Multi-use Pathway,Proposed,,,
+368,Boulevard Multi-Use Pathway, ,Multi-use,Panorama Greenway,Greenway,1001833490,,,,,,Asphalt,Engineering,7812-0125-00,Multi-use Pathway,In Service,,,2015
+369,, ,Multi-use,Bear Creek Greenway,Greenway,1001402938,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+370,,,Multi-use,Bose Greenway,Greenway,1001775308,,,,,,Asphalt Concrete,Engineering,7812-0155-00,Multi-use Pathway,Proposed,No,,2014
+371,,,Multi-use,Quibble Creek Greenway,Greenway,1001402978,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,2009
+372,, ,Multi-use,Quibble Creek Greenway,Greenway,1001402939,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+373,,,Multi-use,Green Timbers Greenway,Greenway,1001836159,,,,,King Creek,Concrete,Engineering,1796-0130-00,Pedestrian Bridge,In Service,,,1997
+374,, ,Multi-use,Bon Accord Greenway,Greenway,1001720987,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+375,Cycling-Permitted Sidewalk,,Multi-use,Bon Accord Greenway,Greenway,1001593624,,,,,,Concrete,Engineering,,Bike Route,In Service,,,
+376,Off-Street Multi-Use Pathway,,Multi-use,Bon Accord Greenway,Greenway,1001950830,,,,,,Asphalt,Engineering,3811-6330-00,Multi-use Pathway,In Service,,,2015
+377,,,Multi-use,Hawthorne Greenway,Greenway,1001403107,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+378,,,Multi-use,Port Mann Greenway,Greenway,1001403112,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+379,, ,Multi-use,Port Mann Greenway,Greenway,1001402812,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+380,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001560531,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+381,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001422989,,,,,,Asphalt,Engineering,1702-3070-00,Multi-use Pathway,In Service,No,,2005
+382,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001775779,,,,,,Asphalt,Engineering,7811-0187-00,Multi-use Pathway,In Service,No,2.5,2016
+383,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001402209,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+384,,,Multi-use,Wills Brook Greenway,Greenway,1001403078,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+385,Off-Street Multi-Use Pathway,,Multi-use,Wills Brook Greenway,Greenway,1001403077,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+386,Boulevard Multi-Use Pathway, ,Multi-use,Oliver Greenway,Greenway,1001789254,,,,,,Asphalt,Engineering,3813-6140-00,Multi-use Pathway,In Service,,,2014
+387,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001561796,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+388,,,Multi-use,Grandview Heights Greenway,Greenway,1001989475,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,
+389,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001422324,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+390,Boulevard Multi-Use Pathway,,Multi-use,Johnston Greenway,Greenway,1001840450,,,,,,Asphalt,Engineering,7815-0289-00,Multi-use Pathway,In Service,No,,2017
+391,,,,Surrey Lake Greenway,Greenway,1001819494,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+392,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001432464,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+393,,,Multi-use,Guildford Greenway,Greenway,1001402972,,,,,,,Metro Vancouver,,Multi-use Pathway,Proposed,No,,2009
+394,Neighbourhood Bike Route,,Multi-use,Port Mann Greenway,Greenway,1001779164,,,,,,Other,Engineering,3813-6030-00,Bike Route,In Service,,,2015
+395,Neighbourhood Bike Route,,Multi-use,Port Mann Greenway,Greenway,1001951482,,,,,,Other,Engineering,MOTH Ped. Opass 5926,Bike Route,In Service,,,2015
+396,Boulevard Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001854683,,,,,,,Engineering,3815-6020-00,Multi-use Pathway,In Service,No,,2016
+397,Cycling-Permitted Sidewalk,,Multi-use,Douglas Greenway,Greenway,1001434547,,,,,,Asphalt Concrete,Engineering,,Bike Route,In Service,No,,2009
+398,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001950766,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,
+399,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001990862,,,,,,Asphalt,Engineering,7815-0143-00,Multi-use Pathway,Proposed,,,
+400,, ,Multi-use,Coast Meridian Greenway,Greenway,1001990855,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+401,Boulevard Separated Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001887575,,,,,,Asphalt,Engineering,7815-0242-00,Multi-use Pathway,In Service,,,2017
+402,Off-Street Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001841124,,,,,,Asphalt,Engineering,7811-0223-00,Multi-use Pathway,In Service,No,,2016
+403,,,Multi-use,Coast Meridian Greenway,Greenway,1001754717,,,,,,Asphalt,Engineering,7812-0029-00,Multi-use Pathway,Proposed,No,4,2014
+404,,,Multi-use,Grandview Heights Greenway,Greenway,1001754715,,,,,,Asphalt,Engineering,7812-0029-00,Multi-use Pathway,Proposed,No,4,
+405,, ,Multi-use,Oliver Greenway,Greenway,1001403084,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+406,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001403210,,,,,,Asphalt,Engineering,7807-0115-00,Multi-use Pathway,In Service,,,2015
+407,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001402398,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+408,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001402406,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+409,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001402201,,,,,,Asphalt,Engineering,7811-0136-00,Multi-use Pathway,In Service,No,,2013
+410,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001402919,,,,,,Asphalt,Engineering,1704-3310-00,Multi-use Pathway,In Service,No,,2013
+411,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001403122,,,,,,Asphalt,Engineering,1704-3310-00,Multi-use Pathway,In Service,No,,2014
+412,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402942,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2011
+413,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001831923,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+414,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Tynehead Greenway,Greenway,1001432463,,,,,,,Engineering,1713-3160-00,Multi-use Pathway,In Service,No,,2014
+415,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001419359,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+416,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001700002,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+417,,,Multi-use,Abbey Ridge Greenway,Greenway,1001954880,,,,,,Asphalt,Engineering,7816-0197-00,Multi-use Pathway,Proposed,,,
+418,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001402322,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+419,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001728799,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+420,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001780451,,,,,,Asphalt,Engineering,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+421,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001780437,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+422,Off-Street Multi-Use Pathway,,Multi-use,North Creek Greenway,Greenway,1001402411,,,,,,Concrete,Engineering,3805-6060-00,Multi-use Pathway,In Service,No,,2009
+423,,Previous duplicate FACILITYID 1001402817,Multi-use,Bose Greenway,Greenway,1001563794,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+424,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001434510,,,,,,Asphalt,Engineering,3809-6020-00,Multi-use Pathway,In Service,No,,2011
+425,Boulevard Multi-Use Pathway,,Multi-use,Armstrong Greenway,Greenway,1001705400,,,,,,Asphalt,Engineering,7806-0351-00,Multi-use Pathway,In Service,No,,2013
+426,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001832405,,,,,,,,,Multi-use Pathway,In Service,,,
+427,, ,Multi-use,Bose Greenway,Greenway,1001402817,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+428,,Previous null FACILITYID,Multi-use,Anniedale Greenway,Greenway,1001563790,,,,0,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+429,,,Multi-use,Latimer Greenway,Greenway,1001775582,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+430,,,Multi-use,Latimer Greenway,Greenway,1001402879,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+431,Boulevard Multi-Use Pathway,Width: 4m,Multi-use,Latimer Greenway,Greenway,1001403793,,,,,,Asphalt,Engineering,7809-0182-00,Multi-use Pathway,In Service,,,
+432,Boulevard Multi-Use Pathway, ,Multi-use,Cloverdale Greenway,Greenway,1001950864,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+433,Boulevard Multi-Use Pathway,3.0m,Multi-use,Clayton Greenway,Greenway,1001598708,,,,,,Clay,Engineering,1709-3170-00,Multi-use Pathway,In Service,,,2013
+434,Boulevard Multi-Use Pathway,,Multi-use,Hazelgrove Greenway,Greenway,1002125965,,,,,,Asphalt,Engineering,7815-0051-00,Multi-use Pathway,Proposed,No,,
+435,Off-Street Multi-Use Pathway,,Multi-use,Hazelgrove Greenway,Greenway,1001713580,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+436,Off-Street Multi-Use Pathway,,Multi-use,Crescent Beach Greenway,Greenway,1001402263,,0,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,3.5,2009
+437,Boulevard Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001402486,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+438,Boulevard Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001806160,,,,,,,Engineering,1713-3070-00,Multi-use Pathway,In Service,No,,2014
+439,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001950808,,,,,,Asphalt,Engineering,1799-2230-00,Multi-use Pathway,In Service,No,,2001
+440,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001950807,,,,,,Asphalt,Engineering,SFPR Seg. 6,Multi-use Pathway,In Service,No,,2014
+441,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402463,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+442,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001422902,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,2009
+443,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402519,,0,20000811,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+444,,,Multi-use,Scottsdale Greenway,Greenway,1001402949,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+445,, ,Multi-use,Interurban Greenway,Greenway,1001402937,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+446,,,Multi-use,Bear Creek Greenway,Greenway,1001403102,,,,,,,Parks,,Multi-use Pathway,Proposed,No,,2009
+447,,,Multi-use,Holland Park Greenway,Greenway,1001416016,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+448,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001422905,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+449,, ,Multi-use,BC Parkway,Greenway,1001402864,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+450,,,Multi-use,Bridgeview Greenway,Greenway,1001403203,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+451,,,Multi-use,Bridgeview Greenway,Greenway,1001826902,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+452,,,Multi-use,Hawthorne Greenway,Greenway,1001403130,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+453,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001997563,,,,,Around softball city,Asphalt,Parks,,Multi-use Pathway,In Service,,,
+454,Boulevard Multi-Use Pathway, ,Multi-use,Nicomekl Greenway,Greenway,1001422936,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+455,, ,Multi-use,Semiahmoo Trail,Greenway,1001402962,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+456,,,Multi-use,Pioneer Greenway,Greenway,1001402845,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+457,,,Multi-use,King George Greenway,Greenway,1001402842,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+458,, ,Multi-use,Panorama Greenway,Greenway,1001838233,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+459,Boulevard Multi-Use Pathway,,,,Greenway,1001605055,,,,,,Asphalt,Engineering,7811-0147-00,Multi-use Pathway,In Service,,,2013
+460,,,Multi-use,Panorama Greenway,Greenway,1001402877,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+461,, ,Multi-use,Quibble Creek Greenway,Greenway,1001403089,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+462,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,,Greenway,1001485032,,0,20100701,,from T95 to P6 at 8343 140 St portion of site,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2009
+463,, ,Multi-use,Quibble Creek Greenway,Greenway,1001581162,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+464,,,Multi-use,Fraser Greenway,Greenway,1001403105,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+465,,,Multi-use,Fraser Greenway,Greenway,1001403155,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+466,Off-Street Multi-Use Pathway,,Multi-use,Hawthorne Greenway,Greenway,1001402597,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+467,, ,Multi-use,Bon Accord Greenway,Greenway,1001994848,,,,,,Other,Engineering,1717-7040-00,Multi-use Pathway,Proposed,,,
+468,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001560530,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+469,,,Multi-use,Pioneer Greenway,Greenway,1001402932,,,,,,,Engineering,7811-0051-00,Multi-use Pathway,Proposed,No,,2009
+470,Boulevard Multi-Use Pathway, ,Multi-use,Oliver Greenway,Greenway,1001831149,,,,,,Asphalt,Engineering,3813-6140-00,Multi-use Pathway,In Service,,,2014
+471,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001422937,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+472,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001414178,,,,,,Asphalt,Engineering,7810-0020-00,Multi-use Pathway,In Service,,,2012
+473,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001607329,,,,,,Asphalt,Engineering,7810-0320-00,Multi-use Pathway,In Service,,,2013
+474,,,Multi-use,Interurban Greenway,Greenway,1001404236,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+475,Boulevard Multi-Use Pathway,,Multi-use,Johnston Greenway,Greenway,1001827000,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+476,,,Multi-use,Johnston Greenway,Greenway,1001403114,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+477,,,Multi-use,Johnston Greenway,Greenway,1001840448,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+478,,,Multi-use,Johnston Greenway,Greenway,1001567028,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+479,Boulevard Multi-Use Pathway,,Multi-use,Johnston Greenway,Greenway,1001567040,,,,,,Asphalt,Engineering,7808-0128-00,Multi-use Pathway,In Service,No,,2012
+480,Boulevard Multi-Use Pathway,,Multi-use,Surrey Lakes Greenway,Greenway,1001423789,,,,,,Asphalt,Engineering,7811-0085-00,Multi-use Pathway,In Service,No,,2013
+481,Boulevard Multi-Use Pathway,,Multi-use,Surrey Lake Greenway,Greenway,1001403100,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+482,, ,Multi-use,Fleetwood Greenway,Greenway,1001422241,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+483,, ,Multi-use,Surrey Lake Greenway,Greenway,1001817412,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+484,Boulevard Multi-Use Pathway, ,Multi-use,Surrey Lake Greenway,Greenway,1001819607,,,,,,Asphalt,Engineering,7814-0138-00,Multi-use Pathway,In Service,,,2015
+485,,,Multi-use,Clow Greenway,Greenway,1001402912,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+486,Neighbourhood Bike Route,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402580,,,,,,Asphalt,Engineering,,Bike Route,In Service,,,
+487,,,Multi-use,Mitchell Greenway,Greenway,1001819529,,,,,,,Metro Vancouver,,Multi-use Pathway,Proposed,No,,2009
+488,,,,Port Mann Greenway,Greenway,1001900142,,,,,,Concrete,,MOTH Ped. Opass 5926,Pedestrian Bridge,In Service,,,2013
+489,Boulevard Multi-Use Pathway,,Multi-use,Clow Greenway,Greenway,1001951285,,,,,,Asphalt,Engineering,3814-4050-00,Multi-use Pathway,In Service,No,,2016
+490,Boulevard Multi-Use Pathway,,Multi-use,,Greenway,1001956639,,,,,,Asphalt,Engineering,7813-0189-00,Multi-use Pathway,Proposed,,,
+491,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001950950,,,,,,Asphalt Concrete,Engineering,7810-0182-00,Multi-use Pathway,In Service,No,,2012
+492,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001402205,,,,,,Asphalt,Engineering,MOTH 11257,Multi-use Pathway,In Service,No,,2006
+493,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001887280,,,,,,Asphalt,Engineering,7815-0084-00,Multi-use Pathway,In Service,,,2017
+494,,,,Redwood Heights Greenway,Greenway,1001563147,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+495,,,Multi-use,Hook Greenway,Greenway,1001404228,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+496,,,Multi-use,Hook Greenway,Greenway,1001402885,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+497,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001402408,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+498,,,Multi-use,Coast Meridian Greenway,Greenway,1001566083,,,,,Serpentine River & 168 St,Concrete,Engineering,1712-8100-00,Pedestrian Bridge,In Service,No,,2012
+499,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001402499,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+500,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001578172,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+501,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001402399,,,,,,Asphalt,Engineering,1797-3260-00,Multi-use Pathway,In Service,No,,2011
+502,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001607153,,,,,,Asphalt,Engineering,7806-0270-00,Multi-use Pathway,In Service,No,,2007
+503,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001402494,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+504,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001830662,,,,,,Asphalt,Engineering,3810-6130-00,Multi-use Pathway,In Service,,,2015
+505,Off-Street Multi-Use Pathway,,Multi-use,Clayton Greenway,Greenway,1001881257,,,,,,Asphalt,Engineering,7804-0203-00,Multi-use Pathway,In Service,No,,2016
+506,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001561854,,,,,,Asphalt,Engineering,3809-6070-00,Multi-use Pathway,In Service,No,,2012
+507,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402319,,,,,,Asphalt,Engineering,1709-3090-00,Multi-use Pathway,In Service,No,,2012
+508,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001826566,,,,,,,Engineering,1713-3160-00,Multi-use Pathway,In Service,No,,2014
+509,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001419365,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+510,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Tynehead Perimeter Trail,Greenway,1001700003,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+511,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001700005,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+512,, ,Multi-use,Riverside Greenway,Greenway,1001858402,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+513,Boulevard Multi-Use Pathway,,,,Greenway,1001836638,,,,,,Asphalt,Engineering,1713-3100-00,Multi-use Pathway,In Service,No,,2015
+514,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001402502,,,,,from 60 Ave at 18500 blk to 58 Ave at 18700 blk,Asphalt,Parks,3807-6080-00,Multi-use Pathway,In Service,No,,2012
+515,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001723600,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+516,,,Multi-use,Armstrong Greenway,Greenway,1001899655,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+517,,,Multi-use,Hazelgrove Greenway,Greenway,1001402916,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+518,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001406250,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2016
+519,Boulevard Multi-Use Pathway,,Multi-use,,Greenway,1001413436,,,,,,Asphalt,Engineering,7810-0179-00,Multi-use Pathway,In Service,,,2013
+520,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001952141,,,,,,Asphalt,,7816-0289-00,Multi-use Pathway,In Service,,,2018
+521,Boulevard Multi-Use Pathway,,Multi-use,Clayton Greenway,Greenway,1001434522,,,,,,Other,Engineering,7807-0204-00,Multi-use Pathway,In Service,,,2013
+522,Off-Street Multi-Use Pathway,,Multi-use,Hazelgrove Greenway,Greenway,1001886348,,,,,192 St entrance to park,Asphalt,Parks,,Multi-use Pathway,In Service,No,,2009
+523,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001405352,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+524,,,Multi-use,Hazelgrove Greenway,Greenway,1001886347,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+525,,Previous null FACILITYID,Multi-use,Scottsdale Greenway,Greenway,1001563791,,,,0,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+526,Off-Street Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001402136,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+527,Boulevard Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001402489,,,,,,Asphalt,Engineering,7805-0143-00,Multi-use Pathway,In Service,No,,2009
+528,,,Multi-use,Riverside Greenway,Greenway,1001403196,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+529,Boulevard Separated Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001422906,,,,,,Asphalt,Engineering,1799-2230-00,Multi-use Pathway,In Service,No,,2001
+530,Cycling-Permitted Sidewalk,,Multi-use,Nicomekl Greenway,Greenway,1001402815,,,,,,Gravel,Engineering,,Bike Route,In Service,No,,2009
+531,Neighbourhood Bike Route,Part of the Trans Canada Trail,Multi-use,Mud Bay Dike Trail,Greenway,1001402348,,,,,,Asphalt,Engineering,,Bike Route,In Service,,,
+532,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001780520,,,,,,Asphalt,Engineering,1799-2250-07,Multi-use Pathway,In Service,No,,2012
+533,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001422902,,,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,,2009
+534,,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001403229,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+535,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,Green Timbers Greenway,Greenway,1001484894,,0,20070101,,from 128 St to 132 St,Asphalt,Parks,,Multi-use Pathway,In Service,No,4,2009
+536,Boulevard Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001402314,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+537,Boulevard Separated Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001401994,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+538,Off-Street Multi-Use Pathway,,Multi-use,,Greenway,1001879195,,,,,Path off of P1 adjacent to parking lot,Asphalt,Parks,,Multi-use Pathway,In Service,,,
+539,, ,Multi-use,BC Parkway,Greenway,1001731787,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+540,,,Multi-use,BC Parkway,Greenway,1001802013,,,,,,Asphalt,Engineering,7814-0012-00,Multi-use Pathway,Proposed,,,
+541,Boulevard Multi-Use Pathway,3.0m Bus Pad,,,Greenway,1001726504,,,,,,Concrete,Engineering,1705-7110-00,Multi-use Pathway,In Service,No,,2007
+542,, ,Multi-use,Elgin Greenway,Greenway,1001935120,,,,,,Other,Engineering,7814-0299-00,Multi-use Pathway,Proposed,,4,2016
+543,Off-Street Multi-Use Pathway, ,Multi-use,Semiahmoo Trail,Greenway,1001401837,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,,,
+544,,Conceptual overpass,Multi-use,Nicomekl Greenway,Greenway,1001402901,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+545,Off-Street Multi-Use Pathway, ,Multi-use,Newton Greenway,Greenway,1001751894,,,,,,Other,Engineering,7812-0328-00,Multi-use Pathway,In Service,,4,2014
+546,Boulevard Multi-Use Pathway,,Multi-use,Panorama Greenway,Greenway,1001924572,,,,,,Asphalt,Engineering,7815-0246-00,Multi-use Pathway,In Service,,,2017
+547,,,Multi-use,Bose Greenway,Greenway,1001850262,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+548,Boulevard Multi-Use Pathway,,Multi-use,Bear Creek Greenway,Greenway,1001402220,,0,,,,Asphalt,Parks,,Multi-use Pathway,In Service,,,
+549,,,,Fleetwood Greenway,Greenway,1001819504,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+550,,,Multi-use,Whalley Parkway,Greenway,1001404231,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+551,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Quibble Creek Greenway,Greenway,1001484978,,0,,,from 138 St to Kenmore Drive,Asphalt,Parks,3811-6590-00,Multi-use Pathway,In Service,No,,2014
+552,,,Multi-use,Quibble Creek Greenway,Greenway,1001402989,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,No,,2009
+553,Off-Street Multi-Use Pathway,,Multi-use,,Greenway,1001605760,,,20121001,,connector P2 to P4,Gravel,Parks,,Multi-use Pathway,In Service,,,2012
+554,, ,Multi-use,Bon Accord Greenway,Greenway,1001986365,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+555,, ,Multi-use,Quibble Creek Greenway,Greenway,1001986361,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+556,Off-Street Multi-Use Pathway,,Multi-use,Hawthorne Greenway,Greenway,1001402552,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+557,Boulevard Multi-Use Pathway,,Multi-use,Semiahmoo Trail,Greenway,1001402867,,,,,,Concrete,Engineering,,Multi-use Pathway,In Service,No,,2011
+558,,,Multi-use,Semiahmoo Trail,Greenway,1001416443,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+559,,Previous duplicate FACILITYID 1001404828,Multi-use,Pioneer Greenway,Greenway,1001724574,,,,0,,Other,Engineering,7808-0154-00,Multi-use Pathway,Proposed,,,2013
+560,Off-Street Multi-Use Pathway, ,Multi-use,Semiahmoo Trail,Greenway,1001787825,,,,,,Gravel,Engineering,7811-0328-00,Multi-use Pathway,In Service,,,2014
+561,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001560532,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+562,,,Multi-use,Oliver Greenway,Greenway,1001402969,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+563,Boulevard Multi-Use Pathway,,Multi-use,Wills Brook Greenway,Greenway,1001943612,,,,,,Asphalt,Engineering,7814-0253-00,Multi-use Pathway,In Service,,,2017
+564,Boulevard Multi-Use Pathway,,Multi-use,Wills Brook Greenway,Greenway,1001778240,,,,,,Asphalt,Engineering,7811-0287-00,Multi-use Pathway,In Service,No,4,2015
+565,Boulevard Multi-Use Pathway, ,Multi-use,Wills Brook Greenway,Greenway,1001864700,,,,,,Asphalt,Engineering,7811-0255-00,Multi-use Pathway,In Service,,4,2015
+566,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001607326,,,,,,Asphalt,Engineering,7810-0319-00,Multi-use Pathway,In Service,No,,2017
+567,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001402224,,,,,,Asphalt,Engineering,7810-0320-00,Multi-use Pathway,In Service,,,2013
+568,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001827284,,,,,,Asphalt Concrete,Engineering,7814-0159-00,Multi-use Pathway,In Service,No,4,2016
+569,Off-Street Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001422883,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+570,Neighbourhood Bike Route,,Multi-use,Hook Greenway,Greenway,1001422942,,,,,,Asphalt,Engineering,,Bike Route,In Service,No,,2009
+571,,,,Hook Greenway,Greenway,1001422943,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+572,Off-Street Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001422886,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+573,Off-Street Multi-Use Pathway,,Multi-use,Surrey Lake Greenway,Greenway,1001402402,,0,20011023,,,Gravel,Parks,,Multi-use Pathway,In Service,No,8,2009
+574,Off-Street Multi-Use Pathway,,Multi-use,Fleetwood Greenway,Greenway,1001405484,,0,20130101,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+575,,,Multi-use,Guildford Greenway,Greenway,1001402918,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+576,Boulevard Multi-Use Pathway,,Multi-use,Mitchell Greenway,Greenway,1001933349,,,,,,Asphalt,Engineering,7815-0228-00,Multi-use Pathway,Proposed,,,
+577,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402941,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,2011
+578,,,Multi-use,Marine Greenway,Greenway,1001950958,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+579,, ,Multi-use,Douglas Greenway,Greenway,1001403132,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+580,Off-Street Multi-Use Pathway,SEE FT01574,Multi-use,Douglas Greenway,Greenway,1001792056,,,,,,Asphalt Concrete,Engineering,7804-0411-00,Multi-use Pathway,In Service,No,,2009
+581,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001423225,,,,,,Asphalt,Engineering,7806-0098-00,Multi-use Pathway,In Service,No,,2009
+582,Boulevard Separated Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1002021787,,,,,,Asphalt,Engineering,7814-0257-00,Multi-use Pathway,In Service,No,,2016
+583,Boulevard Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1001938419,,,,,,,Engineering,7814-0257-00,Multi-use Pathway,In Service,No,,2016
+584,Boulevard Multi-Use Pathway,,Multi-use,Grandview Ridge Trail Greenway,Greenway,1001927693,,,,,,Asphalt,Engineering,7815-0087-00,Multi-use Pathway,In Service,,,2017
+585,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001992675,,,,,,Concrete,Engineering,7815-0084-00,Multi-use Pathway,In Service,,,2017
+586,Boulevard Multi-Use Pathway, ,Multi-use,Coast Meridian Greenway,Greenway,1001792677,,,,,,Asphalt Concrete,Engineering,7812-0153-00,Multi-use Pathway,In Service,,4,2014
+587,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001972091,,,,,,Asphalt,Engineering,7814-0354-00,Multi-use Pathway,Proposed,No,,
+588,,,Multi-use,Grandview Heights Greenway,Greenway,1001901558,,,,,,Asphalt,Engineering,7815-0133-00,Multi-use Pathway,Proposed,,,
+589,,,Multi-use,Coast Meridian Greenway,Greenway,1001402908,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+590,,,Multi-use,Grandview Heights Greenway,Greenway,1001402889,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+591,Off-Street Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001422889,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+592,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001402492,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2011
+593,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001422534,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+594,Boulevard Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001607134,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+595,Off-Street Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001855347,,,,,,,,,Multi-use Pathway,Proposed,,,
+596,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001580050,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+597,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001415243,,,,,,Concrete,Engineering,1704-3310-00,Multi-use Pathway,In Service,No,,2014
+598,,,Multi-use,Fleetwood Greenway,Greenway,1001402836,,,,,,Asphalt,Engineering,3810-6180-00,Multi-use Pathway,Proposed,No,,
+599,,,Multi-use,Fraser Greenway,Greenway,1001578610,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+600,Boulevard Multi-Use Pathway,,Multi-use,Fleetwood Greenway,Greenway,1001402243,,0,20050201,,Arterial,Asphalt,Engineering,3810-6130-00,Multi-use Pathway,In Service,No,,2017
+601,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001567569,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+602,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Perimeter Trail,Greenway,1001954092,,,,,Tynehead Pedestrian Bridge,Asphalt,Engineering,3809-6090-00,Multi-use Pathway,In Service,No,,2009
+603,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001402318,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+604,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Tynehead Greenway,Greenway,1001826564,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2009
+605,Off-Street Multi-Use Pathway,,Multi-use,Tynehead Greenway,Greenway,1001826559,,,,,,,Engineering,1713-3160-00,Multi-use Pathway,In Service,No,,2014
+606,,,Multi-use,Anniedale Greenway,Greenway,1001819532,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+607,Boulevard Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001851235,,,,,,Asphalt,,3809-6080-00,Multi-use Pathway,In Service,,,2015
+608,Boulevard Multi-Use Pathway,,Multi-use,Fraser Heights Greenway,Greenway,1001583362,,,,,,Other,Engineering,3809-6080-00,Multi-use Pathway,In Service,,,2015
+609,,,Multi-use,Anniedale Greenway,Greenway,1001403081,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+610,,,Multi-use,Abbey Ridge Greenway,Greenway,1001955833,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,,,
+611,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Golden Ears Greenway,Greenway,1001402303,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+612,,,Multi-use,Riverside Greenway,Greenway,1001402887,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+613,,,Multi-use,Cloverdale Greenway,Greenway,1001403094,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+614,, ,Multi-use,Bose Greenway,Greenway,1001558080,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+615,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001434435,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+616,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001946457,,,,,,Asphalt,,7816-0289-00,Multi-use Pathway,In Service,,,2018
+617,Boulevard Multi-Use Pathway,RBRC,Multi-use,Latimer Greenway,Greenway,1001951171,,,,,,Asphalt,Engineering,1709-3130-00,Multi-use Pathway,In Service,No,,2014
+618,Boulevard Multi-Use Pathway,RBRC,Multi-use,Cloverdale Greenway,Greenway,1001950863,,,,,,Asphalt,Engineering,1709-7090-00,Multi-use Pathway,In Service,,,2014
+619,Boulevard Multi-Use Pathway,RBRC,Multi-use,Cloverdale Greenway,Greenway,1001404831,,,,,,Asphalt,Engineering,1709-3140-00,Multi-use Pathway,In Service,,,2014
+620,, ,Multi-use,Clayton Greenway,Greenway,1001434521,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+621,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001405350,,,,,,Asphalt,Engineering,7806-0463-00,Multi-use Pathway,In Service,,,2012
+622,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001434654,,,,,,,Engineering,7806-0463-00,Multi-use Pathway,In Service,No,,2009
+623,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001759031,,,,,,Asphalt,Engineering,7812-0235-00,Multi-use Pathway,In Service,No,,2014
+624,Boulevard Multi-Use Pathway, ,Multi-use,Clayton Greenway,Greenway,1001434539,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+625,Boulevard Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001402485,,,,,,Asphalt,Engineering,7805-0143-00,Multi-use Pathway,In Service,No,,2009
+626,Boulevard Multi-Use Pathway,,Multi-use,Scott Greenway,Greenway,1001806154,,,,,,,Engineering,1713-3070-00,Multi-use Pathway,In Service,No,,2014
+627,Boulevard Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001401993,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+628,,,Multi-use,Sunnyside Greenway,Greenway,1001402872,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+629,Off-Street Multi-Use Pathway,(lbob new) ,Multi-use,,Greenway,1001484885,,0,,,"From T9 near boat yard,circleing open middle area",Gravel,Parks,,Multi-use Pathway,In Service,No,2.5,2009
+630,, ,Multi-use,Nicomekl Greenway,Greenway,1001403064,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+631,Off-Street Multi-Use Pathway,,Multi-use,Scottsdale Greenway,Greenway,1001406029,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+632,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Newton Greenway,Greenway,1001402221,,0,20000828,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,4,2009
+633,Boulevard Multi-Use Pathway,,Multi-use,Surrey Lake Greenway,Greenway,1001402598,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+634,,,Multi-use,Central City Greenway,Greenway,1001402980,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+635,Boulevard Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001859468,,,,,,Concrete,Engineering,3805-6070-00,Multi-use Pathway,In Service,No,,2009
+636,,,Multi-use,Bridgeview Greenway,Greenway,1001421129,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+637,Boulevard Separated Multi-Use Pathway,,Multi-use,BC Parkway,Greenway,1001402315,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,
+638,, ,Multi-use,BC Parkway,Greenway,1001359484,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+639,,,Multi-use,Port Mann Greenway,Greenway,1001404235,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+640,Boulevard Multi-Use Pathway, ,Multi-use,Sunnyside Greenway,Greenway,1001726511,,,,,,Other,Engineering,,Multi-use Pathway,In Service,,,
+641,Off-Street Multi-Use Pathway, ,Multi-use,Nicomekl Greenway,Greenway,1001422935,,,,,,Gravel,Engineering,,Multi-use Pathway,In Service,No,,2009
+642,Boulevard Multi-Use Pathway,,Multi-use,Nicomekl Greenway,Greenway,1001422932,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+643,, ,Multi-use,Elgin Greenway,Greenway,1001935123,,,,,,Other,Engineering,7815-0102-00,Multi-use Pathway,Proposed,,4,2016
+644,,Previous duplicate FACILITYID 1001403095,Multi-use,Elgin Greenway,Greenway,1001563798,,,,0,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+645,,,Multi-use,Pioneer Greenway,Greenway,1001954845,,,,,,,Engineering,,Multi-use Pathway,In Service,No,,2009
+646,, ,Multi-use,Elgin Greenway,Greenway,1001403095,,,,,,Other,Engineering,7814-0299-00,Multi-use Pathway,Proposed,,4,2016
+647,Off-Street Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001402215,,,,,,Asphalt,Engineering,3809-6100-00,Multi-use Pathway,In Service,No,,2011
+648,, ,Multi-use,Panorama Greenway,Greenway,1001402957,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+649,Boulevard Multi-Use Pathway,,Multi-use,Newton Greenway,Greenway,1001402843,,,,,,Asphalt,Engineering,3808-6050-00,Multi-use Pathway,In Service,No,,2012
+650,Off-Street Multi-Use Pathway,,Multi-use,Quibble Creek Greenway,Greenway,1001859272,,,,,from 100 Ave south through site to Fraser Hwy,Asphalt,Parks,3805-6070-00,Multi-use Pathway,In Service,,,2007
+651,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402475,,0,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+652,Off-Street Multi-Use Pathway,,Multi-use,Bon Accord Greenway,Greenway,1001950828,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+653,,,Multi-use,Guildford Greenway,Greenway,1001404227,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2012
+654,Boulevard Multi-Use Pathway,,Multi-use,Hawthorne Greenway,Greenway,1001402623,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+655,, ,Multi-use,Quibble Creek Greenway,Greenway,1001402903,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+656,Neighbourhood Bike Route,Bon Accord Pedestrian Bridge,Transportation,Port Mann - City Centre,Greenway,1001843566,,,,,,,,3813-6020-00,Bike Route,In Service,,,2015
+657,,,Multi-use,Semiahmoo Trail,Greenway,1001403086,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+658,Off-Street Multi-Use Pathway,,Multi-use,Semiahmoo Trail,Greenway,1001402934,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+659,Boulevard Multi-Use Pathway,,Multi-use,Rosemary Greenway,Greenway,1001402217,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+660,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001402968,,,,,,Asphalt,Engineering,7808-0254-00,Multi-use Pathway,In Service,No,,2013
+661,Off-Street Multi-Use Pathway,,Multi-use,Wills Brook Greenway,Greenway,1001896370,,,,,,Asphalt,Engineering,7814-0258-00,Multi-use Pathway,Proposed,,,
+662,,,Multi-use,Pioneer Greenway,Greenway,1001403245,,,,,,Asphalt Concrete,Engineering,7807-0127-00,Multi-use Pathway,Proposed,No,4,2013
+663,Boulevard Multi-Use Pathway,,Multi-use,Oliver Greenway,Greenway,1001791309,,,,,,Asphalt,Engineering,7813-0083-00,Multi-use Pathway,In Service,No,4,2015
+664,Boulevard Multi-Use Pathway,,Multi-use,Pioneer Greenway,Greenway,1001402222,,,,,,Asphalt,Engineering,7806-0137-00,Multi-use Pathway,In Service,No,,2009
+665,Boulevard Multi-Use Pathway,,Multi-use,Wills Brook Greenway,Greenway,1001847106,,,,,,Asphalt,Engineering,7811-0269-00,Multi-use Pathway,In Service,,,2015
+666,Boulevard Multi-Use Pathway,,Multi-use,Johnston Greenway,Greenway,1001402935,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+667,,,Multi-use,Surrey Lake Greenway,Greenway,1001811759,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+668,,,Multi-use,Surrey Lake Greenway,Greenway,1001403101,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+669,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001402242,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+670,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402469,,0,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,,,
+671,Neighbourhood Bike Route,,Local Connector,Fraser Heights Greenway,Greenway,1001723061,,,,,,Asphalt,Engineering,,Bike Route,In Service,,,2013
+672,Boulevard Separated Multi-Use Pathway,2.35m Asp Path,Multi-use,Fraser Heights Greenway,Greenway,1001868344,,,,,,Asphalt,Engineering,3815-6020-00,Multi-use Pathway,In Service,,,2016
+673,,,Multi-use,Fraser Heights Greenway,Greenway,1001402973,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+674,Boulevard Multi-Use Pathway,,Multi-use,Douglas Greenway,Greenway,1001950771,,,,,,Asphalt,Engineering,7809-0171-00,Multi-use Pathway,In Service,No,,2011
+675,,,Multi-use,Douglas Greenway,Greenway,1001423227,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+676,, ,Multi-use,Coast Meridian Greenway,Greenway,1001887281,,,,,,Other,Engineering,,Multi-use Pathway,Proposed,,,
+677,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001992676,,,,,,Concrete,Engineering,7815-0084-00,Multi-use Pathway,In Service,,,2017
+678,Boulevard Multi-Use Pathway, ,Multi-use,Coast Meridian Greenway,Greenway,1001717097,,,,,,Asphalt Concrete,Engineering,7812-0153-00,Multi-use Pathway,In Service,,4,2014
+679,Boulevard Multi-Use Pathway,,Multi-use,Grandview Heights Greenway,Greenway,1001812856,,,,,,Asphalt,Engineering,7813-0042-00,Multi-use Pathway,In Service,No,4,2017
+680,,,Multi-use,Grandview Heights Greenway,Greenway,1001802419,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+681,Boulevard Separated Multi-Use Pathway,,,,Greenway,1001741140,,,,,,Asphalt,Engineering,7812-0244-00,Multi-use Pathway,In Service,,,2014
+682,Off-Street Multi-Use Pathway,,Multi-use,Hook Greenway,Greenway,1001422888,,,,,,Gravel,Engineering,7807-0364-00,Multi-use Pathway,In Service,No,,2009
+683,,,Multi-use,Hook Greenway,Greenway,1002125883,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+684,Boulevard Multi-Use Pathway,,Multi-use,Coast Meridian Greenway,Greenway,1001578173,,,,,,Asphalt Concrete,Engineering,,Multi-use Pathway,In Service,No,,2009
+685,Boulevard Multi-Use Pathway,,Multi-use,Bose Greenway,Greenway,1001947087,,,,,,Asphalt,Engineering,1701-3210-00,Multi-use Pathway,In Service,No,,2004
+686,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001403109,,,,,,Asphalt,Engineering,3809-6060-00,Multi-use Pathway,In Service,No,,2009
+687,Boulevard Separated Multi-Use Pathway,,Multi-use,Fleetwood Greenway,Greenway,1001402245,,,,,,Asphalt,Engineering,7806-0317-00,Multi-use Pathway,In Service,No,,2011
+688,Boulevard Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Green Timbers Greenway,Greenway,1001402319,,,,,,Asphalt,Engineering,1709-3090-00,Multi-use Pathway,In Service,No,,2012
+689,Off-Street Multi-Use Pathway,Part of the Trans Canada Trail,Multi-use,Tynehead Greenway,Greenway,1001419358,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2012
+690,,,Multi-use,Abbey Ridge Greenway,Greenway,1001955835,,,,,,Asphalt,Engineering,,Multi-use Pathway,Proposed,,,
+691,Boulevard Multi-Use Pathway, ,Multi-use,Riverside Greenway,Greenway,1001858400,,,,,,Other,Engineering,SFPR Seg. F1,Multi-use Pathway,In Service,,,2013
+692,Boulevard Multi-Use Pathway,,Multi-use,Cloverdale Greenway,Greenway,1001780437,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+693,Off-Street Multi-Use Pathway,2.0m,Multi-use,North Creek Greenway,Greenway,1001561730,,,,,,Asphalt,Engineering,3809-6020-00,Multi-use Pathway,In Service,No,,2012
+694,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001422502,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+695,,,Multi-use,Armstrong Greenway,Greenway,1001899652,,,,,,Asphalt,Engineering,7813-0062-00,Multi-use Pathway,In Service,,,2018
+696,Boulevard Multi-Use Pathway,,Multi-use,Fraser Greenway,Greenway,1001750488,,,,,,Asphalt,Engineering,7811-0244-00,Multi-use Pathway,In Service,No,,2014
+697,,,,Fraser Greenway,Greenway,1001832408,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+698,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001402878,,,,,,Asphalt,Engineering,7810-0028-00,Multi-use Pathway,In Service,No,,2009
+699,Boulevard Multi-Use Pathway,,Multi-use,,Greenway,1001836644,,,,,,Asphalt,Engineering,1713-3100-00,Multi-use Pathway,In Service,,,2015
+700,,,Multi-use,Latimer Greenway,Greenway,1001777309,,,,,,,Engineering,7807-0326-00,Multi-use Pathway,Proposed,No,,2009
+701,Boulevard Multi-Use Pathway,,Multi-use,Latimer Greenway,Greenway,1001952140,,,,,,Asphalt,Engineering,7816-0289-00,Multi-use Pathway,In Service,No,,2018
+702,Boulevard Multi-Use Pathway,4.0m,Multi-use,Clayton Greenway,Greenway,1001595673,,,,,,Asphalt,Engineering,1709-3170-00,Multi-use Pathway,In Service,No,,2013
+703,,,Multi-use,Hazelgrove Greenway,Greenway,1002125966,,,,,,,Engineering,,Multi-use Pathway,Proposed,No,,2009
+704,Off-Street Multi-Use Pathway,,Multi-use,Katzie Greenway,Greenway,1001713583,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+705,Off-Street Multi-Use Pathway,,Multi-use,Hazelgrove Greenway,Greenway,1001713480,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009
+706,Off-Street Multi-Use Pathway,,Multi-use,Katzie Greenway,Greenway,1001713587,,,,,,Asphalt,Engineering,,Multi-use Pathway,In Service,No,,2009

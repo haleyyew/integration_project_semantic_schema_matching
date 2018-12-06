@@ -1,0 +1,11 @@
+,MONITORING_STATION_TYPE,MONITORING_STATION_TYPE2,MEASUREMENT_METHOD,FACILITYID,STATUS,OPERATING_STATUS,YR,OWNER,MAINTAINED_BY,PROJECT_NO,WEBLINK,NAME,LOCATION,COMMENTS,GIS_ENTRY_STAGE,WARRANTYDATE,CONDITION,CONDITIONDATE,YTD_COST,LIFECYCLE_COST,CRE_DATE,MOD_DATE,LEGACYID,Latitude,Longitude
+0,0,Depth Meter,,1001598162,In Service,Open,2013,Surrey,Surrey,,,192 STREET MONITORING STATION,9900 192 ST,Placed as per Operations,,,,,,,20130530,20170413,,49.183169,-122.690394
+1,2,Rain Gauge,,1000863998,In Service,Open,,Surrey,Private,,http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx,KWANTLEN PARK RAIN GAUGE,104 AVE & OLD YALE RD,,Final AB,,,,,,20081120,20170413,,49.192042,-122.860058
+2,0,Depth Meter,,1000960308,In Service,Open,,Surrey,Surrey,,,SERPENTINE MONITORING STATION,4600 KING GEORGE HWY,,Final AB,,,,,,20081208,20170412,,49.087290,-122.819020
+3,2,Rain Gauge,,1000863999,In Service,Open,,Surrey,Private,,http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx,PORT KELLS RAIN GAUGE,PORT KELLS SANITARY STATION,,Final AB,,,,,,20081120,20170413,,49.181013,-122.696094
+4,2,Rain Gauge,,1000864001,In Service,Open,,Surrey,Private,,http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx,SEMIAHMOO FISH & GAME CLUB RAIN GAUGE,1284 184 ST,,Final AB,,,,,,20081120,20170413,,49.024805,-122.708193
+5,2,Rain Gauge,,1000864000,In Service,Open,,Surrey,Private,,http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx,MUNICIPAL HALL RAIN GAUGE,57 AVE & 142 ST,,Final AB,,,,,,20081120,20170413,,49.105924,-122.827813
+6,2,Rain Gauge,,1000864002,In Service,Open,,Surrey,Private,,http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx,CHANTRELL CREEK ELEMENTARY RAIN GAUGE,2575 137 ST,,Final AB,,,,,,20081120,20170413,,49.048366,-122.843317
+7,0,Depth Meter,,1000960305,Abandoned,Closed,,Surrey,Surrey,,,Old 192 STREET MONITORING STATION,9900 192 ST,,Final AB,,,,,,20081208,20130530,,49.183157,-122.690387
+8,2,Rain Gauge,,1000863997,In Service,Open,,Surrey,Private,,http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx,WHITE ROCK RAIN GAUGE,8 AVE & 160 ST,,Final AB,,,,,,20081120,20170413,,49.018085,-122.783980
+9,0,Depth Meter,,1000960312,In Service,Open,,Surrey,Surrey,,,NICOMEKL MONITORING STATION,4850 168 ST,,Final AB,,,,,,20081208,20170412,,49.069757,-122.824922

@@ -1,0 +1,702 @@
+,BIKE_INFRASTRUCTURE_TYPE,BIKE_NETWORK,CORRIDOR_FUNCTION,CORRIDOR_NAME,CORRIDOR_TYPE,MATERIAL,OPERATOR,ROUTE_TYPE2,STATUS,TREES_PLANTED
+0,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+1,Bike Lanes,,,,,,Engineering,Bike Route,In Service,
+2,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+3,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+4,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+5,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+6,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+7,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+8,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+9,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+10,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+11,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+12,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+13,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+14,Cycling-Permitted Sidewalk,,Multi-use,BC Parkway,Greenway,Concrete,Engineering,Bike Route,In Service,No
+15,Neighbourhood Bike Route,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+16,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+17,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+18,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+19,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+20,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+21,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+22,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+23,Bike Lanes,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+24,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+25,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+26,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+27,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+28,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+29,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+30,Bike Lanes,,Transportation,,,Asphalt,Engineering,Bike Route,Proposed,
+31,Bike Lanes,,Transportation,,,Asphalt,Engineering,Bike Route,Proposed,
+32,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+33,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+34,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+35,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+36,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+37,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+38,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+39,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+40,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+41,Neighbourhood Bike Route,,Transportation,Port Mann - City Centre,Engineering,,,Bike Route,In Service,
+42,Bike Lanes,,Multi-use,Bon Accord Greenway,Greenway,Other,Engineering,Bike Route,In Service,
+43,Neighbourhood Bike Route,,Transportation,Port Mann - City Centre,Engineering,,,Bike Route,In Service,
+44,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+45,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+46,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+47,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+48,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+49,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+50,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+51,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+52,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+53,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+54,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+55,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+56,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+57,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+58,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+59,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+60,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+61,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+62,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+63,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+64,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+65,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+66,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+67,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+68,Neighbourhood Bike Route,,Multi-use,North Creek Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,No
+69,Cycling-Permitted Sidewalk,,Multi-use,Bose Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,
+70,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+71,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+72,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+73,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+74,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+75,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+76,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+77,Bike Lanes,,,,,,Engineering,Bike Route,In Service,
+78,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+79,Cycling-Permitted Sidewalk,,Transportation,,Engineering,Concrete,Engineering,Bike Route,In Service,
+80,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+81,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+82,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+83,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+84,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+85,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+86,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+87,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+88,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+89,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+90,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+91,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+92,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+93,Protected Bike Lanes,,,,,Asphalt,,Bike Route,Proposed,
+94,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+95,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+96,Protected Bike Lanes,,,,,Asphalt,,Bike Route,Proposed,
+97,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+98,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+99,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+100,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+101,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+102,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+103,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+104,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+105,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+106,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+107,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+108,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+109,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+110,Protected Bike Lanes,,,,,Asphalt,,Bike Route,Proposed,
+111,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+112,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+113,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+114,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+115,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+116,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+117,Neighbourhood Bike Route,,,Port Mann- Surrey Centre NBR,,Asphalt,Engineering,Bike Route,In Service,No
+118,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+119,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+120,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+121,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+122,Bike Lanes,,Transportation,,Engineering,,,Bike Route,In Service,
+123,Bike Lanes,,Transportation,,Engineering,,,Bike Route,In Service,
+124,Cycling-Permitted Sidewalk,,Multi-use,Hook Greenway,Greenway,Asphalt Concrete,Engineering,Bike Route,In Service,No
+125,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+126,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+127,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+128,Neighbourhood Bike Route,,Multi-use,Green Timbers Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,
+129,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+130,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+131,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+132,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+133,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+134,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+135,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+136,Bike Lanes,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+137,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+138,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+139,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+140,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+141,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+142,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+143,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+144,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+145,Shared Traffic,,,,,Asphalt,,Bike Route,In Service,
+146,Bike Lanes,,,,,Asphalt,,Bike Route,In Service,
+147,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+148,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+149,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+150,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+151,Neighbourhood Bike Route,,Multi-use,North Creek Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,No
+152,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+153,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+154,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+155,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+156,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+157,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+158,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+159,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+160,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+161,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+162,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+163,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+164,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+165,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+166,Shared Traffic,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+167,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+168,Neighbourhood Bike Route,,,,,Dirt,Engineering,Bike Route,In Service,No
+169,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+170,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+171,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+172,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+173,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+174,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+175,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+176,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+177,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+178,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+179,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+180,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+181,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+182,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+183,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+184,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+185,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+186,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+187,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+188,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+189,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+190,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+191,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+192,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+193,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+194,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+195,Neighbourhood Bike Route,,Transportation,Port Mann - City Centre,Engineering,,,Bike Route,In Service,
+196,Neighbourhood Bike Route,,Transportation,Port Mann - City Centre,Engineering,,,Bike Route,In Service,
+197,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+198,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+199,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+200,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+201,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+202,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+203,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+204,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+205,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+206,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+207,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,
+208,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+209,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+210,Bike Lanes,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+211,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+212,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+213,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+214,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+215,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+216,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+217,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+218,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+219,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+220,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+221,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+222,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+223,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+224,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+225,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+226,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+227,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+228,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+229,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+230,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+231,Bike Lanes,,Transportation,,Engineering,,Engineering,Bike Route,In Service,No
+232,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+233,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+234,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+235,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+236,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+237,Neighbourhood Bike Route,,,Port Mann- Surrey Centre NBR,,Asphalt,Engineering,Bike Route,In Service,No
+238,Neighbourhood Bike Route,,Multi-use,Port Mann Greenway,Greenway,Other,Engineering,Bike Route,In Service,
+239,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+240,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+241,Cycling-Permitted Sidewalk,,Transportation,,Engineering,Concrete,Engineering,Bike Route,In Service,
+242,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+243,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+244,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+245,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+246,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+247,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+248,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+249,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+250,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+251,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+252,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+253,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+254,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+255,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+256,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+257,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+258,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+259,Neighbourhood Bike Route,,Multi-use,Newton Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,
+260,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+261,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+262,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+263,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+264,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+265,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+266,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+267,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+268,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+269,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+270,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+271,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+272,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+273,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+274,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+275,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+276,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+277,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+278,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+279,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+280,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+281,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+282,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+283,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+284,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+285,Protected Bike Lanes,,,,,Asphalt,,Bike Route,Proposed,
+286,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+287,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+288,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+289,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+290,Shared Traffic,,Transportation,,Engineering,,,Bike Route,In Service,
+291,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+292,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+293,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+294,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+295,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+296,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+297,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+298,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+299,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+300,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+301,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+302,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+303,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+304,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+305,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+306,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+307,Cycling-Permitted Sidewalk,,Multi-use,Bon Accord Greenway,Greenway,Concrete,Engineering,Bike Route,In Service,
+308,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+309,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+310,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+311,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+312,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+313,Bike Lanes,,Transportation,,Engineering,,,Bike Route,In Service,
+314,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+315,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+316,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+317,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+318,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+319,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+320,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+321,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+322,Neighbourhood Bike Route,,Multi-use,Green Timbers Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,
+323,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+324,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+325,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+326,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+327,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+328,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+329,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+330,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+331,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+332,Bike Lanes,,,,,Asphalt,,Bike Route,In Service,
+333,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+334,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+335,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+336,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+337,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+338,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+339,Neighbourhood Bike Route,,Multi-use,North Creek Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,No
+340,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+341,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+342,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+343,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+344,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+345,Shared Traffic,,,,,,Engineering,Bike Route,In Service,
+346,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+347,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+348,Bike Lanes,,,,,Asphalt,,Bike Route,In Service,
+349,Bike Lanes,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+350,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+351,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+352,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+353,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+354,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+355,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+356,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+357,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+358,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+359,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+360,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+361,Neighbourhood Bike Route,,Multi-use,Green Timbers Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,No
+362,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+363,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+364,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+365,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+366,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+367,Protected Bike Lanes,,,,,Asphalt,,Bike Route,Proposed,
+368,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+369,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+370,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+371,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+372,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+373,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+374,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+375,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+376,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+377,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+378,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+379,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+380,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+381,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+382,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+383,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+384,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+385,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+386,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+387,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+388,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+389,Cycling-Permitted Sidewalk,,Multi-use,Bon Accord Greenway,Greenway,Concrete,Engineering,Bike Route,In Service,
+390,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+391,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+392,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+393,Neighbourhood Bike Route,,,Port Mann- Surrey Centre NBR,,Asphalt,Engineering,Bike Route,In Service,No
+394,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+395,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+396,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+397,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+398,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+399,Bike Lanes,,,,,,Engineering,Bike Route,In Service,
+400,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+401,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+402,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+403,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+404,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+405,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+406,Neighbourhood Bike Route,,Multi-use,Port Mann Greenway,Greenway,Other,Engineering,Bike Route,In Service,
+407,Neighbourhood Bike Route,,Multi-use,Port Mann Greenway,Greenway,Other,Engineering,Bike Route,In Service,
+408,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+409,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+410,Cycling-Permitted Sidewalk,,Multi-use,Douglas Greenway,Greenway,Asphalt Concrete,Engineering,Bike Route,In Service,No
+411,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+412,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+413,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+414,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+415,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+416,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+417,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+418,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+419,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+420,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+421,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+422,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+423,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+424,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+425,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+426,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+427,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+428,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+429,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+430,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+431,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+432,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+433,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+434,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+435,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+436,Bike Lanes,,,,Engineering,Asphalt,,Bike Route,In Service,
+437,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+438,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+439,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+440,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+441,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+442,Bike Lanes,,,,,,Engineering,Bike Route,In Service,
+443,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+444,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+445,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+446,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+447,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+448,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+449,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+450,Bike Lanes,,,,,,,Bike Route,,
+451,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+452,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+453,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+454,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+455,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+456,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+457,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+458,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+459,Protected Bike Lanes,,,,,Asphalt,,Bike Route,Proposed,
+460,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+461,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+462,Protected Bike Lanes,,,,,,,Bike Route,Proposed,
+463,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+464,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+465,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+466,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+467,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+468,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+469,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+470,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+471,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+472,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+473,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+474,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+475,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+476,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+477,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+478,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+479,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+480,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+481,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+482,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+483,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+484,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+485,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+486,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+487,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+488,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+489,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+490,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+491,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+492,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+493,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+494,Neighbourhood Bike Route,,Multi-use,Green Timbers Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,
+495,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+496,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+497,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+498,Protected Bike Lanes,,Multi-use,,Engineering,,Engineering,Bike Route,Proposed,
+499,Protected Bike Lanes,,Multi-use,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+500,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+501,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+502,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+503,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+504,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+505,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+506,Cycling-Permitted Sidewalk,,,,,Asphalt,Engineering,Bike Route,In Service,No
+507,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+508,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+509,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+510,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+511,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+512,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+513,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+514,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+515,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+516,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+517,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+518,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+519,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+520,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+521,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+522,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+523,Bike Lanes,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+524,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+525,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+526,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+527,Cycling-Permitted Sidewalk,,Multi-use,Nicomekl Greenway,Greenway,Gravel,Engineering,Bike Route,In Service,No
+528,Neighbourhood Bike Route,,Multi-use,Mud Bay Dike Trail,Greenway,Asphalt,Engineering,Bike Route,In Service,
+529,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+530,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+531,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+532,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+533,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+534,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+535,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+536,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+537,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+538,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+539,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+540,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+541,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+542,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+543,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+544,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+545,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+546,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+547,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+548,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+549,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+550,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+551,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+552,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+553,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+554,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+555,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+556,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+557,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+558,Bike Lanes,,Transportation,,Engineering,,,Bike Route,In Service,
+559,Shared Traffic,,Transportation,,Engineering,,,Bike Route,In Service,
+560,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+561,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+562,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+563,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+564,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+565,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+566,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+567,Cycling-Permitted Sidewalk,,Transportation,,Engineering,Concrete,Engineering,Bike Route,In Service,
+568,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+569,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+570,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+571,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+572,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+573,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+574,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+575,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+576,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+577,Cycling-Permitted Sidewalk,,,,,Concrete,Engineering,Bike Route,In Service,No
+578,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+579,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+580,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+581,Bike Lanes,,Transportation,,Engineering,,,Bike Route,In Service,
+582,Neighbourhood Bike Route,,Multi-use,Hook Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,No
+583,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+584,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+585,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+586,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+587,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+588,Neighbourhood Bike Route,,,Port Mann- Surrey Centre NBR,,Asphalt,Engineering,Bike Route,In Service,No
+589,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+590,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+591,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+592,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+593,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+594,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+595,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+596,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+597,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+598,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+599,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+600,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+601,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+602,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+603,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+604,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+605,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+606,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+607,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+608,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+609,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+610,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+611,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+612,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+613,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+614,Shared Traffic,,Transportation,,Engineering,,Engineering,Bike Route,In Service,
+615,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+616,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+617,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+618,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+619,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+620,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+621,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+622,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+623,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+624,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+625,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+626,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+627,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+628,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+629,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+630,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+631,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+632,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+633,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+634,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+635,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No
+636,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+637,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+638,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+639,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+640,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+641,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+642,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+643,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+644,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+645,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+646,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+647,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+648,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+649,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+650,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+651,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+652,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+653,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+654,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+655,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+656,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+657,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+658,Protected Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+659,Neighbourhood Bike Route,,Transportation,Port Mann - City Centre,Greenway,,,Bike Route,In Service,
+660,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+661,Neighbourhood Bike Route,,,Port Mann- Surrey Centre NBR,,Asphalt,Engineering,Bike Route,In Service,No
+662,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+663,Bike Lanes,,,,,,Engineering,Bike Route,In Service,
+664,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+665,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+666,Bike Lanes,,Transportation,,Engineering,,,Bike Route,In Service,
+667,Bike Lanes,,,,,,Engineering,Bike Route,In Service,
+668,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+669,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+670,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+671,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+672,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+673,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+674,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+675,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+676,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+677,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+678,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+679,Neighbourhood Bike Route,,Local Connector,Fraser Heights Greenway,Greenway,Asphalt,Engineering,Bike Route,In Service,
+680,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+681,Neighbourhood Bike Route,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+682,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+683,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+684,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+685,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+686,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+687,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+688,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+689,Neighbourhood Bike Route,,,,,Asphalt,Engineering,Bike Route,In Service,No
+690,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+691,Off-Street Multi-Use Pathway,,Multi-use,,Engineering,Asphalt,Engineering,Bike Route,Proposed,
+692,Shared Traffic,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+693,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+694,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+695,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+696,Shared Traffic,,,,,Asphalt,Engineering,Bike Route,In Service,No
+697,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,No
+698,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,
+699,Bike Lanes,,,,,Asphalt,Engineering,Bike Route,In Service,
+700,Bike Lanes,,Transportation,,Engineering,Asphalt,Engineering,Bike Route,In Service,No

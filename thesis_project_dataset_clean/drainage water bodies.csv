@@ -1,0 +1,674 @@
+,COMMENTS,CONDITION,CONDITIONDATE,CRE_DATE,FACILITYID,GIS_ENTRY_STAGE,LEGACYID,LOCATION,MAP_NO,MOD_DATE,NAME,OWNER,PROJECT_NO,SENSITIVITY,STATUS,WARRANTYDATE,WATER_BODY_TYPE,YR
+0,SW of Serpentine Sea Dam,,,20111114,1001220117,Final AB,1001220093,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+1,,,,20170315,1001913305,Initial AB,,,115,20170510,,Surrey,7811-0223-00,,In Service,,Wet Detention Pond,2016
+2,"As Per July 20, 2011 Engineering ERC",,,20111114,1001219711,Final AB,,,068,20111114,McLellan Crk,Private,,B,In Service,,Lake,2011
+3,,,,20110615,1001201208,,,,080,20110615,,Surrey,,B,In Service,,Lake,
+4,,,,20111110,1001219507,Final AB,,17127 Fraser Hwy,056,20111110,Detention Pond,Private,,C,In Service,,Lake,2011
+5,,,,20111110,1001219521,Final AB,,Surrey Bend Park,006,,Surrey Bend Pond,Surrey,,A,In Service,,Lake,2011
+6,Dam,,,20111110,1001219522,Final AB,,9019 164 St,035,20111110,Godwin Lake,Surrey,,A,In Service,,Lake,2011
+7,,,,20110607,1001200240,,,,,20111114,,Private,,B,In Service,,Lake,
+8,Updated to SHIM 2011,,,20120510,1001412148,,,,049,20120510,,Surrey,,B,In Service,,Lake,
+9,Updated to SHIM 2011,,,20111110,1001219523,Final AB,,8431 188 St,048,20120510,Latimer Rearing Pond,Private,4898-4170-00,A,In Service,,Lake,2008
+10,,,,20160329,1001866905,,,,,20160329,,Surrey,,B,In Service,,Wetlands,
+11,,,,20160329,1001866906,,,,,20160329,,Surrey,,A,In Service,,Wetlands,
+12,,,,20160329,1001866907,,,,,20160329,,Surrey,,C,In Service,,Wetlands,
+13,KGB & Boliver Rd,,,20111110,1001219506,Final AB,,13338 King George Blvd,011,20180117,Ravine Rd Pond,Surrey,,B,In Service,,Lake,2011
+14,SW of Serpentine Sea Dam,,,20111114,1001220120,Final AB,1001220096,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+15,SW of Serpentine Sea Dam,,,20111114,1001220121,Final AB,1001220097,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+16,SW of Serpentine Sea Dam,,,20111114,1001220122,Final AB,1001220098,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+17,,,,20111114,1001220266,Final AB,,18167 12 Ave,137,20180117,Private Pond,Private,,A,In Service,,Lake,
+18,,,,20111114,1001220316,Final AB,,,148,20180117,Private Pond,Private,,A,In Service,,Lake,
+19,,,,20111128,1001221982,,,,,20180117,,Surrey,,B,In Service,,Lake,
+20,,,,20140602,1001751886,Final AB,,,072,20180111,McLeod Pond,Surrey,7812-0328-00,B,In Service,,Wet Detention Pond,2014
+21,,,,20150416,1001818430,Final AB,,,002,20150416,,Provincial,SFPR Seg. 7,B,In Service,,Wet Detention Pond,2014
+22,,,,20180613,1002066442,Final AB,,,058,20180613,,Private,7811-0263-00,,In Service,,Dry Detention Pond,2018
+23,,,,20111115,1001220453,Initial AB,,,114,20111115,Above Ground Municipal,Surrey,7806-0250-00,B,In Service,,Dry Detention Pond,2009
+24,,,,20111110,1001219535,Final AB,,9185 168 St,035,20111110,Kurtenacker DP,Private,,C,In Service,,Wet Detention Pond,2011
+25,,,,20111110,1001219537,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2001
+26,,,,20111110,1001219538,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2001
+27,,,,20111110,1001219539,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2001
+28,,,,20111110,1001219540,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2011
+29,"As Per July 20, 2011 Engineering ERC",,,20111110,1001219674,Final AB,,Fraser Hwy & 192 St NW Lots,068,20111110,McLellan Crk Ponds,Private,,B,In Service,,Lake,2011
+30,,,,20111114,1001220125,Final AB,1001220101,,098,,Gary Brk,Surrey,,B,In Service,,Lake,2011
+31,,,,20111114,1001220127,Final AB,1001220103,,098,,Gary Brk,Surrey,,B,In Service,,Lake,2011
+32,,,,20111114,1001220144,Final AB,,,101,,,Surrey,,A,In Service,,Lake,2011
+33,,,,20111114,1001220145,Final AB,,,101,,,Surrey,,B,In Service,,Lake,2011
+34,,,,20111114,1001220147,Final AB,,,101,,,Surrey,,A,In Service,,Lake,2011
+35,,,,20111114,1001220150,Final AB,,,103,,,Surrey,,A,In Service,,Lake,2011
+36,,,,20100728,1001168652,Final AB,,,102,20111114,Nico Wynd GC Pond,Private,,C,In Service,,Wet Detention Pond,
+37,,,,20100728,1001168653,Final AB,,,102,20111114,Nico Wynd GC Pond,Private,,C,In Service,,Wet Detention Pond,
+38,,,,20100728,1001168654,Final AB,,,102,20111114,Nico Wynd GC Pond,Private,,C,In Service,,Wet Detention Pond,
+39,,,,20100728,1001168655,Final AB,,,102,20111114,Nico Wynd GC Pond,Private,,B,In Service,,Lake,
+40,,,,20100728,1001168656,Final AB,,,102,20111114,Nico Wynd GC Pond,Private,,C,In Service,,Wet Detention Pond,
+41,,,,20100728,1001168657,Final AB,,,102,20111114,Nico Wynd GC Pond,Private,,C,In Service,,Wet Detention Pond,
+42,Upper Titman,,,20111115,1001220454,Final AB,,3075 156 St,114,20111115,Above Ground Municipal DP,Surrey,7806-0137-00,B,In Service,,Wet Detention Pond,2011
+43,Golf Course Lakes,,,20101119,1001182438,Final AB,,164 St & 32A Ave,105,20111114,Golf Course Lake,Surrey,,C,In Service,,Wet Detention Pond,
+44,"As Per Apr 6, 2011 Engineering ERC",,,20110519,1001198261,,,,117,20111114,Wetland,Private,,B,In Service,,Wetlands,
+45,,,,20111114,1001219757,Final AB,,NE of Colebrook Park,081,20121003,Farmland Ponds,Private,,C,In Service,,Other,2011
+46,,,,20110711,1001203873,,,,,20111114,Lower Erickson Pond,Private,,A,In Service,,Lake,
+47,,,,20111114,1001220159,Final AB,,Chantrell Park ,112,20130109,Chantrell DP South,Surrey,4895-6020-00,A,In Service,,Lake,1995
+48,,,,20120118,1001356750,Initial AB,,,084,20150923,,Surrey,1708-3080-00,C,In Service,,Wet Detention Pond,2015
+49,,,,20111114,1001220162,Final AB,,,111,20171213,,Surrey,,C,In Service,,Lake,2011
+50,,,,20111110,1001219653,Final AB,,,079,,,Surrey,,C,In Service,,Lake,2011
+51,,,,20111114,1001220258,Final AB,,1440 184 St,138,20111114,Private Pond,Surrey,,B,In Service,,Lake,2011
+52,,,,20110519,1001198294,,,,128,20111114,Twin Crk Lake,Private,,A,In Service,,Lake,
+53,,,,20111114,1001220295,Final AB,,215 184 St,147,20111114,Private Pond,Private,,B,In Service,,Lake,2011
+54,,,,20111114,1001220307,Final AB,1001220295,215 184 St,147,20111114,Private Pond,Private,,B,In Service,,Lake,2011
+55,,,,20111114,1001220313,Final AB,,,148,20111114,Private Pond,Private,,B,In Service,,Lake,2011
+56,,,,20111114,1001220314,Final AB,,,148,20111114,Private Pond,Private,,B,In Service,,Lake,2011
+57,,,,20111114,1001220315,Final AB,,,148,20111114,Private Pond,Private,,B,In Service,,Lake,2011
+58,,,,20110519,1001198299,,,,148,20111114,Jenkins Lake,Surrey,,A,In Service,,Lake,
+59,Hazelmere GC,,,20100708,1001166790,Final AB,,,147,20111114,Golf Course Pond,Private,,C,In Service,,Wet Detention Pond,
+60,,,,20110607,1001200232,,,,146,20111114,The Glades Pond 1,Surrey,,A,In Service,,Lake,
+61,,,,20110607,1001200233,,,,146,20111114,The Glades Pond 2,Surrey,,A,In Service,,Lake,
+62,,,,20110607,1001200234,,,,146,20111114,,Private,,B,In Service,,Lake,
+63,,,,20110607,1001200235,,,,146,20111114,,Private,,B,In Service,,Lake,
+64,,,,20130109,1001562627,Initial AB,,,089,20130109,,Surrey,,A,In Service,,Lake,
+65,"As Per July 20, 2011 Engineering ERC",,,20110817,1001209718,,,Fraser Hwy & 192 St NW Lots,068,20111110,McLellan Crk Ponds,Private,,B,In Service,,Lake,
+66,"As Per July 20, 2011 Engineering ERC",,,20110817,1001209719,,,Fraser Hwy & 192 St NW Lots,068,20111110,McLellan Crk Ponds,Private,,B,In Service,,Lake,
+67,"As Per July 20, 2011 Engineering ERC",,,20111110,1001219667,Final AB,,Fraser Hwy & 192 St NW Lots,068,20111110,McLellan Crk Ponds,Private,,B,In Service,,Lake,2011
+68,"As Per July 20, 2011 Engineering ERC",,,20111110,1001219672,Final AB,,Fraser Hwy & 192 St NW Lots,068,20111110,McLellan Crk Ponds,Private,,B,In Service,,Lake,2011
+69,,,,20111110,1001219655,Final AB,,,079,,,Surrey,,C,In Service,,Lake,2011
+70,,,,20111115,1001220593,Final AB,,,078,20130627,Above Ground Municipal,Surrey,7886-4520,C,In Service,,Dry Detention Pond,1988
+71,as per May 2007 ERC,,,20111110,1001219659,Final AB,,,075,,,Surrey,,B,In Service,,Lake,2011
+72,,,,20110621,1001202007,EC,,19201 66A Ave,068,20130717,Private DP,Surrey,7807-0204-00,,Proposed,,Wet Detention Pond,2010
+73,,,,20111115,1001220645,Final AB,,,014,20130722,Above Ground Municipal,Surrey,7887-5630,C,In Service,,Dry Detention Pond,1990
+74,,,,20111110,1001219627,,1001219626,,119,20111114,25th Ave Ponds,Surrey,,A,In Service,,Lake,
+75,,,,20111110,1001219628,,1001219626,,119,20111114,25th Ave Ponds,Surrey,,A,In Service,,Lake,
+76,,,,20180321,1001925209,Initial AB,,,074,20180321,Harvest P.S.,Surrey,4815-4060-00,A,In Service,,Forebay,2017
+77,,,,20111114,1001220141,Final AB,,,103,20111114,,Private,,AO,In Service,,Lake,2011
+78,,,,20111115,1001220641,Final AB,,,123,20130723,Above Ground Municipal,Surrey,7884-456,C,In Service,,Dry Detention Pond,1985
+79,,,,20111115,1001220711,Final AB,,,024,20130723,Above Ground Municipal,Surrey,7884-214,C,In Service,,Dry Detention Pond,1986
+80,,,,20111114,1001220151,Final AB,,,103,20111114,,Private,,AO,In Service,,Lake,2011
+81,,,,20170330,1001925224,EC,,Hook Brook P.S.,,20180321,Hook Brook,Surrey,D-958,,In Service,,Forebay,1992
+82,Morgan Creek Ponds,,,20101119,1001182440,Final AB,,38 Ave & 158 St,105,20111115,,Surrey,,B,In Service,,Wet Detention Pond,1996
+83,Morgan Creek Ponds,,,20101119,1001182442,Final AB,,38 Ave & 158 St,,20111115,,Surrey,,B,In Service,,Lake,1996
+84,Morgan Creek Ponds,,,20101119,1001182443,Final AB,,38 Ave & 158 St,105,20111115,,Surrey,,B,In Service,,Wet Detention Pond,1996
+85,Above Ground Municipal DP,,,20111115,1001220468,Final AB,,Hawthorne Park,012,20111115,Bon Accord Lake East,Surrey,4898-605,A,In Service,,Lake,1999
+86,Greenridge Park Detention Pond,,,20111115,1001220467,Final AB,,3104 160 St,115,20111115,Above Ground Municipal DP,Surrey,7899-0179-00,A,In Service,,Lake,2003
+87,Above Ground Muncipal DP,,,20111115,1001220469,Final AB,,Hawthorne Park,012,20111115,Bon Accord Lake East,Surrey,4898-605,A,In Service,,Lake,1999
+88,Morgan Creek Ponds,,,20101119,1001182444,Final AB,,38 Ave & 158 St,,20111115,,Surrey,,B,In Service,,Lake,1996
+89,Morgan Creek Ponds,,,20101119,1001182445,Final AB,,38 Ave & 158 St,,20111115,,Surrey,,B,In Service,,Lake,1996
+90,Morgan Creek Ponds,,,20101119,1001182446,Final AB,,38 Ave & 158 St,,20111115,,Surrey,,B,In Service,,Lake,1996
+91,Morgan Creek Ponds,,,20111115,1001220466,Final AB,,38 Ave & 158 St,104,20111115,Above Ground Municipal,Surrey,,B,In Service,,Wet Detention Pond,1996
+92,,,,20111115,1001220714,Final AB,,,024,20130723,Above Ground Municipal,Surrey,9204,C,In Service,,Dry Detention Pond,1980
+93,Golf Course Lakes,,,20101119,1001182433,Final AB,,16105 Morgan Crk Cresc,105,20111103,,Surrey,,A,In Service,,Lake,1995
+94,Golf Course Lakes,,,20101119,1001182434,Final AB,,,105,20111103,,Surrey,,C,In Service,,Wet Detention Pond,
+95,"As Per Apr 20, 2011 Engineering ERC",,,20110519,1001198243,,,,137,20110519,South Alder Greenhouses,Private,,C,In Service,,Lake,
+96,,,,20160302,1001862605,Final AB,,,014,20160302,,Provincial,Gateway E1,,In Service,,Wet Detention Pond,2014
+97,,,,20111115,1001220703,Final AB,,,050,20180403,Above Ground Municipal,Surrey,48996040-00,C,In Service,,Dry Detention Pond,2001
+98,Updated by SHIM 2010,,,20111115,1001220542,Final AB,,195A St & 68 Ave,069,20120515,Above Ground Municipal DP,Surrey,7807-0056-00,C,In Service,,Lake,2009
+99,Updated by SHIM 2010,,,20111115,1001220456,Final AB,,18590 Fraser Hwy Clayton Heights HS,068,20120515,Above Ground Municipal,Surrey,7801-0198-00,B,In Service,,Lake,2002
+100,Updated by SHIM 2010,,,20120515,1001412910,,,,067,20120515,,Surrey,,A,In Service,,Lake,
+101,Updated by SHIM 2010,,,20111115,1001220457,Final AB,,18590 Fraser Hwy Clayton Heights HS,068,20120515,Above Ground Municipal,Surrey,7803-0060-00,B,In Service,,Lake,2005
+102,Updated by SHIM 2010,,,20111115,1001220535,,,68 Ave & 194 St,069,20120515,Above Ground Municipal,Surrey,4805-6030-00,C,In Service,,Lake,2010
+103,,,,20130501,1001593795,,,,103,20130501,,Surrey,,A,In Service,,Lake,
+104,,,,20130501,1001593796,,,,103,20130501,,Surrey,,A,In Service,,Lake,
+105,,,,20111115,1001220674,Final AB,,,121,20130606,Above Ground Municipal,Surrey,7881-135,C,In Service,,Dry Detention Pond,1984
+106,Detention Pond,,,20140721,1001756661,Final AB,,,052,20140721,,Surrey,7885-2890-00,,In Service,,Lake,1987
+107,,,,20111115,1001220681,Final AB,,,121,20130606,Above Ground Municipal,Surrey,9367,C,In Service,,Dry Detention Pond,1980
+108,,,,20111115,1001220679,Final AB,,,121,20130606,Above Ground Municipal,Surrey,9366,C,In Service,,Dry Detention Pond,1979
+109,,,,20111115,1001220677,Final AB,,,121,20130606,Above Ground Municipal,Surrey,9536,C,In Service,,Dry Detention Pond,1980
+110,,,,20111115,1001220678,Final AB,,,121,20130606,Above Ground Municipal,Surrey,9536,C,In Service,,Dry Detention Pond,1980
+111,End of Road,,,20111116,1001220841,Final AB,,8078 KGB,042,20130712,Detention Pond,Private,7886-0720,C,In Service,,Lake,1989
+112,Updated by SHIM 2010,,,20120515,1001220580,Final AB,,,069,20140303,Above Ground Municipal,Surrey,7804-0086-01,B,In Service,20080506,Lake,2007
+113,Updated by SHIM 2006,,,20120625,1001416530,,,,,20140310,,Private,,A,In Service,,Lake,
+114,Detention Pond,,,20140721,1001756717,Final AB,,,052,20140721,,Surrey,9463,,In Service,,Lake,1979
+115,Detention Pond,,,20140721,1001756718,Final AB,,,052,20140721,,Surrey,9463,,In Service,,Lake,1979
+116,Detention Pond,,,20140721,1001756702,Final AB,,,052,20140721,,Surrey,3486,,In Service,,Lake,1983
+117,,,,20111115,1001220715,Final AB,,,051,20140721,Above Ground Municipal,Surrey,7883-2290-00,C,In Service,,Dry Detention Pond,1984
+118,,,,20111115,1001220658,Final AB,,,078,20140721,Above Ground Municipal,Surrey,7887-0288-00,C,In Service,,Dry Detention Pond,1988
+119,"As per Dillon O&M Assessment Feb, 2014",,,20111115,1001220687,Final AB,,Behind 6250 Killarny Dr @ 62A Ave,074,20140724,Above Ground Municipal,Surrey,9370,B,In Service,,Lake,1980
+120,Detention Pond,,,20141107,1001796515,Final AB,,,112,20141107,,Surrey,4899-3190-00,,In Service,,Lake,2000
+121,,,,20141208,1001724733,Final AB,,,115,20141208,Orchard Grove Detention Pond,Surrey,7813-0071-00,B,In Service,,Dry Detention Pond,2014
+122,Drainage for Colebrook Park,,,20111114,1001219913,Final AB,,13256 Coulthard Rd,081,20111223,Private Pond,Private,,B,In Service,,Lake,2011
+123,,,,20110614,1001201106,,,12300 Old Yale Rd,010,20111223,Private DP,Private,7806-0035-00,C,In Service,,Lake,2010
+124,,,,20111117,1001220883,EC,,Between Mall & Hwy 99,124,20111223,Pond,Private,,B,In Service,,Lake,2010
+125,,,,20120622,1001416379,Final AB,,,073,20120622,,Surrey,7802-0144-00,B,In Service,,Wetlands,2004
+126,,,,20131118,1001718914,,,,114,20131118,,Private,,C,In Service,,Lake,
+127,,,,20130227,1001569027,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+128,,,,20130227,1001569032,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+129,,,,20130227,1001569033,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+130,,,,20130227,1001569034,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+131,,,,20130227,1001569035,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+132,,,,20130227,1001569036,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+133,,,,20130227,1001569039,,,Surrey Golf Course,,20130227,056,Private,,C,In Service,,Lake,
+134,,,,20130130,1001565661,,,Surrey Golf Course,056,20130227,,Private,,AO,In Service,,Lake,
+135,,,,20130130,1001565776,,,Surrey Golf Course,056,20130227,,Private,,AO,In Service,,Lake,
+136,,,,20130227,1001569024,,,Surrey Golf Course,,20130227,056,Private,,AO,In Service,,Lake,
+137,,,,20130227,1001569025,,,Surrey Golf Course,,20130227,056,Private,,AO,In Service,,Lake,
+138,,,,20130227,1001569026,,,Surrey Golf Course,,20130227,056,Private,,AO,In Service,,Lake,
+139,,,,20130227,1001569045,,,Surrey Golf Course,056,20130227,,Private,,AO,In Service,,Lake,
+140,,,,20111115,1001220595,Final AB,,,034,20140425,Above Ground Municipal,Surrey,7886-0267-00,C,In Service,,Dry Detention Pond,1987
+141,,,,20111115,1001220630,Final AB,,,034,20140425,Above Ground Municipal,Surrey,7883-1740-00,C,In Service,,Dry Detention Pond,1986
+142,,,,20111115,1001220631,Final AB,,,034,20140425,Above Ground Municipal,Surrey,7883-1740-00,C,In Service,,Dry Detention Pond,1986
+143,,,,20111115,1001220670,Final AB,,,034,20140425,Above Ground Municipal,Surrey,7883-1740-00,C,In Service,,Dry Detention Pond,1986
+144,,,,20111115,1001220671,Final AB,,,034,20140425,Above Ground Municipal,Surrey,7880-5360-00,C,In Service,,Dry Detention Pond,1986
+145,,,,20111115,1001220673,Final AB,,,034,20140425,Above Ground Municipal,Surrey,A-431,C,In Service,,Dry Detention Pond,1982
+146,,,,20111115,1001220638,Final AB,,,034,20140428,Above Ground Municipal,Surrey,7883-4060-00,C,In Service,,Dry Detention Pond,1985
+147,,,,20140428,1001744152,,,,034,20140428,,Private,,C,In Service,,Wet Detention Pond,
+148,,,,20111115,1001220590,Final AB,,,034,20140428,Above Ground Municipal,Surrey,7885-0172-00,C,In Service,,Dry Detention Pond,1986
+149,,,,20171011,1001950651,Final AB,,,083,20171011,Panorama P.S.,Surrey,4815-4130-00,A,In Service,,Forebay,2017
+150,,,,20111103,1001217913,Final AB,,,114,20140605,Grandview Detention Pond B,Surrey,7812-0166-00,B,In Service,,Lake,2014
+151,,,,20111115,1001220636,Final AB,,ROW: 95A Ave & 155A St,034,20140617,Detention Ponds,Surrey,A-158,C,In Service,,Dry Detention Pond,1980
+152,,,,20111115,1001220635,Final AB,,ROW: 95A Ave & 155A St,034,20140617,Detention Ponds,Surrey,7888-0001-00,C,In Service,,Dry Detention Pond,1990
+153,,,,20111115,1001220632,Final AB,,ROW: 95A Ave & 155A St,034,20140617,Detention Ponds,Surrey,A358,C,In Service,,Dry Detention Pond,1984
+154,,,,20111115,1001220684,Final AB,,,122,20130529,Above Ground Municipal,Surrey,7887-0300,C,In Service,,Other,1988
+155,,,,20111117,1001220871,EC,1001220867,2204 160 St,125,20111117,Private Pond,Private,,C,In Service,,Other,
+156,,,,20111115,1001220683,Final AB,,,122,20130529,Above Ground Municipal,Surrey,7887-6390,C,In Service,,Dry Detention Pond,1989
+157,,,,20111117,1001220873,EC,1001220871,2204 160 St,125,20111117,Private Pond,Private,,C,In Service,,Other,
+158,In John Tompson Park,,,20111117,1001220912,Final AB,,14324 Hawkstream Dr,052,20111117,Redtail Detention Pond,Surrey,7891-0032-00,B,In Service,,Dry Detention Pond,1994
+159,Now with a walkway/Path through park,,,20111117,1001220921,Final AB,1001220919,Behind 9072 142A St,032,20111117,Semi-Dry Detention Pond,Surrey,7888-0672,C,In Service,,Dry Detention Pond,1990
+160,Now with a walkway/Path through park,,,20111117,1001220919,Final AB,,Behind 9072 142A St,032,20111117,Semi-Dry Detention Pond,Surrey,7888-0672,C,In Service,,Dry Detention Pond,1990
+161,,,,20111115,1001220589,Final AB,,,043,20130723,Above Ground Municipal,Surrey,7886-2250,C,In Service,,Dry Detention Pond,1988
+162,"As Per Apr 20, 2011 Engineering ERC",,,20110519,1001198244,,,,137,20110519,South Alder Greenhouses,Surrey,,C,In Service,,Lake,2011
+163,,,,20111115,1001220585,Final AB,,,023,20130723,Above Ground Municipal,Surrey,7883-127,C,In Service,,Dry Detention Pond,1987
+164,,,,20111115,1001220689,Final AB,,,113,20130723,Above Ground Municipal,Surrey,7888-0020,C,In Service,,Dry Detention Pond,1990
+165,,,,20111115,1001220613,Final AB,,,043,20130723,Above Ground Municipal,Surrey,A-572,C,In Service,,Dry Detention Pond,1984
+166,,,,20111115,1001220639,Final AB,,,044,20130723,Above Ground Municipal,Surrey,1796-013,C,In Service,,Dry Detention Pond,1997
+167,,,,20111115,1001220648,Final AB,,,023,20130723,Above Ground Municipal,Surrey,7886-4591,C,In Service,,Dry Detention Pond,1991
+168,,,,20111115,1001220675,Final AB,,,121,20130723,Above Ground Municipal,Surrey,7886-2240 / 7886-453,C,In Service,,Dry Detention Pond,1990
+169,,,,20111115,1001220647,Final AB,,,014,20130723,Above Ground Municipal,Surrey,7800-0139-00,C,In Service,,Dry Detention Pond,2001
+170,,,,20111115,1001220603,Final AB,,,124,20130723,Above Ground Municipal,Surrey,7887-3810,C,In Service,,Dry Detention Pond,1990
+171,,,,20111115,1001220587,Final AB,,,024,20130723,Above Ground Municipal,Surrey,9463,C,In Service,,Dry Detention Pond,1979
+172,"As per Dec. 21, 2011 Eng ERC",,,20120202,1001359509,,,,,20120313,,Surrey,,C,In Service,,Lake,
+173,As Per Enkon Report Feb 2015,,,20111114,1001220104,Final AB,,,097,20150507,,Surrey,,C,In Service,,Lake,2011
+174,Updated by SHIM 2009,,,20110511,1001197469,,,,,20120524,Old Yale PS,Surrey,,AO,In Service,,Forebay,
+175,,,,20111110,1001219566,,1001219532,Bothwell Pond,035,20120608,Bothwell Pond 2,Surrey,,A,In Service,,Lake,2011
+176,,,,20130201,1001566157,,,Northview Golf Course,,20130201,,Surrey,,C,In Service,,Lake,
+177,,,,20130201,1001566176,Initial AB,,Brown Road PS,065,20130201,,Private,,A,In Service,,Forebay,
+178,,,,20111115,1001220676,Final AB,,,121,20130522,Above Ground Municipal,Surrey,9445,C,In Service,,Dry Detention Pond,1979
+179,,,,20111114,1001220220,Final AB,,,136,20130610,,Private,,B,In Service,,Lake,2011
+180,,,,20130820,1001699300,Final AB,,,062,20130820,,Surrey,7885-0180,C,In Service,,Dry Detention Pond,1986
+181,,,,20100806,1001169319,Final AB,,,110,20131101,Maple St PS Dunsmuir Channel Forebay,Surrey,4810-3020-00,AO,In Service,,Forebay,2013
+182,,,,20131107,1001717872,Final AB,1001220557,9932 127A St,020,20131107,Robson Park Det. Pond D,Surrey,4801-6010-00,B,In Service,,Lake,2010
+183,,,,20131106,1001220558,Final AB,,9950 126 St,020,20131107,Robson Park Det. Pond B,Surrey,4801-6010-00,A,In Service,,Lake,2010
+184,,,,20131107,1001717867,Final AB,,,020,20131107,Robson Park Pool B1,Surrey,4801-6010-00,A,In Service,,Lake,2010
+185,,,,20131107,1001717871,Final AB,,,020,20131107,Robson Park Pool B2,Surrey,4801-6010-00,B,In Service,,Lake,2010
+186,,,,20131107,1001220557,Final AB,,9932 127A St,020,20131107,Robson Park Det. Pond C,Surrey,4801-6010-00,B,In Service,,Lake,2010
+187,Robson Park,,,20131106,1001220559,Final AB,,12576 100 Ave,020,20131107,Robson Park Det. Pond A,Surrey,4801-6010-00,A,In Service,,Lake,2010
+188,,,,20111114,1001220196,Final AB,,,119,20131112,25th Ave Ponds,Surrey,,A,In Service,,Lake,2011
+189,,,,20111115,1001220611,Final AB,,,042,20140717,Above Ground Municipal,Surrey,A505,B,In Service,,Dry Detention Pond,1985
+190,Rain Garden,,,20120201,1001359448,Final AB,,Tynehead Bridge Pathway,025,20120201,,Surrey,3809-6090-00,C,In Service,,Dry Detention Pond,2011
+191,Rain Garden,,,20120201,1001359453,Final AB,,Tynehead Bridge Pathway,025,20120201,,Surrey,3809-6090-00,C,In Service,,Dry Detention Pond,2011
+192,,,,20161206,1001899220,Final AB,,,125,20161206,,Private,,,In Service,,Dry Detention Pond,1981
+193,,,,20120403,1001407004,,,,,20120403,,Private,,A,In Service,,Lake,
+194,,,,20120403,1001407005,,,,,20120403,,Private,,A,In Service,,Lake,
+195,,,,20101130,1001183436,Final AB,,Northview GC,065,20130206,,Private,,C,In Service,,Lake,
+196,,,,20111114,1001220191,Final AB,,,117,,,Surrey,,B,In Service,,Lake,2011
+197,,,,20120412,1001407973,Final AB,,,087,20120413,Kwantlen University Wetland,Surrey,7801-0079-00,B,In Service,,Wetlands,2004
+198,,,,20111114,1001220195,Final AB,,,119,20111114,25th Ave Ponds,Surrey,,A,In Service,,Lake,2011
+199,,,,20111114,1001220197,Final AB,,,119,20111114,,Private,,B,In Service,,Lake,2011
+200,,,,20111114,1001220161,Final AB,,,108,,,Surrey,,AO,In Service,,Lake,2011
+201,,,,20111115,1001220685,Final AB,,,122,20130129,Above Ground Municipal,Surrey,A440,C,In Service,,Dry Detention Pond,1980
+202,,,,20111115,1001220464,Final AB,,15245 80 Ave,044,20111115,Above Ground Municipal DP,Surrey,7888-0442,C,In Service,,Dry Detention Pond,1986
+203,,,,20130121,1001564090,,,,106,20130121,,Private,,C,In Service,,Lake,
+204,,,,20140428,1001744151,,,,034,20140428,,Private,,C,In Service,,Wet Detention Pond,
+205,"On ""City Road Lot""",,,20111115,1001220566,Final AB,,6740 176 St,067,20111115,Above Ground Private,Provincial,MOTH 71101-2005,B,In Service,,Wet Detention Pond,2007
+206,,,,20111115,1001220686,Final AB,,,122,20130129,Above Ground Municipal,Surrey,A440,C,In Service,,Other,1981
+207,,,,20111115,1001220572,Final AB,,15350 16A Ave,124,20111115,Above Ground Private DP,Private,7885-5220,C,In Service,,Dry Detention Pond,1990
+208,,,,20130204,1001566282,,,,075,20130204,64 Ave PS,Surrey,,A,In Service,,Forebay,
+209,Updated to SHIM 2011,,,20120514,1001412387,,,,038,20120514,,Surrey,,C,In Service,,Wetlands,
+210,,,,20120514,1001412505,,,,077,20120514,,Surrey,,C,In Service,,Lake,
+211,,,,20111115,1001220717,Final AB,,,077,20120514,Above Ground Municipal,Surrey,99029,C,In Service,,Lake,2006
+212,,,,20111115,1001220718,Final AB,,,077,20120514,Above Ground Municipal,Surrey,99029,C,In Service,,Lake,2006
+213,Updated to SHIM 2011,,,20111110,1001219529,Final AB,,9034 187 St,038,20120514,Private Pond,Private,,B,In Service,,Wetlands,2011
+214,Updated to SHIM 2011,,,20111110,1001219524,Final AB,,8908 192 St,039,20120514,Bartesko Pond,Private,,A,In Service,,Lake,2011
+215,,,,20101130,1001183391,Final AB,,Northview GC,065,20130207,,Private,,C,In Service,,Wet Detention Pond,
+216,,,,20140325,1001736779,Final AB,,,035,20140325,,Surrey,7888-0220-00,C,In Service,,Dry Detention Pond,1990
+217,,,,20140321,1001736558,Final AB,,,,20140321,,Surrey,7887-0431-00,C,In Service,,Lake,1988
+218,,,,20140321,1001736557,Final AB,,,,20140321,,Surrey,7888-0071-00,C,In Service,,Lake,1989
+219,"As Per Apr 20, 2011 Engineering ERC",,,20110519,1001198245,,,,137,20110519,South Alder Greenhouses,Surrey,,C,In Service,,Lake,2011
+220,,,,20110519,1001198301,,,,,20110519,,Private,,B,In Service,,Lake,
+221,Updated by SHIM 2007 Man Made Pool,,,20120604,1001414620,,,,,20120604,,Surrey,,A,In Service,,Lake,
+222,,,,20111114,1001219719,Final AB,,5382 Coulthard Pl,081,20111114,Private DPs,Private,,B,In Service,,Wetlands,
+223,,,,20111114,1001219720,Final AB,,5382 Coulthard Pl,081,20111114,Private DPs,Private,,B,In Service,,Wetlands,
+224,,,,20111114,1001219721,Final AB,,5382 Coulthard Pl,081,20111114,Private DPs,Private,,B,In Service,,Wetlands,
+225,,,,20111114,1001219723,Final AB,,5382 Coulthard Pl,081,20111114,Private DPs,Private,,B,In Service,,Wetlands,
+226,,,,20140912,1001780684,Initial AB,,,,20140912,,Surrey,7810-0301-00,,In Service,,Lake,2014
+227,Sulivan Park,,,20111114,1001219911,Final AB,,62A Ave & 153 St,074,,Sullivan Pond,Surrey,,B,In Service,,Lake,2011
+228,,,,20120611,1001415436,,,,026,20120611,Tynehead Hatchery,Private,,A,In Service,,Lake,
+229,,,,20120611,1001415437,,,,026,20120611,Tynehead Hatchery,Private,,A,In Service,,Lake,
+230,NE of Serpentine Sea Dam,,,20111114,1001219909,Final AB,,14630 48 Ave,093,,Farmland Pond,Private,,B,In Service,,Lake,2011
+231,,,,20111114,1001219910,Final AB,,7092 152 St,064,,Drainage Pond,Private,,B,In Service,,Lake,2011
+232,Sulivan Park,,,20111114,1001219912,Final AB,1001219911,62A Ave & 153 St,074,,Sullivan Pond,Surrey,,B,In Service,,Lake,2011
+233,,,,20120612,1001415596,,,,025,20120612,,Surrey,,A,In Service,,Lake,
+234,7898-0293-00,,,20111114,1001219914,Final AB,,13501 72 Ave,051,,Detention Pond,Private,,C,In Service,,Lake,2000
+235,Det Pond,,,20140402,1001739145,Final AB,,,044,20140402,,Surrey,A-467,C,In Service,,Dry Detention Pond,1982
+236,,,,20110929,1001214486,Final AB,,Sullivan Heights Park,073,20140407,Sullivan Heights DP,Surrey,4804-6030-00,B,In Service,,Lake,2008
+237,,,,20140409,1001740692,,,,015,20140409,,Surrey,,C,In Service,,Lake,
+238,NE of Serpentine Sea Dam,,,20111114,1001219918,Final AB,,14630 48 Ave,093,,Farmland Pond,Private,,B,In Service,,Lake,2011
+239,NE of Serpentine Sea Dam,,,20111114,1001219919,Final AB,,14630 48 Ave,093,,Farmland Pond,Private,,B,In Service,,Lake,2011
+240,SW of Serpentine Sea Dam,,,20111114,1001219920,Final AB,,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+241,Updated by SHIM 2005,,,20111115,1001220473,Final AB,,Guildford Heights Park,024,20120613,Guildford Lake,Surrey,4899-062,A,In Service,,Lake,2002
+242,SW of Serpentine Sea Dam,,,20111114,1001219922,Final AB,,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+243,Detention Pond,,,20111115,1001220657,Final AB,,,078,20140910,Above Ground Municipal,Surrey,7887-0563-00,C,In Service,,Dry Detention Pond,1990
+244,Updated by SHIM ERC 2011,,,20110629,1001203162,,,Guildford Golf Course,,20120619,,Surrey,,B,In Service,,Lake,
+245,Updated by SHIM ERC 2011,,,20110629,1001203163,,,Guildford Golf Course,,20120619,,Surrey,,B,In Service,,Lake,
+246,Detention Pond,,,20111115,1001220667,Final AB,,,079,20141117,Above Ground Municipal,Surrey,A-428,C,In Service,,Lake,1982
+247,Updated by SHIM 2006,,,20120625,1001416535,,,,,20120628,,Private,,A,In Service,,Lake,
+248,,,,20120410,1001407606,,,,084,20120410,48 Avenue P.S.,Surrey,,AO,In Service,,Forebay,
+249,,,,20120410,1001407607,,,,094,20120410,40 Avenue P.S.,Surrey,,AO,In Service,,Forebay,
+250,At Driving Range,,,20111114,1001219908,Final AB,1001219907,5228 KGB,083,20120417,Golf Course Pond,Private,,AO,In Service,,Lake,2011
+251,,,,20120417,1001408276,,,,093,20120417,,Private,,B,In Service,,Lake,
+252,,,,20120417,1001408274,,,,093,20120417,,Private,,B,In Service,,Lake,
+253,,,,20111103,1001217918,,,,114,20150929,Grandview Detention Pond B1,Private,,B,In Service,,Lake,
+254,,,,20120417,1001408275,,,,093,20120417,,Private,,B,In Service,,Lake,
+255,Updated by SHIM 2006,,,20120625,1001416538,,,,,20120628,,Private,,A,In Service,,Lake,
+256,,,,20111115,1001220543,,,11525 148A St,003,20160401,,Provincial,,A,In Service,,Wet Detention Pond,
+257,Updated by SHIM 2007,,,20120531,1001414307,,,,023,20120531,,Surrey,,A,In Service,,Wetlands,
+258,Updated by SHIM 2007,,,20110728,1001205211,,,,,20120531,Green Timbers Lake,Surrey,,A,In Service,,Lake,
+259,Updated by SHIM 2007,,,20111110,1001219513,Final AB,,8418 144 St,043,20120531,Enver Crk Pond East,Surrey,,A,In Service,,Lake,2011
+260,,,,20111013,1001215758,,,13568 Crescent Rd Backyard,101,20120531,Chantrell Lakes,Private,,A,In Service,,Lake,2001
+261,,,,20111115,1001220550,,,14828 116 Ave,003,20160401,,Provincial,,A,In Service,,Wet Detention Pond,
+262,,,,20160401,1001867893,,,,009,20160401,,Surrey,,A,In Service,,Wet Detention Pond,
+263,,,,20121024,1001557892,,,,089,20121024,,Surrey,,A,In Service,,Lake,
+264,,,,20120605,1001415003,,,,064,20120605,,Private,,C,In Service,,Lake,
+265,,,,20121024,1001557893,,,,089,20121024,,Surrey,,A,In Service,,Lake,
+266,,,,20111114,1001220146,Final AB,,,103,20130326,,Private,,AO,In Service,,Lake,2011
+267,,,,20111114,1001220216,Final AB,,,126,20130327,Private Ponds,Private,,C,In Service,,Lake,2011
+268,Updated by SHIM 2006,,,20120625,1001416533,,,,,20120628,,Private,,A,In Service,,Lake,
+269,,,,20120622,1001416397,Final AB,,,073,20120628,,Surrey,7802-0392-00,C,In Service,,Wetlands,2006
+270,Archibald DP,,,20111115,1001220463,Final AB,,13859 62 Ave,072,20120628,Above Ground Municipal DP,Surrey,4898-6070-00,B,In Service,,Lake,2002
+271,Updated to SHIM 2011,,,20111110,1001219534,Final AB,,18933 86 Ave,048,20120511,Private Pond,Private,,A,In Service,,Lake,2011
+272,Updated to SHIM 2011,,,20120511,1001412230,,,,,20120511,,Surrey,,A,In Service,,Lake,
+273,Updated to SHIM 2011,,,20120511,1001412232,,,,,20120511,,Surrey,,A,In Service,,Lake,
+274,Updated by SHIM 2009,,,20111115,1001220592,Final AB,,,019,20120518,Above Ground Municipal,Surrey,7801-0267-00,A,In Service,,Lake,2004
+275,Updated by SHIM 2009,,,20120522,1001413627,,,,019,20120522,Scott Crk,Surrey,,A,In Service,,Lake,
+276,Updated by SHIM 2009,,,20120522,1001413654,,,,019,20120522,,Surrey,,A,In Service,,Lake,
+277,,,,20120522,1001413657,,,,019,20120522,,Surrey,,A,In Service,,Lake,
+278,,,,20111115,1001220699,Final AB,,,030,20140430,Above Ground Municipal,Surrey,A-363,C,In Service,,Dry Detention Pond,1983
+279,,,,20111115,1001220651,Final AB,,,023,20140509,Above Ground Municipal,Surrey,7884-2140-00,C,In Service,,Dry Detention Pond,1986
+280,,,,20111115,1001220652,Final AB,,,023,20140509,Above Ground Municipal,Surrey,A-478,C,In Service,,Dry Detention Pond,1982
+281,,,,20111115,1001220654,Final AB,,,023,20140509,Above Ground Municipal,Surrey,A-419,C,In Service,,Dry Detention Pond,1983
+282,,,,20140509,1001748104,,,,023,20140509,,Private,,,In Service,,Lake,
+283,Detention Pond,,,20111115,1001220624,Final AB,,,071,20150924,Above Ground Municipal,Surrey,7882-0140-00,C,In Service,,Dry Detention Pond,1986
+284,,,,20111114,1001219749,Final AB,,NE of Colebrook Park,081,20111114,Farmland Ponds,Private,,C,In Service,,Other,2011
+285,,,,20111114,1001219750,Final AB,,NE of Colebrook Park,081,20111114,Farmland Ponds,Private,,C,In Service,,Other,2011
+286,,,,20111114,1001219751,Final AB,,NE of Colebrook Park,081,20111114,Farmland Ponds,Private,,C,In Service,,Other,2011
+287,,,,20111115,1001220637,Final AB,,ROW: 95A Ave & 155A St,034,20140428,Detention Ponds,Surrey,A-158,C,In Service,,Dry Detention Pond,1989
+288,,,,20111115,1001220634,Final AB,,ROW: 95A Ave & 155A St,034,20140428,Detention Ponds,Surrey,A-158,C,In Service,,Dry Detention Pond,1987
+289,,,,20111115,1001220698,Final AB,,,030,20140429,Above Ground Municipal,Surrey,A-375,C,In Service,,Dry Detention Pond,1981
+290,,,,20111115,1001220633,Final AB,,ROW: 95A Ave & 155A St,034,20140428,Detention Ponds,Surrey,A-158,C,In Service,,Dry Detention Pond,1996
+291,Updated to SHIM 2011,,,20111110,1001219558,Final AB,,18969 76 Ave Backyard,058,20120508,West Clayton Crk Pond,Private,,B,In Service,,Lake,2011
+292,Updated by SHIM ERC 2011,,,20110629,1001203167,,,Guildford Golf Course,053,20120619,Golf Course Pond,Private,,B,In Service,,Lake,
+293,Updated by SHIM ERC 2011,,,20110629,1001203168,,,,,20120619,,Private,,B,In Service,,Lake,
+294,,,,20120508,1001412075,,,,,20120508,,Private,,B,In Service,,Lake,
+295,Updated by SHIM ERC 2011,,,20110629,1001203169,,,,,20120619,Golf Course Lake,Private,,B,In Service,,Lake,
+296,Updated by SHIM ERC 2011,,,20110629,1001203170,,,,,20120619,Golf Course Lake,Private,,B,In Service,,Lake,
+297,,,,20101130,1001183434,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+298,,,,20101130,1001183415,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+299,,,,20100705,1001166269,Final AB,,,146,20100705,Peace Portal GC,Private,,C,In Service,,Wet Detention Pond,
+300,,,,20101130,1001183395,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+301,,,,20101122,1001182629,Final AB,,,,20101123,,Surrey,,B,In Service,,Lake,
+302,Updated by SHIM ERC 2011,,,20111110,1001219483,,,Golf Course,043,20120619,Hole #? Pond,Private,,B,In Service,,Lake,
+303,SW of Serpentine Sea Dam,,,20111114,1001220088,Final AB,1001220076,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+304,Updated by SHIM ERC 2011,,,20120130,1001359005,Initial AB,,North of Surrey Lake,,20120619,Water Hole,Private,,B,In Service,,Lake,
+305,Updated by SHIM ERC 2011,,,20120605,1001415010,,,Golf Course,054,20120619,,Private,,B,In Service,,Lake,
+306,Elgin Heritage Park,,,20100728,1001168651,Final AB,,13941 Crescent Rd,102,20150112,Above Ground Municipal DP,Surrey,4898-3170-00,A,In Service,,Lake,2002
+307,SW of Serpentine Sea Dam,,,20111114,1001220092,Final AB,1001220080,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+308,"North of CNR, Surrey Bend Park",,,20111110,1001219525,Final AB,,17180 108 Ave,016,20150112,Centre Crk Wetland,Surrey,,A,In Service,,Wetlands,2011
+309,SW of Serpentine Sea Dam,,,20111114,1001220094,Final AB,1001220082,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+310,SW of Serpentine Sea Dam,,,20111114,1001220095,Final AB,1001220083,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+311,Golf Course Lakes,,,20110628,1001202867,EC,,Morgan Crk Way @ Canterbury Dr ,,20111103,Titman Lake,Surrey,,A,In Service,,Lake,1995
+312,,,,20111025,1001216947,Final AB,,,,20111025,Cougar Creek Pond East North Cell,Surrey,4897-603,A,In Service,,Lake,2001
+313,Updated by SHIM 2010,,,20120516,1001413077,,,,067,20120516,,Surrey,,C,In Service,,Dry Detention Pond,
+314,Updated by SHIM 2010,,,20111114,1001219694,Final AB,,,067,20120516,,Private,,A,In Service,,Lake,2011
+315,,,,20120516,1001413076,,,,067,20120516,,Surrey,,A,In Service,,Wetlands,
+316,,,,20111115,1001220643,Final AB,,,123,20120601,Southmere Village Park,Surrey,9171,C,In Service,,Lake,1980
+317,,,,20111115,1001220642,Final AB,,,123,20120601,Southmere Village Park,Surrey,9171,C,In Service,,Lake,1980
+318,,,,20171012,1001898456,Final AB,,11530blk @ 14870blk,003,20171012,East Bon Accord Creek,Surrey,4810-3130-00,A,In Service,,Wet Detention Pond,2017
+319,Updated by SHIM 2009,,,20111114,1001219942,Final AB,,12499 106A Ave,010,20120523,Ditch Pond,Private,,AO,In Service,,Lake,2011
+320,Golf Course Lakes,,,20090313,1001084532,,,,,20130411,,Surrey,,A,In Service,,Lake,
+321,Golf Course Lakes,,,20101119,1001182436,Final AB,,,105,20130411,,Surrey,,C,In Service,,Wet Detention Pond,
+322,Golf Course Lakes,,,20101119,1001182437,Final AB,,,105,20130411,,Surrey,,C,In Service,,Wet Detention Pond,
+323,,,,20150722,1001831899,Final AB,,8085 136A St,042,20150722,,Surrey,7800-0054-00,C,In Service,,Dry Detention Pond,2001
+324,"Fraser Heights Park, Hjorth Crk",,,20111115,1001220465,Final AB,,10406 Fraserglen Dr,015,20160502,Above Ground Municipal DP,Surrey,7881-256,C,In Service,,Lake,1981
+325,,,,20150424,1001819830,Final AB,,,003,20160502,,Provincial,Gateway NB,A,In Service,,Wet Detention Pond,2015
+326,,,,20111114,1001220174,Final AB,,,115,,,Surrey,,B,In Service,,Lake,2011
+327,,,,20111114,1001220176,Final AB,,,117,20111114,Laura Ponds,Private,,A,In Service,,Lake,2011
+328,,,,20111114,1001220177,Final AB,,,117,20111114,Lower Vandrishe Lake,Surrey,,A,In Service,,Lake,2011
+329,,,,20111114,1001220178,Final AB,,,117,20111114,Breaks Lake,Surrey,,A,In Service,,Lake,2011
+330,,,,20111114,1001220180,Final AB,,,117,20111114,Upper Erickson Pond,Surrey,,A,In Service,,Lake,2011
+331,,,,20111114,1001220181,Final AB,,,117,20111114,Laura Ponds,Private,,A,In Service,,Lake,2011
+332,,,,20111114,1001220182,Final AB,,,117,20111114,Laura Ponds,Private,,A,In Service,,Lake,2011
+333,,,,20111114,1001220183,Final AB,,,117,20111114,Lower Vandrishe Pond,Surrey,,A,In Service,,Lake,2011
+334,,,,20111114,1001220185,Final AB,,,117,,,Surrey,,A,In Service,,Lake,2011
+335,,,,20110519,1001198300,,,,149,20111114,Jacobsen Crk Start Pond,Private,,B,In Service,,Lake,
+336,,,,20110519,1001198280,,,,138,20111114,Private Ponds,Private,,A,In Service,,Lake,
+337,,,,20110519,1001198302,Final AB,,,149,20111114,Private Pond,Private,,B,In Service,,Lake,
+338,,,,20111114,1001220260,Final AB,,,139,20111114,,Surrey,,B,In Service,,Lake,2011
+339,Golf Course Lakes,,,20101119,1001182432,Final AB,,,105,20130409,,Surrey,,C,In Service,,Wet Detention Pond,
+340,,,,20111114,1001220218,Final AB,,,126,20111114,Private Ponds,Private,,C,In Service,,Lake,2011
+341,,,,20111114,1001220219,Final AB,,,122,,,Surrey,,B,In Service,,Lake,2011
+342,,,,20111025,1001216948,,,,060,20140502,,Surrey,,C,In Service,,Lake,
+343,,,,20111114,1001220221,Final AB,,,136,20111114,,Private,,A,In Service,,Lake,2011
+344,,,,20110519,1001198276,,,,138,20111114,Private Pond,Private,,A,In Service,,Lake,
+345,,,,20140501,1001745497,,,,030,20140501,,Private,,C,In Service,,Wet Detention Pond,
+346,,,,20110519,1001198296,,,,,20111114,Private Ponds,Private,,B,In Service,,Lake,
+347,,,,20110519,1001198297,,,,,20111114,Private Ponds,Private,,B,In Service,,Lake,
+348,,,,20110926,1001214260,,,Surrey Golf Course,,20111013,,Private,,AO,In Service,,Lake,
+349,,,,20100706,1001166302,Final AB,,,046,20140502,,Surrey,,A,In Service,,Wetlands,
+350,Updated Correction (12-July-06),,,20110511,1001197497,,,,115,20110511,,Private,,B,In Service,,Lake,
+351,Updated Correction (12-July-06),,,20110511,1001197495,,,,115,20110511,,Private,,B,In Service,,Lake,
+352,Updated Correction (12-July-06),,,20110511,1001197496,,,,115,20110511,,Private,,B,In Service,,Lake,
+353,,,,20101122,1001182636,Final AB,,,114,20140502,Titman Lake,Surrey,,A,In Service,,Lake,
+354,,,,20101130,1001183393,Final AB,,Northview GC,065,20140502,,Private,,C,In Service,,Wet Detention Pond,
+355,,,,20111110,1001219587,EC,,,,20111110,Lower Elgin Heritage Pond,Surrey,,A,In Service,,Lake,2011
+356,,,,20111013,1001215759,,,Elgin Heritage Park,101,20111110,Upper Elgin Heritage Lake,Surrey,,A,In Service,,Lake,2001
+357,,,,20111110,1001219603,Final AB,,Elgin Heritage Park,,20111110,Ward's Marina Pond,Surrey,,A,In Service,,Lake,
+358,,,,20110629,1001203226,Final AB,,,054,20140502,,Surrey,4800-4010-00,B,In Service,,Wetlands,2001
+359,,,,20150527,1001826102,Final AB,,,073,20150527,,Surrey,7802-0392-00,B,In Service,,Wet Detention Pond,2006
+360,,,,20111114,1001220157,Final AB,,,111,,,Surrey,,B,In Service,,Lake,2011
+361,Trailer Park,,,20111114,1001219915,Final AB,,6280 KGB,072,20120626,Private Pond,Surrey,,A,In Service,,Lake,2011
+362,,,,20111114,1001219695,Final AB,,,049,20120710,,Private,,B,In Service,,Lake,2011
+363,,,,20161116,1001896818,,,,,20161116,,Surrey,,,In Service,,Lake,
+364,Updated to SHIM 2011,,,20111114,1001219699,Final AB,,,049,20120710,,Private,,B,In Service,,Lake,2011
+365,,,,20111117,1001220872,EC,1001220871,2204 160 St,125,20130102,Private Pond,Private,,C,In Service,,Other,
+366,,,,20111117,1001220867,Final AB,,2204 160 St,125,20130103,Detention Pond,Private,7804-0112-00,B,In Service,,Lake,2008
+367,Part of Tynehead Hatchery,,,20120612,1001415646,Final AB,,,025,20130220,,Surrey,1709-3090-00,A,In Service,,Lake,2012
+368,,,,20111115,1001220594,Final AB,,,122,20130529,Above Ground Municipal,Surrey,7885-2880,C,In Service,,Dry Detention Pond,1986
+369,Cougar Creek Pond South,,,20111115,1001220455,Final AB,,12490 69 Ave,060,20111115,Above Ground Municipal,Surrey,4897-603,A,In Service,,Lake,2001
+370,Cougar Creek Pond,,,20111115,1001220461,Final AB,,6935 122 St,060,20111115,Above Ground Municipal DP,Surrey,4897-602,A,In Service,,Lake,2001
+371,SW of Serpentine Sea Dam,,,20111114,1001219921,Final AB,,"Bounded by Hwy 99, KGB, Serpentine River",092,20111114,Farmland Pond,Private,,A,In Service,,Lake,2011
+372,,,,20111115,1001220713,Final AB,,,024,20130723,Above Ground Municipal,Surrey,9204,C,In Service,,Dry Detention Pond,1980
+373,,,,20111115,1001220655,Final AB,,,023,20130723,Above Ground Municipal,Surrey,A-296,C,In Service,,Dry Detention Pond,1981
+374,,,,20111115,1001220710,Final AB,,,024,20130723,Above Ground Municipal,Surrey,A-431,C,In Service,,Dry Detention Pond,1982
+375,Updated to SHIM 2007,,,20120530,1001414208,,,,042,20120530,,Surrey,,A,In Service,,Lake,
+376,Updated by SHIM 2007,,,20111114,1001219945,Final AB,,9050 140 St,032,20120530,Kiyo Pond,Surrey,,A,In Service,,Lake,2011
+377,Detention Pond,,,20111115,1001220625,Final AB,,,071,20140724,Above Ground Municipal,Surrey,A-205,C,In Service,,Dry Detention Pond,1990
+378,Detention Pond,,,20111115,1001220622,Final AB,,,071,20140724,Above Ground Municipal,Surrey,A-263,C,In Service,,Dry Detention Pond,1981
+379,Detention Pond,,,20111115,1001220626,Final AB,,,071,20140724,Above Ground Municipal,Surrey,A-205,C,In Service,,Dry Detention Pond,1999
+380,"As Per Sept. 16, 2016 Madrone Report",,,20170920,1001947329,,,,089,20170920,,Surrey,,B,In Service,,Lake,
+381,Detention Pond,,,20111115,1001220628,Final AB,,13320 58 Ave,071,20140724,Above Ground Municipal,Surrey,7883-4720-00,C,In Service,,Dry Detention Pond,1988
+382,Detention Pond,,,20111115,1001220707,Final AB,,,073,20140724,Above Ground Municipal,Surrey,7883-0204-00,C,In Service,,Dry Detention Pond,1991
+383,Detention Pond,,,20111115,1001220627,Final AB,,,071,20140724,Above Ground Municipal,Surrey,7881-2760-00,C,In Service,,Dry Detention Pond,1982
+384,Detention Pond,,,20121218,1001561706,Final AB,,,067,20140724,Above Ground Municipal,Surrey,3809-6020-00,C,In Service,,Dry Detention Pond,2012
+385,Detention Pond,,,20111115,1001220623,Final AB,,,071,20140724,Above Ground Municipal,Surrey,7883-4140-00,C,In Service,,Dry Detention Pond,1984
+386,Detention Pond,,,20121218,1001561707,Final AB,,,067,20140724,Above Ground Municipal,Surrey,3809-6020-00,C,In Service,,Dry Detention Pond,2012
+387,Detention Pond,,,20111115,1001220599,Final AB,,,070,20140724,Above Ground Municipal,Surrey,7803-0412-00,C,In Service,20070820,Dry Detention Pond,
+388,Detention Pond,,,20111115,1001220565,Final AB,,6518 168 St,066,20140725,Private DP,Surrey,7802-0040-00,B,In Service,,Other,2010
+389,Detention Pond,,,20111115,1001220452,Final AB,,3387 KGB,103,20140725,Above Ground Municipal,Surrey,7895-0272-00,B,In Service,,Wet Detention Pond,1998
+390,Detention Pond,,,20111115,1001220486,Final AB,,3132 Semiahmoo Trail,113,20140725,Above Ground Muncipal DP,Surrey,4896-511,B,In Service,,Wet Detention Pond,1997
+391,,,,20140725,1001757647,Final AB,,,112,20140725,,Surrey,7899-0033-00,,In Service,,Lake,2001
+392,,,,20150423,1001819776,,,,,20150423,,Surrey,,A,In Service,,Wet Detention Pond,2014
+393,,,,20171010,1001950557,Final AB,,,097,20171010,Halls Prairie P.S.,Surrey,4815-4140-00,A,In Service,,Forebay,2017
+394,"As Per Sept. 16, 2016 Madrone Report",,,20170920,1001947332,,,,089,20170920,,Surrey,,B,In Service,,Lake,
+395,"As Per Sept. 16, 2016 Madrone Report",,,20170920,1001947334,,,,089,20170920,,Surrey,,B,In Service,,Lake,
+396,,,,20111116,1001220839,Final AB,,,042,20171030,Detention Pond,Surrey,7888-0113,C,In Service,,Dry Detention Pond,1991
+397,,,,20100806,1001169412,Final AB,,Latimer Park,119,20111110,Latimer Lake,Surrey,,B,In Service,,Lake,
+398,,,,20110519,1001198281,,,,128,20111110,Private Ponds,Private,,B,In Service,,Lake,
+399,,,,20110519,1001198282,,,,128,20111110,Private Ponds,Private,,B,In Service,,Lake,
+400,,,,20110519,1001198283,,,,128,20111110,Private Ponds,Private,,B,In Service,,Lake,
+401,,,,20110519,1001198284,,,,128,20111110,Private Ponds,Private,,B,In Service,,Lake,
+402,,,,20110519,1001198285,,,,128,20111110,Private Ponds,Private,,B,In Service,,Lake,
+403,,,,20110519,1001198286,,,,129,20111110,Private Ponds,Private,,B,In Service,,Lake,
+404,,,,20110519,1001198287,,,,129,20111110,Private Ponds,Private,,B,In Service,,Lake,
+405,,,,20110519,1001198288,,,,129,20111110,Private Ponds,Private,,B,In Service,,Lake,
+406,,,,20110519,1001198289,,,,129,20111110,Private Ponds,Private,,B,In Service,,Lake,
+407,,,,20110519,1001198290,,,1903 196 St,129,20111110,Private Ponds,Private,,B,In Service,,Lake,
+408,,,,20110519,1001198291,,,,129,20111110,,Surrey,,A,In Service,,Lake,
+409,,,,20110519,1001198292,,,,129,20111110,Private Ponds,Private,,C,In Service,,Lake,
+410,,,,20110519,1001198293,,,,129,20111110,Private Ponds,Private,,C,In Service,,Lake,
+411,,,,20111110,1001219623,,,,129,20111110,Private Ponds,Surrey,,C,In Service,,Dry Detention Pond,2001
+412,,,,20111110,1001219635,,,,129,20111110,,Surrey,,A,In Service,,Lake,
+413,,,,20111110,1001219636,,,,129,20111110,,Surrey,,A,In Service,,Lake,
+414,"As Per July 20, 2011 Engineering ERC",,,20110817,1001209713,,,Fraser Hwy & 192 St NW Lots,068,20111110,McLellan Crk Ponds,Private,,B,In Service,,Lake,
+415,,,,20101130,1001183438,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+416,,,,20101130,1001183400,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+417,,,,20100708,1001166768,Final AB,,,147,20100708,,Private,,B,In Service,,Wet Detention Pond,
+418,,,,20100708,1001166771,Final AB,,,147,20100708,,Private,,B,In Service,,Wet Detention Pond,
+419,Hazelmere GC,,,20100708,1001166791,Final AB,,,147,20100708,,Private,,A,In Service,,Lake,
+420,,,,20100705,1001166270,Final AB,,,146,20100705,Peace Portal GC,Private,,A,In Service,,Lake,
+421,Hazelmere GC,,,20100708,1001166783,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+422,Updated Correction (12-July-06),,,20110511,1001197498,,,,115,20110511,,Private,,B,In Service,,Lake,
+423,Updated Correction (12-July-06),,,20110511,1001197499,,,,115,20110511,,Private,,B,In Service,,Lake,
+424,Updated Correction (12-July-06),,,20110511,1001197500,,,,115,20110511,,Private,,B,In Service,,Lake,
+425,,,,20110926,1001214249,,,Surrey Golf Course,,20110926,,Surrey,,AO,In Service,,Lake,
+426,,,,20111013,1001215845,,,Surrey Golf Course,,20111013,,Private,,AO,In Service,,Lake,
+427,,,,20110607,1001200242,,,,,20110607,,Surrey,,B,In Service,,Lake,
+428,,,,20110607,1001200243,,,,,20110607,,Surrey,,B,In Service,,Lake,
+429,,,,20110607,1001200244,,,,,20110607,,Surrey,,B,In Service,,Lake,
+430,,,,20110607,1001200245,,,,,20110607,,Surrey,,B,In Service,,Lake,
+431,,,,20160223,1001861125,Final AB,,,,20160223,,Provincial,SFPR Seg. F1,B,In Service,,Wetlands,2013
+432,,,,20111110,1001219543,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2001
+433,,,,20111110,1001219544,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2001
+434,,,,20111110,1001219545,Final AB,,"North of Greenbelt, South of 164 St & 77 Ave",055,20111110,Private Drainage Ponds,Surrey,,B,In Service,,Lake,2001
+435,,,,20111115,1001220705,Final AB,,,061,20130723,Above Ground Municipal,Surrey,4899-604,C,In Service,,Dry Detention Pond,2001
+436,,,,20160223,1001861126,Final AB,,,,20160223,,Provincial,SFPR Seg. F1,AO,In Service,,Wetlands,2013
+437,,,,20160422,1001872454,Final AB,,,,20160422,,Provincial,Gateway E1,,In Service,,Wet Detention Pond,2015
+438,,,,20180124,1001220719,Final AB,,,040,20180124,Above Ground Municipal,Surrey,7802-0271-00,C,In Service,,Dry Detention Pond,2004
+439,,,,20111103,1001217921,,,2950 Coydon Dr backyard,114,20111110,Upper Titman Lake,Private,,A,In Service,,Lake,
+440,,,,20111103,1001217935,,,2950 Coydon Dr backyard,114,20111110,Upper Titman Pond,Private,,B,In Service,,Lake,
+441,Backyard,,,20111108,1001218420,Final AB,,18255 88 Ave,037,20111110,Private Pond,Private,,B,In Service,,Lake,2011
+442,,,,20111110,1001219527,Final AB,,9948 181 St,027,20111110,Leoran Pond,Surrey,,A,In Service,,Lake,2011
+443,,,,20111110,1001219532,Final AB,,Bothwell Pond,035,20111110,Bothwell Pond 1,Surrey,,A,In Service,,Lake,2011
+444,SEE ALSO SS-026-460,,,20111115,1001220644,Final AB,,,026,20130723,Above Ground Municipal,Surrey,4899-6030-00,B,In Service,,Dry Detention Pond,2002
+445,,,,20111110,1001219536,Final AB,,17127 Fraser Hwy ,056,20111110,Private Pond,Surrey,,C,In Service,,Lake,2011
+446,,,,20111115,1001220720,Final AB,,,041,20130723,Above Ground Municipal,Surrey,7885-2150,C,In Service,,Dry Detention Pond,1987
+447,,,,20111115,1001220712,Final AB,,,024,20130723,Above Ground Municipal,Surrey,7885-162,C,In Service,,Dry Detention Pond,1986
+448,,,,20111115,1001220620,Final AB,,,043,20130723,Above Ground Municipal,Surrey,7887-5790,B,In Service,,Dry Detention Pond,1989
+449,Boundary Park,,,20111115,1001220462,Final AB,,6058 Boundary Dr W,070,20111115,Above Ground Municipal DP,Surrey,7883-077,C,In Service,,Dry Detention Pond,1988
+450,,,,20111115,1001220584,Final AB,,,024,20130723,Above Ground Municipal,Surrey,7887-4390,C,In Service,,Dry Detention Pond,1990
+451,,,,20111115,1001220709,Final AB,,,024,20130723,Above Ground Municipal,Surrey,A-493,C,In Service,,Dry Detention Pond,1989
+452,Morgan Heights,,,20111115,1001220460,Initial AB,,16151 25 Ave,115,20111115,Above Ground Municipal DP,Surrey,7805-0126-00,B,In Service,,Wet Detention Pond,2010
+453,Morgan Heights,,,20111115,1001220459,Initial AB,,16151 25 Ave,115,20111115,Above Ground Municipal DP,Surrey,7805-0126-00,B,In Service,,Wet Detention Pond,2010
+454,Morgan Heights,,,20111115,1001220458,Initial AB,,16086 28 Ave,115,20111115,Above Ground Municipal DP,Surrey,7805-0126-00,B,In Service,,Wet Detention Pond,2010
+455,,,,20111115,1001220640,Final AB,,,123,20180419,Above Ground Municipal,Surrey,D-2402,C,In Service,,Dry Detention Pond,1993
+456,,,,20111114,1001220199,Final AB,,2916 184 St,118,20111114,Vandrishe Ponds,Private,,A,In Service,,Lake,2011
+457,,,,20111114,1001220200,Final AB,,,119,20111114,25th Ave Ponds,Surrey,,A,In Service,,Lake,2011
+458,,,,20111114,1001220201,Final AB,,2916 184 St,118,20111114,Vandrishe Ponds,Private,,A,In Service,,Lake,2011
+459,,,,20111114,1001220204,Final AB,,2916 184 St,118,20111114,Vandrishe Ponds,Private,,A,In Service,,Lake,2011
+460,,,,20111114,1001220206,Final AB,,,118,,,Surrey,,B,In Service,,Lake,2011
+461,,,,20111114,1001220207,Final AB,,,118,,,Surrey,,B,In Service,,Lake,2011
+462,,,,20120517,1001413092,Final AB,,,067,20120517,,Surrey,7807-0159-00,A,In Service,,Wetlands,2010
+463,,,,20111114,1001219690,Final AB,,,079,20111114,,Private,,C,In Service,,Lake,2011
+464,,,,20120517,1001413089,Final AB,,,067,20120517,,Surrey,7807-0159-00,A,In Service,,Lake,2010
+465,,,,20111114,1001219692,Final AB,,,079,20111114,,Private,,C,In Service,,Lake,2011
+466,,,,20111114,1001219693,Final AB,,,065,20111114,,Private,,A,In Service,,Lake,2011
+467,,,,20111115,1001220601,Final AB,,15286 21B Ave,124,20111117,Above Ground Municipal DP,Surrey,7883-202,C,In Service,,Dry Detention Pond,1984
+468,as per May 2007 ERC,,,20111114,1001219696,Final AB,,,075,20111114,,Private,,B,In Service,,Lake,2011
+469,,,,20120517,1001413086,Final AB,,,067,20120517,,Surrey,7807-0159-00,A,In Service,,Lake,2010
+470,,,,20120517,1001413083,Final AB,,,067,20120517,,Surrey,7807-0159-00,A,In Service,,Lake,2010
+471,,,,20120517,1001413080,Final AB,,,067,20120517,,Surrey,7807-0159-00,A,In Service,,Lake,2010
+472,,,,20110629,1001203164,,,Guildford Golf Course,,20120606,,Surrey,,B,In Service,,Lake,
+473,"As Per July 20, 2011 Engineering ERC",,,20111114,1001219704,Final AB,,,068,20111114,McLellan Crk,Private,,B,In Service,,Lake,2011
+474,,,,20101130,1001183409,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+475,,,,20101130,1001183397,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+476,,,,20101130,1001183448,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+477,,,,20101130,1001183399,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+478,Hazelmere GC,,,20100708,1001166781,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+479,,,,20100705,1001166271,Final AB,,,146,20100705,Peace Portal GC,Private,,A,In Service,,Lake,
+480,,,,20100706,1001166280,Final AB,,,,20100706,LOGGING DITCH PS,Surrey,4802-4020-00,A,In Service,,Forebay,2006
+481,Overflow for Nicomekl,,,20111110,1001219606,EC,,Elgin Heritage Park,102,20111128,Elgin Heritage Park Forebay,Surrey,,A,In Service,,Lake,
+482,Morgan Creek Ponds,,,20101119,1001182439,Final AB,,38 Ave & 158 St,,20111128,,Surrey,,B,In Service,,Lake,1996
+483,,,,20120514,1001412519,,,Cloverdale Racetrack,077,20120514,,Private,,C,In Service,,Wet Detention Pond,
+484,,,,20111115,1001220649,Final AB,,150 St & 100 Ave,023,20111116,Above Ground Private DP,Private,A-094,C,In Service,,Dry Detention Pond,1980
+485,,,,20111115,1001220650,Final AB,,150 St & 100 Ave,023,20111116,Above Ground Private DP,Private,A-094,C,In Service,,Dry Detention Pond,1980
+486,,,,20111116,1001220823,Final AB,,Barry Mather Park,033,20111116,Mathers Park DP,Surrey,4264,C,In Service,,Dry Detention Pond,1978
+487,,,,20111116,1001220836,Final AB,,,041,20111116,Tulsy Detention Pond,Surrey,9438,B,In Service,,Dry Detention Pond,1986
+488,,,,20100708,1001166793,Final AB,,,,20111114,,Private,,A,In Service,,Lake,
+489,,,,20110519,1001198298,,,,,20111114,,Private,,B,In Service,,Lake,
+490,,,,20110519,1001198277,,,,138,20111114,Private Ponds,Private,,A,In Service,,Lake,
+491,,,,20110519,1001198278,,,,138,20111114,Private Ponds,Private,,A,In Service,,Lake,
+492,,,,20110519,1001198279,,,,138,20111114,Private Ponds,Private,,A,In Service,,Lake,
+493,,,,20110607,1001200241,,,,146,20111110,,Surrey,,B,In Service,,Lake,
+494,,,,20100705,1001166272,Final AB,,Peace Portal GC,146,20111110,Peace Portal GC,Private,,C,In Service,,Wet Detention Pond,
+495,,,,20100705,1001166273,Final AB,,Peace Portal GC,146,20111110,Peace Portal GC,Private,,B,In Service,,Lake,
+496,,,,20101130,1001183445,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+497,Hazelmere GC,,,20100708,1001166787,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+498,Hazelmere GC,,,20100708,1001166789,Final AB,,,147,20100708,,Private,,B,In Service,,Wet Detention Pond,
+499,,,,20101130,1001183404,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+500,,,,20101130,1001183390,Final AB,,Northview GC,065,20101130,,Private,,A,In Service,,Lake,
+501,,,,20101130,1001183396,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+502,,,,20111115,1001220561,Final AB,,Golden Ears & 96 Ave,027,20111128,Above Ground Private,Translink,1R03,C,In Service,,Wet Detention Pond,2009
+503,,,,20111110,1001219601,,,Elgin Heritage Park,102,20140502,Elgin Heritage Park Forebay,Surrey,,B,In Service,,Wetlands,2011
+504,,,,20111116,1001220832,Final AB,,Barry Mathers Park,033,20140502,Detention Pond,Surrey,9004,C,In Service,,Dry Detention Pond,1978
+505,SW of Serpentine Sea Dam,,,20111114,1001220099,Final AB,1001220087,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+506,,,,20111114,1001220100,Final AB,,,099,,,Surrey,,B,In Service,,Lake,2011
+507,Elevation 40.29,,,20130528,1001597908,Final AB,,17130blk 96 Ave,026,20140502,Biopond No 3.4,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+508,Elevation 41.01,,,20130528,1001597909,Final AB,,17130blk 96 Ave,026,20140502,Biopond No 3.5,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+509,,,,20130528,1001597912,Final AB,,17330blk 96 Ave,026,20140502,Bioswale No 4,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+510,Elevation 51.52,,,20130529,1001597989,Final AB,,17390blk 96 Ave,026,20140502,Biopond No 5,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+511,Elevation 52.46,,,20130529,1001598004,Final AB,,17410blk 96 Ave,026,20140502,Biopond No 6,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+512,Elevation 53.39,,,20130529,1001598023,Final AB,,17430blk 96 Ave,026,20140502,Biopond No 7,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+513,,,,20130606,1001598975,Final AB,,,121,20140502,,Surrey,9536,C,In Service,,Dry Detention Pond,1980
+514,,,,20130802,1001607989,,,,097,20140502,,Surrey,,A,In Service,,Forebay,
+515,,,,20140321,1001736560,Final AB,,,035,20140502,,Surrey,7888-0070-00,C,In Service,,Dry Detention Pond,1990
+516,,,,20140505,1001746100,Final AB,,,112,20140505,Chantrell Detention Pond,Surrey,4898-6060-00,A,In Service,,Lake,2014
+517,,,,20111115,1001220582,Final AB,,,033,20140506,Above Ground Municipal,Surrey,9427,C,In Service,,Dry Detention Pond,1979
+518,,,,20130207,1001566801,Initial AB,,Northview Golf Course,065,20140502,,Private,,C,In Service,,Wet Detention Pond,
+519,Det. Pond,,,20140506,1001746547,Final AB,,,033,20140506,,Surrey,A364,,In Service,,Lake,1981
+520,,,,20111115,1001220609,Final AB,,,042,20140507,Above Ground Municipal,Surrey,7886-0459-00,C,In Service,,Other,1991
+521,Elevation 14.14,,,20130528,1001597881,Final AB,,17100blk 96 Ave,026,20140502,Biopond No 1,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+522,Elevation 28.88,,,20130528,1001597883,Final AB,,16970blk 96 Ave,026,20140502,Biopond No 2,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+523,,,,20130528,1001597904,Final AB,,17130blk 96 Ave,026,20140502,Biopond No 3,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+524,Elevation 38.05,,,20130528,1001597905,Final AB,,17130blk 96 Ave,026,20140502,Biopond No 3.1,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+525,Elevation 38.85,,,20130528,1001597906,Final AB,,17130blk 96 Ave,026,20140502,Biopond No 3.2,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+526,Elevation 39.57,,,20130528,1001597907,Final AB,,17130blk 96 Ave,026,20140502,Biopond No 3.3,Surrey,1707-3180-00,B,In Service,,Dry Detention Pond,2012
+527,Hazelmere GC,,,20100708,1001166778,Final AB,,,147,20100708,,Private,,A,In Service,,Lake,
+528,Hazelmere GC,,,20100708,1001166777,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+529,,,,20101130,1001183442,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+530,Hazelmere GC,,,20100708,1001166780,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+531,,,,20100708,1001166772,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+532,Hazelmere GC,,,20100708,1001166784,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+533,Hazelmere GC,,,20100708,1001166786,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+534,,,,20100721,1001168065,Final AB,,,136,20100721,,Private,,C,In Service,,Wet Detention Pond,
+535,,,,20101130,1001183454,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+536,,,,20101130,1001183453,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+537,,,,20100708,1001166761,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+538,,,,20111115,1001220690,Final AB,,,113,20130723,Above Ground Municipal,Surrey,7888-0020,C,In Service,,Dry Detention Pond,1990
+539,,,,20101130,1001183388,Final AB,,Northview GC,065,20101130,,Private,,A,In Service,,Lake,
+540,,,,20101130,1001183398,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+541,Hazelmere GC,,,20100708,1001166788,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+542,,,,20100708,1001166792,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+543,,,,20101130,1001183389,Final AB,,Northview GC,065,20101130,,Private,,A,In Service,,Lake,
+544,Hazelmere GC,,,20100708,1001166782,Final AB,,,147,20100708,,Private,,C,In Service,,Wet Detention Pond,
+545,,,,20111115,1001220614,Final AB,,,043,20130723,Above Ground Municipal,Surrey,A-531,C,In Service,,Dry Detention Pond,1982
+546,,,,20111114,1001220187,Final AB,,,117,,,Surrey,,B,In Service,,Lake,2011
+547,,,,20111114,1001220188,Final AB,,,117,,,Surrey,,A,In Service,,Lake,2011
+548,,,,20111114,1001220189,Final AB,,,117,,,Surrey,,A,In Service,,Lake,2011
+549,,,,20111115,1001220602,Final AB,,,124,20130723,Above Ground Municipal,Surrey,7883-038,C,In Service,,Dry Detention Pond,1984
+550,,,,20111115,1001220629,Final AB,,,025,20130723,Above Ground Municipal,Surrey,7801-0194-00,C,In Service,,Dry Detention Pond,2003
+551,,,,20110519,1001198295,,,,,20120130,Private Pond,Private,,B,In Service,,Lake,
+552,,,,20111115,1001220604,Final AB,,,129,20120130,Above Ground Municipal,Surrey,4805-6010-00,C,In Service,,Dry Detention Pond,2006
+553,,,,20111115,1001220610,Final AB,,,042,20140507,Above Ground Municipal,Surrey,7886-0459-00,C,In Service,,Other,1991
+554,Updated by SHIM 2009,,,20100827,1001171252,Final AB,,,000,20140507,Pattullo PS,Surrey,4516,A,In Service,,Forebay,1980
+555,,,,20140507,1001747322,,,,022,20140507,,Private,,,In Service,,Lake,
+556,,,,20100708,1001166770,Final AB,,,147,20100708,,Private,,B,In Service,,Wet Detention Pond,
+557,,,,20100708,1001166769,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+558,,,,20101130,1001183412,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+559,,,,20100706,1001166442,Final AB,,,146,20100706,,Private,,B,In Service,,Dry Detention Pond,
+560,,,,20101130,1001183420,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+561,,,,20101130,1001183394,Final AB,,Northview GC,065,20101130,,Private,,C,In Service,,Wet Detention Pond,
+562,,,,20100708,1001166773,Final AB,,,147,20100708,,Private,,B,In Service,,Lake,
+563,"As per East Fraser Heights Env. Study June, 2015",,,20111110,1001219531,Final AB,,9999 179 St,027,20151013,Lyncean Pond North,Private,,B,In Service,,Lake,2011
+564,,,,20110629,1001203165,,,Guildford Golf Course,,20120606,,Surrey,,B,In Service,,Lake,
+565,Updated to SHIM 2006,,,20120629,1001416870,,,,063,20120629,,Surrey,,A,In Service,,Wetlands,
+566,Updated to SHIM 2006,,,20120629,1001416869,,,,063,20120629,,Surrey,,A,In Service,,Wetlands,
+567,,,,20120629,1001416877,,,,063,20120629,,Surrey,,A,In Service,,Wetlands,
+568,,,,20120629,1001416874,,,,063,20120629,,Surrey,,A,In Service,,Wetlands,
+569,,,,20111115,1001220576,Final AB,,,063,20120629,Above Ground Municipal,Surrey,7898-0110-00,C,In Service,,Lake,1999
+570,,,,20101130,1001183392,Final AB,,Northview GC,065,20130207,,Private,,C,In Service,,Wet Detention Pond,
+571,,,,20111115,1001220588,Final AB,,,043,20140507,Above Ground Municipal,Surrey,7882-2120-00,C,In Service,,Dry Detention Pond,1984
+572,,,,20111115,1001220653,Final AB,,,023,20140508,Above Ground Municipal,Surrey,A-032,C,In Service,,Dry Detention Pond,1980
+573,Updated by SHIM 2007,,,20110629,1001203171,,,,,20120606,Surrey Lake,Surrey,4800-4010-00,A,In Service,,Lake,2001
+574,Utility ROW,,,20111114,1001219852,Final AB,,12586 80 Ave,050,,Drainage Pond,Surrey,,C,In Service,,Wet Detention Pond,2011
+575,,,,20111114,1001220257,Final AB,,,137,20111114,Private Ponds,Surrey,,B,In Service,,Lake,2011
+576,,,,20110607,1001200236,,,,146,20111114,,Private,,B,In Service,,Lake,
+577,,,,20110607,1001200237,,,,146,20111114,,Private,,B,In Service,,Lake,
+578,,,,20110607,1001200238,,,,146,20111114,,Private,,B,In Service,,Lake,
+579,"As Per July 20, 2011 Engineering ERC",,,20111114,1001219709,Final AB,,,068,20111114,,Private,,B,In Service,,Lake,2011
+580,Guildford Golf Course,,,20111115,1001220470,Final AB,,7929 152 St,053,20120606,Above Ground Municipal DP,Surrey,7899-0172-00,B,In Service,,Lake,2000
+581,,,,20111108,1001218427,Final AB,,8022 146 St,043,20120606,Bear Crk Side Pond,Surrey,,A,In Service,,Lake,
+582,,,,20111110,1001219480,Final AB,1001218427,8022 146 St,043,20120606,Bear Crk Side Pond,Surrey,,C,In Service,,Lake,
+583,,,,20120412,1001407989,,,,097,20120606,,Private,,C,In Service,,Lake,
+584,,,,20160223,1001861209,Final AB,,,026,20160224,,Provincial,SFPR Seg. F1,AO,In Service,,Wet Detention Pond,2013
+585,,,,20111114,1001220160,Final AB,,Chantrell Park ,112,20120315,Chantrell DP North,Surrey,4895-602,A,In Service,,Lake,1995
+586,,,,20111110,1001219671,Final AB,,,059,20120320,Private Pond,Private,,C,In Service,,Lake,2011
+587,,,,20111114,1001219703,Final AB,,,056,20120320,,Private,,AO,In Service,,Forebay,2011
+588,,,,20111114,1001220186,Final AB,,,117,20120402,Laura Ponds,Private,,A,In Service,,Lake,2011
+589,Updated to SHIM 2011,,,20120509,1001412081,,,,048,20120509,South Latimer Crk,Surrey,,A,In Service,,Wetlands,
+590,Updated to SHIM 2011,,,20120509,1001412080,,,,,20120509,,Surrey,,B,In Service,,Lake,
+591,Updated to SHIM 2011,,,20111114,1001219697,Final AB,,,048,20120509,,Private,,A,In Service,,Lake,2011
+592,Updated to SHIM 2011,,,20111114,1001219701,Final AB,,,049,20120509,,Private,,B,In Service,,Lake,2011
+593,Updated to SHIM 2011,,,20120509,1001412082,,,,048,20120509,,Surrey,,C,In Service,,Wetlands,
+594,,,,20111114,1001219702,Final AB,,,049,20120509,,Private,,A,In Service,,Lake,2011
+595,Updated to SHIM 2011,,,20120509,1001412095,,,,048,20120509,,Surrey,,A,In Service,,Wetlands,
+596,,,,20120509,1001412076,,,,,20120509,,Surrey,,B,In Service,,Lake,
+597,Updated to SHIM 2011,,,20111114,1001219698,Final AB,,,049,20120509,,Private,,B,In Service,,Lake,2011
+598,,,,20111115,1001220579,Final AB,,,112,20130723,Above Ground Municipal,Surrey,9444,C,In Service,,Dry Detention Pond,1980
+599,,,,20111115,1001220586,Final AB,,,041,20130723,Above Ground Municipal,Surrey,4898-605,C,In Service,,Dry Detention Pond,1999
+600,,,,20111115,1001220575,Final AB,,,063,20130723,Above Ground Municipal,Surrey,7801-0135-00,B,In Service,,Wetlands,2003
+601,,,,20111115,1001220691,Final AB,,,135,20130723,Above Ground Municipal,Surrey,A166,C,In Service,,Dry Detention Pond,1981
+602,,,,20111115,1001220621,Final AB,,,045,20130723,Above Ground Municipal,Surrey,7893-0064-00,C,In Service,,Dry Detention Pond,2000
+603,,,,20111115,1001220577,Final AB,,,112,20130723,Above Ground Municipal,Surrey,7887-3087,C,In Service,,Dry Detention Pond,1990
+604,,,,20111115,1001220704,,,,050,20130723,Above Ground Municipal,Surrey,9550,C,In Service,,Dry Detention Pond,1980
+605,,,,20111115,1001220574,Final AB,,,041,20130723,Above Ground Municipal,Surrey,5097-134,C,In Service,,Dry Detention Pond,1999
+606,,,,20111115,1001220692,Final AB,,,135,20130723,Above Ground Municipal,Surrey,A387,C,In Service,,Dry Detention Pond,1983
+607,,,,20111115,1001220694,Final AB,,,135,20130723,Above Ground Municipal,Surrey,A558,C,In Service,,Dry Detention Pond,1983
+608,Detention Pond,,,20111115,1001220659,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7886-0680-00,C,In Service,,Dry Detention Pond,1990
+609,Detention Pond,,,20140721,1001756697,Final AB,,,052,20140722,,Surrey,3486,,In Service,,Lake,1979
+610,Detention Pond,,,20140721,1001756749,Final AB,,,,20140722,,Surrey,9462,,In Service,,Lake,1980
+611,Detention Pond,,,20140722,1001757161,Final AB,,,,20140722,,Surrey,A-531,,In Service,,Lake,1982
+612,Detention Pond,,,20111115,1001220663,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7886-0442-00,C,In Service,,Dry Detention Pond,1987
+613,Detention Pond,,,20140722,1001757130,Final AB,,,,20140722,,Surrey,7881-3910-00,,In Service,,Lake,1986
+614,Detention Pond,,,20140722,1001756909,Final AB,,,,20140722,,Surrey,7886-4892-00,,In Service,,Lake,1988
+615,Detention Pond,,,20140722,1001757168,Final AB,,,,20140722,,Surrey,A-531,,In Service,,Lake,1982
+616,Detention Pond,,,20111115,1001220615,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7886-0347-00,C,In Service,,Dry Detention Pond,1988
+617,Detention Pond,,,20111115,1001220665,Final AB,,,078,20140723,Above Ground Municipal,Surrey,D-1301,C,In Service,,Dry Detention Pond,1990
+618,,,,20140723,1001757175,Final AB,,,061,20140723,,Surrey,A-417,,In Service,,Lake,1983
+619,,,,20111115,1001220600,Final AB,,,071,20140722,Above Ground Municipal,Surrey,A-205,C,In Service,,Dry Detention Pond,1981
+620,Detention Pond,,,20140703,1001755220,Final AB,,,061,20140723,,Surrey,9187,,In Service,,Lake,1979
+621,Detention Pond,,,20140723,1001757210,Final AB,,,061,20140723,,Surrey,7881-0030-00,,In Service,,Lake,1984
+622,,,,20111115,1001220596,Final AB,,,061,20140723,Above Ground Municipal,Surrey,A-389,C,In Service,,Dry Detention Pond,1982
+623,Detention Pond,,,20140722,1001757101,Final AB,,,,20140722,,Surrey,7882-1920-00,,In Service,,Lake,1984
+624,Detention Pond,,,20111115,1001220662,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7887-0139-00,C,In Service,,Dry Detention Pond,1989
+625,Detention Pond,,,20111115,1001220664,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7886-0340-00,C,In Service,,Dry Detention Pond,1988
+626,Detention Pond,,,20111115,1001220666,Final AB,,,078,20140723,Above Ground Municipal,Surrey,D-1301,C,In Service,,Dry Detention Pond,1990
+627,Detention Pond,,,20111115,1001220660,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7888-0574-00,C,In Service,,Dry Detention Pond,1990
+628,Detention Pond,,,20140722,1001756956,,,,,20140722,,Surrey,7885-0277-00,,In Service,,Lake,1990
+629,Detention Pond,,,20140723,1001757342,Final AB,,,061,20140723,,Surrey,9323,,In Service,,Lake,1979
+630,Detention Pond,,,20140723,1001757202,Final AB,,,061,20140723,,Surrey,A-225,,In Service,,Lake,1981
+631,Detention Pond,,,20111115,1001220661,Final AB,,,078,20140723,Above Ground Municipal,Surrey,7887-0134-00,C,In Service,,Dry Detention Pond,1988
+632,"As per East Fraser Heights Env. Study June, 2015",,,20111110,1001219530,Final AB,,9965 179 St,027,20151013,Lyncean Pond South,Private,,B,In Service,,Lake,2011
+633,"As per East Fraser Heights Env. Study June, 2015",,,20151013,1001842145,,,,,20151013,,Surrey,,A,In Service,,Wetlands,
+634,"As per East Fraser Heights Env. Study June, 2015",,,20151013,1001842159,,,,,20151013,,Surrey,,B,In Service,,Wet Detention Pond,
+635,,,,20111115,1001220608,Final AB,,,032,20140514,Above Ground Municipal,Surrey,7887-0523-00,C,In Service,,Dry Detention Pond,1990
+636,,,,20111115,1001220606,Final AB,,,032,20140515,Above Ground Municipal,Surrey,7887-0439-00,C,In Service,,Dry Detention Pond,1990
+637,,,,20111115,1001220607,Final AB,,,032,20140514,Above Ground Municipal,Surrey,7886-0225-00,C,In Service,,Dry Detention Pond,1988
+638,,,,20111115,1001220605,Final AB,,,032,20140515,Above Ground Municipal,Surrey,A420,C,In Service,,Dry Detention Pond,1981
+639,,,,20111115,1001220583,Final AB,,,032,20140514,Above Ground Municipal,Surrey,7886-0225-00,C,In Service,,Dry Detention Pond,1988
+640,,,,20111115,1001220708,Final AB,,,022,20140523,Above Ground Municipal,Surrey,A-324,C,In Service,,Dry Detention Pond,1983
+641,,,,20111115,1001220646,Final AB,,,014,20160426,Above Ground Municipal,Surrey,7887-3361-00,,In Service,,Wet Detention Pond,1987
+642,,,,20111114,1001220102,Final AB,,,098,,,Surrey,,B,In Service,,Lake,2011
+643,Updated to SHIM 2011,,,20120510,1001412146,,,,049,20140529,,Surrey,,A,In Service,,Wetlands,
+644,,,,20111114,1001220106,Final AB,,,098,,Joey Brk,Surrey,,B,In Service,,Lake,2011
+645,,,,20111114,1001220107,Final AB,,,098,,Gary Brk,Surrey,,B,In Service,,Lake,2011
+646,,,,20111114,1001220108,Final AB,,,098,,Gary Brk,Surrey,,B,In Service,,Lake,2011
+647,,,,20111114,1001220109,Final AB,,,098,,,Surrey,,C,In Service,,Lake,2011
+648,Updated to SHIM 2011,,,20140529,1001751375,,1001412146,,049,20140529,,Surrey,,A,In Service,,Wetlands,
+649,,,,20111110,1001219575,EC,,8425 196 St,049,20140529,Private Pond,Private,,A,In Service,,Lake,2011
+650,,,,20111114,1001220133,Final AB,1001220109,,098,,,Surrey,,C,In Service,,Lake,2011
+651,Updated to SHIM 2011,,,20111110,1001219571,EC,,Port Kells Park,049,20140529,Port Kells Park Wetland,Private,,A,In Service,,Wetlands,2001
+652,,,,20111115,1001220701,Final AB,,,050,20140722,Above Ground Municipal,Surrey,A-249,C,In Service,,Dry Detention Pond,1981
+653,,,,20111115,1001220702,Final AB,,,050,20140722,Above Ground Municipal,Surrey,7883-2820-00,C,In Service,,Dry Detention Pond,1986
+654,SW of Serpentine Sea Dam,,,20111114,1001220113,Final AB,1001220089,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+655,SW of Serpentine Sea Dam,,,20111114,1001220114,Final AB,1001220090,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+656,SW of Serpentine Sea Dam,,,20111114,1001220115,Final AB,1001220091,"Bounded by Hwy 99, KGB, Serpentine River",092,,Farmland Pond,Private,,A,In Service,,Lake,2011
+657,,,,20111115,1001220617,Final AB,,,050,20130723,Above Ground Municipal,Surrey,7884-0780-00,C,In Service,,Dry Detention Pond,1986
+658,,,,20111115,1001220616,Final AB,,,050,20130723,Above Ground Municipal,Surrey,7887-0970-00,C,In Service,,Dry Detention Pond,1988
+659,,,,20111115,1001220619,Final AB,,,050,20130723,Above Ground Municipal,Surrey,7887-0970-00,C,In Service,,Dry Detention Pond,1988
+660,,,,20111115,1001220695,Final AB,,,135,20130723,Above Ground Municipal,Surrey,7883-342,C,In Service,,Dry Detention Pond,1985
+661,,,,20111115,1001220697,Final AB,,,021,20130723,Above Ground Municipal,Surrey,7887-3320,C,In Service,,Dry Detention Pond,1990
+662,,,,20111115,1001220618,Final AB,,,050,20130723,Above Ground Municipal,Surrey,7885-1620-00,C,In Service,,Dry Detention Pond,1988
+663,,,,20111115,1001220693,Final AB,,,135,20130723,Above Ground Municipal,Surrey,A522,B,In Service,,Dry Detention Pond,1984
+664,,,,20111114,1001220105,Final AB,,,098,20130723,,Surrey,,B,In Service,,Lake,2011
+665,NE of Serpentine Sea Dam,,,20111114,1001219917,Final AB,,14630 48 Ave,093,20131007,Farmland Pond,Private,,B,In Service,,Lake,2011
+666,,,,20131105,1001219470,Final AB,,9920 Whalley Blvd,022,20131106,Surrey Centre DP (Quibble Crk),Surrey,4801-6050-00,A,In Service,,Lake,2010
+667,,,,20131203,1001720660,,,,146,20131203,,Private,,B,In Service,,Lake,
+668,Private Detention for Greenhouses,,,20131204,1001720698,,,,138,20131204,,Private,,C,In Service,,Lake,
+669,Private Detention for Greenhouses,,,20131204,1001720699,,,,138,20131204,,Private,,C,In Service,,Lake,
+670,,,,20170411,1001926484,Initial AB,,,062,20170418,Newton Town Centre Detention Pond,Surrey,4811-6010-00,B,In Service,,Wet Detention Pond,2016
+671,,,,20170418,1001927112,Final AB,,,131,20170418,,Surrey,3822,C,In Service,,Dry Detention Pond,1980
+672,,,,20131112,1001718312,Final AB,,S of 26 Ave & E of 192 St,119,20140922,,Surrey,4812-9130-00,A,In Service,,Lake,2014
