@@ -327,20 +327,10 @@ def find_synonyms_antonyms(word):
     return (synonyms, antonyms)
 
 
-
-if __name__ == "__main__":
-    # data_model = parse_dataset.parse_models()
-    # graphical_model = build_graph(data_model)
-    # graphical_model.cluster()
-
-    # build_similarity_matrices(data_model, kb_concepts)
-
-    # -----
-    kb_concepts = parse_dataset.collect_concepts_beta()
-    tags = kb_concepts.keys()
-
-    # -----
+def toy_example():
     import toy.data as td
+    kb_concepts = parse_dataset.collect_concepts_beta()
+    # tags = kb_concepts.keys()
 
     # local matches
     PARKS_metadata_tags = list(td.PARKS_metadata['tags'])
@@ -372,6 +362,8 @@ if __name__ == "__main__":
 
     schema_source_names = [('PARKS', 'tag'), ('IMPORTANTTREES', 'tag'), ('PARKSPECIMENTREES', 'tag'), ('PARKS', 'category'), ('IMPORTANTTREES', 'category'), ('PARKSPECIMENTREES', 'category'), ('PARKS', 'attributes'), ('IMPORTANTTREES', 'attributes'), ('PARKSPECIMENTREES', 'attributes')]
 
+    # initialization
+    # for a dataset, between the pair of (its metadata tags, its schema)
     matching_tasks = [(0, 6), (1, 7), (2, 8), (3, 6), (4, 7), (5, 8)]
 
     similarity_matrices = []
@@ -461,42 +453,175 @@ if __name__ == "__main__":
         matrix = match_table_by_values_beta(src, tar, src_schema, tar_schema)
         pp.pprint({'name':data_source_name, 'src':src_schema, 'tar':tar_schema, 'matrix':matrix})
 
-    # summarization:
-    # 1) get unique values for an attribute column
-    # 2) rank the attribute names by num of non-null values in column
-    #
-    # training with imperfect labels
-    # kb values for concept - probabilities generation and propagation
-    # use thesaurus wordnet to find related concepts names, cluster
-    # correct knowledge base errors by imperfect training
-    # get new concepts from summarization
-    #
-    # train classifier
-    # better distance functions
-    #
-    # use actual complete datasource values
-    # fix potential matrix bug
-    #
-    # use numpy and pandas
-    #
-    # create mappings as training data
-    #
-    # ignore the many-to-one mapping constraint when mapping
-    #
-    # improve schema matching
-    #
-    # overcome np-completeness
-    # use iterative algorithm
-    # use greedy algorithms
-    # run in small batches
-    #
-    # dataset: flat csv or json
-    # metadata concepts
-    # schema has sample values
-    # need some training data!
-    # need run on server!
-    #
-    # measuring precision and recall, need to know real concepts and mappings
-    #     need to find differences in terms of number of concepts and number of wrong mappings
+def serialize_for_rdf(str):
+    return str.replace(' ', '-')
 
+from rdflib import Graph
+from rdflib import URIRef, BNode, Literal
+from rdflib.namespace import RDFS, FOAF, RDF
+from rdflib.collection import Collection
+import pprint
+from urllib.parse import urlencode, quote_plus
+def build_kb(list_of_concepts):
+    kb = Graph()
 
+    for concept in list_of_concepts:
+        concept_rdf = URIRef(serialize_for_rdf(concept[0]))
+        datasources = concept[1]
+        # for datasource in datasources:
+        #     kb.add((concept_rdf, FOAF.name, URIRef(serialize_for_rdf(datasource))))
+
+    # for stmt in kb:
+    #     pprint.pprint(stmt)
+    return kb
+
+# TODO WRONG! correct representation - collections, properties
+def update_kb_with_match(kb, match_entry):
+    concept_rdf = URIRef(serialize_for_rdf(match_entry['concept']))
+    datasource_rdf = Literal(match_entry['datasource'])
+    attribute_rdf = Literal(match_entry['attribute'])
+    match_score = Literal(match_entry['match_score'])
+    example_values = match_entry['example_values']
+
+    # for testing only
+    if example_values != None and len(example_values) > 2:
+        example_values = example_values[:2]
+
+    values_literal = []
+    if example_values != None:
+        values_literal = [Literal(value) for value in example_values]
+
+    kb.add((concept_rdf, FOAF.name, attribute_rdf))
+    kb.add((attribute_rdf, RDF.type, datasource_rdf))
+    kb.add((datasource_rdf, RDFS.label, match_score))
+
+    # c = Collection(kb, attribute_rdf, values_literal)
+    for value in values_literal:
+        kb.add((match_score, FOAF.knows, value))
+
+    for stmt in kb:
+        pprint.pprint(stmt)
+    return
+
+import json
+import numpy as np
+import pandas as pd
+if __name__ == "__main__":
+    '''
+    1. kb values for concept - probabilities generation and propagation
+    2. use thesaurus wordnet to find related concepts names, cluster
+    3. training with imperfect labels
+    4. correct knowledge base errors by imperfect training
+    5. get new concepts from summarization
+    6.  iterative until no affinity between clusters is strong enough
+    
+    1.  use numpy and pandas and rdf
+        use actual complete datasource values
+        //fix potential matrix bug
+        *** file name as first clustering step? ***
+    2.  better distance functions
+        ignore the many-to-one mapping constraint when mapping
+        *** output of clusters becomes imperfect labels for value-pair matches for imperfect training***
+    3.  train classifier
+        create mappings as training data
+        *** output of imperfect labels predictions becomes actual training data ***
+    4.  improve schema matching?
+    5.  summarization:
+        get unique values for an attribute column
+        rank the attribute names by num of non-null values in column
+
+    overcome np-completeness
+    use iterative algorithm
+    use greedy algorithms
+    run in small batches
+    need run on server!
+        
+    dataset: flat csv or json
+    metadata concepts
+    schema has sample values
+    need some training data!
+    measuring precision and recall
+        need to know real concepts and mappings
+        need to find differences in terms of number of concepts and number of wrong mappings
+    '''
+
+    # data_model = parse_dataset.parse_models()
+    # graphical_model = build_graph(data_model)
+    # graphical_model.cluster()
+
+    # build_similarity_matrices(data_model, kb_concepts)
+    # -----
+
+    dataset_metadata_f = open('./datasource_and_tags.json', 'r')
+    dataset_metadata_set = json.load(dataset_metadata_f)
+
+    metadata_f = open('./metadata_tag_list_translated.json', 'r')
+    metadata_set = json.load(metadata_f)
+
+    schema_f = open('./schema_complete_list.json', 'r')
+    schema_set = json.load(schema_f, strict=False)
+
+    # out of the 749 tags, start with one just as an example
+    topic = 'trees'
+    datasources_with_tag = metadata_set['tags'][topic]['sources']
+    # the knowledge base to be updated
+    kb = build_kb([(topic, datasources_with_tag)])
+    # used for computing probability
+    len_datasources = len(datasources_with_tag)
+
+    # exit(0)
+
+    datasets_path = './thesis_project_dataset_clean/'
+    datasources = {}
+    for source_name in datasources_with_tag:
+        dataset = pd.read_csv(datasets_path + source_name + '.csv', index_col=0, header=0)
+        schema = schema_set[source_name]
+        metadata = dataset_metadata_set[source_name]['tags']
+
+        datasources[source_name] = (source_name, dataset, schema, metadata)
+        print('dataset_name:', source_name)
+        print('dataset_values.head \n', dataset.head())
+        print('dataset_schema[0]', parse_dataset.clean_name(schema[0]['name'], False, False))
+        print('dataset_schema[1]', parse_dataset.clean_name(schema[1]['name'], False, False))
+        print('dataset_tags[0]', metadata[0]['display_name'])
+
+        # initialization schema matching
+        tags_list = [tag['display_name'] for tag in metadata]
+        attributes_list = [parse_dataset.clean_name(attr['name'], False, False) for attr in schema]
+        sim_matrix = build_local_similarity_matrix(tags_list, attributes_list)
+        sim_frame = pd.DataFrame(data=sim_matrix, columns=attributes_list, index=tags_list)
+        print(sim_frame.to_string())
+
+        tree_matches = sim_frame.loc['trees']
+        attrs = list(sim_frame.columns.values)
+        max_score = 0
+        arg_max_score = None
+        arg_i = -1
+        for attr_i in range(len(attrs)):
+            attr = attrs[attr_i]
+            score = sim_frame.loc['trees', attr]
+            if score > max_score:
+                max_score = score
+                arg_max_score = attr
+                arg_i = attr_i
+
+        arg_max_examples_vals = None
+        example_value = None
+        if schema[arg_i]['domain'] != None:
+            arg_max_examples_vals = schema[arg_i]['coded_values']
+            example_value = arg_max_examples_vals[0]
+        print('best match to trees:', arg_max_score, max_score, example_value)
+
+        kb_match_entry = {'concept': 'trees',
+                          'datasource': source_name,
+                          'attribute': arg_max_score,
+                          'match_score': max_score,
+                          'example_values': arg_max_examples_vals}
+        update_kb_with_match(kb, kb_match_entry)
+        print('-----')
+
+    dataset_metadata_f.close()
+    metadata_f.close()
+    schema_f.close()
+
+    kb.serialize(format='turtle', destination='./knowledge base.txt')
