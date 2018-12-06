@@ -482,6 +482,8 @@ def collect_concepts():
         #     cnt += 1
         #     if cnt > 10:
         #         break
+        with open('./tag_list_translated.json', 'w') as fp:
+            json.dump(list_of_tags, fp, sort_keys=True, indent=2)
 
     with open('./metadata/group_list.json', 'r') as f:
         data = json.load(f)
@@ -493,6 +495,9 @@ def collect_concepts():
         #     cnt += 1
         #     if cnt > 10:
         #         break
+        with open('./group_list_translated.json', 'w') as fp:
+            json.dump(list_of_groups, fp, sort_keys=True, indent=2)
+
 
 import toy.data as td
 def collect_concepts_beta():
@@ -519,7 +524,6 @@ def collect_concepts_beta():
 def parse_metadata(file):
 
     metadata = []
-
 
     with open(file, 'r') as f:
         data = json.load(f)
@@ -550,7 +554,32 @@ def parse_metadata(file):
 
     return metadata
 
+def clean_name(st, has_prefix, has_extension):
+    st = st.replace('-', ' ')
+    st = st.replace('.', ' ')
+    st = st.split(' ')
+    if has_prefix:
+        st = st[1:]
+    if has_extension:
+        st = st[0:-1]
+    st = ' '.join(st)
+    st = st.lower()
+    return st
+
 def parse_metadata_files():
+    all_metadata = {}
+    for root, dirs, files in os.walk("./metadata"):
+        for file in files:
+            st, file_extension = os.path.splitext(file)
+            if st == 'group_list' or st == 'tag_list':
+                continue
+            metadata = parse_metadata(root + '/' + file)
+            key = clean_name(st, True, False)
+            all_metadata[key] = metadata
+
+    with open('./metadata_complete_list.json', 'w') as fp:
+        json.dump(all_metadata, fp, sort_keys=True, indent=2)
+
     return
 
 import numpy
@@ -681,6 +710,8 @@ if __name__ == "__main__":
     # unzip_and_rename()
     # select_datasources()
     # parse_models()
-    to_csv_format()
+    # to_csv_format()
+    collect_concepts()
+    parse_metadata_files()
 
     pass
