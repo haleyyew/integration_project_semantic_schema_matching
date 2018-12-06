@@ -445,16 +445,26 @@ class KnowledgeBase:
 import nltk
 nltk.data.path.append('/home/haoran/Documents/venv/nltk_data/')
 from nltk.corpus import words
+from nltk.corpus import wordnet
+
 def translate_to_english(str):
     str_clean = clean_name(str, False, False)
     str_clean = str_clean.split(' ')
     str_clean_len = len(str_clean)
     english_words = []
+    wordnet_words = []
     for el in str_clean:
         if el in words.words():
             english_words.append(el)
+        if not wordnet.synsets(el):
+            pass
+        else:
+            wordnet_words.append(el)
+
     english_words_len = len(english_words)
     english_words = ' '.join(english_words)
+    wordnet_words_len = len(wordnet_words)
+    wordnet_words = ' '.join(wordnet_words)
 
     is_num = False
     try:
@@ -465,7 +475,8 @@ def translate_to_english(str):
         is_num = False
 
     print('done', str, english_words_len/str_clean_len, is_num)
-    return {'english': english_words, 'percent': english_words_len/str_clean_len, 'is_num': is_num}
+    return {'english': english_words, 'english_percent': english_words_len/str_clean_len, 'is_num': is_num,
+            'wordnet': wordnet_words, 'wordnet_percent': wordnet_words_len/str_clean_len}
 
     # if d.check(str):
     #     return str
@@ -555,6 +566,41 @@ def collect_concepts_beta():
 
     return tags_set
 
+# TODO convert to RDF
+def collect_concepts_from_metadata():
+    list_of_tags = {}
+    list_of_groups = {}
+
+    with open('./datasource_and_tags.json', 'r') as f:
+        data = json.load(f)
+        for datasource_key in data:
+            datasource = data[datasource_key]
+            groups = datasource['groups']
+            tags = datasource['tags']
+
+            for group in groups:
+                display = group['display_name']
+                # descr = group['description']
+                if display not in list_of_groups:
+                    sources = [datasource_key]
+                    list_of_groups[display] = {'sources': sources}
+                    list_of_groups[display].update(translate_to_english(display))
+                else:
+                    group_elem = list_of_groups[display]
+                    group_elem['sources'].append(datasource_key)
+            for tag in tags:
+                display = tag['display_name']
+                if display not in list_of_tags:
+                    sources = [datasource_key]
+                    list_of_tags[display] = {'sources': sources}
+                    list_of_tags[display].update(translate_to_english(display))
+                else:
+                    tag_elem = list_of_tags[display]
+                    tag_elem['sources'].append(datasource_key)
+
+        with open('./metadata_tag_list_translated.json', 'w') as fp:
+            json.dump({'tags': list_of_tags, 'groups': list_of_groups}, fp, sort_keys=True, indent=2)
+
 def parse_metadata(file):
 
     metadata = []
@@ -596,6 +642,7 @@ def parse_metadata(file):
 
 def clean_name(st, has_prefix, has_extension):
     st = st.replace('-', ' ')
+    st = st.replace('_', ' ')
     st = st.replace('.', ' ')
     st = st.split(' ')
     if has_prefix:
@@ -756,7 +803,6 @@ if __name__ == "__main__":
     # parse_models()
     # to_csv_format()
     # parse_metadata_files()
-    collect_concepts()
-
+    collect_concepts_from_metadata()
 
     pass
