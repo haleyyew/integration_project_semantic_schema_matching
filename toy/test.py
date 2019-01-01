@@ -150,3 +150,65 @@ def test_cosine_similarity():
     cosine = get_cosine(vector1, vector2)
     print(cosine)
 
+def test_instance_matching():
+    import numpy as np
+    import pandas as pd
+    tar = [['attr1', 'attr2', 'attr3'], ['aaaa', 'bbb', 'ccc'], ['xxx', 'yyyy', 'zzz']]
+    # y = [['attr4', 'attr5', 'attr6'], ['xxx', 'yyy', 'zzz'], ['aaa', 'bbb', 'ccc']]
+    src = [['attr4'], ['xxx'], ['aaa'], ['mmm']]
+
+    data_tar = np.array([np.array(xi) for xi in tar])
+    df_tar = pd.DataFrame(data=data_tar[1:, 0:], columns=data_tar[0, 0:])
+
+    data_src = np.array([np.array(xi) for xi in src])
+    df_src = pd.DataFrame(data=data_src[1:, 0:], columns=data_src[0, 0:])
+
+    print(df_tar.to_string())
+    print(df_src.to_string())
+
+    schema_tar = list(df_tar.columns.values)
+    schema_src = list(df_src.columns.values)
+
+    print(schema_tar)
+    print(schema_src)
+
+    src_values = []
+    tar_values = []
+    src_val_len = 0
+    tar_val_len = 0
+    for attr in schema_src:
+        src_values.extend(list(df_src[attr]))
+        src_val_len = len(list(df_src[attr]))
+
+    for attr in schema_tar:
+        tar_values.extend(list(df_tar[attr]))
+        tar_val_len = len(list(df_tar[attr]))
+
+    from similarity.ngram import NGram
+    twogram = NGram(2)
+
+    match_threshold = 0.6
+    sim_matrix = np.zeros((len(schema_src), len(schema_tar)))
+
+    for i in range(len(src_values)):
+        src_value = src_values[i]
+        src_ind = i // src_val_len
+        src_attr = schema_src[src_ind]
+
+        for j in range(len(tar_values)):
+            tar_value = tar_values[j]
+            tar_ind = j // tar_val_len
+            tar_attr = schema_tar[tar_ind]
+
+            sim_score = 1 - twogram.distance(str(src_value), str(tar_value))
+
+            if str(src_value) == 'None' or str(tar_value) == 'None':
+                sim_score = 0
+
+            if sim_score > match_threshold:
+                sim_matrix[src_ind, tar_ind] += sim_score
+                print('sim_score >= ', match_threshold, ': ', src_attr, tar_attr, src_value, tar_value, sim_score)
+
+    df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
+    print(df_sim_matrix.to_string())
+

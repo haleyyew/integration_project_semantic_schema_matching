@@ -503,6 +503,84 @@ def update_kb_with_match(kb, match_entry):
         pprint.pprint(stmt)
     return
 
+def build_kb_json(list_of_concepts):
+    kb = {}
+    for concept in list_of_concepts:
+        concept_name = concept[0]
+        datasources = concept[1]
+        if concept_name not in kb:
+            kb[concept_name] = {}
+            kb[concept_name]['datasources'] = datasources
+            kb[concept_name]['matches'] = {}
+        else:
+            kb_concept = kb[concept_name]
+            kb_concept['datasources'].extend(datasources)
+        # TODO remove duplicates
+    return kb
+
+def update_kb_json(kb, match_entry):
+    concept = match_entry['concept']
+    datasource = match_entry['datasource']
+    attribute = match_entry['attribute']
+    match_score = match_entry['match_score']
+    example_values = match_entry['example_values']
+
+    kb_concept = kb[concept]
+    kb_concept_matches = kb_concept['matches']
+    kb_concept_matches[datasource] = {'attribute': attribute, 'match_score' : match_score, 'example_values' : example_values}
+    return
+
+def RepresentsInt(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+def match_table_by_values(df_src, df_tar, match_threshold):
+    schema_tar = list(df_tar.columns.values)
+    schema_src = list(df_src.columns.values)
+
+    src_values = []
+    tar_values = []
+    src_val_len = 0
+    tar_val_len = 0
+    for attr in schema_src:
+        src_values.extend(list(df_src[attr]))
+        src_val_len = len(list(df_src[attr]))
+
+    for attr in schema_tar:
+        tar_values.extend(list(df_tar[attr]))
+        tar_val_len = len(list(df_tar[attr]))
+
+    sim_matrix = np.zeros((len(schema_src), len(schema_tar)))
+
+    for i in range(len(src_values)):
+        src_value = src_values[i]
+        src_ind = i // src_val_len
+        src_attr = schema_src[src_ind]
+
+        for j in range(len(tar_values)):
+            tar_value = tar_values[j]
+            tar_ind = j // tar_val_len
+            tar_attr = schema_tar[tar_ind]
+
+            sim_score = 1 - twogram.distance(str(src_value), str(tar_value))
+
+            if str(src_value) == 'None' or str(tar_value) == 'None':
+                sim_score = 0
+
+            if RepresentsInt(src_value) != RepresentsInt(tar_value):
+                sim_score = 0
+
+            if sim_score > match_threshold:
+                sim_matrix[src_ind, tar_ind] += sim_score
+                print('|sim_score %d > %d: %s(%s) <=> %s(%s)|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value))
+
+    df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
+
+    return df_sim_matrix
+
 import json
 import numpy as np
 import pandas as pd
@@ -565,7 +643,8 @@ if __name__ == "__main__":
     topic = 'trees'
     datasources_with_tag = metadata_set['tags'][topic]['sources']
     # the knowledge base to be updated
-    kb = build_kb([(topic, datasources_with_tag)])
+    # kb = build_kb([(topic, datasources_with_tag)])
+    kb = build_kb_json([(topic, datasources_with_tag)])
     # used for computing probability
     len_datasources = len(datasources_with_tag)
 
@@ -617,11 +696,43 @@ if __name__ == "__main__":
                           'attribute': arg_max_score,
                           'match_score': max_score,
                           'example_values': arg_max_examples_vals}
-        update_kb_with_match(kb, kb_match_entry)
+        # update_kb_with_match(kb, kb_match_entry)
+        update_kb_json(kb, kb_match_entry)
         print('-----')
 
+    # done initialization
     dataset_metadata_f.close()
     metadata_f.close()
     schema_f.close()
 
-    kb.serialize(format='turtle', destination='./knowledge base.txt')
+    # TODO save similarity matrices
+    for source_name in datasources_with_tag:
+        dataset = pd.read_csv(datasets_path + source_name + '.csv', index_col=0, header=0)
+        schema = schema_set[source_name]
+        metadata = dataset_metadata_set[source_name]['tags']
+
+        for attr in schema:
+            attr['name'] = parse_dataset.clean_name(attr['name'], False, False)
+
+
+        match_threshold = 0.6
+        for concept in kb:
+            for datasource in kb[concept]['matches']:
+                src_attr = kb[concept]['matches'][datasource]['attribute']
+                src_vals = kb[concept]['matches'][datasource]['example_values']
+                # do not match with self
+                if source_name == datasource:
+                    continue
+                # do not match if no populated values
+                if src_vals == None:
+                    continue
+                src_data = pd.DataFrame({src_attr: src_vals})
+                print("[concept:%s, datasource:%s(%s) <=> dataset:%s]" % (concept, datasource, src_attr, source_name))
+                sim_matrix = match_table_by_values(src_data, dataset, match_threshold)
+                print(sim_matrix.to_string())
+                print('-----')
+
+    # kb.serialize(format='turtle', destination='./knowledge base.txt')
+    kb_file = open("kb_file.json", "w")
+    json.dump(kb, kb_file, indent=2, sort_keys=True)
+    # pprint.pprint(kb)
