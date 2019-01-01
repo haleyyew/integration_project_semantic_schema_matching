@@ -537,7 +537,9 @@ def RepresentsInt(s):
     except ValueError:
         return False
 
-def match_table_by_values(df_src, df_tar, match_threshold):
+
+def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o):
+    comparison_count = comparison_count_o[0]
     schema_tar = list(df_tar.columns.values)
     schema_src = list(df_src.columns.values)
 
@@ -565,25 +567,33 @@ def match_table_by_values(df_src, df_tar, match_threshold):
             tar_ind = j // tar_val_len
             tar_attr = schema_tar[tar_ind]
 
-            sim_score = 1 - twogram.distance(str(src_value), str(tar_value))
-
+            sim_score = 0
             if str(src_value) == 'None' or str(tar_value) == 'None':
                 sim_score = 0
 
-            if RepresentsInt(src_value) != RepresentsInt(tar_value):
+            elif RepresentsInt(src_value) != RepresentsInt(tar_value):
                 sim_score = 0
+
+            else:
+                sim_score = 1 - twogram.distance(str(src_value), str(tar_value))
+                comparison_count += 1
+                if comparison_count % 50000 == 0:
+                    print('comparison_count=', comparison_count)
+
 
             if sim_score > match_threshold:
                 sim_matrix[src_ind, tar_ind] += sim_score
                 print('|sim_score %d > %d: %s(%s) <=> %s(%s)|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value))
 
     df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
+    comparison_count_o[0] = comparison_count
 
     return df_sim_matrix
 
 import json
 import numpy as np
 import pandas as pd
+import time
 if __name__ == "__main__":
     '''
     1. kb values for concept - probabilities generation and propagation
@@ -629,6 +639,8 @@ if __name__ == "__main__":
 
     # build_similarity_matrices(data_model, kb_concepts)
     # -----
+
+    t0 = time.time()
 
     dataset_metadata_f = open('./datasource_and_tags.json', 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
@@ -705,8 +717,13 @@ if __name__ == "__main__":
     metadata_f.close()
     schema_f.close()
 
+    comparison_count = 0
+    comparison_count_o = [comparison_count]
+
     # TODO save similarity matrices
     for source_name in datasources_with_tag:
+        t2 = time.time()
+
         dataset = pd.read_csv(datasets_path + source_name + '.csv', index_col=0, header=0)
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
@@ -714,6 +731,7 @@ if __name__ == "__main__":
         for attr in schema:
             attr['name'] = parse_dataset.clean_name(attr['name'], False, False)
 
+        # TODO groupby values for each column and obtain count for each unique value, then multiply counts when comparison succeeds
 
         match_threshold = 0.6
         for concept in kb:
@@ -728,11 +746,22 @@ if __name__ == "__main__":
                     continue
                 src_data = pd.DataFrame({src_attr: src_vals})
                 print("[concept:%s, datasource:%s(%s) <=> dataset:%s]" % (concept, datasource, src_attr, source_name))
-                sim_matrix = match_table_by_values(src_data, dataset, match_threshold)
+
+                sim_matrix = match_table_by_values(src_data, dataset, match_threshold, comparison_count_o)
                 print(sim_matrix.to_string())
-                print('-----')
+                filename = '%s|%s|%s||%s.csv' % (concept, datasource, src_attr, source_name)
+                sim_matrix.to_csv(filename, sep=',', encoding='utf-8')
+
+        t3 = time.time()
+        total = t3 - t2
+        print('time %s sec' % (total))
+        print('-----')
 
     # kb.serialize(format='turtle', destination='./knowledge base.txt')
     kb_file = open("kb_file.json", "w")
     json.dump(kb, kb_file, indent=2, sort_keys=True)
     # pprint.pprint(kb)
+
+    t1 = time.time()
+    total = t1 - t0
+    print('time %s sec' % (total))
