@@ -212,3 +212,27 @@ def test_instance_matching():
     df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
     print(df_sim_matrix.to_string())
 
+def test_groupby():
+    import numpy as np
+    import pandas as pd
+    import pprint
+    tar = [['attr1', 'attr2', 'attr3'], ['aaaa', 'bbb', 'ccc'], ['aaaa', 'yyyy', 'zzz'], ['xxx', 'bbb', 'zzz'], ['xxx', str(None), str(None)]]
+
+    data_tar = np.array([np.array(xi) for xi in tar])
+    df_tar = pd.DataFrame(data=data_tar[1:, 0:], columns=data_tar[0, 0:])
+    print(df_tar.to_string())
+
+    schema_tar = list(df_tar.columns.values)
+    kb = {}
+    for attr in schema_tar:
+        kb[attr] = {}
+        groups = df_tar.groupby([attr])[attr]
+        print(list(groups.groups.keys()))
+        for key, item in groups:
+            # print(attr, key, groups.get_group(key).values)
+            # print('attr:%s val:%s count:%d' % (attr, key, len(groups.get_group(key).values)))
+            kb[attr][key] = len(groups.get_group(key).values)
+
+    pprint.pprint(kb)
+
+test_groupby()

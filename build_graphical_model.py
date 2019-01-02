@@ -538,7 +538,7 @@ def RepresentsInt(s):
         return False
 
 
-def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o):
+def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, stats):
     comparison_count = comparison_count_o[0]
     schema_tar = list(df_tar.columns.values)
     schema_src = list(df_src.columns.values)
@@ -582,13 +582,23 @@ def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o):
 
 
             if sim_score > match_threshold:
-                sim_matrix[src_ind, tar_ind] += sim_score
-                print('|sim_score %d > %d: %s(%s) <=> %s(%s)|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value))
+                reps = stats[tar_attr][tar_value]
+                sim_matrix[src_ind, tar_ind] += sim_score * reps
+                print('|sim_score %d > %d: %s(%s) <=> %s(%s) * %d|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value, reps))
 
     df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
     comparison_count_o[0] = comparison_count
 
     return df_sim_matrix
+
+def groupby_unique(attr, df):
+    stat = {}
+    print(df.head(2))
+    groups = df.groupby([attr])[attr]
+    for key, item in groups:
+        stat[key] = len(groups.get_group(key).values)
+
+    return stat, groups, list(groups.groups.keys())
 
 import json
 import numpy as np
@@ -669,6 +679,10 @@ if __name__ == "__main__":
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
 
+        dataset_col_names = [x.lower() for x in list(dataset.columns.values)]
+        col_rename_dict = {i: j for i, j in zip(list(dataset.columns.values), dataset_col_names)}
+        dataset.rename(columns=col_rename_dict, inplace=True)
+
         datasources[source_name] = (source_name, dataset, schema, metadata)
         print('dataset_name:', source_name)
         print('dataset_values.head \n', dataset.head())
@@ -701,6 +715,12 @@ if __name__ == "__main__":
         if schema[arg_i]['domain'] != None:
             arg_max_examples_vals = schema[arg_i]['coded_values']
             example_value = arg_max_examples_vals[0]
+        else:
+            stat, groups, uniques = groupby_unique(attrs[arg_i], dataset)
+            schema[arg_i]['coded_values'] = uniques
+            arg_max_examples_vals = schema[arg_i]['coded_values']
+            schema[arg_i]['domain'] = 'coded_values_groupby'
+
         print('best match to trees:', arg_max_score, max_score, example_value)
 
         kb_match_entry = {'concept': 'trees',
@@ -720,11 +740,15 @@ if __name__ == "__main__":
     comparison_count = 0
     comparison_count_o = [comparison_count]
 
-    # TODO save similarity matrices
     for source_name in datasources_with_tag:
         t2 = time.time()
 
         dataset = pd.read_csv(datasets_path + source_name + '.csv', index_col=0, header=0)
+
+        dataset_col_names = [x.lower() for x in list(dataset.columns.values)]
+        col_rename_dict = {i: j for i, j in zip(list(dataset.columns.values), dataset_col_names)}
+        dataset.rename(columns=col_rename_dict, inplace=True)
+
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
 
@@ -732,6 +756,7 @@ if __name__ == "__main__":
             attr['name'] = parse_dataset.clean_name(attr['name'], False, False)
 
         # TODO groupby values for each column and obtain count for each unique value, then multiply counts when comparison succeeds
+
 
         match_threshold = 0.6
         for concept in kb:
@@ -744,11 +769,29 @@ if __name__ == "__main__":
                 # do not match if no populated values
                 if src_vals == None:
                     continue
+
                 src_data = pd.DataFrame({src_attr: src_vals})
                 print("[concept:%s, datasource:%s(%s) <=> dataset:%s]" % (concept, datasource, src_attr, source_name))
 
-                sim_matrix = match_table_by_values(src_data, dataset, match_threshold, comparison_count_o)
+                tar_schema = list(dataset.columns.values)
+                attrs_stat = {}
+                max_len = 0
+                for attr in tar_schema:
+                    stat, groups, uniques = groupby_unique(attr, dataset)
+                    attrs_stat[attr] = (stat, groups, uniques)
+                    if len(uniques) > max_len:
+                        max_len = len(uniques)
+                tar_df = pd.DataFrame()
+                for attr in tar_schema:
+                    uniques = attrs_stat[attr][2]
+                    attrs_stat[attr] = attrs_stat[attr][0]
+                    attr_vals = uniques + ['None'] * (max_len - len(uniques))
+                    tar_df[attr] = attr_vals
+
+                sim_matrix = match_table_by_values(src_data, tar_df, match_threshold, comparison_count_o, attrs_stat)
                 print(sim_matrix.to_string())
+
+                # save similarity matrices
                 filename = '%s|%s|%s||%s.csv' % (concept, datasource, src_attr, source_name)
                 sim_matrix.to_csv(filename, sep=',', encoding='utf-8')
 
@@ -756,6 +799,8 @@ if __name__ == "__main__":
         total = t3 - t2
         print('time %s sec' % (total))
         print('-----')
+
+
 
     # kb.serialize(format='turtle', destination='./knowledge base.txt')
     kb_file = open("kb_file.json", "w")
