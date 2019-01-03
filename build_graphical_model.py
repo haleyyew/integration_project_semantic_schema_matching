@@ -524,10 +524,11 @@ def update_kb_json(kb, match_entry):
     attribute = match_entry['attribute']
     match_score = match_entry['match_score']
     example_values = match_entry['example_values']
+    data_type = match_entry['data_type']
 
     kb_concept = kb[concept]
     kb_concept_matches = kb_concept['matches']
-    kb_concept_matches[datasource] = {'attribute': attribute, 'match_score' : match_score, 'example_values' : example_values}
+    kb_concept_matches[datasource] = {'attribute': attribute, 'match_score' : match_score, 'example_values' : example_values, 'data_type' : data_type}
     return
 
 def RepresentsInt(s):
@@ -538,23 +539,52 @@ def RepresentsInt(s):
         return False
 
 
-def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, stats):
+def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, stats,
+                          sample_ratio, sample_min_count, sample_max_count):
     comparison_count = comparison_count_o[0]
     schema_tar = list(df_tar.columns.values)
     schema_src = list(df_src.columns.values)
+
+    print('matching:', schema_src, 'with', schema_tar)
 
     src_values = []
     tar_values = []
     src_val_len = 0
     tar_val_len = 0
+    num_rows_src = 0
+    num_rows_taken_src = 0
     for attr in schema_src:
-        src_values.extend(list(df_src[attr]))
-        src_val_len = len(list(df_src[attr]))
+        attr_vals = list(df_src[attr])
+        num_rows_src = len(attr_vals)
+        num_rows_taken_src = int(sample_ratio * num_rows_src)
+        if num_rows_taken_src < sample_min_count:
+            num_rows_taken_src = sample_min_count
+        if num_rows_taken_src > sample_max_count:
+            num_rows_taken_src = sample_max_count
+        attr_vals = attr_vals[:num_rows_taken_src]
+        src_values.extend(attr_vals)
+        src_val_len = len(attr_vals)
 
+    num_rows_tar = 0
+    num_rows_taken_tar = 0
     for attr in schema_tar:
-        tar_values.extend(list(df_tar[attr]))
-        tar_val_len = len(list(df_tar[attr]))
+        # randomly sample some values, and return a probability of instance match ratio
+        attr_vals = list(df_tar[attr])
+        num_rows_tar = len(attr_vals)
+        num_rows_taken_tar = int(sample_ratio * num_rows_tar)
+        if num_rows_taken_tar < sample_min_count:
+            num_rows_taken_tar = sample_min_count
+        if num_rows_taken_src > sample_max_count:
+            num_rows_taken_src = sample_max_count
+        attr_vals = attr_vals[:num_rows_taken_tar]
+        tar_values.extend(attr_vals)
+        tar_val_len = len(attr_vals)
 
+    # might not be able to match anything
+    if len(schema_tar) == 0 or len(schema_tar) == 0:
+        return pd.DataFrame(columns=schema_tar, index=schema_src), -1
+
+    confidence = (num_rows_taken_src * num_rows_taken_tar)/(num_rows_tar * num_rows_src)
     sim_matrix = np.zeros((len(schema_src), len(schema_tar)))
 
     for i in range(len(src_values)):
@@ -589,16 +619,69 @@ def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, s
     df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
     comparison_count_o[0] = comparison_count
 
-    return df_sim_matrix
+    return df_sim_matrix, confidence
 
 def groupby_unique(attr, df):
     stat = {}
-    print(df.head(2))
+    # print(df.head(2))
     groups = df.groupby([attr])[attr]
     for key, item in groups:
         stat[key] = len(groups.get_group(key).values)
 
     return stat, groups, list(groups.groups.keys())
+
+def compare_datatypes(src_datatype, tar_schema, df_columns):
+    # all_datatypes = parse_dataset.collect_all_datatypes('./schema_complete_list.json')
+    datatype_groups = {'esriFieldTypeBlob': 1,
+                         'esriFieldTypeDate': 2,
+                         'esriFieldTypeDouble': 3,
+                         'esriFieldTypeGeometry': 4,
+                         'esriFieldTypeGlobalID': 5,
+                         'esriFieldTypeInteger': 3,
+                         'esriFieldTypeOID': 5,
+                         'esriFieldTypeSingle': 3,
+                         'esriFieldTypeSmallInteger': 3,
+                         'esriFieldTypeString': 1}
+
+    cols_to_delete = ['latitude', 'longitude']
+    src_group = datatype_groups[src_datatype]
+    attrs_schema = []
+    for attr in tar_schema:
+        name = attr['name']
+        attrs_schema.append(name)
+        data_type = attr['data_type']
+        attr_group = datatype_groups[data_type]
+        if src_group != attr_group:
+            cols_to_delete.append(name)
+
+    for col in df_columns:
+        if col not in attrs_schema:
+            cols_to_delete.append(col)
+    return list(set(cols_to_delete))
+
+def df_rename_cols(dataset):
+    dataset_col_names = [parse_dataset.clean_name(x) for x in list(dataset.columns.values)]
+    col_rename_dict = {i: j for i, j in zip(list(dataset.columns.values), dataset_col_names)}
+    dataset.rename(columns=col_rename_dict, inplace=True)
+    return dataset
+
+def df_delete_cols(df, cols_to_delete):
+    # print(cols_to_delete)
+    tar_attrs = list(df.columns.values)
+    for col in cols_to_delete:
+        if col in tar_attrs:
+            # print('drop', col)
+            df.drop(col, axis=1, inplace=True)
+
+    # print(df.head())
+    return df
+
+def print_metadata_head(source_name, dataset, schema, metadata):
+    print('dataset_name:', source_name)
+    print('dataset_values.head \n', dataset.head())
+    print('dataset_schema[0]', parse_dataset.clean_name(schema[0]['name'], False, False))
+    print('dataset_schema[1]', parse_dataset.clean_name(schema[1]['name'], False, False))
+    print('dataset_tags[0]', metadata[0]['display_name'])
 
 import json
 import numpy as np
@@ -679,16 +762,10 @@ if __name__ == "__main__":
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
 
-        dataset_col_names = [x.lower() for x in list(dataset.columns.values)]
-        col_rename_dict = {i: j for i, j in zip(list(dataset.columns.values), dataset_col_names)}
-        dataset.rename(columns=col_rename_dict, inplace=True)
+        dataset = df_rename_cols(dataset)
 
         datasources[source_name] = (source_name, dataset, schema, metadata)
-        print('dataset_name:', source_name)
-        print('dataset_values.head \n', dataset.head())
-        print('dataset_schema[0]', parse_dataset.clean_name(schema[0]['name'], False, False))
-        print('dataset_schema[1]', parse_dataset.clean_name(schema[1]['name'], False, False))
-        print('dataset_tags[0]', metadata[0]['display_name'])
+        print_metadata_head(source_name, dataset, schema, metadata)
 
         # initialization schema matching
         tags_list = [tag['display_name'] for tag in metadata]
@@ -714,11 +791,14 @@ if __name__ == "__main__":
         example_value = None
         if schema[arg_i]['domain'] != None:
             arg_max_examples_vals = schema[arg_i]['coded_values']
+            arg_max_examples_vals.sort()
             example_value = arg_max_examples_vals[0]
         else:
             stat, groups, uniques = groupby_unique(attrs[arg_i], dataset)
+            uniques.sort()
             schema[arg_i]['coded_values'] = uniques
             arg_max_examples_vals = schema[arg_i]['coded_values']
+            print('arg_max_examples_vals', arg_max_examples_vals)
             schema[arg_i]['domain'] = 'coded_values_groupby'
 
         print('best match to trees:', arg_max_score, max_score, example_value)
@@ -727,7 +807,8 @@ if __name__ == "__main__":
                           'datasource': source_name,
                           'attribute': arg_max_score,
                           'match_score': max_score,
-                          'example_values': arg_max_examples_vals}
+                          'example_values': arg_max_examples_vals,
+                          'data_type': schema[arg_i]['data_type']}
         # update_kb_with_match(kb, kb_match_entry)
         update_kb_json(kb, kb_match_entry)
         print('-----')
@@ -744,10 +825,7 @@ if __name__ == "__main__":
         t2 = time.time()
 
         dataset = pd.read_csv(datasets_path + source_name + '.csv', index_col=0, header=0)
-
-        dataset_col_names = [x.lower() for x in list(dataset.columns.values)]
-        col_rename_dict = {i: j for i, j in zip(list(dataset.columns.values), dataset_col_names)}
-        dataset.rename(columns=col_rename_dict, inplace=True)
+        dataset = df_rename_cols(dataset)
 
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
@@ -755,10 +833,11 @@ if __name__ == "__main__":
         for attr in schema:
             attr['name'] = parse_dataset.clean_name(attr['name'], False, False)
 
-        # TODO groupby values for each column and obtain count for each unique value, then multiply counts when comparison succeeds
-
 
         match_threshold = 0.6
+        sample_ratio = 0.01
+        sample_min_count = 20
+        sample_max_count = 100
         for concept in kb:
             for datasource in kb[concept]['matches']:
                 src_attr = kb[concept]['matches'][datasource]['attribute']
@@ -773,11 +852,13 @@ if __name__ == "__main__":
                 src_data = pd.DataFrame({src_attr: src_vals})
                 print("[concept:%s, datasource:%s(%s) <=> dataset:%s]" % (concept, datasource, src_attr, source_name))
 
+                # groupby values for each column and obtain count for each unique value, then multiply counts when comparison succeeds
                 tar_schema = list(dataset.columns.values)
                 attrs_stat = {}
                 max_len = 0
                 for attr in tar_schema:
                     stat, groups, uniques = groupby_unique(attr, dataset)
+                    uniques.sort()
                     attrs_stat[attr] = (stat, groups, uniques)
                     if len(uniques) > max_len:
                         max_len = len(uniques)
@@ -788,7 +869,14 @@ if __name__ == "__main__":
                     attr_vals = uniques + ['None'] * (max_len - len(uniques))
                     tar_df[attr] = attr_vals
 
-                sim_matrix = match_table_by_values(src_data, tar_df, match_threshold, comparison_count_o, attrs_stat)
+                # collect stats first, also compare data types
+                src_datatype = kb[concept]['matches'][datasource]['data_type']
+                attr_schema = schema_set[datasource]
+                cols_to_delete = compare_datatypes(src_datatype, attr_schema, tar_schema)
+                tar_df = df_delete_cols(tar_df, cols_to_delete)
+
+                sim_matrix, confidence = match_table_by_values(src_data, tar_df, match_threshold, comparison_count_o, attrs_stat,
+                                                               sample_ratio, sample_min_count, sample_max_count)
                 print(sim_matrix.to_string())
 
                 # save similarity matrices
@@ -800,13 +888,19 @@ if __name__ == "__main__":
         print('time %s sec' % (total))
         print('-----')
 
-
+    # TODO implement the rest of the logic, iteratively
+    # use wordnet
+    # get new labels
 
     # kb.serialize(format='turtle', destination='./knowledge base.txt')
     kb_file = open("kb_file.json", "w")
     json.dump(kb, kb_file, indent=2, sort_keys=True)
     # pprint.pprint(kb)
 
+    with open('./schema_complete_list.json', 'w') as fp:
+        json.dump(schema_set, fp, sort_keys=True, indent=2)
+
     t1 = time.time()
     total = t1 - t0
     print('time %s sec' % (total))
+

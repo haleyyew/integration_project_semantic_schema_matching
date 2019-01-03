@@ -235,4 +235,23 @@ def test_groupby():
 
     pprint.pprint(kb)
 
-test_groupby()
+def test_compare_datatypes_and_del_cols():
+    import build_graphical_model as bgm
+    import pandas as pd
+    import json
+    datasets_path = '../thesis_project_dataset_clean/'
+    datasource = 'important trees'
+    tar_df = pd.read_csv(datasets_path + datasource + '.csv', index_col=0, header=0)
+    schema_f = open('../schema_complete_list.json', 'r')
+    schema_set = json.load(schema_f, strict=False)
+
+    tar_df = bgm.df_rename_cols(tar_df)
+    tar_schema = list(tar_df.columns.values)
+
+    src_datatype = 'esriFieldTypeString'
+    attr_schema = schema_set[datasource]
+    cols_to_delete = bgm.compare_datatypes(src_datatype, attr_schema, tar_schema)
+    tar_df = bgm.df_delete_cols(tar_df, cols_to_delete)
+    print(tar_df.head())
+
+test_compare_datatypes_and_del_cols()

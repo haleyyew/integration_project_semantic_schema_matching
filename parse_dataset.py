@@ -640,7 +640,7 @@ def parse_metadata(file):
 
     return metadata
 
-def clean_name(st, has_prefix, has_extension):
+def clean_name(st, has_prefix=False, has_extension=False):
     st = st.replace('-', ' ')
     st = st.replace('_', ' ')
     st = st.replace('.', ' ')
@@ -797,12 +797,31 @@ def to_csv_format():
 
     return
 
+import pprint
+def collect_all_datatypes(path):
+    schema_f = open(path, 'r')
+    schema_set = json.load(schema_f, strict=False)
+    data_types = {}
+
+    for item in schema_set:
+        item_data = schema_set[item]
+        for data in item_data:
+            if data['data_type'] not in data_types:
+                data_types[data['data_type']] = 1
+            else:
+                data_types[data['data_type']] = data_types[data['data_type']] + 1
+    # pprint.pprint(data_types)
+    return data_types
+
+def populate_example_values():
+    return
+
 if __name__ == "__main__":
     # unzip_and_rename()
     # select_datasources()
     # parse_models()
     # to_csv_format()
     # parse_metadata_files()
-    collect_concepts_from_metadata()
-
+    # collect_concepts_from_metadata()
+    # collect_all_datatypes()
     pass
