@@ -37,20 +37,20 @@ def test_numpy_pandas_1():
     dataframe = pd.DataFrame(data=y, columns=['one', 'two', 'three'], index=['a', 'b', 'c'])
     print(dataframe.to_string())
 
-    print(dataframe.columns.get_loc("one"))
+    print('1:', dataframe.columns.get_loc("one"))
 
     for index, row in dataframe.iterrows():
-        print(index, row)
+        print('2:', index, row)
         print()
 
-    print(dataframe.loc['a'])
-    print(dataframe.iloc[0])
+    print('3:', dataframe.loc['a'])
+    print('4:', dataframe.iloc[0])
     print()
 
     row = dataframe.loc['a']
     headers = list(dataframe.columns.values)
     for i in range(row.size):
-        print(headers[i], row[headers[i]])
+        print('5:', headers[i], row[headers[i]])
 
 
 def test_numpy_pandas_2():
@@ -59,7 +59,7 @@ def test_numpy_pandas_2():
     x = [['a', 'b', 'c'], [0, 1, 2], [3, 4, 5]]
     data = np.array([np.array(xi) for xi in x])
     df = pd.DataFrame(data=data[1:, 0:], columns=data[0, 0:])
-    print(df.to_string())
+    print('6:', df.to_string())
     df.to_csv('test_file.csv', sep=',', encoding='utf-8')
 
     # import os
@@ -67,7 +67,7 @@ def test_numpy_pandas_2():
     # print(cwd)
 
     df2 = pd.read_csv('test_file.csv', index_col=0, header=0)
-    print(df2.to_string())
+    print('7:', df2.to_string())
 
 
 def test_rdf():
@@ -254,4 +254,3 @@ def test_compare_datatypes_and_del_cols():
     tar_df = bgm.df_delete_cols(tar_df, cols_to_delete)
     print(tar_df.head())
 
-test_compare_datatypes_and_del_cols()

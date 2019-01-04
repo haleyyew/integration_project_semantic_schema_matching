@@ -92,4 +92,5 @@ def scikit_learn():
     from nltk.classify.scikitlearn import SklearnClassifier
     from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 
-wordnet()
+# ngram, wordnet, word2vec/gensim
+

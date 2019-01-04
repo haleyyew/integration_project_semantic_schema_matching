@@ -475,7 +475,7 @@ def build_kb(list_of_concepts):
     #     pprint.pprint(stmt)
     return kb
 
-# TODO WRONG! correct representation - collections, properties
+# TODO WRONG! correct RDF representation - collections, properties
 def update_kb_with_match(kb, match_entry):
     concept_rdf = URIRef(serialize_for_rdf(match_entry['concept']))
     datasource_rdf = Literal(match_entry['datasource'])
@@ -614,7 +614,7 @@ def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, s
             if sim_score > match_threshold:
                 reps = stats[tar_attr][tar_value]
                 sim_matrix[src_ind, tar_ind] += sim_score * reps
-                print('|sim_score %d > %d: %s(%s) <=> %s(%s) * %d|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value, reps))
+                print('|sim_score %0.2f > %0.2f: %s(%s) <=> %s(%s) * %d|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value, reps))
 
     df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
     comparison_count_o[0] = comparison_count
@@ -745,6 +745,7 @@ if __name__ == "__main__":
     schema_set = json.load(schema_f, strict=False)
 
     # out of the 749 tags, start with one just as an example
+    # TODO do the other 748
     topic = 'trees'
     datasources_with_tag = metadata_set['tags'][topic]['sources']
     # the knowledge base to be updated
@@ -830,9 +831,11 @@ if __name__ == "__main__":
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
 
+        schema_attr_names = []
         for attr in schema:
             attr['name'] = parse_dataset.clean_name(attr['name'], False, False)
-
+            schema_attr_names.append(attr['name'])
+        schema_attr_names.sort()
 
         match_threshold = 0.6
         sample_ratio = 0.01
@@ -859,6 +862,16 @@ if __name__ == "__main__":
                 for attr in tar_schema:
                     stat, groups, uniques = groupby_unique(attr, dataset)
                     uniques.sort()
+
+                    # save for later
+                    try:
+                        arg_i = schema_attr_names.index(attr)
+                        if schema[arg_i]['domain'] == None:
+                            schema[arg_i]['coded_values'] = uniques
+                            schema[arg_i]['domain'] = 'coded_values_groupby'
+                    except:
+                        pass
+
                     attrs_stat[attr] = (stat, groups, uniques)
                     if len(uniques) > max_len:
                         max_len = len(uniques)
@@ -888,9 +901,13 @@ if __name__ == "__main__":
         print('time %s sec' % (total))
         print('-----')
 
-    # TODO implement the rest of the logic, iteratively
-    # use wordnet
+    # TODO:
+    # use wordnet, get semantic closeness
     # get new labels
+    # compute composite score
+    # imperfect label prediction as train data
+    # hybrid matching and deep neuralnet train model
+    # stop iteration if percent of data are covered in kb
 
     # kb.serialize(format='turtle', destination='./knowledge base.txt')
     kb_file = open("kb_file.json", "w")
@@ -903,4 +920,5 @@ if __name__ == "__main__":
     t1 = time.time()
     total = t1 - t0
     print('time %s sec' % (total))
+
 
