@@ -148,6 +148,7 @@ if __name__ == "__main__":
                     }
                     add_attr_to_kb_concept(kb, matching_context)
 
+    # TODO change to examine mapping clusters
     for concept in kb:
         matches = kb[concept]['matches']
         for src_dataset in matches:
@@ -165,7 +166,7 @@ if __name__ == "__main__":
             if leave_concept:
                 create_new_kb_concept(kb)
 
-    # look at all datasources, pick some attributes not covered in kb as new concepts
+    # TODO look at all datasources, pick some attributes not covered in kb as new concepts
 
     kb_file = open("kb_file.json", "w")
     json.dump(kb, kb_file, indent=2, sort_keys=True)

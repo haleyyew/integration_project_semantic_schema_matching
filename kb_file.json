@@ -2,8 +2,8 @@
   "trees": {
     "datasources": [
       "park screen trees",
-      "important trees",
-      "park specimen trees"
+      "park specimen trees",
+      "important trees"
     ],
     "matches": {
       "important trees": {

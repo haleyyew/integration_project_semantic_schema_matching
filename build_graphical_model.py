@@ -904,10 +904,15 @@ if __name__ == "__main__":
     # TODO:
     # use wordnet, get semantic closeness
     # get new labels
-    # compute composite score
+    # compute composite score (probabilities multiplied)
+    # update kb splitting and merging
     # imperfect label prediction as train data
     # hybrid matching and deep neuralnet train model
     # stop iteration if percent of data are covered in kb
+
+    # TODO change score to percentage
+    # TODO once in cluster, add example values of every attribute in cluster
+    # TODO in final iteration, delete empty concepts
 
     # kb.serialize(format='turtle', destination='./knowledge base.txt')
     kb_file = open("kb_file.json", "w")
