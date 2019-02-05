@@ -913,6 +913,7 @@ if __name__ == "__main__":
     # TODO change score to percentage
     # TODO once in cluster, add example values of every attribute in cluster
     # TODO in final iteration, delete empty concepts
+    # TODO matching based on both char and semantics!
 
     # kb.serialize(format='turtle', destination='./knowledge base.txt')
     kb_file = open("kb_file.json", "w")

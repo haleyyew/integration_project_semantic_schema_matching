@@ -254,38 +254,15 @@ def test_compare_datatypes_and_del_cols():
     tar_df = bgm.df_delete_cols(tar_df, cols_to_delete)
     print(tar_df.head())
 
-def find_new_concepts():
+def test_form_new_clusters():
 
     import pprint
-    import json
     import pandas as pd
     import numpy as np
     import scipy.cluster.hierarchy as hac
     import scipy.spatial.distance as ssd
+    import scipy
 
-    def traverse_tree_for_attrs(root, datasource):
-        '''For finding new concepts'''
-        mappings = []
-
-        for concept in root:
-            # print(concept)
-            for dataset in root[concept]:
-
-                # print(dataset)
-                dataset_attr = root[concept][dataset]['attribute']
-                dataset_attr_score = root[concept][dataset]['match_score']
-                if dataset == datasource:
-                    mappings.append((concept, dataset_attr, dataset_attr_score))
-
-                if 'cluster' not in root[concept][dataset]:
-                    continue
-                for mapped_dataset in root[concept][dataset]['cluster']:
-                    mapped_dataset_attr = root[concept][dataset]['cluster'][mapped_dataset]['attribute']
-                    mapped_dataset_attr_score = root[concept][dataset]['cluster'][mapped_dataset]['match_score']
-
-                    if mapped_dataset == datasource:
-                        mappings.append((concept, mapped_dataset_attr, mapped_dataset_attr_score))
-        return mappings
 
     def find_all_subtree_mappings(root):
         '''
@@ -323,8 +300,20 @@ def find_new_concepts():
 
         return mappings
 
+    def hierarchical_cluster_linkage(features, decision_threshold):
+
+        arr = scipy.array(features)
+        pd = ssd.pdist(arr, metric='cosine')
+        z = hac.linkage(pd)
+
+        pprint.pprint(pd)
+
+        part = hac.fcluster(z, decision_threshold, 'distance')
+        return part
 
     def hierarchical_cluster(scores, a_keys):
+        decision_threshold = 0.5
+
         if len(scores) < 2:
             return []
 
@@ -350,7 +339,7 @@ def find_new_concepts():
 
         z = hac.linkage(a)
 
-        part = hac.fcluster(z, 0.5, 'inconsistent')
+        part = hac.fcluster(z, decision_threshold, 'inconsistent')
         # print(part)
 
         # for cluster in set(part):
@@ -443,14 +432,110 @@ def find_new_concepts():
 
 
     def merge_concepts(root, mappings):
-        '''merge concepts; rename temp concepts not merged'''
-        # merge clusters from different concepts, or move cluster from first concept to second concept
-        # update concept-attr match score
+        '''merge concepts; rename temp concepts not merged this iteration'''
+        # merge clusters from different concepts, (or move cluster from first concept to second concept)
+        # must also add parent attr to keys, form cluster of attributes
+        # when instance matching, compare all values in merged cluster
+        # TODO update concept-attr match score, update temp_concept names
+
+        # pprint.pprint(mappings)
+        decision_threshold = 0.1
+        mappings = pd.DataFrame(mappings, columns=['concept', 'src_dataset', 'tar_dataset', 'src_attr', 'tar_attr', 'score'])
+        concepts = list(root.keys())
+
+        clusters = mappings.groupby(['concept', 'src_dataset', 'src_attr'])
+        keys = list(clusters.groups.keys())
+        num_keys = len(keys)
+        # print(num_keys)
+
+        # all clusters must share one edge with each other
+        # number of attrs shared must be at least decision_threshold to be considered for merging
+        # decide which cluster to merge into
+
+        # key is sorted tuple of datasource.attr
+        clusters_to_merge = {}
+        features = []
+        features_row_keys = []
+
+        # collect all attrs in mappings as cols in matrix
+        all_attrs = []
+        for i in range(num_keys):
+            key_i = keys[i]
+            cluster_i = clusters.get_group(key_i)
+            all_attrs.append(key_i[1] + 'DOT' + key_i[2])
+
+            for index, row in cluster_i.iterrows():
+                val = row['tar_dataset'] + 'DOT' + row['tar_attr']
+                all_attrs.append(val)
+
+        # print(all_attrs)
+        all_attrs = list(set(all_attrs))
+        all_attrs.sort()
+        all_attrs_keys = {}
+        all_attrs_len = len(all_attrs)
+        for i in range(all_attrs_len):
+            all_attrs_keys[all_attrs[i]] = i
+        # print(all_attrs_keys)
+        len_keys = len(all_attrs_keys.keys())
+        # print(len_keys)
+
+        for i in range(num_keys):
+            key_i = keys[i]
+            cluster_i = clusters.get_group(key_i)
+
+            feature_vec = [0] * len_keys
+
+            # attr with concept also included
+            index = all_attrs_keys[key_i[1] + 'DOT' + key_i[2]]
+            feature_vec[index] = 1
+
+            for index, row in cluster_i.iterrows():
+                index = all_attrs_keys[row['tar_dataset'] + 'DOT' + row['tar_attr']]
+                feature_vec[index] = 1
+
+            features.append(feature_vec)
+            features_row_keys.append((key_i[0], key_i[1], key_i[2]))
+
+        pprint.pprint(features)
+
+        part = hierarchical_cluster_linkage(features, decision_threshold)
+        pprint.pprint(part)
+
+        # features_df = pd.DataFrame(features, index=features_row_keys, columns=all_attrs)
+        # print(features_df.to_string())
+
+        if len(part) <= 1 or len(list(set(part))) <= 1:
+            return root
+
+        part_indexes = [[part[i], i] for i in range(len(part))]
+        part_indexes_df = pd.DataFrame(part_indexes, columns=['group', 'index'])
+        # print(part_indexes_df.to_string())
+
+        groups_df = part_indexes_df.groupby('group')['index'].apply(list)
+        # print(groups_df.to_string())
+
+        for column in groups_df:
+            # print(column)
+            if len(column) > 1:
+                concept_name = ''
+                temp_concept_subtrees = {'temp':{}}
+                for i in column:
+                    concept = features_row_keys[i][0]
+                    if 'temp' not in concept:
+                        concept_name = concept_name + '+' + concept
+
+                    temp_concept_subtrees['temp'][features_row_keys[i][1]] = root[concept][features_row_keys[i][1]]
+                    del root[concept][features_row_keys[i][1]]
+
+                root[concept_name] = temp_concept_subtrees['temp']
+
+
         return root
 
     # matches = {'important trees': {'match_score': 0.58, 'attribute': 'tree species'}, 'park screen trees': {'cluster': {'park specimen trees': {'match_score': 6506, 'attribute': 'tree species'}}, 'match_score': 0.58, 'attribute': 'tree species'}, 'park specimen trees': {'match_score': 0.8, 'attribute': 'tree'}}
     # root = {'trees': matches}
 
+    # TODO change key to datasource.attr b/c there might be multiple probabilistic mappings per datasource
     matches1 = {'ds1': {'match_score': 0.6, 'attribute': 'attr1',
                        'cluster': {'ds3': {'match_score': 1000, 'attribute': 'attr1'}}},
                'ds2': {'match_score': 0.6, 'attribute': 'attr1',
@@ -468,24 +553,6 @@ def find_new_concepts():
     root = {'c1': matches1, 'c2': matches2}
 
 
-    # add new concepts
-    schema_f = open('../schema_complete_list.json', 'r')
-    schema_set = json.load(schema_f, strict=False)
-    datasources = ['important trees', 'park specimen trees', 'park screen trees']
-    attr_schema = [schema_set[datasource] for datasource in datasources]
-
-    attr_schema_parse = {datasource: [] for datasource in datasources}
-    for datasource, schema in zip(datasources, attr_schema):
-        for attr in schema:
-            name = attr['name']
-            attr_schema_parse[datasource].append(name)
-
-    # pprint.pprint(attr_schema_parse)
-
-    # matched_attrs = {}
-    # mappings_datasource = traverse_tree_for_attrs(root, 'park specimen trees')
-    # pprint.pprint(mappings_datasource)
-
 
     # split or merge clusters
     mappings_all = find_all_subtree_mappings(root)
@@ -495,10 +562,117 @@ def find_new_concepts():
     # pprint.pprint(root)
 
     mappings_all = find_all_subtree_mappings(root)
-    pprint.pprint(mappings_all)
+    # pprint.pprint(mappings_all)
 
-    # root = merge_concepts(root, mappings_all)
+    print('=====')
+    root = merge_concepts(root, mappings_all)
     # pprint.pprint(root)
+    print('=====')
+
+    return root
 
 
-find_new_concepts()
+
+def test_find_new_concepts(root):
+    import json
+    import pprint
+
+    def traverse_tree_for_attrs(root, datasource):
+        '''For finding new concepts'''
+        mappings = []
+
+        for concept in root:
+            # print(concept)
+            for dataset in root[concept]:
+
+                # print(dataset)
+                dataset_attr = root[concept][dataset]['attribute']
+                dataset_attr_score = root[concept][dataset]['match_score']
+                if dataset == datasource:
+                    mappings.append((concept, dataset_attr, dataset_attr_score))
+
+                if 'cluster' not in root[concept][dataset]:
+                    continue
+                for mapped_dataset in root[concept][dataset]['cluster']:
+                    mapped_dataset_attr = root[concept][dataset]['cluster'][mapped_dataset]['attribute']
+                    mapped_dataset_attr_score = root[concept][dataset]['cluster'][mapped_dataset]['match_score']
+
+                    if mapped_dataset == datasource:
+                        mappings.append((concept, mapped_dataset_attr, mapped_dataset_attr_score))
+        return mappings
+
+    # open output from previous stage
+    schema_f = open('../schema_complete_list.json', 'r')
+    schema_set = json.load(schema_f, strict=False)
+    datasources = ['important trees', 'park specimen trees', 'park screen trees']
+    attr_schema = [schema_set[datasource] for datasource in datasources]
+
+    # add new concepts
+    attr_schema_parse = {datasource: [] for datasource in datasources}
+    for datasource, schema in zip(datasources, attr_schema):
+        for attr in schema:
+            name = attr['name']
+            attr_schema_parse[datasource].append(name)
+
+    # pprint.pprint(attr_schema_parse)
+    # TODO toy example for schema
+
+    attr_schema_parse = {'ds1': ['attr1','attr2','attr3'],
+                         'ds2': ['attr1','attr2','attr3','attr4'],
+                         'ds3': ['attr1','attr2','attr3','attr4']}
+
+    new_concepts = {}
+
+    for ds in list(attr_schema_parse.keys()):
+        mappings_datasource = traverse_tree_for_attrs(root, ds)
+        # print(ds)
+        # pprint.pprint(mappings_datasource)
+
+        attrs = []
+        for mapping in mappings_datasource:
+            attrs.append(mapping[1])
+
+        attrs = list(set(attrs))
+        # print(attrs)
+
+        # find attrs not in map
+        diff = set(attr_schema_parse[ds]).symmetric_difference(set(attrs))
+        diff = list(diff)
+        # print(diff)
+
+        for new_attr in diff:
+            if new_attr in new_concepts:
+                new_concepts[new_attr].append(ds)
+            else:
+                new_concepts[new_attr] = [ds]
+
+    # TODO only select some of these attrs as new concepts in next iteration
+    print(new_concepts)
+    return new_concepts
+
+
+def test_hierarchical_cluster_linkage():
+    import scipy
+    import scipy.cluster.hierarchy as hac
+    import scipy.spatial.distance as ssd
+
+    arr = scipy.array([[0, 5], [1, 5], [-1, 5], [0, -5], [1, -5], [-1, -5], [-1.1, -5]])
+    pd = ssd.pdist(arr)
+    dm = ssd.squareform(pd)
+    res1 = hac.linkage(pd)
+    res2 = hac.linkage(dm)
+    res3 = hac.linkage(arr)
+
+    # print(res1)
+    # print(res2)
+    # print(dm)
+    # print(res3)
+
+    part = hac.fcluster(res3, 0.5, 'inconsistent')
+    print(part)
+
+    return
+
+
+root = test_form_new_clusters()
+test_find_new_concepts(root)
