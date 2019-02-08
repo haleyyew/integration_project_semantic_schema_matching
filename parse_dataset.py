@@ -813,8 +813,6 @@ def collect_all_datatypes(path):
     # pprint.pprint(data_types)
     return data_types
 
-def populate_example_values():
-    return
 
 if __name__ == "__main__":
     # unzip_and_rename()

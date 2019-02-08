@@ -1,3 +1,5 @@
+DEBUG_MODE = False
+
 import json
 import os
 import csv
@@ -89,7 +91,369 @@ def find_similarity_between_wordsets(concept, src_word, tar_words):
         # leave concept, create new concept
         return True, sem_sims
 
-def create_new_kb_concept(kb):
+
+import pprint
+import numpy as np
+import scipy.cluster.hierarchy as hac
+import scipy.spatial.distance as ssd
+import scipy
+
+
+def find_all_subtree_mappings(root, testing):
+    '''
+    For comparing clusters:
+    Extract mappings first, represent in vectors, then perform clustering for mappings
+    Split topic into two if two distinct clusters are found within topic, can split into more
+    Merge clusters into one topic if two clusters from two topics have similar mappings
+    '''
+    mappings = []
+    # mapping_pairs = {}
+
+    for concept in root:
+        matches = root[concept]['matches']
+        if testing:
+            matches = root[concept]
+        for dataset in matches:
+            if 'cluster' not in matches[dataset]:
+                continue
+            for mapped_dataset in matches[dataset]['cluster']:
+                mapping = [concept,
+                             dataset,
+                             mapped_dataset,
+                             matches[dataset]['attribute'],
+                             matches[dataset]['cluster'][mapped_dataset]['attribute'],
+                             matches[dataset]['cluster'][mapped_dataset]['match_score']]
+                mappings.append(mapping)
+
+                fwd_attrs = dataset+'AND'+mapped_dataset
+                bkwd_attrs = mapped_dataset+'AND'+dataset
+                # if fwd_attrs in mapping_pairs:
+                #     mapping_pairs[fwd_attrs] += 1
+                # elif bkwd_attrs in mapping_pairs:
+                #     mapping_pairs[bkwd_attrs] += 1
+                # else:
+                #     mapping_pairs[fwd_attrs] = 0
+
+    # pprint.pprint(mappings)
+
+    return mappings
+
+def hierarchical_cluster_linkage(features, decision_threshold):
+    if DEBUG_MODE: print('hierarchical_cluster_linkage:')
+    if DEBUG_MODE: print(features)
+    if len(features) < 2:
+        return []
+
+    arr = scipy.array(features)
+    pd = ssd.pdist(arr, metric='cosine')
+    z = hac.linkage(pd)
+
+    if DEBUG_MODE: pprint.pprint(pd)
+
+    part = hac.fcluster(z, decision_threshold, 'distance')
+    return part
+
+def hierarchical_cluster(scores, a_keys, decision_threshold):
+    if DEBUG_MODE: print('hierarchical_cluster dist:', scores)
+
+    if len(scores) < 2:
+        return []
+
+    a_len = len(a_keys)
+    # a = [a[key] for key in a_keys]
+    a = np.zeros(shape=(a_len, a_len))
+
+    k = 0
+    for i in range(a_len):
+        for j in range(i + 1, a_len):
+            a[i, j] = scores[k]
+            a[j, i] = scores[k]
+            # print(a[i, j], a[j, i])
+            k += 1
+
+    # a = np.array([[0, 0, 2, 2],
+    #               [0, 0, 2, 2],
+    #               [2, 2, 0, 0],
+    #               [2, 2, 0, 0]])
+
+    a = ssd.squareform(a)
+    if DEBUG_MODE: print(a)
+
+    z = hac.linkage(a)
+
+    part = hac.fcluster(z, decision_threshold, 'inconsistent')
+    # print(part)
+
+    # for cluster in set(part):
+    #     print(cluster)
+
+    return part
+
+
+# need to know all concepts in root so far
+# do N! comparisons of mappings
+def split_concepts(root, mappings, decision_threshold):
+    '''split to a new temp concept'''
+
+    mappings = pd.DataFrame(mappings, columns=['concept', 'src_dataset', 'tar_dataset', 'src_attr', 'tar_attr', 'score'])
+    concepts = list(root.keys())
+
+    # print(concepts)
+
+    for concept in concepts:
+        # filter mappings for the concept
+        # concept_mappings = [tuple for tuple in mappings if tuple[0] == concept]
+        concept_mappings = mappings.loc[mappings['concept'] == concept]
+
+        if DEBUG_MODE: print(concept_mappings)
+
+        clusters = concept_mappings.groupby(['src_dataset', 'src_attr'])
+        keys = list(clusters.groups.keys())
+        num_keys = len(keys)
+
+        clusters_to_split = {}
+        clusters_to_split_list = []
+        for i in range(num_keys):
+            key_i = keys[i]
+            cluster_i = clusters.get_group(key_i)
+
+            # print(key_i, cluster_i)
+
+            list_i = []
+            for index, row in cluster_i.iterrows():
+                val = row['tar_dataset'] + '.' + row['tar_attr']
+                list_i.append(val)
+            num_i = len(list_i)
+
+            for j in range(i+1, num_keys):
+                key_j = keys[j]
+                cluster_j = clusters.get_group(key_j)
+
+                list_j = []
+                for index, row in cluster_j.iterrows():
+                    val = row['tar_dataset'] + '.' + row['tar_attr']
+                    list_j.append(val)
+                num_j = len(list_j)
+
+                diff = set(list_i).symmetric_difference(set(list_j))
+
+                diff_score = len(list(diff))/(num_i+num_j)
+                # print(diff)
+                diff_score = diff_score if diff_score > decision_threshold else 0
+                if (key_i, key_j) in clusters_to_split:
+                #     clusters_to_split[(key_i, key_j)] += diff_score
+                # elif (key_j, key_i) in clusters_to_split:
+                #     clusters_to_split[(key_j, key_i)] += diff_score
+                    pass
+                else:
+                    clusters_to_split[(key_i, key_j)] = diff_score
+                    clusters_to_split_list.append(diff_score)
+                    # print(key_i, key_j)
+
+        # pprint.pprint(clusters_to_split)
+        part = hierarchical_cluster(clusters_to_split_list, keys, decision_threshold)
+        if DEBUG_MODE: print('split_concepts: ', 'part', part, 'keys', keys)
+
+        # find clusters to split, then split to new concept
+        if len(part) > 1 and len(list(set(part))) > 1:
+            num_new_concepts = len(list(set(part))) - 1
+            new_concepts = {'temp_'+concept+'_'+str(i+2) : {} for i in range(num_new_concepts)}
+            print('new concepts:', new_concepts)
+
+            for j in range(len(keys)):
+                key = keys[j]
+                partition = part[j]
+                if partition != 1:
+                    print('temp_'+concept+'_'+str(partition))
+                    new_concepts['temp_'+concept+'_'+str(partition)][key[0]] = root[concept][key[0]]
+                    del root[concept][key[0]]
+
+            root.update(new_concepts)
+
+    return root
+
+
+
+
+def merge_concepts(root, mappings, decision_threshold):
+    '''merge concepts; rename temp concepts not merged this iteration'''
+    # merge clusters from different concepts, (or move cluster from first concept to second concept)
+    # must also add parent attr to keys, form cluster of attributes
+    # when instance matching, compare all values in merged cluster
+    # TODO update concept-attr match score, update temp_concept names
+
+    # pprint.pprint(mappings)
+    if DEBUG_MODE: print('merge_concepts:')
+
+    mappings = pd.DataFrame(mappings, columns=['concept', 'src_dataset', 'tar_dataset', 'src_attr', 'tar_attr', 'score'])
+    concepts = list(root.keys())
+
+    clusters = mappings.groupby(['concept', 'src_dataset', 'src_attr'])
+    keys = list(clusters.groups.keys())
+    num_keys = len(keys)
+    # print(num_keys)
+
+    # all clusters must share one edge with each other
+    # number of attrs shared must be at least decision_threshold to be considered for merging
+    # decide which cluster to merge into
+
+    # key is sorted tuple of datasource.attr
+    clusters_to_merge = {}
+    features = []
+    features_row_keys = []
+
+    # collect all attrs in mappings as cols in matrix
+    all_attrs = []
+    for i in range(num_keys):
+        key_i = keys[i]
+        cluster_i = clusters.get_group(key_i)
+        all_attrs.append(key_i[1] + 'DOT' + key_i[2])
+
+        for index, row in cluster_i.iterrows():
+            val = row['tar_dataset'] + 'DOT' + row['tar_attr']
+            all_attrs.append(val)
+
+    # print(all_attrs)
+    all_attrs = list(set(all_attrs))
+    all_attrs.sort()
+    all_attrs_keys = {}
+    all_attrs_len = len(all_attrs)
+    for i in range(all_attrs_len):
+        all_attrs_keys[all_attrs[i]] = i
+    # print(all_attrs_keys)
+    len_keys = len(all_attrs_keys.keys())
+    # print(len_keys)
+
+    for i in range(num_keys):
+        key_i = keys[i]
+        cluster_i = clusters.get_group(key_i)
+
+        feature_vec = [0] * len_keys
+
+        # attr with concept also included
+        index = all_attrs_keys[key_i[1] + 'DOT' + key_i[2]]
+        feature_vec[index] = 1
+
+        for index, row in cluster_i.iterrows():
+            index = all_attrs_keys[row['tar_dataset'] + 'DOT' + row['tar_attr']]
+            feature_vec[index] = 1
+
+        features.append(feature_vec)
+        features_row_keys.append((key_i[0], key_i[1], key_i[2]))
+
+    if DEBUG_MODE: pprint.pprint(features)
+
+    part = hierarchical_cluster_linkage(features, decision_threshold)
+    if DEBUG_MODE: pprint.pprint(part)
+
+    # features_df = pd.DataFrame(features, index=features_row_keys, columns=all_attrs)
+    # print(features_df.to_string())
+
+    if len(part) <= 1 or len(list(set(part))) <= 1:
+        return root
+
+    part_indexes = [[part[i], i] for i in range(len(part))]
+    part_indexes_df = pd.DataFrame(part_indexes, columns=['group', 'index'])
+    # print(part_indexes_df.to_string())
+
+    groups_df = part_indexes_df.groupby('group')['index'].apply(list)
+    # print(groups_df.to_string())
+
+    for column in groups_df:
+        # print(column)
+        if len(column) > 1:
+            print("merging:", column)
+            concept_name = ''
+            temp_concept_subtrees = {'temp':{}}
+            for i in column:
+                concept = features_row_keys[i][0]
+                if 'temp' not in concept:
+                    concept_name = concept_name + '+' + concept
+
+                temp_concept_subtrees['temp'][features_row_keys[i][1]] = root[concept][features_row_keys[i][1]]
+                del root[concept][features_row_keys[i][1]]
+
+            root[concept_name] = temp_concept_subtrees['temp']
+
+
+    return root
+
+def create_new_kb_concept(attr_schema_parse, root, testing):
+    new_concepts = {}
+
+    for ds in list(attr_schema_parse.keys()):
+        mappings_datasource = traverse_tree_for_attrs(root, ds, testing)
+        # print(ds)
+        # pprint.pprint(mappings_datasource)
+
+        attrs = []
+        for mapping in mappings_datasource:
+            attrs.append(mapping[1])
+
+        attrs = list(set(attrs))
+        # print(attrs)
+
+        # find attrs not in map
+        diff = set(attr_schema_parse[ds]).symmetric_difference(set(attrs))
+        diff = list(diff)
+        # print(diff)
+
+        for new_attr in diff:
+            if new_attr in new_concepts:
+                new_concepts[new_attr].append(ds)
+            else:
+                new_concepts[new_attr] = [ds]
+
+    return new_concepts
+
+def traverse_tree_for_attrs(root, datasource, testing):
+    '''For finding new concepts'''
+    mappings = []
+
+    for concept in root:
+        # print(concept)
+        matches = root[concept]['matches']
+        if testing:
+            matches = root[concept]
+
+        for dataset in matches:
+
+            # print(dataset)
+            dataset_attr = matches[dataset]['attribute']
+            dataset_attr_score = matches[dataset]['match_score']
+            if dataset == datasource:
+                mappings.append((concept, dataset_attr, dataset_attr_score))
+
+            if 'cluster' not in matches[dataset]:
+                continue
+            for mapped_dataset in matches[dataset]['cluster']:
+                mapped_dataset_attr = matches[dataset]['cluster'][mapped_dataset]['attribute']
+                mapped_dataset_attr_score = matches[dataset]['cluster'][mapped_dataset]['match_score']
+
+                if mapped_dataset == datasource:
+                    mappings.append((concept, mapped_dataset_attr, mapped_dataset_attr_score))
+    return mappings
+
+def find_cluster_semantic_relatedness(kb):
+
+    for concept in kb:
+        matches = kb[concept]['matches']
+        for src_dataset in matches:
+            if 'cluster' not in matches[src_dataset]:
+                continue
+            cluster = matches[src_dataset]['cluster']
+            src_attr = matches[src_dataset]['attribute']
+            cluster_attrs = []
+            for tar_dataset in cluster:
+                attr = cluster[tar_dataset]['attribute']
+                cluster_attrs.append(attr)
+            leave_concept, sem_sims = find_similarity_between_wordsets(concept, src_attr, cluster_attrs)
+            print(leave_concept, sem_sims)
+
+            # if leave_concept:
+            #     create_new_kb_concept(kb)
+    # TODO incorporate into module for examining mapping clusters
+
     return
 
 if __name__ == "__main__":
@@ -148,23 +512,7 @@ if __name__ == "__main__":
                     }
                     add_attr_to_kb_concept(kb, matching_context)
 
-    # TODO change to examine mapping clusters
-    for concept in kb:
-        matches = kb[concept]['matches']
-        for src_dataset in matches:
-            if 'cluster' not in matches[src_dataset]:
-                continue
-            cluster = matches[src_dataset]['cluster']
-            src_attr = matches[src_dataset]['attribute']
-            cluster_attrs = []
-            for tar_dataset in cluster:
-                attr = cluster[tar_dataset]['attribute']
-                cluster_attrs.append(attr)
-            leave_concept, sem_sims = find_similarity_between_wordsets(concept, src_attr, cluster_attrs)
-            print(leave_concept, sem_sims)
 
-            if leave_concept:
-                create_new_kb_concept(kb)
 
     # TODO look at all datasources, pick some attributes not covered in kb as new concepts
 
