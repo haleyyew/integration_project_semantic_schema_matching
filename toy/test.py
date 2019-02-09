@@ -356,6 +356,79 @@ def test_hierarchical_cluster_linkage():
 
     return
 
+class Paths:
+    datasets_path = '../thesis_project_dataset_clean/'
+    dataset_metadata_p = '../inputs/datasource_and_tags.json'
+    metadata_p = '../inputs/metadata_tag_list_translated.json'
+    schema_p = '../inputs/schema_complete_list.json'
+    matching_output_p = '../outputs/instance_matching_output/'
+    kb_file_p = "../outputs/kb_file.json"
+    dataset_stats = '../inputs/dataset_statistics/'
+    new_concepts_p = "../outputs/new_concepts.json"
+    new_concepts_f = '../outputs/new_concepts.csv'
 
-root = test_form_new_clusters()
-test_find_new_concepts(root)
+    def __init__(self, **kwds):
+        self.__dict__.update(kwds)
+
+p = Paths()
+
+def test_new_concepts_from_sem():
+    import json
+    import iterative_algorithm as ia
+
+    input_topics = ['trees', 'parks']
+    input_datasets = []
+    kb = {}
+
+    dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = ia.load_metadata(p, input_topics,
+                                                                                            input_datasets)
+    _, datasources_with_tag, datasources_index, reverse_index = ia.find_datasources(p, datasources_with_tag, input_topics, kb)
+
+    kb_f = open(p.kb_file_p, 'r')
+    kb = json.load(kb_f)
+
+    num_of_new_concepts = 5
+    new_concepts, new_concepts_mod, concept_sims_scores, _ = ia.find_new_concepts(p, metadata_set, schema_set, kb, datasources_index, num_of_new_concepts, input_topics)
+
+    return
+
+def test_prepare_next_iteration():
+    import pandas as pd
+    import json
+    import iterative_algorithm as ia
+    import build_matching_model as bmm
+
+    kb = {}
+
+    num = 5
+    new_concepts = pd.read_csv(p.new_concepts_f, index_col=0, header=0)
+    top_concepts = new_concepts.sort_values('score', ascending=False).head(num)
+    output_new_concepts = list(top_concepts['concept'])
+
+    print(output_new_concepts)
+
+    kb_f = open(p.kb_file_p, 'r')
+    kb = json.load(kb_f)
+    print(kb.keys())
+
+    input_topics = output_new_concepts
+
+    dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = ia.load_metadata(p, input_topics, None)
+    print(datasources_with_tag)
+
+    kb, datasources_with_tag, datasources_index, reverse_index = ia.find_datasources(p, datasources_with_tag, input_topics, kb)
+    print(kb.keys())
+
+    bmm.gather_statistics(schema_set, datasources_with_tag, p.dataset_stats, p.datasets_path)
+
+    kb, datasources_with_tag, schema_set = ia.initialize_matching(p, input_topics, dataset_metadata_set, schema_set,
+                                                               datasources_with_tag, reverse_index, kb)
+    with open(p.schema_p, 'w') as fp:
+        json.dump(schema_set, fp, sort_keys=True, indent=2)
+
+    kb_file = open(p.kb_file_p, "w")
+    json.dump(kb, kb_file, indent=2, sort_keys=True)
+
+    return
+
+test_prepare_next_iteration()

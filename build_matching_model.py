@@ -586,8 +586,14 @@ def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, s
     if len(schema_tar) == 0 or len(schema_tar) == 0:
         return pd.DataFrame(columns=schema_tar, index=schema_src), -1
 
-    confidence = (num_rows_taken_src * num_rows_taken_tar)/(num_rows_tar * num_rows_src)
     sim_matrix = np.zeros((len(schema_src), len(schema_tar)))
+
+    confidence = 0
+    if num_rows_tar * num_rows_src > 0:
+        confidence = (num_rows_taken_src * num_rows_taken_tar)/(num_rows_tar * num_rows_src)
+    else:
+        df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
+        return df_sim_matrix, confidence
 
     for i in range(len(src_values)):
         src_value = src_values[i]
@@ -636,7 +642,13 @@ def find_attrs_to_delete(tar_schema, df_columns):
     cols_to_delete = ['latitude', 'longitude']
     attrs_schema = []
     for attr in tar_schema:
-        name = attr['name']
+        name = attr
+
+        if type(attr) is dict:
+            name = attr['name']
+        if type(attr) is str:
+            name = attr
+
         attrs_schema.append(name)
 
     for col in df_columns:

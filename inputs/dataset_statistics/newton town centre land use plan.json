@@ -1,0 +1,34 @@
+{
+  "amendment date": {},
+  "amendment description": {},
+  "amendment resolution": {
+    " ": 9
+  },
+  "density high": {},
+  "density low": {},
+  "density units": {},
+  "folder": {},
+  "land use": {
+    "Auto-Oriented Commercial": 1,
+    "Civic Core": 1,
+    "Commercial Office": 1,
+    "Existing Commercial": 1,
+    "High Density Residential": 1,
+    "Highway Commercial": 1,
+    "Low-Rise Residential": 1,
+    "Mass Merchandising": 1,
+    "Urban Residential": 1
+  },
+  "plan area": {
+    "Newton Town Centre": 9
+  },
+  "plan status": {
+    "Approved": 9
+  },
+  "plan type": {
+    "Town Centre Plan": 9
+  },
+  "plan year": {
+    "1990": 9
+  }
+}

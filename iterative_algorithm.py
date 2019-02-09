@@ -33,25 +33,33 @@ import parse_dataset as pds
 import build_matching_model as bmm
 import refine_kb_concepts as rkc
 
-datasets_path = './thesis_project_dataset_clean/'
-dataset_metadata_p = './inputs/datasource_and_tags.json'
-metadata_p = './inputs/metadata_tag_list_translated.json'
-schema_p = './inputs/schema_complete_list.json'
-matching_output_p = './outputs/instance_matching_output/'
-kb_file_p = "./outputs/kb_file.json"
-dataset_stats = './inputs/dataset_statistics/'
-new_concepts_p = "./outputs/new_concepts.json"
+class Paths:
+    datasets_path = './thesis_project_dataset_clean/'
+    dataset_metadata_p = './inputs/datasource_and_tags.json'
+    metadata_p = './inputs/metadata_tag_list_translated.json'
+    schema_p = './inputs/schema_complete_list.json'
+    matching_output_p = './outputs/instance_matching_output/'
+    kb_file_p = "./outputs/kb_file.json"
+    dataset_stats = './inputs/dataset_statistics/'
+    new_concepts_p = "./outputs/new_concepts.json"
+    new_concepts_f = './outputs/new_concepts.csv'
 
-def load_metadata(input_topics, input_datasets):
+    def __init__(self, **kwds):
+        self.__dict__.update(kwds)
+
+p = Paths()
+
+
+def load_metadata(p, input_topics, input_datasets):
     '''TODO there might be a correct mapping between input_topics and attributes of input_datasets'''
 
-    dataset_metadata_f = open(dataset_metadata_p, 'r')
+    dataset_metadata_f = open(p.dataset_metadata_p, 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
 
-    metadata_f = open(metadata_p, 'r')
+    metadata_f = open(p.metadata_p, 'r')
     metadata_set = json.load(metadata_f)
 
-    schema_f = open(schema_p, 'r')
+    schema_f = open(p.schema_p, 'r')
     schema_set = json.load(schema_f, strict=False)
 
     datasources_with_tag = {}
@@ -65,13 +73,12 @@ def load_metadata(input_topics, input_datasets):
     return dataset_metadata_set, metadata_set, schema_set, datasources_with_tag
 
 
-def find_datasources(datasources_with_tag):
-    kb = {}
+def find_datasources(p, datasources_with_tag, input_topics, kb):
 
     reverse_index = {}
     for topic in input_topics:
         for data_src in datasources_with_tag[topic]:
-            path = datasets_path + data_src + '.csv'
+            path = p.datasets_path + data_src + '.csv'
             my_file = Path(path)
             if not my_file.exists():
                 datasources_with_tag[topic].remove(data_src)
@@ -88,16 +95,19 @@ def find_datasources(datasources_with_tag):
     datasources_with_tag = list(reverse_index.keys())
     return kb, datasources_with_tag, datasources_index, reverse_index
 
-def initialize_matching(input_topics, dataset_metadata_set, schema_set, datasources_with_tag, reverse_index, kb):
+def initialize_matching(p, input_topics, dataset_metadata_set, schema_set, datasources_with_tag, reverse_index, kb):
 
     datasources = {}
     for source_name in datasources_with_tag:
         # path = datasets_path + source_name + '.csv'
         # dataset = pd.read_csv(path, index_col=0, header=0)
+        stats_f = open(p.dataset_stats + source_name + '.json', 'r')
+        stats = json.load(stats_f)
+        df_columns = list(stats.keys())
 
         schema = schema_set[source_name]
         metadata = dataset_metadata_set[source_name]['tags']
-        dataset = None
+        dataset = pd.DataFrame()
 
         # dataset = bmm.df_rename_cols(dataset)
 
@@ -109,6 +119,9 @@ def initialize_matching(input_topics, dataset_metadata_set, schema_set, datasour
         # initialization schema matching
         tags_list = [tag['display_name'] for tag in metadata]
         attributes_list = [pds.clean_name(attr['name'], False, False) for attr in schema]
+        cols_to_delete = bmm.find_attrs_to_delete(attributes_list, df_columns)
+        attributes_list = [item for item in attributes_list if item not in cols_to_delete]
+
         sim_matrix = bmm.build_local_similarity_matrix(tags_list, attributes_list)
         sim_frame = pd.DataFrame(data=sim_matrix, columns=attributes_list, index=tags_list)
 
@@ -116,6 +129,11 @@ def initialize_matching(input_topics, dataset_metadata_set, schema_set, datasour
 
         # TODO during new concepts stage, add second best tag and so on
         attrs = list(sim_frame.columns.values)
+
+        # if stats file is empty
+        if len(attrs) == 0:
+            return kb, datasources_with_tag, schema_set
+
         for topic in reverse_index[source_name]:
 
             max_score = 0
@@ -134,17 +152,17 @@ def initialize_matching(input_topics, dataset_metadata_set, schema_set, datasour
             if schema[arg_i]['domain'] != None:
                 arg_max_examples_vals = schema[arg_i]['coded_values']
                 arg_max_examples_vals.sort()
-                example_value = arg_max_examples_vals[0]
+                if len(arg_max_examples_vals) > 0: example_value = arg_max_examples_vals[0]
             else:
-                # TODO replace with loading from stats file
-                _, uniques = bmm.get_attr_stats(dataset_stats, source_name, attrs[arg_i])
+                # loading from stats file
+                _, uniques = bmm.get_attr_stats(p.dataset_stats, source_name, attrs[arg_i])
                 # stat, _, uniques = bmm.groupby_unique(attrs[arg_i], dataset)
 
                 uniques.sort()
                 schema[arg_i]['coded_values'] = uniques
                 arg_max_examples_vals = schema[arg_i]['coded_values']
 
-                print('arg_max_examples_vals', arg_max_examples_vals[0])
+                if len(arg_max_examples_vals) > 0: print('arg_max_examples_vals', arg_max_examples_vals[0])
 
                 schema[arg_i]['domain'] = 'coded_values_groupby'
 
@@ -164,7 +182,7 @@ def initialize_matching(input_topics, dataset_metadata_set, schema_set, datasour
 
     return kb, datasources_with_tag, schema_set
 
-def perform_matching(dataset_metadata_set, schema_set, datasources_with_tag, kb, params):
+def perform_matching(p, dataset_metadata_set, schema_set, datasources_with_tag, kb, params):
     comparison_count = 0
     comparison_count_o = [comparison_count]
     sim_matrices = {}
@@ -172,7 +190,7 @@ def perform_matching(dataset_metadata_set, schema_set, datasources_with_tag, kb,
     for source_name in datasources_with_tag:
         t2 = time.time()
 
-        dataset = pd.read_csv(datasets_path + source_name + '.csv', index_col=0, header=0)
+        dataset = pd.read_csv(p.datasets_path + source_name + '.csv', index_col=0, header=0)
         dataset = bmm.df_rename_cols(dataset)
 
         schema = schema_set[source_name]
@@ -209,7 +227,7 @@ def perform_matching(dataset_metadata_set, schema_set, datasources_with_tag, kb,
                 for attr in tar_schema:
                     # TODO save this output to file for later use
                     # stat, groups, uniques = bmm.groupby_unique(attr, dataset)
-                    stat, uniques = bmm.get_attr_stats(dataset_stats, source_name, attr)
+                    stat, uniques = bmm.get_attr_stats(p.dataset_stats, source_name, attr)
                     uniques.sort()
 
                     # save for later
@@ -253,8 +271,8 @@ def perform_matching(dataset_metadata_set, schema_set, datasources_with_tag, kb,
 
     return kb, sim_matrices
 
-def update_kb(schema_set, kb, match_score_threshold):
-    for root, dirs, files in os.walk(matching_output_p):
+def update_kb(p, schema_set, kb, match_score_threshold):
+    for root, dirs, files in os.walk(p.matching_output_p):
         for file in files:
             filename, file_extension = os.path.splitext(file)
             if file_extension != '.csv':
@@ -306,8 +324,8 @@ def update_kb(schema_set, kb, match_score_threshold):
 
     return kb
 
-def find_new_concepts(schema_set, kb, datasources_with_tag):
-    _, datasources, _, _ = find_datasources(datasources_with_tag)
+def find_new_concepts(p, metadata_set, schema_set, kb, datasources_with_tag, num, input_topics):
+    _, datasources, _, _ = find_datasources(p, datasources_with_tag, input_topics, kb)
 
     attr_schema = [schema_set[datasource] for datasource in datasources]
 
@@ -319,98 +337,115 @@ def find_new_concepts(schema_set, kb, datasources_with_tag):
 
     new_concepts = rkc.create_new_kb_concept(attr_schema_parse, kb, False)
 
-    return new_concepts
+    new_concepts, new_concepts_mod, concept_sims_scores, new_concepts_mod_df = rkc.select_new_concepts(metadata_set, schema_set, new_concepts, kb, num)
 
+    return new_concepts, new_concepts_mod, concept_sims_scores, new_concepts_mod_df
+
+
+def prepare_next_iteration(kb, output_new_concepts):
+    input_topics = output_new_concepts
+    dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = load_metadata(p, input_topics, None)
+
+    kb, datasources_with_tag, datasources_index, reverse_index = find_datasources(p, datasources_with_tag,
+                                                                                     input_topics, kb)
+    bmm.gather_statistics(schema_set, datasources_with_tag, p.dataset_stats, p.datasets_path)
+
+    kb, datasources_with_tag, schema_set = initialize_matching(p, input_topics, dataset_metadata_set, schema_set,
+                                                               datasources_with_tag, reverse_index, kb)
+
+    return kb, schema_set
 
 if __name__ == "__main__":
-    STAGES = [1,2,3,4,5]
+
+    STAGES = [1,1,1,1,1,2]
+    # STAGES = [1,0,0,0,1,1]
     input_topics = ['trees', 'parks']
     input_datasets = []
-    kb = None
+    kb = {}
 
     t0 = time.time()
 
-    dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = load_metadata(input_topics, input_datasets)
+    dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = load_metadata(p, input_topics, input_datasets)
     datasources_index = datasources_with_tag
 
-    if STAGES[0] == 1:
-        print('-------INIT-------')
-        kb, datasources_with_tag, datasources_index, reverse_index = find_datasources(datasources_with_tag)
-        bmm.gather_statistics(schema_set, datasources_with_tag, dataset_stats, datasets_path)
+    if STAGES[0] != 0:
+        kb, datasources_with_tag, datasources_index, reverse_index = find_datasources(p, datasources_with_tag, input_topics, kb)
+        bmm.gather_statistics(schema_set, datasources_with_tag, p.dataset_stats, p.datasets_path)
 
-        kb, datasources_with_tag, schema_set = initialize_matching( input_topics, dataset_metadata_set, schema_set,
+        print('-------INIT-------')
+        kb, datasources_with_tag, schema_set = initialize_matching( p, input_topics, dataset_metadata_set, schema_set,
                                                                     datasources_with_tag, reverse_index, kb)
-        with open(schema_p, 'w') as fp:
+        with open(p.schema_p, 'w') as fp:
             json.dump(schema_set, fp, sort_keys=True, indent=2)
 
-        # kb_file = open(kb_file_p, "w")
-        # json.dump(kb, kb_file, indent=2, sort_keys=True)
+    while True:
+
+        if STAGES[1] != 0:
+
+            params = {'match_threshold': 0.6,
+                    'sample_ratio': 0.01,
+                    'sample_min_count': 10,
+                    'sample_max_count': 100}
+
+            print('-------MATCHING-------')
+            kb, sim_matrices = perform_matching(p, dataset_metadata_set, schema_set, datasources_with_tag, kb, params)
+
+            for filename, sim_matrix in sim_matrices.items():
+                sim_matrix.to_csv(p.matching_output_p + filename, sep=',', encoding='utf-8')
 
 
-    if STAGES[1] == 2:
-        # kb_f = open(kb_file_p, 'r')
-        # kb = json.load(kb_f)
+        if STAGES[2] != 0:
+            # kb_f = open(p.kb_file_p, 'r')
+            # kb = json.load(kb_f)
 
-        params = {'match_threshold': 0.6,
-                'sample_ratio': 0.01,
-                'sample_min_count': 10,
-                'sample_max_count': 100}
+            match_score_threshold = 10
 
-        print('-------MATCHING-------')
-        kb, sim_matrices = perform_matching(dataset_metadata_set, schema_set, datasources_with_tag, kb, params)
-
-        for filename, sim_matrix in sim_matrices.items():
-            sim_matrix.to_csv(matching_output_p + filename, sep=',', encoding='utf-8')
-
-        # kb_file = open(kb_file_p, "w")
-        # json.dump(kb, kb_file, indent=2, sort_keys=True)
+            print('-------UPDATE KB-------')
+            kb = update_kb(p, schema_set, kb, match_score_threshold)
 
 
-    if STAGES[2] == 3:
-        # kb_f = open(kb_file_p, 'r')
-        # kb = json.load(kb_f)
+        if STAGES[3] != 0:
 
-        match_score_threshold = 10
+            decision_threshold_split = 0.5
+            decision_threshold_merge = 0.1
 
-        print('-------UPDATE KB-------')
-        kb = update_kb(schema_set, kb, match_score_threshold)
+            print('-------SPLITTING-------')
+            mappings_all = rkc.find_all_subtree_mappings(kb, False)
+            # pprint.pprint(mappings_all)
+            kb = rkc.split_concepts(kb, mappings_all, decision_threshold_split)
 
-        # kb_file = open(kb_file_p, "w")
-        # json.dump(kb, kb_file, indent=2, sort_keys=True)
-
-
-    if STAGES[3] == 4:
-        # kb_f = open(kb_file_p, 'r')
-        # kb = json.load(kb_f)
-
-        decision_threshold_split = 0.5
-        decision_threshold_merge = 0.1
-
-        print('-------SPLITTING-------')
-        mappings_all = rkc.find_all_subtree_mappings(kb, False)
-        # pprint.pprint(mappings_all)
-        kb = rkc.split_concepts(kb, mappings_all, decision_threshold_split)
-
-        print('-------MERGING-------')
-        mappings_all = rkc.find_all_subtree_mappings(kb, False)
-        # pprint.pprint(mappings_all)
-        kb = rkc.merge_concepts(kb, mappings_all, decision_threshold_merge)
-
-        kb_file = open(kb_file_p, "w")
-        json.dump(kb, kb_file, indent=2, sort_keys=True)
+            print('-------MERGING-------')
+            mappings_all = rkc.find_all_subtree_mappings(kb, False)
+            # pprint.pprint(mappings_all)
+            kb = rkc.merge_concepts(kb, mappings_all, decision_threshold_merge)
 
 
-    if STAGES[4] == 5:
-        # kb_f = open(kb_file_p, 'r')
-        # kb = json.load(kb_f)
+        if STAGES[4] != 0:
 
-        print(datasources_index)
-        new_concepts = find_new_concepts(schema_set, kb, datasources_index)
-        # pprint.pprint(new_concepts)
+            num_of_new_concepts = 5
 
-        new_concepts_f = open(new_concepts_p, "w")
-        json.dump(new_concepts, new_concepts_f, indent=2, sort_keys=True)
+            print('-------NEW CONCEPTS-------')
+            new_concepts, new_concepts_mod, concept_sims_scores, df = find_new_concepts(p, metadata_set, schema_set, kb, datasources_index, num_of_new_concepts, input_topics)
+            output_new_concepts = new_concepts_mod
+            # print(datasources_index)
+            # pprint.pprint(new_concepts)
+            # print(new_concepts_mod)
 
+            df.to_csv(p.new_concepts_f, sep=',', encoding='utf-8')
+
+            new_concepts_f = open(p.new_concepts_p, "w")
+            json.dump(new_concepts, new_concepts_f, indent=2, sort_keys=True)
+
+            kb, schema_set = prepare_next_iteration(kb, output_new_concepts)
+
+            with open(p.schema_p, 'w') as fp:
+                json.dump(schema_set, fp, sort_keys=True, indent=2)
+
+            kb_file = open(p.kb_file_p, "w")
+            json.dump(kb, kb_file, indent=2, sort_keys=True)
+
+        STAGES[5] = STAGES[5] - 1
+        if STAGES[5] == 0: break
 
     t1 = time.time()
     total = t1 - t0

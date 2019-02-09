@@ -1,0 +1,29 @@
+{
+  "amendment date": {},
+  "amendment description": {},
+  "amendment resolution": {
+    " ": 11
+  },
+  "density high": {},
+  "density low": {},
+  "density units": {},
+  "folder": {},
+  "land use": {
+    "Commercial": 1,
+    "Multiple Residential": 9,
+    "Town Centre": 17,
+    "Urban": 1
+  },
+  "plan area": {
+    "Semiahmoo Town Centre": 28
+  },
+  "plan status": {
+    "Approved": 28
+  },
+  "plan type": {
+    "Town Centre Plan": 28
+  },
+  "plan year": {
+    "2009": 28
+  }
+}

@@ -60,10 +60,22 @@ def similarity_between_wordpair(src_word, tar_word):
     tar_word_vec = tar_word.split(' ')
     for word1 in tar_word_vec:
         word1 = inflection.singularize(word1)
-        w1 = wordnet.synset(word1+'.n.01')
+
+        w1 = None
+        try:
+            w1 = wordnet.synset(word1+'.n.01')
+        except Exception:
+            continue
+
         for word2 in src_word_vec:
             word2 = inflection.singularize(word2)
-            w2 = wordnet.synset(word2 + '.n.01')
+
+            w2 = None
+            try:
+                w2 = wordnet.synset(word2 + '.n.01')
+            except Exception:
+                continue
+
             sem_sim = w1.wup_similarity(w2)
             sem_sim_score += sem_sim
             # print(word1, word2, sem_sim)
@@ -86,10 +98,10 @@ def find_similarity_between_wordsets(concept, src_word, tar_words):
 
     if src_tar_score >= sem_sims[(concept, src_word)]:
         # stay in concept
-        return False, sem_sims
+        return False, sem_sims, src_tar_score
     else:
         # leave concept, create new concept
-        return True, sem_sims
+        return True, sem_sims, src_tar_score
 
 
 import pprint
@@ -447,7 +459,7 @@ def find_cluster_semantic_relatedness(kb):
             for tar_dataset in cluster:
                 attr = cluster[tar_dataset]['attribute']
                 cluster_attrs.append(attr)
-            leave_concept, sem_sims = find_similarity_between_wordsets(concept, src_attr, cluster_attrs)
+            leave_concept, sem_sims, _ = find_similarity_between_wordsets(concept, src_attr, cluster_attrs)
             print(leave_concept, sem_sims)
 
             # if leave_concept:
@@ -455,6 +467,45 @@ def find_cluster_semantic_relatedness(kb):
     # TODO incorporate into module for examining mapping clusters
 
     return
+
+def select_new_concepts(metadata_set, schema_set, input_new_concepts, kb, num):
+    output_new_concepts = []
+
+    # policy 1: select topics related to current topics in kb, chance of introducing new datasets
+    existing_concepts = list(kb.keys())
+    all_concepts = list(metadata_set['tags'].keys())
+    all_concepts = list(set(all_concepts) - set(existing_concepts))
+
+    concept_sims = {}
+    columns = ['concept', 'score']
+    columns.extend(existing_concepts)
+    concept_sims_scores = pd.DataFrame(columns=columns)
+    concept_sims_scores_series = []
+    for concept in all_concepts:
+        # print(concept)
+        _, sem_sims, score = find_similarity_between_wordsets(concept, concept, existing_concepts)
+        # print(score)
+        concept_sims[concept] = sem_sims
+        series_data = [concept, score]
+        series_data.extend([sem_sims[(concept, kb_conc)] for kb_conc in existing_concepts])
+        # print(series_data)
+        # print(pd.Series(series_data, index=concept_sims_scores.columns))
+        concept_sims_scores = concept_sims_scores.append(pd.Series(series_data, index=concept_sims_scores.columns), ignore_index=True)
+        # print(concept_sims_scores.head(2))
+        # print('-----')
+
+    if DEBUG_MODE: print(concept_sims_scores.head(20))
+    # print('-----')
+
+    top_concepts = concept_sims_scores.sort_values('score', ascending=False).head(num)
+    # print(top_concepts)
+    output_new_concepts = list(top_concepts['concept'])
+
+    # TODO policy 2: select most popular attributes from current mapped datasets, chance of creating new topics
+
+    # TODO policy 3: select attributes not from current mapped datasets but related to topics in kb, chance of discovering new information
+
+    return input_new_concepts, output_new_concepts, concept_sims_scores, concept_sims_scores
 
 if __name__ == "__main__":
     kb_f = open('./kb_file.json', 'r')

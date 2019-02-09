@@ -1,0 +1,17 @@
+{
+  "area name": {
+    "Cloverdale Town Centre": 2,
+    "Fleetwood Town Centre": 2,
+    "Guildford Town Centre": 1,
+    "Newton Town Centre": 1,
+    "Semiahmoo Town Centre": 2
+  },
+  "description": {
+    "1.5 FAR": 2,
+    "2.0 FAR": 1,
+    "2.5 FAR": 5
+  },
+  "land use": {
+    "Town Centre": 8
+  }
+}

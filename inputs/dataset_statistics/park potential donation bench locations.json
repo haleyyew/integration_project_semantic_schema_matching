@@ -1,0 +1,82 @@
+{
+  "automated": {},
+  "bench style": {
+    "Surrey": 17
+  },
+  "bookable": {},
+  "capacity": {},
+  "comments": {},
+  "component type": {},
+  "description": {
+    "Potential Surrey Bench, Cost: $2,400.00": 17
+  },
+  "dimension m2": {},
+  "enclosed": {},
+  "facilityid": {
+    "1001715145": 1,
+    "1001715146": 1,
+    "1001715147": 1,
+    "1001715148": 1,
+    "1001715149": 1,
+    "1001715150": 1,
+    "1001715151": 1,
+    "1001715152": 1,
+    "1001715161": 1,
+    "1001715162": 1,
+    "1001715163": 1,
+    "1001715164": 1,
+    "1001715168": 1,
+    "1001715169": 1,
+    "1001715170": 1,
+    "1001715171": 1,
+    "1001715172": 1
+  },
+  "finishes": {},
+  "gift donation": {
+    "Y": 17
+  },
+  "heated": {},
+  "length m": {},
+  "lighting system": {},
+  "location": {},
+  "maintenance responsibility": {},
+  "material type": {},
+  "operating location": {
+    "Fleetwood Park, 15802 80 Ave": 12,
+    "Hawthorne Park, 10503 144 St": 5
+  },
+  "operating location type": {},
+  "operational responsibility": {},
+  "park ownership": {},
+  "plaque detail": {},
+  "public access": {},
+  "quantity": {},
+  "recreational": {},
+  "reference no": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "11": 1,
+    "12": 1
+  },
+  "seating material": {},
+  "seating type": {
+    "Bench": 17
+  },
+  "service level": {},
+  "special features": {},
+  "structure detail type": {},
+  "structure type2": {
+    "Benches and Bleachers": 17
+  },
+  "surface material": {},
+  "width m": {},
+  "winterized": {}
+}
