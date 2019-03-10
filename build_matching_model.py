@@ -196,6 +196,7 @@ def build_local_similarity_matrix(source_schema, target_schema):
 
     for i in range(len(source_schema)):
             for j in range(len(target_schema)):
+                # TODO call matcher
                 sim_score = 1 - twogram.distance(source_schema[i],target_schema[j])
                 # matrix[i,j] = np.int(100*SequenceMatcher(None,source_schema[i],target_schema[j]).ratio())
                 matrix[i, j] = sim_score

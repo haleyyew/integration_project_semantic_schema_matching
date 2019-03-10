@@ -58,6 +58,7 @@ def similarity_between_wordpair(src_word, tar_word):
     sem_sim_score = 0
     src_word_vec = src_word.split(' ')
     tar_word_vec = tar_word.split(' ')
+    # TODO call matcher
     for word1 in tar_word_vec:
         word1 = inflection.singularize(word1)
 

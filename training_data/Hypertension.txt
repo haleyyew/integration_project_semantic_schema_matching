@@ -1,0 +1,10 @@
+ Hypertension
+
+These datasets provide de-identified insurance data for hypertension hyperlipidemia. The data is provided by three managed care organizations in Allegheny County (Gateway Health Plan, Highmark Health, and UPMC) and represents their insured population for the 2015 and 2016 calendar years.
+
+
+
+ ACHD DASH, Hypertension, blood pressure, cardiovascular disease, 
+social determinants of health
+
+Group/Topic 	Health
