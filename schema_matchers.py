@@ -8,9 +8,12 @@ def matcher_name(src, tar, function):
 
 
 import nltk
-nltk.data.path.append('/Users/haoran/Documents/nltk_data/')
-from nltk.corpus import wordnet
-dictionary = wordnet
+
+def load_dict():
+    nltk.data.path.append('/Users/haoran/Documents/nltk_data/')
+    from nltk.corpus import wordnet
+    dictionary = wordnet
+    return dictionary
 
 import pandas as pd
 import inflection
@@ -31,7 +34,7 @@ def matcher_name_meaning_by_thesaurus(src, tar, dictionary):
 
         w1 = None
         try:
-            w1 = dictionary.synsets(word1, pos=wordnet.NOUN)
+            w1 = dictionary.synsets(word1, pos=dictionary.NOUN)
             tar_word_enrich[word1] = w1
         except Exception:
             continue
@@ -41,7 +44,7 @@ def matcher_name_meaning_by_thesaurus(src, tar, dictionary):
 
         w2 = None
         try:
-            w2 = dictionary.synsets(word2, pos=wordnet.NOUN)
+            w2 = dictionary.synsets(word2, pos=dictionary.NOUN)
             src_word_enrich[word2] = w2
         except Exception:
             continue
@@ -157,6 +160,10 @@ def rm_special_chars(s):
     s = re.sub('_', '', s)
     s = re.sub('\s+', ' ', s)
     s = s.strip()
+
+    s = s.split()
+    s = [word.lower() for word in s]
+    s = ' '.join(s)
     return s
 
 def compute_tf(s):
@@ -213,8 +220,96 @@ def compute_freq_vec(tf_dict1, tf_dict2):
     return vec1, vec2, all_words
 
 
-def matcher_attribute_descriptions():
+from gensim.test.utils import common_texts
+from gensim.corpora.dictionary import Dictionary
+from gensim.models.ldamodel import LdaModel
+from gensim.test.utils import datapath
+def matcher_attribute_descriptions(path, text1, text2):
+    # using gensim lda
+
+    temp_file = datapath(path + 'lda_model')
+    lda = LdaModel.load(temp_file)
+
+    dictionary = Dictionary.load(path + 'dict')
+    # common_dictionary = Dictionary(common_texts)
+    # print(lda.print_topics(5))
+
+    text1 = rm_special_chars(text1)
+    text2 = rm_special_chars(text2)
+
+    text1 = text1.split()
+    text2 = text2.split()
+
+    corpus = [text1, text2]
+    # print(corpus)
+    corpus = [dictionary.doc2bow(text) for text in corpus]
+    # print(corpus)
+
+    vector1 = lda[corpus[0]]
+    vector2 = lda[corpus[1]]
+
+    from pprint import pprint
+    # pprint(vector1)
+    # pprint(vector2)
+    vector1 = sorted(vector1, key=lambda x: x[1], reverse=True)
+    vector2 = sorted(vector2, key=lambda x: x[1], reverse=True)
+    print(vector1)
+    print(vector2)
+
+    topics1 = [(dictionary[tup[0]], tup[1]) for tup in vector1]
+    topics2 = [(dictionary[tup[0]], tup[1]) for tup in vector2]
+    print(topics1)
+    print(topics2)
+
     return
+
+def train_lda(path):
+    # from gensim.test.utils import common_texts
+    # from gensim.corpora.dictionary import Dictionary
+    # from gensim.models.ldamodel import LdaModel
+    # from gensim.test.utils import datapath
+
+    # common_dictionary = Dictionary(common_texts)
+    # common_corpus = [common_dictionary.doc2bow(text) for text in common_texts]
+
+    # print(common_dictionary.get(80))
+
+    # lda = LdaModel(common_corpus, num_topics=5)
+    # temp_file = datapath(path)
+    # lda.save(temp_file)
+    # lda = LdaModel.load(temp_file)
+
+
+    documents = ["Amazon sells many things " ,
+                 "Apple is releasing a new product " ,
+                 "Microsoft announces Nokia acquisition " ,
+                 'Julie loves me more than Linda loves me ' ,
+                 'Jane likes me more than Julie loves me']
+
+    documents = [rm_special_chars(s) for s in documents]
+    stoplist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'there', 'about', 'once', 'during', 'out', 'very', 'having', 'with', 'they', 'own', 'an', 'be', 'some', 'for', 'do', 'its', 'yours', 'such', 'into', 'of', 'most', 'itself', 'other', 'off', 'is', 's', 'am', 'or', 'who', 'as', 'from', 'him', 'each', 'the', 'themselves', 'until', 'below', 'are', 'we', 'these', 'your', 'his', 'through', "don't", 'nor', 'me', 'were', 'her', 'more', 'himself', 'this', 'down', 'should', 'our', 'their', 'while', 'above', 'both', 'up', 'to', 'ours', 'had', 'she', 'all', 'no', 'when', 'at', 'any', 'before', 'them', 'same', 'and', 'been', 'have', 'in', 'will', 'on', 'does', 'yourselves', 'then', 'that', 'because', 'what', 'over', 'why', 'so', 'can', 'did', 'not', 'now', 'under', 'he', 'you', 'herself', 'has', 'just', 'where', 'too', 'only', 'myself', 'which', 'those', 'i', 'after', 'few', 'whom', 'being', 'if', 'theirs', 'my', 'against', 'a', 'by', 'doing', 'it', 'how', 'further', 'was', 'here', 'than']
+
+
+    texts = [[word for word in document.lower().split() if word not in stoplist] for document in documents]
+    # print(texts)
+    dictionary = Dictionary(texts)
+    corpus = [dictionary.doc2bow(text) for text in texts]
+
+    # print(dictionary.get(0))
+
+    num_topics = 3
+    lda = LdaModel(corpus=corpus, id2word=dictionary,
+                   num_topics=num_topics, update_every=1,
+                   random_state=100, chunksize=100,
+                   passes=20, alpha='auto')
+
+    temp_file = datapath(path + 'lda_model')
+    lda.save(temp_file)
+    lda = LdaModel.load(temp_file)
+
+    dictionary.save(path + 'dict')
+
+    return lda, dictionary
 
 def matcher_by_hmm():
     return
@@ -223,8 +318,16 @@ def matcher_by_naive_bayes():
     return
 
 def matcher_by_semantic_hash():
+    # train neural net
     return
 
 # score = matcher_name('park', 'green', twogram)
+# dictionary = load_dict()
 # score, sims_list = matcher_name_meaning_by_thesaurus('park', 'green', dictionary)
 # score = matcher_instance_document('Julie loves me more than Linda loves me', 'Jane likes me more than Julie loves me')
+# train_lda('/Users/haoran/Documents/thesis_schema_integration/outputs/stat_models/')
+# # TODO does not work well
+# matcher_attribute_descriptions(
+#     '/Users/haoran/Documents/thesis_schema_integration/outputs/stat_models/',
+#     'Julie loves me more than Linda loves me',
+#     'Jane likes me more than Julie loves me')
