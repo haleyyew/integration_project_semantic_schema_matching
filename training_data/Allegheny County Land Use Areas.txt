@@ -1,9 +1,0 @@
- Allegheny County Land Use Areas
-
-Allegheny County land use as ascribed to areas of land. The Land Use Feature Dataset contains photogrammetrically compiled information concerning vegetation and limited open areas of ground. The Land Use Feature Dataset contains Woodlands, Nurseries and Orchards, Cultivated Fields and Athletic Fields. Woodlands are groups of trees, whether coniferous or deciduous. Woodland areas that are one (1) acre or greater in size are digitized from the aerial photography. Nurseries and Orchards are areas that indicate cultivated trees. These areas are usually identified because the trees are found in evenly spaced rows. Nursery and Orchard areas that are one (1) acre or greater in size are digitized from the aerial photography. Cultivated Fields are those areas that are used for crops. Pasture land and land that, according to the aerial photographs and aerial interpretation, has been permitted to lie fallow for an extended period is not considered cultivated areas. Cultivated Field areas that are one (1) acre or greater in size are digitized from the aerial photography. Athletic Fields are sport fields that have a natural surface. The apparent outline of the land area used for athletic purposes is digitized from the aerial photography and not just the actual athletic field.
-
-
-
-    boundaries field nursery orchard planning property woodland 
-
-Category:  Geography

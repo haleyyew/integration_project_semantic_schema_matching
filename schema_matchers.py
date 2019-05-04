@@ -20,8 +20,10 @@ import inflection
 import math
 def matcher_name_meaning_by_thesaurus(src, tar, dictionary):
 
-    threshold = 0.2
-    top_rows = 0.05
+    # threshold = 0.2
+    # top_rows = 0.05
+    threshold = 0.5
+    top_rows = 0.4
 
     src_word_vec = src.split(' ')
     tar_word_vec = tar.split(' ')
@@ -314,8 +316,8 @@ def train_lda(path):
 def matcher_by_hmm():
     return
 
-def matcher_by_naive_bayes():
-    return
+# def matcher_by_naive_bayes():
+#     return
 
 def matcher_by_semantic_hash():
     # train neural net

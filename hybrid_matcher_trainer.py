@@ -1,2 +1,5 @@
-# linear_regression
-# logistic_regression
+def linear_regression():
+    return
+
+def logistic_regression():
+    return

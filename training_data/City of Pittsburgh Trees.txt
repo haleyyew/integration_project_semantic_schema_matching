@@ -1,8 +1,0 @@
-City of Pittsburgh Trees
-
-Trees cared for and managed by the City of Pittsburgh Department of Public Works Forestry Division.
-
-
-
-    DPW, _etl, department of public works, environment forestry trees 
-    Environment Pittsburgh Trees _harvested 

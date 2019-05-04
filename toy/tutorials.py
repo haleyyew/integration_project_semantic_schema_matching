@@ -180,4 +180,7 @@ def test_cosine_similarity():
 
 
 # ngram, wordnet, word2vec/gensim
-hierarchical_clustering()
+# hierarchical_clustering()
+
+
+
