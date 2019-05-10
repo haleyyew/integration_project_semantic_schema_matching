@@ -514,7 +514,7 @@ def recommend_labels():
             print("similar topics:")
 
             # show all datasets with topic, and additional topics each dataset has
-
+            # TODO do not show duplicate datasets
             for topic_sim in similar_topics:
                 print('=    ', topic_sim)
                 topic_sim_name = topic_sim[1]
@@ -534,6 +534,7 @@ def recommend_labels():
                     for dataset_with_topic in datasets_with_topic:
                         count_sim_topics_printed += 1
                         print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir)
+                        # TODO also print table values
                         if count_sim_topics_printed % 5 == 0:
                             add_list, delete_list = input_from_command(add_list, delete_list, topics_new)
 
@@ -578,6 +579,387 @@ def recommend_labels():
     return
 
 
+class Splitter(object):
+    """
+    split the document into sentences and tokenize each sentence
+    """
+    def __init__(self):
+        self.splitter = nltk.data.load('tokenizers/punkt/english.pickle')
+        self.tokenizer = nltk.tokenize.TreebankWordTokenizer()
+
+    def split(self,text):
+        """
+        out : ['What', 'can', 'I', 'say', 'about', 'this', 'place', '.']
+        """
+        text = text.replace("[", "")
+        text = text.replace("]", "")
+        text = text.replace("_", " ")
+
+        # split into single sentence
+        sentences = self.splitter.tokenize(text)
+        # tokenization in each sentences
+        tokens = [self.tokenizer.tokenize(sent) for sent in sentences]
+        return tokens
+
+
+class LemmatizationWithPOSTagger(object):
+    def __init__(self):
+        pass
+    def get_wordnet_pos(self,treebank_tag):
+        """
+        return WORDNET POS compliance to WORDENT lemmatization (a,n,r,v)
+        """
+        if treebank_tag.startswith('J'):
+            return wordnet.ADJ
+        elif treebank_tag.startswith('V'):
+            return wordnet.VERB
+        elif treebank_tag.startswith('N'):
+            return wordnet.NOUN
+        elif treebank_tag.startswith('R'):
+            return wordnet.ADV
+        else:
+            # As default pos in lemmatization is Noun
+            return wordnet.NOUN
+
+    def pos_tag(self,tokens):
+        # find the pos tagginf for each tokens [('What', 'WP'), ('can', 'MD'), ('I', 'PRP') ....
+        pos_tokens = [nltk.pos_tag(token) for token in tokens]
+
+
+        # lemmatization using pos tagg
+        # convert into feature set of [('What', 'What', ['WP']), ('can', 'can', ['MD']), ... ie [original WORD, Lemmatized word, POS tag]
+        pos_tokens = [ [(word, lemmatizer.lemmatize(word,self.get_wordnet_pos(pos_tag)), pos_tag) for (word,pos_tag) in pos] for pos in pos_tokens]
+        return pos_tokens
+
+
+
+def enrich_homonyms_test():
+    import nltk
+    nltk.data.path.append('/Users/haoran/Documents/nltk_data/')
+    from nltk.corpus import wordnet
+    from nltk.stem.wordnet import WordNetLemmatizer
+
+    # synonyms = []
+    # antonyms = []
+    #
+    # for syn in wordnet.synsets("good"):
+    #     for l in syn.lemmas():
+    #         synonyms.append(l.name())
+    #         if l.antonyms():
+    #             for ant in l.antonyms():
+    #                 antonyms.append(ant.name())
+    #
+    # for syn in wordnet.synsets("bad"):
+    #     for l in syn.lemmas():
+    #         antonyms.append(l.name())
+    #         if l.antonyms():
+    #             for ant in l.antonyms():
+    #                 synonyms.append(ant.name())
+
+    ADJ, ADJ_SAT, ADV, NOUN, VERB = 'a', 's', 'r', 'n', 'v'
+    word = "park"
+    syns = wordnet.synsets(word)
+
+    syns_n = wordnet.synsets(word, pos='n')
+    print('[syn.n]', syns_n)
+
+    # plural or tense recognized
+    print('[syn][morph]', wordnet.morphy(word+'s', wordnet.NOUN))
+
+    # lemmatize
+    lemmatizer = WordNetLemmatizer()
+    print(lemmatizer.lemmatize('parking', wordnet.VERB))
+
+    print('=====')
+
+    for syn in syns:
+        print('[syn]', syn.name())
+        print('[def]', syn.definition())
+        print('[ex]', syn.examples())
+
+        synset = wordnet.synset(syn.name())
+
+        hypo = []
+        for s in synset.closure(lambda s: s.hyponyms()):
+            hypo.append(s)
+
+        hyper = []
+        for s in synset.closure(lambda s: s.hypernyms()):
+            hyper.append(s)
+
+        hyper1 = [s for s in synset.closure(lambda s: s.hypernyms(), depth=1)]
+        hypo1 = [s for s in synset.closure(lambda s: s.hyponyms(), depth=1)]
+
+        # print(syn.hypernyms())
+        # print(syn.hyponyms())
+        if len(hyper1) > 0: print('[syn][clos1][hyper]', list(hyper1))
+        if len(hyper) > 0: print('[syn][clos][hyper]', list(hyper))
+        if len(hypo1) > 0: print('[syn][clos1][hypo]', list(hypo1))
+        if len(hypo) > 0: print('[syn][clos][hypo]', list(hypo))
+
+        if len(syn.topic_domains()) > 0: print('___[syn][topic]', syn.topic_domains())
+        if len(syn.region_domains()) > 0: print('___[syn][region]', syn.region_domains())
+        if len(syn.usage_domains()) > 0: print('___[syn][usage]', syn.usage_domains())
+
+        print('+++lemmas+++', len(syn.lemmas()))
+        for lem in syn.lemmas():
+            print('[syn][lem]', lem.name())
+            # frequency in corpus
+            print('[syn][lem][count]', lem.count())
+            # verb and noun are related
+            if len(lem.derivationally_related_forms()) > 0: print('___[syn][lem][rel]', lem.derivationally_related_forms())
+
+            if lem.antonyms():
+                print('+++antonyms+++', len(lem.antonyms()))
+                for ant in lem.antonyms():
+
+                    print('[ant]', ant.name())
+                    if len(ant.synset().lowest_common_hypernyms(syn)) > 0: print('___[ant][com]', ant.synset().lowest_common_hypernyms(syn))
+                    print('[ant][syn]', ant.synset().path_similarity(syn))
+                print('+++++')
+
+            print('-----')
+        print('=====\n')
+
+
+    return
+
+import pprint
+def compare_source_target(source_context, target_context):
+    enriched_topic_prob = {}
+
+    # print(source_context["desc"])
+    # print(source_context["notes"])
+    # print(target_context["defn"])
+    # print(target_context["expl"])
+
+    # pprint.pprint(source_context)
+    # pprint.pprint(target_context)
+    # print('-----')
+
+    source_words = []
+    # print(source_context['dataset_name'])
+    source_words.extend([name for item in source_context['dataset_name'] for name in item])
+    source_words.extend(source_context['desc'])
+    source_words.extend(source_context['notes'])
+    source_words.extend(source_context['other_topics'])
+    source_words.extend(source_context['topic'])
+    source_words.extend(source_context['topic_singl'])
+
+    target_words = []
+    target_words.extend([name for item in target_context['antonyms'] for name in item])
+    target_words.extend([name for item in target_context['lemmas'] for name in item])
+    target_words.extend([name for item in target_context['deriv_rel'] for name in item])
+    target_words.extend(target_context['defn'])
+    target_words.extend(target_context['expl'])
+    target_words.extend([name for ex in target_context['hyper1_lemmas'] for item in ex for name in item])
+    target_words.extend([name for ex in target_context['hypo1_lemmas'] for item in ex for name in item])
+    target_words.extend([name for ex in target_context['region_dom'] for item in ex for name in item])
+    target_words.extend([name for ex in target_context['topic_dom'] for item in ex for name in item])
+    target_words.extend([name for ex in target_context['usage_dom'] for item in ex for name in item])
+
+    # print(source_words)
+    # print(target_words)
+    # print('-----')
+
+    source_words = {word for word in  set(source_words) if word != source_context['topic_singl']}
+    target_words = {word for word in  set(target_words) if word != source_context['topic_singl']}
+
+    return {'source_words': source_words, 'target_words': target_words, 'overlap': list(source_words & target_words)}
+
+def get_lemma_name_from_synsets(synsets, splitter):
+    lemmas = []
+    for syn in synsets:
+        for lem in syn.lemmas():
+            lemmas.append(splitter.split(lem.name()))
+    return lemmas
+
+
+def enrich_topic_words(topic, top_context, wordnet):
+    list_of_enriched = []
+    for word in topic:
+        enriched_topic, enriched_topic_prob = enrich_topic(word, top_context, wordnet)
+        list_of_enriched.append((enriched_topic, enriched_topic_prob))
+    return list_of_enriched
+
+def enrich_topic(topic, top_context, wordnet):
+    lemmatizer = WordNetLemmatizer()
+    splitter = Splitter()
+    lemmatization_using_pos_tagger = LemmatizationWithPOSTagger()
+
+    top_context["desc"] = [tok[1] for sent in top_context['desc'] for tok in sent if 'NN' in tok[2]]
+    top_context["notes"] = [tok[1] for sent in top_context['notes'] for tok in sent if 'NN' in tok[2]]
+
+    enriched_topic = {}
+    enriched_topic_prob = {}
+
+    syns = wordnet.synsets(topic, pos='n')
+    topic_m = wordnet.morphy(topic, wordnet.NOUN)
+    syns_m = wordnet.synsets(topic_m, pos='n')
+
+    if len(syns) >= len(syns_m):
+        pass
+    else:
+        syns = syns_m
+
+
+    for syn in syns:
+        defn = syn.definition()
+        expl = syn.examples()
+        syn_name = syn.name()
+
+        synset = wordnet.synset(syn.name())
+
+        hyper1 = [s for s in synset.closure(lambda s: s.hypernyms(), depth=1)]
+        hypo1 = [s for s in synset.closure(lambda s: s.hyponyms(), depth=1)]
+        hyper = [s for s in synset.closure(lambda s: s.hypernyms())]
+        hypo = [s for s in synset.closure(lambda s: s.hyponyms())]
+
+        syn_context = {'syn_name': syn_name,
+                       'expl': expl,
+                       'defn': defn,
+                       'hyper': hyper,
+                       'hypo': hypo,
+                       'hyper_num_depth1': len(hyper1),
+                       'hypo_num_depth1': len(hypo1),
+                       'topic_dom': syn.topic_domains(),
+                       'region_dom': syn.region_domains(),
+                       'usage_dom': syn.usage_domains(),
+                       'lemmas': [],
+                       'lem_deriv_rel': [],
+                       'anto': []}
+
+        for lem in syn.lemmas():
+            lem_name = lem.name()
+
+            syn_context['lemmas'].append(lem)
+            # syn_context['lemmas'].append(syn_name+'.'+lem_name)
+            # print(syn_name+'.'+lem_name)
+            # lemma = wordnet.lemma(syn_name+'.'+lem_name)
+            # print(lemma)
+
+            deriv_rel = lem.derivationally_related_forms()
+            syn_context['lem_deriv_rel'].extend(deriv_rel)
+
+            if not lem.antonyms():
+                continue
+
+            for ant in lem.antonyms():
+                ant_name = ant.name()
+                syn_context['anto'].append(ant)
+
+        # pprint.pprint(syn_context)
+        enriched_topic[syn_name] = syn_context
+
+
+        defn = splitter.split(defn)
+        expl = [splitter.split(ex) for ex in expl]
+
+        if len(defn) != 0: defn = lemmatization_using_pos_tagger.pos_tag(defn)
+        if len(expl) != 0:
+            expl = [lemmatization_using_pos_tagger.pos_tag(ex) for ex in expl]
+
+        hyper1_lemmas = get_lemma_name_from_synsets(hyper[:syn_context['hyper_num_depth1']], splitter)
+        hypo1_lemmas = get_lemma_name_from_synsets(hypo[:syn_context['hypo_num_depth1']], splitter)
+
+        lemmas = [lem.name().split('_') for lem in syn_context['lemmas']]
+        antonyms = [ant.name().split('_') for ant in syn_context['anto']]
+
+        deriv_rel = [lem.name().split('_') for lem in syn_context['lem_deriv_rel']]
+        topic_dom = get_lemma_name_from_synsets(syn_context['topic_dom'], splitter)
+        region_dom = get_lemma_name_from_synsets(syn_context['region_dom'], splitter)
+        usage_dom = get_lemma_name_from_synsets(syn_context['usage_dom'], splitter)
+
+
+        target_context = {'defn': defn,
+                          'expl': expl,
+                          'hyper1_lemmas': hyper1_lemmas,
+                          'hypo1_lemmas': hypo1_lemmas,
+                          'lemmas': lemmas,
+                          'antonyms': antonyms,
+                          'deriv_rel': deriv_rel,
+                          'topic_dom': topic_dom,
+                          'region_dom': region_dom,
+                          'usage_dom': usage_dom}
+
+        target_context["defn"] = [tok[1] for sent in target_context['defn'] for tok in sent if 'NN' in tok[2]]
+        target_context["expl"] = [tok[1] for ex in target_context['expl'] for sent in ex for tok in sent if 'NN' in tok[2]]
+
+        enriched_topic_prob_i = compare_source_target(top_context, target_context)
+        enriched_topic_prob[syn_name] = enriched_topic_prob_i
+
+        lowest_common_hypernyms = None
+        path_similarity = None
+
+    return enriched_topic, enriched_topic_prob
+
 # cluster_topics_prep_matrix()
 # cluster_topics()
-recommend_labels()
+
+# recommend_labels()
+wordnet = load_dict()
+# enrich_homonyms_test()
+
+# import nltk
+from nltk.stem import WordNetLemmatizer
+# from nltk.corpus import wordnet
+
+lemmatizer = WordNetLemmatizer()
+splitter = Splitter()
+lemmatization_using_pos_tagger = LemmatizationWithPOSTagger()
+
+
+dataset_name = 'parks'
+topic = 'parks'
+desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
+notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
+other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
+
+import inflection
+other_topics_singl = []
+for top in other_topics:
+    try:
+        other_topics_singl.append(inflection.singularize(top))
+    except Exception:
+        other_topics_singl.append(top)
+
+topic_singl = []
+for word in topic.split():
+    try:
+        word_singl = inflection.singularize(word)
+        topic_singl.append(word_singl)
+    except Exception:
+        topic_singl.append(word)
+
+topic = topic.split()
+
+#step 1 split document into sentence followed by tokenization
+desc_tokens = splitter.split(desc)
+#step 2 lemmatization using pos tagger
+desc_pos_token = lemmatization_using_pos_tagger.pos_tag(desc_tokens)
+
+#step 1 split document into sentence followed by tokenization
+notes_tokens = splitter.split(notes)
+#step 2 lemmatization using pos tagger
+notes_pos_token = lemmatization_using_pos_tagger.pos_tag(notes_tokens)
+
+#step 1 split document into sentence followed by tokenization
+name_tokens = splitter.split(dataset_name)
+
+top_context = {'dataset_name': name_tokens,
+               'topic': topic,
+               'topic_singl': topic_singl,
+               'desc': desc_pos_token,
+               'notes': notes_pos_token,
+               'other_topics': other_topics_singl}
+
+# pprint.pprint(top_context)
+# print('-----')
+
+# negative_topic = ['car', 'parking']
+# threshold = 0.3
+set_of_enriched = enrich_topic_words(topic, top_context, wordnet)
+for enriched_topic, enriched_topic_prob in set_of_enriched:
+    pprint.pprint(enriched_topic)
+    pprint.pprint(enriched_topic_prob)
+
