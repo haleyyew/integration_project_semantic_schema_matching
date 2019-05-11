@@ -765,7 +765,7 @@ def compare_source_target(source_context, target_context):
     source_words = {word for word in  set(source_words) if word != source_context['topic_singl']}
     target_words = {word for word in  set(target_words) if word != source_context['topic_singl']}
 
-    return {'source_words': source_words, 'target_words': target_words, 'overlap': list(source_words & target_words)}
+    return {'source_words': list(source_words), 'target_words': list(target_words), 'overlap': list(source_words & target_words)}
 
 def get_lemma_name_from_synsets(synsets, splitter):
     lemmas = []
@@ -779,7 +779,7 @@ def enrich_topic_words(topic, top_context, wordnet):
     list_of_enriched = []
     for word in topic:
         enriched_topic, enriched_topic_prob = enrich_topic(word, top_context, wordnet)
-        list_of_enriched.append((enriched_topic, enriched_topic_prob))
+        list_of_enriched.append([enriched_topic, enriched_topic_prob])
     return list_of_enriched
 
 def enrich_topic(topic, top_context, wordnet):
@@ -891,6 +891,19 @@ def enrich_topic(topic, top_context, wordnet):
         lowest_common_hypernyms = None
         path_similarity = None
 
+    for syn_context_k in enriched_topic:
+        syn_context = enriched_topic[syn_context_k]
+        syn_context['anto'] = [anto.name() for anto in syn_context['anto']]
+        syn_context['hyper'] = [hyper.name() for hyper in syn_context['hyper']]
+        syn_context['hypo'] = [hypo.name() for hypo in syn_context['hypo']]
+        syn_context['lem_deriv_rel'] = [syn_context['syn_name']+'.'+lem_deriv_rel.name() for lem_deriv_rel in syn_context['lem_deriv_rel']]
+        syn_context['lemmas'] = [syn_context['syn_name']+'.'+lemmas.name() for lemmas in syn_context['lemmas']]
+        syn_context['region_dom'] = [region_dom.name() for region_dom in syn_context['region_dom']]
+        syn_context['topic_dom'] = [topic_dom.name() for topic_dom in syn_context['topic_dom']]
+        syn_context['usage_dom'] = [usage_dom.name() for usage_dom in syn_context['usage_dom']]
+
+    # pprint.pprint(enriched_topic)
+
     return enriched_topic, enriched_topic_prob
 
 # cluster_topics_prep_matrix()
@@ -959,7 +972,17 @@ top_context = {'dataset_name': name_tokens,
 # negative_topic = ['car', 'parking']
 # threshold = 0.3
 set_of_enriched = enrich_topic_words(topic, top_context, wordnet)
+
+dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
+import json
+with open(dir + '['+ dataset_name +'_'+' '.join(topic)+'].json', 'w') as outfile:
+    json.dump([top_context, set_of_enriched], outfile)
+
 for enriched_topic, enriched_topic_prob in set_of_enriched:
-    pprint.pprint(enriched_topic)
-    pprint.pprint(enriched_topic_prob)
+    # pprint.pprint(enriched_topic)
+
+    ranked = {syn: (enriched_topic_prob[syn]['overlap'], enriched_topic[syn]['defn'], len(enriched_topic_prob[syn]['overlap'])) for syn in enriched_topic_prob}
+    ranked = sorted(ranked.items(), key=lambda kv: kv[1][2])
+    ranked.reverse()
+    pprint.pprint(ranked)
 
