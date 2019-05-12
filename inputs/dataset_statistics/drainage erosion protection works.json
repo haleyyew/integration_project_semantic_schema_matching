@@ -1,0 +1,55 @@
+{
+  "comments": {},
+  "condition": {},
+  "conditiondate": {},
+  "erosion protection type2": {
+    "Retaining Wall": 9
+  },
+  "facilityid": {
+    "1001082240": 1,
+    "1001151756": 1,
+    "1001151761": 1,
+    "1001183334": 1,
+    "1001185404": 1,
+    "1001185407": 1,
+    "1001186453": 1,
+    "1001186454": 1,
+    "1001360631": 1
+  },
+  "lifecycle cost": {},
+  "location": {
+    "6700blk 196 St W Side": 1
+  },
+  "material": {
+    "Earth": 3,
+    "Lock Block": 5
+  },
+  "name": {},
+  "owner": {
+    "Private": 4,
+    "Surrey": 5
+  },
+  "project no": {
+    "4709-6020-00": 1,
+    "4809-8010-00": 1,
+    "7801-0198-00": 1,
+    "7804-0050-00": 1,
+    "7807-0132-00": 2,
+    "7807-0159-00": 2,
+    "R-2101": 1
+  },
+  "site priority": {},
+  "status": {
+    "In Service": 9
+  },
+  "warrantydate": {},
+  "watercourse name": {
+    "Bear Creek": 2
+  },
+  "yr": {
+    "2002.0": 1,
+    "2008.0": 1,
+    "2010.0": 6
+  },
+  "ytd cost": {}
+}

@@ -1,0 +1,35 @@
+{
+  "comments": {
+    " ": 6
+  },
+  "ecological significance": {
+    "0": 6
+  },
+  "hectares": {
+    "48.8756649": 1,
+    "99.76961871": 1,
+    "164.09089609": 1,
+    "174.59366949": 1,
+    "702.21639783": 1,
+    "1057.69962844": 1
+  },
+  "id": {
+    "101": 1,
+    "102": 1,
+    "103": 1,
+    "104": 1,
+    "105": 1,
+    "106": 1
+  },
+  "name": {
+    "FRASER FORESHORE": 1,
+    "LOWER NICOMEKL": 1,
+    "LOWER SERPENTINE": 1,
+    "MUD BAY FORESHORE & INTERTIDAL": 1,
+    "PARSON'S CHANNEL FORESHORE": 1,
+    "SOUTH SURREY FORESHORE & INTERTIDAL": 1
+  },
+  "type": {
+    "AQUATIC": 6
+  }
+}
