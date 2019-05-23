@@ -346,6 +346,15 @@ def open_updated_topics(dir, source_name):
 
 import textwrap
 def print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir):
+    dataset_path = '/Users/haoran/Documents/thesis_schema_integration/thesis_project_dataset_clean/'
+    table_stats = '/Users/haoran/Documents/thesis_schema_integration/inputs/dataset_statistics/'
+
+    if not os.path.isfile(dataset_path+dataset_with_topic+'.csv'):
+        return
+    if not os.path.isfile(table_stats+dataset_with_topic+'.json'):
+        return
+
+
     print('     dataset: ', dataset_with_topic)
     dataset_existing_tags = dataset_metadata_set[dataset_with_topic]['tags']
     dataset_existing_groups = dataset_metadata_set[dataset_with_topic]['groups']
@@ -356,14 +365,27 @@ def print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir):
     dataset_notes = [word for word in dataset_notes.split() if "http://" not in word]
 
 
-
+    print('     =existing in original=')
     print('     tags: ', textwrap.fill(str(dataset_existing_tags), 120))
     print('     groups: ', textwrap.fill(str(dataset_existing_groups), 120))
     print('     notes: ', textwrap.fill(' '.join(dataset_notes), 120))
 
+
     # get more from updated list
+    print('     =updated topics already stored=')
     update, updated_topics_this = open_updated_topics(dir, dataset_with_topic)
     if update: print(updated_topics_this)
+
+    print('     =stats for table=')
+
+    dataset_f = open(table_stats+dataset_with_topic+'.json', 'r')
+    dataset_stats = json.load(dataset_f)
+    for attr in dataset_stats:
+        sorted_dataset_stats = sorted(dataset_stats[attr].items(), key=lambda kv: kv[1])
+        sorted_dataset_stats.reverse()
+        len_stats = min(5, len(sorted_dataset_stats))
+        print(attr, ' :: ', sorted_dataset_stats[:len_stats])
+
     print('--')
 
     return
@@ -386,27 +408,9 @@ import parse_dataset as pds
 import build_matching_model as bmm
 import iterative_algorithm as ia
 import os.path
-def recommend_labels():
+def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag):
     import json
     import pandas as pd
-
-    dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
-    dataset_metadata_set = json.load(dataset_metadata_f)
-
-    metadata_f = open('./inputs/metadata_tag_list_translated.json', 'r')
-    metadata_set = json.load(metadata_f)
-
-    schema_f = open('./inputs/schema_complete_list.json', 'r')
-    schema_set = json.load(schema_f, strict=False)
-
-    group = 'environmental services'
-
-    datasources_with_tag = metadata_set['groups'][group]['sources']
-    datasets_path = './thesis_project_dataset_clean/'
-
-    print(datasources_with_tag)
-    datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if os.path.isfile(datasets_path+datasource_file+'.csv') ]
-    print(datasources_with_tag)
 
     p = ia.p
     bmm.gather_statistics(schema_set, datasources_with_tag, p.dataset_stats, p.datasets_path)
@@ -507,6 +511,7 @@ def recommend_labels():
         print()
         print()
 
+        visited_datasets = []
         delete_list = []
         for topic in dataset_existing_tags:
             print("[",topic['display_name'],"]")
@@ -532,6 +537,8 @@ def recommend_labels():
                     count_sim_topics_printed = 0
 
                     for dataset_with_topic in datasets_with_topic:
+                        if dataset_with_topic == source_name:
+                            continue
                         count_sim_topics_printed += 1
                         print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir)
                         # TODO also print table values
@@ -567,7 +574,13 @@ def recommend_labels():
         print("-existing data topics-", existing_tags)
         print("-existing data groups-", existing_groups)
 
-        new_topics_set = set([*add_list, *existing_tags, *existing_groups])
+        updated_topics_path = 'new_topics_[' + source_name + '].txt'
+        updated_exists, updated_topics = open_updated_topics(dir, updated_topics_path)
+        if not updated_exists:
+            updated_topics = []
+        updated_topics = list(updated_topics)
+
+        new_topics_set = set([*add_list, *existing_tags, *existing_groups, *updated_topics])
 
         for item in delete_list:
             new_topics_set.remove(item)
@@ -787,15 +800,26 @@ def enrich_topic(topic, top_context, wordnet):
     splitter = Splitter()
     lemmatization_using_pos_tagger = LemmatizationWithPOSTagger()
 
-    top_context["desc"] = [tok[1] for sent in top_context['desc'] for tok in sent if 'NN' in tok[2]]
-    top_context["notes"] = [tok[1] for sent in top_context['notes'] for tok in sent if 'NN' in tok[2]]
+    print('======', top_context['desc'])
+
+    if len(top_context["desc"]) != 0 and type(top_context["desc"][0]) is str:
+        pass
+    else:
+        top_context["desc"] = [tok[1] for sent in top_context['desc'] for tok in sent if 'NN' in tok[2]]
+
+    if len(top_context["notes"]) != 0 and type(top_context["notes"][0]) is str:
+        pass
+    else:
+        top_context["notes"] = [tok[1] for sent in top_context['notes'] for tok in sent if 'NN' in tok[2]]
 
     enriched_topic = {}
     enriched_topic_prob = {}
 
     syns = wordnet.synsets(topic, pos='n')
     topic_m = wordnet.morphy(topic, wordnet.NOUN)
-    syns_m = wordnet.synsets(topic_m, pos='n')
+    syns_m = []
+    if topic_m != None:
+        syns_m = wordnet.synsets(topic_m, pos='n')
 
     if len(syns) >= len(syns_m):
         pass
@@ -906,13 +930,6 @@ def enrich_topic(topic, top_context, wordnet):
 
     return enriched_topic, enriched_topic_prob
 
-# cluster_topics_prep_matrix()
-# cluster_topics()
-
-# recommend_labels()
-wordnet = load_dict()
-# enrich_homonyms_test()
-
 # import nltk
 from nltk.stem import WordNetLemmatizer
 # from nltk.corpus import wordnet
@@ -922,67 +939,129 @@ splitter = Splitter()
 lemmatization_using_pos_tagger = LemmatizationWithPOSTagger()
 
 
-dataset_name = 'parks'
-topic = 'parks'
-desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
-notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
-other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
-
 import inflection
-other_topics_singl = []
-for top in other_topics:
-    try:
-        other_topics_singl.append(inflection.singularize(top))
-    except Exception:
-        other_topics_singl.append(top)
 
-topic_singl = []
-for word in topic.split():
-    try:
-        word_singl = inflection.singularize(word)
-        topic_singl.append(word_singl)
-    except Exception:
-        topic_singl.append(word)
+def enrich_homonyms(dataset_name, topic, desc, notes, other_topics):
+    other_topics_singl = []
+    for top in other_topics:
+        try:
+            other_topics_singl.append(inflection.singularize(top))
+        except Exception:
+            other_topics_singl.append(top)
 
-topic = topic.split()
+    topic_singl = []
+    for word in topic.split():
+        try:
+            word_singl = inflection.singularize(word)
+            topic_singl.append(word_singl)
+        except Exception:
+            topic_singl.append(word)
 
-#step 1 split document into sentence followed by tokenization
-desc_tokens = splitter.split(desc)
-#step 2 lemmatization using pos tagger
-desc_pos_token = lemmatization_using_pos_tagger.pos_tag(desc_tokens)
+    topic = topic.split()
 
-#step 1 split document into sentence followed by tokenization
-notes_tokens = splitter.split(notes)
-#step 2 lemmatization using pos tagger
-notes_pos_token = lemmatization_using_pos_tagger.pos_tag(notes_tokens)
+    # step 1 split document into sentence followed by tokenization
+    desc_tokens = splitter.split(desc)
+    # step 2 lemmatization using pos tagger
+    desc_pos_token = lemmatization_using_pos_tagger.pos_tag(desc_tokens)
+    # TODO prune out words not in any other context items
 
-#step 1 split document into sentence followed by tokenization
-name_tokens = splitter.split(dataset_name)
+    # step 1 split document into sentence followed by tokenization
+    notes_tokens = splitter.split(notes)
+    # step 2 lemmatization using pos tagger
+    notes_pos_token = lemmatization_using_pos_tagger.pos_tag(notes_tokens)
 
-top_context = {'dataset_name': name_tokens,
-               'topic': topic,
-               'topic_singl': topic_singl,
-               'desc': desc_pos_token,
-               'notes': notes_pos_token,
-               'other_topics': other_topics_singl}
+    # step 1 split document into sentence followed by tokenization
+    name_tokens = splitter.split(dataset_name)
 
-# pprint.pprint(top_context)
-# print('-----')
+    top_context = {'dataset_name': name_tokens,
+                   'topic': topic,
+                   'topic_singl': topic_singl,
+                   'desc': desc_pos_token,
+                   'notes': notes_pos_token,
+                   'other_topics': other_topics_singl}
 
-# negative_topic = ['car', 'parking']
-# threshold = 0.3
-set_of_enriched = enrich_topic_words(topic, top_context, wordnet)
+    # pprint.pprint(top_context)
+    # print('-----')
 
-dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
-import json
-with open(dir + '['+ dataset_name +'_'+' '.join(topic)+'].json', 'w') as outfile:
-    json.dump([top_context, set_of_enriched], outfile)
+    # negative_topic = ['car', 'parking']
+    # threshold = 0.3
+    set_of_enriched = enrich_topic_words(topic, top_context, wordnet)
 
-for enriched_topic, enriched_topic_prob in set_of_enriched:
-    # pprint.pprint(enriched_topic)
+    dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
+    import json
+    with open(dir + '[' + dataset_name + '_' + ' '.join(topic) + '].json', 'w') as outfile:
+        json.dump([top_context, set_of_enriched], outfile)
 
-    ranked = {syn: (enriched_topic_prob[syn]['overlap'], enriched_topic[syn]['defn'], len(enriched_topic_prob[syn]['overlap'])) for syn in enriched_topic_prob}
-    ranked = sorted(ranked.items(), key=lambda kv: kv[1][2])
-    ranked.reverse()
-    pprint.pprint(ranked)
+    for enriched_topic, enriched_topic_prob in set_of_enriched:
+        # pprint.pprint(enriched_topic)
+
+        ranked = {syn: (
+        enriched_topic_prob[syn]['overlap'], enriched_topic[syn]['defn'], len(enriched_topic_prob[syn]['overlap'])) for
+                  syn in enriched_topic_prob}
+        ranked = sorted(ranked.items(), key=lambda kv: kv[1][2])
+        ranked.reverse()
+        pprint.pprint(ranked)
+
+    return
+
+
+wordnet = load_dict()
+# cluster_topics_prep_matrix()
+# cluster_topics()
+
+
+
+
+
+dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
+dataset_metadata_set = json.load(dataset_metadata_f)
+
+metadata_f = open('./inputs/metadata_tag_list_translated.json', 'r')
+metadata_set = json.load(metadata_f)
+
+schema_f = open('./inputs/schema_complete_list.json', 'r')
+schema_set = json.load(schema_f, strict=False)
+
+datasets_path = './thesis_project_dataset_clean/'
+
+# group = 'environmental services'
+# datasources_with_tag = metadata_set['groups'][group]['sources']
+# print(datasources_with_tag)
+# datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
+#                         os.path.isfile(datasets_path + datasource_file + '.csv')]
+datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
+
+
+# enrich_homonyms_test()
+# dataset_name = 'parks'
+# topic = 'parks'
+# desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
+# notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
+# other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
+#
+# # topic = 'activities'
+
+for dataset_name in datasources_with_tag:
+
+
+    dataset_existing_tags = dataset_metadata_set[dataset_name]['tags']
+    dataset_existing_groups = dataset_metadata_set[dataset_name]['groups']
+    dataset_notes = dataset_metadata_set[dataset_name]['notes']
+
+    desc = ''
+    for group in dataset_existing_groups:
+        desc = ' ' + group['description']
+
+    dataset_existing_tags = [tag['display_name'] for tag in dataset_existing_tags]
+    dataset_existing_groups = [group['display_name'] for group in dataset_existing_groups]
+    dataset_notes = [word for word in dataset_notes.split() if "http://" not in word]
+
+    notes = ' '.join(dataset_notes)
+
+    for topic in dataset_existing_tags:
+        other_topics = dataset_existing_tags.copy()
+        other_topics.remove(topic)
+
+        enrich_homonyms(dataset_name, topic, desc, notes, other_topics)
 

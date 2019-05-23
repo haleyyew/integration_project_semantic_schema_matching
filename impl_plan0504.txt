@@ -3,3 +3,25 @@ recreation and culture
 environmental services
 
 ['management', 'drain', 'drainage', 'environment', 'land use and development', 'sustainability', 'land use', 'boundaries', 'land use and development', 'land use', 'above ground', 'below ground', 'control', 'land']
+
+
+
+
+environmental services:
+=aquatic hubs
+=drainage 200 year flood plain
+drainage dyke infrastructure
+drainage erosion protection works
+drainage flood control
+drainage sub catchments
+=drainage water bodies
+ecosystem corridors
+ecosystem sites
+/park natural areas
+park passive grass
+park paths and trails
+/park screen trees
+=park specimen trees
+park unimproved parkland
+=parks
+/terrestrial hubs

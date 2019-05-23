@@ -1,5 +1,21 @@
 datasets preprocessing
+datasets testing set (result based on which query table to begin with)
+training set of attr-attr correspondences
 pick some as query
-datasets testing set
 plugins for comparisons
 assembling components
+
+
+datasets preprocessing:
+aquatic hubs
+drainage 200 year flood plain
+drainage water bodies
+park specimen trees
+parks
+
+datasets testing set:
+aquatic hubs
+drainage 200 year flood plain
+drainage water bodies
+park specimen trees
+parks
