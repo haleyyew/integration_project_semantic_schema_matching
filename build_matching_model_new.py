@@ -26,7 +26,34 @@ def load_metadata(p, m):
 
     return
 
-def initialize_matching(p, m):
+from similarity.ngram import NGram
+twogram = NGram(2)
+fourgram = NGram(4)
+import numpy as np
+
+from similarity.metric_lcs import MetricLCS
+metric_lcs = MetricLCS()
+def build_local_similarity_matrix(source_schema, target_schema):
+    source_schema_name = list(source_schema.keys())
+
+    matrix= np.zeros((len(source_schema_name), len(target_schema)))
+
+    for i in range(len(source_schema_name)):
+            for j in range(len(target_schema)):
+                # TODO call matcher
+                sim_score = 1 - twogram.distance(source_schema_name[i],target_schema[j])
+                # matrix[i,j] = np.int(100*SequenceMatcher(None,source_schema[i],target_schema[j]).ratio())
+                matrix[i, j] = sim_score
+
+                if matrix[i, j] >= 0.5:
+                    print('matrix[i, j]', source_schema_name[i], target_schema[j], matrix[i, j])
+
+                # if target_schema[j] == 'tree_species':
+                #     print(source_schema[i], target_schema[j], matrix[i, j])
+
+    return matrix
+
+def initialize_matching(p, m, r):
 
     datasources = {}
     for source_name in m.datasources_with_tag:
@@ -48,13 +75,21 @@ def initialize_matching(p, m):
         bmm.print_metadata_head(source_name, dataset, schema, metadata)
 
         # initialization schema matching
-        tags_list = [tag['display_name'] for tag in metadata] # TODO
+        tags_list = [tag['display_name'] for tag in metadata]
+        # use enriched tags instead
+        tags_list_enriched_f = open(p.enriched_topics_json_dir, 'r')
+        tags_list_enriched = json.load(tags_list_enriched_f)
+        tags_list_enriched_dataset = tags_list_enriched[source_name]
+        tags_list_enriched_names = list(tags_list_enriched[source_name].keys())
+
         attributes_list = [pds.clean_name(attr['name'], False, False) for attr in schema]
         cols_to_delete = bmm.find_attrs_to_delete(attributes_list, df_columns)
         attributes_list = [item for item in attributes_list if item not in cols_to_delete]
 
-        sim_matrix = bmm.build_local_similarity_matrix(tags_list, attributes_list)
-        sim_frame = pd.DataFrame(data=sim_matrix, columns=attributes_list, index=tags_list)
+
+
+        sim_matrix = build_local_similarity_matrix(tags_list_enriched_dataset, attributes_list)
+        sim_frame = pd.DataFrame(data=sim_matrix, columns=attributes_list, index=tags_list_enriched_names)
 
         # print(sim_frame.to_string())
 
@@ -63,49 +98,94 @@ def initialize_matching(p, m):
 
         # if stats file is empty
         if len(attrs) == 0:
-            return False
+            print('empty dataset', source_name)
+            continue
 
-        for topic in tags_list:
 
-            max_score = 0
-            arg_max_score = None
-            arg_i = -1
-            for attr_i in range(len(attrs)):
-                attr = attrs[attr_i]
-                score = sim_frame.loc[topic, attr]
-                if score > max_score:
-                    max_score = score
-                    arg_max_score = attr
-                    arg_i = attr_i
+        # get example values
+        for attr_i in range(len(schema)):
+            print(attr_i)
+            if schema[attr_i]['domain'] == None:
 
-            example_value = None
-            if schema[arg_i]['domain'] != None:
-                arg_max_examples_vals = schema[arg_i]['coded_values']
-                arg_max_examples_vals.sort()
-                if len(arg_max_examples_vals) > 0: example_value = arg_max_examples_vals[0]
-            else:
+                attr_name = schema[attr_i]['name']
+                attr_name = pds.clean_name(attr_name, False, False)
+
                 # loading from stats file
-                _, uniques = bmm.get_attr_stats(p.dataset_stats, source_name, attrs[arg_i])
+                _, uniques = bmm.get_attr_stats(p.dataset_stats, source_name, attr_name)
+                if uniques != None:
+                    print('uniques', len(uniques))
+                else:
+                    continue
+
                 # stat, _, uniques = bmm.groupby_unique(attrs[arg_i], dataset)
 
                 uniques.sort()
-                schema[arg_i]['coded_values'] = uniques
-                arg_max_examples_vals = schema[arg_i]['coded_values']
+                schema[attr_i]['coded_values'] = uniques
+                # arg_max_examples_vals = schema[attr_i]['coded_values']
 
-                if len(arg_max_examples_vals) > 0: print('arg_max_examples_vals', arg_max_examples_vals[0])
+                # if len(arg_max_examples_vals) > 0: print('arg_max_examples_vals', arg_max_examples_vals[0])
 
-                schema[arg_i]['domain'] = 'coded_values_groupby'
+                schema[attr_i]['domain'] = 'coded_values_groupby'
 
-            print('best match:', topic, arg_max_score, max_score, example_value)
+        # init kb
+        build_kb_json(tags_list_enriched_names, source_name, m)
 
-            kb_match_entry = {'concept': topic,
-                              'datasource': source_name,
-                              'attribute': arg_max_score,
-                              'match_score': max_score,
-                              'example_values': arg_max_examples_vals,
-                              'data_type': schema[arg_i]['data_type']}
+        for topic in tags_list_enriched_names:
+            scores = [[attr_i, attrs[attr_i], sim_frame.loc[topic, attrs[attr_i]]] for attr_i in range(len(attrs))]
+            scores = sorted(scores, key=lambda tup: tup[2])
+            scores.reverse()
+            scores_examples = []
+            for attr_score in scores:
+                # example_value = None
+                # print(attr_score, attr_score[0], schema[attr_score[0]])
+                if 'coded_values' not in schema[attr_score[0]]:
+                    continue
+                arg_max_examples_vals = schema[attr_score[0]]['coded_values']
+                arg_max_examples_vals.sort()
+                scores_examples.append(attr_score + [schema[attr_score[0]]['coded_values']] )
+                # print('here')
 
-            update_kb_json(kb, kb_match_entry)
+            top = 0
+            output = []
+            for score in scores_examples:
+                if len(score) == 3:
+                    print('skip', score)
+                    continue
+                print('topic_to_attr_count', score[2], top)
+                if score[2] > r.topic_to_attr_threshold and top <= r.topic_to_attr_count:
+                    print('topic_to_attr_count', r.topic_to_attr_count)
+                    output.append(score)
+                    top += 1
+            if len(output) == 0:
+                output.append(scores_examples[0])
+
+            # max_score = 0
+            # arg_max_score = None
+            # arg_i = -1
+            # for attr_i in range(len(attrs)):
+            #     attr = attrs[attr_i]
+            #     score = sim_frame.loc[topic, attr]
+            #     if score > max_score:
+            #         max_score = score
+            #         arg_max_score = attr
+            #         arg_i = attr_i
+
+
+
+            # if len(arg_max_examples_vals) > 0: example_value = arg_max_examples_vals[0]
+            # print('best match:', topic, arg_max_score, max_score, example_value)
+
+            print('=====output', output)
+
+            for match in output:
+                kb_match_entry = {'concept': topic,
+                                  'datasource': source_name,
+                                  'attribute': match[1],
+                                  'match_score': match[2],
+                                  'example_values': match[3],
+                                  'data_type': schema[match[0]]['data_type']}
+
+                update_kb_json(m.kbs[source_name], kb_match_entry)
         print('-----')
 
     # done initialization
@@ -113,20 +193,21 @@ def initialize_matching(p, m):
     return True
 
 def build_kb_json(list_of_concepts, dataset_name, m):
-    m.kbs[dataset_name] = {}
 
+    kb = {}
     for concept in list_of_concepts:
-        concept_name = concept[0]
-        datasources = concept[1]
+        concept_name = concept
         if concept_name not in kb:
             kb[concept_name] = {}
-            kb[concept_name]['datasources'] = datasources
-            kb[concept_name]['matches'] = {}
+            # kb[concept_name]['datasources'] = datasources
+            # kb[concept_name]['matches'] = {}
         else:
             kb_concept = kb[concept_name]
-            kb_concept['datasources'].extend(datasources)
+            # kb_concept['datasources'].extend(datasources)
         # TODO remove duplicates
-    return kb
+
+    m.kbs[dataset_name] = kb
+    return
 
 def update_kb_json(kb, match_entry):
     concept = match_entry['concept']
@@ -137,8 +218,9 @@ def update_kb_json(kb, match_entry):
     data_type = match_entry['data_type']
 
     kb_concept = kb[concept]
-    kb_concept_matches = kb_concept['matches']
-    kb_concept_matches[datasource] = {'attribute': attribute, 'match_score' : match_score, 'example_values' : example_values, 'data_type' : data_type}
+    # kb_concept_matches = kb_concept['matches']
+    # kb_concept_matches[datasource] =
+    kb_concept[attribute] = {'attribute': attribute, 'match_score' : match_score, 'example_values' : example_values, 'data_type' : data_type}
     return
 
 class Paths:
@@ -156,6 +238,7 @@ class Paths:
     # new_concepts_f = './outputs/new_concepts.csv'
 
     enriched_topics_dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/enriched_topics/'
+    enriched_topics_json_dir = "./outputs/dataset_topics_enriched.json"
 
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
@@ -174,11 +257,23 @@ class Metadata:
 
 m = Metadata()
 
+class Parameters:
+    topic_to_attr_threshold = 0.4
+    topic_to_attr_count = 3
+
+    def __init__(self, **kwds):
+        self.__dict__.update(kwds)
+
+r = Parameters()
+
 # GLAV mapping for each dataset
 m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
 load_metadata(p, m)
 
 
-kb, datasources_with_tag, schema_set = initialize_matching(p, m)
+initialize_matching(p, m, r)
 with open(p.schema_p, 'w') as fp:
-    json.dump(schema_set, fp, sort_keys=True, indent=2)
+    json.dump(m.schema_set, fp, sort_keys=True, indent=2)
+
+with open(p.kb_file_p, 'w') as fp:
+    json.dump(m.kbs, fp, sort_keys=True, indent=2)

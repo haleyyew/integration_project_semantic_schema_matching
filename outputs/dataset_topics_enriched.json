@@ -1,0 +1,403 @@
+{
+  "aquatic hubs": {
+    "aquatic": {
+      "aquatic.n.01": [
+        "aquatic"
+      ]
+    },
+    "ecosystem": {
+      "ecosystem.n.01": [
+        "environment",
+        "ecosystem"
+      ]
+    },
+    "environment": {
+      "environment.n.01": [
+        "environment",
+        "area"
+      ],
+      "environment.n.02": [
+        "environment",
+        "area"
+      ]
+    },
+    "management": {
+      "management.n.01": [
+        "act",
+        "management"
+      ],
+      "management.n.02": [
+        "management"
+      ]
+    }
+  },
+  "drainage 200 year flood plain": {
+    "200 year flood plain": {
+      "class.n.06": [
+        "year"
+      ],
+      "flood.n.01": [
+        "water",
+        "plain",
+        "flood"
+      ],
+      "flood.n.02": [
+        "flood"
+      ],
+      "flood.n.03": [
+        "flood"
+      ],
+      "flood.n.04": [
+        "flood"
+      ],
+      "flood.n.05": [
+        "flood"
+      ],
+      "flood_tide.n.02": [
+        "flood",
+        "water"
+      ],
+      "knit.n.02": [
+        "plain"
+      ],
+      "plain.n.01": [
+        "flood",
+        "floodplain",
+        "plain"
+      ],
+      "year.n.01": [
+        "time",
+        "year"
+      ],
+      "year.n.02": [
+        "time",
+        "year"
+      ],
+      "year.n.03": [
+        "time",
+        "year"
+      ]
+    },
+    "flood": {
+      "flood.n.01": [
+        "water",
+        "plain",
+        "flood"
+      ],
+      "flood.n.02": [
+        "flood"
+      ],
+      "flood.n.03": [
+        "flood"
+      ],
+      "flood.n.04": [
+        "flood"
+      ],
+      "flood.n.05": [
+        "flood"
+      ],
+      "flood_tide.n.02": [
+        "flood",
+        "water"
+      ]
+    },
+    "flood plain": {
+      "flood.n.01": [
+        "water",
+        "plain",
+        "flood"
+      ],
+      "flood.n.02": [
+        "flood"
+      ],
+      "flood.n.03": [
+        "flood"
+      ],
+      "flood.n.04": [
+        "flood"
+      ],
+      "flood.n.05": [
+        "flood"
+      ],
+      "flood_tide.n.02": [
+        "flood",
+        "water"
+      ],
+      "knit.n.02": [
+        "plain"
+      ],
+      "plain.n.01": [
+        "flood",
+        "floodplain",
+        "plain"
+      ]
+    }
+  },
+  "drainage water bodies": {
+    "bodies": {
+      "body.n.01": [
+        "body"
+      ],
+      "body.n.02": [
+        "body"
+      ],
+      "body.n.03": [
+        "body",
+        "lake"
+      ],
+      "body.n.04": [
+        "body"
+      ],
+      "body.n.06": [
+        "body"
+      ],
+      "body.n.08": [
+        "body"
+      ],
+      "body.n.09": [
+        "body"
+      ],
+      "body.n.11": [
+        "body"
+      ],
+      "consistency.n.01": [
+        "body"
+      ],
+      "soundbox.n.01": [
+        "body"
+      ],
+      "torso.n.01": [
+        "body"
+      ]
+    },
+    "classification": {
+      "categorization.n.03": [
+        "classification",
+        "act"
+      ],
+      "classification.n.02": [
+        "classification"
+      ],
+      "classification.n.03": [
+        "classification"
+      ],
+      "classification.n.04": [
+        "classification"
+      ]
+    },
+    "fish": {
+      "fish.n.01": [
+        "fish"
+      ],
+      "fish.n.02": [
+        "fish"
+      ]
+    },
+    "lake": {
+      "lake.n.01": [
+        "water",
+        "body",
+        "lake"
+      ],
+      "lake.n.02": [
+        "lake"
+      ],
+      "lake.n.03": [
+        "lake"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water",
+        "body",
+        "lake"
+      ],
+      "urine.n.01": [
+        "water",
+        "body"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water"
+      ]
+    },
+    "wetland": {
+      "wetland.n.01": [
+        "water",
+        "wetland",
+        "area"
+      ]
+    }
+  },
+  "park specimen trees": {
+    "trees": {
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ]
+    }
+  },
+  "parks": {
+    "activities": {
+      "action.n.02": [
+        "activity",
+        "act"
+      ],
+      "activeness.n.02": [
+        "activity"
+      ],
+      "activity.n.01": [
+        "walk",
+        "activity",
+        "act"
+      ],
+      "activity.n.04": [
+        "activity"
+      ],
+      "bodily_process.n.01": [
+        "activity"
+      ],
+      "natural_process.n.01": [
+        "activity",
+        "nature"
+      ]
+    },
+    "environment": {
+      "environment.n.01": [
+        "environment",
+        "area"
+      ],
+      "environment.n.02": [
+        "environment",
+        "area"
+      ]
+    },
+    "green": {
+      "green.n.01": [
+        "green"
+      ],
+      "green.n.04": [
+        "green"
+      ],
+      "green.n.06": [
+        "green",
+        "area"
+      ],
+      "greens.n.01": [
+        "green"
+      ],
+      "k.n.07": [
+        "green"
+      ],
+      "park.n.02": [
+        "walk",
+        "green",
+        "park",
+        "area"
+      ]
+    },
+    "health": {
+      "health.n.01": [
+        "health"
+      ],
+      "health.n.02": [
+        "health"
+      ]
+    },
+    "nature": {
+      "nature.n.01": [
+        "nature"
+      ],
+      "nature.n.02": [
+        "nature"
+      ],
+      "nature.n.03": [
+        "nature"
+      ],
+      "nature.n.04": [
+        "nature"
+      ],
+      "nature.n.05": [
+        "nature"
+      ]
+    },
+    "parks": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park",
+        "area"
+      ],
+      "park.n.02": [
+        "walk",
+        "green",
+        "park",
+        "area"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park",
+        "area"
+      ]
+    },
+    "walk": {
+      "base_on_balls.n.01": [
+        "walk"
+      ],
+      "walk.n.01": [
+        "walk",
+        "act"
+      ],
+      "walk.n.03": [
+        "walk"
+      ],
+      "walk.n.04": [
+        "walk",
+        "act"
+      ],
+      "walk.n.05": [
+        "walk"
+      ],
+      "walk.n.06": [
+        "walk"
+      ],
+      "walk_of_life.n.01": [
+        "walk"
+      ]
+    },
+    "youth": {
+      "young.n.09": [
+        "youth"
+      ],
+      "young_person.n.01": [
+        "youth"
+      ],
+      "youth.n.03": [
+        "youth"
+      ],
+      "youth.n.04": [
+        "youth"
+      ],
+      "youth.n.05": [
+        "youth",
+        "development"
+      ],
+      "youth.n.06": [
+        "youth"
+      ]
+    }
+  }
+}

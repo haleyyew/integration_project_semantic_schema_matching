@@ -762,6 +762,10 @@ def get_attr_stats(dataset_stats, source_name, attr):
     stats_f = open(dataset_stats + source_name + '.json', 'r')
     stats = json.load(stats_f)
 
+    if attr not in stats:
+        print('get_attr_stats not found', attr)
+        return None, None
+
     stat = stats[attr]
     uniques = list(stats[attr].keys())
 
