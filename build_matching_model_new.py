@@ -125,36 +125,127 @@ def create_attributes_contexts(datasets, m, p, r):
     m.dataset_attributes_contexts = contexts
     return contexts
 
-def topic_attribute_overlap():
+def topic_attribute_overlap(syn_attr_dict, syn_top_dict, all_topics):
     score = 0
-    return score
+    pair = None
+    for attr in syn_attr_dict:
+        for top in syn_top_dict:
+            ctx_words_attr = syn_attr_dict[attr]
+            ctx_words_top = syn_top_dict[top]
+            try:
+                score_ctx = len(list(ctx_words_attr & ctx_words_top))
+                if score_ctx > score:
+                    score = score_ctx
+                    pair = (top, attr)
+            except Exception:
+                pass
+    return score, pair
 
-def build_local_context_similarity_matrix(topics_contexts, attributes_contexts):
-    topic_names = list(topics_contexts.keys())
+def topic_attribute_syn_similarity(syn_attr_dict, syn_top_dict, function, all_topics, source_name, topic_name):
+    score = 0
+    pair = None
+    for attr in syn_attr_dict:
+        for top in syn_top_dict:
+            try:
+
+                syn_attr = function.synset(attr)
+                syn_top = function.synset(top)
+                syn_score = syn_attr.path_similarity(syn_top)
+                # TODO store all scores
+
+                if syn_score > score:
+                    score = syn_score
+                    pair = (top, attr)
+
+            except Exception:
+                pass
+
+    other_sources = all_topics[topic_name]
+    for source in other_sources:
+        if source_name == source:
+            continue
+        syns_dict = other_sources[source]
+        for top in syns_dict:
+            for attr in syn_attr_dict:
+                try:
+
+                    syn_attr = function.synset(attr)
+                    syn_top = function.synset(top)
+                    syn_score = syn_attr.path_similarity(syn_top)
+                    # TODO store all scores
+
+                    if syn_score > score:
+                        score = syn_score
+                        pair = (top, attr)
+
+                except Exception:
+                    pass
+
+    return score, pair
+
+def build_local_context_similarity_matrix(topics_contexts, attributes_contexts, source_name, function, all_topics):
+    topic_names = list(topics_contexts[source_name].keys())
     attribute_names = list(attributes_contexts.keys())
 
     matrix= np.zeros((len(topic_names), len(attribute_names)))
+    matrix2 = np.zeros((len(topic_names), len(attribute_names)))
 
     for i in range(len(topic_names)):
             for j in range(len(attribute_names)):
                 # call matchers
 
-                sim_score = 0
-                sim_score_arr = [0,0]
-                sim_score_arr[0] = sch.matcher_name(topic_names[i],attribute_names[j], twogram)
-                # sim_score = 1 - twogram.distance()
+                # sim_score = 0
+                sim_score_arr = [0,0,0]
+                # sim_score_arr[0] = sch.matcher_name(topic_names[i],attribute_names[j], twogram)
+                ## sim_score = 1 - twogram.distance()
+
+                syn_attr_dict = attributes_contexts[attribute_names[j]]
+                syn_top_dict = topics_contexts[source_name][topic_names[i]]
+                # all topics are considered as well
+
+                # TODO wordnet distance
+                sim_score_arr[1], _ = topic_attribute_syn_similarity(syn_attr_dict, syn_top_dict, function, all_topics, source_name, topic_names[i])
+
+                # TODO context words overlap
+                sim_score_arr[2], _ = topic_attribute_overlap(syn_attr_dict, syn_top_dict, all_topics)
+
+                # take the max
 
                 # combine scores
+                # TODO not only existing topics, map to new topics here too!
+                # word2vec finding is easier
+                # transfering attributes to different topic groups at pairwise table comparison
+                # guiding table augmented with new topics, as well as other related tables
 
-                matrix[i, j] = sim_score
+                matrix[i, j] = sim_score_arr[1]
+                matrix2[i, j] = sim_score_arr[2]
 
                 # if matrix[i, j] >= 0.5:
                 #     print('matrix[i, j]', topic_names[i], attribute_names[j], matrix[i, j])
 
-    return matrix
+    return matrix, matrix2
 
 
 def initialize_matching(p, m, r):
+
+    topic_contexts_f = open(p.enriched_topics_json_dir, 'r')
+    topic_contexts = json.load(topic_contexts_f)
+    all_topics = {}
+
+    # TODO get all available topics
+    for source_name in m.datasources_with_tag:
+        source_name = pds.clean_name(source_name, False, False)
+        for src_top in topic_contexts[source_name]:
+            if src_top not in all_topics:
+                all_topics[src_top] = {}
+
+            all_topics[src_top][source_name] = topic_contexts[source_name][src_top] # synsets
+
+
+    attrs_contexts_f = open(p.enriched_attrs_json_dir, 'r')
+    attrs_contexts = json.load(attrs_contexts_f)
+
+    wordnet = pt.load_dict()
 
     datasources = {}
     for source_name in m.datasources_with_tag:
@@ -182,7 +273,7 @@ def initialize_matching(p, m, r):
         tags_list_enriched = json.load(tags_list_enriched_f)
         tags_list_enriched_dataset = tags_list_enriched[source_name]
         tags_list_enriched_names = list(tags_list_enriched[source_name].keys())
-        # TODO add homonyms to context
+        # TODO add non-overlapping homonyms to context
 
 
 
@@ -192,15 +283,22 @@ def initialize_matching(p, m, r):
 
 
 
-        sim_matrix = build_local_similarity_matrix(tags_list_enriched_dataset, attributes_list)
+        sim_matrix1 = build_local_similarity_matrix(tags_list_enriched_dataset, attributes_list)
         # TODO build_local_similarity_matrix using context
-        sim_matrix = build_local_context_similarity_matrix(topics_contexts, attributes_contexts)
 
-        sim_frame = pd.DataFrame(data=sim_matrix, columns=attributes_list, index=tags_list_enriched_names)
+        if source_name not in attrs_contexts:
+            print('ERROR: DATASOURCE NOT FOUND', source_name)
+            continue
+        attribute_contexts = attrs_contexts[source_name]
+
+        sim_matrix2, sim_matrix3 = build_local_context_similarity_matrix(topic_contexts, attribute_contexts, source_name, wordnet, all_topics)
+
+        sim_frame1 = pd.DataFrame(data=sim_matrix1, columns=attributes_list, index=tags_list_enriched_names)
+        sim_frame2 = pd.DataFrame(data=sim_matrix2, columns=attributes_list, index=tags_list_enriched_names)
 
         # print(sim_frame.to_string())
 
-        attrs = list(sim_frame.columns.values)
+        attrs = list(sim_frame1.columns.values)
 
         # if stats file is empty
         if len(attrs) == 0:
@@ -237,8 +335,23 @@ def initialize_matching(p, m, r):
         build_kb_json(tags_list_enriched_names, source_name, m)
 
         # during new concepts stage, add second best tag and so on
-        for topic in tags_list_enriched_names:
-            scores = [[attr_i, attrs[attr_i], sim_frame.loc[topic, attrs[attr_i]]] for attr_i in range(len(attrs))]
+
+        for attr_i in range(len(attrs)):
+            scores1 = [[attr_i, attrs[attr_i], sim_frame1.loc[topic, attrs[attr_i]], topic] for topic in tags_list_enriched_names]
+            scores2 = [[attr_i, attrs[attr_i], sim_frame2.loc[topic, attrs[attr_i]], topic] for topic in tags_list_enriched_names]
+
+
+        # for topic in tags_list_enriched_names:
+        #     scores1 = [[attr_i, attrs[attr_i], sim_frame1.loc[topic, attrs[attr_i]]] for attr_i in range(len(attrs))]
+        #     scores2 = [[attr_i, attrs[attr_i], sim_frame2.loc[topic, attrs[attr_i]]] for attr_i in range(len(attrs))]
+
+            scores = []
+            for i in range(len(scores1)):
+                if scores1[i][2] >= scores2[i][2]:
+                    scores.append([attr_i, attrs[attr_i],scores1[i][2],scores1[i][3]])
+                else:
+                    scores.append([attr_i, attrs[attr_i], scores2[i][2], scores2[i][3]])
+
             scores = sorted(scores, key=lambda tup: tup[2])
             scores.reverse()
             scores_examples = []
@@ -255,7 +368,7 @@ def initialize_matching(p, m, r):
             top = 0
             output = []
             for score in scores_examples:
-                if len(score) == 3:
+                if len(score) <= 4:
                     print('skip', score)
                     continue
                 print('topic_to_attr_count', score[2], top)
@@ -263,8 +376,8 @@ def initialize_matching(p, m, r):
                     print('topic_to_attr_count', r.topic_to_attr_count)
                     output.append(score)
                     top += 1
-            if len(output) == 0:
-                output.append(scores_examples[0])
+            # if len(output) == 0:
+            #     output.append(scores_examples[0])
 
             # max_score = 0
             # arg_max_score = None
@@ -285,11 +398,11 @@ def initialize_matching(p, m, r):
             print('=====output', output)
 
             for match in output:
-                kb_match_entry = {'concept': topic,
+                kb_match_entry = {'concept': match[3],
                                   'datasource': source_name,
                                   'attribute': match[1],
                                   'match_score': match[2],
-                                  'example_values': match[3],
+                                  'example_values': match[4],
                                   'data_type': schema[match[0]]['data_type']}
 
                 update_kb_json(m.kbs[source_name], kb_match_entry)
@@ -339,12 +452,16 @@ class Paths:
     schema_p = './inputs/schema_complete_list.json'
 
     matching_output_p = './outputs/instance_matching_output/'
-    kb_file_p = "./outputs/kb_file.json"
+    from time import gmtime, strftime
+    curr_time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+
+    kb_file_p = "./outputs/kb_file_"+curr_time+".json"
 
     # new_concepts_p = "./outputs/new_concepts.json"
     # new_concepts_f = './outputs/new_concepts.csv'
 
-    enriched_topics_dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/enriched_topics/'
+    enriched_attrs_json_dir = './outputs/dataset_attrs_enriched.json'
+    enriched_topics_dir = './outputs/enriched_topics/'
     enriched_topics_json_dir = "./outputs/dataset_topics_enriched.json"
 
     def __init__(self, **kwds):
