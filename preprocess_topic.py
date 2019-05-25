@@ -1024,44 +1024,46 @@ schema_set = json.load(schema_f, strict=False)
 
 datasets_path = './thesis_project_dataset_clean/'
 
-# group = 'environmental services'
-# datasources_with_tag = metadata_set['groups'][group]['sources']
-# print(datasources_with_tag)
-# datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
-#                         os.path.isfile(datasets_path + datasource_file + '.csv')]
-datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
-recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
+
+if __name__ == "__main__":
+    # group = 'environmental services'
+    # datasources_with_tag = metadata_set['groups'][group]['sources']
+    # print(datasources_with_tag)
+    # datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
+    #                         os.path.isfile(datasets_path + datasource_file + '.csv')]
+    datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+    recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
 
 
-# enrich_homonyms_test()
-# dataset_name = 'parks'
-# topic = 'parks'
-# desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
-# notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
-# other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
-#
-# # topic = 'activities'
+    # enrich_homonyms_test()
+    # dataset_name = 'parks'
+    # topic = 'parks'
+    # desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
+    # notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
+    # other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
+    #
+    # # topic = 'activities'
 
-for dataset_name in datasources_with_tag:
+    for dataset_name in datasources_with_tag:
 
 
-    dataset_existing_tags = dataset_metadata_set[dataset_name]['tags']
-    dataset_existing_groups = dataset_metadata_set[dataset_name]['groups']
-    dataset_notes = dataset_metadata_set[dataset_name]['notes']
+        dataset_existing_tags = dataset_metadata_set[dataset_name]['tags']
+        dataset_existing_groups = dataset_metadata_set[dataset_name]['groups']
+        dataset_notes = dataset_metadata_set[dataset_name]['notes']
 
-    desc = ''
-    for group in dataset_existing_groups:
-        desc = ' ' + group['description']
+        desc = ''
+        for group in dataset_existing_groups:
+            desc = ' ' + group['description']
 
-    dataset_existing_tags = [tag['display_name'] for tag in dataset_existing_tags]
-    dataset_existing_groups = [group['display_name'] for group in dataset_existing_groups]
-    dataset_notes = [word for word in dataset_notes.split() if "http://" not in word]
+        dataset_existing_tags = [tag['display_name'] for tag in dataset_existing_tags]
+        dataset_existing_groups = [group['display_name'] for group in dataset_existing_groups]
+        dataset_notes = [word for word in dataset_notes.split() if "http://" not in word]
 
-    notes = ' '.join(dataset_notes)
+        notes = ' '.join(dataset_notes)
 
-    for topic in dataset_existing_tags:
-        other_topics = dataset_existing_tags.copy()
-        other_topics.remove(topic)
+        for topic in dataset_existing_tags:
+            other_topics = dataset_existing_tags.copy()
+            other_topics.remove(topic)
 
-        enrich_homonyms(dataset_name, topic, desc, notes, other_topics)
+            enrich_homonyms(dataset_name, topic, desc, notes, other_topics)
 

@@ -3,6 +3,8 @@ import pandas as pd
 
 import parse_dataset as pds
 import build_matching_model as bmm
+import schema_matchers as sch
+import preprocess_topic as pt
 
 def load_metadata(p, m):
     '''TODO there might be a correct mapping between input_topics and attributes of input_datasets'''
@@ -53,6 +55,105 @@ def build_local_similarity_matrix(source_schema, target_schema):
 
     return matrix
 
+import random
+def create_attributes_contexts(datasets, m, p, r):
+    contexts = {}
+
+    for dataset in datasets:
+        contexts[dataset] = {}
+
+        schema = m.schema_set[dataset]
+        attributes_list = [pds.clean_name(attr['name'], False, False) for attr in schema]
+
+
+
+        dataset_existing_tags = m.dataset_metadata_set[dataset]['tags']
+        dataset_existing_groups = m.dataset_metadata_set[dataset]['groups']
+        dataset_notes = m.dataset_metadata_set[dataset]['notes']
+
+        desc = ''
+        for group in dataset_existing_groups:
+            desc = ' ' + group['description']
+
+        dataset_existing_tags = [tag['display_name'] for tag in dataset_existing_tags]
+        dataset_existing_groups = [group['display_name'] for group in dataset_existing_groups]
+        dataset_notes = [word for word in dataset_notes.split() if "http://" not in word]
+
+        notes = ' '.join(dataset_notes)
+
+        stats_f = open(p.dataset_stats + dataset + '.json', 'r')
+        stats = json.load(stats_f)
+
+        df_columns = list(stats.keys())
+
+        attributes_list = [pds.clean_name(attr['name'], False, False) for attr in schema]
+        cols_to_delete = bmm.find_attrs_to_delete(attributes_list, df_columns)
+        attributes_list = [item for item in attributes_list if item not in cols_to_delete]
+
+
+        for attr in attributes_list:
+            # other_attrs = attributes_list.copy()
+            # other_attrs.remove(attr)
+            other_attrs = []
+
+            attr_values = stats[attr].keys()
+            # TODO get average of val length, place attr vals in notes if length is long
+
+            length = 0
+            if len(attr_values) > 0:
+
+
+                if len(attr_values) > r.vals_truncate_sample:
+
+                    num_to_select = r.vals_truncate_sample
+                    attr_values = random.sample(attr_values, num_to_select)
+
+
+                length = [len(val) for val in attr_values]
+                length = sum(length)/len(attr_values)
+
+            if r.sentence_threshold <= length:
+                notes = notes + '. ' + '. '.join([val for val in attr_values])
+                print('>>>>>', notes)
+            else:
+                other_attrs.extend(attr_values)
+                print('>>>>>', other_attrs)
+
+            pt.enrich_homonyms(dataset, attr, desc, notes, other_attrs)
+
+
+    m.dataset_attributes_contexts = contexts
+    return contexts
+
+def topic_attribute_overlap():
+    score = 0
+    return score
+
+def build_local_context_similarity_matrix(topics_contexts, attributes_contexts):
+    topic_names = list(topics_contexts.keys())
+    attribute_names = list(attributes_contexts.keys())
+
+    matrix= np.zeros((len(topic_names), len(attribute_names)))
+
+    for i in range(len(topic_names)):
+            for j in range(len(attribute_names)):
+                # call matchers
+
+                sim_score = 0
+                sim_score_arr = [0,0]
+                sim_score_arr[0] = sch.matcher_name(topic_names[i],attribute_names[j], twogram)
+                # sim_score = 1 - twogram.distance()
+
+                # combine scores
+
+                matrix[i, j] = sim_score
+
+                # if matrix[i, j] >= 0.5:
+                #     print('matrix[i, j]', topic_names[i], attribute_names[j], matrix[i, j])
+
+    return matrix
+
+
 def initialize_matching(p, m, r):
 
     datasources = {}
@@ -81,6 +182,9 @@ def initialize_matching(p, m, r):
         tags_list_enriched = json.load(tags_list_enriched_f)
         tags_list_enriched_dataset = tags_list_enriched[source_name]
         tags_list_enriched_names = list(tags_list_enriched[source_name].keys())
+        # TODO add homonyms to context
+
+
 
         attributes_list = [pds.clean_name(attr['name'], False, False) for attr in schema]
         cols_to_delete = bmm.find_attrs_to_delete(attributes_list, df_columns)
@@ -89,11 +193,13 @@ def initialize_matching(p, m, r):
 
 
         sim_matrix = build_local_similarity_matrix(tags_list_enriched_dataset, attributes_list)
+        # TODO build_local_similarity_matrix using context
+        sim_matrix = build_local_context_similarity_matrix(topics_contexts, attributes_contexts)
+
         sim_frame = pd.DataFrame(data=sim_matrix, columns=attributes_list, index=tags_list_enriched_names)
 
         # print(sim_frame.to_string())
 
-        # TODO during new concepts stage, add second best tag and so on
         attrs = list(sim_frame.columns.values)
 
         # if stats file is empty
@@ -130,6 +236,7 @@ def initialize_matching(p, m, r):
         # init kb
         build_kb_json(tags_list_enriched_names, source_name, m)
 
+        # during new concepts stage, add second best tag and so on
         for topic in tags_list_enriched_names:
             scores = [[attr_i, attrs[attr_i], sim_frame.loc[topic, attrs[attr_i]]] for attr_i in range(len(attrs))]
             scores = sorted(scores, key=lambda tup: tup[2])
@@ -252,6 +359,9 @@ class Metadata:
     datasources_with_tag = None
     kbs = {}
 
+    dataset_topics_contexts = None
+    dataset_attributes_contexts = None
+
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
 
@@ -261,6 +371,9 @@ class Parameters:
     topic_to_attr_threshold = 0.4
     topic_to_attr_count = 3
 
+    sentence_threshold = 30
+    vals_truncate_sample = 100
+
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
 
@@ -269,6 +382,11 @@ r = Parameters()
 # GLAV mapping for each dataset
 m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
 load_metadata(p, m)
+
+## TODO call this to generate enriched attrs before running the rest
+# print('create_attributes_contexts:')
+# create_attributes_contexts(m.datasources_with_tag, m, p, r)
+# exit(0)
 
 
 initialize_matching(p, m, r)

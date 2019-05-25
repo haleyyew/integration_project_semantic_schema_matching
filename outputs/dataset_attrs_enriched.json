@@ -1,0 +1,1681 @@
+{
+  "aquatic hubs": {
+    "comments": {
+      "comment.n.02": [
+        "comment"
+      ],
+      "gossip.n.02": [
+        "comment"
+      ],
+      "remark.n.01": [
+        "comment"
+      ]
+    },
+    "ecological significance": {
+      "meaning.n.01": [
+        "significance"
+      ],
+      "significance.n.01": [
+        "significance"
+      ],
+      "significance.n.02": [
+        "significance"
+      ]
+    },
+    "hectares": {
+      "hectare.n.01": [
+        "hectare",
+        "area"
+      ]
+    },
+    "id": {
+      "id.n.03": [
+        "id"
+      ]
+    },
+    "name": {
+      "name.n.01": [
+        "name"
+      ],
+      "name.n.02": [
+        "name"
+      ],
+      "name.n.03": [
+        "name"
+      ],
+      "name.n.04": [
+        "name"
+      ],
+      "name.n.05": [
+        "name"
+      ],
+      "name.n.06": [
+        "name"
+      ]
+    },
+    "type": {
+      "character.n.05": [
+        "type"
+      ],
+      "type.n.01": [
+        "type"
+      ],
+      "type.n.03": [
+        "type"
+      ],
+      "type.n.04": [
+        "type"
+      ],
+      "type.n.05": [
+        "type"
+      ],
+      "type.n.06": [
+        "type"
+      ]
+    }
+  },
+  "drainage water bodies": {
+    "comments": {
+      "comment.n.02": [
+        "comment"
+      ],
+      "gossip.n.02": [
+        "comment"
+      ],
+      "remark.n.01": [
+        "comment"
+      ]
+    },
+    "condition": {
+      "circumstance.n.03": [
+        "condition"
+      ],
+      "condition.n.01": [
+        "condition"
+      ],
+      "condition.n.02": [
+        "condition"
+      ],
+      "condition.n.03": [
+        "condition"
+      ],
+      "condition.n.05": [
+        "condition"
+      ],
+      "condition.n.06": [
+        "condition"
+      ],
+      "condition.n.07": [
+        "condition"
+      ],
+      "condition.n.08": [
+        "condition"
+      ]
+    },
+    "conditiondate": {},
+    "facilityid": {},
+    "gis entry stage": {
+      "degree.n.02": [
+        "stage"
+      ],
+      "entrance.n.01": [
+        "entry",
+        "stage"
+      ],
+      "entrance.n.03": [
+        "entry",
+        "act"
+      ],
+      "entry.n.01": [
+        "entry"
+      ],
+      "entry.n.03": [
+        "entry"
+      ],
+      "introduction.n.01": [
+        "entry",
+        "act"
+      ],
+      "phase.n.01": [
+        "stage"
+      ],
+      "stage.n.03": [
+        "stage"
+      ],
+      "stage.n.04": [
+        "stage"
+      ],
+      "stage.n.06": [
+        "stage"
+      ],
+      "stage.n.07": [
+        "stage"
+      ],
+      "stage.n.08": [
+        "stage"
+      ],
+      "stagecoach.n.01": [
+        "stage"
+      ],
+      "submission.n.01": [
+        "entry",
+        "plan"
+      ]
+    },
+    "location": {
+      "localization.n.01": [
+        "location"
+      ],
+      "location.n.01": [
+        "location"
+      ],
+      "location.n.04": [
+        "location"
+      ],
+      "placement.n.03": [
+        "location",
+        "act"
+      ]
+    },
+    "name": {
+      "name.n.01": [
+        "name"
+      ],
+      "name.n.02": [
+        "name"
+      ],
+      "name.n.03": [
+        "name"
+      ],
+      "name.n.04": [
+        "name"
+      ],
+      "name.n.05": [
+        "name"
+      ],
+      "name.n.06": [
+        "name"
+      ]
+    },
+    "owner": {
+      "owner.n.01": [
+        "owner"
+      ],
+      "owner.n.02": [
+        "owner"
+      ]
+    },
+    "project no": {
+      "no.n.01": [
+        "no"
+      ],
+      "project.n.02": [
+        "project",
+        "plan"
+      ],
+      "undertaking.n.01": [
+        "project"
+      ]
+    },
+    "sensitivity": {
+      "sensitivity.n.01": [
+        "sensitivity"
+      ],
+      "sensitivity.n.02": [
+        "sensitivity"
+      ],
+      "sensitivity.n.03": [
+        "sensitivity"
+      ],
+      "sensitivity.n.04": [
+        "sensitivity"
+      ],
+      "sensitivity.n.05": [
+        "sensitivity"
+      ]
+    },
+    "status": {
+      "condition.n.01": [
+        "status"
+      ],
+      "status.n.01": [
+        "status",
+        "station"
+      ]
+    },
+    "warrantydate": {},
+    "water body type": {
+      "body.n.01": [
+        "body"
+      ],
+      "body.n.02": [
+        "body"
+      ],
+      "body.n.03": [
+        "body"
+      ],
+      "body.n.04": [
+        "body"
+      ],
+      "body.n.06": [
+        "body"
+      ],
+      "body.n.08": [
+        "body"
+      ],
+      "body.n.09": [
+        "body"
+      ],
+      "body.n.11": [
+        "body"
+      ],
+      "body_of_water.n.01": [
+        "water",
+        "body"
+      ],
+      "character.n.05": [
+        "type"
+      ],
+      "consistency.n.01": [
+        "body"
+      ],
+      "soundbox.n.01": [
+        "body"
+      ],
+      "torso.n.01": [
+        "body"
+      ],
+      "type.n.01": [
+        "type"
+      ],
+      "type.n.03": [
+        "type"
+      ],
+      "type.n.04": [
+        "type"
+      ],
+      "type.n.05": [
+        "type"
+      ],
+      "type.n.06": [
+        "type"
+      ],
+      "urine.n.01": [
+        "water",
+        "body"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water"
+      ]
+    },
+    "yr": {
+      "year.n.01": [
+        "yr"
+      ]
+    }
+  },
+  "park specimen trees": {
+    "braces": {
+      "brace.n.01": [
+        "brace"
+      ],
+      "brace.n.04": [
+        "brace"
+      ],
+      "brace.n.05": [
+        "brace"
+      ],
+      "brace.n.06": [
+        "brace"
+      ],
+      "brace.n.07": [
+        "braces",
+        "brace"
+      ],
+      "brace.n.08": [
+        "brace"
+      ],
+      "brace.n.09": [
+        "brace"
+      ],
+      "couple.n.04": [
+        "brace"
+      ],
+      "pair.n.01": [
+        "brace"
+      ]
+    },
+    "cables": {
+      "cable.n.01": [
+        "cable"
+      ],
+      "cable.n.02": [
+        "cable"
+      ],
+      "cable.n.03": [
+        "cable"
+      ],
+      "cable.n.04": [
+        "cable"
+      ],
+      "cable.n.06": [
+        "cable"
+      ],
+      "cable_television.n.01": [
+        "cable"
+      ]
+    },
+    "description": {
+      "description.n.01": [
+        "description"
+      ],
+      "description.n.02": [
+        "description",
+        "act"
+      ],
+      "description.n.03": [
+        "description"
+      ]
+    },
+    "gift donation": {
+      "contribution.n.02": [
+        "donation",
+        "gift"
+      ],
+      "contribution.n.03": [
+        "donation",
+        "gift",
+        "act"
+      ],
+      "endowment.n.01": [
+        "gift"
+      ],
+      "gift.n.01": [
+        "donation",
+        "gift"
+      ],
+      "giving.n.01": [
+        "donation",
+        "gift",
+        "act"
+      ]
+    },
+    "height m": {
+      "acme.n.01": [
+        "height",
+        "development"
+      ],
+      "altitude.n.01": [
+        "height"
+      ],
+      "height.n.01": [
+        "height"
+      ],
+      "m.n.06": [
+        "m"
+      ],
+      "meter.n.01": [
+        "m"
+      ],
+      "stature.n.02": [
+        "height",
+        "property"
+      ]
+    },
+    "heritage significant tree": {
+      "heritage.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.01": [
+        "heritage",
+        "property"
+      ],
+      "inheritance.n.02": [
+        "heritage",
+        "property"
+      ],
+      "inheritance.n.04": [
+        "heritage"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "irrigation at base": {
+      "al-qaeda.n.01": [
+        "act"
+      ],
+      "at.n.02": [
+        "at"
+      ],
+      "base.n.01": [
+        "base"
+      ],
+      "base.n.03": [
+        "base"
+      ],
+      "base.n.04": [
+        "base"
+      ],
+      "base.n.05": [
+        "base"
+      ],
+      "base.n.08": [
+        "base"
+      ],
+      "base.n.10": [
+        "base"
+      ],
+      "base.n.11": [
+        "base",
+        "side"
+      ],
+      "base.n.13": [
+        "base"
+      ],
+      "base.n.14": [
+        "base"
+      ],
+      "base.n.18": [
+        "base"
+      ],
+      "base.n.19": [
+        "base"
+      ],
+      "base.n.20": [
+        "base"
+      ],
+      "basis.n.02": [
+        "base"
+      ],
+      "basis.n.03": [
+        "base"
+      ],
+      "floor.n.03": [
+        "base"
+      ],
+      "foundation.n.03": [
+        "base"
+      ],
+      "infrastructure.n.02": [
+        "area",
+        "base"
+      ],
+      "irrigation.n.01": [
+        "irrigation"
+      ],
+      "irrigation.n.02": [
+        "irrigation"
+      ],
+      "nucleotide.n.01": [
+        "base"
+      ],
+      "root.n.03": [
+        "base"
+      ]
+    },
+    "location": {
+      "localization.n.01": [
+        "location"
+      ],
+      "location.n.01": [
+        "east",
+        "north",
+        "location",
+        "south"
+      ],
+      "location.n.04": [
+        "location"
+      ],
+      "placement.n.03": [
+        "location",
+        "act"
+      ]
+    },
+    "maintenance responsibility": {
+      "alimony.n.01": [
+        "maintenance"
+      ],
+      "care.n.06": [
+        "maintenance"
+      ],
+      "duty.n.01": [
+        "responsibility"
+      ],
+      "maintenance.n.02": [
+        "maintenance"
+      ],
+      "maintenance.n.05": [
+        "maintenance"
+      ],
+      "province.n.02": [
+        "field",
+        "area",
+        "responsibility"
+      ],
+      "responsibility.n.03": [
+        "responsibility"
+      ],
+      "sustenance.n.03": [
+        "maintenance",
+        "act"
+      ]
+    },
+    "operational responsibility": {
+      "duty.n.01": [
+        "responsibility"
+      ],
+      "province.n.02": [
+        "field",
+        "area",
+        "responsibility"
+      ],
+      "responsibility.n.03": [
+        "responsibility"
+      ]
+    },
+    "overhead utility lines": {
+      "agate_line.n.01": [
+        "area",
+        "line"
+      ],
+      "argumentation.n.02": [
+        "policy",
+        "line"
+      ],
+      "cable.n.02": [
+        "line"
+      ],
+      "channel.n.05": [
+        "line"
+      ],
+      "command_processing_overhead_time.n.01": [
+        "overhead"
+      ],
+      "course.n.02": [
+        "development",
+        "line"
+      ],
+      "credit_line.n.01": [
+        "line"
+      ],
+      "disk_overhead.n.01": [
+        "overhead"
+      ],
+      "line.n.01": [
+        "line"
+      ],
+      "line.n.02": [
+        "line"
+      ],
+      "line.n.03": [
+        "corner",
+        "line"
+      ],
+      "line.n.04": [
+        "line"
+      ],
+      "line.n.05": [
+        "line"
+      ],
+      "line.n.06": [
+        "line"
+      ],
+      "line.n.07": [
+        "front",
+        "line"
+      ],
+      "line.n.11": [
+        "tree",
+        "field",
+        "side",
+        "line"
+      ],
+      "line.n.14": [
+        "road",
+        "line"
+      ],
+      "line.n.16": [
+        "line"
+      ],
+      "line.n.18": [
+        "line"
+      ],
+      "line.n.20": [
+        "area",
+        "sport",
+        "line"
+      ],
+      "line.n.22": [
+        "line"
+      ],
+      "line.n.23": [
+        "line"
+      ],
+      "line.n.27": [
+        "line"
+      ],
+      "line.n.29": [
+        "line"
+      ],
+      "lineage.n.01": [
+        "tree",
+        "side",
+        "line"
+      ],
+      "note.n.02": [
+        "line"
+      ],
+      "occupation.n.01": [
+        "sport",
+        "line"
+      ],
+      "operating_expense.n.01": [
+        "overhead",
+        "utility",
+        "property"
+      ],
+      "overhead.n.05": [
+        "overhead"
+      ],
+      "overhead.n.06": [
+        "overhead"
+      ],
+      "pipeline.n.02": [
+        "line"
+      ],
+      "production_line.n.01": [
+        "line"
+      ],
+      "telephone_line.n.02": [
+        "line"
+      ],
+      "tune.n.01": [
+        "line"
+      ],
+      "utility.n.01": [
+        "regulation",
+        "utility"
+      ],
+      "utility.n.02": [
+        "utility"
+      ],
+      "utility.n.03": [
+        "utility"
+      ],
+      "utility.n.04": [
+        "utility"
+      ],
+      "utility.n.06": [
+        "house",
+        "utility"
+      ],
+      "utility_program.n.01": [
+        "utility"
+      ],
+      "viewgraph.n.01": [
+        "overhead"
+      ],
+      "wrinkle.n.01": [
+        "line"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "area",
+        "property",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ]
+    },
+    "park ownership": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "ownership.n.01": [
+        "ownership",
+        "property"
+      ],
+      "ownership.n.03": [
+        "ownership"
+      ],
+      "park.n.01": [
+        "area",
+        "property",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.04": [
+        "Park"
+      ],
+      "park.n.06": [
+        "parking",
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "lot",
+        "area",
+        "parking",
+        "park"
+      ],
+      "possession.n.01": [
+        "ownership",
+        "property",
+        "act"
+      ]
+    },
+    "status": {
+      "condition.n.01": [
+        "status"
+      ],
+      "status.n.01": [
+        "status"
+      ]
+    },
+    "status date": {
+      "condition.n.01": [
+        "status"
+      ],
+      "date.n.01": [
+        "date"
+      ],
+      "date.n.02": [
+        "date"
+      ],
+      "date.n.03": [
+        "date"
+      ],
+      "date.n.04": [
+        "date"
+      ],
+      "date.n.05": [
+        "date"
+      ],
+      "date.n.06": [
+        "date"
+      ],
+      "date.n.07": [
+        "date"
+      ],
+      "date.n.08": [
+        "date"
+      ],
+      "status.n.01": [
+        "status"
+      ]
+    },
+    "tree": {
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ]
+    },
+    "tree cable and brace": {
+      "brace.n.01": [
+        "brace"
+      ],
+      "brace.n.04": [
+        "brace"
+      ],
+      "brace.n.05": [
+        "brace"
+      ],
+      "brace.n.06": [
+        "brace"
+      ],
+      "brace.n.07": [
+        "brace"
+      ],
+      "brace.n.08": [
+        "brace"
+      ],
+      "brace.n.09": [
+        "brace",
+        "cable"
+      ],
+      "cable.n.01": [
+        "cable"
+      ],
+      "cable.n.02": [
+        "cable"
+      ],
+      "cable.n.03": [
+        "cable"
+      ],
+      "cable.n.04": [
+        "cable"
+      ],
+      "cable.n.06": [
+        "cable"
+      ],
+      "cable_television.n.01": [
+        "cable"
+      ],
+      "couple.n.04": [
+        "brace"
+      ],
+      "pair.n.01": [
+        "brace",
+        "and"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree diameter cm": {
+      "centimeter.n.01": [
+        "cm"
+      ],
+      "diameter.n.01": [
+        "diameter"
+      ],
+      "diameter.n.02": [
+        "diameter"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree electrical system": {
+      "arrangement.n.03": [
+        "system",
+        "plan"
+      ],
+      "organization.n.05": [
+        "system"
+      ],
+      "system.n.01": [
+        "system"
+      ],
+      "system.n.02": [
+        "system"
+      ],
+      "system.n.03": [
+        "system"
+      ],
+      "system.n.04": [
+        "system"
+      ],
+      "system.n.06": [
+        "system"
+      ],
+      "system.n.07": [
+        "system",
+        "plan"
+      ],
+      "system.n.08": [
+        "system"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree genus": {
+      "genus.n.01": [
+        "genus"
+      ],
+      "genus.n.02": [
+        "genus"
+      ],
+      "tree.n.01": [
+        "tree",
+        "Castanea",
+        "japonica",
+        "Phellodendron"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree grate": {
+      "grate.n.01": [
+        "grate"
+      ],
+      "grate.n.02": [
+        "grate"
+      ],
+      "grate.n.03": [
+        "grate"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree guard": {
+      "guard.n.01": [
+        "guard"
+      ],
+      "guard.n.02": [
+        "guard"
+      ],
+      "guard.n.03": [
+        "guard"
+      ],
+      "guard.n.04": [
+        "guard"
+      ],
+      "guard.n.05": [
+        "guard"
+      ],
+      "guard.n.06": [
+        "guard"
+      ],
+      "guard.n.09": [
+        "guard"
+      ],
+      "guard.n.10": [
+        "guard"
+      ],
+      "guard_duty.n.01": [
+        "guard"
+      ],
+      "precaution.n.01": [
+        "policy",
+        "guard"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree size classification": {
+      "categorization.n.03": [
+        "classification",
+        "act"
+      ],
+      "classification.n.02": [
+        "classification"
+      ],
+      "classification.n.03": [
+        "classification"
+      ],
+      "classification.n.04": [
+        "classification"
+      ],
+      "size.n.01": [
+        "size"
+      ],
+      "size.n.02": [
+        "size",
+        "property"
+      ],
+      "size.n.03": [
+        "size"
+      ],
+      "size.n.04": [
+        "size"
+      ],
+      "size.n.05": [
+        "city",
+        "area",
+        "size"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree species": {
+      "species.n.01": [
+        "species"
+      ],
+      "species.n.02": [
+        "species"
+      ],
+      "tree.n.01": [
+        "grandiflora",
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree stake": {
+      "interest.n.05": [
+        "stake"
+      ],
+      "post.n.09": [
+        "corner",
+        "stake",
+        "lot"
+      ],
+      "stake.n.03": [
+        "stake"
+      ],
+      "stake.n.04": [
+        "stake"
+      ],
+      "stake.n.05": [
+        "stake"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree type": {
+      "character.n.05": [
+        "type"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ],
+      "type.n.01": [
+        "type"
+      ],
+      "type.n.03": [
+        "type"
+      ],
+      "type.n.04": [
+        "type"
+      ],
+      "type.n.05": [
+        "type"
+      ],
+      "type.n.06": [
+        "type"
+      ]
+    },
+    "tree variety": {
+      "assortment.n.01": [
+        "variety"
+      ],
+      "diverseness.n.01": [
+        "variety"
+      ],
+      "kind.n.01": [
+        "variety"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ],
+      "variety.n.03": [
+        "variety"
+      ],
+      "variety.n.06": [
+        "variety"
+      ],
+      "variety_show.n.01": [
+        "variety"
+      ]
+    },
+    "tree watering": {
+      "lacrimation.n.01": [
+        "watering"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ],
+      "watering.n.02": [
+        "watering"
+      ]
+    },
+    "tree well": {
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ],
+      "well.n.01": [
+        "well"
+      ],
+      "well.n.02": [
+        "well"
+      ],
+      "well.n.03": [
+        "well"
+      ],
+      "well.n.04": [
+        "well"
+      ],
+      "well.n.05": [
+        "well"
+      ]
+    },
+    "tree well type": {
+      "character.n.05": [
+        "type"
+      ],
+      "tree.n.01": [
+        "tree",
+        "japonica"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ],
+      "type.n.01": [
+        "type"
+      ],
+      "type.n.03": [
+        "type"
+      ],
+      "type.n.04": [
+        "type"
+      ],
+      "type.n.05": [
+        "type"
+      ],
+      "type.n.06": [
+        "type"
+      ],
+      "well.n.01": [
+        "well"
+      ],
+      "well.n.02": [
+        "well"
+      ],
+      "well.n.03": [
+        "well"
+      ],
+      "well.n.04": [
+        "well"
+      ],
+      "well.n.05": [
+        "well"
+      ]
+    }
+  },
+  "parks": {
+    "comments": {
+      "comment.n.02": [
+        "comment"
+      ],
+      "gossip.n.02": [
+        "comment"
+      ],
+      "remark.n.01": [
+        "information",
+        "comment"
+      ]
+    },
+    "description": {
+      "description.n.01": [
+        "description"
+      ],
+      "description.n.02": [
+        "description",
+        "act"
+      ],
+      "description.n.03": [
+        "description"
+      ]
+    },
+    "facilityid": {},
+    "house no": {
+      "family.n.01": [
+        "house"
+      ],
+      "firm.n.01": [
+        "house"
+      ],
+      "house.n.01": [
+        "house"
+      ],
+      "house.n.03": [
+        "house"
+      ],
+      "house.n.04": [
+        "house"
+      ],
+      "house.n.05": [
+        "house"
+      ],
+      "house.n.06": [
+        "house"
+      ],
+      "house.n.07": [
+        "house"
+      ],
+      "house.n.09": [
+        "house"
+      ],
+      "house.n.12": [
+        "house"
+      ],
+      "no.n.01": [
+        "no"
+      ],
+      "sign_of_the_zodiac.n.01": [
+        "house",
+        "area"
+      ],
+      "theater.n.01": [
+        "house"
+      ]
+    },
+    "location": {
+      "localization.n.01": [
+        "location"
+      ],
+      "location.n.01": [
+        "location"
+      ],
+      "location.n.04": [
+        "location"
+      ],
+      "placement.n.03": [
+        "location",
+        "act"
+      ]
+    },
+    "maintenance responsibility": {
+      "alimony.n.01": [
+        "maintenance"
+      ],
+      "care.n.06": [
+        "maintenance"
+      ],
+      "duty.n.01": [
+        "responsibility"
+      ],
+      "maintenance.n.02": [
+        "maintenance"
+      ],
+      "maintenance.n.05": [
+        "maintenance"
+      ],
+      "province.n.02": [
+        "area",
+        "responsibility"
+      ],
+      "responsibility.n.03": [
+        "responsibility"
+      ],
+      "sustenance.n.03": [
+        "maintenance",
+        "act"
+      ]
+    },
+    "map page": {
+      "function.n.01": [
+        "map"
+      ],
+      "map.n.01": [
+        "map"
+      ],
+      "page.n.01": [
+        "page"
+      ],
+      "page.n.04": [
+        "page"
+      ],
+      "page.n.05": [
+        "page"
+      ],
+      "page.n.06": [
+        "page"
+      ]
+    },
+    "operational responsibility": {
+      "duty.n.01": [
+        "responsibility"
+      ],
+      "province.n.02": [
+        "area",
+        "responsibility"
+      ],
+      "responsibility.n.03": [
+        "responsibility"
+      ]
+    },
+    "park name": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "name.n.01": [
+        "name"
+      ],
+      "name.n.02": [
+        "name"
+      ],
+      "name.n.03": [
+        "name"
+      ],
+      "name.n.04": [
+        "name"
+      ],
+      "name.n.05": [
+        "name"
+      ],
+      "name.n.06": [
+        "name"
+      ],
+      "park.n.01": [
+        "area",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ]
+    },
+    "park ownership": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "ownership.n.01": [
+        "ownership"
+      ],
+      "ownership.n.03": [
+        "ownership"
+      ],
+      "park.n.01": [
+        "parkland",
+        "area",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.04": [
+        "Park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "lot",
+        "park"
+      ],
+      "possession.n.01": [
+        "ownership",
+        "act"
+      ]
+    },
+    "road code": {
+      "code.n.01": [
+        "Highway",
+        "code"
+      ],
+      "code.n.02": [
+        "code",
+        "access",
+        "area"
+      ],
+      "code.n.03": [
+        "code"
+      ],
+      "road.n.01": [
+        "road",
+        "access"
+      ],
+      "road.n.02": [
+        "road"
+      ]
+    },
+    "service classification": {
+      "avail.n.01": [
+        "service"
+      ],
+      "categorization.n.03": [
+        "classification",
+        "act"
+      ],
+      "classification.n.02": [
+        "classification"
+      ],
+      "classification.n.03": [
+        "classification"
+      ],
+      "classification.n.04": [
+        "classification"
+      ],
+      "military_service.n.01": [
+        "service"
+      ],
+      "overhaul.n.01": [
+        "service"
+      ],
+      "serve.n.01": [
+        "service"
+      ],
+      "service.n.01": [
+        "service"
+      ],
+      "service.n.02": [
+        "service",
+        "act"
+      ],
+      "service.n.03": [
+        "service",
+        "act"
+      ],
+      "service.n.04": [
+        "regulation",
+        "service"
+      ],
+      "service.n.05": [
+        "service"
+      ],
+      "service.n.09": [
+        "service"
+      ],
+      "service.n.11": [
+        "service",
+        "act"
+      ],
+      "service.n.13": [
+        "service",
+        "act"
+      ],
+      "service.n.15": [
+        "service"
+      ],
+      "servicing.n.01": [
+        "service",
+        "act"
+      ]
+    },
+    "status": {
+      "condition.n.01": [
+        "status"
+      ],
+      "status.n.01": [
+        "status"
+      ]
+    },
+    "status date": {
+      "condition.n.01": [
+        "status"
+      ],
+      "date.n.01": [
+        "date"
+      ],
+      "date.n.02": [
+        "date"
+      ],
+      "date.n.03": [
+        "date"
+      ],
+      "date.n.04": [
+        "date"
+      ],
+      "date.n.05": [
+        "date"
+      ],
+      "date.n.06": [
+        "date"
+      ],
+      "date.n.07": [
+        "date"
+      ],
+      "date.n.08": [
+        "date"
+      ],
+      "status.n.01": [
+        "status"
+      ]
+    },
+    "work assignment": {
+      "appointment.n.01": [
+        "assignment",
+        "act"
+      ],
+      "assignment.n.01": [
+        "assignment"
+      ],
+      "assignment.n.02": [
+        "assignment"
+      ],
+      "assignment.n.03": [
+        "assignment",
+        "act"
+      ],
+      "assignment.n.05": [
+        "assignment"
+      ],
+      "employment.n.02": [
+        "work",
+        "lot"
+      ],
+      "grant.n.03": [
+        "assignment"
+      ],
+      "oeuvre.n.01": [
+        "work"
+      ],
+      "study.n.02": [
+        "work",
+        "lot"
+      ],
+      "work.n.01": [
+        "work"
+      ],
+      "work.n.02": [
+        "work"
+      ],
+      "work.n.05": [
+        "work"
+      ],
+      "workplace.n.01": [
+        "work",
+        "park"
+      ]
+    }
+  }
+}
