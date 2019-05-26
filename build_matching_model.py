@@ -757,6 +757,16 @@ def gather_statistics(schema_set, datasources_with_tag, stats_output_p, datasets
 
     return
 
+def get_table_stats(dataset_stats, source_name):
+
+    stats_f = open(dataset_stats + source_name + '.json', 'r')
+    stats = json.load(stats_f)
+
+
+    stats_f.close()
+    return stats
+
+
 def get_attr_stats(dataset_stats, source_name, attr):
 
     stats_f = open(dataset_stats + source_name + '.json', 'r')
@@ -768,6 +778,8 @@ def get_attr_stats(dataset_stats, source_name, attr):
 
     stat = stats[attr]
     uniques = list(stats[attr].keys())
+
+    stats_f.close()
 
     return stat, uniques
 
