@@ -47,7 +47,7 @@ bmmn.load_metadata(bmmn.p, bmmn.m)
 m2.all_topics, m2.attrs_contexts, m2.topic_contexts = bmmn.load_prematching_metadata(bmmn.p, bmmn.m, pds)
 
 kb_file_f = open(bmmn.p.kb_file_const_p, 'r')
-m2.kb_file = json.load(kb_file_f)
+m2.kbs = json.load(kb_file_f)
 kb_file_f.close()
 
 enriched_attrs_f = open(bmmn.p.enriched_attrs_json_dir, 'r')
@@ -137,11 +137,104 @@ for source in bmmn.m.datasources_with_tag:
 import pprint
 pprint.pprint(table_scores)
 
-# add new similar topics, transfer guiding table attrs to new topic group, and transfer other table attrs to existing guiding table topic group
-# check to see if any attrs in other table can be mapped to non-assigned attrs in guiding table
-# check to see if any non-assigned attrs in other table can be mapped to guiding table topics
-# split out attrs from topics, merge attrs into groups
-# remove added topics from the other table
-# repeat comparing table topics
-# transfer topics to tables related to guiding table using topic-attr mappings
+# add new similar topics, transfer guiding table attrs to new topic group, and transfer other table attrs to existing guiding table topic group. use topic-topic wordnet, ngram name
+comparing_pairs = {}
+added_topics = {}
+for dataset in table_scores:
+    score = table_scores[dataset][0]
+    info = table_scores[dataset][1]
+    if info[1] == info[2]: continue # TODO change. need update all topics, not the best one
+    gtm_kb = m2.kbs[m2.guiding_table_name]
+    dataset_kb = m2.kbs[dataset]
 
+    comparing_pairs[(info[1], dataset, info[2])] = (gtm_kb[info[1]].copy(), dataset_kb[info[2]].copy())
+
+    # transfer
+    update = dataset_kb[info[2]].copy()
+    for attr in update:
+        if 'source_dataset' not in dataset_kb[info[2]][attr]:
+            dataset_kb[info[2]][attr]['source_dataset'] = dataset
+    gtm_kb[info[1]].update(update)
+    gtm_kb[info[2]] = gtm_kb[info[1]]
+
+
+    pprint.pprint(gtm_kb[info[1]].keys())
+    pprint.pprint(gtm_kb[info[2]].keys())
+
+    if dataset not in added_topics:
+        added_topics[dataset] = []
+    added_topics[dataset].append(info[2])
+
+
+# TODO check to see if any topics in other table can be mapped to non-assigned attrs in guiding table. use attr-topic wordnet, ngram name
+# TODO check to see if any non-assigned attrs in other table can be mapped to guiding table topics. use attr-topic wordnet, ngram name
+# compute attr-attr similarity matrix (just append one more column). use attr-attr comparison: tf-idf pair of document of values, TODO ngram per val, attr name wordnet
+def preprocesss_attr_values(values):
+    splits = []
+
+
+    for value in values:
+        value = str(value) # TODO get alpha to numeric ratio, if all numbers then skip
+        value.replace('-', '')
+        value.replace('.', '')
+        val_spt = pt.splitter.split(value.lower())
+        val_spt = [val for val in val_spt if 'http' not in val]
+        # print(val_spt)
+        val_spt_merge = []
+        for item in val_spt:
+            val_spt_merge.extend(item)
+        splits.append(' '.join(val_spt_merge))
+
+    return ' '.join(splits)
+# preprocesss_attr_values(['I am splitting this text.','This some nonsense text qwertyuiop'])
+
+import schema_matchers as sch
+
+sim_dict = {}
+
+for pair in comparing_pairs:
+    gtm_top_name, dataset,dataset_top_name  = pair
+    gtm_top, dataset_top = comparing_pairs[pair]
+
+    for gtm_attr in gtm_top:
+        for dataset_attr in dataset_top:
+
+            text1 = preprocesss_attr_values(gtm_top[gtm_attr]['example_values'])
+            text2 = preprocesss_attr_values(dataset_top[dataset_attr]['example_values'])
+
+            if len(text1) == 0 or len(text2) == 0: continue
+
+            score = sch.matcher_instance_document(text1, text2)
+
+            if score > 0:
+                print('>>>>>', gtm_attr, ' | ', dataset, dataset_attr)
+                print(len(text1), len(text2), score)
+
+
+# TODO clustering. split out attrs from topics (break ties usig avg attr-topic score), merge attrs into (newly added only) groups if possible
+
+# remove added topics from the other table
+pprint.pprint(added_topics)
+for dataset in added_topics:
+    rm_topics = added_topics[dataset]
+    exposed_topics = table_metadata[dataset].exposed_topics
+    for top in rm_topics:
+        exposed_topics.remove(top)
+
+    pprint.pprint(table_metadata[dataset].exposed_topics)
+
+# TODO repeat comparing table topics
+
+# transfer topics to tables related to guiding table using topic-attr mappings
+import classification_evaluation as ce
+dataset_topics = ce.kb_to_topics_per_dataset(m2.kbs[m2.guiding_table_name], m2.guiding_table_name)
+
+print('=====transfer topics=====')
+pprint.pprint(dataset_topics)
+
+# eval accuracy
+ground = {'parks' : ['green', 'trees', 'parks'], 'park specimen trees' : ['green', 'trees']}
+accu = ce.compute_precision_and_recall(ground, [dataset_topics])
+
+print('=====accuracy=====')
+print(accu)
