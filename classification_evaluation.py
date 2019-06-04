@@ -100,6 +100,31 @@ def v1_transfer_topics(kb):
 
     return kb_topics, kb_topics_reverse
 
+import os
+import pickle
+def get_ground(dir_p):
+    # print(dir_p)
+    ground = {}
+    for root, dirs, files in os.walk(dir_p):
+        # print(root, dirs, files)
+        for file in files:
+            filename, file_extension = os.path.splitext(file)
+
+            # print(filename)
+            filename_split = filename.split('_')[-1]
+            filename_split = filename_split.replace('[', '')
+            filename_split = filename_split.replace(']', '')
+            # print(filename_split)
+
+            with open(dir_p + file, 'rb') as fp:
+                topics_new = pickle.load(fp)
+
+            ground[filename_split] = topics_new
+
+    return ground
+
+import build_matching_model_new_global as bmmng
+import json
 if __name__ == "__main__":
     precision, recall = compute_precision_and_recall(ground, [top1, top2])
     # print(precision, recall)
@@ -107,22 +132,48 @@ if __name__ == "__main__":
     # eval for ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
     #                               'park specimen trees', 'parks', 'park screen trees']
     # TODO make this set more complete
-    ground = {'parks' : ['green', 'trees', 'parks'], 'park specimen trees' : ['green', 'trees']}
+    # ground = {'parks' : ['green', 'trees', 'parks'], 'park specimen trees' : ['green', 'trees']}
+    existing_tags_p = '/Users/haoran/Documents/thesis_schema_integration/inputs/datasource_and_tags.json'
+    updated_topics_p = '/Users/haoran/Documents/thesis_schema_integration/outputs/updated_topics/'
+    # print('here')
+    ground = get_ground(updated_topics_p)
+    ground['park screen trees'] = []    # TODO
+    # print(ground)
+    # exit(0)
+
+    metadata_f = open(existing_tags_p, 'r')
+    metadata = json.load(metadata_f)
+
+    existing_tags = {}
+    for ds in ground.keys():
+        if ds not in existing_tags: existing_tags[ds] = []
+        for tag in metadata[ds]['tags']:
+            # print(tag)
+            name = tag['display_name']
+            existing_tags[ds].append(name)
+    ground['park screen trees'] = existing_tags['park screen trees']    # TODO
 
     dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
     # version 1
-    import json
+
     kb_p = dir+'kb_file_v1.json'
     kb_topics_f = open(kb_p, 'r')
     kb_topics_json = json.load(kb_topics_f)
 
-    kb_topics, _ = v1_transfer_topics(kb_topics_json)
+    kb_topics, kb_topics_reverse = v1_transfer_topics(kb_topics_json)
     # print(kb_topics)
-    accu = compute_precision_and_recall(ground, [kb_topics])
+    accu = compute_precision_and_recall(bmmng.reverse_dict(ground), [kb_topics])
     print('ver1', accu)
 
+    num_new = 0
+    ds_count = 0
+    for ds in kb_topics_reverse:
+        ds_count += 1
+        num_new += len(set(kb_topics_reverse[ds]) - set(existing_tags[ds]))
+    print('avg new', num_new/ds_count)
+
     # version 2
-    import build_matching_model_new_global as bmmng
+
 
     dataset_topics_p = dir+'dataset_topics_v2.json'
     dataset_topics_f = open(dataset_topics_p, 'r')
@@ -132,7 +183,15 @@ if __name__ == "__main__":
     accu = compute_precision_and_recall(bmmng.reverse_dict(ground), [bmmng.reverse_dict(dataset_topics)])
     print('ver2', accu)
 
+    num_new = 0
+    ds_count = 0
+    for ds in dataset_topics:
+        ds_count += 1
+        num_new += len(set(dataset_topics[ds]) - set(existing_tags[ds]))
+    print('avg new', num_new/ds_count)
+
     # TODO also calculate num of new topics created per dataset
+    # plan out how to evaluate
 
 #-----
 
