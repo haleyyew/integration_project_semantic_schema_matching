@@ -196,7 +196,7 @@ def build_local_context_similarity_matrix(topics_contexts, attributes_contexts, 
     topic_names = list(topics_contexts[source_name].keys())
     attribute_names = list(attributes_contexts.keys())
 
-    print('=====', topic_names, attribute_names)
+    # print('=====', topic_names, attribute_names)
 
     matrix= np.zeros((len(topic_names), len(attribute_names)))
     matrix2 = np.zeros((len(topic_names), len(attribute_names)))
@@ -551,6 +551,8 @@ class Parameters:
     vals_truncate_sample = 100
 
     table_similarity_thresh = 0.4
+
+    num_iters = 5
 
     def __init__(self, **kwds):
         self.__dict__.update(kwds)

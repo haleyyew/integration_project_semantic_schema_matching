@@ -41,13 +41,21 @@ def kb_to_topics_per_dataset(kb, guiding_name):
     return datasets
 
 def compute_precision_and_recall(ground, set_of_labeling_set):
+    # print(ground)
+    # print(set_of_labeling_set)
+
     all_labels = []
     for labeling in set_of_labeling_set:
         keys = labeling.keys()
         all_labels.extend(list(keys))
     all_labels = list(set(all_labels))
 
-    ground_truth_reverse_index = {attr: label for label in ground for attr in ground[label]}
+    ground_truth_reverse_index = {}
+    for label in ground:
+        for attr in ground[label]:
+            if attr not in ground_truth_reverse_index: ground_truth_reverse_index[attr] = []
+            if label not in ground_truth_reverse_index[attr]: ground_truth_reverse_index[attr].append(label)
+
     num_ground_truth_labelings = len([label for label in ground for attr in ground[label]])
 
     max_labeling_len = 0    # for precision
@@ -62,9 +70,12 @@ def compute_precision_and_recall(ground, set_of_labeling_set):
                 attrs = labeling[label]
                 for attr in attrs:
                     if attr in ground_truth_reverse_index:
-                        if label == ground_truth_reverse_index[attr]:   # TODO check semantic distance too
-                            correct[attr] = label   # TODO value is score for semantic distance
+                        if label in ground_truth_reverse_index[attr]:   # TODO check semantic distance too
+                            correct[(attr, label)] = label   # TODO value is score for semantic distance
 
+    print('num_ground_truth_labelings', num_ground_truth_labelings)
+    print(correct)
+    # precision and recall
     return len(correct.keys())/max_labeling_len, len(correct.keys())/num_ground_truth_labelings
 
 
