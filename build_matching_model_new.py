@@ -312,7 +312,7 @@ def initialize_matching(p, m, r):
     for source_name in m.datasources_with_tag:
         tags_list_enriched_dataset, tags_list_enriched_names, attributes_list, schema, _, _ = load_per_source_metadata(p, m, datasources, source_name, pds, bmm)
 
-        score_names = ['ngram', 'wordnet', 'overlap']
+        score_names = m.score_names
 
         sim_matrix1 = build_local_similarity_matrix(tags_list_enriched_dataset, attributes_list, r)
         # TODO build_local_similarity_matrix using context
@@ -453,6 +453,8 @@ def initialize_matching(p, m, r):
                                   'score_name': match[4]}
 
                 update_kb_json(m.kbs[source_name], kb_match_entry)
+
+                # for debugging:
                 kb_match_entry['example_values'] = kb_match_entry['example_values'][:min(len(kb_match_entry['example_values']), 5)]
                 pprint.pprint(kb_match_entry)
 
@@ -530,6 +532,7 @@ class Metadata:
     datasources_with_tag = None
     kbs = {}
     pair_dict_all = None
+    score_names = ['ngram', 'wordnet', 'overlap']
 
     dataset_topics_contexts = None
     dataset_attributes_contexts = None

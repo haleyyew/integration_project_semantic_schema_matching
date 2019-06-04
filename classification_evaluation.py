@@ -25,9 +25,13 @@ def kb_to_topics_per_dataset(kb, guiding_name):
 
 
             if 'source_dataset' in kb[topic][attr]:
-                dataset = kb[topic][attr]['source_dataset']
-                if dataset not in datasets: datasets[dataset] = []
-                datasets[dataset].append(topic)
+                datasets_list = kb[topic][attr]['source_dataset']   # list of datasets []
+
+                # print(topic, attr, datasets_list)
+                for dataset in datasets_list:
+                    if dataset not in datasets: datasets[dataset] = []
+
+                    datasets[dataset].append(topic)
             else:
                 datasets[guiding_name].append(topic)
 
