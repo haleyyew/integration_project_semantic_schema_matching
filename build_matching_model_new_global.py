@@ -8,6 +8,7 @@ import preprocess_topic as pt
 import pprint
 import schema_matchers as sch
 import classification_evaluation as ce
+import time
 
 class Metadata2:
     guiding_table_name = None
@@ -43,40 +44,6 @@ class TableMetadata:
 
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
-
-bmmn.m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks'] #
-
-bmmn.load_metadata(bmmn.p, bmmn.m)
-
-m2.all_topics, m2.attrs_contexts, m2.topic_contexts = bmmn.load_prematching_metadata(bmmn.p, bmmn.m, pds)
-
-kb_file_f = open(bmmn.p.kb_file_const_p, 'r')
-m2.kbs = json.load(kb_file_f)
-kb_file_f.close()
-
-enriched_attrs_f = open(bmmn.p.enriched_attrs_json_dir, 'r')
-m2.enriched_attrs = json.load(enriched_attrs_f)
-enriched_attrs_f.close()
-
-enriched_topics_f = open(bmmn.p.enriched_topics_json_dir, 'r')
-m2.enriched_topics = json.load(enriched_topics_f)
-enriched_topics_f.close()
-
-wordnet = pt.load_dict()
-
-# load guiding table
-m2.guiding_table_name = 'parks'
-
-gtm = TableMetadata(table_name=m2.guiding_table_name)
-gtm.tags_list_enriched_dataset, gtm.tags_list_enriched_names, gtm.attributes_list, gtm.schema, _, _ = bmmn.load_per_source_metadata(bmmn.p, bmmn.m, {}, m2.guiding_table_name, pds, bmm)
-gtm.attribute_contexts = m2.attrs_contexts[m2.guiding_table_name]
-gtm.exposed_topics = gtm.tags_list_enriched_names
-gtm.dataset_stats = bmm.get_table_stats(bmmn.p.dataset_stats, m2.guiding_table_name)
-
-# TODO add enriched topics to dataset if the topic is in vocab
-# TODO find more topics for nonmapped attrs
-
-# load all other tables
 
 # for compare guiding table topics with other tables topics and get most similar table
 def process_scores(sim_matrix1, sim_matrix2, sim_matrix3, table_metadata_topics, source, table_scores, gtm_topics):
@@ -162,11 +129,11 @@ def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table):
     gt_attrs_mapped = []
     gtm_kb = m2.kbs[m2.guiding_table_name]
 
-
     for topic in gtm_kb:
         for attr in gtm_kb[topic]:
 
-            if 'source_dataset' in gtm_kb[topic][attr] and m2.guiding_table_name in gtm_kb[topic][attr]['source_dataset']:
+            if 'source_dataset' in gtm_kb[topic][attr] and m2.guiding_table_name in gtm_kb[topic][attr][
+                'source_dataset']:
                 gt_attrs_mapped.append(attr)
             else:
                 gt_attrs_mapped.append(attr)
@@ -184,7 +151,6 @@ def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table):
     # print(attribute_contexts_temp.keys())
 
     table_scores_attr_topic = {}
-
 
     for dataset in table_scores:
         scores = sorted(table_scores[dataset], key=lambda x: x[0])
@@ -214,15 +180,17 @@ def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table):
         if len(tags_list_enriched_temp.keys()) == 0: continue
         # print(dataset, tags_list_enriched_temp.keys())
 
+        sim_matrix2, sim_matrix3, _ = bmmn.build_local_context_similarity_matrix({dataset: tags_list_enriched_temp},
+                                                                                 attribute_contexts_temp, dataset,
+                                                                                 wordnet, {})
 
-        sim_matrix2, sim_matrix3, _ = bmmn.build_local_context_similarity_matrix({dataset: tags_list_enriched_temp}, attribute_contexts_temp, dataset, wordnet, {})
+        sim_matrix1 = bmmn.build_local_similarity_matrix(tags_list_enriched_temp,
+                                                         list(attribute_contexts_temp.keys()), bmmn.r)
 
-        sim_matrix1 = bmmn.build_local_similarity_matrix(tags_list_enriched_temp, list(attribute_contexts_temp.keys()), bmmn.r)
-
-
-
-        table_scores_attr_topic, list_of_scores = process_scores(sim_matrix1, sim_matrix2, sim_matrix3, list(attribute_contexts_temp.keys()), dataset,
-                                                      table_scores_attr_topic, list(tags_list_enriched_temp.keys()))
+        table_scores_attr_topic, list_of_scores = process_scores(sim_matrix1, sim_matrix2, sim_matrix3,
+                                                                 list(attribute_contexts_temp.keys()), dataset,
+                                                                 table_scores_attr_topic,
+                                                                 list(tags_list_enriched_temp.keys()))
 
     return table_scores_attr_topic
 
@@ -256,7 +224,6 @@ def gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_
     # contexts can be from any dataset, not just gt
     compose_topic_ctx = {}
 
-
     for topic in gtm_topics:
         if topic == None: continue
         # aux info used later
@@ -285,24 +252,24 @@ def gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_
     # pprint.pprint(compose_topic_ctx)
     # pprint.pprint(attr_ctx)
 
-    sim_matrix2, sim_matrix3, _ = bmmn.build_local_context_similarity_matrix({dataset: compose_topic_ctx}, attr_ctx, dataset, wordnet, {})
+    sim_matrix2, sim_matrix3, _ = bmmn.build_local_context_similarity_matrix({dataset: compose_topic_ctx}, attr_ctx,
+                                                                             dataset, wordnet, {})
 
     print(compose_topic_ctx.keys())
     sim_matrix1 = bmmn.build_local_similarity_matrix(compose_topic_ctx, list(attr_ctx.keys()), bmmn.r)
 
-
-
-    table_scores_attr_topic, list_of_scores = process_scores(sim_matrix1, sim_matrix2, sim_matrix3, list(attr_ctx.keys()), dataset,
-                                                  table_scores_topic_attr, list(compose_topic_ctx.keys()))
+    table_scores_attr_topic, list_of_scores = process_scores(sim_matrix1, sim_matrix2, sim_matrix3,
+                                                             list(attr_ctx.keys()), dataset,
+                                                             table_scores_topic_attr,
+                                                             list(compose_topic_ctx.keys()))
 
     return table_scores_attr_topic, topic_from
 
 def preprocesss_attr_values(values):
     splits = []
 
-
     for value in values:
-        value = str(value) # TODO get alpha to numeric ratio, if all numbers then skip
+        value = str(value)  # TODO get alpha to numeric ratio, if all numbers then skip
         value.replace('-', '')
         value.replace('.', '')
         val_spt = pt.splitter.split(value.lower())
@@ -316,327 +283,6 @@ def preprocesss_attr_values(values):
     return ' '.join(splits)
 # preprocesss_attr_values(['I am splitting this text.','This some nonsense text qwertyuiop'])
 
-table_metadata = {}
-added_topics = {}
-num_iters = 0
-# start of iteration:
-break_out = False
-
-while not break_out:
-    print('===== num_iters', num_iters, '=====')
-    # compare guiding table topics with other tables topics and get most similar table
-
-    table_scores = {}
-    for source in bmmn.m.datasources_with_tag:
-        if source == m2.guiding_table_name: continue
-        if source not in table_metadata:
-            tm = TableMetadata(table_name=source)
-            tm.tags_list_enriched_dataset, tm.tags_list_enriched_names, tm.attributes_list, tm.schema, _, _ = bmmn.load_per_source_metadata(
-                bmmn.p, bmmn.m, {}, source, pds, bmm)
-
-            if source not in m2.attrs_contexts: continue
-            tm.attribute_contexts = m2.attrs_contexts[source]
-            table_metadata[source] = tm
-
-            tm.exposed_topics = tm.tags_list_enriched_names
-            # TODO update tags_list_enriched_dataset when new attrs are added to exposed_topics. Remove attrs from exposed_topics at end of iter
-
-            tm.dataset_stats = bmm.get_table_stats(bmmn.p.dataset_stats, source)
-
-        table_scores[source] = [[0, None]]
-
-        # dataset = pd.read_csv(bmmn.p.datasets_path + source + '.csv', index_col=0, header=0)
-        # dataset = bmm.df_rename_cols(dataset)
-
-        compose_topic_ctx = {}
-        gtm_contexts = gtm.tags_list_enriched_dataset
-
-        for topic in gtm.exposed_topics:
-
-            # the context could be from the gt or from another dataset
-            if topic in gtm_contexts:
-                compose_topic_ctx[topic] = gtm_contexts[topic].copy()
-
-            else:
-                datasets_with_topic = find_source_of_topic(added_topics, topic)
-                topic_ctx = {}
-                for ds in datasets_with_topic:
-                    update = table_metadata[ds].tags_list_enriched_dataset[topic].copy()
-                    topic_ctx.update(update)
-                compose_topic_ctx[topic] = topic_ctx
-
-        dataset_contexts = table_metadata[source].tags_list_enriched_dataset
-        ds_topic_ctx = {}
-        for topic in table_metadata[source].exposed_topics:
-
-            # the context can only be from the dataset
-            if topic in dataset_contexts:
-                ds_topic_ctx[topic] = dataset_contexts[topic].copy()
-
-        # print('|||||', source, len(dataset_contexts), len(table_metadata[source].exposed_topics))
-
-        sim_matrix2, sim_matrix3, _ = bmmn.build_local_context_similarity_matrix({source: compose_topic_ctx},ds_topic_ctx, source, wordnet, {})
-
-        sim_matrix1 = bmmn.build_local_similarity_matrix(compose_topic_ctx, table_metadata[source].exposed_topics, bmmn.r)
-
-        # print(table_metadata[source].exposed_topics, gtm.exposed_topics)
-        # print(gtm.tags_list_enriched_dataset.keys(), table_metadata[source].exposed_topics)
-
-        # print(sim_matrix1.shape, sim_matrix2.shape, sim_matrix3.shape)
-
-        table_scores, list_of_scores = process_scores(sim_matrix1, sim_matrix2, sim_matrix3, table_metadata[source].exposed_topics, source, table_scores, gtm.exposed_topics)
-
-    print('===== table search =====')
-    pprint.pprint(table_scores)
-    print('==========')
-
-
-    # add new similar topics, transfer guiding table attrs to new topic group, and transfer other table attrs to existing guiding table topic group. use topic-topic wordnet, ngram name
-    comparing_pairs = {}
-    this_iteration_change = 0
-    for dataset in table_scores:
-        scores = sorted(table_scores[dataset], key=lambda x: x[0])
-        scores.reverse()
-
-        # print(':::::', dataset, scores)
-
-        gtm_kb = m2.kbs[m2.guiding_table_name]
-        dataset_kb = m2.kbs[dataset]
-
-        for item in scores:
-            if item[0] < bmmn.r.topic_to_attr_threshold:
-                break
-
-            this_iteration_change += 1
-
-            score = item[0]
-            info = item[1]
-            if info[1] == info[2]:  # dataset and guiding have the same topic
-                #  NOTE: still need to add it
-                for attr in gtm_kb[info[1]]:
-                    if 'source_dataset' not in gtm_kb[info[1]][attr]:
-                        gtm_kb[info[1]][attr]['source_dataset'] = [m2.guiding_table_name]
-                pass
-
-            # comparing_pairs, gtm, gtm_kb, added_topics = \
-            topic_topic_update(dataset, info, score, comparing_pairs, gtm, gtm_kb, dataset_kb, added_topics)
-
-    if this_iteration_change == 0: break
-
-    print('----- end of transfer -----')
-    pprint.pprint(gtm.exposed_topics_groups)
-    print('----------')
-
-    for key in gtm.exposed_topics_groups:
-        for tupl in gtm.exposed_topics_groups[key]:
-            topic = tupl[1]
-            if topic not in gtm.exposed_topics:
-                gtm.exposed_topics.append(topic)
-    # pprint.pprint(gtm.exposed_topics)
-
-
-
-    table_scores_attr_topic = gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, gtm)
-    # print('///// topics attributes /////')
-    # pprint.pprint(table_scores_attr_topic)
-    # print('//////////')
-
-    for dataset in table_scores_attr_topic:
-        if dataset == m2.guiding_table_name: continue
-
-        scores = sorted(table_scores_attr_topic[dataset], key=lambda x: x[0])
-        scores.reverse()
-
-        # print(':::::', dataset, scores)
-
-        gtm_kb = m2.kbs[m2.guiding_table_name]
-        dataset_kb = m2.kbs[dataset]
-        # print(dataset_kb.keys())
-
-        for item in scores:
-            if item[0] < bmmn.r.topic_to_attr_threshold:
-                break
-
-            score = item[0]
-            info = item[1]
-
-            if info[1] not in gtm_kb:
-                gtm_kb[info[1]] = {}
-
-            attr = info[2]
-            # print('/////', dataset, info, score)
-
-            # the kb concept did not exist before
-            gtm_kb[info[1]][attr] = {}
-
-            dataset_schema = gtm.schema
-            # print(len(dataset_schema))
-            index = -1
-            search = info[2].replace(' ', '_')
-            datatype = None
-            examples = None
-            for sch_attr in dataset_schema:
-                if sch_attr['name'] == search or sch_attr['alias'] == info[2]:
-
-                    if 'coded_values' in sch_attr:
-                        examples = sch_attr['coded_values']
-
-                    datatype = sch_attr['data_type']
-
-            kb_match_entry = {'concept': info[1],
-                              'datasource': dataset,       # where the concept comes from
-                              'attribute': info[2],
-                              'match_score': score,
-                              'example_values': examples,
-                              'data_type': datatype,
-                              'score_name': bmmn.m.score_names[info[0]]}
-
-            bmmn.update_kb_json(gtm_kb, kb_match_entry)
-
-            # kb_match_entry['example_values'] = kb_match_entry['example_values'][
-            #                                    :min(len(kb_match_entry['example_values']), 5)]
-            # pprint.pprint(kb_match_entry)
-
-            if info[1] not in added_topics[dataset]:
-                added_topics[dataset].append(info[1])
-
-    print('----- end of coverage -----')
-    pprint.pprint(added_topics)
-    print('----------')
-
-
-    table_scores_topic_attr = {}
-    topic_from = {}
-    for dataset in table_scores:
-        table_scores_topic_attr, topic_from = gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_topic_attr, topic_from)
-
-    for topic in topic_from:
-        topic_from[topic] = list(set(topic_from[topic]))
-
-    # print(len(table_scores_topic_attr))
-
-    for dataset in table_scores_topic_attr:
-        if dataset == m2.guiding_table_name: continue
-
-        scores = sorted(table_scores_topic_attr[dataset], key=lambda x: x[0])
-        scores.reverse()
-
-        gtm_kb = m2.kbs[m2.guiding_table_name]
-        dataset_kb = m2.kbs[dataset]
-        # print(dataset_kb.keys())
-
-        for item in scores:
-            if item[0] < bmmn.r.topic_to_attr_threshold:
-                break
-
-            # print(item)
-
-            score = item[0]
-            info = item[1]
-
-            attr = info[2]
-
-            dataset_schema = table_metadata[dataset].schema
-            # print(len(dataset_schema))
-            index = -1
-            search = info[2].replace(' ', '_')
-            datatype = None
-            examples = None
-            for sch_attr in dataset_schema:
-                if sch_attr['name'] == search or sch_attr['alias'] == info[2]:
-
-                    if 'coded_values' in sch_attr:
-                        examples = sch_attr['coded_values']
-
-                    datatype = sch_attr['data_type']
-
-
-            kb_match_entry = {'concept': info[1],
-                              'datasource': topic_from[info[1]],
-                              'attribute': info[2],
-                              'match_score': score,
-                              'example_values': examples,
-                              'data_type': datatype,
-                              'score_name': bmmn.m.score_names[info[0]]}
-
-            # print('before', len(gtm_kb[info[1]]))
-
-            bmmn.update_kb_json(gtm_kb, kb_match_entry)
-
-            # print('after', len(gtm_kb[info[1]]))
-            # if info[1] != 'trees':
-            #     print(dataset)
-                # kb_match_entry['example_values'] = kb_match_entry['example_values'][
-                #                                    :min(len(kb_match_entry['example_values']), 5)]
-                # pprint.pprint(kb_match_entry)
-                # pprint.pprint(gtm_kb[info[1]])
-
-            if info[1] not in gtm.exposed_topics_groups:
-                gtm.exposed_topics_groups[info[1]] = []
-                # print(info[1], gtm.exposed_topics_groups[info[1]])
-            gtm.exposed_topics_groups[info[1]].append([dataset, None, score])
-            # print(gtm.exposed_topics_groups[info[1]])
-
-    print('---- end of importance -----')
-    pprint.pprint(gtm.exposed_topics_groups)
-    print('----------')
-
-    # compute attr-attr similarity matrix (just append one more column). use attr-attr comparison: tf-idf pair of document of values, TODO ngram per val, attr name wordnet
-    sim_dict = {}
-
-    # fine grained matching
-    for pair in comparing_pairs:
-        gtm_top_name, dataset,dataset_top_name  = pair
-        gtm_top, dataset_top = comparing_pairs[pair]
-
-        for gtm_attr in gtm_top:
-            for dataset_attr in dataset_top:
-
-                text1 = preprocesss_attr_values(gtm_top[gtm_attr]['example_values'])
-                text2 = preprocesss_attr_values(dataset_top[dataset_attr]['example_values'])
-
-                if len(text1) == 0 or len(text2) == 0: continue
-
-                score = sch.matcher_instance_document(text1, text2)
-
-                if score > 0:
-                    pass
-                    # print('>>>>>', gtm_attr, len(text1) ,' | ', dataset, dataset_attr, len(text2),  ' || ',  score)
-                    # print('<<<<<')
-    # TODO clustering. split out attrs from topics (break ties usig avg attr-topic score), merge attrs into (newly added only) groups if possible
-
-    # remove added topics from the other table
-    print('=====remove added topics=====')
-    pprint.pprint(added_topics)
-    for dataset in added_topics:
-        rm_topics = added_topics[dataset]
-        exposed_topics = table_metadata[dataset].exposed_topics
-        for top in rm_topics:
-            # print('rm', dataset, top)
-            if top not in exposed_topics: continue  # need to fix this
-            exposed_topics.remove(top)
-
-        pprint.pprint(table_metadata[dataset].exposed_topics)
-
-    for key in gtm.exposed_topics_groups:
-        items_list = gtm.exposed_topics_groups[key]
-        for tupl in items_list:
-            dataset, topic, score = tupl[0], tupl[1], tupl[2]
-
-            if key not in gtm.exposed_topics:
-                gtm.exposed_topics.append(key)
-
-            if topic not in gtm.exposed_topics and topic != None:
-                gtm.exposed_topics.append(topic)
-
-    if None in gtm.exposed_topics:
-        gtm.exposed_topics.remove(None)
-
-
-    # TODO repeat comparing table topics
-    num_iters += 1
-    if num_iters == bmmn.r.num_iters:
-        break_out = True
 
 # add more topics that have no attrs mapped, NOTE: every dataset in group gets all topics in group
 def add_more_topics(exposed_topics_groups, dataset_topics):
@@ -687,23 +333,393 @@ def reverse_dict(dict):
                 reversed[val].append(k)
     return reversed
 
+if __name__ == "__main__":
 
-# transfer topics to tables related to guiding table using topic-attr mappings
-dataset_topics = ce.kb_to_topics_per_dataset(m2.kbs[m2.guiding_table_name], m2.guiding_table_name)
+    t0 = time.time()
 
-# TODO remember to remove topics from here if found some topic should be split
-add_more_topics(gtm.exposed_topics_groups, dataset_topics)
+    bmmn.m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees'] #
 
-print('=====transfer topics=====')
-pprint.pprint(dataset_topics)
+    bmmn.load_metadata(bmmn.p, bmmn.m)
 
-# eval accuracy
-ground = {'parks' : ['green', 'trees', 'parks'], 'park specimen trees' : ['green', 'trees']}
+    m2.all_topics, m2.attrs_contexts, m2.topic_contexts = bmmn.load_prematching_metadata(bmmn.p, bmmn.m, pds)
 
-accu = ce.compute_precision_and_recall(reverse_dict(ground), [reverse_dict(dataset_topics)])
+    kb_file_f = open(bmmn.p.kb_file_const_p, 'r')
+    m2.kbs = json.load(kb_file_f)
+    kb_file_f.close()
 
-print('=====accuracy=====')
-print(accu)
+    enriched_attrs_f = open(bmmn.p.enriched_attrs_json_dir, 'r')
+    m2.enriched_attrs = json.load(enriched_attrs_f)
+    enriched_attrs_f.close()
 
-with open(bmmn.p.kb_file_p, 'w') as fp:
-    json.dump(m2.kbs, fp, sort_keys=True, indent=2)
+    enriched_topics_f = open(bmmn.p.enriched_topics_json_dir, 'r')
+    m2.enriched_topics = json.load(enriched_topics_f)
+    enriched_topics_f.close()
+
+    wordnet = pt.load_dict()
+
+    # load guiding table
+    m2.guiding_table_name = 'parks'
+
+    gtm = TableMetadata(table_name=m2.guiding_table_name)
+    gtm.tags_list_enriched_dataset, gtm.tags_list_enriched_names, gtm.attributes_list, gtm.schema, _, _ = bmmn.load_per_source_metadata(bmmn.p, bmmn.m, {}, m2.guiding_table_name, pds, bmm)
+    gtm.attribute_contexts = m2.attrs_contexts[m2.guiding_table_name]
+    gtm.exposed_topics = gtm.tags_list_enriched_names
+    gtm.dataset_stats = bmm.get_table_stats(bmmn.p.dataset_stats, m2.guiding_table_name)
+
+    # TODO add enriched topics to dataset if the topic is in vocab
+    # TODO find more topics for nonmapped attrs
+
+    # load all other tables
+
+
+    table_metadata = {}
+    added_topics = {}
+    num_iters = 0
+    # start of iteration:
+    break_out = False
+
+    while not break_out:
+        print('===== num_iters', num_iters, '=====')
+        # compare guiding table topics with other tables topics and get most similar table
+
+        table_scores = {}
+        for source in bmmn.m.datasources_with_tag:
+            if source == m2.guiding_table_name: continue
+            if source not in table_metadata:
+                tm = TableMetadata(table_name=source)
+                tm.tags_list_enriched_dataset, tm.tags_list_enriched_names, tm.attributes_list, tm.schema, _, _ = bmmn.load_per_source_metadata(
+                    bmmn.p, bmmn.m, {}, source, pds, bmm)
+
+                if source not in m2.attrs_contexts: continue
+                tm.attribute_contexts = m2.attrs_contexts[source]
+                table_metadata[source] = tm
+
+                tm.exposed_topics = tm.tags_list_enriched_names
+                # TODO update tags_list_enriched_dataset when new attrs are added to exposed_topics. Remove attrs from exposed_topics at end of iter
+
+                tm.dataset_stats = bmm.get_table_stats(bmmn.p.dataset_stats, source)
+
+            table_scores[source] = [[0, None]]
+
+            # dataset = pd.read_csv(bmmn.p.datasets_path + source + '.csv', index_col=0, header=0)
+            # dataset = bmm.df_rename_cols(dataset)
+
+            compose_topic_ctx = {}
+            gtm_contexts = gtm.tags_list_enriched_dataset
+
+            for topic in gtm.exposed_topics:
+
+                # the context could be from the gt or from another dataset
+                if topic in gtm_contexts:
+                    compose_topic_ctx[topic] = gtm_contexts[topic].copy()
+
+                else:
+                    datasets_with_topic = find_source_of_topic(added_topics, topic)
+                    topic_ctx = {}
+                    for ds in datasets_with_topic:
+                        update = table_metadata[ds].tags_list_enriched_dataset[topic].copy()
+                        topic_ctx.update(update)
+                    compose_topic_ctx[topic] = topic_ctx
+
+            dataset_contexts = table_metadata[source].tags_list_enriched_dataset
+            ds_topic_ctx = {}
+            for topic in table_metadata[source].exposed_topics:
+
+                # the context can only be from the dataset
+                if topic in dataset_contexts:
+                    ds_topic_ctx[topic] = dataset_contexts[topic].copy()
+
+            # print('|||||', source, len(dataset_contexts), len(table_metadata[source].exposed_topics))
+
+            sim_matrix2, sim_matrix3, _ = bmmn.build_local_context_similarity_matrix({source: compose_topic_ctx},ds_topic_ctx, source, wordnet, {})
+
+            sim_matrix1 = bmmn.build_local_similarity_matrix(compose_topic_ctx, table_metadata[source].exposed_topics, bmmn.r)
+
+            # print(table_metadata[source].exposed_topics, gtm.exposed_topics)
+            # print(gtm.tags_list_enriched_dataset.keys(), table_metadata[source].exposed_topics)
+
+            # print(sim_matrix1.shape, sim_matrix2.shape, sim_matrix3.shape)
+
+            table_scores, list_of_scores = process_scores(sim_matrix1, sim_matrix2, sim_matrix3, table_metadata[source].exposed_topics, source, table_scores, gtm.exposed_topics)
+
+        print('===== table search =====')
+        pprint.pprint(table_scores)
+        print('==========')
+
+
+        # add new similar topics, transfer guiding table attrs to new topic group, and transfer other table attrs to existing guiding table topic group. use topic-topic wordnet, ngram name
+        comparing_pairs = {}
+        this_iteration_change = 0
+        for dataset in table_scores:
+            scores = sorted(table_scores[dataset], key=lambda x: x[0])
+            scores.reverse()
+
+            # print(':::::', dataset, scores)
+
+            gtm_kb = m2.kbs[m2.guiding_table_name]
+            dataset_kb = m2.kbs[dataset]
+
+            for item in scores:
+                if item[0] < bmmn.r.topic_to_attr_threshold:
+                    break
+
+                this_iteration_change += 1
+
+                score = item[0]
+                info = item[1]
+                if info[1] == info[2]:  # dataset and guiding have the same topic
+                    #  NOTE: still need to add it
+                    for attr in gtm_kb[info[1]]:
+                        if 'source_dataset' not in gtm_kb[info[1]][attr]:
+                            gtm_kb[info[1]][attr]['source_dataset'] = [m2.guiding_table_name]
+                    pass
+
+                # comparing_pairs, gtm, gtm_kb, added_topics = \
+                topic_topic_update(dataset, info, score, comparing_pairs, gtm, gtm_kb, dataset_kb, added_topics)
+
+        if this_iteration_change == 0: break
+
+        print('----- end of transfer -----')
+        pprint.pprint(gtm.exposed_topics_groups)
+        print('----------')
+
+        for key in gtm.exposed_topics_groups:
+            for tupl in gtm.exposed_topics_groups[key]:
+                topic = tupl[1]
+                if topic not in gtm.exposed_topics:
+                    gtm.exposed_topics.append(topic)
+        # pprint.pprint(gtm.exposed_topics)
+
+
+
+        table_scores_attr_topic = gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, gtm)
+        # print('///// topics attributes /////')
+        # pprint.pprint(table_scores_attr_topic)
+        # print('//////////')
+
+        for dataset in table_scores_attr_topic:
+            if dataset == m2.guiding_table_name: continue
+
+            scores = sorted(table_scores_attr_topic[dataset], key=lambda x: x[0])
+            scores.reverse()
+
+            # print(':::::', dataset, scores)
+
+            gtm_kb = m2.kbs[m2.guiding_table_name]
+            dataset_kb = m2.kbs[dataset]
+            # print(dataset_kb.keys())
+
+            for item in scores:
+                if item[0] < bmmn.r.topic_to_attr_threshold:
+                    break
+
+                score = item[0]
+                info = item[1]
+
+                if info[1] not in gtm_kb:
+                    gtm_kb[info[1]] = {}
+
+                attr = info[2]
+                # print('/////', dataset, info, score)
+
+                # the kb concept did not exist before
+                gtm_kb[info[1]][attr] = {}
+
+                dataset_schema = gtm.schema
+                # print(len(dataset_schema))
+                index = -1
+                search = info[2].replace(' ', '_')
+                datatype = None
+                examples = None
+                for sch_attr in dataset_schema:
+                    if sch_attr['name'] == search or sch_attr['alias'] == info[2]:
+
+                        if 'coded_values' in sch_attr:
+                            examples = sch_attr['coded_values']
+
+                        datatype = sch_attr['data_type']
+
+                kb_match_entry = {'concept': info[1],
+                                  'datasource': dataset,       # where the concept comes from
+                                  'attribute': info[2],
+                                  'match_score': score,
+                                  'example_values': examples,
+                                  'data_type': datatype,
+                                  'score_name': bmmn.m.score_names[info[0]]}
+
+                bmmn.update_kb_json(gtm_kb, kb_match_entry)
+
+                # kb_match_entry['example_values'] = kb_match_entry['example_values'][
+                #                                    :min(len(kb_match_entry['example_values']), 5)]
+                # pprint.pprint(kb_match_entry)
+
+                if info[1] not in added_topics[dataset]:
+                    added_topics[dataset].append(info[1])
+
+        print('----- end of coverage -----')
+        pprint.pprint(added_topics)
+        print('----------')
+
+
+        table_scores_topic_attr = {}
+        topic_from = {}
+        for dataset in table_scores:
+            table_scores_topic_attr, topic_from = gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_topic_attr, topic_from)
+
+        for topic in topic_from:
+            topic_from[topic] = list(set(topic_from[topic]))
+
+        # print(len(table_scores_topic_attr))
+
+        for dataset in table_scores_topic_attr:
+            if dataset == m2.guiding_table_name: continue
+
+            scores = sorted(table_scores_topic_attr[dataset], key=lambda x: x[0])
+            scores.reverse()
+
+            gtm_kb = m2.kbs[m2.guiding_table_name]
+            dataset_kb = m2.kbs[dataset]
+            # print(dataset_kb.keys())
+
+            for item in scores:
+                if item[0] < bmmn.r.topic_to_attr_threshold:
+                    break
+
+                # print(item)
+
+                score = item[0]
+                info = item[1]
+
+                attr = info[2]
+
+                dataset_schema = table_metadata[dataset].schema
+                # print(len(dataset_schema))
+                index = -1
+                search = info[2].replace(' ', '_')
+                datatype = None
+                examples = None
+                for sch_attr in dataset_schema:
+                    if sch_attr['name'] == search or sch_attr['alias'] == info[2]:
+
+                        if 'coded_values' in sch_attr:
+                            examples = sch_attr['coded_values']
+
+                        datatype = sch_attr['data_type']
+
+
+                kb_match_entry = {'concept': info[1],
+                                  'datasource': topic_from[info[1]],
+                                  'attribute': info[2],
+                                  'match_score': score,
+                                  'example_values': examples,
+                                  'data_type': datatype,
+                                  'score_name': bmmn.m.score_names[info[0]]}
+
+                # print('before', len(gtm_kb[info[1]]))
+
+                bmmn.update_kb_json(gtm_kb, kb_match_entry)
+
+                # print('after', len(gtm_kb[info[1]]))
+                # if info[1] != 'trees':
+                #     print(dataset)
+                    # kb_match_entry['example_values'] = kb_match_entry['example_values'][
+                    #                                    :min(len(kb_match_entry['example_values']), 5)]
+                    # pprint.pprint(kb_match_entry)
+                    # pprint.pprint(gtm_kb[info[1]])
+
+                if info[1] not in gtm.exposed_topics_groups:
+                    gtm.exposed_topics_groups[info[1]] = []
+                    # print(info[1], gtm.exposed_topics_groups[info[1]])
+                gtm.exposed_topics_groups[info[1]].append([dataset, None, score])
+                # print(gtm.exposed_topics_groups[info[1]])
+
+        print('---- end of importance -----')
+        pprint.pprint(gtm.exposed_topics_groups)
+        print('----------')
+
+        # compute attr-attr similarity matrix (just append one more column). use attr-attr comparison: tf-idf pair of document of values, TODO ngram per val, attr name wordnet
+        sim_dict = {}
+
+        # fine grained matching
+        for pair in comparing_pairs:
+            gtm_top_name, dataset,dataset_top_name  = pair
+            gtm_top, dataset_top = comparing_pairs[pair]
+
+            for gtm_attr in gtm_top:
+                for dataset_attr in dataset_top:
+
+                    text1 = preprocesss_attr_values(gtm_top[gtm_attr]['example_values'])
+                    text2 = preprocesss_attr_values(dataset_top[dataset_attr]['example_values'])
+
+                    if len(text1) == 0 or len(text2) == 0: continue
+
+                    score = sch.matcher_instance_document(text1, text2)
+
+                    if score > 0:
+                        pass
+                        # print('>>>>>', gtm_attr, len(text1) ,' | ', dataset, dataset_attr, len(text2),  ' || ',  score)
+                        # print('<<<<<')
+        # TODO clustering. split out attrs from topics (break ties usig avg attr-topic score), merge attrs into (newly added only) groups if possible
+
+        # remove added topics from the other table
+        print('=====remove added topics=====')
+        pprint.pprint(added_topics)
+        for dataset in added_topics:
+            rm_topics = added_topics[dataset]
+            exposed_topics = table_metadata[dataset].exposed_topics
+            for top in rm_topics:
+                # print('rm', dataset, top)
+                if top not in exposed_topics: continue  # need to fix this
+                exposed_topics.remove(top)
+
+            pprint.pprint(table_metadata[dataset].exposed_topics)
+
+        for key in gtm.exposed_topics_groups:
+            items_list = gtm.exposed_topics_groups[key]
+            for tupl in items_list:
+                dataset, topic, score = tupl[0], tupl[1], tupl[2]
+
+                if key not in gtm.exposed_topics:
+                    gtm.exposed_topics.append(key)
+
+                if topic not in gtm.exposed_topics and topic != None:
+                    gtm.exposed_topics.append(topic)
+
+        if None in gtm.exposed_topics:
+            gtm.exposed_topics.remove(None)
+
+
+        # TODO repeat comparing table topics
+        num_iters += 1
+        if num_iters == bmmn.r.num_iters:
+            break_out = True
+
+
+
+
+    # transfer topics to tables related to guiding table using topic-attr mappings
+    dataset_topics = ce.kb_to_topics_per_dataset(m2.kbs[m2.guiding_table_name], m2.guiding_table_name)
+
+    # TODO remember to remove topics from here if found some topic should be split
+    add_more_topics(gtm.exposed_topics_groups, dataset_topics)
+
+    print('=====transfer topics=====')
+    pprint.pprint(dataset_topics)
+
+    # eval accuracy
+    ground = {'parks' : ['green', 'trees', 'parks'], 'park specimen trees' : ['green', 'trees']}
+
+    accu = ce.compute_precision_and_recall(reverse_dict(ground), [reverse_dict(dataset_topics)])
+
+    print('=====accuracy=====')
+    print(accu)
+
+    with open(bmmn.p.kb_file_p, 'w') as fp:
+        json.dump(m2.kbs, fp, sort_keys=True, indent=2)
+
+    with open(bmmn.p.dataset_topics_p, 'w') as fp:
+        json.dump(dataset_topics, fp, sort_keys=True, indent=2)
+
+    t1 = time.time()
+    total = t1 - t0
+    print('time %s sec' % (total))

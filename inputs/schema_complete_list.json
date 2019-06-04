@@ -19080,6 +19080,7 @@
       "alias": "tree variety",
       "coded_values": [
         "Accolade",
+        "After Burner",
         "Airy Peters",
         "Akebono",
         "Amanogawa",
@@ -19193,8 +19194,10 @@
         "Gold Spot",
         "Golddust",
         "Golden Desert",
+        "Golden Glory",
         "Golden Plum",
         "Golden Pond",
+        "Gracilis",
         "Gravenstein",
         "Green Mountain",
         "Green Pillar",
@@ -19215,6 +19218,7 @@
         "Joseph Rock",
         "Junginger",
         "Karpick",
+        "Kindred Spirit",
         "King of Tompkins",
         "Kwanzan",
         "Laciniata",
@@ -19226,6 +19230,7 @@
         "Lutescens",
         "Marshall",
         "Merrill",
+        "Midwest",
         "Morgan",
         "Muscadet de Dieppe",
         "Nana Pendula",
@@ -19233,6 +19238,7 @@
         "Northern Spy",
         "Northwood",
         "Norwegian Sunset",
+        "Obelisk",
         "October Glory",
         "Ontario",
         "Osakazuki",
@@ -19284,6 +19290,7 @@
         "Rubra",
         "Rubrum",
         "Rudolph",
+        "Rugged Ridge",
         "Ruth Ellen",
         "Saratoga",
         "Satomi",
@@ -19295,6 +19302,7 @@
         "Serene",
         "Shaboldii",
         "Shademaster",
+        "Shawnee Brave",
         "Shirofugen",
         "Shirotae",
         "Shogetsu",
@@ -19303,6 +19311,7 @@
         "Silver Queen",
         "Skinneri",
         "Skinners Cutleaf",
+        "Skinny Genes",
         "Skyline",
         "Skyrocket",
         "Snowcone",
@@ -19351,16 +19360,7 @@
         "Yellow Bird",
         "Yoshino Cherry",
         "Youngii",
-        "Zebrina",
-        "Obelisk",
-        "Shawnee Brave",
-        "Kindred Spirit",
-        "Rugged Ridge",
-        "Midwest",
-        "Gracilis",
-        "Skinny Genes",
-        "Golden Glory",
-        "After Burner"
+        "Zebrina"
       ],
       "data_type": "esriFieldTypeString",
       "datasource": "./metadata/238 Park Screen Trees.json",
@@ -19509,6 +19509,7 @@
         "Fire Department",
         "GVRD",
         "GVWD",
+        "Information Technology",
         "LFVEA",
         "Libraries",
         "Other Municipality",
@@ -19521,8 +19522,7 @@
         "School District #36",
         "Sewer",
         "Unknown",
-        "Water",
-        "Information Technology"
+        "Water"
       ],
       "data_type": "esriFieldTypeString",
       "datasource": "./metadata/238 Park Screen Trees.json",
@@ -19531,16 +19531,22 @@
     },
     {
       "alias": "maintenance responsibility",
+      "coded_values": [
+        "Parks"
+      ],
       "data_type": "esriFieldTypeString",
       "datasource": "./metadata/238 Park Screen Trees.json",
-      "domain": null,
+      "domain": "coded_values_groupby",
       "name": "maintenance responsibility"
     },
     {
       "alias": "operational responsibility",
+      "coded_values": [
+        "Parks"
+      ],
       "data_type": "esriFieldTypeString",
       "datasource": "./metadata/238 Park Screen Trees.json",
-      "domain": null,
+      "domain": "coded_values_groupby",
       "name": "operational responsibility"
     },
     {

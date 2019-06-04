@@ -7,9 +7,17 @@ import pandas as pd
 
 def add_attr_to_kb_concept(kb, matching_context):
     concept = matching_context['concept']
+
+    if matching_context['concept'] not in kb: return
+
     concept_dict = kb[matching_context['concept']]['matches']
+
+
     src_attr = matching_context['src_attr']
     src_dataset = matching_context['src_dataset']
+
+    if src_dataset not in concept_dict: return
+
     tar_dataset = matching_context['tar_dataset']
     tar_attr = matching_context['tar_attr']
     match_score = matching_context['score'],

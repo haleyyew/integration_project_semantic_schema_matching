@@ -1,0 +1,5 @@
+input: ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees']
+ver2: 16.996 sec (ends after 2nd iteration)
+ver1: 135.718 sec (ends after 2nd iteration)
+
+num of new topics

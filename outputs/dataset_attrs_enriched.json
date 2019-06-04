@@ -323,6 +323,422 @@
       ]
     }
   },
+  "park screen trees": {
+    "comments": {
+      "comment.n.02": [
+        "comment"
+      ],
+      "gossip.n.02": [
+        "comment"
+      ],
+      "remark.n.01": [
+        "comment"
+      ]
+    },
+    "description": {
+      "description.n.01": [
+        "description"
+      ],
+      "description.n.02": [
+        "act",
+        "description"
+      ],
+      "description.n.03": [
+        "description"
+      ]
+    },
+    "facilityid": {},
+    "location": {
+      "localization.n.01": [
+        "location"
+      ],
+      "location.n.01": [
+        "location"
+      ],
+      "location.n.04": [
+        "location"
+      ],
+      "placement.n.03": [
+        "act",
+        "location"
+      ]
+    },
+    "maintenance responsibility": {
+      "alimony.n.01": [
+        "maintenance"
+      ],
+      "care.n.06": [
+        "maintenance"
+      ],
+      "duty.n.01": [
+        "responsibility",
+        "line"
+      ],
+      "maintenance.n.02": [
+        "maintenance"
+      ],
+      "maintenance.n.05": [
+        "maintenance"
+      ],
+      "province.n.02": [
+        "area",
+        "responsibility"
+      ],
+      "responsibility.n.03": [
+        "responsibility"
+      ],
+      "sustenance.n.03": [
+        "act",
+        "maintenance"
+      ]
+    },
+    "number of trees": {
+      "act.n.04": [
+        "act",
+        "number"
+      ],
+      "issue.n.02": [
+        "number"
+      ],
+      "number.n.01": [
+        "number"
+      ],
+      "number.n.02": [
+        "number"
+      ],
+      "number.n.07": [
+        "number"
+      ],
+      "number.n.08": [
+        "number"
+      ],
+      "number.n.09": [
+        "number"
+      ],
+      "number.n.10": [
+        "number"
+      ],
+      "number.n.11": [
+        "number"
+      ],
+      "numeral.n.01": [
+        "number"
+      ],
+      "phone_number.n.01": [
+        "number"
+      ],
+      "tree.n.01": [
+        "tree",
+        "of"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "operating location": {
+      "localization.n.01": [
+        "location"
+      ],
+      "location.n.01": [
+        "line",
+        "part",
+        "location"
+      ],
+      "location.n.04": [
+        "location"
+      ],
+      "placement.n.03": [
+        "act",
+        "location"
+      ]
+    },
+    "operating location type": {
+      "character.n.05": [
+        "type"
+      ],
+      "localization.n.01": [
+        "location"
+      ],
+      "location.n.01": [
+        "line",
+        "part",
+        "location"
+      ],
+      "location.n.04": [
+        "location"
+      ],
+      "placement.n.03": [
+        "act",
+        "location"
+      ],
+      "type.n.01": [
+        "type"
+      ],
+      "type.n.03": [
+        "type"
+      ],
+      "type.n.04": [
+        "type"
+      ],
+      "type.n.05": [
+        "type"
+      ],
+      "type.n.06": [
+        "type"
+      ]
+    },
+    "operational responsibility": {
+      "duty.n.01": [
+        "responsibility",
+        "line"
+      ],
+      "province.n.02": [
+        "area",
+        "responsibility"
+      ],
+      "responsibility.n.03": [
+        "responsibility"
+      ]
+    },
+    "park name": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "name.n.01": [
+        "name"
+      ],
+      "name.n.02": [
+        "name"
+      ],
+      "name.n.03": [
+        "name"
+      ],
+      "name.n.04": [
+        "name"
+      ],
+      "name.n.05": [
+        "name"
+      ],
+      "name.n.06": [
+        "name"
+      ],
+      "park.n.01": [
+        "area",
+        "park",
+        "land"
+      ],
+      "park.n.02": [
+        "area",
+        "park",
+        "land"
+      ],
+      "park.n.04": [
+        "Park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ]
+    },
+    "park ownership": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "ownership.n.01": [
+        "property",
+        "ownership"
+      ],
+      "ownership.n.03": [
+        "ownership"
+      ],
+      "park.n.01": [
+        "area",
+        "property",
+        "park",
+        "land"
+      ],
+      "park.n.02": [
+        "area",
+        "park",
+        "land"
+      ],
+      "park.n.04": [
+        "Park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ],
+      "possession.n.01": [
+        "property",
+        "act",
+        "ownership"
+      ]
+    },
+    "screen tree no": {
+      "blind.n.03": [
+        "screen"
+      ],
+      "filmdom.n.01": [
+        "screen"
+      ],
+      "no.n.01": [
+        "no"
+      ],
+      "screen.n.01": [
+        "screen"
+      ],
+      "screen.n.03": [
+        "screen"
+      ],
+      "screen.n.04": [
+        "screen",
+        "tree"
+      ],
+      "screen.n.05": [
+        "screen"
+      ],
+      "screen.n.09": [
+        "screen"
+      ],
+      "screen_door.n.01": [
+        "screen"
+      ],
+      "sieve.n.01": [
+        "screen"
+      ],
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "stand makeup": {
+      "bandstand.n.01": [
+        "stand"
+      ],
+      "base.n.08": [
+        "stand"
+      ],
+      "constitution.n.04": [
+        "makeup"
+      ],
+      "makeup.n.01": [
+        "makeup"
+      ],
+      "makeup.n.02": [
+        "makeup"
+      ],
+      "point_of_view.n.01": [
+        "stand"
+      ],
+      "rack.n.05": [
+        "stand"
+      ],
+      "stall.n.03": [
+        "stand"
+      ],
+      "stand.n.02": [
+        "stand"
+      ],
+      "stand.n.03": [
+        "area",
+        "stand",
+        "tree"
+      ],
+      "stand.n.04": [
+        "stand"
+      ],
+      "stand.n.06": [
+        "stand"
+      ],
+      "stand.n.09": [
+        "stand"
+      ],
+      "stand.n.10": [
+        "stand"
+      ],
+      "stand.n.12": [
+        "stand"
+      ]
+    },
+    "tree genus": {
+      "genus.n.01": [
+        "genus"
+      ],
+      "genus.n.02": [
+        "genus"
+      ],
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree species": {
+      "species.n.01": [
+        "species"
+      ],
+      "species.n.02": [
+        "species"
+      ],
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ]
+    },
+    "tree variety": {
+      "assortment.n.01": [
+        "variety"
+      ],
+      "diverseness.n.01": [
+        "variety"
+      ],
+      "kind.n.01": [
+        "variety"
+      ],
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ],
+      "tree.n.03": [
+        "Tree"
+      ],
+      "variety.n.03": [
+        "variety"
+      ],
+      "variety.n.06": [
+        "variety"
+      ],
+      "variety_show.n.01": [
+        "variety"
+      ]
+    }
+  },
   "park specimen trees": {
     "braces": {
       "brace.n.01": [

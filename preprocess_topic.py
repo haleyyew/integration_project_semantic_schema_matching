@@ -1031,7 +1031,10 @@ if __name__ == "__main__":
     # print(datasources_with_tag)
     # datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
     #                         os.path.isfile(datasets_path + datasource_file + '.csv')]
-    datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+    # datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+    datasources_with_tag = ['park screen trees']
+
+    # TODO: RUN THIS TO CREATE GOLD STANDARD
     recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
 
 

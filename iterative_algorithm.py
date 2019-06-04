@@ -39,10 +39,16 @@ class Paths:
     metadata_p = './inputs/metadata_tag_list_translated.json'
     schema_p = './inputs/schema_complete_list.json'
     matching_output_p = './outputs/instance_matching_output/'
-    kb_file_p = "./outputs/kb_file.json"
+
+    from time import gmtime, strftime
+    curr_time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+    kb_file_p = "./outputs/kb_file_v1_"+curr_time+".json"
     dataset_stats = './inputs/dataset_statistics/'
     new_concepts_p = "./outputs/new_concepts.json"
     new_concepts_f = './outputs/new_concepts.csv'
+
+    debug_datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
+                            'park specimen trees', 'parks', 'park screen trees']
 
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
@@ -78,6 +84,8 @@ def find_datasources(p, datasources_with_tag, input_topics, kb):
     reverse_index = {}
     for topic in input_topics:
         for data_src in datasources_with_tag[topic]:
+            if data_src not in p.debug_datasources_with_tag: continue
+
             path = p.datasets_path + data_src + '.csv'
             my_file = Path(path)
             if not my_file.exists():
@@ -344,9 +352,24 @@ def find_new_concepts(p, metadata_set, schema_set, kb, datasources_with_tag, num
     return new_concepts, new_concepts_mod, concept_sims_scores, new_concepts_mod_df
 
 
-def prepare_next_iteration(kb, output_new_concepts):
+def prepare_next_iteration(kb, output_new_concepts, p):
+    breakout = False
+
     input_topics = output_new_concepts
     dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = load_metadata(p, input_topics, None)
+
+    # check if datasets are from the datasets of interest, if none then breakout
+    count = 0
+    for top in input_topics:
+        datasources_top = datasources_with_tag[top]
+        for ds in datasources_top:
+            if ds in p.debug_datasources_with_tag:
+                count += 1
+    if count == 0:
+        print('END OF ITERATIONS')
+        breakout = True
+    print('NUM OF NEW CONCEPTS:', len(input_topics))
+    print('NUM OF TOPICS FOR DATASETS:', count)
 
     kb, datasources_with_tag, datasources_index, reverse_index = find_datasources(p, datasources_with_tag,
                                                                                      input_topics, kb)
@@ -355,16 +378,17 @@ def prepare_next_iteration(kb, output_new_concepts):
     kb, datasources_with_tag, schema_set = initialize_matching(p, input_topics, dataset_metadata_set, schema_set,
                                                                datasources_with_tag, reverse_index, kb)
 
-    return kb, schema_set
+    return kb, schema_set, breakout
 
 if __name__ == "__main__":
 
-    STAGES = [1,1,1,1,1,2]
+    STAGES = [1,1,1,1,1,5]
     # STAGES = [1,0,0,0,1,1]
-    input_topics = ['trees', 'parks']
+    input_topics = ['trees', 'park']        # let's say we have 'park screen trees' to start with
     input_datasets = []
     kb = {}
 
+    break_out = False
     t0 = time.time()
 
     dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = load_metadata(p, input_topics, input_datasets)
@@ -377,10 +401,14 @@ if __name__ == "__main__":
         print('-------INIT-------')
         kb, datasources_with_tag, schema_set = initialize_matching( p, input_topics, dataset_metadata_set, schema_set,
                                                                     datasources_with_tag, reverse_index, kb)
-        with open(p.schema_p, 'w') as fp:
-            json.dump(schema_set, fp, sort_keys=True, indent=2)
+        # with open(p.schema_p, 'w') as fp:
+        #     json.dump(schema_set, fp, sort_keys=True, indent=2)
 
     while True:
+
+        # TODO check if topics are from the datasets of interest, if not then break
+        if break_out: break
+        print('===== ITERATIONS TO GO', STAGES[5], '=====')
 
         if STAGES[1] != 0:
 
@@ -403,6 +431,7 @@ if __name__ == "__main__":
             match_score_threshold = 10
 
             print('-------UPDATE KB-------')
+            print(kb.keys(), len(kb))
             kb = update_kb(p, schema_set, kb, match_score_threshold)
 
 
@@ -433,21 +462,26 @@ if __name__ == "__main__":
             # pprint.pprint(new_concepts)
             # print(new_concepts_mod)
 
-            df.to_csv(p.new_concepts_f, sep=',', encoding='utf-8')
+            # df.to_csv(p.new_concepts_f, sep=',', encoding='utf-8')
 
-            new_concepts_f = open(p.new_concepts_p, "w")
-            json.dump(new_concepts, new_concepts_f, indent=2, sort_keys=True)
+            # new_concepts_f = open(p.new_concepts_p, "w")
+            # json.dump(new_concepts, new_concepts_f, indent=2, sort_keys=True)
 
-            kb, schema_set = prepare_next_iteration(kb, output_new_concepts)
+            kb, schema_set, break_out = prepare_next_iteration(kb, output_new_concepts, p)
+            if break_out: break
 
-            with open(p.schema_p, 'w') as fp:
-                json.dump(schema_set, fp, sort_keys=True, indent=2)
+            # with open(p.schema_p, 'w') as fp:
+            #     json.dump(schema_set, fp, sort_keys=True, indent=2)
 
-            kb_file = open(p.kb_file_p, "w")
-            json.dump(kb, kb_file, indent=2, sort_keys=True)
+            # kb_file = open(p.kb_file_p, "w")
+            # json.dump(kb, kb_file, indent=2, sort_keys=True)
 
         STAGES[5] = STAGES[5] - 1
         if STAGES[5] == 0: break
+
+
+    kb_file = open(p.kb_file_p, "w")
+    json.dump(kb, kb_file, indent=2, sort_keys=True)
 
     t1 = time.time()
     total = t1 - t0

@@ -512,6 +512,7 @@ class Paths:
     kb_file_p = "./outputs/kb_file_"+curr_time+".json"
     kb_file_const_p = "./outputs/kb_file.json"
     pair_dict_all_p = "./outputs/pair_dict_all_" + curr_time + ".json"
+    dataset_topics_p = "./outputs/dataset_topics_"+curr_time+".json"
 
     # new_concepts_p = "./outputs/new_concepts.json"
     # new_concepts_f = './outputs/new_concepts.csv'
@@ -562,14 +563,20 @@ r = Parameters()
 
 if __name__ == "__main__":
     # GLAV mapping for each dataset
-    m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+    # m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+    # m.datasources_with_tag = ['park screen trees']
+    m.datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
+                              'park specimen trees', 'parks', 'park screen trees']
     load_metadata(p, m)
 
+    ## run preprocess topic enrich_homonyms()
     ## TODO call this to generate enriched attrs before running the rest
     # print('create_attributes_contexts:')
     # create_attributes_contexts(m.datasources_with_tag, m, p, r)
     # exit(0)
-
+    ## then run script_enriched_topics_to_json.py
+    ## then run the code below
+    ## next run build_matching_model_new_global
 
     initialize_matching(p, m, r)
     with open(p.schema_p, 'w') as fp:

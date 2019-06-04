@@ -237,6 +237,73 @@
       ]
     }
   },
+  "park screen trees": {
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park",
+        "area",
+        "land"
+      ],
+      "park.n.02": [
+        "park",
+        "area",
+        "land"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park",
+        "area"
+      ]
+    },
+    "private": {
+      "private.n.01": [
+        "private"
+      ]
+    },
+    "screen": {
+      "blind.n.03": [
+        "screen"
+      ],
+      "filmdom.n.01": [
+        "screen"
+      ],
+      "screen.n.01": [
+        "screen"
+      ],
+      "screen.n.03": [
+        "screen"
+      ],
+      "screen.n.04": [
+        "tree",
+        "screen"
+      ],
+      "screen.n.05": [
+        "screen"
+      ],
+      "screen.n.09": [
+        "screen"
+      ],
+      "screen_door.n.01": [
+        "screen"
+      ],
+      "sieve.n.01": [
+        "screen"
+      ]
+    },
+    "trees": {
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ]
+    }
+  },
   "park specimen trees": {
     "trees": {
       "tree.n.01": [
