@@ -1,0 +1,59 @@
+{
+  "hgl": {
+    "80": 10,
+    "90": 7,
+    "95": 2,
+    "110": 5,
+    "115": 1,
+    "120": 3,
+    "135": 2,
+    "145": 1,
+    "149": 1
+  },
+  "name": {
+    "Bear Creek": 1,
+    "Campbell": 2,
+    "Clayton": 1,
+    "Cloverdale": 1,
+    "Crescent": 3,
+    "Douglas": 1,
+    "Elgin": 1,
+    "Fleetwood West 90": 1,
+    "Kensington": 4,
+    "Kensington West": 1,
+    "Newton": 2,
+    "Ocean Park": 2,
+    "Old Yale 95": 1,
+    "Panorama SouthWest 90": 1,
+    "Port Kells": 3,
+    "Port Mann 95": 1,
+    "Semiahmoo": 1,
+    "South Grandview": 1,
+    "South Grandview East": 1,
+    "South Westminster": 1,
+    "Sunnyside": 1,
+    "Whalley": 1
+  },
+  "pressure zone status": {
+    "Existing": 31,
+    "Proposed": 1
+  },
+  "service area": {
+    "Campbell Heights": 1,
+    "Clayton": 1,
+    "Cloverdale": 2,
+    "Crescent/Elgin (SS)": 2,
+    "Grandview PS": 6,
+    "Grandview/KG Gravity": 6,
+    "Kennedy & Newton PS": 3,
+    "King George at Bear Creek": 1,
+    "Port Kells": 1,
+    "Port Mann": 1,
+    "South Port Kells": 1,
+    "South Westminster": 1,
+    "Sunnyside Gravity": 1,
+    "Sunnyside PS": 1,
+    "Whalley Booster": 1,
+    "Whalley PS": 3
+  }
+}

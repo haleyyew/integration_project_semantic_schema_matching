@@ -345,14 +345,14 @@ def open_updated_topics(dir, source_name):
     return False, None
 
 import textwrap
-def print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir):
+def print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir, brief):
     dataset_path = '/Users/haoran/Documents/thesis_schema_integration/thesis_project_dataset_clean/'
     table_stats = '/Users/haoran/Documents/thesis_schema_integration/inputs/dataset_statistics/'
 
     if not os.path.isfile(dataset_path+dataset_with_topic+'.csv'):
-        return
+        return False
     if not os.path.isfile(table_stats+dataset_with_topic+'.json'):
-        return
+        return False
 
 
     print('     dataset: ', dataset_with_topic)
@@ -368,34 +368,51 @@ def print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir):
     print('     =existing in original=')
     print('     tags: ', textwrap.fill(str(dataset_existing_tags), 120))
     print('     groups: ', textwrap.fill(str(dataset_existing_groups), 120))
-    print('     notes: ', textwrap.fill(' '.join(dataset_notes), 120))
+    # print('     notes: ', textwrap.fill(' '.join(dataset_notes), 120))
+    print('     notes: ', ' '.join(dataset_notes))
 
 
     # get more from updated list
     print('     =updated topics already stored=')
     update, updated_topics_this = open_updated_topics(dir, dataset_with_topic)
-    if update: print(updated_topics_this)
+    if update: print(textwrap.fill(str(updated_topics_this)), 120)
+
+    if brief: return True
 
     print('     =stats for table=')
 
     dataset_f = open(table_stats+dataset_with_topic+'.json', 'r')
     dataset_stats = json.load(dataset_f)
+    prt_strs = ''
     for attr in dataset_stats:
         sorted_dataset_stats = sorted(dataset_stats[attr].items(), key=lambda kv: kv[1])
         sorted_dataset_stats.reverse()
-        len_stats = min(5, len(sorted_dataset_stats))
-        print(attr, ' :: ', sorted_dataset_stats[:len_stats])
+        len_stats = min(2, len(sorted_dataset_stats))
+        prt_str = attr + ' :: ' + str(sorted_dataset_stats[:len_stats])
+        prt_strs += prt_str + '  ||  '
 
+    print('     attrs: ', textwrap.fill(prt_strs, 120))
     print('--')
 
-    return
+    return True
 
 def input_from_command(add_list, delete_list, topics_new):
     option = input("==add topics==")
     adding = option.split(',')
     # print(adding)
-    adding = [topics_new[int(num)] for num in adding if isint(num)]
-    add_list.extend(adding)
+    # print(adding)
+    adding2_tmp = [str.replace('\'', '') for str in adding if not isint(str) and str.replace('\'', '') in topics_new]
+    adding2 = [topics_new[topics_new.index(str)] for str in adding2_tmp if not isint(str) and str in topics_new]
+
+    adding3 = [topics_new[int(num)] for num in adding if isint(num) and int(num) < len(topics_new)]
+    adding3_raw = [num for num in adding if isint(num) and int(num) < len(topics_new)]
+
+    # print(adding, adding2)
+    add_list.extend(adding3)
+    add_list.extend(adding2)
+    diff = list(set(adding) - set(add_list) - set(adding3_raw))
+    if len(diff) > 0 and not (len(diff) == 1 and '' in diff): print('not added:', diff)
+
     option = input("==del topics==")
     deleting = option.split(',')
     deleting = [topics_new[int(num)] for num in deleting if isint(num)]
@@ -422,6 +439,8 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
     sim_matrix = np.loadtxt(dir + "topic_sims.csv", delimiter=',')
     clusters_of_concepts, reverse_topic_cluster, topic_cluster = cluster_topics()
 
+    exclude_list = ['comments','condition','shape', 'material']
+    exact_match = {'location':'location', 'status':'status', 'owner':'owners', 'node number':['node','nodes'], 'facilityid':['facility', 'facilities'], 'project number':['plan number','projects'], 'image':['image', 'imagery'], 'address': ['address', 'addresses']}
 
     topic_similarities = {}
     for topic in topics_new:
@@ -457,40 +476,57 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
         if option == "y":
             continue
 
+        op = input("==skip topic<->attr? (y)==")
+
+        dataset_existing_tag_names = [item['display_name'] for item in dataset_existing_tags]
+
+
         add_list = []
         # recommend topics close to dataset
         for col in col_names:
+            if op == "y": continue
             if col['alias'] != None:
                 col_name = col['alias']
             else:
                 col_name = col['name']
 
+            if col_name in exact_match:
+                if isinstance(exact_match[col_name], list): add_list.extend(exact_match[col_name])
+                if isinstance(exact_match[col_name], str): add_list.append(exact_match[col_name])
+
+                continue
+
             threshold = 0.5
             for topic in topics_new:
+                if topic in dataset_existing_tag_names: continue
+
                 score = matcher_name(col_name, topic, twogram)
+                # TODO also semantic score
+
+                if col_name in exclude_list: continue
                 if score > threshold:
                     print(topic, "<=>", col_name, score)
-                    print("similar topics")
-                    print(topic_similarities[topic])
-                    print("topic cluster")
+                    # print("similar topics")
+                    print("/similar topics/    ", topic_similarities[topic])
+                    # print("topic cluster")
                     cluster_for_topic = topic_cluster[reverse_topic_cluster[topic]]
                     # topic ids to name
-                    print([topics_new[id] for id in cluster_for_topic])
-                    print("datasets with topic")
+                    print('/topic cluster/    ',[topics_new[id] for id in cluster_for_topic])
+                    # print("datasets with topic")
                     if topic in metadata_set['tags']:
-                        print(metadata_set['tags'][topic]['sources'])
+                        print("/datasets with topic/    ", metadata_set['tags'][topic]['sources'])
                     elif topic in metadata_set['groups']:
-                        print(metadata_set['groups'][topic]['sources'])
+                        print("/datasets with topic/    ",metadata_set['groups'][topic]['sources'])
                     else:
                         print("error: topic cannot be found")
-                    print("data samples")
-                    print(data_samples)
-                    print("data description")
-                    print(dataset_notes)
-                    print("data topics")
-                    print(dataset_existing_tags)
-                    print("data groups")
-                    print(dataset_existing_groups)
+                    # print("data samples")
+                    # print(data_samples)
+                    # print("data description")
+                    print("/data description/    ",dataset_notes)
+                    # print("data topics")
+                    print("/data topics/    ",dataset_existing_tag_names)
+                    # print("data groups")
+                    print("/data groups/    ",[item['display_name'] for item in dataset_existing_groups])
                     print("-----")
 
                     option = input("==accept or reject (y)==")
@@ -499,6 +535,8 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
                         add_list.append(topic)
                     else:
                         print("reject", topic)
+
+                    print('----====')
 
             print('----------')
             print()
@@ -511,9 +549,13 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
         print()
         print()
 
+        op2 = input("==skip topic<->datasets (y)==")
+
         visited_datasets = []
         delete_list = []
+        visited_topics = []
         for topic in dataset_existing_tags:
+            if op2 == "y": continue
             print("[",topic['display_name'],"]")
             similar_topics = topic_similarities[topic['display_name']]
             print("similar topics:")
@@ -521,13 +563,20 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
             # show all datasets with topic, and additional topics each dataset has
             # TODO do not show duplicate datasets
             for topic_sim in similar_topics:
-                print('=    ', topic_sim)
                 topic_sim_name = topic_sim[1]
+                if topic_sim_name in visited_topics or topic_sim_name in add_list: continue
+                visited_topics.append(topic_sim_name)
+
+                print()
+                print('=    ', topic_sim)
+
                 datasets_with_topic = None
 
+                brief = False
                 if topic_sim_name in metadata_set['groups']:
                     # print('found in groups')
                     datasets_with_topic = metadata_set['groups'][topic_sim_name]['sources']
+                    brief = True
 
                 if topic_sim_name in metadata_set['tags']:
                     # print('found in tags')
@@ -539,18 +588,25 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
                     for dataset_with_topic in datasets_with_topic:
                         if dataset_with_topic == source_name:
                             continue
+                        if dataset_with_topic in visited_datasets: continue
+                        visited_datasets.append(dataset_with_topic)
+
                         count_sim_topics_printed += 1
-                        print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir)
+                        printed = print_datasets_with_topic(dataset_metadata_set, dataset_with_topic, dir+'updated_topics/', brief)
+                        if not printed: continue
                         # TODO also print table values
                         if count_sim_topics_printed % 5 == 0:
                             add_list, delete_list = input_from_command(add_list, delete_list, topics_new)
 
-                # print('===')
+                print('-===-')
 
                 add_list, delete_list = input_from_command(add_list, delete_list, topics_new)
 
-                print("-add_list-", add_list)
-                print("-delete_list-", delete_list)
+
+                print("-add_list-", textwrap.fill(str(add_list), 120))
+                print("-delete_list-", textwrap.fill(str(delete_list), 120))
+                old_list = [item['display_name'] for item in dataset_existing_tags]
+                print("-old_list-", textwrap.fill(str(old_list), 120))
 
         while True:
             print("==add additional topics or delete existing topics==")
@@ -574,17 +630,21 @@ def recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_pa
         print("-existing data topics-", existing_tags)
         print("-existing data groups-", existing_groups)
 
-        updated_topics_path = 'new_topics_[' + source_name + '].txt'
-        updated_exists, updated_topics = open_updated_topics(dir, updated_topics_path)
-        if not updated_exists:
-            updated_topics = []
+        updated_topics_path = source_name
+        updated_exists, updated_topics = open_updated_topics(dir+'updated_topics/', updated_topics_path)
+        updated_exists2, updated_topics2 = open_updated_topics(dir, updated_topics_path)
+        if not updated_exists: updated_topics = []
+        if not updated_exists2: updated_topics2 = []
         updated_topics = list(updated_topics)
+        updated_topics2 = list(updated_topics2)
+        # print(updated_topics, updated_topics2)
 
-        new_topics_set = set([*add_list, *existing_tags, *existing_groups, *updated_topics])
+        new_topics_set = set([*add_list, *existing_tags, *existing_groups, *updated_topics, *updated_topics2])
 
         for item in delete_list:
+            if item not in new_topics_set: continue
             new_topics_set.remove(item)
-        print(new_topics_set)
+        print(textwrap.fill(str(new_topics_set), 120))
 
         with open(dir + 'new_topics_['+source_name+'].txt', 'wb') as fp:
             pickle.dump(new_topics_set, fp)
@@ -1038,12 +1098,16 @@ if __name__ == "__main__":
 
     # datasources_with_tag = ['park potential donation bench locations', 'park sports fields', 'walking routes', 'park horticultural beds', 'heritage routes', 'heritage sites', 'park playgrounds', 'park horticultural zones', 'park outdoor recreation facilities', 'park trans canada trail', 'important trees']
 
-    datasources_with_tag = ['drainage detention ponds', 'sanitary lift stations', 'water valves', 'sanitary flow system nodes', 'water service areas', 'drainage manholes', 'park catch basins', 'drainage open channels', 'water pipe bridges', 'sanitary catchments']
-    # datasources_with_tag = ['drainage service connections', 'water meters', 'sanitary chambers', 'drainage major catchments', 'water pressure zones', 'signs', 'drainage pump stations', 'water chambers', 'water sampling stations', 'drainage laterals']
-    # datasources_with_tag = ['sanitary manholes', 'water fittings', 'sanitary valves', 'drainage monitoring stations', 'water assemblies', 'water utility facilities', 'drainage devices', 'park lights', 'sanitary nodes', 'sanitary laterals', 'drainage catch basins']
+    # datasources_with_tag = ['drainage detention ponds', 'sanitary lift stations', 'water valves', 'sanitary flow system nodes', 'water service areas']
+    # datasources_with_tag = [  'drainage manholes', 'park catch basins', 'drainage open channels', 'water pipe bridges', 'sanitary catchments']
+    # datasources_with_tag = ['drainage service connections', 'water meters', 'sanitary chambers', 'drainage major catchments', 'water pressure zones', 'signs']
+    # datasources_with_tag =[ 'drainage pump stations', 'water chambers', 'water sampling stations', 'drainage laterals']
+    # datasources_with_tag = ['sanitary manholes', 'water fittings', 'sanitary valves', 'drainage monitoring stations', 'water assemblies', 'water utility facilities', 'drainage devices', 'park lights']
+    # datasources_with_tag = ['sanitary nodes', 'sanitary laterals', 'drainage catch basins']
 
     # datasources_with_tag = ['truck routes', 'sidewalks', 'vehicular bridges', 'bike routes', 'poles', 'road centrelines', 'traffic calming', 'medians', 'traffic signals', 'adopt a street']
-    # datasources_with_tag = ['trails and paths', 'historic roads', 'curbs', 'road edges', 'greenways', 'pay parking stations', 'road surface', 'road row requirements downtown', 'barriers', 'railway crossings']
+    # datasources_with_tag = ['trails and paths', 'historic roads', 'curbs', 'road edges', 'greenways', 'pay parking stations', 'road surface', 'road row requirements downtown', 'barriers']
+    datasources_with_tag = ['railway crossings']
 
 
     # TODO: RUN THIS TO CREATE GOLD STANDARD

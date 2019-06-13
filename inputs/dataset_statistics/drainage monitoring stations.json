@@ -1,0 +1,72 @@
+{
+  "comments": {
+    "Placed as per Operations": 1
+  },
+  "condition": {},
+  "conditiondate": {},
+  "facilityid": {
+    "1000863997": 1,
+    "1000863998": 1,
+    "1000863999": 1,
+    "1000864000": 1,
+    "1000864001": 1,
+    "1000864002": 1,
+    "1000960305": 1,
+    "1000960308": 1,
+    "1000960312": 1,
+    "1001598162": 1
+  },
+  "lifecycle cost": {},
+  "location": {
+    "104 AVE & OLD YALE RD": 1,
+    "1284 184 ST": 1,
+    "2575 137 ST": 1,
+    "4600 KING GEORGE HWY": 1,
+    "4850 168 ST": 1,
+    "57 AVE & 142 ST": 1,
+    "8 AVE & 160 ST": 1,
+    "9900 192 ST": 2,
+    "PORT KELLS SANITARY STATION": 1
+  },
+  "maintained by": {
+    "Private": 6,
+    "Surrey": 4
+  },
+  "measurement method": {},
+  "monitoring station type2": {
+    "Depth Meter": 4,
+    "Rain Gauge": 6
+  },
+  "name": {
+    "192 STREET MONITORING STATION": 1,
+    "CHANTRELL CREEK ELEMENTARY RAIN GAUGE": 1,
+    "KWANTLEN PARK RAIN GAUGE": 1,
+    "MUNICIPAL HALL RAIN GAUGE": 1,
+    "NICOMEKL MONITORING STATION": 1,
+    "Old 192 STREET MONITORING STATION": 1,
+    "PORT KELLS RAIN GAUGE": 1,
+    "SEMIAHMOO FISH & GAME CLUB RAIN GAUGE": 1,
+    "SERPENTINE MONITORING STATION": 1,
+    "WHITE ROCK RAIN GAUGE": 1
+  },
+  "operating status": {
+    "Closed": 1,
+    "Open": 9
+  },
+  "owner": {
+    "Surrey": 10
+  },
+  "project no": {},
+  "status": {
+    "Abandoned": 1,
+    "In Service": 9
+  },
+  "warrantydate": {},
+  "weblink": {
+    "http://www.flowworks.com/network/hmiscreens/surrey/surreyrain.aspx": 6
+  },
+  "yr": {
+    "2013.0": 1
+  },
+  "ytd cost": {}
+}

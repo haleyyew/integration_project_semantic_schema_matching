@@ -1,0 +1,34 @@
+{
+  "accessibility": {
+    "Closed to Traffic": 59,
+    "Null": 13,
+    "Open": 1576
+  },
+  "comments": {
+    "Bus Loop": 2,
+    "Lane": 2,
+    "Overpass": 38,
+    "Parking Lot": 212,
+    "Roundabout": 1,
+    "Strata": 127,
+    "Trailer Park": 6,
+    "Truck Weight Station": 1,
+    "Underpass": 4
+  },
+  "material": {
+    "Asphalt": 1155,
+    "Concrete": 42,
+    "Gravel": 42
+  },
+  "road class": {
+    "Arterial": 117,
+    "Collector": 35,
+    "Highway": 68,
+    "Lane": 190,
+    "Local": 304,
+    "Null": 2,
+    "Other": 456,
+    "Ramp": 91,
+    "Unknown": 37
+  }
+}

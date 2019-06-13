@@ -1,0 +1,49 @@
+{
+  "comments": {},
+  "condition": {},
+  "conditiondate": {},
+  "facilityid": {
+    "1000862624": 1,
+    "1000862714": 1,
+    "1001141492": 1,
+    "1001568118": 1
+  },
+  "gis entry stage": {
+    "Final AB": 4
+  },
+  "last insp date": {},
+  "lifecycle cost": {},
+  "location": {
+    "Barnston Dr @ Golden Ears Way": 1,
+    "NICOMEKL RIVER (48 Ave @ 168 St)": 1,
+    "NICOMEKL RIVER (5100blk @ 168 St)": 1,
+    "Serpentine River @ 96 Ave": 1
+  },
+  "node no": {
+    "1656309630": 1,
+    "1681504841": 1,
+    "1831109628": 1,
+    "1919005119": 1
+  },
+  "owner": {
+    "Surrey": 2
+  },
+  "project no": {
+    "1709-3090-00": 1
+  },
+  "span supports": {
+    "No": 2,
+    "Yes": 1
+  },
+  "status": {
+    "In Service": 4
+  },
+  "structure": {
+    "Bridge Attachment": 4
+  },
+  "warrantydate": {},
+  "yr": {
+    "2012.0": 1
+  },
+  "ytd cost": {}
+}

@@ -1,0 +1,54 @@
+{
+  "bike infrastructure type": {
+    "Bike Lanes": 374,
+    "Cycling-Permitted Sidewalk": 21,
+    "Neighbourhood Bike Route": 101,
+    "Off-Street Multi-Use Pathway": 1,
+    "Protected Bike Lanes": 41,
+    "Shared Traffic": 163
+  },
+  "bike network": {},
+  "corridor function": {
+    "Local Connector": 1,
+    "Multi-use": 24,
+    "Transportation": 479
+  },
+  "corridor name": {
+    "BC Parkway": 1,
+    "Bon Accord Greenway": 3,
+    "Bose Greenway": 1,
+    "Douglas Greenway": 1,
+    "Fraser Heights Greenway": 1,
+    "Green Timbers Greenway": 4,
+    "Hook Greenway": 2,
+    "Mud Bay Dike Trail": 1,
+    "Newton Greenway": 1,
+    "Nicomekl Greenway": 1,
+    "North Creek Greenway": 3,
+    "Port Mann - City Centre": 5,
+    "Port Mann Greenway": 3,
+    "Port Mann- Surrey Centre NBR": 5
+  },
+  "corridor type": {
+    "Engineering": 480,
+    "Greenway": 23
+  },
+  "material": {
+    "Asphalt": 645,
+    "Asphalt Concrete": 2,
+    "Concrete": 16,
+    "Dirt": 1,
+    "Gravel": 1,
+    "Other": 4
+  },
+  "operator": {
+    "Engineering": 675
+  },
+  "status": {
+    "In Service": 662,
+    "Proposed": 38
+  },
+  "trees planted": {
+    "No": 182
+  }
+}

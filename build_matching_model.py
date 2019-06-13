@@ -632,10 +632,12 @@ def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, s
 
 def groupby_unique(attr, df):
     stat = {}
-    print(df.head(2))
+    print(attr, df.head(2))
     groups = df.groupby([attr])[attr]
     for key, item in groups:
-        stat[key] = len(groups.get_group(key).values)
+        key_str = key
+        if not isinstance(key, str): key_str = str(key)
+        stat[key_str] = len(groups.get_group(key).values)
 
     return stat, groups, list(groups.groups.keys())
 

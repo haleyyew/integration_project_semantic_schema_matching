@@ -1,0 +1,107 @@
+{
+  "disaster response route": {
+    "None": 540,
+    "Primary": 81,
+    "Secondary": 214
+  },
+  "major road network": {
+    "No": 209,
+    "Yes": 636
+  },
+  "material": {
+    "Asphalt": 849,
+    "Concrete": 3
+  },
+  "no lane": {
+    "1": 41,
+    "2": 260,
+    "3": 6,
+    "4": 506,
+    "5": 12,
+    "6": 27
+  },
+  "rd class": {
+    "Arterial": 637,
+    "Collector": 2,
+    "Provincial Highway": 213
+  },
+  "road centreline type2": {
+    "Highway Interchange": 60,
+    "Road": 792
+  },
+  "road name": {
+    "103A Ave": 2,
+    "104 Ave": 29,
+    "108 Ave": 17,
+    "120 St": 35,
+    "128 St": 13,
+    "132 St": 47,
+    "132 St Div": 1,
+    "140 St": 16,
+    "152 St": 65,
+    "16 Ave": 37,
+    "160 St": 20,
+    "175 St": 4,
+    "176 St": 1,
+    "192 St": 21,
+    "32 Ave": 16,
+    "32 Ave Div": 3,
+    "64 Ave": 7,
+    "72 Ave": 26,
+    "8 Ave": 9,
+    "80 Ave": 18,
+    "88 Ave": 46,
+    "96 Ave": 62,
+    "Bridgeview Dr": 4,
+    "Cloverdale Bypass": 4,
+    "Ferguson Div": 1,
+    "Fraser Hwy": 40,
+    "Golden Ears Connector": 5,
+    "Golden Ears Way": 7,
+    "Highway 10": 3,
+    "Highway 10 (56 Ave)": 23,
+    "Highway 10 (58 Ave)": 8,
+    "Highway 10 (Langley ByPass)": 2,
+    "Highway 10 (Langley Bypass)": 1,
+    "Highway 15": 27,
+    "Hwy 15": 13,
+    "Hwy 17": 1,
+    "Hwy 17 (South Fraser Perimeter Rd)": 10,
+    "King George Blvd": 94,
+    "No 1 Hwy": 21,
+    "No 99 Hwy": 10,
+    "Nordel Way": 1,
+    "Old Yale Rd": 3,
+    "Scott Rd": 16,
+    "Tannery Rd": 5
+  },
+  "row width": {
+    "22": 3,
+    "24": 5,
+    "27": 3,
+    "30": 368,
+    "31.2": 3,
+    "32": 10,
+    "34": 53,
+    "37": 35,
+    "37.5": 3,
+    "40": 4,
+    "42": 119,
+    "44": 6,
+    "48": 33,
+    "Varies": 17
+  },
+  "speed": {
+    "100": 19,
+    "50": 310,
+    "60": 411,
+    "70": 57,
+    "80": 47,
+    "90": 8
+  },
+  "truck route": {
+    "Dangerous Goods Routes": 291,
+    "Truck Routes": 509,
+    "Truck Routes with Restrictions": 52
+  }
+}

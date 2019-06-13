@@ -1,0 +1,16 @@
+{
+  "roadedge type 2": {
+    "Gravel, 1 Lane, Undivided": 204,
+    "Gravel, 2 Lane, Undivided": 270,
+    "Lane": 2198,
+    "Miscellaneous Road": 39,
+    "On / Off Ramp": 180,
+    "Overpass": 309,
+    "Paved, 2 Lane, 1 Way": 49,
+    "Paved, 2 Lane, Undivided": 10754,
+    "Paved, 3 Lane": 10,
+    "Paved, 4 Lane, Divided": 571,
+    "Paved, 4 Lane, Undivided": 352,
+    "Rough Road": 683
+  }
+}

@@ -11,3 +11,18 @@ the results for larger set of tables
 update missed tags
 
 get new topics and mappings locally first
+
+
+
+-----
+452,544,531,614,163
+
+[detention pond,detention ponds,facilities,facility,status, owners,plan number,projects,location,spillway,fencing,water,rain,stormwater,infrastructure,municipal,public,private,services]
+
+plan number,fencing
+
+pressure zones
+
+'facilities','facility','status','plan number','projects','owners','location','node','nodes','chambers','elevation'
+
+'basin','structure','infrastructure','catchbasin','park','structure','park','basin','catchbasin','infrastructure'
