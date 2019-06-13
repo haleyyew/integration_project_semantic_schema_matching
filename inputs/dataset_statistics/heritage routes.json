@@ -1,0 +1,98 @@
+{
+  "address": {
+    "Between 16 Avenue and 180 Street North of 24 Avenue": 1,
+    "Between the Fraser River and the Surrey-Langley Border": 2,
+    "Christopherson Road from 25 Avenue north to ravine": 1,
+    "Fraser Hwy between 140 and 148 St": 1,
+    "From 107A Ave and 128 St  to 101B Ave and 132 St": 1,
+    "From 20 Avenue north to Nicomekl River": 1,
+    "From Fraser Hwy to 180 St": 1,
+    "From King George Highway to Bayview Street": 1,
+    "Harvie Road from 176 Street to No. 1 Highway": 1,
+    "Old McLellan Road": 1,
+    "Right of way from Patullo Bridge to 8 Ave and English Oak Trees from Nicomekl River to 8 Ave": 1
+  },
+  "description": {
+    "A 22 mile rail line opened in 1891, operated by the New Westminster \u2013 Southern Railway and then by the Great Northern Railway.  For a time this was the only rail link between the US and Canada west of the Rockies.  It was instrumental in the economic development of Cloverdale.  A portion of the former rail bed skirting the eastern end of Grandview Heights has been identified.  This exemplifies the significant role of rail transportation in stimulating growth and contributing to the historical identity of Surrey.": 1,
+    "An older tail in Surrey along  Panorama Ridge from the Delta broder giving access eastward to Surrey Centre, Cloverdale and Langley. This road is known to hale concrete mile markers, a remaining one is located in Delta just west of Scott Road.": 1,
+    "Established as a trail by European settlers dating back to the 1860's.  In 1872, it was formally widened to a wagon road by the Provincial Government.  During the late 1800\u2019s it served as the main road leading to the U.S. border. ": 1,
+    "Following a portion of the original alignment of the Semiahmoo Trail from the Fraser River to the Nicomekl River, this road was renamed to King George VI Highway when opened in October 1940 to honour of the reigning monarch.  Oak tree seedlings from Great Windsor Park in England were sent to members of the Commonwealth throughout the world, to commemorate the coronation of King George VI that took place in 1937.  Most of the surviving trees are located along the King George Highway between from the Nicomekl River and the Highway 99 junction at 8 Avenue. ": 1,
+    "Formed part of a 22 mile rail line, now forming part of a City Park. (See Heritage Site # 216)": 1,
+    "Incorporated in 1897, the BC Electric Railway (BCER),  operated Interurban Line with service from Vancover, through Surrey and to Chilliwack in the Fraser Valley for nearly 40 years.  Since 1950 the line has been a short-line freight railway.  The BCER w": 2,
+    "Named after the poineer family and land owners in the area. This narrow and at time naturally surfaced road winds its way around mature trees and a ravine edge. One of Surrey's old streets in harmony with nature.": 1,
+    "The construction of a trail south of the Fraser River from New Westminster to Yale (the terminus of steamboat travel on the Fraser River) began in 1861. This trail was upgraded into a \"wagon road\" in 1965. In 1923, Pacific Highway became the name used fo": 2,
+    "The last remaining example of road work completed by Surrey\u2019s pioneer engineers, constructed between 1910 and 1923 following the natural contours of the landscape, connecting Elgin to Crescent Beach.": 1
+  },
+  "heritage neighbourhood": {
+    "Bridgeview": 2,
+    "Clayton": 2,
+    "Crescent Beach": 1,
+    "Douglas": 1,
+    "Elgin": 1,
+    "Grandview Heights": 1,
+    "Green Timbers": 1,
+    "Ocean Park": 1,
+    "South Westminster": 1,
+    "Surrey Centre": 1
+  },
+  "heritage register amended": {
+    "No": 6,
+    "Yes": 1
+  },
+  "heritage value": {
+    "Historical": 9,
+    "Historical Environmental": 1,
+    "Historical, Environmental": 1,
+    "Historical, Scientific": 1
+  },
+  "register resolution date": {
+    "19970603.0": 2,
+    "20040112.0": 6,
+    "20060724.0": 1,
+    "20060911.0": 2
+  },
+  "route type": {
+    "Railway": 3,
+    "Road": 8,
+    "Trail": 1
+  },
+  "site name": {
+    "BC Southern Rail right of way (Formerly BCER Interurban line)": 2,
+    "Christopherson Road": 1,
+    "Crescent Road": 1,
+    "Great Northern Rail Right-of-Way": 2,
+    "King George Highway and Royal Oak Trees": 1,
+    "Old McLellan": 1,
+    "Old Yale Road": 2,
+    "Old Yale Road ": 1,
+    "Semiahmoo Trail": 1
+  },
+  "site no": {
+    "1.0": 1,
+    "11.0": 1,
+    "214.0": 1,
+    "216.0": 1,
+    "217.0": 1,
+    "218.0": 1,
+    "220.0": 2,
+    "226.0": 1,
+    "227.0": 1,
+    "228.0": 1
+  },
+  "type": {
+    "Inventory": 1,
+    "Registered": 9,
+    "Registered and Protected": 2
+  },
+  "weblink": {
+    "http://www.surrey.ca/city-services/3240.aspx": 1,
+    "http://www.surrey.ca/city-services/3242.aspx": 3,
+    "http://www.surrey.ca/city-services/3270.aspx": 1,
+    "http://www.surrey.ca/city-services/3418.aspx": 1,
+    "http://www.surrey.ca/city-services/3426.aspx": 1,
+    "http://www.surrey.ca/city-services/3429.aspx": 1,
+    "http://www.surrey.ca/city-services/3430.aspx": 2,
+    "http://www.surrey.ca/city-services/3431.aspx": 1,
+    "http://www.surrey.ca/city-services/6482.aspx": 1
+  }
+}

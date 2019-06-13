@@ -1032,10 +1032,23 @@ if __name__ == "__main__":
     # datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
     #                         os.path.isfile(datasets_path + datasource_file + '.csv')]
     # datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
-    datasources_with_tag = ['park screen trees']
+    # datasources_with_tag = ['park screen trees', 'park natural areas', 'terrestrial hubs', 'park structures']
+    # datasources_with_tag = [ 'drainage dyke infrastructure', 'drainage erosion protection works', 'drainage flood control', 'drainage sub catchments', 'ecosystem corridors', 'ecosystem sites', 'park passive grass', 'park paths and trails', 'park unimproved parkland']
+    # datasources_with_tag = ['collection secondary suites', 'collection strata complexes', 'collection route boundaries', 'collection rear laneways', 'recycling toter collection complexes', 'litter containers', 'schools', 'elementary school catchments', 'garbage recycling collection days', 'secondary school catchments']
+
+    # datasources_with_tag = ['park potential donation bench locations', 'park sports fields', 'walking routes', 'park horticultural beds', 'heritage routes', 'heritage sites', 'park playgrounds', 'park horticultural zones', 'park outdoor recreation facilities', 'park trans canada trail', 'important trees']
+
+    datasources_with_tag = ['drainage detention ponds', 'sanitary lift stations', 'water valves', 'sanitary flow system nodes', 'water service areas', 'drainage manholes', 'park catch basins', 'drainage open channels', 'water pipe bridges', 'sanitary catchments']
+    # datasources_with_tag = ['drainage service connections', 'water meters', 'sanitary chambers', 'drainage major catchments', 'water pressure zones', 'signs', 'drainage pump stations', 'water chambers', 'water sampling stations', 'drainage laterals']
+    # datasources_with_tag = ['sanitary manholes', 'water fittings', 'sanitary valves', 'drainage monitoring stations', 'water assemblies', 'water utility facilities', 'drainage devices', 'park lights', 'sanitary nodes', 'sanitary laterals', 'drainage catch basins']
+
+    # datasources_with_tag = ['truck routes', 'sidewalks', 'vehicular bridges', 'bike routes', 'poles', 'road centrelines', 'traffic calming', 'medians', 'traffic signals', 'adopt a street']
+    # datasources_with_tag = ['trails and paths', 'historic roads', 'curbs', 'road edges', 'greenways', 'pay parking stations', 'road surface', 'road row requirements downtown', 'barriers', 'railway crossings']
+
 
     # TODO: RUN THIS TO CREATE GOLD STANDARD
     recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
+    exit(0)
 
 
     # enrich_homonyms_test()

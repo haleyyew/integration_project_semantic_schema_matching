@@ -137,7 +137,7 @@ if __name__ == "__main__":
     updated_topics_p = '/Users/haoran/Documents/thesis_schema_integration/outputs/updated_topics/'
     # print('here')
     ground = get_ground(updated_topics_p)
-    ground['park screen trees'] = []    # TODO
+    # ground['park screen trees'] = []    # TODO
     # print(ground)
     # exit(0)
 
@@ -151,7 +151,7 @@ if __name__ == "__main__":
             # print(tag)
             name = tag['display_name']
             existing_tags[ds].append(name)
-    ground['park screen trees'] = existing_tags['park screen trees']    # TODO
+    # ground['park screen trees'] = existing_tags['park screen trees']    # TODO
 
     dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
     # version 1
@@ -170,6 +170,7 @@ if __name__ == "__main__":
     for ds in kb_topics_reverse:
         ds_count += 1
         num_new += len(set(kb_topics_reverse[ds]) - set(existing_tags[ds]))
+        print(ds, set(kb_topics_reverse[ds]) - set(existing_tags[ds]), set(kb_topics_reverse[ds]) - set(existing_tags[ds]))
     print('avg new', num_new/ds_count)
 
     # version 2
@@ -188,6 +189,7 @@ if __name__ == "__main__":
     for ds in dataset_topics:
         ds_count += 1
         num_new += len(set(dataset_topics[ds]) - set(existing_tags[ds]))
+        print(ds, set(dataset_topics[ds]) - set(existing_tags[ds]), set(existing_tags[ds]) - set(dataset_topics[ds]))
     print('avg new', num_new/ds_count)
 
     # TODO also calculate num of new topics created per dataset

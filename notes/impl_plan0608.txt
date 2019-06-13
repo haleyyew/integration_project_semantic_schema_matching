@@ -1,0 +1,13 @@
+v1: add name matcher 
+v1: add semantic table search
+v2: add word2vec
+v2: add tfidf to values matching
+v0: implement match first, then topic gen
+create gold standard (50)
+create list of eval procedures
+
+the results for larger set of tables
+
+update missed tags
+
+get new topics and mappings locally first

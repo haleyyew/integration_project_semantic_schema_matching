@@ -3,25 +3,229 @@ recreation and culture
 environmental services
 
 ['management', 'drain', 'drainage', 'environment', 'land use and development', 'sustainability', 'land use', 'boundaries', 'land use and development', 'land use', 'above ground', 'below ground', 'control', 'land']
+-----
+
+'can', 'house', 'street', 'recycling', 'collection', 'community services', 'garbage', 'on-street', 'waste'
+102,349,656,557,140,1,306,472,736
 
 
-
-
-environmental services:
-=aquatic hubs
-=drainage 200 year flood plain
+-start saved-
+aquatic hubs
+drainage 200 year flood plain
 drainage dyke infrastructure
 drainage erosion protection works
 drainage flood control
 drainage sub catchments
-=drainage water bodies
+drainage water bodies
 ecosystem corridors
 ecosystem sites
-/park natural areas
+park natural areas
 park passive grass
 park paths and trails
-/park screen trees
-=park specimen trees
+park screen trees
+park specimen trees
 park unimproved parkland
-=parks
-/terrestrial hubs
+parks
+terrestrial hubs
+park structures
+-end saved-
+
+-start community services-
+0	alternate fueling stations
+1	collection rear laneways
+2	collection route boundaries
+3	collection secondary suites
+4	collection strata complexes
+5	elementary school catchments
+6	facilities that offer city programs
+7	garbage and recycling
+8	garbage recycling collection days
+9	licensed childcare
+10	litter containers
+11	low cost and free resources
+12	participation in city programs
+13	participation in the harvest box program
+14	places of interest
+15	recycling toter collection complexes
+16	schools
+17	secondary school catchments
+18	skills in language interpretation among city staff
+19	social housing
+20	surrey libraries circulation
+21	surrey libraries collections snapshot complete
+22	surrey libraries year end holdings
+23	surrey schools class size
+24	use of civic facilities
+-end community services-
+
+-start recreation and culture-
+0	arts and culture groups
+1	city spending on public art
+2	community gardens
+3	cultural businesses
+4	cultural spaces
+5	diversity awareness initiatives
+6	employment in arts culture and recreation
+7	events
+8	heritage routes
+9	heritage sites
+10	important trees
+11	leisure access pass participants
+12	park horticultural beds
+13	park horticultural zones
+14	park land
+15	park natural areas
+16	park outdoor recreation facilities
+17	park paths and trails
+18	park playgrounds
+19	park potential donation bench locations
+20	park sports fields
+21	park structures
+22	park trans canada trail
+23	park unimproved parkland
+24	places of interest
+25	public art
+26	recreation programs activities
+27	walking routes
+28	youth centred cultural events
+-end recreation and culture-
+
+-start environmental services-
+0	2015 fraser river water levels
+1	air quality
+2	alternate fueling stations
+3	aquatic hubs
+4	biodiversity conservation strategy
+5	certified green buildings
+6	certified green buildings existing
+7	community gardens
+8	community waste
+9	construction waste
+10	contours 1m
+11	contours 5m
+12	drainage 200 year flood plain
+13	drainage dyke infrastructure
+14	drainage erosion protection works
+15	drainage flood control
+16	drainage sub catchments
+17	drainage water bodies
+18	ecosystem corridors
+19	ecosystem sites
+20	green infrastructure network
+21	historical climate data 1937 2007
+22	integrated stormwater management plans
+23	park natural areas
+24	park passive grass
+25	park paths and trails
+26	park screen trees
+27	park specimen trees
+28	park unimproved parkland
+29	parks
+30	participation environmental programs
+31	rainfall monitoring
+32	rainfall monitoring 2015
+33	residential water consumption
+34	terrestrial hubs
+35	tree canopy cover
+36	trees planted
+-end environmental services-
+
+-start infrastructure-
+0	"capital construction 2008"
+1	"capital construction 2009"
+2	"capital construction 2010"
+3	"capital construction 2011"
+4	"capital construction 2012"
+5	"capital construction 2013"
+6	"capital construction 2014"
+7	"capital construction 2015"
+8	"capital construction 2016"
+9	"capital construction 2017"
+10	"drainage 200 year flood plain"
+11	"drainage catch basins"
+12	"drainage detention ponds"
+13	"drainage devices"
+14	"drainage dyke infrastructure"
+15	"drainage erosion protection works"
+16	"drainage flood control"
+17	"drainage laterals"
+18	"drainage mains"
+19	"drainage major catchments"
+20	"drainage manholes"
+21	"drainage monitoring stations"
+22	"drainage open channels"
+23	"drainage package"
+24	"drainage pump stations"
+25	"drainage service connections"
+26	"gov investments community infrastructure"
+27	"park catch basins"
+28	"park lights"
+29	"sanitary catchments"
+30	"sanitary chambers"
+31	"sanitary flow system nodes"
+32	"sanitary laterals"
+33	"sanitary lift stations"
+34	"sanitary mains"
+35	"sanitary manholes"
+36	"sanitary nodes"
+37	"sanitary package"
+38	"sanitary valves"
+39	"service requests"
+40	"signs"
+41	"transportation package"
+42	"water assemblies"
+43	"water chambers"
+44	"water fittings"
+45	"water hydrants"
+46	"water mains"
+47	"water meters"
+48	"water package"
+49	"water pipe bridges"
+50	"water pressure zones"
+51	"water sampling stations"
+52	"water service areas"
+53	"water service connections"
+54	"water utility facilities"
+55	"water valves"
+-end infrastructure-
+
+-start transportation-
+0	"active traffic obstructions"
+1	"active transportation infrastructure"
+2	"adopt a street"
+3	"alternate fueling stations"
+4	"barriers"
+5	"bike routes"
+6	"car ownership"
+7	"curbs"
+8	"density on transit corridors"
+9	"greenways"
+10	"historic roads"
+11	"medians"
+12	"mode of travel to work"
+13	"pay parking stations"
+14	"place of work"
+15	"poles"
+16	"railway crossings"
+17	"real time transit"
+18	"road centrelines"
+19	"road edges"
+20	"road row requirements downtown"
+21	"road surface"
+22	"sidewalks"
+23	"traffic calming"
+24	"traffic cameras"
+25	"traffic counts 2013"
+26	"traffic counts 2014"
+27	"traffic counts 2015"
+28	"traffic loop count"
+29	"traffic signals"
+30	"traffic volumes"
+31	"trails and paths"
+32	"transit"
+33	"transit accessibility"
+34	"transportation package"
+35	"truck routes"
+36	"vehicular bridges"
+37	"walking routes"
+-end transportation-
