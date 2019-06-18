@@ -1,4 +1,80 @@
 {
+  "adopt a street": {
+    "adopt": {},
+    "community": {
+      "community.n.01": [
+        "community",
+        "part"
+      ],
+      "community.n.02": [
+        "community"
+      ],
+      "community.n.03": [
+        "community"
+      ],
+      "community.n.04": [
+        "goal",
+        "community"
+      ],
+      "community.n.06": [
+        "community"
+      ],
+      "residential_district.n.01": [
+        "community"
+      ]
+    },
+    "programs": {
+      "broadcast.n.02": [
+        "program"
+      ],
+      "course_of_study.n.01": [
+        "program",
+        "information"
+      ],
+      "plan.n.01": [
+        "goal",
+        "program",
+        "plan",
+        "road"
+      ],
+      "platform.n.02": [
+        "program"
+      ],
+      "program.n.02": [
+        "program"
+      ],
+      "program.n.05": [
+        "program",
+        "part"
+      ],
+      "program.n.07": [
+        "program"
+      ],
+      "program.n.08": [
+        "program"
+      ]
+    },
+    "street": {
+      "street.n.01": [
+        "street",
+        "road"
+      ],
+      "street.n.02": [
+        "part",
+        "street"
+      ],
+      "street.n.03": [
+        "street",
+        "city"
+      ],
+      "street.n.04": [
+        "street"
+      ],
+      "street.n.05": [
+        "street"
+      ]
+    }
+  },
   "aquatic hubs": {
     "aquatic": {
       "aquatic.n.01": [
@@ -13,12 +89,12 @@
     },
     "environment": {
       "environment.n.01": [
-        "environment",
-        "area"
+        "area",
+        "environment"
       ],
       "environment.n.02": [
-        "environment",
-        "area"
+        "area",
+        "environment"
       ]
     },
     "management": {
@@ -31,6 +107,366 @@
       ]
     }
   },
+  "barriers": {
+    "crash": {
+      "clang.n.01": [
+        "crash"
+      ],
+      "crash.n.02": [
+        "crash"
+      ],
+      "crash.n.03": [
+        "crash"
+      ],
+      "crash.n.04": [
+        "crash"
+      ],
+      "crash.n.05": [
+        "crash"
+      ]
+    },
+    "fencing": {
+      "fence.n.01": [
+        "barrier",
+        "fencing"
+      ],
+      "fencing.n.03": [
+        "fencing"
+      ],
+      "fencing_material.n.01": [
+        "fencing"
+      ]
+    },
+    "guardrails": {
+      "safety_rail.n.01": [
+        "guardrail",
+        "safety"
+      ]
+    },
+    "handrails": {
+      "bannister.n.02": [
+        "handrail",
+        "barrier"
+      ]
+    },
+    "safety": {
+      "base_hit.n.01": [
+        "safety"
+      ],
+      "condom.n.01": [
+        "safety"
+      ],
+      "guard.n.03": [
+        "safety"
+      ],
+      "safety.n.01": [
+        "safety"
+      ],
+      "safety.n.02": [
+        "safety"
+      ],
+      "safety.n.06": [
+        "goal",
+        "safety"
+      ]
+    },
+    "transportation": {
+      "department_of_transportation.n.01": [
+        "department",
+        "transportation"
+      ],
+      "exile.n.03": [
+        "transportation"
+      ],
+      "fare.n.02": [
+        "transportation"
+      ],
+      "transportation.n.02": [
+        "transportation"
+      ],
+      "transportation.n.05": [
+        "transportation"
+      ],
+      "transportation_system.n.01": [
+        "transit",
+        "transportation"
+      ]
+    }
+  },
+  "bike routes": {
+    "bicycle": {
+      "bicycle.n.01": [
+        "bicycle",
+        "bike"
+      ]
+    },
+    "bike": {
+      "bicycle.n.01": [
+        "bicycle",
+        "bike"
+      ],
+      "motorcycle.n.01": [
+        "bike"
+      ]
+    },
+    "fitness": {
+      "fitness.n.01": [
+        "fitness"
+      ],
+      "fitness.n.02": [
+        "fitness"
+      ],
+      "fitness.n.04": [
+        "fitness"
+      ],
+      "seaworthiness.n.01": [
+        "fitness"
+      ]
+    },
+    "health": {
+      "health.n.01": [
+        "health"
+      ],
+      "health.n.02": [
+        "health"
+      ]
+    },
+    "recreation": {
+      "diversion.n.01": [
+        "recreation"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "health"
+      ]
+    },
+    "route": {
+      "path.n.03": [
+        "route",
+        "travel",
+        "traffic"
+      ],
+      "road.n.01": [
+        "route",
+        "travel",
+        "road",
+        "transportation"
+      ]
+    },
+    "transportation": {
+      "department_of_transportation.n.01": [
+        "department",
+        "transportation"
+      ],
+      "exile.n.03": [
+        "transportation"
+      ],
+      "fare.n.02": [
+        "transportation"
+      ],
+      "transportation.n.02": [
+        "transportation"
+      ],
+      "transportation.n.05": [
+        "transportation"
+      ],
+      "transportation_system.n.01": [
+        "transit",
+        "transportation"
+      ]
+    }
+  },
+  "collection rear laneways": {
+    "collection": {
+      "collection.n.01": [
+        "block",
+        "collection",
+        "information",
+        "variety"
+      ],
+      "collection.n.02": [
+        "collection",
+        "variety"
+      ],
+      "collection.n.04": [
+        "collection"
+      ],
+      "solicitation.n.02": [
+        "collection"
+      ]
+    },
+    "laneway": {}
+  },
+  "collection route boundaries": {
+    "boundaries": {
+      "boundary.n.01": [
+        "boundary",
+        "city"
+      ],
+      "boundary.n.02": [
+        "area",
+        "boundary"
+      ],
+      "limit.n.01": [
+        "boundary"
+      ]
+    },
+    "collection": {
+      "collection.n.01": [
+        "block",
+        "collection",
+        "information",
+        "variety"
+      ],
+      "collection.n.02": [
+        "collection",
+        "variety"
+      ],
+      "collection.n.04": [
+        "collection"
+      ],
+      "solicitation.n.02": [
+        "collection"
+      ]
+    },
+    "garbage": {
+      "drivel.n.01": [
+        "garbage"
+      ],
+      "garbage.n.01": [
+        "garbage"
+      ],
+      "garbage.n.03": [
+        "garbage"
+      ]
+    },
+    "recycling": {
+      "recycling.n.01": [
+        "recycling",
+        "collection"
+      ]
+    },
+    "routes": {
+      "path.n.03": [
+        "route"
+      ],
+      "road.n.01": [
+        "route"
+      ]
+    }
+  },
+  "collection secondary suites": {
+    "collection": {
+      "collection.n.01": [
+        "block",
+        "collection",
+        "information",
+        "variety"
+      ],
+      "collection.n.02": [
+        "collection",
+        "variety"
+      ],
+      "collection.n.04": [
+        "collection"
+      ],
+      "solicitation.n.02": [
+        "collection"
+      ]
+    },
+    "garbage": {
+      "drivel.n.01": [
+        "garbage"
+      ],
+      "garbage.n.01": [
+        "garbage"
+      ],
+      "garbage.n.03": [
+        "garbage"
+      ]
+    },
+    "recycling": {
+      "recycling.n.01": [
+        "recycling",
+        "collection"
+      ]
+    }
+  },
+  "collection strata complexes": {
+    "garbage": {
+      "drivel.n.01": [
+        "garbage"
+      ],
+      "garbage.n.01": [
+        "garbage"
+      ],
+      "garbage.n.03": [
+        "garbage"
+      ]
+    },
+    "recycling": {
+      "recycling.n.01": [
+        "recycling",
+        "collection"
+      ]
+    },
+    "strata": {
+      "class.n.03": [
+        "stratum"
+      ],
+      "level.n.07": [
+        "stratum"
+      ],
+      "stratum.n.01": [
+        "stratum"
+      ]
+    }
+  },
+  "curbs": {
+    "curbs": {
+      "bridle.n.02": [
+        "curb"
+      ],
+      "curb.n.01": [
+        "edge",
+        "curb"
+      ],
+      "curb.n.02": [
+        "curb"
+      ]
+    },
+    "pavement": {
+      "pavement.n.01": [
+        "pavement"
+      ],
+      "paving.n.01": [
+        "pavement"
+      ],
+      "sidewalk.n.01": [
+        "street",
+        "pavement"
+      ]
+    },
+    "street": {
+      "street.n.01": [
+        "street",
+        "road"
+      ],
+      "street.n.02": [
+        "street"
+      ],
+      "street.n.03": [
+        "street",
+        "city"
+      ],
+      "street.n.04": [
+        "street"
+      ],
+      "street.n.05": [
+        "street"
+      ]
+    }
+  },
   "drainage 200 year flood plain": {
     "200 year flood plain": {
       "class.n.06": [
@@ -38,8 +474,8 @@
       ],
       "flood.n.01": [
         "water",
-        "plain",
-        "flood"
+        "flood",
+        "plain"
       ],
       "flood.n.02": [
         "flood"
@@ -54,16 +490,16 @@
         "flood"
       ],
       "flood_tide.n.02": [
-        "flood",
-        "water"
+        "water",
+        "flood"
       ],
       "knit.n.02": [
         "plain"
       ],
       "plain.n.01": [
         "flood",
-        "floodplain",
-        "plain"
+        "plain",
+        "floodplain"
       ],
       "year.n.01": [
         "time",
@@ -81,8 +517,8 @@
     "flood": {
       "flood.n.01": [
         "water",
-        "plain",
-        "flood"
+        "flood",
+        "plain"
       ],
       "flood.n.02": [
         "flood"
@@ -97,15 +533,15 @@
         "flood"
       ],
       "flood_tide.n.02": [
-        "flood",
-        "water"
+        "water",
+        "flood"
       ]
     },
     "flood plain": {
       "flood.n.01": [
         "water",
-        "plain",
-        "flood"
+        "flood",
+        "plain"
       ],
       "flood.n.02": [
         "flood"
@@ -120,16 +556,1237 @@
         "flood"
       ],
       "flood_tide.n.02": [
-        "flood",
-        "water"
+        "water",
+        "flood"
       ],
       "knit.n.02": [
         "plain"
       ],
       "plain.n.01": [
         "flood",
-        "floodplain",
-        "plain"
+        "plain",
+        "floodplain"
+      ]
+    }
+  },
+  "drainage catch basins": {
+    "catch basins": {
+      "apprehension.n.04": [
+        "catch"
+      ],
+      "basin.n.01": [
+        "basin"
+      ],
+      "basin.n.02": [
+        "water",
+        "basin"
+      ],
+      "basin.n.03": [
+        "basin"
+      ],
+      "catch.n.01": [
+        "catch"
+      ],
+      "catch.n.02": [
+        "catch"
+      ],
+      "catch.n.03": [
+        "catch"
+      ],
+      "catch.n.04": [
+        "object",
+        "catch"
+      ],
+      "catch.n.05": [
+        "catch"
+      ],
+      "catch.n.06": [
+        "catch"
+      ],
+      "catch.n.07": [
+        "catch"
+      ],
+      "catch.n.08": [
+        "catch"
+      ],
+      "catch.n.09": [
+        "object",
+        "catch"
+      ],
+      "river_basin.n.01": [
+        "drainage",
+        "basin"
+      ],
+      "washbasin.n.01": [
+        "water",
+        "basin"
+      ]
+    },
+    "devices": {
+      "device.n.01": [
+        "water",
+        "system",
+        "device"
+      ],
+      "device.n.02": [
+        "device"
+      ],
+      "device.n.03": [
+        "device"
+      ],
+      "device.n.04": [
+        "device"
+      ],
+      "device.n.05": [
+        "device"
+      ],
+      "devices.n.01": [
+        "devices",
+        "device"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    }
+  },
+  "drainage detention ponds": {
+    "above ground": {
+      "above.n.01": [
+        "above"
+      ],
+      "background.n.02": [
+        "ground",
+        "view"
+      ],
+      "earth.n.02": [
+        "ground"
+      ],
+      "flat_coat.n.01": [
+        "ground"
+      ],
+      "footing.n.02": [
+        "ground"
+      ],
+      "ground.n.05": [
+        "ground"
+      ],
+      "ground.n.08": [
+        "ground"
+      ],
+      "ground.n.09": [
+        "ground"
+      ],
+      "ground.n.10": [
+        "ground"
+      ],
+      "land.n.02": [
+        "ground"
+      ],
+      "land.n.04": [
+        "ground"
+      ],
+      "reason.n.01": [
+        "ground"
+      ]
+    },
+    "below ground": {
+      "background.n.02": [
+        "ground",
+        "view"
+      ],
+      "earth.n.02": [
+        "ground"
+      ],
+      "flat_coat.n.01": [
+        "ground"
+      ],
+      "footing.n.02": [
+        "ground"
+      ],
+      "ground.n.05": [
+        "ground"
+      ],
+      "ground.n.08": [
+        "ground"
+      ],
+      "ground.n.09": [
+        "ground"
+      ],
+      "ground.n.10": [
+        "ground"
+      ],
+      "land.n.02": [
+        "ground"
+      ],
+      "land.n.04": [
+        "ground"
+      ],
+      "reason.n.01": [
+        "ground"
+      ]
+    },
+    "detention": {
+      "detention.n.01": [
+        "detention"
+      ],
+      "detention.n.02": [
+        "detention"
+      ]
+    },
+    "detention ponds": {
+      "detention.n.01": [
+        "detention"
+      ],
+      "detention.n.02": [
+        "detention"
+      ],
+      "pond.n.01": [
+        "pond",
+        "water"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "feature",
+        "infrastructure",
+        "system"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    }
+  },
+  "drainage devices": {
+    "basin": {
+      "basin.n.01": [
+        "basin"
+      ],
+      "basin.n.02": [
+        "water",
+        "basin"
+      ],
+      "basin.n.03": [
+        "surface",
+        "basin"
+      ],
+      "river_basin.n.01": [
+        "drainage",
+        "control",
+        "runoff",
+        "basin"
+      ],
+      "washbasin.n.01": [
+        "water",
+        "basin"
+      ]
+    },
+    "cap": {
+      "cap.n.01": [
+        "cap",
+        "service"
+      ],
+      "cap.n.02": [
+        "cap"
+      ],
+      "cap.n.04": [
+        "cap"
+      ],
+      "cap.n.05": [
+        "cap"
+      ],
+      "capital.n.08": [
+        "cap"
+      ],
+      "ceiling.n.03": [
+        "control",
+        "cap"
+      ],
+      "crown.n.11": [
+        "cap"
+      ],
+      "detonator.n.01": [
+        "cap",
+        "device"
+      ],
+      "hood.n.02": [
+        "cap"
+      ]
+    },
+    "chamber": {
+      "bedroom.n.01": [
+        "chamber"
+      ],
+      "chamber.n.01": [
+        "chamber"
+      ],
+      "chamber.n.02": [
+        "chamber"
+      ],
+      "chamber.n.03": [
+        "chamber"
+      ],
+      "chamber.n.04": [
+        "chamber"
+      ]
+    },
+    "cleanout": {},
+    "control": {
+      "command.n.06": [
+        "control"
+      ],
+      "control.n.01": [
+        "control"
+      ],
+      "control.n.02": [
+        "control"
+      ],
+      "control.n.03": [
+        "control"
+      ],
+      "control.n.05": [
+        "control"
+      ],
+      "control.n.09": [
+        "control"
+      ],
+      "control.n.10": [
+        "control"
+      ],
+      "control.n.11": [
+        "control",
+        "cap"
+      ],
+      "control_condition.n.01": [
+        "condition",
+        "control"
+      ],
+      "dominance.n.02": [
+        "condition",
+        "control"
+      ],
+      "restraint.n.02": [
+        "control"
+      ]
+    },
+    "dam": {
+      "dam.n.01": [
+        "water",
+        "sea",
+        "dam"
+      ],
+      "dam.n.03": [
+        "dam"
+      ],
+      "decameter.n.01": [
+        "dam"
+      ]
+    },
+    "devices": {
+      "device.n.01": [
+        "surface",
+        "system",
+        "water",
+        "control",
+        "device"
+      ],
+      "device.n.02": [
+        "device"
+      ],
+      "device.n.03": [
+        "device"
+      ],
+      "device.n.04": [
+        "device"
+      ],
+      "device.n.05": [
+        "device"
+      ],
+      "devices.n.01": [
+        "devices",
+        "device"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage",
+        "drain"
+      ]
+    },
+    "energy dissipater": {
+      "department_of_energy.n.01": [
+        "energy"
+      ],
+      "energy.n.01": [
+        "energy",
+        "system"
+      ],
+      "energy.n.02": [
+        "energy"
+      ],
+      "energy.n.03": [
+        "energy"
+      ],
+      "energy.n.04": [
+        "energy"
+      ],
+      "energy.n.05": [
+        "energy"
+      ],
+      "energy.n.06": [
+        "energy"
+      ]
+    },
+    "fish": {
+      "fish.n.01": [
+        "living",
+        "fish"
+      ],
+      "fish.n.02": [
+        "fish"
+      ]
+    },
+    "gate": {
+      "gate.n.01": [
+        "gate"
+      ],
+      "gate.n.02": [
+        "gate"
+      ],
+      "gate.n.03": [
+        "gate"
+      ],
+      "gate.n.04": [
+        "gate"
+      ]
+    },
+    "grillage": {},
+    "headwall": {},
+    "interceptor": {
+      "interceptor.n.01": [
+        "interceptor"
+      ]
+    },
+    "ladder": {
+      "ladder.n.01": [
+        "ladder",
+        "sea"
+      ],
+      "ladder.n.02": [
+        "ladder"
+      ],
+      "run.n.13": [
+        "ladder"
+      ]
+    },
+    "refuge": {
+      "recourse.n.01": [
+        "refuge"
+      ],
+      "recourse.n.02": [
+        "refuge"
+      ],
+      "refuge.n.03": [
+        "refuge"
+      ],
+      "safety.n.02": [
+        "refuge"
+      ]
+    },
+    "sediment": {
+      "sediment.n.01": [
+        "sediment"
+      ]
+    }
+  },
+  "drainage dyke infrastructure": {
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "dyke": {
+      "butch.n.01": [
+        "dyke"
+      ],
+      "dam.n.01": [
+        "water",
+        "dyke"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    }
+  },
+  "drainage erosion protection works": {
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "erosion": {
+      "corrosion.n.02": [
+        "erosion"
+      ],
+      "erosion.n.01": [
+        "erosion"
+      ],
+      "erosion.n.02": [
+        "condition",
+        "water",
+        "erosion"
+      ],
+      "erosion.n.03": [
+        "erosion"
+      ]
+    },
+    "protection": {
+      "auspices.n.01": [
+        "protection"
+      ],
+      "protection.n.01": [
+        "protection"
+      ],
+      "protection.n.04": [
+        "condition",
+        "protection"
+      ],
+      "protection.n.06": [
+        "protection"
+      ],
+      "protection.n.07": [
+        "protection"
+      ],
+      "protective_covering.n.01": [
+        "protection"
+      ],
+      "security.n.02": [
+        "protection"
+      ]
+    }
+  },
+  "drainage flood control": {
+    "control": {
+      "command.n.06": [
+        "control"
+      ],
+      "control.n.01": [
+        "control"
+      ],
+      "control.n.02": [
+        "control"
+      ],
+      "control.n.03": [
+        "control"
+      ],
+      "control.n.05": [
+        "control",
+        "flood"
+      ],
+      "control.n.09": [
+        "control"
+      ],
+      "control.n.10": [
+        "control"
+      ],
+      "control.n.11": [
+        "control"
+      ],
+      "control_condition.n.01": [
+        "condition",
+        "control"
+      ],
+      "dominance.n.02": [
+        "condition",
+        "control"
+      ],
+      "restraint.n.02": [
+        "control"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "dyke": {
+      "butch.n.01": [
+        "dyke"
+      ],
+      "dam.n.01": [
+        "water",
+        "dyke",
+        "flow"
+      ]
+    },
+    "flood": {
+      "flood.n.01": [
+        "water",
+        "flood"
+      ],
+      "flood.n.02": [
+        "flood"
+      ],
+      "flood.n.03": [
+        "flood"
+      ],
+      "flood.n.04": [
+        "flow",
+        "flood"
+      ],
+      "flood.n.05": [
+        "flow",
+        "flood"
+      ],
+      "flood_tide.n.02": [
+        "water",
+        "flood"
+      ]
+    },
+    "rain": {
+      "rain.n.01": [
+        "water",
+        "rain"
+      ],
+      "rain.n.02": [
+        "rain",
+        "water"
+      ],
+      "rain.n.03": [
+        "rain"
+      ]
+    },
+    "spillway": {
+      "spillway.n.01": [
+        "water",
+        "spillway"
+      ]
+    },
+    "stoplog": {},
+    "stormwater": {}
+  },
+  "drainage laterals": {
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "drainage lateral": {
+      "drain.n.01": [
+        "drainage"
+      ],
+      "lateral_pass.n.01": [
+        "lateral"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "lateral": {
+      "lateral_pass.n.01": [
+        "lateral"
+      ]
+    }
+  },
+  "drainage major catchments": {
+    "catchments": {
+      "catchment.n.01": [
+        "area",
+        "water",
+        "drainage",
+        "catchment"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "drainage catchments": {
+      "catchment.n.01": [
+        "area",
+        "water",
+        "drainage",
+        "catchment"
+      ],
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "area",
+        "infrastructure"
+      ]
+    }
+  },
+  "drainage manholes": {
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "drainage manholes": {
+      "drain.n.01": [
+        "drainage"
+      ],
+      "manhole.n.01": [
+        "manhole",
+        "access"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "manholes": {
+      "manhole.n.01": [
+        "manhole",
+        "access"
+      ]
+    }
+  },
+  "drainage monitoring stations": {
+    "depth": {
+      "astuteness.n.02": [
+        "depth"
+      ],
+      "depth.n.01": [
+        "depth",
+        "water"
+      ],
+      "depth.n.02": [
+        "depth"
+      ],
+      "depth.n.03": [
+        "depth"
+      ],
+      "depth.n.04": [
+        "depth"
+      ],
+      "depth.n.06": [
+        "depth",
+        "quality"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "monitor": {
+      "admonisher.n.01": [
+        "monitor"
+      ],
+      "monitor.n.04": [
+        "monitoring",
+        "monitor",
+        "device"
+      ],
+      "monitor.n.05": [
+        "quality",
+        "monitor"
+      ],
+      "monitor.n.06": [
+        "system",
+        "monitor"
+      ],
+      "monitor.n.07": [
+        "monitor"
+      ],
+      "proctor.n.01": [
+        "monitor"
+      ]
+    },
+    "quality": {
+      "quality.n.01": [
+        "quality"
+      ],
+      "quality.n.02": [
+        "quality"
+      ],
+      "quality.n.03": [
+        "quality"
+      ],
+      "quality.n.05": [
+        "quality"
+      ],
+      "timbre.n.01": [
+        "quality"
+      ]
+    },
+    "rainfall": {
+      "rain.n.01": [
+        "water",
+        "rainfall"
+      ]
+    }
+  },
+  "drainage open channels": {
+    "channels": {
+      "channel.n.01": [
+        "channel"
+      ],
+      "channel.n.02": [
+        "water",
+        "channel"
+      ],
+      "channel.n.04": [
+        "water",
+        "river",
+        "channel"
+      ],
+      "channel.n.05": [
+        "channel"
+      ],
+      "channel.n.07": [
+        "channel"
+      ],
+      "channels.n.01": [
+        "channel",
+        "channels"
+      ],
+      "distribution_channel.n.01": [
+        "channel"
+      ],
+      "duct.n.01": [
+        "channel"
+      ],
+      "groove.n.01": [
+        "channel"
+      ]
+    },
+    "classification": {
+      "categorization.n.03": [
+        "classification"
+      ],
+      "classification.n.02": [
+        "classification"
+      ],
+      "classification.n.03": [
+        "classification"
+      ],
+      "classification.n.04": [
+        "classification"
+      ]
+    },
+    "courses": {
+      "class.n.02": [
+        "course"
+      ],
+      "course.n.01": [
+        "course"
+      ],
+      "course.n.02": [
+        "stream",
+        "course"
+      ],
+      "course.n.03": [
+        "river",
+        "course"
+      ],
+      "course.n.04": [
+        "course"
+      ],
+      "course.n.07": [
+        "course"
+      ],
+      "course.n.08": [
+        "course"
+      ],
+      "course.n.09": [
+        "water",
+        "course"
+      ],
+      "path.n.04": [
+        "river",
+        "course"
+      ]
+    },
+    "creek": {
+      "brook.n.01": [
+        "creek",
+        "water",
+        "river",
+        "stream"
+      ]
+    },
+    "ditches": {
+      "ditch.n.01": [
+        "ditch",
+        "drainage"
+      ],
+      "ditch.n.02": [
+        "ditch"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "fish": {
+      "fish.n.01": [
+        "living",
+        "fish"
+      ],
+      "fish.n.02": [
+        "fish"
+      ]
+    },
+    "rivers": {
+      "river.n.01": [
+        "creek",
+        "water",
+        "river",
+        "stream"
+      ]
+    },
+    "streams": {
+      "current.n.02": [
+        "water",
+        "stream"
+      ],
+      "flow.n.03": [
+        "stream"
+      ],
+      "stream.n.01": [
+        "creek",
+        "water",
+        "river",
+        "stream"
+      ],
+      "stream.n.02": [
+        "water",
+        "stream",
+        "course"
+      ],
+      "stream.n.04": [
+        "stream"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water",
+        "river",
+        "channel",
+        "stream"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    }
+  },
+  "drainage pump stations": {
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "pump": {
+      "heart.n.02": [
+        "pump"
+      ],
+      "pump.n.01": [
+        "water",
+        "pump"
+      ],
+      "pump.n.03": [
+        "pump"
+      ]
+    },
+    "station": {
+      "place.n.10": [
+        "station"
+      ],
+      "post.n.01": [
+        "station"
+      ],
+      "station.n.01": [
+        "station",
+        "facility",
+        "service"
+      ],
+      "station.n.03": [
+        "station"
+      ],
+      "station.n.05": [
+        "station"
+      ]
+    },
+    "storm": {
+      "storm.n.01": [
+        "condition",
+        "storm"
+      ],
+      "storm.n.02": [
+        "storm"
+      ],
+      "storm.n.03": [
+        "storm"
+      ]
+    }
+  },
+  "drainage service connections": {
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "drainage service connections": {
+      "association.n.04": [
+        "connection"
+      ],
+      "avail.n.01": [
+        "service"
+      ],
+      "connection.n.01": [
+        "connection"
+      ],
+      "connection.n.02": [
+        "connection"
+      ],
+      "connection.n.03": [
+        "connection"
+      ],
+      "connection.n.04": [
+        "connection"
+      ],
+      "connection.n.06": [
+        "connection"
+      ],
+      "connection.n.07": [
+        "connection"
+      ],
+      "connection.n.08": [
+        "transportation",
+        "connection"
+      ],
+      "drain.n.01": [
+        "drainage"
+      ],
+      "joining.n.01": [
+        "connection"
+      ],
+      "military_service.n.01": [
+        "service"
+      ],
+      "overhaul.n.01": [
+        "service"
+      ],
+      "serve.n.01": [
+        "service"
+      ],
+      "service.n.01": [
+        "service"
+      ],
+      "service.n.02": [
+        "service"
+      ],
+      "service.n.03": [
+        "service"
+      ],
+      "service.n.04": [
+        "service"
+      ],
+      "service.n.05": [
+        "service"
+      ],
+      "service.n.09": [
+        "service"
+      ],
+      "service.n.11": [
+        "property",
+        "service"
+      ],
+      "service.n.13": [
+        "service"
+      ],
+      "service.n.15": [
+        "service"
+      ],
+      "servicing.n.01": [
+        "service"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "service connections": {
+      "association.n.04": [
+        "connection"
+      ],
+      "avail.n.01": [
+        "service"
+      ],
+      "connection.n.01": [
+        "connection"
+      ],
+      "connection.n.02": [
+        "connection"
+      ],
+      "connection.n.03": [
+        "connection"
+      ],
+      "connection.n.04": [
+        "connection"
+      ],
+      "connection.n.06": [
+        "connection"
+      ],
+      "connection.n.07": [
+        "connection"
+      ],
+      "connection.n.08": [
+        "transportation",
+        "connection"
+      ],
+      "joining.n.01": [
+        "connection"
+      ],
+      "military_service.n.01": [
+        "service"
+      ],
+      "overhaul.n.01": [
+        "service"
+      ],
+      "serve.n.01": [
+        "service"
+      ],
+      "service.n.01": [
+        "service"
+      ],
+      "service.n.02": [
+        "service"
+      ],
+      "service.n.03": [
+        "service"
+      ],
+      "service.n.04": [
+        "service"
+      ],
+      "service.n.05": [
+        "service"
+      ],
+      "service.n.09": [
+        "service"
+      ],
+      "service.n.11": [
+        "property",
+        "service"
+      ],
+      "service.n.13": [
+        "service"
+      ],
+      "service.n.15": [
+        "service"
+      ],
+      "servicing.n.01": [
+        "service"
+      ]
+    }
+  },
+  "drainage sub catchments": {
+    "catchments": {
+      "catchment.n.01": [
+        "area",
+        "drainage",
+        "catchment"
+      ]
+    },
+    "drainage": {
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "drainage catchments": {
+      "catchment.n.01": [
+        "area",
+        "drainage",
+        "catchment"
+      ],
+      "drain.n.01": [
+        "drainage"
+      ]
+    },
+    "drainage sub catchments": {
+      "bomber.n.03": [
+        "sub"
+      ],
+      "catchment.n.01": [
+        "area",
+        "drainage",
+        "catchment"
+      ],
+      "drain.n.01": [
+        "drainage"
+      ],
+      "submarine.n.01": [
+        "sub"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "area",
+        "infrastructure"
       ]
     }
   },
@@ -142,8 +1799,8 @@
         "body"
       ],
       "body.n.03": [
-        "body",
-        "lake"
+        "lake",
+        "body"
       ],
       "body.n.04": [
         "body"
@@ -172,8 +1829,8 @@
     },
     "classification": {
       "categorization.n.03": [
-        "classification",
-        "act"
+        "act",
+        "classification"
       ],
       "classification.n.02": [
         "classification"
@@ -195,9 +1852,9 @@
     },
     "lake": {
       "lake.n.01": [
-        "water",
+        "lake",
         "body",
-        "lake"
+        "water"
       ],
       "lake.n.02": [
         "lake"
@@ -208,9 +1865,9 @@
     },
     "water": {
       "body_of_water.n.01": [
+        "lake",
         "water",
-        "body",
-        "lake"
+        "body"
       ],
       "urine.n.01": [
         "water",
@@ -231,9 +1888,1007 @@
     },
     "wetland": {
       "wetland.n.01": [
-        "water",
+        "area",
         "wetland",
-        "area"
+        "water"
+      ]
+    }
+  },
+  "ecosystem corridors": {
+    "corridor": {
+      "corridor.n.01": [
+        "corridor"
+      ]
+    },
+    "ecosystem": {
+      "ecosystem.n.01": [
+        "environment",
+        "ecosystem"
+      ]
+    },
+    "environment": {
+      "environment.n.01": [
+        "area",
+        "environment"
+      ],
+      "environment.n.02": [
+        "area",
+        "environment"
+      ]
+    },
+    "management": {
+      "management.n.01": [
+        "act",
+        "management"
+      ],
+      "management.n.02": [
+        "management"
+      ]
+    }
+  },
+  "ecosystem sites": {
+    "ecosystem": {
+      "ecosystem.n.01": [
+        "environment",
+        "ecosystem"
+      ]
+    },
+    "environment": {
+      "environment.n.01": [
+        "area",
+        "environment"
+      ],
+      "environment.n.02": [
+        "area",
+        "environment"
+      ]
+    },
+    "management": {
+      "management.n.01": [
+        "act",
+        "management"
+      ],
+      "management.n.02": [
+        "management"
+      ]
+    }
+  },
+  "elementary school catchments": {
+    "catchment": {
+      "catchment.n.01": [
+        "catchment"
+      ]
+    },
+    "education": {
+      "department_of_education.n.01": [
+        "student",
+        "education"
+      ],
+      "education.n.01": [
+        "education",
+        "elementary",
+        "service"
+      ],
+      "education.n.02": [
+        "education"
+      ],
+      "education.n.03": [
+        "school",
+        "education"
+      ],
+      "education.n.04": [
+        "school",
+        "education"
+      ],
+      "education.n.05": [
+        "education"
+      ]
+    },
+    "elementary": {},
+    "school": {
+      "school.n.01": [
+        "elementary",
+        "school"
+      ],
+      "school.n.02": [
+        "building",
+        "school",
+        "education"
+      ],
+      "school.n.03": [
+        "school",
+        "education"
+      ],
+      "school.n.04": [
+        "school"
+      ],
+      "school.n.05": [
+        "school"
+      ],
+      "school.n.06": [
+        "school",
+        "student"
+      ],
+      "school.n.07": [
+        "school"
+      ]
+    }
+  },
+  "garbage recycling collection days": {
+    "collection": {
+      "collection.n.01": [
+        "block",
+        "collection",
+        "information",
+        "variety"
+      ],
+      "collection.n.02": [
+        "collection",
+        "variety"
+      ],
+      "collection.n.04": [
+        "collection"
+      ],
+      "solicitation.n.02": [
+        "collection"
+      ]
+    },
+    "days": {
+      "day.n.01": [
+        "day"
+      ],
+      "day.n.02": [
+        "day"
+      ],
+      "day.n.03": [
+        "day"
+      ],
+      "day.n.04": [
+        "day"
+      ],
+      "day.n.05": [
+        "day"
+      ],
+      "day.n.06": [
+        "day"
+      ],
+      "day.n.07": [
+        "day"
+      ],
+      "day.n.09": [
+        "day"
+      ],
+      "days.n.01": [
+        "day",
+        "days"
+      ],
+      "sidereal_day.n.01": [
+        "day"
+      ]
+    },
+    "garbage": {
+      "drivel.n.01": [
+        "garbage"
+      ],
+      "garbage.n.01": [
+        "garbage"
+      ],
+      "garbage.n.03": [
+        "garbage"
+      ]
+    }
+  },
+  "greenways": {
+    "environment": {
+      "environment.n.01": [
+        "environment"
+      ],
+      "environment.n.02": [
+        "environment"
+      ]
+    },
+    "green": {
+      "green.n.01": [
+        "green"
+      ],
+      "green.n.04": [
+        "green"
+      ],
+      "green.n.06": [
+        "green"
+      ],
+      "greens.n.01": [
+        "green"
+      ],
+      "k.n.07": [
+        "green"
+      ],
+      "park.n.02": [
+        "park",
+        "green"
+      ]
+    },
+    "health": {
+      "health.n.01": [
+        "health"
+      ],
+      "health.n.02": [
+        "health"
+      ]
+    },
+    "nature": {
+      "nature.n.01": [
+        "nature"
+      ],
+      "nature.n.02": [
+        "nature"
+      ],
+      "nature.n.03": [
+        "nature"
+      ],
+      "nature.n.04": [
+        "nature"
+      ],
+      "nature.n.05": [
+        "nature"
+      ]
+    },
+    "trail": {
+      "lead.n.03": [
+        "trail"
+      ],
+      "trail.n.01": [
+        "trail"
+      ],
+      "trail.n.02": [
+        "trail"
+      ]
+    }
+  },
+  "heritage routes": {
+    "heritage": {
+      "heritage.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.02": [
+        "heritage"
+      ],
+      "inheritance.n.04": [
+        "heritage"
+      ]
+    },
+    "routes": {
+      "path.n.03": [
+        "route",
+        "data"
+      ],
+      "road.n.01": [
+        "route"
+      ]
+    }
+  },
+  "heritage sites": {
+    "heritage": {
+      "heritage.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.02": [
+        "heritage"
+      ],
+      "inheritance.n.04": [
+        "heritage"
+      ]
+    },
+    "sites": {
+      "site.n.01": [
+        "site"
+      ],
+      "site.n.02": [
+        "site"
+      ],
+      "web_site.n.01": [
+        "room",
+        "site"
+      ]
+    },
+    "sustainability dashboard": {
+      "dashboard.n.02": [
+        "dashboard"
+      ],
+      "splashboard.n.02": [
+        "dashboard",
+        "people"
+      ],
+      "sustainability.n.01": [
+        "sustainability"
+      ]
+    },
+    "sustainability indicator": {
+      "index.n.02": [
+        "indicator",
+        "value",
+        "number"
+      ],
+      "indicator.n.02": [
+        "indicator"
+      ],
+      "indicator.n.03": [
+        "indicator"
+      ],
+      "indicator.n.04": [
+        "indicator"
+      ],
+      "sustainability.n.01": [
+        "sustainability"
+      ]
+    }
+  },
+  "historic roads": {
+    "heritage": {
+      "heritage.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.02": [
+        "heritage"
+      ],
+      "inheritance.n.04": [
+        "heritage"
+      ]
+    },
+    "historic": {},
+    "road": {
+      "road.n.01": [
+        "travel",
+        "road",
+        "transportation"
+      ],
+      "road.n.02": [
+        "road"
+      ]
+    }
+  },
+  "important trees": {
+    "heritage": {
+      "heritage.n.01": [
+        "heritage"
+      ],
+      "inheritance.n.01": [
+        "heritage",
+        "property"
+      ],
+      "inheritance.n.02": [
+        "property",
+        "heritage"
+      ],
+      "inheritance.n.04": [
+        "heritage"
+      ]
+    },
+    "preservation": {
+      "conservation.n.01": [
+        "preservation"
+      ],
+      "preservation.n.01": [
+        "preservation",
+        "activity"
+      ],
+      "preservation.n.02": [
+        "preservation"
+      ],
+      "preservation.n.03": [
+        "preservation"
+      ]
+    },
+    "trees": {
+      "tree.n.01": [
+        "tree"
+      ],
+      "tree.n.02": [
+        "tree"
+      ]
+    }
+  },
+  "litter containers": {
+    "bin": {
+      "bank_identification_number.n.01": [
+        "location"
+      ],
+      "bin.n.01": [
+        "garbage",
+        "litter",
+        "bin",
+        "can"
+      ],
+      "bin.n.02": [
+        "bin"
+      ]
+    },
+    "can": {
+      "buttocks.n.01": [
+        "can"
+      ],
+      "can.n.01": [
+        "can"
+      ],
+      "can.n.02": [
+        "can"
+      ],
+      "can.n.03": [
+        "can"
+      ],
+      "toilet.n.01": [
+        "building",
+        "can"
+      ],
+      "toilet.n.02": [
+        "can"
+      ]
+    },
+    "garbage": {
+      "drivel.n.01": [
+        "garbage"
+      ],
+      "garbage.n.01": [
+        "garbage"
+      ],
+      "garbage.n.03": [
+        "garbage"
+      ]
+    },
+    "litter": {
+      "bedding_material.n.01": [
+        "litter"
+      ],
+      "litter.n.01": [
+        "litter"
+      ],
+      "litter.n.02": [
+        "litter"
+      ],
+      "litter.n.03": [
+        "litter"
+      ]
+    }
+  },
+  "medians": {
+    "median": {
+      "median.n.01": [
+        "median"
+      ]
+    },
+    "road": {
+      "road.n.01": [
+        "side",
+        "travel",
+        "road",
+        "transportation"
+      ],
+      "road.n.02": [
+        "road"
+      ]
+    },
+    "street": {
+      "street.n.01": [
+        "street",
+        "road",
+        "side"
+      ],
+      "street.n.02": [
+        "street"
+      ],
+      "street.n.03": [
+        "street",
+        "city"
+      ],
+      "street.n.04": [
+        "street",
+        "side"
+      ],
+      "street.n.05": [
+        "street"
+      ]
+    }
+  },
+  "park catch basins": {
+    "catchbasin": {},
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
+      ]
+    }
+  },
+  "park horticultural beds": {
+    "horticulture": {
+      "gardening.n.01": [
+        "horticulture",
+        "horticultural"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
+      ]
+    }
+  },
+  "park horticultural zones": {
+    "horticulture": {
+      "gardening.n.01": [
+        "horticulture",
+        "horticultural"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "area",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ]
+    },
+    "zone": {
+      "zone.n.01": [
+        "zone"
+      ],
+      "zone.n.02": [
+        "area",
+        "zone"
+      ],
+      "zone.n.03": [
+        "area",
+        "zone"
+      ],
+      "zone.n.04": [
+        "zone"
+      ]
+    }
+  },
+  "park lights": {
+    "light": {
+      "light.n.01": [
+        "light"
+      ],
+      "light.n.02": [
+        "light"
+      ],
+      "light.n.03": [
+        "light"
+      ],
+      "light.n.05": [
+        "light"
+      ],
+      "light.n.06": [
+        "condition",
+        "light"
+      ],
+      "light.n.07": [
+        "light"
+      ],
+      "light.n.08": [
+        "light"
+      ],
+      "light.n.09": [
+        "light"
+      ],
+      "light.n.10": [
+        "light"
+      ],
+      "light.n.12": [
+        "light"
+      ],
+      "light.n.14": [
+        "light"
+      ],
+      "lighter.n.02": [
+        "light"
+      ],
+      "luminosity.n.01": [
+        "light"
+      ],
+      "sparkle.n.01": [
+        "light"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park",
+        "lot"
+      ]
+    }
+  },
+  "park natural areas": {
+    "nature": {
+      "nature.n.01": [
+        "nature"
+      ],
+      "nature.n.02": [
+        "nature"
+      ],
+      "nature.n.03": [
+        "nature"
+      ],
+      "nature.n.04": [
+        "nature"
+      ],
+      "nature.n.05": [
+        "type",
+        "nature"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "area",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ]
+    }
+  },
+  "park outdoor recreation facilities": {
+    "exercise": {
+      "exercise.n.01": [
+        "activity",
+        "exercise"
+      ],
+      "exercise.n.03": [
+        "exercise"
+      ],
+      "exercise.n.04": [
+        "exercise"
+      ],
+      "exercise.n.05": [
+        "exercise"
+      ],
+      "use.n.01": [
+        "activity",
+        "exercise"
+      ]
+    },
+    "facilities": {
+      "adeptness.n.01": [
+        "facility"
+      ],
+      "facility.n.01": [
+        "recreation",
+        "field",
+        "range",
+        "facility"
+      ],
+      "facility.n.03": [
+        "facility"
+      ],
+      "facility.n.04": [
+        "room",
+        "facility"
+      ],
+      "facility.n.05": [
+        "offer",
+        "facility"
+      ]
+    },
+    "outdoor": {},
+    "recreation": {
+      "diversion.n.01": [
+        "recreation",
+        "activity",
+        "game"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "activity",
+        "pool"
+      ]
+    }
+  },
+  "park passive grass": {
+    "grass": {
+      "eatage.n.01": [
+        "grass"
+      ],
+      "grass.n.01": [
+        "grass"
+      ],
+      "pot.n.09": [
+        "grass"
+      ],
+      "supergrass.n.01": [
+        "grass"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "area",
+        "park"
+      ],
+      "park.n.02": [
+        "area",
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "area",
+        "park"
+      ]
+    }
+  },
+  "park paths and trails": {
+    "biking": {},
+    "exercise": {
+      "exercise.n.01": [
+        "activity",
+        "exercise"
+      ],
+      "exercise.n.03": [
+        "exercise"
+      ],
+      "exercise.n.04": [
+        "exercise"
+      ],
+      "exercise.n.05": [
+        "exercise"
+      ],
+      "use.n.01": [
+        "activity",
+        "exercise"
+      ]
+    },
+    "hiking": {
+      "hike.n.01": [
+        "hiking",
+        "exercise"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
+      ]
+    },
+    "recreation": {
+      "diversion.n.01": [
+        "recreation",
+        "activity"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "activity",
+        "pool"
+      ]
+    },
+    "trails": {
+      "lead.n.03": [
+        "trail"
+      ],
+      "trail.n.01": [
+        "trail",
+        "path"
+      ],
+      "trail.n.02": [
+        "trail",
+        "path"
+      ]
+    }
+  },
+  "park playgrounds": {
+    "children": {
+      "child.n.01": [
+        "kid",
+        "child"
+      ],
+      "child.n.02": [
+        "kid",
+        "child"
+      ],
+      "child.n.03": [
+        "child"
+      ],
+      "child.n.04": [
+        "child"
+      ]
+    },
+    "fun": {
+      "fun.n.01": [
+        "recreation",
+        "fun",
+        "activity"
+      ],
+      "fun.n.02": [
+        "fun"
+      ],
+      "fun.n.03": [
+        "fun",
+        "activity"
+      ],
+      "playfulness.n.02": [
+        "fun"
+      ]
+    },
+    "kids": {
+      "child.n.01": [
+        "kid",
+        "child"
+      ],
+      "child.n.02": [
+        "kid",
+        "child"
+      ],
+      "kid.n.02": [
+        "kid"
+      ],
+      "kid.n.05": [
+        "kid"
+      ]
+    },
+    "playground": {
+      "playground.n.02": [
+        "child",
+        "playground"
+      ],
+      "resort_area.n.01": [
+        "recreation",
+        "playground"
+      ]
+    },
+    "recreation": {
+      "diversion.n.01": [
+        "recreation",
+        "activity",
+        "child",
+        "fun"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "activity",
+        "pool"
+      ]
+    }
+  },
+  "park potential donation bench locations": {
+    "bench": {
+      "bench.n.01": [
+        "park",
+        "bench"
+      ],
+      "bench.n.06": [
+        "bench"
+      ],
+      "bench.n.07": [
+        "bench"
+      ],
+      "judiciary.n.01": [
+        "bench"
+      ],
+      "terrace.n.02": [
+        "bench"
+      ],
+      "workbench.n.01": [
+        "bench"
+      ]
+    },
+    "dedication": {
+      "commitment.n.02": [
+        "dedication"
+      ],
+      "commitment.n.04": [
+        "dedication"
+      ],
+      "dedication.n.01": [
+        "dedication"
+      ],
+      "dedication.n.02": [
+        "dedication"
+      ],
+      "dedication.n.04": [
+        "dedication"
+      ]
+    },
+    "donation": {
+      "contribution.n.02": [
+        "donation"
+      ],
+      "contribution.n.03": [
+        "donation"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
       ]
     }
   },
@@ -243,21 +2898,21 @@
         "park"
       ],
       "park.n.01": [
-        "park",
         "area",
-        "land"
+        "land",
+        "park"
       ],
       "park.n.02": [
-        "park",
         "area",
-        "land"
+        "land",
+        "park"
       ],
       "park.n.06": [
         "park"
       ],
       "parking_lot.n.01": [
-        "park",
-        "area"
+        "area",
+        "park"
       ]
     },
     "private": {
@@ -279,8 +2934,8 @@
         "screen"
       ],
       "screen.n.04": [
-        "tree",
-        "screen"
+        "screen",
+        "tree"
       ],
       "screen.n.05": [
         "screen"
@@ -314,19 +2969,348 @@
       ]
     }
   },
+  "park sports fields": {
+    "fields": {
+      "airfield.n.01": [
+        "field"
+      ],
+      "battlefield.n.01": [
+        "field"
+      ],
+      "discipline.n.01": [
+        "field"
+      ],
+      "field.n.01": [
+        "field"
+      ],
+      "field.n.03": [
+        "studio",
+        "field"
+      ],
+      "field.n.05": [
+        "field",
+        "space"
+      ],
+      "field.n.06": [
+        "field",
+        "operation"
+      ],
+      "field.n.10": [
+        "field"
+      ],
+      "field.n.11": [
+        "field",
+        "operation"
+      ],
+      "field.n.12": [
+        "field"
+      ],
+      "field.n.13": [
+        "field"
+      ],
+      "field.n.14": [
+        "field"
+      ],
+      "field.n.15": [
+        "field"
+      ],
+      "field.n.16": [
+        "view",
+        "field"
+      ],
+      "plain.n.01": [
+        "field"
+      ],
+      "playing_field.n.02": [
+        "field"
+      ],
+      "sphere.n.01": [
+        "field"
+      ]
+    },
+    "recreation": {
+      "diversion.n.01": [
+        "recreation",
+        "sport",
+        "activity"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "activity",
+        "pool"
+      ]
+    },
+    "sports": {
+      "fun.n.02": [
+        "sport"
+      ],
+      "mutant.n.01": [
+        "sport"
+      ],
+      "sport.n.01": [
+        "recreation",
+        "sport",
+        "field"
+      ],
+      "sport.n.02": [
+        "sport"
+      ],
+      "sport.n.03": [
+        "resident",
+        "sport"
+      ],
+      "sport.n.04": [
+        "sport"
+      ],
+      "sport.n.05": [
+        "sport"
+      ]
+    }
+  },
+  "park structures": {
+    "bench": {
+      "bench.n.01": [
+        "park",
+        "bench"
+      ],
+      "bench.n.06": [
+        "bench"
+      ],
+      "bench.n.07": [
+        "bench"
+      ],
+      "judiciary.n.01": [
+        "bench"
+      ],
+      "terrace.n.02": [
+        "bench"
+      ],
+      "workbench.n.01": [
+        "bench",
+        "table"
+      ]
+    },
+    "benches": {
+      "bench.n.01": [
+        "park",
+        "bench"
+      ],
+      "bench.n.06": [
+        "bench"
+      ],
+      "bench.n.07": [
+        "bench"
+      ],
+      "judiciary.n.01": [
+        "bench"
+      ],
+      "terrace.n.02": [
+        "bench"
+      ],
+      "workbench.n.01": [
+        "bench",
+        "table"
+      ]
+    },
+    "bleachers": {
+      "bleacher.n.01": [
+        "bleacher"
+      ],
+      "bleachers.n.01": [
+        "bleachers"
+      ]
+    },
+    "donation": {
+      "contribution.n.02": [
+        "donation"
+      ],
+      "contribution.n.03": [
+        "donation"
+      ]
+    },
+    "gates": {
+      "gate.n.01": [
+        "gate"
+      ],
+      "gate.n.02": [
+        "gate"
+      ],
+      "gate.n.03": [
+        "gate"
+      ],
+      "gate.n.04": [
+        "gate"
+      ]
+    },
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
+      ]
+    },
+    "playground": {
+      "playground.n.02": [
+        "playground"
+      ],
+      "resort_area.n.01": [
+        "playground"
+      ]
+    },
+    "shelter": {
+      "protection.n.04": [
+        "shelter"
+      ],
+      "shelter.n.01": [
+        "structure",
+        "shelter"
+      ],
+      "shelter.n.02": [
+        "shelter"
+      ],
+      "shelter.n.05": [
+        "shelter"
+      ],
+      "tax_shelter.n.01": [
+        "shelter"
+      ]
+    },
+    "structure": {
+      "social_organization.n.01": [
+        "structure"
+      ],
+      "structure.n.01": [
+        "structure",
+        "shelter"
+      ],
+      "structure.n.02": [
+        "structure"
+      ],
+      "structure.n.03": [
+        "structure"
+      ],
+      "structure.n.04": [
+        "structure",
+        "layer"
+      ]
+    },
+    "table": {
+      "board.n.04": [
+        "table",
+        "room"
+      ],
+      "mesa.n.01": [
+        "table"
+      ],
+      "table.n.01": [
+        "table"
+      ],
+      "table.n.02": [
+        "pool",
+        "table"
+      ],
+      "table.n.03": [
+        "table"
+      ],
+      "table.n.05": [
+        "table"
+      ]
+    }
+  },
+  "park trans canada trail": {
+    "canada": {},
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
+      ]
+    },
+    "trail": {
+      "lead.n.03": [
+        "trail"
+      ],
+      "trail.n.01": [
+        "trail"
+      ],
+      "trail.n.02": [
+        "trail",
+        "country"
+      ]
+    },
+    "trans": {}
+  },
+  "park unimproved parkland": {
+    "park": {
+      "ballpark.n.01": [
+        "park"
+      ],
+      "park.n.01": [
+        "park",
+        "parkland"
+      ],
+      "park.n.02": [
+        "park"
+      ],
+      "park.n.06": [
+        "park"
+      ],
+      "parking_lot.n.01": [
+        "park"
+      ]
+    },
+    "parkland": {
+      "park.n.01": [
+        "park",
+        "parkland"
+      ]
+    },
+    "recreation": {
+      "diversion.n.01": [
+        "recreation",
+        "activity"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "activity",
+        "pool"
+      ]
+    },
+    "unimproved": {}
+  },
   "parks": {
     "activities": {
       "action.n.02": [
-        "activity",
-        "act"
+        "act",
+        "activity"
       ],
       "activeness.n.02": [
         "activity"
       ],
       "activity.n.01": [
-        "walk",
+        "act",
         "activity",
-        "act"
+        "walk"
       ],
       "activity.n.04": [
         "activity"
@@ -341,12 +3325,12 @@
     },
     "environment": {
       "environment.n.01": [
-        "environment",
-        "area"
+        "area",
+        "environment"
       ],
       "environment.n.02": [
-        "environment",
-        "area"
+        "area",
+        "environment"
       ]
     },
     "green": {
@@ -357,8 +3341,8 @@
         "green"
       ],
       "green.n.06": [
-        "green",
-        "area"
+        "area",
+        "green"
       ],
       "greens.n.01": [
         "green"
@@ -367,10 +3351,10 @@
         "green"
       ],
       "park.n.02": [
-        "walk",
+        "area",
         "green",
         "park",
-        "area"
+        "walk"
       ]
     },
     "health": {
@@ -403,21 +3387,21 @@
         "park"
       ],
       "park.n.01": [
-        "park",
-        "area"
+        "area",
+        "park"
       ],
       "park.n.02": [
-        "walk",
+        "area",
         "green",
         "park",
-        "area"
+        "walk"
       ],
       "park.n.06": [
         "park"
       ],
       "parking_lot.n.01": [
-        "park",
-        "area"
+        "area",
+        "park"
       ]
     },
     "walk": {
@@ -425,15 +3409,15 @@
         "walk"
       ],
       "walk.n.01": [
-        "walk",
-        "act"
+        "act",
+        "walk"
       ],
       "walk.n.03": [
         "walk"
       ],
       "walk.n.04": [
-        "walk",
-        "act"
+        "act",
+        "walk"
       ],
       "walk.n.05": [
         "walk"
@@ -464,6 +3448,2313 @@
       ],
       "youth.n.06": [
         "youth"
+      ]
+    }
+  },
+  "pay parking stations": {
+    "all day parking": {
+      "day.n.01": [
+        "day"
+      ],
+      "day.n.02": [
+        "day"
+      ],
+      "day.n.03": [
+        "day"
+      ],
+      "day.n.04": [
+        "day"
+      ],
+      "day.n.05": [
+        "day"
+      ],
+      "day.n.06": [
+        "day"
+      ],
+      "day.n.07": [
+        "day"
+      ],
+      "day.n.09": [
+        "day"
+      ],
+      "parking.n.01": [
+        "parking"
+      ],
+      "parking.n.02": [
+        "location",
+        "parking"
+      ],
+      "sidereal_day.n.01": [
+        "day"
+      ]
+    },
+    "hourly parking": {
+      "parking.n.01": [
+        "parking"
+      ],
+      "parking.n.02": [
+        "location",
+        "parking"
+      ]
+    },
+    "on-street": {},
+    "parking": {
+      "parking.n.01": [
+        "parking"
+      ],
+      "parking.n.02": [
+        "location",
+        "parking"
+      ]
+    },
+    "parking station": {
+      "parking.n.01": [
+        "parking"
+      ],
+      "parking.n.02": [
+        "location",
+        "parking"
+      ],
+      "place.n.10": [
+        "station"
+      ],
+      "post.n.01": [
+        "station"
+      ],
+      "station.n.01": [
+        "station"
+      ],
+      "station.n.03": [
+        "station",
+        "location"
+      ],
+      "station.n.05": [
+        "station"
+      ]
+    },
+    "pay": {
+      "wage.n.01": [
+        "pay"
+      ]
+    }
+  },
+  "poles": {
+    "poles": {
+      "perch.n.02": [
+        "pole"
+      ],
+      "perch.n.03": [
+        "pole"
+      ],
+      "pole.n.01": [
+        "pole"
+      ],
+      "pole.n.03": [
+        "pole",
+        "view"
+      ],
+      "pole.n.06": [
+        "pole",
+        "point"
+      ],
+      "pole.n.07": [
+        "pole",
+        "point"
+      ],
+      "pole.n.09": [
+        "pole"
+      ],
+      "pole.n.10": [
+        "pole"
+      ],
+      "terminal.n.02": [
+        "pole"
+      ]
+    }
+  },
+  "railway crossings": {
+    "crossing": {
+      "crossing.n.01": [
+        "travel",
+        "crossing"
+      ],
+      "crossing.n.03": [
+        "crossing"
+      ],
+      "crossing.n.05": [
+        "crossing"
+      ],
+      "crossing.n.07": [
+        "crossing"
+      ],
+      "ford.n.07": [
+        "crossing"
+      ],
+      "hybridization.n.01": [
+        "crossing"
+      ],
+      "intersection.n.02": [
+        "crossing"
+      ]
+    },
+    "railway": {
+      "railroad_track.n.01": [
+        "railway"
+      ],
+      "railway.n.01": [
+        "railway",
+        "transportation"
+      ]
+    }
+  },
+  "recycling toter collection complexes": {
+    "recycling": {
+      "recycling.n.01": [
+        "recycling",
+        "collection"
+      ]
+    }
+  },
+  "road centrelines": {
+    "centreline": {},
+    "roads": {
+      "road.n.01": [
+        "access",
+        "travel",
+        "transportation",
+        "road",
+        "highway"
+      ],
+      "road.n.02": [
+        "road"
+      ],
+      "roads.n.01": [
+        "roads"
+      ]
+    }
+  },
+  "road edges": {
+    "edges": {
+      "boundary.n.02": [
+        "edge"
+      ],
+      "edge.n.01": [
+        "edge"
+      ],
+      "edge.n.03": [
+        "edge"
+      ],
+      "edge.n.04": [
+        "edge"
+      ],
+      "edge.n.05": [
+        "edge"
+      ],
+      "edge.n.06": [
+        "edge"
+      ]
+    },
+    "road": {
+      "road.n.01": [
+        "travel",
+        "road",
+        "transportation"
+      ],
+      "road.n.02": [
+        "road"
+      ]
+    },
+    "street": {
+      "street.n.01": [
+        "street",
+        "road"
+      ],
+      "street.n.02": [
+        "street"
+      ],
+      "street.n.03": [
+        "street",
+        "city"
+      ],
+      "street.n.04": [
+        "street"
+      ],
+      "street.n.05": [
+        "street"
+      ]
+    },
+    "transportation": {
+      "department_of_transportation.n.01": [
+        "department",
+        "transportation"
+      ],
+      "exile.n.03": [
+        "transportation"
+      ],
+      "fare.n.02": [
+        "transportation"
+      ],
+      "transportation.n.02": [
+        "transportation"
+      ],
+      "transportation.n.05": [
+        "transportation",
+        "air"
+      ],
+      "transportation_system.n.01": [
+        "transit",
+        "transportation",
+        "air"
+      ]
+    }
+  },
+  "road row requirements downtown": {
+    "downtown": {
+      "business_district.n.01": [
+        "area",
+        "downtown",
+        "city"
+      ]
+    },
+    "requirement": {
+      "necessity.n.02": [
+        "requirement"
+      ],
+      "prerequisite.n.01": [
+        "requirement"
+      ],
+      "requirement.n.01": [
+        "requirement"
+      ]
+    },
+    "right-of-way": {},
+    "road": {
+      "road.n.01": [
+        "travel",
+        "road",
+        "transportation"
+      ],
+      "road.n.02": [
+        "road"
+      ]
+    },
+    "row": {
+      "course.n.08": [
+        "row"
+      ],
+      "quarrel.n.01": [
+        "row"
+      ],
+      "row.n.01": [
+        "row"
+      ],
+      "row.n.03": [
+        "row"
+      ],
+      "row.n.05": [
+        "row"
+      ],
+      "row.n.06": [
+        "row"
+      ],
+      "rowing.n.01": [
+        "row"
+      ]
+    }
+  },
+  "road surface": {
+    "road": {
+      "road.n.01": [
+        "route",
+        "travel",
+        "road",
+        "transportation"
+      ],
+      "road.n.02": [
+        "road"
+      ]
+    },
+    "surface": {
+      "airfoil.n.01": [
+        "surface"
+      ],
+      "open.n.04": [
+        "surface",
+        "information"
+      ],
+      "surface.n.01": [
+        "surface",
+        "layer"
+      ],
+      "surface.n.02": [
+        "surface"
+      ],
+      "surface.n.03": [
+        "surface",
+        "layer"
+      ],
+      "surface.n.04": [
+        "surface"
+      ]
+    }
+  },
+  "sanitary catchments": {
+    "catchments": {
+      "catchment.n.01": [
+        "area",
+        "water",
+        "catchment"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "area",
+        "infrastructure"
+      ]
+    },
+    "sanitary": {},
+    "sanitary catchments": {
+      "catchment.n.01": [
+        "area",
+        "water",
+        "catchment"
+      ]
+    }
+  },
+  "sanitary chambers": {
+    "chambers": {
+      "bedroom.n.01": [
+        "chamber"
+      ],
+      "chamber.n.01": [
+        "chamber"
+      ],
+      "chamber.n.02": [
+        "chamber"
+      ],
+      "chamber.n.03": [
+        "chamber"
+      ],
+      "chamber.n.04": [
+        "chamber"
+      ]
+    },
+    "features": {
+      "feature.n.01": [
+        "property",
+        "feature"
+      ],
+      "feature.n.02": [
+        "feature"
+      ],
+      "feature.n.03": [
+        "feature"
+      ],
+      "feature.n.04": [
+        "feature"
+      ],
+      "feature.n.06": [
+        "feature"
+      ],
+      "feature_of_speech.n.01": [
+        "property",
+        "feature"
+      ]
+    },
+    "network": {
+      "net.n.06": [
+        "network"
+      ],
+      "network.n.01": [
+        "network",
+        "system"
+      ],
+      "network.n.02": [
+        "network",
+        "system"
+      ],
+      "network.n.04": [
+        "network",
+        "system",
+        "line"
+      ],
+      "network.n.05": [
+        "network",
+        "system",
+        "component"
+      ]
+    },
+    "sanitary": {}
+  },
+  "sanitary flow system nodes": {
+    "chamber": {
+      "bedroom.n.01": [
+        "chamber"
+      ],
+      "chamber.n.01": [
+        "chamber"
+      ],
+      "chamber.n.02": [
+        "chamber"
+      ],
+      "chamber.n.03": [
+        "chamber"
+      ],
+      "chamber.n.04": [
+        "chamber"
+      ]
+    },
+    "flow": {
+      "flow.n.01": [
+        "flow"
+      ],
+      "flow.n.02": [
+        "flow"
+      ],
+      "flow.n.03": [
+        "flow"
+      ],
+      "flow.n.04": [
+        "flow"
+      ],
+      "menstruation.n.01": [
+        "flow"
+      ],
+      "stream.n.02": [
+        "water",
+        "flow"
+      ],
+      "stream.n.04": [
+        "flow"
+      ]
+    },
+    "grit": {
+      "backbone.n.02": [
+        "grit"
+      ],
+      "grit.n.01": [
+        "grit"
+      ]
+    },
+    "node": {
+      "lymph_node.n.01": [
+        "node"
+      ],
+      "node.n.01": [
+        "node"
+      ],
+      "node.n.02": [
+        "node"
+      ],
+      "node.n.03": [
+        "node"
+      ],
+      "node.n.04": [
+        "system",
+        "node"
+      ],
+      "node.n.05": [
+        "node"
+      ],
+      "node.n.07": [
+        "node"
+      ],
+      "node.n.08": [
+        "system",
+        "node"
+      ]
+    },
+    "pigging": {},
+    "riser": {
+      "riser.n.01": [
+        "riser"
+      ],
+      "riser.n.02": [
+        "main",
+        "riser"
+      ],
+      "riser.n.03": [
+        "riser"
+      ]
+    },
+    "sanitary": {},
+    "valve": {
+      "valve.n.01": [
+        "flow",
+        "valve"
+      ],
+      "valve.n.02": [
+        "valve"
+      ],
+      "valve.n.03": [
+        "flow",
+        "valve"
+      ],
+      "valve.n.04": [
+        "valve"
+      ],
+      "valve.n.05": [
+        "valve"
+      ]
+    }
+  },
+  "sanitary laterals": {
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "laterals": {
+      "lateral_pass.n.01": [
+        "lateral"
+      ]
+    },
+    "sanitary": {},
+    "sanitary laterals": {
+      "lateral_pass.n.01": [
+        "lateral"
+      ]
+    }
+  },
+  "sanitary lift stations": {
+    "feature": {
+      "feature.n.01": [
+        "feature"
+      ],
+      "feature.n.02": [
+        "feature"
+      ],
+      "feature.n.03": [
+        "feature"
+      ],
+      "feature.n.04": [
+        "feature"
+      ],
+      "feature.n.06": [
+        "feature"
+      ],
+      "feature_of_speech.n.01": [
+        "feature"
+      ]
+    },
+    "lift": {
+      "aerodynamic_lift.n.01": [
+        "lift",
+        "component"
+      ],
+      "airlift.n.01": [
+        "transportation",
+        "lift"
+      ],
+      "elevation.n.01": [
+        "elevation",
+        "lift"
+      ],
+      "elevator.n.01": [
+        "lift",
+        "service"
+      ],
+      "face_lift.n.01": [
+        "lift"
+      ],
+      "lift.n.01": [
+        "lift"
+      ],
+      "lift.n.04": [
+        "water",
+        "lift"
+      ],
+      "lift.n.06": [
+        "lift"
+      ],
+      "lift.n.07": [
+        "lift"
+      ],
+      "lift.n.11": [
+        "lift"
+      ],
+      "lift.n.12": [
+        "lift"
+      ],
+      "ski_tow.n.01": [
+        "lift"
+      ]
+    },
+    "network": {
+      "net.n.06": [
+        "network"
+      ],
+      "network.n.01": [
+        "network",
+        "system"
+      ],
+      "network.n.02": [
+        "network",
+        "system",
+        "station"
+      ],
+      "network.n.04": [
+        "network",
+        "system"
+      ],
+      "network.n.05": [
+        "network",
+        "system",
+        "component"
+      ]
+    },
+    "sanitary": {},
+    "sewage": {
+      "sewage.n.01": [
+        "sewage"
+      ]
+    },
+    "station": {
+      "place.n.10": [
+        "station"
+      ],
+      "post.n.01": [
+        "station"
+      ],
+      "station.n.01": [
+        "station",
+        "service"
+      ],
+      "station.n.03": [
+        "station"
+      ],
+      "station.n.05": [
+        "station"
+      ]
+    }
+  },
+  "sanitary manholes": {
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "structure",
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "manholes": {
+      "manhole.n.01": [
+        "manhole",
+        "access",
+        "structure"
+      ]
+    },
+    "sanitary": {},
+    "sanitary manholes": {
+      "manhole.n.01": [
+        "manhole",
+        "access",
+        "structure"
+      ]
+    }
+  },
+  "sanitary nodes": {
+    "node": {
+      "lymph_node.n.01": [
+        "node"
+      ],
+      "node.n.01": [
+        "node"
+      ],
+      "node.n.02": [
+        "node"
+      ],
+      "node.n.03": [
+        "node"
+      ],
+      "node.n.04": [
+        "system",
+        "node"
+      ],
+      "node.n.05": [
+        "node"
+      ],
+      "node.n.07": [
+        "node"
+      ],
+      "node.n.08": [
+        "network",
+        "system",
+        "device",
+        "node"
+      ]
+    },
+    "sanitary": {},
+    "vent": {
+      "release.n.09": [
+        "vent"
+      ],
+      "vent.n.01": [
+        "vent",
+        "air"
+      ],
+      "vent.n.02": [
+        "vent",
+        "system"
+      ],
+      "vent.n.03": [
+        "vent"
+      ],
+      "vent.n.04": [
+        "vent"
+      ]
+    }
+  },
+  "sanitary valves": {
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "sanitary": {},
+    "sanitary valves": {
+      "valve.n.01": [
+        "flow"
+      ],
+      "valve.n.03": [
+        "flow"
+      ]
+    },
+    "valves": {
+      "valve.n.01": [
+        "flow"
+      ],
+      "valve.n.03": [
+        "flow"
+      ]
+    }
+  },
+  "schools": {
+    "children": {
+      "child.n.01": [
+        "child"
+      ],
+      "child.n.02": [
+        "child"
+      ],
+      "child.n.03": [
+        "child"
+      ],
+      "child.n.04": [
+        "child"
+      ]
+    },
+    "education": {
+      "department_of_education.n.01": [
+        "institution",
+        "student",
+        "education"
+      ],
+      "education.n.01": [
+        "service",
+        "education"
+      ],
+      "education.n.02": [
+        "education"
+      ],
+      "education.n.03": [
+        "school",
+        "education"
+      ],
+      "education.n.04": [
+        "school",
+        "education"
+      ],
+      "education.n.05": [
+        "education"
+      ]
+    },
+    "school": {
+      "school.n.01": [
+        "institution",
+        "school"
+      ],
+      "school.n.02": [
+        "building",
+        "school",
+        "education"
+      ],
+      "school.n.03": [
+        "school",
+        "education"
+      ],
+      "school.n.04": [
+        "school"
+      ],
+      "school.n.05": [
+        "school"
+      ],
+      "school.n.06": [
+        "institution",
+        "school",
+        "student"
+      ],
+      "school.n.07": [
+        "school"
+      ]
+    }
+  },
+  "secondary school catchments": {
+    "education": {
+      "department_of_education.n.01": [
+        "student",
+        "education"
+      ],
+      "education.n.01": [
+        "education",
+        "secondary",
+        "service"
+      ],
+      "education.n.02": [
+        "education"
+      ],
+      "education.n.03": [
+        "school",
+        "education"
+      ],
+      "education.n.04": [
+        "school",
+        "education"
+      ],
+      "education.n.05": [
+        "education"
+      ]
+    },
+    "school": {
+      "school.n.01": [
+        "school",
+        "secondary"
+      ],
+      "school.n.02": [
+        "building",
+        "school",
+        "education"
+      ],
+      "school.n.03": [
+        "school",
+        "education"
+      ],
+      "school.n.04": [
+        "school"
+      ],
+      "school.n.05": [
+        "school"
+      ],
+      "school.n.06": [
+        "school",
+        "student"
+      ],
+      "school.n.07": [
+        "school"
+      ]
+    },
+    "secondary": {
+      "secondary.n.01": [
+        "secondary"
+      ],
+      "secondary_coil.n.01": [
+        "secondary"
+      ]
+    }
+  },
+  "sidewalks": {
+    "pedestrian": {
+      "pedestrian.n.01": [
+        "pedestrian"
+      ]
+    },
+    "sidewalk": {
+      "sidewalk.n.01": [
+        "pedestrian",
+        "sidewalk"
+      ]
+    }
+  },
+  "signs": {
+    "signs": {
+      "augury.n.01": [
+        "sign"
+      ],
+      "polarity.n.02": [
+        "sign"
+      ],
+      "sign.n.01": [
+        "sign"
+      ],
+      "sign.n.02": [
+        "sign"
+      ],
+      "sign.n.06": [
+        "sign"
+      ],
+      "sign.n.09": [
+        "sign"
+      ],
+      "sign.n.10": [
+        "sign"
+      ],
+      "sign.n.11": [
+        "sign"
+      ],
+      "sign_of_the_zodiac.n.01": [
+        "sign"
+      ],
+      "signal.n.01": [
+        "sign"
+      ],
+      "signboard.n.01": [
+        "sign"
+      ]
+    }
+  },
+  "terrestrial hubs": {
+    "ecosystem": {
+      "ecosystem.n.01": [
+        "ecosystem"
+      ]
+    },
+    "hubs": {
+      "hub.n.01": [
+        "hub"
+      ],
+      "hub.n.02": [
+        "area",
+        "hub"
+      ]
+    },
+    "management": {
+      "management.n.01": [
+        "act",
+        "management"
+      ],
+      "management.n.02": [
+        "management"
+      ]
+    },
+    "terrestrial": {}
+  },
+  "traffic calming": {
+    "bumps": {
+      "blow.n.02": [
+        "bump"
+      ],
+      "bulge.n.01": [
+        "bump",
+        "hump"
+      ],
+      "bump.n.01": [
+        "bump"
+      ]
+    },
+    "tables": {
+      "board.n.04": [
+        "table"
+      ],
+      "mesa.n.01": [
+        "table"
+      ],
+      "table.n.01": [
+        "table"
+      ],
+      "table.n.02": [
+        "table",
+        "top"
+      ],
+      "table.n.03": [
+        "table"
+      ],
+      "table.n.05": [
+        "table"
+      ]
+    },
+    "traffic": {
+      "dealings.n.01": [
+        "traffic"
+      ],
+      "traffic.n.01": [
+        "traffic",
+        "vehicle"
+      ],
+      "traffic.n.02": [
+        "traffic"
+      ],
+      "traffic.n.03": [
+        "traffic"
+      ]
+    }
+  },
+  "traffic signals": {
+    "signals": {
+      "signal.n.01": [
+        "signal"
+      ],
+      "signal.n.02": [
+        "signal"
+      ],
+      "signal.n.03": [
+        "signal"
+      ]
+    },
+    "traffic": {
+      "dealings.n.01": [
+        "traffic"
+      ],
+      "traffic.n.01": [
+        "traffic"
+      ],
+      "traffic.n.02": [
+        "traffic"
+      ],
+      "traffic.n.03": [
+        "traffic"
+      ]
+    }
+  },
+  "trails and paths": {
+    "exercise": {
+      "exercise.n.01": [
+        "exercise"
+      ],
+      "exercise.n.03": [
+        "exercise"
+      ],
+      "exercise.n.04": [
+        "exercise"
+      ],
+      "exercise.n.05": [
+        "exercise"
+      ],
+      "use.n.01": [
+        "exercise"
+      ]
+    },
+    "fitness": {
+      "fitness.n.01": [
+        "fitness"
+      ],
+      "fitness.n.02": [
+        "fitness"
+      ],
+      "fitness.n.04": [
+        "fitness"
+      ],
+      "seaworthiness.n.01": [
+        "fitness"
+      ]
+    },
+    "health": {
+      "health.n.01": [
+        "health"
+      ],
+      "health.n.02": [
+        "health"
+      ]
+    },
+    "paths": {
+      "path.n.02": [
+        "path"
+      ],
+      "path.n.03": [
+        "travel",
+        "path"
+      ],
+      "path.n.04": [
+        "trail",
+        "travel",
+        "path"
+      ],
+      "way.n.05": [
+        "path",
+        "and"
+      ]
+    },
+    "recreation": {
+      "diversion.n.01": [
+        "recreation"
+      ],
+      "refreshment.n.02": [
+        "recreation",
+        "health"
+      ]
+    },
+    "trails": {
+      "lead.n.03": [
+        "trail"
+      ],
+      "trail.n.01": [
+        "trail",
+        "path"
+      ],
+      "trail.n.02": [
+        "trail",
+        "path"
+      ]
+    }
+  },
+  "truck routes": {
+    "routes": {
+      "path.n.03": [
+        "route",
+        "travel"
+      ],
+      "road.n.01": [
+        "route",
+        "travel",
+        "road",
+        "transportation"
+      ]
+    },
+    "truck": {
+      "hand_truck.n.01": [
+        "truck"
+      ],
+      "truck.n.01": [
+        "truck"
+      ]
+    }
+  },
+  "vehicular bridges": {
+    "bridge": {
+      "bridge.n.01": [
+        "construction",
+        "bridge",
+        "vehicle"
+      ],
+      "bridge.n.02": [
+        "bridge"
+      ],
+      "bridge.n.03": [
+        "bridge"
+      ],
+      "bridge.n.04": [
+        "bridge"
+      ],
+      "bridge.n.05": [
+        "bridge"
+      ],
+      "bridge.n.06": [
+        "bridge"
+      ],
+      "bridge.n.07": [
+        "bridge",
+        "side"
+      ],
+      "bridge.n.08": [
+        "bridge"
+      ],
+      "bridge.n.09": [
+        "bridge"
+      ]
+    },
+    "vehicle": {
+      "fomite.n.01": [
+        "vehicle"
+      ],
+      "vehicle.n.01": [
+        "vehicular",
+        "vehicle"
+      ],
+      "vehicle.n.02": [
+        "vehicle"
+      ],
+      "vehicle.n.03": [
+        "material",
+        "vehicle"
+      ]
+    }
+  },
+  "walking routes": {
+    "recreation": {
+      "diversion.n.01": [
+        "recreation"
+      ],
+      "refreshment.n.02": [
+        "recreation"
+      ]
+    },
+    "routes": {
+      "path.n.03": [
+        "route",
+        "travel"
+      ],
+      "road.n.01": [
+        "route",
+        "travel",
+        "transportation"
+      ]
+    },
+    "walking": {
+      "walk.n.01": [
+        "travel",
+        "walking"
+      ]
+    }
+  },
+  "water assemblies": {
+    "assembly": {
+      "assembly.n.01": [
+        "assembly"
+      ],
+      "assembly.n.04": [
+        "assembly"
+      ],
+      "assembly.n.05": [
+        "assembly",
+        "component"
+      ],
+      "assembly.n.06": [
+        "assembly"
+      ],
+      "fabrication.n.04": [
+        "assembly"
+      ],
+      "forum.n.02": [
+        "assembly"
+      ]
+    },
+    "device": {
+      "device.n.01": [
+        "water",
+        "valve",
+        "system",
+        "device"
+      ],
+      "device.n.02": [
+        "device"
+      ],
+      "device.n.03": [
+        "device"
+      ],
+      "device.n.04": [
+        "device"
+      ],
+      "device.n.05": [
+        "device"
+      ]
+    },
+    "drain": {
+      "drain.n.01": [
+        "drain"
+      ],
+      "drain.n.02": [
+        "drain"
+      ],
+      "drain.n.03": [
+        "drain"
+      ],
+      "drain.n.04": [
+        "drain"
+      ]
+    },
+    "valve": {
+      "valve.n.01": [
+        "valve"
+      ],
+      "valve.n.02": [
+        "valve",
+        "air",
+        "device"
+      ],
+      "valve.n.03": [
+        "valve",
+        "device"
+      ],
+      "valve.n.04": [
+        "valve"
+      ],
+      "valve.n.05": [
+        "valve"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "main",
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    }
+  },
+  "water chambers": {
+    "chamber": {
+      "bedroom.n.01": [
+        "chamber"
+      ],
+      "chamber.n.01": [
+        "chamber"
+      ],
+      "chamber.n.02": [
+        "chamber"
+      ],
+      "chamber.n.03": [
+        "chamber"
+      ],
+      "chamber.n.04": [
+        "chamber"
+      ]
+    },
+    "meter": {
+      "meter.n.01": [
+        "meter"
+      ],
+      "meter.n.02": [
+        "water",
+        "system",
+        "meter"
+      ],
+      "meter.n.03": [
+        "meter"
+      ],
+      "meter.n.04": [
+        "meter"
+      ]
+    },
+    "pressure": {
+      "atmospheric_pressure.n.01": [
+        "pressure"
+      ],
+      "imperativeness.n.01": [
+        "pressure"
+      ],
+      "press.n.09": [
+        "pressure"
+      ],
+      "pressure.n.01": [
+        "pressure"
+      ],
+      "pressure.n.02": [
+        "pressure"
+      ],
+      "pressure.n.05": [
+        "pressure"
+      ],
+      "pressure.n.06": [
+        "condition",
+        "pressure"
+      ]
+    },
+    "valve": {
+      "valve.n.01": [
+        "structure",
+        "valve"
+      ],
+      "valve.n.02": [
+        "valve"
+      ],
+      "valve.n.03": [
+        "valve"
+      ],
+      "valve.n.04": [
+        "valve"
+      ],
+      "valve.n.05": [
+        "valve"
+      ]
+    }
+  },
+  "water fittings": {
+    "device": {
+      "device.n.01": [
+        "water",
+        "system",
+        "device"
+      ],
+      "device.n.02": [
+        "device"
+      ],
+      "device.n.03": [
+        "device"
+      ],
+      "device.n.04": [
+        "device"
+      ],
+      "device.n.05": [
+        "device"
+      ]
+    },
+    "fitting": {
+      "adjustment.n.01": [
+        "fitting"
+      ],
+      "appointment.n.03": [
+        "fitting"
+      ],
+      "fitting.n.02": [
+        "fitting",
+        "system",
+        "pipe"
+      ],
+      "fitting.n.04": [
+        "fitting"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "main",
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    }
+  },
+  "water meters": {
+    "in service": {
+      "avail.n.01": [
+        "service"
+      ],
+      "inch.n.01": [
+        "in"
+      ],
+      "military_service.n.01": [
+        "service"
+      ],
+      "overhaul.n.01": [
+        "service"
+      ],
+      "serve.n.01": [
+        "service"
+      ],
+      "service.n.01": [
+        "service"
+      ],
+      "service.n.02": [
+        "service"
+      ],
+      "service.n.03": [
+        "service"
+      ],
+      "service.n.04": [
+        "service"
+      ],
+      "service.n.05": [
+        "service"
+      ],
+      "service.n.09": [
+        "service"
+      ],
+      "service.n.11": [
+        "service"
+      ],
+      "service.n.13": [
+        "service"
+      ],
+      "service.n.15": [
+        "service"
+      ],
+      "servicing.n.01": [
+        "service"
+      ]
+    },
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "meters": {
+      "meter.n.01": [
+        "meter"
+      ],
+      "meter.n.02": [
+        "water",
+        "system",
+        "meter",
+        "device"
+      ],
+      "meter.n.03": [
+        "meter"
+      ],
+      "meter.n.04": [
+        "meter"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    },
+    "water meters": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "meter.n.01": [
+        "meter"
+      ],
+      "meter.n.02": [
+        "water",
+        "system",
+        "meter",
+        "device"
+      ],
+      "meter.n.03": [
+        "meter"
+      ],
+      "meter.n.04": [
+        "meter"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    }
+  },
+  "water pipe bridges": {
+    "bridge": {
+      "bridge.n.01": [
+        "bridge"
+      ],
+      "bridge.n.02": [
+        "bridge"
+      ],
+      "bridge.n.03": [
+        "bridge"
+      ],
+      "bridge.n.04": [
+        "bridge"
+      ],
+      "bridge.n.05": [
+        "bridge"
+      ],
+      "bridge.n.06": [
+        "bridge"
+      ],
+      "bridge.n.07": [
+        "bridge"
+      ],
+      "bridge.n.08": [
+        "bridge"
+      ],
+      "bridge.n.09": [
+        "bridge"
+      ]
+    },
+    "pipe": {
+      "organ_pipe.n.01": [
+        "pipe"
+      ],
+      "pipe.n.01": [
+        "water",
+        "pipe"
+      ],
+      "pipe.n.02": [
+        "water",
+        "pipe"
+      ],
+      "pipe.n.03": [
+        "pipe"
+      ],
+      "pipe.n.04": [
+        "pipe"
+      ]
+    }
+  },
+  "water pressure zones": {
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "area",
+        "infrastructure"
+      ]
+    },
+    "pressure zones": {
+      "atmospheric_pressure.n.01": [
+        "pressure"
+      ],
+      "imperativeness.n.01": [
+        "pressure"
+      ],
+      "press.n.09": [
+        "pressure"
+      ],
+      "pressure.n.01": [
+        "area",
+        "pressure"
+      ],
+      "pressure.n.02": [
+        "pressure"
+      ],
+      "pressure.n.05": [
+        "area",
+        "pressure"
+      ],
+      "pressure.n.06": [
+        "condition",
+        "pressure"
+      ],
+      "zone.n.01": [
+        "zone"
+      ],
+      "zone.n.02": [
+        "area",
+        "zone"
+      ],
+      "zone.n.03": [
+        "area",
+        "zone"
+      ],
+      "zone.n.04": [
+        "zone"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    },
+    "water pressure zones": {
+      "atmospheric_pressure.n.01": [
+        "pressure"
+      ],
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "imperativeness.n.01": [
+        "pressure"
+      ],
+      "press.n.09": [
+        "pressure"
+      ],
+      "pressure.n.01": [
+        "area",
+        "pressure"
+      ],
+      "pressure.n.02": [
+        "pressure"
+      ],
+      "pressure.n.05": [
+        "area",
+        "pressure"
+      ],
+      "pressure.n.06": [
+        "condition",
+        "pressure"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ],
+      "zone.n.01": [
+        "zone"
+      ],
+      "zone.n.02": [
+        "area",
+        "zone"
+      ],
+      "zone.n.03": [
+        "area",
+        "zone"
+      ],
+      "zone.n.04": [
+        "zone"
+      ]
+    }
+  },
+  "water sampling stations": {
+    "health": {
+      "health.n.01": [
+        "health"
+      ],
+      "health.n.02": [
+        "condition",
+        "health"
+      ]
+    },
+    "quality": {
+      "quality.n.01": [
+        "quality"
+      ],
+      "quality.n.02": [
+        "quality"
+      ],
+      "quality.n.03": [
+        "quality"
+      ],
+      "quality.n.05": [
+        "quality"
+      ],
+      "timbre.n.01": [
+        "quality"
+      ]
+    },
+    "safety": {
+      "base_hit.n.01": [
+        "safety"
+      ],
+      "condom.n.01": [
+        "safety",
+        "device"
+      ],
+      "guard.n.03": [
+        "safety",
+        "device"
+      ],
+      "safety.n.01": [
+        "condition",
+        "safety"
+      ],
+      "safety.n.02": [
+        "safety"
+      ],
+      "safety.n.06": [
+        "safety"
+      ]
+    },
+    "sampling": {
+      "sample_distribution.n.01": [
+        "sampling"
+      ],
+      "sampling.n.01": [
+        "sampling"
+      ],
+      "sampling.n.03": [
+        "sampling"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    }
+  },
+  "water service areas": {
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "area",
+        "infrastructure"
+      ]
+    },
+    "service areas": {
+      "area.n.01": [
+        "area"
+      ],
+      "area.n.02": [
+        "area"
+      ],
+      "area.n.03": [
+        "area",
+        "pressure"
+      ],
+      "area.n.05": [
+        "area"
+      ],
+      "area.n.06": [
+        "area"
+      ],
+      "avail.n.01": [
+        "service"
+      ],
+      "military_service.n.01": [
+        "service"
+      ],
+      "overhaul.n.01": [
+        "service"
+      ],
+      "serve.n.01": [
+        "service"
+      ],
+      "service.n.01": [
+        "service"
+      ],
+      "service.n.02": [
+        "service"
+      ],
+      "service.n.03": [
+        "service"
+      ],
+      "service.n.04": [
+        "service"
+      ],
+      "service.n.05": [
+        "service"
+      ],
+      "service.n.09": [
+        "service",
+        "setting"
+      ],
+      "service.n.11": [
+        "service"
+      ],
+      "service.n.13": [
+        "service"
+      ],
+      "service.n.15": [
+        "service"
+      ],
+      "servicing.n.01": [
+        "service"
+      ],
+      "sphere.n.01": [
+        "area"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    },
+    "water service areas": {
+      "area.n.01": [
+        "area"
+      ],
+      "area.n.02": [
+        "area"
+      ],
+      "area.n.03": [
+        "area",
+        "pressure"
+      ],
+      "area.n.05": [
+        "area"
+      ],
+      "area.n.06": [
+        "area"
+      ],
+      "avail.n.01": [
+        "service"
+      ],
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "military_service.n.01": [
+        "service"
+      ],
+      "overhaul.n.01": [
+        "service"
+      ],
+      "serve.n.01": [
+        "service"
+      ],
+      "service.n.01": [
+        "service"
+      ],
+      "service.n.02": [
+        "service"
+      ],
+      "service.n.03": [
+        "service"
+      ],
+      "service.n.04": [
+        "service"
+      ],
+      "service.n.05": [
+        "service"
+      ],
+      "service.n.09": [
+        "service",
+        "setting"
+      ],
+      "service.n.11": [
+        "service"
+      ],
+      "service.n.13": [
+        "service"
+      ],
+      "service.n.15": [
+        "service"
+      ],
+      "servicing.n.01": [
+        "service"
+      ],
+      "sphere.n.01": [
+        "area"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    }
+  },
+  "water utility facilities": {
+    "facility": {
+      "adeptness.n.01": [
+        "facility"
+      ],
+      "facility.n.01": [
+        "service",
+        "transportation",
+        "station",
+        "system",
+        "facility",
+        "water",
+        "utility",
+        "source"
+      ],
+      "facility.n.03": [
+        "facility"
+      ],
+      "facility.n.04": [
+        "station",
+        "facility",
+        "service"
+      ],
+      "facility.n.05": [
+        "facility",
+        "service"
+      ]
+    },
+    "filling": {
+      "filling.n.01": [
+        "filling"
+      ],
+      "filling.n.02": [
+        "filling"
+      ],
+      "filling.n.03": [
+        "filling"
+      ],
+      "filling.n.05": [
+        "filling"
+      ],
+      "filling.n.06": [
+        "filling"
+      ],
+      "woof.n.01": [
+        "filling"
+      ]
+    },
+    "pump": {
+      "heart.n.02": [
+        "pump"
+      ],
+      "pump.n.01": [
+        "water",
+        "pressure",
+        "pump"
+      ],
+      "pump.n.03": [
+        "pump"
+      ]
+    },
+    "reservoir": {
+      "reservoir.n.01": [
+        "reservoir"
+      ],
+      "reservoir.n.02": [
+        "water",
+        "reservoir"
+      ],
+      "reservoir.n.03": [
+        "water",
+        "tank",
+        "reservoir"
+      ],
+      "reservoir.n.04": [
+        "source",
+        "reservoir"
+      ]
+    },
+    "station": {
+      "place.n.10": [
+        "station"
+      ],
+      "post.n.01": [
+        "station"
+      ],
+      "station.n.01": [
+        "station",
+        "facility",
+        "service"
+      ],
+      "station.n.03": [
+        "station"
+      ],
+      "station.n.05": [
+        "station"
+      ]
+    },
+    "tank": {
+      "cooler.n.03": [
+        "tank"
+      ],
+      "tank.n.01": [
+        "tank"
+      ],
+      "tank.n.02": [
+        "tank",
+        "reservoir",
+        "water"
+      ],
+      "tank.n.03": [
+        "tank"
+      ],
+      "tank_car.n.01": [
+        "tank"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water",
+        "well"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system",
+        "source",
+        "facility"
+      ]
+    },
+    "well": {
+      "well.n.01": [
+        "water",
+        "well"
+      ],
+      "well.n.02": [
+        "well"
+      ],
+      "well.n.03": [
+        "well",
+        "source"
+      ],
+      "well.n.04": [
+        "well"
+      ],
+      "well.n.05": [
+        "well",
+        "pump"
+      ]
+    }
+  },
+  "water valves": {
+    "infrastructure": {
+      "infrastructure.n.01": [
+        "system",
+        "infrastructure"
+      ],
+      "infrastructure.n.02": [
+        "infrastructure"
+      ]
+    },
+    "valves": {
+      "valve.n.01": [
+        "flow"
+      ],
+      "valve.n.02": [
+        "device"
+      ],
+      "valve.n.03": [
+        "flow",
+        "device"
+      ]
+    },
+    "water": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
+      ]
+    },
+    "water valves": {
+      "body_of_water.n.01": [
+        "water"
+      ],
+      "urine.n.01": [
+        "water"
+      ],
+      "valve.n.01": [
+        "flow"
+      ],
+      "valve.n.02": [
+        "device"
+      ],
+      "valve.n.03": [
+        "flow",
+        "device"
+      ],
+      "water.n.01": [
+        "water"
+      ],
+      "water.n.03": [
+        "water"
+      ],
+      "water.n.06": [
+        "water"
+      ],
+      "water_system.n.02": [
+        "water",
+        "system"
       ]
     }
   }

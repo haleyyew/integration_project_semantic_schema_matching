@@ -43,12 +43,18 @@ class Paths:
     from time import gmtime, strftime
     curr_time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
     kb_file_p = "./outputs/kb_file_v1_"+curr_time+".json"
+
+    kb_file_p_one_table_run = "./outputs/kb_file_v1_" + '{0}' + ".json"
+
     dataset_stats = './inputs/dataset_statistics/'
     new_concepts_p = "./outputs/new_concepts.json"
     new_concepts_f = './outputs/new_concepts.csv'
 
-    debug_datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
-                            'park specimen trees', 'parks', 'park screen trees']
+
+    # debug_datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies','park specimen trees', 'parks', 'park screen trees']
+    debug_datasources_with_tag = []
+
+    weight_proportions = []
 
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
@@ -191,7 +197,7 @@ def initialize_matching(p, input_topics, dataset_metadata_set, schema_set, datas
     return kb, datasources_with_tag, schema_set
 
 
-
+import schema_matchers as schm
 def perform_matching(p, dataset_metadata_set, schema_set, datasources_with_tag, kb, params):
     comparison_count = 0
     comparison_count_o = [comparison_count]
@@ -268,6 +274,13 @@ def perform_matching(p, dataset_metadata_set, schema_set, datasources_with_tag, 
                 # TODO datatypes must match! need to move to a different matcher
                 sim_matrix, confidence = bmm.match_table_by_values(src_data, tar_df, params['match_threshold'], comparison_count_o, attrs_stat,
                                                                    params['sample_ratio'], params['sample_min_count'], params['sample_max_count'])
+
+                src_names = list(src_data.columns.values)
+                tar_names = list(tar_df.columns.values)
+                sim_matrix2 = schm.matcher_name_matrix(src_names,tar_names)
+
+                sim_matrix = schm.combine_scores_matrix(sim_matrix, sim_matrix2, params['proportions'])
+
                 print(sim_matrix.to_string())
 
                 # save similarity matrices
@@ -380,12 +393,13 @@ def prepare_next_iteration(kb, output_new_concepts, p):
 
     return kb, schema_set, breakout
 
-if __name__ == "__main__":
 
+def one_full_run(input_topics):
     STAGES = [1,1,1,1,1,5]
     # STAGES = [1,0,0,0,1,1]
-    input_topics = ['trees', 'park']        # let's say we have 'park screen trees' to start with
-    input_datasets = []
+
+    # input_topics = ['trees', 'park']        # let's say we have 'park screen trees' to start with
+    input_datasets = [] # not used
     kb = {}
 
     break_out = False
@@ -415,7 +429,8 @@ if __name__ == "__main__":
             params = {'match_threshold': 0.6,
                     'sample_ratio': 0.01,
                     'sample_min_count': 10,
-                    'sample_max_count': 100}
+                    'sample_max_count': 100,
+                    'proportions': p.weight_proportions  }
 
             print('-------MATCHING-------')
             kb, sim_matrices = perform_matching(p, dataset_metadata_set, schema_set, datasources_with_tag, kb, params)
@@ -480,7 +495,7 @@ if __name__ == "__main__":
         if STAGES[5] == 0: break
 
 
-    kb_file = open(p.kb_file_p, "w")
+    kb_file = open(p.kb_file_p_one_table_run, "w")
     json.dump(kb, kb_file, indent=2, sort_keys=True)
 
     t1 = time.time()
@@ -488,3 +503,38 @@ if __name__ == "__main__":
     print('time %s sec' % (total))
 
     exit(0)
+
+if __name__ == "__main__":
+    table_topics_p = 'outputs/table_topics.json'
+    table_setup_p = 'outputs/table_setup.json'
+
+    f = open(table_topics_p)
+    table_topics = json.load(f)
+
+    f = open(table_setup_p)
+    table_setup = json.load(f)
+
+    p.weight_proportions = [0.8,0.2] # TODO change
+    p.debug_datasources_with_tag = table_setup['tables']
+
+    dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
+    dataset_metadata_set = json.load(dataset_metadata_f)
+
+    for table in table_setup['guiding_tables']:
+        dataset_name = table[0]
+        input_topics = [tag['display_name'] for tag in dataset_metadata_set[dataset_name]['tags']]
+
+        # TODO change scope of datasets, per sample size per guiding table
+        print('[[[',dataset_name,str(input_topics),']]]')
+        for plan in table_topics[dataset_name]['samples']:
+            if plan > 10:
+                continue
+            mixes = table_topics[dataset_name]['samples'][plan]
+            for mix in mixes:
+                p.debug_datasources_with_tag = mixes[mix][0] + mixes[mix][1]
+                print('one_full_run:', plan, mix, p.debug_datasources_with_tag)
+
+                json_kb_save_name = "./outputs/kb_file_v1_" + '{0}' + ".json"
+                json_kb_save_name.replace('{0}', dataset_name+'_'+plan+'_'+mix)
+                p.kb_file_p_one_table_run = json_kb_save_name
+                one_full_run(input_topics)

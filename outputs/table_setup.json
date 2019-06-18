@@ -1,0 +1,150 @@
+{
+  "candidates": [
+    "park playgrounds",
+    "park paths and trails",
+    "drainage devices",
+    "drainage flood control",
+    "park structures",
+    "drainage water bodies",
+    "water utility facilities",
+    "greenways",
+    "water sampling stations",
+    "drainage detention ponds",
+    "sanitary lift stations",
+    "trails and paths",
+    "sanitary flow system nodes",
+    "pay parking stations",
+    "water meters",
+    "drainage monitoring stations",
+    "drainage open channels",
+    "parks",
+    "bike routes",
+    "water assemblies",
+    "park outdoor recreation facilities",
+    "barriers"
+  ],
+  "guiding_tables": {
+    "0": [
+      "park outdoor recreation facilities"
+    ],
+    "1": [
+      "park paths and trails"
+    ],
+    "2": [
+      "parks"
+    ],
+    "3": [
+      "pay parking stations"
+    ],
+    "4": [
+      "park playgrounds"
+    ],
+    "5": [
+      "drainage water bodies"
+    ],
+    "6": [
+      "drainage monitoring stations"
+    ],
+    "7": [
+      "sanitary lift stations"
+    ],
+    "8": [
+      "sanitary flow system nodes"
+    ],
+    "9": [
+      "greenways"
+    ]
+  },
+  "tables": [
+    "park playgrounds",
+    "road row requirements downtown",
+    "park paths and trails",
+    "drainage devices",
+    "sidewalks",
+    "medians",
+    "curbs",
+    "drainage flood control",
+    "road surface",
+    "sanitary catchments",
+    "drainage dyke infrastructure",
+    "traffic signals",
+    "litter containers",
+    "traffic calming",
+    "water fittings",
+    "park horticultural zones",
+    "drainage 200 year flood plain",
+    "walking routes",
+    "sanitary laterals",
+    "ecosystem corridors",
+    "park lights",
+    "park structures",
+    "water valves",
+    "drainage water bodies",
+    "sanitary valves",
+    "road edges",
+    "park catch basins",
+    "sanitary manholes",
+    "truck routes",
+    "water pipe bridges",
+    "ecosystem sites",
+    "water pressure zones",
+    "park specimen trees",
+    "terrestrial hubs",
+    "water service areas",
+    "collection strata complexes",
+    "park natural areas",
+    "park sports fields",
+    "water utility facilities",
+    "drainage catch basins",
+    "greenways",
+    "vehicular bridges",
+    "garbage recycling collection days",
+    "drainage erosion protection works",
+    "elementary school catchments",
+    "water sampling stations",
+    "park horticultural beds",
+    "heritage sites",
+    "park trans canada trail",
+    "drainage detention ponds",
+    "secondary school catchments",
+    "collection rear laneways",
+    "sanitary nodes",
+    "signs",
+    "recycling toter collection complexes",
+    "sanitary lift stations",
+    "park passive grass",
+    "historic roads",
+    "railway crossings",
+    "drainage pump stations",
+    "drainage manholes",
+    "trails and paths",
+    "water chambers",
+    "collection route boundaries",
+    "sanitary flow system nodes",
+    "sanitary chambers",
+    "park potential donation bench locations",
+    "collection secondary suites",
+    "pay parking stations",
+    "adopt a street",
+    "road centrelines",
+    "drainage laterals",
+    "water meters",
+    "drainage sub catchments",
+    "drainage monitoring stations",
+    "poles",
+    "drainage major catchments",
+    "schools",
+    "drainage open channels",
+    "drainage service connections",
+    "parks",
+    "park unimproved parkland",
+    "bike routes",
+    "aquatic hubs",
+    "park screen trees",
+    "water assemblies",
+    "park outdoor recreation facilities",
+    "barriers",
+    "important trees",
+    "heritage routes"
+  ]
+}

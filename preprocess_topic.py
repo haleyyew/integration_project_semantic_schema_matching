@@ -1000,8 +1000,16 @@ lemmatization_using_pos_tagger = LemmatizationWithPOSTagger()
 
 
 import inflection
+import os.path
 
 def enrich_homonyms(dataset_name, topic, desc, notes, other_topics):
+
+    dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
+    fname = dir + '[' + dataset_name + '_' + ' '.join(topic) + '].json'
+    if os.path.isfile(fname):
+        print('[' + dataset_name + '_' + ' '.join(topic) + '].json', 'already exists')
+        return
+
     other_topics_singl = []
     for top in other_topics:
         try:
@@ -1047,7 +1055,6 @@ def enrich_homonyms(dataset_name, topic, desc, notes, other_topics):
     # threshold = 0.3
     set_of_enriched = enrich_topic_words(topic, top_context, wordnet)
 
-    dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
     import json
     with open(dir + '[' + dataset_name + '_' + ' '.join(topic) + '].json', 'w') as outfile:
         json.dump([top_context, set_of_enriched], outfile)
@@ -1085,45 +1092,7 @@ schema_set = json.load(schema_f, strict=False)
 datasets_path = './thesis_project_dataset_clean/'
 
 
-if __name__ == "__main__":
-    # group = 'environmental services'
-    # datasources_with_tag = metadata_set['groups'][group]['sources']
-    # print(datasources_with_tag)
-    # datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
-    #                         os.path.isfile(datasets_path + datasource_file + '.csv')]
-    # datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
-    # datasources_with_tag = ['park screen trees', 'park natural areas', 'terrestrial hubs', 'park structures']
-    # datasources_with_tag = [ 'drainage dyke infrastructure', 'drainage erosion protection works', 'drainage flood control', 'drainage sub catchments', 'ecosystem corridors', 'ecosystem sites', 'park passive grass', 'park paths and trails', 'park unimproved parkland']
-    # datasources_with_tag = ['collection secondary suites', 'collection strata complexes', 'collection route boundaries', 'collection rear laneways', 'recycling toter collection complexes', 'litter containers', 'schools', 'elementary school catchments', 'garbage recycling collection days', 'secondary school catchments']
-
-    # datasources_with_tag = ['park potential donation bench locations', 'park sports fields', 'walking routes', 'park horticultural beds', 'heritage routes', 'heritage sites', 'park playgrounds', 'park horticultural zones', 'park outdoor recreation facilities', 'park trans canada trail', 'important trees']
-
-    # datasources_with_tag = ['drainage detention ponds', 'sanitary lift stations', 'water valves', 'sanitary flow system nodes', 'water service areas']
-    # datasources_with_tag = [  'drainage manholes', 'park catch basins', 'drainage open channels', 'water pipe bridges', 'sanitary catchments']
-    # datasources_with_tag = ['drainage service connections', 'water meters', 'sanitary chambers', 'drainage major catchments', 'water pressure zones', 'signs']
-    # datasources_with_tag =[ 'drainage pump stations', 'water chambers', 'water sampling stations', 'drainage laterals']
-    # datasources_with_tag = ['sanitary manholes', 'water fittings', 'sanitary valves', 'drainage monitoring stations', 'water assemblies', 'water utility facilities', 'drainage devices', 'park lights']
-    # datasources_with_tag = ['sanitary nodes', 'sanitary laterals', 'drainage catch basins']
-
-    # datasources_with_tag = ['truck routes', 'sidewalks', 'vehicular bridges', 'bike routes', 'poles', 'road centrelines', 'traffic calming', 'medians', 'traffic signals', 'adopt a street']
-    # datasources_with_tag = ['trails and paths', 'historic roads', 'curbs', 'road edges', 'greenways', 'pay parking stations', 'road surface', 'road row requirements downtown', 'barriers']
-    datasources_with_tag = ['railway crossings']
-
-
-    # TODO: RUN THIS TO CREATE GOLD STANDARD
-    # recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
-    exit(0)
-
-
-    # enrich_homonyms_test()
-    # dataset_name = 'parks'
-    # topic = 'parks'
-    # desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
-    # notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
-    # other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
-    #
-    # # topic = 'activities'
-
+def enrich_topics_full_run(datasources_with_tag):
     for dataset_name in datasources_with_tag:
 
 
@@ -1146,4 +1115,49 @@ if __name__ == "__main__":
             other_topics.remove(topic)
 
             enrich_homonyms(dataset_name, topic, desc, notes, other_topics)
+
+    return
+
+if __name__ == "__main__":
+    # group = 'environmental services'
+    # datasources_with_tag = metadata_set['groups'][group]['sources']
+    # print(datasources_with_tag)
+
+    datasources_with_tag = []
+    # datasources_with_tag = [datasource_file for datasource_file in datasources_with_tag if
+    #                         os.path.isfile(datasets_path + datasource_file + '.csv')]
+    # datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks', 'park screen trees', ]
+    # datasources_with_tag = ['park natural areas', 'terrestrial hubs', 'park structures']
+    # datasources_with_tag = [ 'drainage dyke infrastructure', 'drainage erosion protection works', 'drainage flood control', 'drainage sub catchments', 'ecosystem corridors', 'ecosystem sites', 'park passive grass', 'park paths and trails', 'park unimproved parkland']
+    # datasources_with_tag = ['collection secondary suites', 'collection strata complexes', 'collection route boundaries', 'collection rear laneways', 'recycling toter collection complexes', 'litter containers', 'schools', 'elementary school catchments', 'garbage recycling collection days', 'secondary school catchments']
+    #
+    # datasources_with_tag = ['park potential donation bench locations', 'park sports fields', 'walking routes', 'park horticultural beds', 'heritage routes', 'heritage sites', 'park playgrounds', 'park horticultural zones', 'park outdoor recreation facilities', 'park trans canada trail', 'important trees']
+    #
+    # datasources_with_tag = ['drainage detention ponds', 'sanitary lift stations', 'water valves', 'sanitary flow system nodes', 'water service areas']
+    # datasources_with_tag = [  'drainage manholes', 'park catch basins', 'drainage open channels', 'water pipe bridges', 'sanitary catchments']
+    # datasources_with_tag = ['drainage service connections', 'water meters', 'sanitary chambers', 'drainage major catchments', 'water pressure zones', 'signs']
+    # datasources_with_tag =[ 'drainage pump stations', 'water chambers', 'water sampling stations', 'drainage laterals']
+    # datasources_with_tag = ['sanitary manholes', 'water fittings', 'sanitary valves', 'drainage monitoring stations', 'water assemblies', 'water utility facilities', 'drainage devices', 'park lights']
+    # datasources_with_tag = ['sanitary nodes', 'sanitary laterals', 'drainage catch basins']
+    #
+    # datasources_with_tag = ['truck routes', 'sidewalks', 'vehicular bridges', 'bike routes', 'poles', 'road centrelines', 'traffic calming', 'medians', 'traffic signals', 'adopt a street']
+    # datasources_with_tag = ['trails and paths', 'historic roads', 'curbs', 'road edges', 'greenways', 'pay parking stations', 'road surface', 'road row requirements downtown', 'barriers']
+    # datasources_with_tag = ['railway crossings']
+
+
+    # TODO: RUN THIS TO CREATE GOLD STANDARD
+    # recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
+    # exit(0)
+
+
+    # enrich_homonyms_test()
+    # dataset_name = 'parks'
+    # topic = 'parks'
+    # desc = "the city of surrey is committed to protecting and enhancing natural and environmentally sensitive areas from harmful development. policies and regulations with respect to environmentally sensitive development are contained in city plans and by-laws as well as in provincial and federal acts."
+    # notes = "this dataset includes parks in surrey. for more information please visit the [surrey"
+    # other_topics = ['activities', 'environment', 'green', 'health', 'nature', 'walk', 'youth'] # ,'parks'
+    #
+    # # topic = 'activities'
+
+    enrich_topics_full_run(datasources_with_tag)
 

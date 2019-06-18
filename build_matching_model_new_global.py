@@ -9,6 +9,7 @@ import pprint
 import schema_matchers as sch
 import classification_evaluation as ce
 import time
+import script_enriched_topics_to_json as settj
 
 class Metadata2:
     guiding_table_name = None
@@ -122,7 +123,7 @@ def topic_topic_update(dataset, info, score, comparing_pairs, gtm, gtm_kb, datas
 
 # for coverage
 # NOTE: check to see if any topics in other table can be mapped to non-assigned attrs in guiding table. use attr-topic wordnet, ngram name
-def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table):
+def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table, wordnet):
     gt_attrs = guiding_table.attributes_list
     gt_exposed_topics = guiding_table.exposed_topics
 
@@ -140,7 +141,7 @@ def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table):
 
     # pprint.pprint(gt_attrs_mapped)
 
-    candidate_attrs = list(set(gtm.attribute_contexts.keys()) - set(gt_attrs_mapped))
+    candidate_attrs = list(set(guiding_table.attribute_contexts.keys()) - set(gt_attrs_mapped))
 
     attribute_contexts_temp = guiding_table.attribute_contexts.copy()
     attribute_contexts_temp_keys = list(attribute_contexts_temp.keys())
@@ -175,7 +176,7 @@ def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table):
             if topic not in not_added:
                 del tags_list_enriched_temp[topic]
 
-        table_scores_attr_topic[source] = [[0, None]]
+        table_scores_attr_topic[dataset] = [[0, None]]
 
         if len(tags_list_enriched_temp.keys()) == 0: continue
         # print(dataset, tags_list_enriched_temp.keys())
@@ -204,7 +205,7 @@ def find_source_of_topic(added_topics, topic):
 
 # for importance
 # NOTE: check to see if any non-assigned attrs in other table can be mapped to guiding table topics. use attr-topic wordnet, ngram name
-def gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_topic_attr, topic_from):
+def gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_topic_attr, topic_from, table_metadata, wordnet):
     added_attrs = []
     dataset_attrs = table_metadata[dataset].attribute_contexts
 
@@ -333,11 +334,12 @@ def reverse_dict(dict):
                 reversed[val].append(k)
     return reversed
 
-if __name__ == "__main__":
+def one_full_run(guiding_table_name, datasources_with_tag):
 
     t0 = time.time()
 
-    bmmn.m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees'] #
+    # bmmn.m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees'] #
+    bmmn.m.datasources_with_tag = datasources_with_tag
 
     bmmn.load_metadata(bmmn.p, bmmn.m)
 
@@ -358,7 +360,8 @@ if __name__ == "__main__":
     wordnet = pt.load_dict()
 
     # load guiding table
-    m2.guiding_table_name = 'parks'
+    # m2.guiding_table_name = 'parks'
+    m2.guiding_table_name = guiding_table_name
 
     gtm = TableMetadata(table_name=m2.guiding_table_name)
     gtm.tags_list_enriched_dataset, gtm.tags_list_enriched_names, gtm.attributes_list, gtm.schema, _, _ = bmmn.load_per_source_metadata(bmmn.p, bmmn.m, {}, m2.guiding_table_name, pds, bmm)
@@ -492,7 +495,7 @@ if __name__ == "__main__":
 
 
 
-        table_scores_attr_topic = gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, gtm)
+        table_scores_attr_topic = gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, gtm, wordnet)
         # print('///// topics attributes /////')
         # pprint.pprint(table_scores_attr_topic)
         # print('//////////')
@@ -564,7 +567,7 @@ if __name__ == "__main__":
         table_scores_topic_attr = {}
         topic_from = {}
         for dataset in table_scores:
-            table_scores_topic_attr, topic_from = gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_topic_attr, topic_from)
+            table_scores_topic_attr, topic_from = gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_topic_attr, topic_from, table_metadata, wordnet)
 
         for topic in topic_from:
             topic_from[topic] = list(set(topic_from[topic]))
@@ -723,3 +726,48 @@ if __name__ == "__main__":
     t1 = time.time()
     total = t1 - t0
     print('time %s sec' % (total))
+
+
+if __name__ == "__main__":
+    table_topics_p = 'outputs/table_topics.json'
+    table_setup_p = 'outputs/table_setup.json'
+
+    f = open(table_topics_p)
+    table_topics = json.load(f)
+
+    f = open(table_setup_p)
+    table_setup = json.load(f)
+
+    # datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
+    #                         'park specimen trees', 'parks', 'park screen trees']
+    # guiding_table_name = 'parks'
+    datasources_with_tag = table_setup['tables']
+
+    done = True
+    if not done:
+        print('enrich topics')
+        pt.enrich_topics_full_run(datasources_with_tag)
+        print('create attributes contexts')
+        bmmn.load_metadata(bmmn.p, bmmn.m)
+        bmmn.m.datasources_with_tag = datasources_with_tag
+        bmmn.create_attributes_contexts(datasources_with_tag, bmmn.m, bmmn.p, bmmn.r)
+        # then move the json files to the appropriate dirs
+        print('contexts to json')
+        settj.one_full_run()
+    print('local mappings')
+    bmmn.load_metadata(bmmn.p, bmmn.m)
+    bmmn.m.datasources_with_tag = datasources_with_tag
+    bmmn.local_mappings(bmmn.p, bmmn.m, bmmn.r)
+
+    dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
+    dataset_metadata_set = json.load(dataset_metadata_f)
+
+    exit(0)
+
+    for plan in table_setup['guiding_tables']:
+        guiding_table_name = plan[0]
+
+        # TODO change scope of datasets, per sample size per guiding table
+        print('[[[', 'global mappings', guiding_table_name, ']]]')
+
+        one_full_run(guiding_table_name, datasources_with_tag)

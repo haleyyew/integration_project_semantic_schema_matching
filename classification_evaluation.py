@@ -173,6 +173,8 @@ if __name__ == "__main__":
         print(ds, set(kb_topics_reverse[ds]) - set(existing_tags[ds]), set(kb_topics_reverse[ds]) - set(existing_tags[ds]))
     print('avg new', num_new/ds_count)
 
+    # exit(0)
+
     # version 2
 
 

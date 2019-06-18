@@ -1,4 +1,4 @@
-v1: add name matcher 
+//v1: add name matcher 
 v1: add semantic table search (word2vec)
 v2: add word2vec (for table search, both the topics, and the attr values)
 v2: add tfidf to values matching (should be faster)

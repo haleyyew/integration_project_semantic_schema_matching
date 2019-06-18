@@ -6,6 +6,69 @@ def matcher_name(src, tar, function):
     sim_score = 1 - function.distance(src, tar)
     return sim_score
 
+import pandas as pd
+import numpy as np
+def matcher_name_matrix(srcs, tars, function=twogram):
+    sim_matrix = np.zeros((len(srcs), len(tars)))
+
+    for i,s in enumerate(srcs):
+        for j,t in enumerate(tars):
+            sim_score = 1 - function.distance(s, t)
+            sim_matrix[i, j] += sim_score
+
+    sim_scores = pd.DataFrame(data=sim_matrix, columns=tars, index=srcs)
+    return sim_scores
+
+import math
+
+def sigmoid(x):
+  return 1 / (1 + math.exp(-x))
+
+def compute_composite(probability_list, weight_list):
+    for i in range(len(probability_list)):
+        prob = probability_list[i]
+        if prob[0] == False:
+            weight_list[i] = -1
+    # print(weight_list)
+
+    reweight_factor = 0
+    for i in range(len(weight_list)):
+        weight = weight_list[i]
+        if weight != -1:
+            reweight_factor += weight
+
+    weight_list = [weight/reweight_factor for weight in weight_list]
+    # print(weight_list)
+
+    composite_score = 0
+    for i in range(len(probability_list)):
+        prob = probability_list[i]
+        if prob[0] == True:
+            composite_score += weight_list[i] * prob[1]
+    # print(composite_score)
+
+    return sigmoid(composite_score)
+
+
+def combine_scores_matrix(sim_matrix, sim_matrix2, weight_list):
+    if sim_matrix.shape != sim_matrix2.shape:
+        print('ERROR: sim_matrix and sim_matrix dimemsions mismatch', sim_matrix.shape, sim_matrix2.shape)
+        return pd.DataFrame()
+
+    rows = list(sim_matrix.index.values)
+    cols = list(sim_matrix.columns.values)
+
+    sim_matrix_mtx = np.zeros((len(rows), len(cols)))
+
+    for i,s in enumerate(rows):
+        for j,t in enumerate(cols):
+            val1 = sim_matrix.loc[s, t]
+            val2 = sim_matrix2.loc[s, t]
+            sim_matrix_mtx[i,j] = compute_composite([(True,val1),(True,val2)], weight_list)
+
+    df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=cols, index=rows)
+
+    return df_sim_matrix
 
 import nltk
 
@@ -15,7 +78,6 @@ def load_dict():
     dictionary = wordnet
     return dictionary
 
-import pandas as pd
 import inflection
 import math
 def matcher_name_meaning_by_thesaurus(src, tar, dictionary):

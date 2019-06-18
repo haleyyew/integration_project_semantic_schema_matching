@@ -193,6 +193,7 @@ def topic_attribute_syn_similarity(syn_attr_dict, syn_top_dict, function, all_to
     return score, pair, source_matched
 
 def build_local_context_similarity_matrix(topics_contexts, attributes_contexts, source_name, function, all_topics):
+
     topic_names = list(topics_contexts[source_name].keys())
     attribute_names = list(attributes_contexts.keys())
 
@@ -345,7 +346,7 @@ def initialize_matching(p, m, r):
         # get example values
         for attr_i in range(len(schema)):
             # print(attr_i)
-            if schema[attr_i]['domain'] == None:
+            if 'domain' not in schema[attr_i] or schema[attr_i]['domain'] == None:
 
                 attr_name = schema[attr_i]['name']
                 attr_name = pds.clean_name(attr_name, False, False)
@@ -561,23 +562,7 @@ class Parameters:
 r = Parameters()
 
 
-if __name__ == "__main__":
-    # GLAV mapping for each dataset
-    # m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
-    # m.datasources_with_tag = ['park screen trees']
-    m.datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
-                              'park specimen trees', 'parks', 'park screen trees']
-    load_metadata(p, m)
-
-    ## run preprocess topic enrich_homonyms()
-    ## TODO call this to generate enriched attrs before running the rest
-    # print('create_attributes_contexts:')
-    # create_attributes_contexts(m.datasources_with_tag, m, p, r)
-    # exit(0)
-    ## then run script_enriched_topics_to_json.py
-    ## then run the code below
-    ## next run build_matching_model_new_global
-
+def local_mappings(p,m,r):
     initialize_matching(p, m, r)
     with open(p.schema_p, 'w') as fp:
         json.dump(m.schema_set, fp, sort_keys=True, indent=2)
@@ -604,3 +589,22 @@ if __name__ == "__main__":
     pprint.pprint(m.pair_dict_all)
 
     # TODO some match scores are 1 for unrelated attr-topic pair, which is clearly wrong
+
+if __name__ == "__main__":
+    # GLAV mapping for each dataset
+    # m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees','parks']
+    # m.datasources_with_tag = ['park screen trees']
+    m.datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
+                              'park specimen trees', 'parks', 'park screen trees']
+    load_metadata(p, m)
+
+    ## run preprocess topic enrich_homonyms()
+    ## TODO call this to generate enriched attrs before running the rest
+    # print('create_attributes_contexts:')
+    # create_attributes_contexts(m.datasources_with_tag, m, p, r)
+    # exit(0)
+    ## then run script_enriched_topics_to_json.py
+    ## then run the code below
+    ## next run build_matching_model_new_global
+
+    local_mappings(p,m,r)

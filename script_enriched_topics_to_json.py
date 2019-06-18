@@ -100,14 +100,17 @@ def enriched_topics_json(dir, dir_out, dataset_topics_dir, dataset_topics_extend
     return
 
 
+def one_full_run():
+    dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/enriched_topics/'
+    dir_out = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
+    dataset_topics_dir = 'dataset_topics_enriched.json'
+    dataset_topics_extended_dir = 'dataset_topics_enriched_extended.json'
+    enriched_topics_json(dir, dir_out, dataset_topics_dir, dataset_topics_extended_dir)
 
-dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/enriched_topics/'
-dir_out = '/Users/haoran/Documents/thesis_schema_integration/outputs/'
-dataset_topics_dir = 'dataset_topics_enriched.json'
-dataset_topics_extended_dir = 'dataset_topics_enriched_extended.json'
-# enriched_topics_json(dir, dir_out, dataset_topics_dir, dataset_topics_extended_dir)
+    attrs_dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/attributes_enriched/'
+    dataset_attrs_dir = 'dataset_attrs_enriched.json'
+    dataset_attrs_extended_dir = 'dataset_attrs_enriched_extended.json'
+    enriched_topics_json(attrs_dir, dir_out, dataset_attrs_dir, dataset_attrs_extended_dir)
 
-attrs_dir = '/Users/haoran/Documents/thesis_schema_integration/outputs/attributes_enriched/'
-dataset_attrs_dir = 'dataset_attrs_enriched.json'
-dataset_attrs_extended_dir = 'dataset_attrs_enriched_extended.json'
-enriched_topics_json(attrs_dir, dir_out, dataset_attrs_dir, dataset_attrs_extended_dir)
+if __name__ == "__main__":
+    one_full_run()
