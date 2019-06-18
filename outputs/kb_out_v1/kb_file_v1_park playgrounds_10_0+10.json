@@ -1,0 +1,101 @@
+{
+  "activities": {
+    "datasources": [
+      "parks",
+      "recreation programs activities"
+    ],
+    "matches": {}
+  },
+  "activity": {
+    "datasources": [
+      "building permits",
+      "development permits"
+    ],
+    "matches": {}
+  },
+  "children": {
+    "datasources": [
+      "park playgrounds",
+      "participation in city programs",
+      "schools",
+      "surrey schools class size",
+      "park playgrounds",
+      "participation in city programs",
+      "schools",
+      "surrey schools class size"
+    ],
+    "matches": {}
+  },
+  "diversion": {
+    "datasources": [
+      "community waste",
+      "construction waste"
+    ],
+    "matches": {}
+  },
+  "fun": {
+    "datasources": [
+      "events",
+      "park playgrounds",
+      "events",
+      "park playgrounds"
+    ],
+    "matches": {}
+  },
+  "kids": {
+    "datasources": [
+      "park playgrounds",
+      "park playgrounds"
+    ],
+    "matches": {}
+  },
+  "movie": {
+    "datasources": [
+      "places of interest"
+    ],
+    "matches": {}
+  },
+  "playground": {
+    "datasources": [
+      "park playgrounds",
+      "park structures",
+      "park playgrounds",
+      "park structures"
+    ],
+    "matches": {}
+  },
+  "recreation": {
+    "datasources": [
+      "bike routes",
+      "park land",
+      "park outdoor recreation facilities",
+      "park paths and trails",
+      "park playgrounds",
+      "park sports fields",
+      "park unimproved parkland",
+      "places of interest",
+      "recreation programs activities",
+      "trails and paths",
+      "walking routes",
+      "bike routes",
+      "park land",
+      "park outdoor recreation facilities",
+      "park paths and trails",
+      "park playgrounds",
+      "park sports fields",
+      "park unimproved parkland",
+      "places of interest",
+      "recreation programs activities",
+      "trails and paths",
+      "walking routes"
+    ],
+    "matches": {}
+  },
+  "sports": {
+    "datasources": [
+      "facilities that offer city programs",
+      "park sports fields"
+    ],
+    "matches": {}
+  }
+}

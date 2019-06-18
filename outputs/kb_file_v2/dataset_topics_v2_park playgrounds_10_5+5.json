@@ -1,0 +1,143 @@
+{
+  "drainage devices": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "donation"
+  ],
+  "drainage erosion protection works": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "greenways": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "heritage routes": [
+    "recreation",
+    "preservation",
+    "dedication"
+  ],
+  "important trees": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "park horticultural beds": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park horticultural zones": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park lights": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park natural areas": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "donation"
+  ],
+  "park outdoor recreation facilities": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park playgrounds": [
+    "fields",
+    "fun",
+    "donation",
+    "park",
+    "protection",
+    "playground",
+    "structure",
+    "refuge",
+    "ladder",
+    "dedication",
+    "recreation",
+    "collection",
+    "sports",
+    "facilities",
+    "preservation",
+    "transportation"
+  ],
+  "park potential donation bench locations": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park sports fields": [
+    "fun",
+    "sports",
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park structures": [
+    "donation",
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground"
+  ],
+  "park unimproved parkland": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "donation"
+  ],
+  "road edges": [
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "sanitary chambers": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "sanitary nodes": [
+    "protection",
+    "donation",
+    "sports"
+  ],
+  "water pipe bridges": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "water sampling stations": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ]
+}

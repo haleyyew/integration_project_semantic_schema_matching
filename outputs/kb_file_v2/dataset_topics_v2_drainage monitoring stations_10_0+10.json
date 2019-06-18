@@ -1,0 +1,186 @@
+{
+  "drainage devices": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "donation"
+  ],
+  "drainage erosion protection works": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "drainage major catchments": [
+    "drainage",
+    "drainage catchments",
+    "nature"
+  ],
+  "drainage monitoring stations": [
+    "depth",
+    "donation",
+    "drainage catchments",
+    "catchments",
+    "protection",
+    "quality",
+    "structure",
+    "playground",
+    "nature",
+    "collection",
+    "drainage",
+    "sports",
+    "recreation",
+    "preservation",
+    "dedication",
+    "transportation",
+    "fun",
+    "rainfall",
+    "railway"
+  ],
+  "garbage recycling collection days": [
+    "nature"
+  ],
+  "greenways": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "heritage routes": [
+    "recreation",
+    "preservation",
+    "dedication"
+  ],
+  "important trees": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "park horticultural beds": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park horticultural zones": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park lights": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park natural areas": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "donation",
+    "quality",
+    "nature",
+    "depth"
+  ],
+  "park outdoor recreation facilities": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park paths and trails": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "donation",
+    "nature",
+    "depth"
+  ],
+  "park potential donation bench locations": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation"
+  ],
+  "park sports fields": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "fun",
+    "sports",
+    "donation"
+  ],
+  "park structures": [
+    "donation",
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "quality",
+    "nature",
+    "drainage catchments"
+  ],
+  "park unimproved parkland": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "donation"
+  ],
+  "railway crossings": [
+    "donation",
+    "rainfall",
+    "railway",
+    "quality",
+    "nature"
+  ],
+  "road edges": [
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "sanitary chambers": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "sanitary nodes": [
+    "protection",
+    "donation",
+    "sports"
+  ],
+  "terrestrial hubs": [
+    "nature"
+  ],
+  "vehicular bridges": [
+    "nature",
+    "drainage catchments"
+  ],
+  "water pipe bridges": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation",
+    "donation",
+    "sports",
+    "drainage catchments"
+  ],
+  "water sampling stations": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ]
+}

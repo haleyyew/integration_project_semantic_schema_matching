@@ -89,6 +89,9 @@ def process_scores(sim_matrix1, sim_matrix2, sim_matrix3, table_metadata_topics,
 # for transfer new similar topics
 def topic_topic_update(dataset, info, score, comparing_pairs, gtm, gtm_kb, dataset_kb, added_topics):
     # for fine grained matching later
+    if info[1] not in gtm_kb: gtm_kb[info[1]] = {}
+    if info[2] not in dataset_kb: dataset_kb[info[2]] = {}
+
     comparing_pairs[(info[1], dataset, info[2])] = (gtm_kb[info[1]].copy(), dataset_kb[info[2]].copy())
 
     # transfer
@@ -268,6 +271,8 @@ def gt_topic_to_dataset_nonmapped_attr(dataset, gtm, added_topics, table_scores_
 
 def preprocesss_attr_values(values):
     splits = []
+
+    if values == None: return ''
 
     for value in values:
         value = str(value)  # TODO get alpha to numeric ratio, if all numbers then skip
@@ -472,10 +477,17 @@ def one_full_run(guiding_table_name, datasources_with_tag):
                 info = item[1]
                 if info[1] == info[2]:  # dataset and guiding have the same topic
                     #  NOTE: still need to add it
+                    if info[1] not in gtm_kb:
+                        gtm_kb[info[1]] = {}
+
+
                     for attr in gtm_kb[info[1]]:
                         if 'source_dataset' not in gtm_kb[info[1]][attr]:
                             gtm_kb[info[1]][attr]['source_dataset'] = [m2.guiding_table_name]
                     pass
+
+                    if dataset not in added_topics:
+                        added_topics[dataset] = []  # TODO work around, check this is correct
 
                 # comparing_pairs, gtm, gtm_kb, added_topics = \
                 topic_topic_update(dataset, info, score, comparing_pairs, gtm, gtm_kb, dataset_kb, added_topics)
@@ -556,6 +568,7 @@ def one_full_run(guiding_table_name, datasources_with_tag):
                 #                                    :min(len(kb_match_entry['example_values']), 5)]
                 # pprint.pprint(kb_match_entry)
 
+                if dataset not in added_topics: added_topics[dataset] = []  # TODO this is work around for dataset not found error
                 if info[1] not in added_topics[dataset]:
                     added_topics[dataset].append(info[1])
 
@@ -728,6 +741,7 @@ def one_full_run(guiding_table_name, datasources_with_tag):
     print('time %s sec' % (total))
 
 
+import pathlib
 if __name__ == "__main__":
     table_topics_p = 'outputs/table_topics.json'
     table_setup_p = 'outputs/table_setup.json'
@@ -754,20 +768,43 @@ if __name__ == "__main__":
         # then move the json files to the appropriate dirs
         print('contexts to json')
         settj.one_full_run()
-    print('local mappings')
-    bmmn.load_metadata(bmmn.p, bmmn.m)
-    bmmn.m.datasources_with_tag = datasources_with_tag
-    bmmn.local_mappings(bmmn.p, bmmn.m, bmmn.r)
+
+        print('local mappings')
+        bmmn.load_metadata(bmmn.p, bmmn.m)
+        bmmn.m.datasources_with_tag = datasources_with_tag
+        bmmn.local_mappings(bmmn.p, bmmn.m, bmmn.r)
 
     dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
 
-    exit(0)
+    # exit(0)
 
-    for plan in table_setup['guiding_tables']:
-        guiding_table_name = plan[0]
+    for k,table in enumerate(table_setup['guiding_tables']):
+        if k % 2 != 0: continue # TODO for now just try 5 tables
+
+        dataset_name = table_setup['guiding_tables'][table][0]
+        print(dataset_name)
 
         # TODO change scope of datasets, per sample size per guiding table
-        print('[[[', 'global mappings', guiding_table_name, ']]]')
+        print('[[[', 'global mappings', dataset_name, ']]]')    # GUIDING TABLE
 
-        one_full_run(guiding_table_name, datasources_with_tag)
+        for plan in table_topics[dataset_name]['samples']:
+            if int(plan) > 10:
+                continue
+            mixes = table_topics[dataset_name]['samples'][plan]
+            for mix in mixes:
+                datasources_with_tag = mixes[mix][0] + mixes[mix][1]
+                print('one_full_run:', dataset_name, plan, mix, datasources_with_tag)
+
+                json_kb_save_name = "./outputs/kb_file_v2_" + '{0}' + ".json"
+                json_kb_save_name = json_kb_save_name.replace('{0}', dataset_name+'_'+plan+'_'+mix)
+
+                bmmn.p.kb_file_p = json_kb_save_name
+                bmmn.p.dataset_topics_p = "./outputs/dataset_topics_v2_" + dataset_name+'_'+plan+'_'+mix + ".json"
+
+
+                my_file = pathlib.Path(json_kb_save_name)
+                if my_file.exists():
+                    continue
+
+                one_full_run(dataset_name, datasources_with_tag)

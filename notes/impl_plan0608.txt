@@ -8,7 +8,8 @@ v0: classification for attr labelling
 
 //create gold standard (90)
 create list of eval procedures
-the results for larger set of tables
+the results for larger set of tables	v1: +108sec + => 1188 sec
+										v2; +61sec + 59sec 
 
 update missed tags
 

@@ -500,10 +500,11 @@ def one_full_run(input_topics):
 
     t1 = time.time()
     total = t1 - t0
-    print('time %s sec' % (total))
+    print('TOTAL time %s sec' % (total))
 
-    exit(0)
+    return
 
+import pathlib
 if __name__ == "__main__":
     table_topics_p = 'outputs/table_topics.json'
     table_setup_p = 'outputs/table_setup.json'
@@ -520,14 +521,17 @@ if __name__ == "__main__":
     dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
 
-    for table in table_setup['guiding_tables']:
-        dataset_name = table[0]
+    for k,table in enumerate(table_setup['guiding_tables']):
+        if k % 2 != 0: continue # TODO for now just try 5 tables
+
+        dataset_name = table_setup['guiding_tables'][table][0]
+        print(dataset_name)
         input_topics = [tag['display_name'] for tag in dataset_metadata_set[dataset_name]['tags']]
 
         # TODO change scope of datasets, per sample size per guiding table
         print('[[[',dataset_name,str(input_topics),']]]')
         for plan in table_topics[dataset_name]['samples']:
-            if plan > 10:
+            if int(plan) > 10:
                 continue
             mixes = table_topics[dataset_name]['samples'][plan]
             for mix in mixes:
@@ -535,6 +539,11 @@ if __name__ == "__main__":
                 print('one_full_run:', plan, mix, p.debug_datasources_with_tag)
 
                 json_kb_save_name = "./outputs/kb_file_v1_" + '{0}' + ".json"
-                json_kb_save_name.replace('{0}', dataset_name+'_'+plan+'_'+mix)
+                json_kb_save_name = json_kb_save_name.replace('{0}', dataset_name+'_'+plan+'_'+mix)
                 p.kb_file_p_one_table_run = json_kb_save_name
+
+                my_file = pathlib.Path(json_kb_save_name)
+                if my_file.exists():
+                    continue
+
                 one_full_run(input_topics)

@@ -286,8 +286,22 @@ def split_concepts(root, mappings, decision_threshold):
                 partition = part[j]
                 if partition != 1:
                     print('temp_'+concept+'_'+str(partition))
-                    new_concepts['temp_'+concept+'_'+str(partition)][key[0]] = root[concept][key[0]]
-                    del root[concept][key[0]]
+
+                    # print('DEBUG', concept)
+                    # print('DEBUG', root[concept])
+                    #
+                    # print('DEBUG', new_concepts['temp_'+concept+'_'+str(partition)])
+                    # print('partition:', partition)
+                    print('key[0]', key[0])
+
+                    new_concepts['temp_' + concept + '_' + str(partition)]['matches'] = {}
+                    # print('DEBUG', new_concepts['temp_'+concept+'_'+str(partition)][key[0]])
+
+
+
+                    new_concepts['temp_'+concept+'_'+str(partition)]['matches'][key[0]] = root[concept]['matches'][key[0]]
+                    new_concepts['temp_' + concept + '_' + str(partition)]['datasources'] = [key[0]]
+                    del root[concept]['matches'][key[0]]
 
             root.update(new_concepts)
 
@@ -391,8 +405,16 @@ def merge_concepts(root, mappings, decision_threshold):
                 if 'temp' not in concept:
                     concept_name = concept_name + '+' + concept
 
-                temp_concept_subtrees['temp'][features_row_keys[i][1]] = root[concept][features_row_keys[i][1]]
-                del root[concept][features_row_keys[i][1]]
+
+                print('DEBUG', concept)
+                print('DEBUG', features_row_keys)
+                print('DEBUG', features_row_keys[i])
+                print('DEBUG', features_row_keys[i][1])
+
+                temp_concept_subtrees['temp']['matches'] = {}
+                temp_concept_subtrees['temp']['matches'][features_row_keys[i][1]] = root[concept]['matches'][features_row_keys[i][1]]
+                temp_concept_subtrees['temp']['datasources'] = list(set([features_row_keys[i][1]] + root[concept]['datasources']))
+                del root[concept]['matches'][features_row_keys[i][1]]
 
             root[concept_name] = temp_concept_subtrees['temp']
 

@@ -1,0 +1,78 @@
+{
+  "drainage monitoring stations": [
+    "facilities",
+    "water valves",
+    "water",
+    "education",
+    "school"
+  ],
+  "park natural areas": [
+    "facilities",
+    "water valves",
+    "water",
+    "recreation",
+    "education",
+    "exercise",
+    "school"
+  ],
+  "park outdoor recreation facilities": [
+    "education",
+    "nature",
+    "donation",
+    "water valves",
+    "valves",
+    "recreation",
+    "gates",
+    "park",
+    "facilities",
+    "crossing",
+    "structure",
+    "water",
+    "exercise",
+    "school"
+  ],
+  "park paths and trails": [
+    "exercise",
+    "facilities",
+    "water valves",
+    "water",
+    "recreation",
+    "education",
+    "school"
+  ],
+  "park structures": [
+    "recreation",
+    "education",
+    "school",
+    "water valves",
+    "valves",
+    "crossing",
+    "water",
+    "gates"
+  ],
+  "railway crossings": [
+    "facilities",
+    "water valves",
+    "water",
+    "education",
+    "school",
+    "valves",
+    "crossing"
+  ],
+  "secondary school catchments": [
+    "education",
+    "recreation",
+    "school"
+  ],
+  "water valves": [
+    "water valves",
+    "valves",
+    "gates",
+    "facilities",
+    "crossing",
+    "water",
+    "recreation",
+    "education",
+    "school"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "park horticultural beds": [
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "activities",
+    "donation"
+  ],
+  "park lights": [
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "activities",
+    "donation"
+  ],
+  "park outdoor recreation facilities": [
+    "facilities",
+    "sports",
+    "exercise",
+    "activities",
+    "fun",
+    "structure",
+    "environment",
+    "donation",
+    "park",
+    "nature",
+    "parks",
+    "green",
+    "health",
+    "fields",
+    "recreation",
+    "dedication"
+  ],
+  "park paths and trails": [
+    "activities",
+    "exercise",
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "donation"
+  ],
+  "park playgrounds": [
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "activities",
+    "donation"
+  ],
+  "park potential donation bench locations": [
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "activities",
+    "donation"
+  ],
+  "park sports fields": [
+    "facilities",
+    "sports",
+    "fun",
+    "donation",
+    "fields",
+    "recreation",
+    "dedication",
+    "activities",
+    "exercise"
+  ],
+  "park structures": [
+    "sports",
+    "fun",
+    "donation",
+    "recreation",
+    "dedication",
+    "activities"
+  ],
+  "park unimproved parkland": [
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "activities",
+    "donation"
+  ],
+  "parks": [
+    "recreation",
+    "sports",
+    "fun",
+    "dedication",
+    "facilities",
+    "fields",
+    "activities",
+    "exercise",
+    "donation"
+  ]
+}

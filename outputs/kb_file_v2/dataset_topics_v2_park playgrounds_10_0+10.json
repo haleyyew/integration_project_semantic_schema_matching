@@ -1,0 +1,50 @@
+{
+  "drainage erosion protection works": [
+    "preservation",
+    "protection",
+    "transportation",
+    "recreation"
+  ],
+  "greenways": [
+    "recreation",
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "important trees": [
+    "recreation",
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "park playgrounds": [
+    "protection",
+    "playground",
+    "transportation",
+    "preservation",
+    "recreation"
+  ],
+  "road edges": [
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "sanitary chambers": [
+    "recreation",
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "water pipe bridges": [
+    "recreation",
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "water sampling stations": [
+    "recreation",
+    "preservation",
+    "protection",
+    "transportation"
+  ]
+}

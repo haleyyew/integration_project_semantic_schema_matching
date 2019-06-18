@@ -492,6 +492,7 @@ def update_kb_json(kb, match_entry):
     example_values = match_entry['example_values']
     data_type = match_entry['data_type']
 
+    if concept not in kb: kb[concept] = {} # TODO this is work around
     kb_concept = kb[concept]
     # kb_concept_matches = kb_concept['matches']
     # kb_concept_matches[datasource] =
@@ -511,7 +512,7 @@ class Paths:
     curr_time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
     kb_file_p = "./outputs/kb_file_"+curr_time+".json"
-    kb_file_const_p = "./outputs/kb_file.json"
+    kb_file_const_p = "./outputs/kb_file_local_mapping.json"
     pair_dict_all_p = "./outputs/pair_dict_all_" + curr_time + ".json"
     dataset_topics_p = "./outputs/dataset_topics_"+curr_time+".json"
 

@@ -1,0 +1,298 @@
+{
+  "drainage catch basins": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation",
+    "donation",
+    "detention",
+    "drainage",
+    "drainage catchments",
+    "depth",
+    "rain",
+    "below ground",
+    "above ground"
+  ],
+  "drainage detention ponds": [
+    "detention ponds",
+    "dedication",
+    "detention",
+    "protection",
+    "playground",
+    "below ground",
+    "donation",
+    "drainage",
+    "drainage catchments",
+    "depth",
+    "railway",
+    "spillway",
+    "above ground"
+  ],
+  "drainage devices": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation",
+    "donation",
+    "detention",
+    "drainage",
+    "drainage catchments",
+    "rain",
+    "below ground",
+    "above ground"
+  ],
+  "drainage erosion protection works": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "drainage flood control": [
+    "protection",
+    "donation",
+    "rainfall",
+    "railway",
+    "rain",
+    "drainage",
+    "drainage catchments",
+    "nature",
+    "spillway",
+    "below ground",
+    "above ground",
+    "storm",
+    "stormwater",
+    "stoplog"
+  ],
+  "drainage major catchments": [
+    "drainage",
+    "drainage catchments",
+    "nature"
+  ],
+  "drainage monitoring stations": [
+    "station",
+    "above ground",
+    "protection",
+    "dedication",
+    "node",
+    "detention ponds",
+    "stormwater",
+    "storm",
+    "donation",
+    "sampling",
+    "nature",
+    "drainage",
+    "below ground",
+    "rain",
+    "depth",
+    "monitor",
+    "control",
+    "rainfall",
+    "spillway",
+    "railway",
+    "playground",
+    "health",
+    "stoplog",
+    "preservation",
+    "detention",
+    "sports",
+    "recreation",
+    "transportation",
+    "fun",
+    "quality",
+    "drainage catchments"
+  ],
+  "drainage pump stations": [
+    "protection",
+    "dedication",
+    "donation",
+    "detention",
+    "sports",
+    "storm",
+    "drainage",
+    "drainage catchments",
+    "nature",
+    "depth",
+    "monitor"
+  ],
+  "garbage recycling collection days": [
+    "nature"
+  ],
+  "greenways": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "heritage routes": [
+    "recreation",
+    "preservation",
+    "dedication"
+  ],
+  "important trees": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "park horticultural beds": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation",
+    "detention"
+  ],
+  "park horticultural zones": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation",
+    "detention"
+  ],
+  "park lights": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation",
+    "detention"
+  ],
+  "park natural areas": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "below ground",
+    "donation",
+    "detention",
+    "quality",
+    "nature",
+    "depth"
+  ],
+  "park outdoor recreation facilities": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation",
+    "detention"
+  ],
+  "park paths and trails": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "donation",
+    "nature",
+    "depth"
+  ],
+  "park potential donation bench locations": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "donation",
+    "detention"
+  ],
+  "park sports fields": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "fun",
+    "sports",
+    "donation",
+    "detention"
+  ],
+  "park structures": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "below ground",
+    "donation",
+    "detention",
+    "quality",
+    "nature",
+    "drainage catchments"
+  ],
+  "park unimproved parkland": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "playground",
+    "below ground",
+    "donation",
+    "detention"
+  ],
+  "railway crossings": [
+    "donation",
+    "rainfall",
+    "railway",
+    "rain",
+    "quality",
+    "nature"
+  ],
+  "road edges": [
+    "preservation",
+    "protection",
+    "transportation"
+  ],
+  "sanitary chambers": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation"
+  ],
+  "sanitary laterals": [
+    "protection",
+    "donation",
+    "depth",
+    "below ground",
+    "above ground"
+  ],
+  "sanitary nodes": [
+    "protection",
+    "donation",
+    "sports",
+    "storm"
+  ],
+  "terrestrial hubs": [
+    "nature"
+  ],
+  "vehicular bridges": [
+    "nature",
+    "drainage catchments"
+  ],
+  "water fittings": [
+    "preservation",
+    "protection",
+    "transportation",
+    "donation",
+    "depth",
+    "below ground",
+    "above ground"
+  ],
+  "water pipe bridges": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation",
+    "donation",
+    "sports",
+    "storm",
+    "drainage catchments"
+  ],
+  "water sampling stations": [
+    "recreation",
+    "preservation",
+    "dedication",
+    "protection",
+    "transportation",
+    "donation",
+    "quality",
+    "nature"
+  ]
+}
