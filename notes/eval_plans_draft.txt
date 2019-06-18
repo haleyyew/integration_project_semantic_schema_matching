@@ -1,39 +1,3 @@
-1.      Create a more detailed outline, especially for the evaluation section
-(Some ideas are from Beyond established knowledge graphs-recommending web datasets for data linking. ICWE 2016 Sections 3.1, 3.2, 3.4)
-- There are three common types of experiments for evaluating recommendations: offline evaluation without user interaction, user studies, and online evaluation when the system is being used by real users. We will only use offline evaluation. The recommendation process is simulated by using a query table to find additional tables that can be linked through common topics, the semantic labeling of each table is simulated by recommending topics per table, as well as indicating the topics each pair of tables share in common. 
-- For the evaluation benchmark, we chose three different domains in the repository, and select 10 to 20 tables per domain. 
-- We will use 3-fold cross validation (increase fold if needed), where the set of datasets are randomly chosen as the training data or the testing data. 
-- The preprocessing procedure for each dataset consists of collecting statistics for the table, collecting unique values in tables, compute data distributions, computing an approximate set of topics (where some may not be in the vocabulary, and therefore will not end up in the final recommendation) per dataset, and building the indexes that will be needed to search for information about the dataset and to compare values between datasets.
-- We randomly choose one table as the query table.
-- We do not have any baseline methods to compare our approach with. We implement a much simpler version of the recommendation system, omitting many techniques that we though could have enhanced the performance.
-- Since the gold standard was created by us, we do not have full confidence for its correctness. Therefore we inspect the results of the recommentation during evaluation, and add any topics that we missed or remove topics that are clearly incorrect. We will not count this period as part of the accuracy evaluation. We call this period as the burn-in.
-- [** I drew a system architecture diagram, it's attached below]
-
-
-2.      Explain where you’re planning on getting the gold standard.
-(Some ideas are from Table Union Search on Open Data. VLDB 2018 Section 6.3.1)
-- There is no available ground truth for the set of topics per dataset, we will manually find the topics for each dataset, in addition to the existing tags and groups that were used as the initial set of topics
-- There are around 700 tags and groups in the existing repository, we will only consider these as our vocabulary, and not consider any other topics that are out of scope of the vocabulary
-- Many datasets do not contain enough information in the metadata in order to derive the correct topics, we will omit these tables from the evaluation 
-- We use the existing metadata to help us find the additional topics per dataset. For example, the dataset name and the sentence descriptions of the dataset often contain enough information for us to derive additional topics from the vocabulary. We also consider attribute names and sample values for each attribute.
-- While considering each dataset, we also have access to all the other datasets that share at least one topic. This allows us to find out any topics that the other datasets have but the current dataset does not have. By accessing multiple datasets at the same time, we are able to normalize the topics such that all datasets will end up having the same set of topics if the datasets share many common characteristics.
-- We created a user interaction tool to speed up the gold standard generation process. We use clustering of the topics in the vocabulary to find all topics that are semantically close using WordNet. We use N-gram to compare sequences of characters between topic words, and recommend clusters topics that are similar to dataset attribute names. We can choose to accept or reject the recommended topics, the accepted topics are added to the gold standard. We iteratively process each dataset, and we have access to all datasets and their metadata throughout this process.
-- The gold standard generated will be validate by other database experts, by providing them with the vocabulary containing around 700 topics, as well as all the metadata available for each dataset.
-- [** Note: Since there will be a greater stochasticity for evaluating the attribute-to-topic correspondences, we will discard attribute-to-topic correspondences generated, and only evaluate the topics generated per dataset]
-
-
-
-
-I’m going to talk about how the evaluation is done in addition to what I outlined last week:
-Accuracy will be measured in terms of how many correct tables are retrieved for the query table, and how many correct topics are generated for the set of tables . We note that evaluation of the topics will only be on the topics that are related to the query table. The retrieved tables may contain many other topics that are not related to the query table, these will not be evaluated, and our approach will not include these extra topics in the recommended result. The baseline approach will be a minimal table search, with existing topics included for each table without modification. We compare the baseline with a minimal implementation of the proposed approach that only uses WordNet and N-gram for comparing data values. Recall that our proposed approach performs value comparisons in various steps, including creating topic-to-attribute correspondences at the preprocessing stage, performing topic-to-topic comparisons at the iterative table search stage, performing attribute-to-attribute comparisons in between table search iterations. We also evaluate our approach without creating probabilities for each subset of topics for ranking, we instead recommend all of the topics as the result. It is possible to compare our approach at recommending topics with an existing approach proposed by De Una et al. However, this is difficult since it involves modifying the our inputs for their algorithm. De Una accepts a schema and an ontology as input, and then perform semantic labeling of the attributes. We let the topics be part of an ontology, and run the algorithm for each table found by the table search, and extract all topics that were attached to an attribute at the end of their algorithm. 
-
-The validation of the gold standard will be as follows (ballpark):
-There will be a set of (A query table containing values for each column, table name, table description sentences, table topics. And a number of other tables that are related to the query table, along with the table name, description, and topics that are relevant to the query table)
-Another set that needs validation is a set of attribute-to-attribute correspondences. Each attribute has a corresponding column in the table containing values, and is given the table name, description, and topics. Check if the attribute-to-attribute correspondence makes sense.
-
-
-
-
 To reduce stochasticity in the evaluation, the topics computed from
 text items DL are drawn from the existing vocabulary of the tags
 collection in DL. Precision and recall will be measured between the
@@ -63,3 +27,61 @@ features in algorithm. Note that due to the special scenario (web
 data with useful metadata available, given a query table, and create
 semantic labelings), cannot compare with related work because
 none has this much specificity in their problem definition.
+
+
+
+1.      Create a more detailed outline, especially for the evaluation section
+(Some ideas are from Beyond established knowledge graphs-recommending web datasets for data linking. ICWE 2016 Sections 3.1, 3.2, 3.4)
+- There are three common types of experiments for evaluating recommendations: offline evaluation without user interaction, user studies, and online evaluation when the system is being used by real users. We will only use offline evaluation. The recommendation process is simulated by using a query table to find additional tables that can be linked through common topics, the semantic labeling of each table is simulated by recommending topics per table, as well as indicating the topics each pair of tables share in common. 
+- For the evaluation benchmark, we chose three different domains in the repository, and select 10 to 20 tables per domain. 
+- We will use 3-fold cross validation (increase fold if needed), where the set of datasets are randomly chosen as the training data or the testing data. 
+- The preprocessing procedure for each dataset consists of collecting statistics for the table, collecting unique values in tables, compute data distributions, computing an approximate set of topics (where some may not be in the vocabulary, and therefore will not end up in the final recommendation) per dataset, and building the indexes that will be needed to search for information about the dataset and to compare values between datasets.
+- We randomly choose one table as the query table.
+- We do not have any baseline methods to compare our approach with. We implement a much simpler version of the recommendation system, omitting many techniques that we though could have enhanced the performance.
+- Since the gold standard was created by us, we do not have full confidence for its correctness. Therefore we inspect the results of the recommentation during evaluation, and add any topics that we missed or remove topics that are clearly incorrect. We will not count this period as part of the accuracy evaluation. We call this period as the burn-in.
+- [** I drew a system architecture diagram, it's attached below]
+
+
+2.      Explain where you’re planning on getting the gold standard.
+(Some ideas are from Table Union Search on Open Data. VLDB 2018 Section 6.3.1)
+- There is no available ground truth for the set of topics per dataset, we will manually find the topics for each dataset, in addition to the existing tags and groups that were used as the initial set of topics
+- There are around 700 tags and groups in the existing repository, we will only consider these as our vocabulary, and not consider any other topics that are out of scope of the vocabulary
+- Many datasets do not contain enough information in the metadata in order to derive the correct topics, we will omit these tables from the evaluation 
+- We use the existing metadata to help us find the additional topics per dataset. For example, the dataset name and the sentence descriptions of the dataset often contain enough information for us to derive additional topics from the vocabulary. We also consider attribute names and sample values for each attribute.
+- While considering each dataset, we also have access to all the other datasets that share at least one topic. This allows us to find out any topics that the other datasets have but the current dataset does not have. By accessing multiple datasets at the same time, we are able to normalize the topics such that all datasets will end up having the same set of topics if the datasets share many common characteristics.
+- We created a user interaction tool to speed up the gold standard generation process. We use clustering of the topics in the vocabulary to find all topics that are semantically close using WordNet. We use N-gram to compare sequences of characters between topic words, and recommend clusters topics that are similar to dataset attribute names. We can choose to accept or reject the recommended topics, the accepted topics are added to the gold standard. We iteratively process each dataset, and we have access to all datasets and their metadata throughout this process.
+- The gold standard generated will be validate by other database experts, by providing them with the vocabulary containing around 700 topics, as well as all the metadata available for each dataset.
+- [** Note: Since there will be a greater stochasticity for evaluating the attribute-to-topic correspondences, we will discard attribute-to-topic correspondences generated, and only evaluate the topics generated per dataset]
+
+
+
+I’m going to talk about how the evaluation is done in addition to what I outlined last week:
+Accuracy will be measured in terms of how many correct tables are retrieved for the query table, and how many correct topics are generated for the set of tables . We note that evaluation of the topics will only be on the topics that are related to the query table. The retrieved tables may contain many other topics that are not related to the query table, these will not be evaluated, and our approach will not include these extra topics in the recommended result. The baseline approach will be a minimal table search, with existing topics included for each table without modification. We compare the baseline with a minimal implementation of the proposed approach that only uses WordNet and N-gram for comparing data values. Recall that our proposed approach performs value comparisons in various steps, including creating topic-to-attribute correspondences at the preprocessing stage, performing topic-to-topic comparisons at the iterative table search stage, performing attribute-to-attribute comparisons in between table search iterations. We also evaluate our approach without creating probabilities for each subset of topics for ranking, we instead recommend all of the topics as the result. It is possible to compare our approach at recommending topics with an existing approach proposed by De Una et al. However, this is difficult since it involves modifying the our inputs for their algorithm. De Una accepts a schema and an ontology as input, and then perform semantic labeling of the attributes. We let the topics be part of an ontology, and run the algorithm for each table found by the table search, and extract all topics that were attached to an attribute at the end of their algorithm. 
+
+The validation of the gold standard will be as follows (ballpark):
+There will be a set of (A query table containing values for each column, table name, table description sentences, table topics. And a number of other tables that are related to the query table, along with the table name, description, and topics that are relevant to the query table)
+Another set that needs validation is a set of attribute-to-attribute correspondences. Each attribute has a corresponding column in the table containing values, and is given the table name, description, and topics. Check if the attribute-to-attribute correspondence makes sense.
+
+
+
+
+
+There are 3 baselines to compare with, the first is breaking down clustering and topic creation in two separate steps, the second is using supervised learning to perform classification for each column of a table where a class is a topic in the vocabulary, the third is using simplified table search to find related tables and then use brute force table column comparisons to find topic clusters.
+
+
+
+
+select a table from 90 tables, need to have at least 5 existing topics and 5 attrs
+find all other tables that share topic overlaps (overlapping new topics too), thresold if needed
+find an equal number of tables that do not share overlapping topics, thresold if needed
+take k tables samples from each group, where k = 5, 10, 20, 40
+let one table be the guiding table, with the same selection criteria, do this for 3 times for each sample
+measure accuracy for each sample with one of the 3 selected guiding table
+average accuracy for every k
+
+accuracy measured by how many correct tables retrieved, and how many correct new topics per table. For topics that are very similar to correct topics, check if correct topics already included, if included, then do not count this similar topic towards recall, but do not penalize for precision. If correct topic not included, then count this similar topic towards both.
+
+
+
+
+Guidline for creating the gold standard. 

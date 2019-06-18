@@ -1111,7 +1111,7 @@ if __name__ == "__main__":
 
 
     # TODO: RUN THIS TO CREATE GOLD STANDARD
-    recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
+    # recommend_labels(dataset_metadata_set, metadata_set, schema_set, datasets_path, datasources_with_tag)
     exit(0)
 
 

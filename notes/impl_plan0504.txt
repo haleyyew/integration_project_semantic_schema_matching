@@ -1,12 +1,52 @@
-community services
-recreation and culture
-environmental services
+datasets preprocessing
+datasets testing set (result based on which query table to begin with)
+training set of attr-attr correspondences
+pick some as query
+plugins for comparisons
+assembling components
+
+
+datasets preprocessing:
+aquatic hubs
+drainage 200 year flood plain
+drainage water bodies
+park specimen trees
+parks
+
+datasets testing set:
+aquatic hubs
+drainage 200 year flood plain
+drainage water bodies
+park specimen trees
+parks
+
+
 
 ['management', 'drain', 'drainage', 'environment', 'land use and development', 'sustainability', 'land use', 'boundaries', 'land use and development', 'land use', 'above ground', 'below ground', 'control', 'land']
 -----
 
 'can', 'house', 'street', 'recycling', 'collection', 'community services', 'garbage', 'on-street', 'waste'
 102,349,656,557,140,1,306,472,736
+
+
+-----
+452,544,531,614,163
+
+[detention pond,detention ponds,facilities,facility,status, owners,plan number,projects,location,spillway,fencing,water,rain,stormwater,infrastructure,municipal,public,private,services]
+
+plan number,fencing
+
+pressure zones
+
+'facilities','facility','status','plan number','projects','owners','location','node','nodes','chambers','elevation'
+
+'basin','structure','infrastructure','catchbasin','park','structure','park','basin','catchbasin','infrastructure'
+
+
+
+community services
+recreation and culture
+environmental services
 
 
 -start saved-

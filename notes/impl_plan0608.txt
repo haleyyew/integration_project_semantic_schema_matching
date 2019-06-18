@@ -1,28 +1,16 @@
 v1: add name matcher 
-v1: add semantic table search
-v2: add word2vec
-v2: add tfidf to values matching
-v0: implement match first, then topic gen
-create gold standard (50)
-create list of eval procedures
+v1: add semantic table search (word2vec)
+v2: add word2vec (for table search, both the topics, and the attr values)
+v2: add tfidf to values matching (should be faster)
 
+v0: implement match first, then topic gen
+v0: classification for attr labelling
+
+//create gold standard (90)
+create list of eval procedures
 the results for larger set of tables
 
 update missed tags
 
 get new topics and mappings locally first
 
-
-
------
-452,544,531,614,163
-
-[detention pond,detention ponds,facilities,facility,status, owners,plan number,projects,location,spillway,fencing,water,rain,stormwater,infrastructure,municipal,public,private,services]
-
-plan number,fencing
-
-pressure zones
-
-'facilities','facility','status','plan number','projects','owners','location','node','nodes','chambers','elevation'
-
-'basin','structure','infrastructure','catchbasin','park','structure','park','basin','catchbasin','infrastructure'

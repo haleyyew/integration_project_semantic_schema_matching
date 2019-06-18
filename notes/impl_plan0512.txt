@@ -1,21 +1,77 @@
-datasets preprocessing
-datasets testing set (result based on which query table to begin with)
-training set of attr-attr correspondences
-pick some as query
-plugins for comparisons
-assembling components
+5/1
+I worked on some implementation last week. In short, I implemented a Hidden Markov model part-of-speech tagger, a Word2Vec word embedding generator, a Latent Dirichlet Allocation topic modelling for documents, hypothesis testing for value overlap between two sets of values, classifier using data distribution, method for combining scores from individual evidences, method for precision and recall calculation from a set of semantic labelings. Here are some notes explaining what I did:
+
+Part-of-speech (POS) using Hidden Markov model (HMM) identifies words in a sentence as a noun, verb, etc. The metadata describing contents of a table contain sentences that describe the table. Many columns also store sentences as values in the table. These sentences are useful for extracting additional topics, or if some sentences are already associated with a topic, then two topics can be compared by comparing their sentences. The sentences cannot be compared directly to determine whether their associated topics or tables are closed related, because many words in the sentences do not provide useful information to characterize what they are describing. For example, words such as ‘very’ or ‘provide’ can appear in any sentence without contributing a lot to distinguish what data are stored in the tables. To quickly identify the useful words in each sentence, we only consider nouns as words that characterize the tables. Therefore, a POS tagger is used to identify nouns from sentences, and the extracted set of nouns can be compared with another set. The POS tagger is trained on external corpuses.
+
+Another way for comparing sentences or long sequences of words is to encode each word as a word embedding vector, and then compare these vectors instead of words. The reason behind this approach is that words that have similar meaning or appear in similar contexts have similar vectors. The metadata as well as the table values can benefit from this approach. For example, a Word2Vec word embedding generator can make comparisons between two sequences of words and produce a score for the similarity between the two sequences. For example, given ‘Books in library’ and ‘Store selling prints’, the Word2Vec model has additional features that computes the distance between these two sequences of words. To permit Word2Vec to generate useful similarity scores, the metadata and the table values are provided for training the Word2Vec model.
+
+Word2Vec is effective at comparing sequences. However, the metadata or the table values might contain words that are not ordered. Therefore a bag-of-words approach for comparisons might be more effective. Latent Dirichlet Allocation (LDA) is a model that takes documents and computes a set of topics. LDA can be used in two ways for comparisons. First, each column in the table can be viewed as a document, and all the columns of the table become the corpus to be trained. When comparing a column from a different table (the query) with the trained model, it is possible to identify the most similar document in the corpus, therefore the most similar column in the table is identified. Furthermore, the dependencies between the columns can also be captured by this approach. Another way for comparisons is to take all sentences in the metadata as a corpus, and train a model. Then, when a query sentence is given, the model can identify the most similar sentence in the corpus. It is important to note that for large documents, LDA can be very slow, therefore not all tables can use this approach.
+
+For many of the methods, comparisons do not have a clear underlying statistical reasoning. Therefore for some of the simpler methods, we provide justification for the comparison scores. When comparing two sets of values, hypothesis testing can be used to measure how likely the two sets are from the same domain. For using a hypergeometric distribution over the domains of the two sets and computing a cumulative probability, the probability can be used to decide whether the null hypothesis that ‘the two sets are from the same domain’ is accepted or rejected. For two sets of word embedding vectors, the mean and variance can be computed for each set, and they are used in a hypothesis test to decide if the two sets are from the same domain.
+
+A much more coarse-grained approach for comparisons is by comparing data distributions instead of with individual values. Features can be extracted from table columns, and we can represent each column as a feature vector. Then a classifier can be trained to identify whether a pair of columns are similar or not. This approach would require training with data that are already labelled as similar or not similar.
+
+The next step is to put these components together in order to work as a whole for comparing tables and metadata. I’m still working on this part. I will provide a system architecture in the next report.
 
 
-datasets preprocessing:
-aquatic hubs
-drainage 200 year flood plain
-drainage water bodies
-park specimen trees
-parks
 
-datasets testing set:
-aquatic hubs
-drainage 200 year flood plain
-drainage water bodies
-park specimen trees
-parks
+
+
+
+5/10
+I’m going to talk about how I used WordNet in various places. WordNet is a database storing the vocabulary of a language, words with similar meanings are grouped, called a Synset. A word may have multiple different meanings, for example, the word ‘park’ might be an area for recreational activities, or might be an area for storing vehicles. The metadata on the web often do not provide information to clarify which meaning a word is used for. This is an issue for understanding the topics of each table. WordNet provides one Synset for each meaning of the word, and we may use additional information in the metadata to find out which Synset (which meaning) the word is used for. For an quick and approximate resolution of the meaning, we use additional data in WordNet, such as the the definition of the Synset, example sentences using the word, the hypernyms and hyponyms of the Synset. We then make a comparison with information provided in the metadata of the table, based on the similarity between data in a Synset and table metadata, we are able to resolve the meaning of a word of the table topic. Even if we are unable to resolve the meaning, we can make a clear statement that we are not sure which of the Synsets we listed is correct for the word.
+
+Another use of WordNet is to find the semantic distance between two words. A word might be related to another word, but it is difficult if we cannot quantify their relatedness. Using WordNet, semantic distance between a pair of Synsets can be measured. Suppose that we were able to resolve which Synset a word refers to, then we can measure the semantic distance between two words by measuring the Synset distance. In out preprocessing stage of the table and metadata, we aim to find the correspondence between a topic and a schema attribute. A quick way is to compare their names and if the names are similar between a topic and an attribute, then we can create a correspondence. The comparison of the names can be aided by the word distance measured by WordNet. In the iterative method stage, we find the correspondence between a pair of schema attributes, and group similar attributes together. The comparison between attribute names can also be aided by WordNet. The final use of WordNet in measuring semantic distance is in the evaluation of the results. The output topics for a table is compared with the gold standard. But it is often the case that the generated topics contain many topics that are not present in the gold standard, and vice versa. However, the generated topics may still be acceptable if the topic words are different but the words are similar in meaning to the words in the gold standard. We use WordNet to find the semantic distance between words and classify a generated topic as correct if the words for a generated topic and the gold standard are highly similar.
+
+To augment the set of topics per table, we need a way to include new topics from the vocabulary of topics. To decide which new topic to include, we can iterate every candidate topic and find how similar it is compared to the existing set of topics (or existing attribute names in the table). Computing a score using WorNet is one option, but we can make a better use of WordNet by making use of the data that WordNet stores and include those data directly into the set of topics. By finding the hypernym and hyponyms for a Synset, we can identify all words that are also present in the vocabulary of the topics. We are also able to find the lowest common hypernym for a pair of Synsets. These additional words can then be included in the set of topics for the table.
+
+
+
+
+
+5/14
+Here's a description of my implementation:
+Since the text items describing a table may be incomplete, the table search task becomes more challenging if only the existing topics are used to find table overlaps. We performed semantic enrichment of topics for each table, where each topic word is associated with one or more WordNet Synsets. Each topic is then expanded by synonyms of the topic words. Next, the query table is compared with each of the other tables by topic overlaps to find the most similar table. A more thorough comparison can be done using word vectors. Once a table is selected, the attribute overlap between the two tables are determined by attribute-to-topic correspondences. An attribute-to-topic correspondence is established if there is enough evidence that the attribute values and the topic belong to approximately the same domain. However, this attribute-to-topic correspondence is not determined directly. Recall in the preprocessing stage of the query table, attribute-to-topic correspondences are established, we do the same for all the other tables. Therefore at the table search stage, many attributes already have a correspondence with a topic within its own table, and only the topics need to be compared between two tables. If a topic from the query table is highly similar to a topic in the searched table, then all attributes that have a correspondence with the query table topic should also have a correspondence with the searched table topic, and vice versa. These searched table topics are classified as having high ‘importance’, and therefore are added to the query table dataset. The additional correspondences are also established. If the two tables have a common topic, then their correspondences are simply merged. Another scenario for correspondences is that topics from the searched dataset might be in the same domain with an attribute in the query dataset, but the query attribute does not have a correspondence with any query table topic, or have a very weak correspondence. Then a correspondence should be established between this attribute and the new topic. The new topic is added to the query table dataset. These topics are classified as having high ‘coverage’. Another scenario is that some attributes in the searched table do not have any correspondences, but are found to have a correspondence with a query table topic, then these correspondences are established, and the attribute is added to the correspondences graph. 
+
+Once new topics are added to the query table dataset, a refinement step needs to be performed to confirm that all the attribute-to-topic correspondences make sense. This step only needs to be performed on the newly added attributes from the searched table. Each newly added attribute is compared with a representative sample for all the previously-existing attributes with the same topic correspondence. If there is enough evidence that the newly added attribute is not similar to the representative sample, then the attribute should not have a correspondence with the topic, and the correspondence is removed. Otherwise, the correspondence is kept, and the representative sample for the topic is updated with a set of values in the newly added attribute. We note that for each group of attributes with the same topic correspondence, they form one partition, and the refinement step can be performed in parallel, independent of other partitions. Next, for any attribute whose correspondence was removed, it is compared with other topic clusters. If there is enough evidence that a correspondence should be established with a topic, then the attribute is added to the cluster, and the representative sample for the topic is updated. An attribute can have correspondences with multiple topics.
+
+We must emphasize on the quality of the newly added topics, we do not want to add just any topic to the query table that do not reflect the data contents of the table. But we also want to add as many topics to the table as possible. Therefore there is a trade off for adding topics. This issue can be discussed by relating to data exploration. There are two modalities for data exploration, one being ‘horizontal’ and another being ‘vertical’. Horizontal data exploration finds data that are in the same class as the query data, whereas vertical data exploration finds data that are specific properties about the query data. We aim to perform vertical exploration, with limited horizontal exploration, when adding new topics. This can be achieved by finding evidence from the data and metadata in the query dataset, that the topic is a domain for a subset of values in the query data values or metadata. At the table search stage before adding topics, the overlap between the query table topics and the searched table topics also need to be evaluated with some care. The topics set for a table can contain out-of-vocabulary topics, which were expanded during the topic enrichment stage. The overlap between topics can also include these out-of-vocabulary topics, but only if their semantic meaning is a child of a in-vocabulary topic in the table. 
+
+The process is done iteratively for comparing tables with the query table and adding topics. After one table is compared with the query table and topics were added, the next table selected to be compared can have topic overlap with either the original query table topics or the newly added ones. Any table that have done comparisons with the query table can be selected again for comparison. This process is done until no more tables can be selected because all the topics that should have been added are already added. We remove a topic from a searched table after it has been added to the query table, so that the table does not get selected again for these topic overlaps.
+
+Once topics have been added, a correspondence graph has been created with many-to-many relationships between topics and attributes. However, many of the correspondences are weak, and if we include all of the topics in this graph as the final output, then many topics might not be relevant. Therefore we need a way to prune irrelevant topics. We use a probabilistic approach, by assigning probabilities to each subset of the topics, so that the subset with the highest probability is the most relevant subset of topics. We first enumerate all the one-to-one correspondences set between table attributes and topics, this is done for each table individually. Then use linear programming to assign probabilities to each set of one-to-one correspondences. We note that the enumerated correspondences do not need to be one-to-one, but the number of possible sets is much larger, and even more difficult to solve. Finally, for each of the set of one-to-one correspondences, we transfer the topics back to each table that are found to be relevant to the query table. The final probability for subset of topics for the retrieved tables is the product of each subset probability in each table. And the answers can be ranked by the final probability.
+
+
+
+
+
+5/16
+The abstract I submitted to CIKM (I won't be able to submit a paper):
+Creating topics for open data tables search in a pay-as-you-go fashion by semantic labeling with metadata
+Open data is a collection of resources created by many individuals, the collection contains a rich repertoire of information. However, due to the lack of standardized representation of data, users cannot easily find all the related data without manual procedures such as searching, browsing, and filtering. Once relevant tables are found, it is also difficult to understand how each table relates to the query table due to the lack of standardized table descriptions. We consider the scenario where a query table is given, and the goal is to find all tables related to the query table. We propose an automated approach to search tables and label each table with standardized topics such that tables containing overlapping information have one or more shared topics. We make the assumption that each table already contains some metadata describing the contents of the table, and develop an iterative method to enrich tables with topics, while enforcing a topic is added to all tables that are in the topic's domain. Different from previous approaches, we create fine-grained semantic labeling between topic and attribute in a table, which uses evidence from table contents as well as table metadata. While considering the difficulty of generating topics for all tables in the open data repository, we only generate topics for the tables found by the search in a pay-as-you-go fashion. We present a probabilistic solution to model uncertainty in the tables found by the search and topics we generated. We evaluate our method with a gold standard we created, which shows that the tables found and the topics generated have a high recall without sacrificing too much precision.
+
+
+
+
+
+6/4
+input datasets: ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees']
+guiding table: 'park screen trees' for ver1, 'parks' for ver2 (TODO need to be the same)
+
+output:
+ver1:
+runtime: 135.718 sec (ends after 2nd iteration)
+precision: 1.0, recall: 0.042
+avg num of new topics per dataset added: 0.0
+
+ver2:
+runtime: 16.996 sec (ends after 2nd iteration)
+precision: 0.545, recall: 0.191
+avg num of new topics per dataset added: 3.8
+
+
+
+
+
+6/13
+Here's a quick update for this past week. I created a initial gold standard set containing augmented topics for 90 tables spanning 5 domains. The goal is to evaluate using the gold standard, with a series of evaluation plans I still need to create.  While generating the gold standard, I had to define some guidelines for how to augment topics, I found that this is the best I can do, I'm going to explain that this procedure does not cause too much bias.
