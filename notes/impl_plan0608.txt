@@ -20,3 +20,9 @@ get new topics and mappings locally first
 fix precision
 fix recall
 fix runtime
+
+
+
+priority:
+word2vec
+classification
