@@ -769,15 +769,18 @@ if __name__ == "__main__":
         print('contexts to json')
         settj.one_full_run()
 
-        print('local mappings')
-        bmmn.load_metadata(bmmn.p, bmmn.m)
-        bmmn.m.datasources_with_tag = datasources_with_tag
-        bmmn.local_mappings(bmmn.p, bmmn.m, bmmn.r)
+    #
+    print('local mappings')
+    bmmn.load_metadata(bmmn.p, bmmn.m)
+    bmmn.m.datasources_with_tag = datasources_with_tag
+    # bmmn.local_mappings(bmmn.p, bmmn.m, bmmn.r)
+    bmmn.local_mappings_full(bmmn.p, bmmn.m, bmmn.r)
 
     dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
 
-    # exit(0)
+    #
+    exit(0)
 
     for k,table in enumerate(table_setup['guiding_tables']):
         if k % 2 != 0: continue # TODO for now just try 5 tables

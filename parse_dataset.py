@@ -651,6 +651,8 @@ def clean_name(st, has_prefix=False, has_extension=False):
         st = st[0:-1]
     st = ' '.join(st)
     st = st.lower()
+
+    st = st.strip()
     return st
 
 def parse_metadata_files():

@@ -25,4 +25,4 @@ fix runtime
 
 priority:
 word2vec
-classification
+classification => training data with enough labels
