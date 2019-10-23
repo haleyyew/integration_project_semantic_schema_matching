@@ -26,3 +26,203 @@ fix runtime
 priority:
 word2vec
 classification => training data with enough labels
+
+
+for each eval plan:
+
+for each implementation:
+
+output:
+ver1:
+runtime: 135.718 sec (ends after 2nd iteration)
+precision: 1.0, recall: 0.042
+avg num of new topics per dataset added: 0.0
+
+ver2:
+runtime: 16.996 sec (ends after 2nd iteration)
+precision: 0.545, recall: 0.191
+avg num of new topics per dataset added: 3.8
+
+-----
+
+implementation v1
+mix: 0+10 precision= 0.6 recall= 0.019255594883410995 avg_new= 0.0
+mix: 10+0 precision= 0.916969696969697 recall= 0.05475037008330882 avg_new= 0.14571428571428574
+mix: 5+5 precision= 0.906984126984127 recall= 0.050585595526185426 avg_new= 0.18714285714285714
+total runtime = 1188 sec
+
+implementation v2
+mix: 0+10 precision= 0.1439989618896871 recall= 0.13918832203310497 avg_new= 8.380026990553306
+mix: 10+0 precision= 0.26017502702639245 recall= 0.2145249125112642 avg_new= 9.140935828877005
+mix: 5+5 precision= 0.15756175289279423 recall= 0.18839431379678725 avg_new= 10.088860253131353
+total runtime = 1603 sec
+
+
+*****
+*****
+brute force: 	k=3 k=10 compare with instance
+iter: 			k=3 with 2 other combo
+data: 			training hybrid weights, k=3 k=10
+iter+data: 		k=3 with 2 other combo, redo, get weights again from hybrid, compare with word2vec
+*****
+*****
+
+
+--
+--
+brute force
+k=5:
+
+instance + schema
+parks, drainage water bodies, park screen trees, aquatic hubs, 
+(park specimen trees)
+guiding table: parks
+preclustering: 1017 sec
+clustering: 0.02668595314025879 sec
+
+schema:
+parks, drainage water bodies, park screen trees, aquatic hubs, park specimen trees
+guiding table: parks
+preclustering: preclustering time 3.2487552165985107 sec
+clustering: clustering time 0.04240083694458008 sec
+
+k=10:
+0+10: preclustering time 7.854350805282593 sec + clustering time 0.16939687728881836 sec
+5+5: preclustering time 5.3828957080841064 sec + clustering time 0.24613308906555176 sec
+10+0: preclustering time 8.019681930541992 sec + clustering time 0.21043992042541504 sec
+--
+
+iter
+k=5:
+'aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees'
+guiding table: 'park screen trees' for iter, 'parks' for iter+data
+k=10:
+  "parks": {
+    "new_topics": [
+      "activities",
+      "classification",
+      "environment",
+      "environmental services",
+      "exercise",
+      "facilities",
+      "facility",
+      "green",
+      "health",
+      "land use",
+      "location",
+      "management",
+      "nature",
+      "parkland",
+      "parks",
+      "public",
+      "recreation",
+      "recreation and culture",
+      "road",
+      "status",
+      "walk",
+      "walking",
+      "youth"
+    ],
+    "old_groups": [
+      "environmental services"
+    ],
+    "old_topics": [
+      "activities",
+      "environment",
+      "green",
+      "health",
+      "nature",
+      "parks",
+      "walk",
+      "youth"
+    ],
+    "path": "new_topics_[parks].txt",
+    "samples": {
+      "10": {
+        "0+10": [
+          [],
+          [
+            "drainage dyke infrastructure",
+            "park outdoor recreation facilities",
+            "sanitary lift stations",
+            "water utility facilities",
+            "water valves",
+            "water meters",
+            "sanitary nodes",
+            "park lights",
+            "heritage routes",
+            "water assemblies"
+          ]
+        ],
+        "10+0": [
+          [
+            "parks",
+            "park paths and trails",
+            "park natural areas",
+            "park specimen trees",
+            "park unimproved parkland",
+            "park outdoor recreation facilities",
+            "park sports fields",
+            "park structures",
+            "trails and paths",
+            "walking routes"
+          ],
+          []
+        ],
+        "5+5": [
+          [
+            "parks",
+            "park paths and trails",
+            "park natural areas",
+            "park specimen trees",
+            "park unimproved parkland"
+          ],
+          [
+            "heritage sites",
+            "aquatic hubs",
+            "water fittings",
+            "park sports fields",
+            "road row requirements downtown"
+          ]
+        ]
+      },
+
+-----
+all with parks as base table
+
+for brute, iter, 'iter+data' (no weights)
+parks - 5 tables - 1+4, 3+2 mixes
+
+1+4: parks; heritage sites, water utility facilities, sanitary lift stations, drainage dyke infrastructure
+brute:
+preclustering time 1.1426208019256592 sec
+clustering time 0.05428886413574219 sec
+iter:
+12.40808367729187 sec
+iter+data:
+3.470130205154419
+  prematching time 1+4 and 3+2 5.308987855911255
+
+3+2: parks, park outdoor recreation facilities, park sports fields; water assemblies, road row requirements downtown
+brute:
+preclustering time 2.194416046142578 sec
+clustering time 0.04299807548522949 sec
+iter:
+7.064479112625122 sec
+iter+data:
+22.505346059799194
+
+accuracy:
+
+for 'data'
+training data
+parks - 5 tables - 5+0, 1+4, 3+2 mixes
+        10 tables - 0+10, 10+0, 5+5 mixes
+
+for 'iter+data' (weights)
+parks - same etc
+
+for 'iter+data' (word2vec)
+parks - just table search
+
+vary number of tables as base table set

@@ -192,45 +192,61 @@ def topic_attribute_syn_similarity(syn_attr_dict, syn_top_dict, function, all_to
 
     return score, pair, source_matched
 
-def build_local_context_similarity_matrix_full(topics_contexts, attributes_contexts, source_name, function, all_topics):
+import requests
+
+def topic_attribute_fasttext(topic, attr, server_ip):
+    response = requests.get("http://" + server_ip + ":5000/similarity/" + topic+'__'+attr)
+    # print(topic+'__'+attr)
+    ret_val = 0
+    try:
+        ret_val = float(response.json())
+    except:
+        print('fasttext err:', topic+'__'+attr)
+        pass
+    return ret_val
+
+def build_local_context_similarity_matrix_full(topics_contexts, attributes_contexts, source_name, function, all_topics, server_ip):
 
     topic_names = list(all_topics.keys())
     attribute_names = list(attributes_contexts.keys())
 
     matrix= np.zeros((len(topic_names), len(attribute_names)))
+    matrix2 = np.zeros((len(topic_names), len(attribute_names)))
 
     pair_dict = {}
 
     for i in range(len(topic_names)):
-            print('~~~', topic_names[i])
-            for j in range(len(attribute_names)):
+        print('~~~', topic_names[i])
+        for j in range(len(attribute_names)):
 
-                pair_dict[(source_name, attribute_names[j], topic_names[i])] = None
+            pair_dict[(source_name, attribute_names[j], topic_names[i])] = None
 
-                ds_with_topic = all_topics[topic_names[i]]
+            ds_with_topic = all_topics[topic_names[i]]
 
-                best_val = 0
-                best_ctx = None
+            best_val = 0
+            best_ctx = None
 
-                for k in ds_with_topic:
-                    sim_score_arr = [0, 0, 0]
+            for k in ds_with_topic:
+                sim_score_arr = [0, 0, 0]
 
-                    syn_attr_dict = attributes_contexts[attribute_names[j]]
-                    # print('~~~', topic_names[i], ds_with_topic[k])
-                    syn_top_dict = all_topics[topic_names[i]][k]
+                syn_attr_dict = attributes_contexts[attribute_names[j]]
+                # print('~~~', topic_names[i], ds_with_topic[k])
+                syn_top_dict = all_topics[topic_names[i]][k]
 
-                    sim_score_arr[1], pair1, source_matched = topic_attribute_syn_similarity(syn_attr_dict, syn_top_dict, function, {}, k, topic_names[i])
+                sim_score_arr[1], pair1, source_matched = topic_attribute_syn_similarity(syn_attr_dict, syn_top_dict, function, {}, k, topic_names[i])
 
-                    if sim_score_arr[1] > best_val:
-                        matrix[i, j] = sim_score_arr[1]
-                        best_ctx = k
+                if sim_score_arr[1] > best_val:
+                    matrix[i, j] = sim_score_arr[1]
+                    best_ctx = k
 
-                        pair_dict[(source_name, attribute_names[j], topic_names[i])] = [pair1, best_ctx]  # TODO need the source of topic too
+                    pair_dict[(source_name, attribute_names[j], topic_names[i])] = [pair1, best_ctx]  # TODO need the source of topic too
 
-                    # if matrix[i, j] >= 0.5:
-                    #     print('matrix[i, j]', topic_names[i], attribute_names[j], matrix[i, j])
+                # if matrix[i, j] >= 0.5:
+                #     print('matrix[i, j]', topic_names[i], attribute_names[j], matrix[i, j])
 
-    return matrix, pair_dict
+            #matrix2[i, j] = topic_attribute_fasttext(topic_names[i], attribute_names[j], server_ip)
+
+    return matrix, pair_dict, matrix2
 
 
 def build_local_context_similarity_matrix(topics_contexts, attributes_contexts, source_name, function, all_topics):
@@ -343,6 +359,7 @@ def load_per_source_metadata(p, m, datasources, source_name, pds, bmm):
 
 import pprint
 import os
+from operator import itemgetter
 def initialize_matching_full(p, m, r):
 
     all_topics, attrs_contexts, topic_contexts = load_prematching_metadata(p, m, pds)
@@ -351,7 +368,7 @@ def initialize_matching_full(p, m, r):
 
     pair_dict_all = {}
 
-    kb_curr_file = './outputs/kb_file.json'
+    kb_curr_file = './outputs/kb_file.json' # TODO <=
     if not os.path.exists(kb_curr_file):
         with open(kb_curr_file, 'w') as fp:
             json.dump({}, fp, sort_keys=True, indent=2)
@@ -364,7 +381,9 @@ def initialize_matching_full(p, m, r):
 
     datasources = {}
     for source_name in m.datasources_with_tag:
-        if source_name in m.kbs: continue
+        if source_name in m.kbs:
+            print('--already have local mapping ', source_name)
+            continue       # already have local mapping, skip
 
 
         _, _, attributes_list, schema, _, _ = load_per_source_metadata(
@@ -378,17 +397,18 @@ def initialize_matching_full(p, m, r):
         sim_matrix1 = build_local_similarity_matrix(all_topics, attributes_list, r)
 
         if source_name not in attrs_contexts:
-            print('ERROR: DATASOURCE NOT FOUND', source_name, '\n', '-----')
+            print('ERROR: DATASOURCE NOT FOUND', source_name, '\n', '---!--')
             continue
         attribute_contexts = attrs_contexts[source_name]
 
         # topic_contexts is all datasets, attribute_contexts is per dataset
-        sim_matrix2, pair_dict = build_local_context_similarity_matrix_full(topic_contexts, attribute_contexts, source_name, wordnet, all_topics)
+        sim_matrix2, pair_dict, sim_matrix3 = build_local_context_similarity_matrix_full(topic_contexts, attribute_contexts, source_name, wordnet, all_topics, p.server_ip)
 
         pprint.pprint(pair_dict)
 
         sim_frame1 = pd.DataFrame(data=sim_matrix1, columns=attributes_list, index=all_topics.keys())
         sim_frame2 = pd.DataFrame(data=sim_matrix2, columns=list(attribute_contexts.keys()), index=all_topics.keys())
+        sim_frame3 = pd.DataFrame(data=sim_matrix3, columns=list(attribute_contexts.keys()), index=all_topics.keys())
 
         pair_dict_all.update(pair_dict)
         attrs = list(sim_frame1.columns.values)
@@ -420,16 +440,31 @@ def initialize_matching_full(p, m, r):
         for attr_i in range(len(attrs)):
             scores1 = [[attr_i, attrs[attr_i], sim_frame1.loc[topic, attrs[attr_i]], topic, None] for topic in all_topics]
             scores2 = [[attr_i, attrs[attr_i], sim_frame2.loc[topic, attrs[attr_i]], topic, pair_dict[(source_name,pds.clean_name(attrs[attr_i]),topic)]] for topic in all_topics]
+            scores3 = [[attr_i, attrs[attr_i], sim_frame3.loc[topic, attrs[attr_i]], topic, None] for topic in
+                       all_topics]
 
             score_len = 0
             if len(scores1) != 0: score_len = len(scores1[0])
 
+            # TODO change score to weighted average
+            weights = [0.40,0.6,0.0]    # TODO train the weights
             scores = []
             for i in range(len(scores1)):
-                if scores1[i][2] >= scores2[i][2]:
-                    scores.append([attr_i, attrs[attr_i],scores1[i][2],scores1[i][3], scores1[i][4], score_names[0]])
-                else:
-                    scores.append([attr_i, attrs[attr_i],scores2[i][2],scores2[i][3], scores2[i][4], score_names[1]])
+
+                scores_tmp = [scores1[i][2], scores2[i][2], scores3[i][2]]
+                index, element = max(enumerate(scores_tmp), key=itemgetter(1))
+
+
+                # if scores1[i][2] >= scores2[i][2]:
+                #     scores.append([attr_i, attrs[attr_i],scores1[i][2],scores1[i][3], scores1[i][4], score_names[0]])
+                # else:
+                #     scores.append([attr_i, attrs[attr_i],scores2[i][2],scores2[i][3], scores2[i][4], score_names[1]])
+
+
+                score_tmp = weights[0]*scores_tmp[0]+weights[1]*scores_tmp[1]+weights[2]*scores_tmp[2]
+
+                scores.append([attr_i, attrs[attr_i], score_tmp, scores2[i][3], scores2[i][4], score_names[index]])
+
 
             scores = sorted(scores, key=lambda tup: tup[2])
             scores.reverse()
@@ -706,6 +741,8 @@ class Paths:
     enriched_topics_dir = './outputs/enriched_topics/'
     enriched_topics_json_dir = "./outputs/dataset_topics_enriched.json"
 
+    server_ip = '34.222.58.64'
+
     def __init__(self, **kwds):
         self.__dict__.update(kwds)
 
@@ -718,7 +755,7 @@ class Metadata:
     datasources_with_tag = None
     kbs = {}
     pair_dict_all = None
-    score_names = ['ngram', 'wordnet', 'overlap']
+    score_names = ['ngram', 'wordnet', 'fasttext']
 
     dataset_topics_contexts = None
     dataset_attributes_contexts = None

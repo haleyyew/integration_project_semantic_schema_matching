@@ -403,7 +403,6 @@ def one_full_run(input_topics):
     kb = {}
 
     break_out = False
-    t0 = time.time()
 
     dataset_metadata_set, metadata_set, schema_set, datasources_with_tag = load_metadata(p, input_topics, input_datasets)
     datasources_index = datasources_with_tag
@@ -498,10 +497,6 @@ def one_full_run(input_topics):
     kb_file = open(p.kb_file_p_one_table_run, "w")
     json.dump(kb, kb_file, indent=2, sort_keys=True)
 
-    t1 = time.time()
-    total = t1 - t0
-    print('TOTAL time %s sec' % (total))
-
     return
 
 import pathlib
@@ -521,8 +516,12 @@ if __name__ == "__main__":
     dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
 
+    t0 = time.time()
+
+    table_setup['guiding_tables'] = {'parks': ['parks']} # TODO <<<=== this is the base table, change every time
+
     for k,table in enumerate(table_setup['guiding_tables']):
-        if k % 2 != 0: continue # TODO for now just try 5 tables
+        if k % 2 != 0: continue # for now just try 5 tables
 
         dataset_name = table_setup['guiding_tables'][table][0]
         print(dataset_name)
@@ -534,6 +533,7 @@ if __name__ == "__main__":
             if int(plan) > 10:
                 continue
             mixes = table_topics[dataset_name]['samples'][plan]
+            mixes = {'1+4':[['parks' ],['heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure']], '3+2':[['parks', 'park outdoor recreation facilities', 'park sports fields' ],['water assemblies', 'road row requirements downtown']]} # TODO <<<===
             for mix in mixes:
                 p.debug_datasources_with_tag = mixes[mix][0] + mixes[mix][1]
                 print('one_full_run:', plan, mix, p.debug_datasources_with_tag)
@@ -544,6 +544,11 @@ if __name__ == "__main__":
 
                 my_file = pathlib.Path(json_kb_save_name)
                 if my_file.exists():
+                    print('exists, skipping')
                     continue
 
                 one_full_run(input_topics)
+
+    t1 = time.time()
+    total = t1 - t0
+    print('TOTAL time %s sec' % (total))

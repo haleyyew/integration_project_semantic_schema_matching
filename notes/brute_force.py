@@ -252,7 +252,8 @@ def clustering(sim_matrix_path, threshold):
 
 if __name__ == '__main__':
     # pre_clustering(stats_path, source, target, instance_matching_output)
-    tags = clustering(instance_matching_output, 0.6)
+    tags = clustering(instance_matching_output, 0.6) # TODO: replace instance matching with schema matching
+
 # given training set of attr to topic mapping
 # use a combined score from many matching algorithms, find the best weights
 # test with new attrs, store mapped topics

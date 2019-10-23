@@ -201,6 +201,7 @@ def build_local_similarity_matrix(source_schema, target_schema):
                 # matrix[i,j] = np.int(100*SequenceMatcher(None,source_schema[i],target_schema[j]).ratio())
                 matrix[i, j] = sim_score
 
+                DEBUG_MODE = False # TODO <=
                 if matrix[i, j] >= 0.5 and DEBUG_MODE:
                     print('matrix[i, j]', source_schema[i], target_schema[j], matrix[i, j])
 
@@ -259,7 +260,7 @@ def match_table_by_values_beta(source_instance, target_instance, source_schema, 
                 sim_score = 0
             sim_matrix[src_ind, tar_ind] += sim_score
 
-            if sim_score >= 0.5:
+            if sim_score >= 0.5 and DEBUG_MODE:
                 print('sim_score >= 0.5', src_attr, tar_attr, src_value, tar_value, sim_score)
 
     return sim_matrix
@@ -623,7 +624,8 @@ def match_table_by_values(df_src, df_tar, match_threshold, comparison_count_o, s
             if sim_score > match_threshold:
                 reps = stats[tar_attr][tar_value]
                 sim_matrix[src_ind, tar_ind] += sim_score * reps
-                print('|sim_score %0.2f > %0.2f: %s(%s) <=> %s(%s) * %d|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value, reps))
+                if DEBUG_MODE:
+                    print('|sim_score %0.2f > %0.2f: %s(%s) <=> %s(%s) * %d|' % (sim_score, match_threshold, src_attr, src_value, tar_attr, tar_value, reps))
 
     df_sim_matrix = pd.DataFrame(data=sim_matrix, columns=schema_tar, index=schema_src)
     comparison_count_o[0] = comparison_count

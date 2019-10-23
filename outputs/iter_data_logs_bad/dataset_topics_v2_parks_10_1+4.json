@@ -1,0 +1,42 @@
+{
+  "drainage dyke infrastructure": [
+    "nature",
+    "feature",
+    "network",
+    "health",
+    "water",
+    "activities",
+    "green"
+  ],
+  "parks": [
+    "network",
+    "green",
+    "station",
+    "activities",
+    "feature",
+    "nature",
+    "walk",
+    "water",
+    "well",
+    "parks",
+    "facility",
+    "health"
+  ],
+  "sanitary lift stations": [
+    "nature",
+    "feature",
+    "network",
+    "health",
+    "activities"
+  ],
+  "water utility facilities": [
+    "walk",
+    "well",
+    "water",
+    "nature",
+    "feature",
+    "network",
+    "health",
+    "activities"
+  ]
+}

@@ -20,15 +20,19 @@ from flask_jsonpify import jsonify
 app = Flask(__name__)
 api = Api(app)
 
+import time
+t0 = time.time()
 
 from gensim.test.utils import datapath
-cap_path = datapath("/home/ubuntu/cc.en.300.bin")
+cap_path = datapath("/home/haoran/cc.en.300.bin")
 from gensim.models.wrappers import FastText
 wv = FastText.load_fasttext_format(cap_path)
 
+t1 = time.time()
 CORS(app)
 
 print('app started')
+print('time to load:', t1-t0)
 
 def most_similar(word):
 	return wv.most_similar(word)
@@ -54,8 +58,39 @@ class Similarity(Resource):
         if len(splt) != 2: return 'ERROR'
         input1 = splt[0]
         input2 = splt[1]
-        output = similarity(input1, input2)
-        return str(output)
+        inp1_splt = input1.split()
+        inp2_splt = input2.split()
+        # 2 gram
+        for i, item in enumerate(inp1_splt):
+            if i == len(inp1_splt)-1: inp1_splt.pop()
+            else: inp1_splt[i] = item + ' ' + inp1_splt[i+1]
+        for i, item in enumerate(inp2_splt):
+            if i == len(inp2_splt)-1: inp2_splt.pop()
+            else: inp2_splt[i] = item + ' ' + inp2_splt[i+1]
+
+        print(inp1_splt)
+        print(inp2_splt)
+
+        max_output = 0
+        for item1 in inp1_splt:     # TODO change 2-gram, measure effectiveness of 3-gram etc
+            for item2 in inp2_splt:
+                output = similarity(item1, item2)
+                if output > max_output: 
+                    max_output = output
+                    print(item1, item2, max_output)
+
+
+        inp1_splt = input1.split()
+        inp2_splt = input2.split()     
+        
+        for item1 in inp1_splt:     # TODO change 2-gram, measure effectiveness of 3-gram etc
+            for item2 in inp2_splt:
+                output = similarity(item1, item2)
+                if output > max_output: 
+                    max_output = output
+                    print(item1, item2, max_output)
+                                   
+        return str(max_output)
 
 class Vector(Resource):
     def get(self, input):

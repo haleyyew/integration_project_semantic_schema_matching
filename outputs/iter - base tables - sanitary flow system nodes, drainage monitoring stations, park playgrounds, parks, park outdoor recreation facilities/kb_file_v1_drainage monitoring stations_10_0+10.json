@@ -1,0 +1,331 @@
+{
+  "age": {
+    "datasources": [
+      "2001 census statistics",
+      "2016 surrey census"
+    ],
+    "matches": {}
+  },
+  "degree": {
+    "datasources": [
+      "education performance"
+    ],
+    "matches": {}
+  },
+  "depth": {
+    "datasources": [
+      "drainage monitoring stations",
+      "drainage monitoring stations",
+      "drainage monitoring stations",
+      "drainage monitoring stations"
+    ],
+    "matches": {}
+  },
+  "dimensions": {
+    "datasources": [
+      "property package"
+    ],
+    "matches": {}
+  },
+  "drainage": {
+    "datasources": [
+      "drainage catch basins",
+      "drainage detention ponds",
+      "drainage devices",
+      "drainage dyke infrastructure",
+      "drainage erosion protection works",
+      "drainage flood control",
+      "drainage laterals",
+      "drainage mains",
+      "drainage major catchments",
+      "drainage manholes",
+      "drainage monitoring stations",
+      "drainage open channels",
+      "drainage package",
+      "drainage pump stations",
+      "drainage service connections",
+      "drainage sub catchments",
+      "ten year plan",
+      "drainage catch basins",
+      "drainage detention ponds",
+      "drainage devices",
+      "drainage dyke infrastructure",
+      "drainage erosion protection works",
+      "drainage flood control",
+      "drainage laterals",
+      "drainage mains",
+      "drainage major catchments",
+      "drainage manholes",
+      "drainage monitoring stations",
+      "drainage open channels",
+      "drainage package",
+      "drainage pump stations",
+      "drainage service connections",
+      "drainage sub catchments",
+      "ten year plan",
+      "drainage catch basins",
+      "drainage detention ponds",
+      "drainage devices",
+      "drainage dyke infrastructure",
+      "drainage erosion protection works",
+      "drainage flood control",
+      "drainage laterals",
+      "drainage mains",
+      "drainage major catchments",
+      "drainage manholes",
+      "drainage monitoring stations",
+      "drainage open channels",
+      "drainage package",
+      "drainage pump stations",
+      "drainage service connections",
+      "drainage sub catchments",
+      "ten year plan",
+      "drainage catch basins",
+      "drainage detention ponds",
+      "drainage devices",
+      "drainage dyke infrastructure",
+      "drainage erosion protection works",
+      "drainage flood control",
+      "drainage laterals",
+      "drainage mains",
+      "drainage major catchments",
+      "drainage manholes",
+      "drainage monitoring stations",
+      "drainage open channels",
+      "drainage package",
+      "drainage pump stations",
+      "drainage service connections",
+      "drainage sub catchments",
+      "ten year plan"
+    ],
+    "matches": {
+      "drainage major catchments": {
+        "attribute": "name",
+        "data_type": "esriFieldTypeString",
+        "example_values": [
+          "Major Catchments"
+        ],
+        "match_score": 0.3125
+      }
+    }
+  },
+  "fitness": {
+    "datasources": [
+      "bike routes",
+      "trails and paths"
+    ],
+    "matches": {}
+  },
+  "heights": {
+    "datasources": [
+      "campbell heights industrial form and character dp exemption area",
+      "special study area"
+    ],
+    "matches": {}
+  },
+  "mobility": {
+    "datasources": [
+      "2001 census statistics"
+    ],
+    "matches": {}
+  },
+  "monitor": {
+    "datasources": [
+      "drainage monitoring stations",
+      "drainage monitoring stations",
+      "drainage monitoring stations",
+      "drainage monitoring stations"
+    ],
+    "matches": {}
+  },
+  "nature": {
+    "datasources": [
+      "park natural areas",
+      "parks",
+      "greenways",
+      "aquatic hubs",
+      "biodiversity conservation strategy"
+    ],
+    "matches": {
+      "park natural areas": {
+        "attribute": "natural area type",
+        "cluster": {
+          "aquatic hubs": {
+            "attribute": "comments",
+            "data_type": "esriFieldTypeString",
+            "example_values": [
+              " "
+            ],
+            "match_score": 60.0
+          }
+        },
+        "data_type": "esriFieldTypeString",
+        "example_values": [
+          "1001 Steps - Greenbelt",
+          "103F - Greenbelt",
+          "108A - Greenbelt",
+          "111C - Greenbelt",
+          "112A - Greenbelt",
+          "112J - Greenbelt",
+          "114D - Greenbelt",
+          "115B - Greenbelt",
+          "115I - Neighbourhood Park",
+          "11C - Greenbelt",
+          "121E - Greenbelt",
+          "121N - Greenbelt",
+          "121X - Greenbelt",
+          "122I - Greenbelt",
+          "123G - Greenbelt",
+          "127A - Greenbelt",
+          "131B - Greenbelt",
+          "135G - Greenbelt",
+          "146A - Neighbourhood Park",
+          "147A - Greenbelt",
+          "14F - Greenbelt",
+          "15J - Greenbelt",
+          "16C - Greenbelt",
+          "1A - Greenbelt",
+          "23D - Greenbelt",
+          "25A - Greenbelt",
+          "25G - Greenbelt",
+          "2A - Greenbelt",
+          "32A - Greenbelt",
+          "32I - Greenbelt",
+          "33K - Greenbelt",
+          "35B - Utility ROW",
+          "41A - Greenbelt",
+          "42A - Greenbelt",
+          "42F - Greenbelt",
+          "43C - Greenbelt",
+          "44E - Detention Pond",
+          "46G - Greenbelt",
+          "4F - Community Park",
+          "54A - Greenbelt",
+          "55E - Greenbelt",
+          "55K - Greenbelt",
+          "60D - Utility ROW",
+          "62F - Greenbelt",
+          "62O - Greenbelt",
+          "63E - Greenbelt",
+          "67E - Greenbelt",
+          "69C - Neighbourhood Park",
+          "70D - Greenbelt",
+          "72G - Greenbelt",
+          "73C - Greenbelt",
+          "73L - Greenbelt",
+          "75L - Greenbelt",
+          "81C - Greenbelt",
+          "84C - Greenbelt",
+          "Al Cleaver Park",
+          "Barbara Creek Park",
+          "Bayview Woods Park",
+          "Bell Park",
+          "Blumsen Park",
+          "Bonaccord Park",
+          "Boundary Park",
+          "Brookside Park",
+          "Cambridge Elementary School Park",
+          "Chantrell Park",
+          "Churchland Park",
+          "Cloverdale Ball Park",
+          "Cougar Creek Park",
+          "Darts Hill Garden Park",
+          "Don Christian Park",
+          "Elgin Estates Park",
+          "Evershine Park",
+          "Fraser Heights Park",
+          "Fun Fun Park",
+          "Green Timbers Park",
+          "Guy Richardson Park",
+          "Hi-Knoll Park",
+          "Invergarry Park",
+          "Island - 13561 19 Ave",
+          "J.R. Douglas Park",
+          "Kabaddi Park",
+          "Kettle Crescent Park",
+          "Laronde Park",
+          "Maple Park",
+          "Morgan Heights Linear Park",
+          "Newton Athletic Park",
+          "North Point Park",
+          "Ocean Cliff Park",
+          "Owl Park",
+          "Pioneer Park",
+          "Queen Elizabeth Meadows Park",
+          "Riverside Park",
+          "Rosemary Heights Park",
+          "Semiahmoo Trail - 103C",
+          "Senator Reid Park",
+          "South Meridian Park",
+          "Strawberry Hill Park",
+          "Sunnyside Lawn Cemetery",
+          "T.E. Scott Park",
+          "Victoria Park",
+          "Ware Park",
+          "Wills Brook Park"
+        ],
+        "match_score": 0.5
+      }
+    }
+  },
+  "quality": {
+    "datasources": [
+      "air quality",
+      "drainage monitoring stations",
+      "water sampling stations",
+      "air quality",
+      "drainage monitoring stations",
+      "water sampling stations",
+      "air quality",
+      "drainage monitoring stations",
+      "water sampling stations",
+      "air quality",
+      "drainage monitoring stations",
+      "water sampling stations"
+    ],
+    "matches": {}
+  },
+  "rainfall": {
+    "datasources": [
+      "drainage monitoring stations",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "drainage monitoring stations",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "drainage monitoring stations",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "drainage monitoring stations",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive"
+    ],
+    "matches": {}
+  },
+  "size": {
+    "datasources": [
+      "surrey schools class size"
+    ],
+    "matches": {}
+  },
+  "sustainability": {
+    "datasources": [
+      "alternate fueling stations",
+      "biodiversity conservation strategy",
+      "certified green buildings",
+      "tree canopy cover"
+    ],
+    "matches": {}
+  },
+  "temperature": {
+    "datasources": [
+      "air quality",
+      "historical climate data 1937 2007"
+    ],
+    "matches": {}
+  }
+}

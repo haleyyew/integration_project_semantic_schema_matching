@@ -1,0 +1,2952 @@
+/usr/local/bin/python3.7 /Users/haoran/Documents/thesis_schema_integration/iterative_algorithm.py
+parks
+[[[ parks ['activities', 'environment', 'green', 'health', 'nature', 'parks', 'walk', 'youth'] ]]]
+one_full_run: 10 1+4 ['parks', 'heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure']
+-------INIT-------
+parks
+arg_max_examples_vals 1001486308
+best match: activities facilityid 0.35 None
+best match: environment comments 0.31818181818181823 10054 149 St
+best match: green work assignment 0.30000000000000004 Drainage
+best match: health operational responsibility 0.23076923076923073 None
+best match: nature status 0.33333333333333337 10585.0
+best match: parks park name 0.5 0A - Greenbelt
+best match: walk park name 0.33333333333333337 0A - Greenbelt
+arg_max_examples_vals 10054 149 St
+best match: youth location 0.25 None
+-----
+===== ITERATIONS TO GO 5 =====
+-------MATCHING-------
+time 0.06255674362182617 sec
+-----
+-------UPDATE KB-------
+dict_keys(['activities', 'environment', 'green', 'health', 'nature', 'parks', 'walk', 'youth']) 8
+[concept:park, src:park structures(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park horticultural beds]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park passive grass]
+best matches: description <=10.00=> comments
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:drainage devices]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:park specimen trees]
+best matches: prk pt location <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park unimproved parkland]
+best matches: park name <=7.22=> description
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:water sampling stations]
+best matches: measurement method <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage monitoring stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:trails and paths]
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park sports fields]
+best matches: facilityid <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park structures]
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage pump stations]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage monitoring stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:important trees]
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:important trees]
+best matches: park ownership <=34.00=> owner
+
+[concept:park, src:park natural areas(park name) <=> tar:park specimen trees]
+best matches: park name <=8.11=> description
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park natural areas]
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary manholes]
+best matches: status <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park unimproved parkland]
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park potential donation bench locations]
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park unimproved parkland]
+best matches: winterization required <=0.00=> None
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:drainage devices]
+best matches: facilityid <=5870.00=> location
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary valves]
+best matches: rim elevation <=8.80=> invert
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage pump stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:water sampling stations]
+best matches: device size <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park structures]
+best matches: park <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park lights]
+best matches: description <=78.60=> facilityid
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage devices]
+best matches: name <=1174.00=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary valves]
+best matches: rim elevation <=8.80=> invert
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park potential donation bench locations]
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park outdoor recreation facilities]
+best matches: playground type <=13.30=> facilityid
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage devices]
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage pump stations]
+best matches: measurement method <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park passive grass]
+best matches: description <=36.55=> facilityid
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park screen trees]
+best matches: park area type2 <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:chamber, src:drainage devices(comments) <=> tar:water assemblies]
+best matches: comments <=4999.00=> status
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park unimproved parkland]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage detention ponds]
+best matches: measurement method <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park paths and trails]
+best matches: facilityid <=485.80=> status
+
+[concept:recreation, src:park sports fields(description) <=> tar:park lights]
+best matches: description <=78.95=> facilityid
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage laterals]
+best matches: warrantydate <=27743.32=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary nodes]
+best matches: rim elevation <=0.00=> None
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage catch basins]
+best matches: maintained by <=60607.00=> owner
+
+[concept:park, src:park lights(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary chambers]
+best matches: manufacturer <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park natural areas]
+best matches: barcode <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park structures]
+best matches: barcode <=0.00=> None
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:water assemblies]
+best matches: facilityid <=0.00=> None
+
+[concept:fields, src:park sports fields(infield type) <=> tar:important trees]
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:drainage major catchments]
+best matches: natural area type <=0.00=> None
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:important trees]
+
+[concept:trees, src:important trees(tree species) <=> tar:park screen trees]
+best matches: tree species <=0.00=> None
+
+[concept:environment, src:parks(comments) <=> tar:trails and paths]
+best matches: comments <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=37.00=> facilityid
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary nodes]
+best matches: node no <=1.95=> facilityid
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:parks]
+best matches: prk pt location <=0.00=> None
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary chambers]
+best matches: rim elevation <=19.75=> invert
+
+[concept:trees, src:park specimen trees(tree) <=> tar:park screen trees]
+best matches: tree <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:water sampling stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park horticultural beds]
+best matches: park ownership <=834.00=> comments
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:water assemblies]
+best matches: chamber size <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park sports fields]
+best matches: barcode <=0.00=> None
+
+[concept:green, src:parks(work assignment) <=> tar:park natural areas]
+best matches: work assignment <=10.00=> comments
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park passive grass]
+best matches: park <=10.00=> comments
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage flood control]
+best matches: device size <=0.00=> None
+
+[concept:walk, src:parks(park name) <=> tar:park natural areas]
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary valves]
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park horticultural beds]
+best matches: facilityid <=5004.00=> comments
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage pump stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage catch basins]
+best matches: facilityid <=1725.00=> location
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary flow system nodes]
+best matches: valve make <=0.00=> None
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary valves]
+best matches: status <=8.80=> invert
+
+[concept:catchment, src:elementary school catchments(school catchment type 2) <=> tar:sanitary chambers]
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage catch basins]
+
+[concept:park, src:park structures(park ownership) <=> tar:park outdoor recreation facilities]
+best matches: park ownership <=116.00=> bookable
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage devices]
+best matches: warrantydate <=3522.00=> location
+
+[concept:park, src:park lights(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:drainage devices]
+best matches: project no <=152755.00=> status
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:drainage devices]
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:drainage devices]
+best matches: comments <=1174.00=> location
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage pump stations]
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park horticultural beds]
+
+[concept:park, src:park lights(park name) <=> tar:park sports fields]
+best matches: park name <=0.00=> None
+
+[concept:green, src:parks(work assignment) <=> tar:aquatic hubs]
+best matches: work assignment <=60.00=> comments
+=add_attr_to_kb_concept= concept:green src:parks(work assignment)<=60.00=>aquatic hubs(comments)
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park unimproved parkland]
+
+[concept:parks, src:parks(park name) <=> tar:park screen trees]
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park playgrounds]
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary manholes]
+best matches: comments <=25820.00=> status
+
+[concept:park, src:park structures(park ownership) <=> tar:important trees]
+
+[concept:park, src:park lights(park name) <=> tar:important trees]
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary nodes]
+best matches: rim elevation <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park lights]
+best matches: park ownership <=0.00=> None
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:drainage devices]
+best matches: node no <=174.10=> facilityid
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:water assemblies]
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:trails and paths]
+best matches: natural area type <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park passive grass]
+best matches: prk trail service class <=6.00=> comments
+
+[concept:park, src:park lights(park name) <=> tar:park specimen trees]
+best matches: park name <=4.54=> description
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:water sampling stations]
+best matches: maintained by <=52.00=> owner
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary manholes]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park potential donation bench locations]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park sports fields]
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park lights]
+
+[concept:health, src:parks(operational responsibility) <=> tar:trails and paths]
+
+[concept:park, src:park structures(park ownership) <=> tar:park paths and trails]
+best matches: park ownership <=4.00=> comments
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary valves]
+best matches: status <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park outdoor recreation facilities]
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage detention ponds]
+best matches: name <=0.00=> None
+
+[concept:walk, src:parks(park name) <=> tar:aquatic hubs]
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:drainage devices]
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:water assemblies]
+best matches: node no <=5.85=> facilityid
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park natural areas]
+best matches: facilityid <=6.00=> comments
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary flow system nodes]
+best matches: comments <=668.00=> status
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park sports fields]
+best matches: park name <=2410.00=> irrigated
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage catch basins]
+best matches: measurement method <=2070.00=> location
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park outdoor recreation facilities]
+best matches: park ownership <=0.00=> None
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary nodes]
+best matches: comments <=144.00=> status
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:parks]
+best matches: facilityid <=0.00=> None
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:water sampling stations]
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park sports fields]
+best matches: playground type <=9.15=> facilityid
+
+[concept:children, src:park playgrounds(service level) <=> tar:park outdoor recreation facilities]
+best matches: service level <=165.00=> community
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:water assemblies]
+best matches: comments <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park specimen trees]
+best matches: park area type2 <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:water assemblies]
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:water assemblies]
+best matches: project no <=4999.00=> status
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage monitoring stations]
+best matches: device size <=0.00=> None
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage catch basins]
+best matches: name <=3105.00=> location
+
+[concept:nature, src:parks(status) <=> tar:trails and paths]
+best matches: status <=0.00=> None
+
+[concept:trees, src:important trees(tree species) <=> tar:park specimen trees]
+best matches: tree species <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage pump stations]
+best matches: maintained by <=37.00=> owner
+
+[concept:park, src:park structures(park ownership) <=> tar:park playgrounds]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage flood control]
+best matches: warrantydate <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park playgrounds]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage detention ponds]
+best matches: warrantydate <=0.00=> None
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary chambers]
+best matches: comments <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:parks]
+best matches: park <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park unimproved parkland]
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park horticultural beds]
+best matches: prk trail service class <=5004.00=> comments
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage flood control]
+best matches: measurement method <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:important trees]
+
+[concept:parks, src:parks(park name) <=> tar:park specimen trees]
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park natural areas]
+best matches: park ownership <=9.00=> comments
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:parks]
+best matches: natural area type <=0.00=> None
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage laterals]
+best matches: maintained by <=68706.00=> owner
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park paths and trails]
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary nodes]
+best matches: rim elevation <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park natural areas]
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park potential donation bench locations]
+best matches: prk trail service class <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary manholes]
+best matches: facilityid <=5.11=> comments
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park unimproved parkland]
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:water sampling stations]
+best matches: chainage to <=2.00=> yr
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park horticultural beds]
+best matches: park <=8340.00=> comments
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:park screen trees]
+best matches: facilityid <=0.00=> None
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage flood control]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park unimproved parkland]
+best matches: park <=0.81=> description
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park horticultural beds]
+best matches: description <=74.10=> facilityid
+
+[concept:environment, src:aquatic hubs(comments) <=> tar:parks]
+best matches: comments <=0.00=> None
+
+[concept:fields, src:park sports fields(infield type) <=> tar:park screen trees]
+best matches: infield type <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage catch basins]
+best matches: name <=345.00=> location
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park structures]
+best matches: park area type2 <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park passive grass]
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary manholes]
+best matches: status <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park paths and trails]
+
+[concept:park, src:park screen trees(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park horticultural beds]
+best matches: barcode <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park playgrounds]
+best matches: prk trail service class <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park lights]
+best matches: description <=79.30=> facilityid
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage catch basins]
+best matches: warrantydate <=1035.00=> location
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage laterals]
+best matches: measurement method <=16722.00=> location
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park lights]
+best matches: park area type2 <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary valves]
+best matches: valve make <=0.00=> None
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park structures]
+best matches: playground type <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary chambers]
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:water sampling stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park potential donation bench locations]
+best matches: park <=0.00=> None
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:park screen trees]
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary nodes]
+best matches: status <=0.00=> None
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary chambers]
+best matches: material <=10.67=> invert
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary valves]
+best matches: facilityid <=0.00=> None
+
+[concept:health, src:trails and paths(operator) <=> tar:park natural areas]
+best matches: operator <=0.00=> None
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary nodes]
+best matches: chamber size <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park playgrounds]
+
+[concept:park, src:park structures(park ownership) <=> tar:park passive grass]
+best matches: park ownership <=1.00=> comments
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park structures]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park paths and trails]
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park unimproved parkland]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park lights]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park playgrounds]
+best matches: park <=0.68=> park
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage pump stations]
+best matches: device size <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park playgrounds]
+best matches: park area type2 <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage flood control]
+
+[concept:fields, src:park sports fields(infield type) <=> tar:park specimen trees]
+best matches: infield type <=13920.00=> park
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:important trees]
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park lights]
+best matches: barcode <=0.00=> None
+
+[concept:parks, src:parks(park name) <=> tar:park natural areas]
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary valves]
+best matches: comments <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park sports fields]
+best matches: park name <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park horticultural beds]
+best matches: description <=8340.00=> comments
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary manholes]
+best matches: rim elevation <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park lights]
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage detention ponds]
+best matches: chainage to <=134.83=> yr
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage pump stations]
+best matches: chainage to <=8.33=> yr
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park sports fields]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park sports fields]
+best matches: park name <=2410.00=> irrigated
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park paths and trails]
+best matches: barcode <=0.00=> None
+
+[concept:green, src:parks(work assignment) <=> tar:trails and paths]
+best matches: work assignment <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park paths and trails]
+best matches: description <=29.05=> facilityid
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage flood control]
+best matches: maintained by <=536.00=> owner
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage monitoring stations]
+best matches: chainage to <=0.67=> yr
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park horticultural beds]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:important trees]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park sports fields]
+best matches: park area type2 <=0.00=> None
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary manholes]
+best matches: node no <=50.40=> facilityid
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park horticultural beds]
+best matches: description <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park horticultural beds]
+best matches: description <=6.55=> facilityid
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park paths and trails]
+best matches: description <=16.00=> comments
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park horticultural beds]
+best matches: park ownership <=7506.00=> comments
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage detention ponds]
+best matches: maintained by <=806.00=> owner
+
+[concept:environment, src:aquatic hubs(comments) <=> tar:park natural areas]
+best matches: comments <=1.00=> comments
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary valves]
+best matches: material <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park sports fields]
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park playgrounds]
+
+[concept:activities, src:parks(facilityid) <=> tar:aquatic hubs]
+
+[concept:park, src:park natural areas(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary manholes]
+best matches: rim elevation <=0.00=> None
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage catch basins]
+best matches: facilityid <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park horticultural beds]
+best matches: description <=3336.00=> comments
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park passive grass]
+best matches: description <=1.00=> comments
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park passive grass]
+best matches: description <=4.00=> comments
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary manholes]
+best matches: project no <=25820.00=> status
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park sports fields]
+best matches: park ownership <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park structures]
+best matches: prk trail service class <=0.00=> None
+
+[concept:children, src:park playgrounds(service level) <=> tar:park structures]
+best matches: service level <=0.00=> None
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary flow system nodes]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park unimproved parkland]
+best matches: playground type <=7.85=> facilityid
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary nodes]
+best matches: status <=0.00=> None
+
+[concept:health, src:parks(operational responsibility) <=> tar:park natural areas]
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:park specimen trees]
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage laterals]
+best matches: facilityid <=13935.00=> location
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary nodes]
+best matches: valve make <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park horticultural beds]
+best matches: description <=834.00=> comments
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:important trees]
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary chambers]
+
+[concept:activities, src:parks(facilityid) <=> tar:park potential donation bench locations]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:park screen trees]
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage flood control]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park lights]
+best matches: park ownership <=0.00=> None
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:drainage devices]
+best matches: material <=76791.79=> yr
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=65.55=> facilityid
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary valves]
+best matches: node no <=6.55=> facilityid
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park sports fields]
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:water sampling stations]
+best matches: name <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park sports fields]
+best matches: park ownership <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage laterals]
+best matches: name <=2787.00=> location
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park outdoor recreation facilities]
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary flow system nodes]
+best matches: status <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park playgrounds]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park paths and trails]
+best matches: description <=81.00=> status
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park structures]
+best matches: winterization required <=0.00=> None
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park outdoor recreation facilities]
+best matches: winterization required <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park unimproved parkland]
+
+[concept:park, src:park structures(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:important trees]
+
+[concept:children, src:park playgrounds(service level) <=> tar:park sports fields]
+best matches: service level <=273.86=> community
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary valves]
+best matches: status <=0.00=> None
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:water assemblies]
+best matches: material <=4234.25=> yr
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary chambers]
+best matches: comments <=84951.00=> status
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:important trees]
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park passive grass]
+best matches: park ownership <=9.00=> comments
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage pump stations]
+best matches: name <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park unimproved parkland]
+best matches: barcode <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:nature, src:parks(status) <=> tar:park natural areas]
+best matches: status <=10.00=> comments
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary nodes]
+best matches: material <=29.25=> yr
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park horticultural beds]
+
+[concept:fields, src:park sports fields(infield type) <=> tar:parks]
+best matches: infield type <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park potential donation bench locations]
+best matches: park name <=0.00=> None
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage detention ponds]
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park paths and trails]
+best matches: park <=810.00=> status
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park horticultural beds]
+best matches: park area type2 <=834.00=> comments
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park paths and trails]
+best matches: description <=81.00=> status
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:water sampling stations]
+best matches: name <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park passive grass]
+best matches: park area type2 <=1.00=> comments
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary valves]
+best matches: rim elevation <=8.80=> invert
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage monitoring stations]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park structures]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park playgrounds]
+best matches: description <=38.20=> facilityid
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary manholes]
+best matches: rim elevation <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage flood control]
+best matches: name <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park potential donation bench locations]
+best matches: barcode <=0.00=> None
+
+[concept:trees, src:park screen trees(tree species) <=> tar:parks]
+best matches: tree species <=0.00=> None
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:water assemblies]
+best matches: status <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park paths and trails]
+best matches: park area type2 <=81.00=> status
+
+[concept:trees, src:park specimen trees(tree) <=> tar:important trees]
+best matches: tree <=0.00=> None
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary nodes]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage detention ponds]
+best matches: device size <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park playgrounds]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:parks]
+best matches: park area type2 <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park specimen trees]
+best matches: park <=71125.68=> park
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage laterals]
+best matches: name <=25083.00=> location
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage devices]
+best matches: device size <=9392.00=> location
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage devices]
+best matches: maintained by <=152255.00=> owner
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary manholes]
+best matches: manufacturer <=0.00=> None
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage devices]
+best matches: chainage to <=57789.34=> yr
+
+[concept:park, src:park natural areas(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:trees, src:park screen trees(tree species) <=> tar:park specimen trees]
+best matches: tree species <=25015.00=> tree genus
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage flood control]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage devices]
+best matches: warrantydate <=3522.00=> location
+
+[concept:park, src:park passive grass(park name) <=> tar:park specimen trees]
+best matches: park name <=4.53=> description
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary flow system nodes]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park natural areas(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary nodes]
+best matches: project no <=144.00=> status
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary manholes]
+
+[concept:park, src:park natural areas(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park horticultural beds]
+best matches: park name <=8340.00=> comments
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park structures]
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary valves]
+best matches: project no <=927.00=> status
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage monitoring stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:environment, src:parks(comments) <=> tar:aquatic hubs]
+best matches: comments <=60.00=> comments
+=add_attr_to_kb_concept= concept:environment src:parks(comments)<=60.00=>aquatic hubs(comments)
+
+[concept:park, src:park structures(park ownership) <=> tar:park potential donation bench locations]
+best matches: park ownership <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park sports fields]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:park specimen trees]
+
+[concept:park, src:park structures(park ownership) <=> tar:park natural areas]
+best matches: park ownership <=1.00=> comments
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary manholes]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park unimproved parkland]
+best matches: park ownership <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park lights]
+best matches: prk trail service class <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park paths and trails]
+best matches: description <=41.30=> facilityid
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park unimproved parkland]
+best matches: prk trail service class <=0.00=> None
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary chambers]
+best matches: status <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park potential donation bench locations]
+best matches: facilityid <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage devices]
+best matches: measurement method <=7044.00=> location
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:drainage devices]
+best matches: status <=1.25=> yr
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park lights]
+best matches: park <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage pump stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary valves]
+best matches: status <=0.00=> None
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:water assemblies]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:drainage devices]
+best matches: status <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary chambers]
+best matches: project no <=84951.00=> status
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park screen trees]
+best matches: park <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park sports fields]
+best matches: prk trail service class <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park passive grass]
+best matches: description <=1.00=> comments
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:important trees]
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:park screen trees]
+best matches: prk pt location <=0.00=> None
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage monitoring stations]
+best matches: name <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park unimproved parkland]
+best matches: park name <=4.59=> description
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary chambers]
+best matches: rim elevation <=19.75=> invert
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage devices]
+best matches: facilityid <=5870.00=> location
+
+[concept:environment, src:parks(comments) <=> tar:park natural areas]
+best matches: comments <=10.00=> comments
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage laterals]
+
+[concept:park, src:park passive grass(park name) <=> tar:park unimproved parkland]
+best matches: park name <=16.89=> description
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park outdoor recreation facilities]
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage catch basins]
+best matches: warrantydate <=3434.32=> location
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary chambers]
+best matches: rim elevation <=19.75=> invert
+
+[concept:youth, src:parks(location) <=> tar:park natural areas]
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park passive grass]
+best matches: barcode <=0.00=> None
+
+[concept:park, src:park screen trees(park name) <=> tar:important trees]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park sports fields]
+best matches: park <=10.51=> park
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:important trees]
+
+[concept:activities, src:parks(facilityid) <=> tar:park paths and trails]
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage devices]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage laterals]
+best matches: device size <=22296.00=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:drainage devices]
+best matches: rim elevation <=11.79=> yr
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary chambers]
+best matches: node no <=1152.75=> facilityid
+
+[concept:youth, src:parks(location) <=> tar:trails and paths]
+
+[concept:recreation, src:park sports fields(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park outdoor recreation facilities]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park natural areas]
+best matches: description <=191.00=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:water assemblies]
+best matches: rim elevation <=0.00=> None
+
+[concept:parks, src:parks(park name) <=> tar:aquatic hubs]
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary valves]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park specimen trees]
+best matches: park name <=5.88=> description
+
+[concept:health, src:parks(operational responsibility) <=> tar:aquatic hubs]
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage catch basins]
+best matches: warrantydate <=1035.00=> location
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage detention ponds]
+best matches: name <=0.00=> None
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary nodes]
+
+[concept:parks, src:parks(park name) <=> tar:important trees]
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park playgrounds]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:parks]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park passive grass]
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:aquatic hubs]
+best matches: natural area type <=60.00=> comments
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary flow system nodes]
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary manholes]
+best matches: material <=17133.92=> yr
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park potential donation bench locations]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park natural areas]
+best matches: description <=10.00=> comments
+
+[concept:children, src:park playgrounds(service level) <=> tar:park unimproved parkland]
+best matches: service level <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park unimproved parkland]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park paths and trails]
+best matches: park ownership <=0.00=> None
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:water assemblies]
+best matches: status <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park structures]
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage devices]
+best matches: name <=10566.00=> location
+
+[concept:park, src:park screen trees(park name) <=> tar:park specimen trees]
+best matches: park name <=0.63=> location
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:drainage devices]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage flood control]
+best matches: name <=0.00=> None
+
+[concept:park, src:park natural areas(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary manholes]
+best matches: valve make <=0.00=> None
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:park specimen trees]
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:water assemblies]
+best matches: rim elevation <=0.00=> None
+
+[concept:park, src:park natural areas(park name) <=> tar:important trees]
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary nodes]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park lights]
+best matches: park ownership <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park lights]
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary chambers]
+
+[concept:trees, src:park screen trees(tree species) <=> tar:important trees]
+best matches: tree species <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park unimproved parkland]
+best matches: park name <=16.89=> description
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage pump stations]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary nodes]
+best matches: comments <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park sports fields]
+best matches: description <=32.75=> facilityid
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park potential donation bench locations]
+best matches: park ownership <=0.00=> None
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage catch basins]
+best matches: chainage to <=36659.29=> yr
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park passive grass]
+best matches: facilityid <=6.00=> comments
+
+[concept:activities, src:parks(facilityid) <=> tar:park horticultural beds]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park potential donation bench locations]
+best matches: park area type2 <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:drainage devices]
+best matches: valve make <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park playgrounds]
+best matches: barcode <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary chambers]
+best matches: status <=23.62=> invert
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary flow system nodes]
+best matches: status <=11.72=> invert
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park horticultural beds]
+best matches: description <=834.00=> comments
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary valves]
+best matches: comments <=927.00=> status
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage detention ponds]
+best matches: facilityid <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:drainage devices]
+best matches: rim elevation <=11.79=> yr
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:water assemblies]
+best matches: status <=0.00=> None
+
+[concept:walk, src:parks(park name) <=> tar:trails and paths]
+
+[concept:recreation, src:park sports fields(description) <=> tar:park playgrounds]
+best matches: description <=1.35=> facilityid
+
+[concept:parks, src:parks(park name) <=> tar:trails and paths]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park outdoor recreation facilities]
+best matches: park area type2 <=0.00=> None
+
+[concept:youth, src:parks(location) <=> tar:aquatic hubs]
+
+[concept:nature, src:parks(status) <=> tar:aquatic hubs]
+best matches: status <=60.00=> comments
+=add_attr_to_kb_concept= concept:nature src:parks(status)<=60.00=>aquatic hubs(comments)
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park structures]
+best matches: facilityid <=0.00=> None
+
+[concept:trees, src:important trees(tree species) <=> tar:parks]
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary flow system nodes]
+best matches: status <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:drainage devices]
+best matches: status <=3.88=> yr
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:water assemblies]
+best matches: rim elevation <=0.00=> None
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park sports fields]
+best matches: winterization required <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park lights]
+best matches: facilityid <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park natural areas]
+best matches: prk trail service class <=6.00=> comments
+
+[concept:park, src:park lights(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary chambers]
+best matches: facilityid <=0.00=> None
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park passive grass]
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park structures]
+best matches: park ownership <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park lights]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:parks]
+
+[concept:park, src:park passive grass(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage detention ponds]
+best matches: facilityid <=0.00=> None
+
+[concept:trees, src:park specimen trees(tree) <=> tar:parks]
+best matches: tree <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park natural areas]
+best matches: park <=10.00=> comments
+
+[concept:recreation, src:park sports fields(description) <=> tar:park passive grass]
+best matches: description <=38.00=> facilityid
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:drainage devices]
+best matches: rim elevation <=11.79=> yr
+
+[concept:health, src:trails and paths(operator) <=> tar:parks]
+best matches: operator <=0.00=> None
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:water sampling stations]
+best matches: facilityid <=0.00=> None
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary manholes]
+best matches: comments <=0.00=> None
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park outdoor recreation facilities]
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park outdoor recreation facilities]
+best matches: prk trail service class <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park paths and trails]
+best matches: description <=87.85=> facilityid
+
+-------SPLITTING-------
+-------MERGING-------
+-------NEW CONCEPTS-------
+END OF ITERATIONS
+NUM OF NEW CONCEPTS: 5
+NUM OF TOPICS FOR DATASETS: 0
+one_full_run: 10 3+2 ['parks', 'park outdoor recreation facilities', 'park sports fields', 'water assemblies', 'road row requirements downtown']
+-------INIT-------
+parks
+arg_max_examples_vals 1001486308
+best match: activities facilityid 0.35 None
+best match: environment comments 0.31818181818181823 10054 149 St
+best match: green work assignment 0.30000000000000004 Drainage
+best match: health operational responsibility 0.23076923076923073 None
+best match: nature status 0.33333333333333337 10585.0
+best match: parks park name 0.5 0A - Greenbelt
+best match: walk park name 0.33333333333333337 0A - Greenbelt
+arg_max_examples_vals 10054 149 St
+best match: youth location 0.25 None
+-----
+===== ITERATIONS TO GO 5 =====
+-------MATCHING-------
+time 0.011974334716796875 sec
+-----
+-------UPDATE KB-------
+dict_keys(['activities', 'environment', 'green', 'health', 'nature', 'parks', 'walk', 'youth']) 8
+[concept:park, src:park structures(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park horticultural beds]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park passive grass]
+best matches: description <=10.00=> comments
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:drainage devices]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:park specimen trees]
+best matches: prk pt location <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park unimproved parkland]
+best matches: park name <=7.22=> description
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:water sampling stations]
+best matches: measurement method <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage monitoring stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:trails and paths]
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park sports fields]
+best matches: facilityid <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park structures]
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage pump stations]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage monitoring stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:important trees]
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:important trees]
+best matches: park ownership <=34.00=> owner
+
+[concept:park, src:park natural areas(park name) <=> tar:park specimen trees]
+best matches: park name <=8.11=> description
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park natural areas]
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary manholes]
+best matches: status <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park unimproved parkland]
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park potential donation bench locations]
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park unimproved parkland]
+best matches: winterization required <=0.00=> None
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:drainage devices]
+best matches: facilityid <=5870.00=> location
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary valves]
+best matches: rim elevation <=8.80=> invert
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage pump stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:water sampling stations]
+best matches: device size <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park structures]
+best matches: park <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park lights]
+best matches: description <=78.60=> facilityid
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage devices]
+best matches: name <=1174.00=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary valves]
+best matches: rim elevation <=8.80=> invert
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park potential donation bench locations]
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park outdoor recreation facilities]
+best matches: playground type <=13.30=> facilityid
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage devices]
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage pump stations]
+best matches: measurement method <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park passive grass]
+best matches: description <=36.55=> facilityid
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park screen trees]
+best matches: park area type2 <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:chamber, src:drainage devices(comments) <=> tar:water assemblies]
+best matches: comments <=4999.00=> status
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park unimproved parkland]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage detention ponds]
+best matches: measurement method <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park paths and trails]
+best matches: facilityid <=485.80=> status
+
+[concept:recreation, src:park sports fields(description) <=> tar:park lights]
+best matches: description <=78.95=> facilityid
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage laterals]
+best matches: warrantydate <=27743.32=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary nodes]
+best matches: rim elevation <=0.00=> None
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage catch basins]
+best matches: maintained by <=60607.00=> owner
+
+[concept:park, src:park lights(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary chambers]
+best matches: manufacturer <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park natural areas]
+best matches: barcode <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park structures]
+best matches: barcode <=0.00=> None
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:water assemblies]
+best matches: facilityid <=0.00=> None
+
+[concept:fields, src:park sports fields(infield type) <=> tar:important trees]
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:drainage major catchments]
+best matches: natural area type <=0.00=> None
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:important trees]
+
+[concept:trees, src:important trees(tree species) <=> tar:park screen trees]
+best matches: tree species <=0.00=> None
+
+[concept:environment, src:parks(comments) <=> tar:trails and paths]
+best matches: comments <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=37.00=> facilityid
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary nodes]
+best matches: node no <=1.95=> facilityid
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:parks]
+best matches: prk pt location <=0.00=> None
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary chambers]
+best matches: rim elevation <=19.75=> invert
+
+[concept:trees, src:park specimen trees(tree) <=> tar:park screen trees]
+best matches: tree <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:water sampling stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park horticultural beds]
+best matches: park ownership <=834.00=> comments
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:water assemblies]
+best matches: chamber size <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park sports fields]
+best matches: barcode <=0.00=> None
+
+[concept:green, src:parks(work assignment) <=> tar:park natural areas]
+best matches: work assignment <=10.00=> comments
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park passive grass]
+best matches: park <=10.00=> comments
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage flood control]
+best matches: device size <=0.00=> None
+
+[concept:walk, src:parks(park name) <=> tar:park natural areas]
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary valves]
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park horticultural beds]
+best matches: facilityid <=5004.00=> comments
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage pump stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage catch basins]
+best matches: facilityid <=1725.00=> location
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary flow system nodes]
+best matches: valve make <=0.00=> None
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary valves]
+best matches: status <=8.80=> invert
+
+[concept:catchment, src:elementary school catchments(school catchment type 2) <=> tar:sanitary chambers]
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage catch basins]
+
+[concept:park, src:park structures(park ownership) <=> tar:park outdoor recreation facilities]
+best matches: park ownership <=116.00=> bookable
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage devices]
+best matches: warrantydate <=3522.00=> location
+
+[concept:park, src:park lights(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:drainage devices]
+best matches: project no <=152755.00=> status
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:drainage devices]
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:drainage devices]
+best matches: comments <=1174.00=> location
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage pump stations]
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park horticultural beds]
+
+[concept:park, src:park lights(park name) <=> tar:park sports fields]
+best matches: park name <=0.00=> None
+
+[concept:green, src:parks(work assignment) <=> tar:aquatic hubs]
+best matches: work assignment <=60.00=> comments
+=add_attr_to_kb_concept= concept:green src:parks(work assignment)<=60.00=>aquatic hubs(comments)
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park unimproved parkland]
+
+[concept:parks, src:parks(park name) <=> tar:park screen trees]
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park playgrounds]
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary manholes]
+best matches: comments <=25820.00=> status
+
+[concept:park, src:park structures(park ownership) <=> tar:important trees]
+
+[concept:park, src:park lights(park name) <=> tar:important trees]
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary nodes]
+best matches: rim elevation <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park lights]
+best matches: park ownership <=0.00=> None
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:drainage devices]
+best matches: node no <=174.10=> facilityid
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:water assemblies]
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:trails and paths]
+best matches: natural area type <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park passive grass]
+best matches: prk trail service class <=6.00=> comments
+
+[concept:park, src:park lights(park name) <=> tar:park specimen trees]
+best matches: park name <=4.54=> description
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:water sampling stations]
+best matches: maintained by <=52.00=> owner
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary manholes]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park potential donation bench locations]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park sports fields]
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park lights]
+
+[concept:health, src:parks(operational responsibility) <=> tar:trails and paths]
+
+[concept:park, src:park structures(park ownership) <=> tar:park paths and trails]
+best matches: park ownership <=4.00=> comments
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary valves]
+best matches: status <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park outdoor recreation facilities]
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage detention ponds]
+best matches: name <=0.00=> None
+
+[concept:walk, src:parks(park name) <=> tar:aquatic hubs]
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:drainage devices]
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:water assemblies]
+best matches: node no <=5.85=> facilityid
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park natural areas]
+best matches: facilityid <=6.00=> comments
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary flow system nodes]
+best matches: comments <=668.00=> status
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park sports fields]
+best matches: park name <=2410.00=> irrigated
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage catch basins]
+best matches: measurement method <=2070.00=> location
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park outdoor recreation facilities]
+best matches: park ownership <=0.00=> None
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary nodes]
+best matches: comments <=144.00=> status
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:parks]
+best matches: facilityid <=0.00=> None
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:water sampling stations]
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park sports fields]
+best matches: playground type <=9.15=> facilityid
+
+[concept:children, src:park playgrounds(service level) <=> tar:park outdoor recreation facilities]
+best matches: service level <=165.00=> community
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:water assemblies]
+best matches: comments <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park specimen trees]
+best matches: park area type2 <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:water assemblies]
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:water assemblies]
+best matches: project no <=4999.00=> status
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage monitoring stations]
+best matches: device size <=0.00=> None
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage catch basins]
+best matches: name <=3105.00=> location
+
+[concept:nature, src:parks(status) <=> tar:trails and paths]
+best matches: status <=0.00=> None
+
+[concept:trees, src:important trees(tree species) <=> tar:park specimen trees]
+best matches: tree species <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage pump stations]
+best matches: maintained by <=37.00=> owner
+
+[concept:park, src:park structures(park ownership) <=> tar:park playgrounds]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage flood control]
+best matches: warrantydate <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park playgrounds]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage detention ponds]
+best matches: warrantydate <=0.00=> None
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary chambers]
+best matches: comments <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:parks]
+best matches: park <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park unimproved parkland]
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park horticultural beds]
+best matches: prk trail service class <=5004.00=> comments
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage flood control]
+best matches: measurement method <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:important trees]
+
+[concept:parks, src:parks(park name) <=> tar:park specimen trees]
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park natural areas]
+best matches: park ownership <=9.00=> comments
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:parks]
+best matches: natural area type <=0.00=> None
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage laterals]
+best matches: maintained by <=68706.00=> owner
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park paths and trails]
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary nodes]
+best matches: rim elevation <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park natural areas]
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park potential donation bench locations]
+best matches: prk trail service class <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary manholes]
+best matches: facilityid <=5.11=> comments
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park unimproved parkland]
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:water sampling stations]
+best matches: chainage to <=2.00=> yr
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park horticultural beds]
+best matches: park <=8340.00=> comments
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:park screen trees]
+best matches: facilityid <=0.00=> None
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage flood control]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park unimproved parkland]
+best matches: park <=0.81=> description
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park horticultural beds]
+best matches: description <=74.10=> facilityid
+
+[concept:environment, src:aquatic hubs(comments) <=> tar:parks]
+best matches: comments <=0.00=> None
+
+[concept:fields, src:park sports fields(infield type) <=> tar:park screen trees]
+best matches: infield type <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage catch basins]
+best matches: name <=345.00=> location
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park structures]
+best matches: park area type2 <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park passive grass]
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary manholes]
+best matches: status <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park paths and trails]
+
+[concept:park, src:park screen trees(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park horticultural beds]
+best matches: barcode <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park playgrounds]
+best matches: prk trail service class <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park lights]
+best matches: description <=79.30=> facilityid
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage catch basins]
+best matches: warrantydate <=1035.00=> location
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage laterals]
+best matches: measurement method <=16722.00=> location
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park lights]
+best matches: park area type2 <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary valves]
+best matches: valve make <=0.00=> None
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park structures]
+best matches: playground type <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary chambers]
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:water sampling stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park potential donation bench locations]
+best matches: park <=0.00=> None
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:park screen trees]
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary nodes]
+best matches: status <=0.00=> None
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary chambers]
+best matches: material <=10.67=> invert
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary valves]
+best matches: facilityid <=0.00=> None
+
+[concept:health, src:trails and paths(operator) <=> tar:park natural areas]
+best matches: operator <=0.00=> None
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary nodes]
+best matches: chamber size <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park playgrounds]
+
+[concept:park, src:park structures(park ownership) <=> tar:park passive grass]
+best matches: park ownership <=1.00=> comments
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park structures]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park paths and trails]
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park unimproved parkland]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park lights]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park playgrounds]
+best matches: park <=0.68=> park
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage pump stations]
+best matches: device size <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park playgrounds]
+best matches: park area type2 <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage flood control]
+
+[concept:fields, src:park sports fields(infield type) <=> tar:park specimen trees]
+best matches: infield type <=13920.00=> park
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:important trees]
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park lights]
+best matches: barcode <=0.00=> None
+
+[concept:parks, src:parks(park name) <=> tar:park natural areas]
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary valves]
+best matches: comments <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park sports fields]
+best matches: park name <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park horticultural beds]
+best matches: description <=8340.00=> comments
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary manholes]
+best matches: rim elevation <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park lights]
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage detention ponds]
+best matches: chainage to <=134.83=> yr
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage pump stations]
+best matches: chainage to <=8.33=> yr
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park sports fields]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park sports fields]
+best matches: park name <=2410.00=> irrigated
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park paths and trails]
+best matches: barcode <=0.00=> None
+
+[concept:green, src:parks(work assignment) <=> tar:trails and paths]
+best matches: work assignment <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park paths and trails]
+best matches: description <=29.05=> facilityid
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage flood control]
+best matches: maintained by <=536.00=> owner
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage monitoring stations]
+best matches: chainage to <=0.67=> yr
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park horticultural beds]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:important trees]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park sports fields]
+best matches: park area type2 <=0.00=> None
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary manholes]
+best matches: node no <=50.40=> facilityid
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park horticultural beds]
+best matches: description <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park horticultural beds]
+best matches: description <=6.55=> facilityid
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park paths and trails]
+best matches: description <=16.00=> comments
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park horticultural beds]
+best matches: park ownership <=7506.00=> comments
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage detention ponds]
+best matches: maintained by <=806.00=> owner
+
+[concept:environment, src:aquatic hubs(comments) <=> tar:park natural areas]
+best matches: comments <=1.00=> comments
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary valves]
+best matches: material <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park sports fields]
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park playgrounds]
+
+[concept:activities, src:parks(facilityid) <=> tar:aquatic hubs]
+
+[concept:park, src:park natural areas(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary manholes]
+best matches: rim elevation <=0.00=> None
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage catch basins]
+best matches: facilityid <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park horticultural beds]
+best matches: description <=3336.00=> comments
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park passive grass]
+best matches: description <=1.00=> comments
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park passive grass]
+best matches: description <=4.00=> comments
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary manholes]
+best matches: project no <=25820.00=> status
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park sports fields]
+best matches: park ownership <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park structures]
+best matches: prk trail service class <=0.00=> None
+
+[concept:children, src:park playgrounds(service level) <=> tar:park structures]
+best matches: service level <=0.00=> None
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary flow system nodes]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:playground, src:park playgrounds(playground type) <=> tar:park unimproved parkland]
+best matches: playground type <=7.85=> facilityid
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary nodes]
+best matches: status <=0.00=> None
+
+[concept:health, src:parks(operational responsibility) <=> tar:park natural areas]
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:park specimen trees]
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage laterals]
+best matches: facilityid <=13935.00=> location
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary nodes]
+best matches: valve make <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park horticultural beds]
+best matches: description <=834.00=> comments
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:important trees]
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary chambers]
+
+[concept:activities, src:parks(facilityid) <=> tar:park potential donation bench locations]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:park screen trees]
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage flood control]
+best matches: warrantydate <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park playgrounds]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park lights]
+best matches: park ownership <=0.00=> None
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:drainage devices]
+best matches: material <=76791.79=> yr
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=65.55=> facilityid
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary valves]
+best matches: node no <=6.55=> facilityid
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park sports fields]
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:water sampling stations]
+best matches: name <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park sports fields]
+best matches: park ownership <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage laterals]
+best matches: name <=2787.00=> location
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park outdoor recreation facilities]
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary flow system nodes]
+best matches: status <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park playgrounds]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park paths and trails]
+best matches: description <=81.00=> status
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park structures]
+best matches: winterization required <=0.00=> None
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park outdoor recreation facilities]
+best matches: winterization required <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park unimproved parkland]
+
+[concept:park, src:park structures(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:important trees]
+
+[concept:children, src:park playgrounds(service level) <=> tar:park sports fields]
+best matches: service level <=273.86=> community
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park structures]
+best matches: description <=0.00=> None
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary valves]
+best matches: status <=0.00=> None
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:water assemblies]
+best matches: material <=4234.25=> yr
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary chambers]
+best matches: comments <=84951.00=> status
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:important trees]
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park passive grass]
+best matches: park ownership <=9.00=> comments
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage pump stations]
+best matches: name <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park unimproved parkland]
+best matches: barcode <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:nature, src:parks(status) <=> tar:park natural areas]
+best matches: status <=10.00=> comments
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary nodes]
+best matches: material <=29.25=> yr
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park horticultural beds]
+
+[concept:fields, src:park sports fields(infield type) <=> tar:parks]
+best matches: infield type <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park potential donation bench locations]
+best matches: park name <=0.00=> None
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage detention ponds]
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park paths and trails]
+best matches: park <=810.00=> status
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park horticultural beds]
+best matches: park area type2 <=834.00=> comments
+
+[concept:park, src:park horticultural zones(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park playgrounds(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park paths and trails]
+best matches: description <=81.00=> status
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:water sampling stations]
+best matches: name <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park passive grass]
+best matches: park area type2 <=1.00=> comments
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary valves]
+best matches: rim elevation <=8.80=> invert
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage monitoring stations]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park structures]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park playgrounds]
+best matches: description <=38.20=> facilityid
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary manholes]
+best matches: rim elevation <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage flood control]
+best matches: name <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park potential donation bench locations]
+best matches: barcode <=0.00=> None
+
+[concept:trees, src:park screen trees(tree species) <=> tar:parks]
+best matches: tree species <=0.00=> None
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:water assemblies]
+best matches: status <=0.00=> None
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park paths and trails]
+best matches: park area type2 <=81.00=> status
+
+[concept:trees, src:park specimen trees(tree) <=> tar:important trees]
+best matches: tree <=0.00=> None
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary nodes]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage detention ponds]
+best matches: device size <=0.00=> None
+
+[concept:activities, src:parks(facilityid) <=> tar:park playgrounds]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:parks]
+best matches: park area type2 <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park specimen trees]
+best matches: park <=71125.68=> park
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage laterals]
+best matches: name <=25083.00=> location
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park outdoor recreation facilities]
+best matches: description <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage devices]
+best matches: device size <=9392.00=> location
+
+[concept:rainfall, src:drainage monitoring stations(maintained by) <=> tar:drainage devices]
+best matches: maintained by <=152255.00=> owner
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary manholes]
+best matches: manufacturer <=0.00=> None
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage devices]
+best matches: chainage to <=57789.34=> yr
+
+[concept:park, src:park natural areas(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:trees, src:park screen trees(tree species) <=> tar:park specimen trees]
+best matches: tree species <=25015.00=> tree genus
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage flood control]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage devices]
+best matches: warrantydate <=3522.00=> location
+
+[concept:park, src:park passive grass(park name) <=> tar:park specimen trees]
+best matches: park name <=4.53=> description
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary flow system nodes]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park natural areas(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary nodes]
+best matches: project no <=144.00=> status
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary manholes]
+
+[concept:park, src:park natural areas(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park horticultural beds]
+best matches: park name <=8340.00=> comments
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park structures]
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary valves]
+best matches: project no <=927.00=> status
+
+[concept:drainage, src:drainage laterals(warrantydate) <=> tar:drainage monitoring stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:environment, src:parks(comments) <=> tar:aquatic hubs]
+best matches: comments <=60.00=> comments
+=add_attr_to_kb_concept= concept:environment src:parks(comments)<=60.00=>aquatic hubs(comments)
+
+[concept:park, src:park structures(park ownership) <=> tar:park potential donation bench locations]
+best matches: park ownership <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park sports fields]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:park specimen trees]
+
+[concept:park, src:park structures(park ownership) <=> tar:park natural areas]
+best matches: park ownership <=1.00=> comments
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary manholes]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park structures(park ownership) <=> tar:park unimproved parkland]
+best matches: park ownership <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park lights]
+best matches: prk trail service class <=0.00=> None
+
+[concept:recreation, src:park sports fields(description) <=> tar:park paths and trails]
+best matches: description <=41.30=> facilityid
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park unimproved parkland]
+best matches: prk trail service class <=0.00=> None
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:sanitary chambers]
+best matches: status <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park potential donation bench locations]
+best matches: facilityid <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:depth, src:drainage monitoring stations(measurement method) <=> tar:drainage devices]
+best matches: measurement method <=7044.00=> location
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:drainage devices]
+best matches: status <=1.25=> yr
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park lights]
+best matches: park <=0.00=> None
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage pump stations]
+best matches: warrantydate <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary valves]
+best matches: status <=0.00=> None
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:water assemblies]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park passive grass(park name) <=> tar:park screen trees]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:drainage devices]
+best matches: status <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:pigging, src:sanitary flow system nodes(project no) <=> tar:sanitary chambers]
+best matches: project no <=84951.00=> status
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park screen trees]
+best matches: park <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park sports fields]
+best matches: prk trail service class <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park passive grass]
+best matches: description <=1.00=> comments
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park screen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:important trees]
+
+[concept:park, src:park catch basins(prk pt location) <=> tar:park screen trees]
+best matches: prk pt location <=0.00=> None
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage monitoring stations]
+best matches: name <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:park unimproved parkland]
+best matches: park name <=4.59=> description
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary chambers]
+best matches: rim elevation <=19.75=> invert
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage devices]
+best matches: facilityid <=5870.00=> location
+
+[concept:environment, src:parks(comments) <=> tar:park natural areas]
+best matches: comments <=10.00=> comments
+
+[concept:monitor, src:drainage monitoring stations(monitoring station type2) <=> tar:drainage laterals]
+
+[concept:park, src:park passive grass(park name) <=> tar:park unimproved parkland]
+best matches: park name <=16.89=> description
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park outdoor recreation facilities]
+
+[concept:drainage, src:drainage devices(warrantydate) <=> tar:drainage catch basins]
+best matches: warrantydate <=3434.32=> location
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:sanitary chambers]
+best matches: rim elevation <=19.75=> invert
+
+[concept:youth, src:parks(location) <=> tar:park natural areas]
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park passive grass]
+best matches: barcode <=0.00=> None
+
+[concept:park, src:park screen trees(park name) <=> tar:important trees]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park sports fields]
+best matches: park <=10.51=> park
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:important trees]
+
+[concept:activities, src:parks(facilityid) <=> tar:park paths and trails]
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage devices]
+best matches: facilityid <=0.00=> None
+
+[concept:drainage, src:drainage catch basins(device size) <=> tar:drainage laterals]
+best matches: device size <=22296.00=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:drainage devices]
+best matches: rim elevation <=11.79=> yr
+
+[concept:node, src:sanitary flow system nodes(node no) <=> tar:sanitary chambers]
+best matches: node no <=1152.75=> facilityid
+
+[concept:youth, src:parks(location) <=> tar:trails and paths]
+
+[concept:recreation, src:park sports fields(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park outdoor recreation facilities]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park natural areas]
+best matches: description <=191.00=> location
+
+[concept:riser, src:sanitary flow system nodes(rim elevation) <=> tar:water assemblies]
+best matches: rim elevation <=0.00=> None
+
+[concept:parks, src:parks(park name) <=> tar:aquatic hubs]
+
+[concept:chambers, src:sanitary chambers(chamber size) <=> tar:sanitary valves]
+best matches: chamber size <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park specimen trees]
+best matches: park name <=5.88=> description
+
+[concept:health, src:parks(operational responsibility) <=> tar:aquatic hubs]
+
+[concept:drainage, src:drainage detention ponds(warrantydate) <=> tar:drainage catch basins]
+best matches: warrantydate <=1035.00=> location
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage detention ponds]
+best matches: name <=0.00=> None
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary nodes]
+
+[concept:parks, src:parks(park name) <=> tar:important trees]
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park unimproved parkland]
+best matches: description <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park playgrounds]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park trans canada trail(trail status) <=> tar:parks]
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park passive grass]
+
+[concept:nature, src:park natural areas(natural area type) <=> tar:aquatic hubs]
+best matches: natural area type <=60.00=> comments
+
+[concept:node, src:sanitary nodes(node type2) <=> tar:sanitary flow system nodes]
+
+[concept:grit, src:sanitary flow system nodes(material) <=> tar:sanitary manholes]
+best matches: material <=17133.92=> yr
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park potential donation bench locations]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park specimen trees]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park natural areas]
+best matches: description <=10.00=> comments
+
+[concept:children, src:park playgrounds(service level) <=> tar:park unimproved parkland]
+best matches: service level <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park unimproved parkland]
+best matches: park ownership <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park paths and trails]
+best matches: park ownership <=0.00=> None
+
+[concept:sanitary, src:sanitary nodes(status) <=> tar:water assemblies]
+best matches: status <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park structures]
+
+[concept:drainage, src:drainage pump stations(name) <=> tar:drainage devices]
+best matches: name <=10566.00=> location
+
+[concept:park, src:park screen trees(park name) <=> tar:park specimen trees]
+best matches: park name <=0.63=> location
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:drainage devices]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park horticultural beds(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:drainage, src:drainage monitoring stations(name) <=> tar:drainage flood control]
+best matches: name <=0.00=> None
+
+[concept:park, src:park natural areas(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:parks]
+best matches: park ownership <=0.00=> None
+
+[concept:recreation, src:park unimproved parkland(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:sanitary manholes]
+best matches: valve make <=0.00=> None
+
+[concept:subdivision, src:subdivision markers(facilityid) <=> tar:park specimen trees]
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:water assemblies]
+best matches: rim elevation <=0.00=> None
+
+[concept:park, src:park natural areas(park name) <=> tar:important trees]
+
+[concept:sanitary, src:sanitary valves(manufacturer) <=> tar:sanitary nodes]
+best matches: manufacturer <=0.00=> None
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park lights]
+best matches: park ownership <=0.00=> None
+
+[concept:outdoor, src:park outdoor recreation facilities(outdoor rec fac type2) <=> tar:park lights]
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary chambers]
+
+[concept:trees, src:park screen trees(tree species) <=> tar:important trees]
+best matches: tree species <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park unimproved parkland]
+best matches: park name <=16.89=> description
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park potential donation bench locations]
+best matches: description <=0.00=> None
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage pump stations]
+best matches: facilityid <=0.00=> None
+
+[concept:park, src:park lights(park name) <=> tar:parks]
+best matches: park name <=0.00=> None
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary nodes]
+best matches: comments <=0.00=> None
+
+[concept:recreation, src:park outdoor recreation facilities(description) <=> tar:park sports fields]
+best matches: description <=32.75=> facilityid
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park lights]
+best matches: description <=0.00=> None
+
+[concept:park, src:park paths and trails(park ownership) <=> tar:park potential donation bench locations]
+best matches: park ownership <=0.00=> None
+
+[concept:drainage, src:drainage flood control(chainage to) <=> tar:drainage catch basins]
+best matches: chainage to <=36659.29=> yr
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park passive grass]
+best matches: facilityid <=6.00=> comments
+
+[concept:activities, src:parks(facilityid) <=> tar:park horticultural beds]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park potential donation bench locations]
+best matches: park area type2 <=0.00=> None
+
+[concept:valve, src:water assemblies(valve make) <=> tar:drainage devices]
+best matches: valve make <=0.00=> None
+
+[concept:exercise, src:park outdoor recreation facilities(barcode) <=> tar:park playgrounds]
+best matches: barcode <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:sanitary chambers]
+best matches: status <=23.62=> invert
+
+[concept:sanitary, src:sanitary chambers(status) <=> tar:sanitary flow system nodes]
+best matches: status <=11.72=> invert
+
+[concept:temp_recreation_2, src:park unimproved parkland(description) <=> tar:park horticultural beds]
+best matches: description <=834.00=> comments
+
+[concept:chamber, src:drainage devices(comments) <=> tar:sanitary valves]
+best matches: comments <=927.00=> status
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:drainage detention ponds]
+best matches: facilityid <=0.00=> None
+
+[concept:recreation, src:park paths and trails(description) <=> tar:park sports fields]
+best matches: description <=0.00=> None
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:drainage devices]
+best matches: rim elevation <=11.79=> yr
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:water assemblies]
+best matches: status <=0.00=> None
+
+[concept:walk, src:parks(park name) <=> tar:trails and paths]
+
+[concept:recreation, src:park sports fields(description) <=> tar:park playgrounds]
+best matches: description <=1.35=> facilityid
+
+[concept:parks, src:parks(park name) <=> tar:trails and paths]
+
+[concept:park, src:park unimproved parkland(park area type2) <=> tar:park outdoor recreation facilities]
+best matches: park area type2 <=0.00=> None
+
+[concept:youth, src:parks(location) <=> tar:aquatic hubs]
+
+[concept:nature, src:parks(status) <=> tar:aquatic hubs]
+best matches: status <=60.00=> comments
+=add_attr_to_kb_concept= concept:nature src:parks(status)<=60.00=>aquatic hubs(comments)
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park structures]
+best matches: facilityid <=0.00=> None
+
+[concept:trees, src:important trees(tree species) <=> tar:parks]
+
+[concept:sanitary, src:sanitary manholes(status) <=> tar:sanitary flow system nodes]
+best matches: status <=0.00=> None
+
+[concept:sanitary, src:sanitary flow system nodes(status) <=> tar:drainage devices]
+best matches: status <=3.88=> yr
+
+[concept:+riser+valve, src:sanitary flow system nodes(rim elevation) <=> tar:water assemblies]
+best matches: rim elevation <=0.00=> None
+
+[concept:kids, src:park playgrounds(winterization required) <=> tar:park sports fields]
+best matches: winterization required <=0.00=> None
+
+[concept:facilities, src:park outdoor recreation facilities(facilityid) <=> tar:park lights]
+best matches: facilityid <=0.00=> None
+
+[concept:temp_park_2, src:park passive grass(park name) <=> tar:park structures]
+best matches: park name <=0.00=> None
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park natural areas]
+best matches: prk trail service class <=6.00=> comments
+
+[concept:park, src:park lights(park name) <=> tar:park paths and trails]
+best matches: park name <=40.00=> comments
+
+[concept:flow, src:sanitary flow system nodes(facilityid) <=> tar:sanitary chambers]
+best matches: facilityid <=0.00=> None
+
+[concept:sports, src:park sports fields(sports field type2) <=> tar:park passive grass]
+
+[concept:park, src:park potential donation bench locations(park ownership) <=> tar:park structures]
+best matches: park ownership <=0.00=> None
+
+[concept:fun, src:park playgrounds(facilityid) <=> tar:park lights]
+
+[concept:parkland, src:park unimproved parkland(park ownership) <=> tar:parks]
+
+[concept:park, src:park passive grass(park name) <=> tar:park outdoor recreation facilities]
+best matches: park name <=0.00=> None
+
+[concept:quality, src:water sampling stations(facilityid) <=> tar:drainage detention ponds]
+best matches: facilityid <=0.00=> None
+
+[concept:trees, src:park specimen trees(tree) <=> tar:parks]
+best matches: tree <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park playgrounds]
+best matches: description <=0.00=> None
+
+[concept:park, src:park outdoor recreation facilities(park) <=> tar:park natural areas]
+best matches: park <=10.00=> comments
+
+[concept:recreation, src:park sports fields(description) <=> tar:park passive grass]
+best matches: description <=38.00=> facilityid
+
+[concept:valve, src:sanitary flow system nodes(rim elevation) <=> tar:drainage devices]
+best matches: rim elevation <=11.79=> yr
+
+[concept:health, src:trails and paths(operator) <=> tar:parks]
+best matches: operator <=0.00=> None
+
+[concept:quality, src:drainage monitoring stations(facilityid) <=> tar:water sampling stations]
+best matches: facilityid <=0.00=> None
+
+[concept:chamber, src:sanitary flow system nodes(comments) <=> tar:sanitary manholes]
+best matches: comments <=0.00=> None
+
+[concept:playground, src:park structures(plaque detail) <=> tar:park outdoor recreation facilities]
+
+[concept:exercise, src:park paths and trails(prk trail service class) <=> tar:park outdoor recreation facilities]
+best matches: prk trail service class <=0.00=> None
+
+[concept:temp_recreation_2, src:park sports fields(description) <=> tar:park paths and trails]
+best matches: description <=87.85=> facilityid
+
+-------SPLITTING-------
+-------MERGING-------
+-------NEW CONCEPTS-------
+END OF ITERATIONS
+NUM OF NEW CONCEPTS: 5
+NUM OF TOPICS FOR DATASETS: 0
+TOTAL time 19.472562789916992 sec
+
+Process finished with exit code 0
+
+>>> import os
+>>> path = '/Users/haoran/Documents/thesis_schema_integration/outputs/iter_logs/'
+>>> files = ['kb_file_v1_parks_10_1+4.json', 'kb_file_v1_parks_10_3+2.json']
+>>> os.path.getmtime(path+files[0])
+1571666939.2958326
+>>> os.path.getmtime(path+files[1])
+1571666946.3603117
+>>> time1 = os.path.getmtime(path+files[0])
+>>> time2 = os.path.getmtime(path+files[1])
+>>> time2 - time1
+7.064479112625122

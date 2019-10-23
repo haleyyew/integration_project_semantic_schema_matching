@@ -7,13 +7,14 @@ import json
 
 # foo = {'text': 'Hello world github/linguist#1 **cool**, and #1!'}
 # json_foo = json.dumps(foo)
-# foo = 'Hello world__eol'
-foo = 'Hello'
 
-# connection.request('GET', '/most_similar/'+ foo) #, headers)
+foo = 'Hello'
+foo2 = 'park park__parking'
+
+# connection.request('GET', '/most_similar/'+ foo)
 
 import requests
-server_ip = '35.165.28.229'
+server_ip = '52.151.20.94'
 
 response = requests.get("http://"+server_ip+":5000/vector/"+foo)
 
@@ -21,6 +22,14 @@ import numpy as np
 from ast import literal_eval
 b = np.array(literal_eval(response.json()))
 print(b)
+
+
+response = requests.get("http://"+server_ip+":5000/most_similar/"+foo)
+print(response.json())
+
+
+response = requests.get("http://"+server_ip+":5000/similarity/"+foo2)
+print(response.json(), float(response.json()))
 
 
 # from __future__ import print_function

@@ -1,0 +1,76 @@
+{
+  "park outdoor recreation facilities": [
+    "water",
+    "shelter",
+    "gates",
+    "exercise",
+    "valves",
+    "facilities",
+    "structure",
+    "catchments",
+    "infrastructure",
+    "crossing",
+    "sanitary catchments",
+    "water valves",
+    "recreation",
+    "education",
+    "donation",
+    "school"
+  ],
+  "park paths and trails": [
+    "exercise",
+    "education",
+    "recreation",
+    "school",
+    "donation"
+  ],
+  "park structures": [
+    "water",
+    "shelter",
+    "gates",
+    "donation",
+    "education",
+    "facilities",
+    "valves",
+    "structure",
+    "school",
+    "catchments",
+    "infrastructure",
+    "recreation",
+    "crossing",
+    "sanitary catchments",
+    "water valves"
+  ],
+  "railway crossings": [
+    "water valves",
+    "valves",
+    "structure",
+    "crossing"
+  ],
+  "sanitary catchments": [
+    "structure",
+    "infrastructure",
+    "shelter",
+    "sanitary catchments",
+    "catchments"
+  ],
+  "secondary school catchments": [
+    "recreation",
+    "school",
+    "education",
+    "donation"
+  ],
+  "water valves": [
+    "water",
+    "shelter",
+    "gates",
+    "valves",
+    "facilities",
+    "structure",
+    "catchments",
+    "infrastructure",
+    "crossing",
+    "sanitary catchments",
+    "water valves"
+  ]
+}

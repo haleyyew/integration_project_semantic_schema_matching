@@ -1,0 +1,158 @@
+{
+  "activities": {
+    "datasources": [
+      "parks",
+      "recreation programs activities",
+      "parks",
+      "recreation programs activities"
+    ],
+    "matches": {}
+  },
+  "employment": {
+    "datasources": [
+      "2001 census statistics",
+      "businesses by sector",
+      "employment in arts culture and recreation",
+      "financial information actuals",
+      "financial information budget"
+    ],
+    "matches": {}
+  },
+  "environment": {
+    "datasources": [
+      "2015 fraser river water levels",
+      "age of buildings",
+      "aquatic hubs",
+      "biodiversity conservation strategy",
+      "ecosystem corridors",
+      "ecosystem sites",
+      "greenways",
+      "historical climate data 1937 2007",
+      "official community plan designations",
+      "park land",
+      "parks",
+      "participation environmental programs",
+      "2015 fraser river water levels",
+      "age of buildings",
+      "aquatic hubs",
+      "biodiversity conservation strategy",
+      "ecosystem corridors",
+      "ecosystem sites",
+      "greenways",
+      "historical climate data 1937 2007",
+      "official community plan designations",
+      "park land",
+      "parks",
+      "participation environmental programs"
+    ],
+    "matches": {}
+  },
+  "events": {
+    "datasources": [
+      "active traffic obstructions",
+      "events",
+      "youth centred cultural events"
+    ],
+    "matches": {}
+  },
+  "green": {
+    "datasources": [
+      "biodiversity conservation strategy",
+      "greenways",
+      "parks",
+      "biodiversity conservation strategy",
+      "greenways",
+      "parks"
+    ],
+    "matches": {}
+  },
+  "health": {
+    "datasources": [
+      "air quality",
+      "availability of doctors",
+      "bike routes",
+      "current smokers",
+      "fraser health restaurant inspection reports",
+      "greenways",
+      "healthy food choices in city vending machines",
+      "low birth weight babies",
+      "parks",
+      "trails and paths",
+      "water sampling stations",
+      "air quality",
+      "availability of doctors",
+      "bike routes",
+      "current smokers",
+      "fraser health restaurant inspection reports",
+      "greenways",
+      "healthy food choices in city vending machines",
+      "low birth weight babies",
+      "parks",
+      "trails and paths",
+      "water sampling stations"
+    ],
+    "matches": {}
+  },
+  "mobility": {
+    "datasources": [
+      "2001 census statistics"
+    ],
+    "matches": {}
+  },
+  "nature": {
+    "datasources": [
+      "biodiversity conservation strategy",
+      "greenways",
+      "park natural areas",
+      "parks",
+      "biodiversity conservation strategy",
+      "greenways",
+      "park natural areas",
+      "parks"
+    ],
+    "matches": {}
+  },
+  "parks": {
+    "datasources": [
+      "parks",
+      "recreation programs activities",
+      "parks",
+      "recreation programs activities"
+    ],
+    "matches": {}
+  },
+  "quality": {
+    "datasources": [
+      "air quality",
+      "drainage monitoring stations",
+      "water sampling stations"
+    ],
+    "matches": {}
+  },
+  "status": {
+    "datasources": [
+      "2016 surrey census"
+    ],
+    "matches": {}
+  },
+  "walk": {
+    "datasources": [
+      "parks",
+      "parks"
+    ],
+    "matches": {}
+  },
+  "youth": {
+    "datasources": [
+      "parks",
+      "participation in city programs",
+      "places of interest",
+      "youth centred cultural events",
+      "parks",
+      "participation in city programs",
+      "places of interest",
+      "youth centred cultural events"
+    ],
+    "matches": {}
+  }
+}

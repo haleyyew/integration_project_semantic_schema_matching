@@ -1,0 +1,417 @@
+{
+  "barrier": {
+    "datasources": [
+      "transportation package"
+    ],
+    "matches": {}
+  },
+  "bridge": {
+    "datasources": [
+      "vehicular bridges",
+      "water pipe bridges"
+    ],
+    "matches": {}
+  },
+  "building": {
+    "datasources": [
+      "building permits",
+      "comm ind development summary"
+    ],
+    "matches": {}
+  },
+  "buildings": {
+    "datasources": [
+      "buildings",
+      "com ind dev sum archive",
+      "community ghg emissions",
+      "development statistics",
+      "development statistics archive",
+      "residential dev sum archive",
+      "residential development summary"
+    ],
+    "matches": {}
+  },
+  "catchment": {
+    "datasources": [
+      "drainage package",
+      "elementary school catchments"
+    ],
+    "matches": {
+      "elementary school catchments": {
+        "attribute": "school catchment type 2",
+        "data_type": "esriFieldTypeOID",
+        "example_values": [
+          "Elementary"
+        ],
+        "match_score": 0.3695652173913043
+      }
+    }
+  },
+  "catchments": {
+    "datasources": [
+      "drainage major catchments",
+      "drainage sub catchments",
+      "sanitary catchments"
+    ],
+    "matches": {}
+  },
+  "chamber": {
+    "datasources": [
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers",
+      "drainage devices",
+      "sanitary flow system nodes",
+      "water chambers"
+    ],
+    "matches": {}
+  },
+  "chambers": {
+    "datasources": [
+      "sanitary chambers"
+    ],
+    "matches": {
+      "sanitary chambers": {
+        "attribute": "chamber size",
+        "data_type": "esriFieldTypeString",
+        "example_values": [
+          "1115509739",
+          "1226910114",
+          "1252502437",
+          "1278206086",
+          "1301607232",
+          "1325808046",
+          "1353108120",
+          "1390511629",
+          "1416201612",
+          "1444105820",
+          "1472005794",
+          "1494202493",
+          "1523302146",
+          "1552909006",
+          "1582809243",
+          "1620209423",
+          "1650601063",
+          "1697406001",
+          "1802306977",
+          "1885006458",
+          "1959607288"
+        ],
+        "match_score": 0.625
+      }
+    }
+  },
+  "contemporary sculptures": {
+    "datasources": [
+      "public art"
+    ],
+    "matches": {}
+  },
+  "flow": {
+    "datasources": [
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes",
+      "rainfall monitoring",
+      "rainfall monitoring 2015",
+      "rainfall monitoring archive",
+      "sanitary flow system nodes"
+    ],
+    "matches": {}
+  },
+  "grit": {
+    "datasources": [
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes"
+    ],
+    "matches": {}
+  },
+  "housing": {
+    "datasources": [
+      "average home price",
+      "core housing need",
+      "homelessness",
+      "multi family housing",
+      "rental market",
+      "renters in need",
+      "social housing"
+    ],
+    "matches": {}
+  },
+  "monuments": {
+    "datasources": [
+      "property package",
+      "survey monuments"
+    ],
+    "matches": {}
+  },
+  "movie": {
+    "datasources": [
+      "places of interest"
+    ],
+    "matches": {}
+  },
+  "node": {
+    "datasources": [
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes",
+      "sanitary flow system nodes",
+      "sanitary nodes"
+    ],
+    "matches": {}
+  },
+  "obstructions": {
+    "datasources": [
+      "active traffic obstructions"
+    ],
+    "matches": {}
+  },
+  "pigging": {
+    "datasources": [
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes"
+    ],
+    "matches": {}
+  },
+  "riser": {
+    "datasources": [
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes",
+      "sanitary flow system nodes"
+    ],
+    "matches": {}
+  },
+  "sanitary": {
+    "datasources": [
+      "sanitary catchments",
+      "sanitary manholes",
+      "sanitary flow system nodes",
+      "sanitary package",
+      "sanitary nodes",
+      "sanitary lift stations",
+      "sanitary laterals",
+      "sanitary valves",
+      "sanitary chambers",
+      "ten year plan",
+      "sanitary catchments",
+      "sanitary chambers",
+      "sanitary flow system nodes",
+      "sanitary laterals",
+      "sanitary lift stations",
+      "sanitary manholes",
+      "sanitary nodes",
+      "sanitary package",
+      "sanitary valves",
+      "ten year plan",
+      "sanitary valves"
+    ],
+    "matches": {
+      "sanitary chambers": {
+        "attribute": "status",
+        "cluster": {
+          "sanitary flow system nodes": {
+            "attribute": "invert",
+            "data_type": "esriFieldTypeDouble",
+            "example_values": [
+              "-0.02",
+              "0.0",
+              "0.15",
+              "0.254",
+              "0.33",
+              "0.4",
+              "0.47",
+              "0.54",
+              "0.61",
+              "0.68",
+              "0.74",
+              "0.81",
+              "0.89",
+              "0.97",
+              "1.03",
+              "1.12",
+              "1.23",
+              "1.42",
+              "1.71",
+              "15.68",
+              "3.47"
+            ],
+            "match_score": 27.175
+          },
+          "sanitary valves": {
+            "attribute": "invert",
+            "data_type": "esriFieldTypeDouble",
+            "example_values": [
+              "-0.02",
+              "-1.25",
+              "0.11",
+              "0.29",
+              "0.43",
+              "0.54",
+              "0.65",
+              "0.76",
+              "0.88",
+              "1.01",
+              "1.15",
+              "1.3",
+              "1.61",
+              "11.88",
+              "18.28",
+              "2.2",
+              "2.52",
+              "3.29",
+              "3.72",
+              "4.52",
+              "42.11",
+              "8.7"
+            ],
+            "match_score": 17.199999999999992
+          }
+        },
+        "data_type": "esriFieldTypeDouble",
+        "example_values": [
+          "-0.16",
+          "103.98",
+          "16.68",
+          "3.96",
+          "40.0",
+          "44.89",
+          "50.59",
+          "54.98",
+          "6.81",
+          "65.08",
+          "68.48",
+          "70.7",
+          "74.23",
+          "77.49",
+          "79.72",
+          "81.67",
+          "84.27",
+          "86.97",
+          "89.5",
+          "91.6",
+          "97.29"
+        ],
+        "match_score": 0.3125
+      }
+    }
+  },
+  "shelter": {
+    "datasources": [
+      "park structures"
+    ],
+    "matches": {}
+  },
+  "structure": {
+    "datasources": [
+      "park structures"
+    ],
+    "matches": {}
+  },
+  "structures": {
+    "datasources": [
+      "buildings"
+    ],
+    "matches": {}
+  },
+  "valve": {
+    "datasources": [
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers",
+      "sanitary flow system nodes",
+      "water assemblies",
+      "water chambers"
+    ],
+    "matches": {}
+  }
+}

@@ -341,7 +341,7 @@ def reverse_dict(dict):
 
 def one_full_run(guiding_table_name, datasources_with_tag):
 
-    t0 = time.time()
+
 
     # bmmn.m.datasources_with_tag = ['aquatic hubs','drainage 200 year flood plain','drainage water bodies','park specimen trees', 'parks', 'park screen trees'] #
     bmmn.m.datasources_with_tag = datasources_with_tag
@@ -507,6 +507,7 @@ def one_full_run(guiding_table_name, datasources_with_tag):
 
 
 
+        # ===begin coverage===
         table_scores_attr_topic = gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, gtm, wordnet)
         # print('///// topics attributes /////')
         # pprint.pprint(table_scores_attr_topic)
@@ -577,6 +578,7 @@ def one_full_run(guiding_table_name, datasources_with_tag):
         print('----------')
 
 
+        # ===begin importance===
         table_scores_topic_attr = {}
         topic_from = {}
         for dataset in table_scores:
@@ -653,10 +655,11 @@ def one_full_run(guiding_table_name, datasources_with_tag):
         pprint.pprint(gtm.exposed_topics_groups)
         print('----------')
 
+        '''
         # compute attr-attr similarity matrix (just append one more column). use attr-attr comparison: tf-idf pair of document of values, TODO ngram per val, attr name wordnet
         sim_dict = {}
 
-        # fine grained matching
+        # ===fine grained matching===
         for pair in comparing_pairs:
             gtm_top_name, dataset,dataset_top_name  = pair
             gtm_top, dataset_top = comparing_pairs[pair]
@@ -676,8 +679,10 @@ def one_full_run(guiding_table_name, datasources_with_tag):
                         # print('>>>>>', gtm_attr, len(text1) ,' | ', dataset, dataset_attr, len(text2),  ' || ',  score)
                         # print('<<<<<')
         # TODO clustering. split out attrs from topics (break ties usig avg attr-topic score), merge attrs into (newly added only) groups if possible
+        '''
 
-        # remove added topics from the other table
+
+        # ===remove added topics from the other table===
         print('=====remove added topics=====')
         pprint.pprint(added_topics)
         for dataset in added_topics:
@@ -736,13 +741,19 @@ def one_full_run(guiding_table_name, datasources_with_tag):
     with open(bmmn.p.dataset_topics_p, 'w') as fp:
         json.dump(dataset_topics, fp, sort_keys=True, indent=2)
 
-    t1 = time.time()
-    total = t1 - t0
-    print('time %s sec' % (total))
+
 
 
 import pathlib
 if __name__ == "__main__":
+    import sys
+
+    old_stdout = sys.stdout
+    log_file = open("message.log", "w")
+    sys.stdout = log_file
+    print(    "this will be written to message.log")
+
+
     table_topics_p = 'outputs/table_topics.json'
     table_setup_p = 'outputs/table_setup.json'
 
@@ -755,9 +766,36 @@ if __name__ == "__main__":
     # datasources_with_tag = ['aquatic hubs', 'drainage 200 year flood plain', 'drainage water bodies',
     #                         'park specimen trees', 'parks', 'park screen trees']
     # guiding_table_name = 'parks'
-    datasources_with_tag = table_setup['tables']
 
-    done = True
+
+    # datasources_with_tag = table_setup['tables']  # TODO change to this later
+    datasources_with_tag = [table_setup['guiding_tables'][item][0] for item in table_setup['guiding_tables']]
+    datasources_with_tag = [datasources_with_tag[0]]
+
+    for k,table in enumerate(table_setup['guiding_tables']):
+        if k != 0: continue # TODO for now just first table
+
+        dataset_name = table_setup['guiding_tables'][table][0]
+        dataset_name = 'parks' # TODO <=
+        print(dataset_name)
+
+        # TODO change scope of datasets, per sample size per guiding table
+        print('[[[', 'global mappings', dataset_name, ']]]')    # GUIDING TABLE
+
+        for plan in table_topics[dataset_name]['samples']:
+            if int(plan) > 10:  # TODO for now just try sample size 10
+                continue
+            mixes = table_topics[dataset_name]['samples'][plan]
+            for mix in mixes:
+                datasources_with_tag += mixes[mix][0] + mixes[mix][1]
+    datasources_with_tag = list(set(datasources_with_tag))
+
+    datasources_with_tag = 'parks', 'heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure', 'park outdoor recreation facilities', 'park sports fields', 'water assemblies', 'road row requirements downtown'  # TODO <=
+
+    print(len(datasources_with_tag))
+    print(datasources_with_tag)
+
+    done = False # TODO <=
     if not done:
         print('enrich topics')
         pt.enrich_topics_full_run(datasources_with_tag)
@@ -767,7 +805,14 @@ if __name__ == "__main__":
         bmmn.create_attributes_contexts(datasources_with_tag, bmmn.m, bmmn.p, bmmn.r)
         # then move the json files to the appropriate dirs
         print('contexts to json')
+
+        t0 = time.time()
+
         settj.one_full_run()
+
+        t1 = time.time()
+        total = t1 - t0
+        print('>>>>>>>>>>>>>>>>prematching time %s sec<<<<<<<<<<<<<<<' % (total))
 
     #
     print('local mappings')
@@ -780,21 +825,28 @@ if __name__ == "__main__":
     dataset_metadata_set = json.load(dataset_metadata_f)
 
     #
-    exit(0)
+    #exit(0) # TODO <=
+
+
+
 
     for k,table in enumerate(table_setup['guiding_tables']):
         if k % 2 != 0: continue # TODO for now just try 5 tables
 
         dataset_name = table_setup['guiding_tables'][table][0]
-        print(dataset_name)
+        temp1 = dataset_name
+        dataset_name = 'parks' # TODO <=
+        print(dataset_name, '!!!')
 
         # TODO change scope of datasets, per sample size per guiding table
         print('[[[', 'global mappings', dataset_name, ']]]')    # GUIDING TABLE
 
         for plan in table_topics[dataset_name]['samples']:
-            if int(plan) > 10:
+            if int(plan) > 10:  # TODO for now just try sample size 10
                 continue
             mixes = table_topics[dataset_name]['samples'][plan]
+            temp2 = mixes
+            mixes = {'1+4': [['parks'], ['heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure']], '3+2': [['parks', 'park outdoor recreation facilities', 'park sports fields'], ['water assemblies', 'road row requirements downtown']]} # TODO <=
             for mix in mixes:
                 datasources_with_tag = mixes[mix][0] + mixes[mix][1]
                 print('one_full_run:', dataset_name, plan, mix, datasources_with_tag)
@@ -810,4 +862,14 @@ if __name__ == "__main__":
                 if my_file.exists():
                     continue
 
+                t0 = time.time()
+
                 one_full_run(dataset_name, datasources_with_tag)
+
+                t1 = time.time()
+                total = t1 - t0
+                print('>>>>>>>>>>>>>>>>%s matching time %s sec<<<<<<<<<<<<<<<' % (dataset_name, total))
+
+    sys.stdout = old_stdout
+    print("this will not be written to message.log")
+    log_file.close()
