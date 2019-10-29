@@ -131,6 +131,7 @@ def gt_nonmapped_attr_to_new_topic(table_scores, table_metadata, guiding_table, 
     gt_exposed_topics = guiding_table.exposed_topics
 
     gt_attrs_mapped = []
+
     gtm_kb = m2.kbs[m2.guiding_table_name]
 
     for topic in gtm_kb:
@@ -464,6 +465,10 @@ def one_full_run(guiding_table_name, datasources_with_tag):
 
             # print(':::::', dataset, scores)
 
+            print(len(m2.kbs))
+            if m2.guiding_table_name not in m2.kbs:
+                m2.kbs[m2.guiding_table_name] = m2.kbs['parks'] # TODO <==
+
             gtm_kb = m2.kbs[m2.guiding_table_name]
             dataset_kb = m2.kbs[dataset]
 
@@ -790,7 +795,11 @@ if __name__ == "__main__":
                 datasources_with_tag += mixes[mix][0] + mixes[mix][1]
     datasources_with_tag = list(set(datasources_with_tag))
 
-    datasources_with_tag = 'parks', 'heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure', 'park outdoor recreation facilities', 'park sports fields', 'water assemblies', 'road row requirements downtown'  # TODO <=
+    datasources_with_tag = ['parks', 'heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure', 'park outdoor recreation facilities', 'park sports fields', 'water assemblies', 'road row requirements downtown']  # TODO <=
+
+    datasources_with_tag = ['parks', 'park specimen trees', 'park screen trees', 'park outdoor recreation facilities', "park structures"]
+
+    # TODO kb_local_mapping does not have any data after local mapping!
 
     print(len(datasources_with_tag))
     print(datasources_with_tag)
@@ -814,12 +823,17 @@ if __name__ == "__main__":
         total = t1 - t0
         print('>>>>>>>>>>>>>>>>prematching time %s sec<<<<<<<<<<<<<<<' % (total))
 
-    #
+    t0 = time.time()
+
     print('local mappings')
     bmmn.load_metadata(bmmn.p, bmmn.m)
     bmmn.m.datasources_with_tag = datasources_with_tag
     # bmmn.local_mappings(bmmn.p, bmmn.m, bmmn.r)
     bmmn.local_mappings_full(bmmn.p, bmmn.m, bmmn.r)
+
+    t1 = time.time()
+    total = t1 - t0
+    print('>>>>>>>>>>>>>>>>local time %s sec<<<<<<<<<<<<<<<' % (total))
 
     dataset_metadata_f = open('./inputs/datasource_and_tags.json', 'r')
     dataset_metadata_set = json.load(dataset_metadata_f)
@@ -847,6 +861,9 @@ if __name__ == "__main__":
             mixes = table_topics[dataset_name]['samples'][plan]
             temp2 = mixes
             mixes = {'1+4': [['parks'], ['heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure']], '3+2': [['parks', 'park outdoor recreation facilities', 'park sports fields'], ['water assemblies', 'road row requirements downtown']]} # TODO <=
+
+            mixes = {'5+0': [['parks', 'park specimen trees', 'park screen trees', 'park outdoor recreation facilities', "park structures"],
+                             []]} # TODO <=
             for mix in mixes:
                 datasources_with_tag = mixes[mix][0] + mixes[mix][1]
                 print('one_full_run:', dataset_name, plan, mix, datasources_with_tag)

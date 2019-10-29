@@ -27262,12 +27262,12 @@
       "coded_values": [
         "Boulevard",
         "Cemetery",
+        "Horticultural Zone",
         "Island",
-        "Park Maintained Land",
         "Median",
         "Park",
-        "Walkway",
-        "Horticultural Zone"
+        "Park Maintained Land",
+        "Walkway"
       ],
       "data_type": "esriFieldTypeString",
       "datasource": "./metadata/238 Park Screen Trees.json",
@@ -28489,6 +28489,7 @@
         "Fire Department",
         "GVRD",
         "GVWD",
+        "Information Technology",
         "LFVEA",
         "Libraries",
         "Other Municipality",
@@ -28501,8 +28502,7 @@
         "School District #36",
         "Sewer",
         "Unknown",
-        "Water",
-        "Information Technology"
+        "Water"
       ],
       "data_type": "esriFieldTypeString",
       "datasource": "./metadata/239 Park Specimen Trees.json",

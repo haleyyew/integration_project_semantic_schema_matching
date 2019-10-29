@@ -1,0 +1,16 @@
+{
+    "comments": "location",
+    "description": "location",
+    "facilityid": "facility",
+    "house no": "status",
+    "location": "location",
+    "maintenance responsibility": "service",
+    "map page": "park",
+    "operational responsibility": "owners",
+    "park name": "park",
+    "park ownership": "park",
+    "road code": "status",
+    "service classification": "service",
+    "status": "status",
+    "work assignment": "park"
+}

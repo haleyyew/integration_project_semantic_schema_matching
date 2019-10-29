@@ -38,8 +38,7 @@ schema_data = json.load(f)
 # 'parks', 'heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure'
 # ]
 target = [
-'parks', 'park outdoor recreation facilities', 'park sports fields', 'water assemblies', 'road row requirements downtown'
-]
+'parks', 'park specimen trees', 'park screen trees', 'park outdoor recreation facilities', "park structures"]
 source = ['parks']
 
 stats_path = root+'inputs/dataset_statistics/'

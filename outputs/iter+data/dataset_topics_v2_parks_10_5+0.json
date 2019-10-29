@@ -1,0 +1,68 @@
+{
+  "park outdoor recreation facilities": [
+    "exercise",
+    "recreation",
+    "facilities",
+    "activities",
+    "green",
+    "trees",
+    "park",
+    "screen",
+    "gates",
+    "nature",
+    "health",
+    "environment"
+  ],
+  "park screen trees": [
+    "parks",
+    "gates",
+    "screen",
+    "green",
+    "park",
+    "trees",
+    "activities",
+    "facilities",
+    "recreation",
+    "exercise"
+  ],
+  "park specimen trees": [
+    "screen",
+    "trees",
+    "gates",
+    "green",
+    "park",
+    "activities",
+    "facilities",
+    "recreation",
+    "exercise"
+  ],
+  "park structures": [
+    "parks",
+    "gates",
+    "screen",
+    "green",
+    "park",
+    "trees",
+    "activities",
+    "facilities",
+    "recreation",
+    "exercise",
+    "nature"
+  ],
+  "parks": [
+    "recreation",
+    "parks",
+    "facilities",
+    "gates",
+    "screen",
+    "health",
+    "green",
+    "nature",
+    "park",
+    "donation",
+    "activities",
+    "trees",
+    "environment",
+    "exercise"
+  ]
+}

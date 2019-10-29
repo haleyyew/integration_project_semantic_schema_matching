@@ -534,6 +534,8 @@ if __name__ == "__main__":
                 continue
             mixes = table_topics[dataset_name]['samples'][plan]
             mixes = {'1+4':[['parks' ],['heritage sites', 'water utility facilities', 'sanitary lift stations', 'drainage dyke infrastructure']], '3+2':[['parks', 'park outdoor recreation facilities', 'park sports fields' ],['water assemblies', 'road row requirements downtown']]} # TODO <<<===
+            mixes = {'5+0': [['parks'], ['park specimen trees', 'parks', 'park screen trees', 'park outdoor recreation facilities', "park structures"]],}  # TODO <<<===
+
             for mix in mixes:
                 p.debug_datasources_with_tag = mixes[mix][0] + mixes[mix][1]
                 print('one_full_run:', plan, mix, p.debug_datasources_with_tag)

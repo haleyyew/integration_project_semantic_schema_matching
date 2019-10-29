@@ -1,0 +1,32 @@
+/usr/local/bin/python3.7 /Users/haoran/Documents/thesis_schema_integration/iterative_algorithm.py
+parks
+[[[ parks ['activities', 'environment', 'green', 'health', 'nature', 'parks', 'walk', 'youth'] ]]]
+one_full_run: 10 5+0 ['parks', 'park specimen trees', 'parks', 'park screen trees', 'park outdoor recreation facilities', 'park structures']
+-------INIT-------
+parks
+arg_max_examples_vals 1001486308
+best match: activities facilityid 0.35 None
+best match: environment comments 0.31818181818181823 10054 149 St
+best match: green work assignment 0.30000000000000004 Drainage
+best match: health operational responsibility 0.23076923076923073 None
+best match: nature status 0.33333333333333337 10585.0
+best match: parks park name 0.5 0A - Greenbelt
+best match: walk park name 0.33333333333333337 0A - Greenbelt
+arg_max_examples_vals 10054 149 St
+best match: youth location 0.25 None
+-----
+===== ITERATIONS TO GO 5 =====
+-------MATCHING-------
+time 0.04709506034851074 sec
+-----
+-------UPDATE KB-------
+dict_keys(['activities', 'environment', 'green', 'health', 'nature', 'parks', 'walk', 'youth']) 8
+-------SPLITTING-------
+-------MERGING-------
+-------NEW CONCEPTS-------
+END OF ITERATIONS
+NUM OF NEW CONCEPTS: 5
+NUM OF TOPICS FOR DATASETS: 0
+TOTAL time 10.050384283065796 sec
+
+Process finished with exit code 0

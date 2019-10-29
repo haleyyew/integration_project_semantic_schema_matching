@@ -212,12 +212,21 @@ iter:
 iter+data:
 22.505346059799194
 
+5+0: 'park specimen trees', 'parks', 'park screen trees', park outdoor recreation facilities, "park structures"
+iter+data:
+matching time 6.709111928939819
+  prematching time 5.188857793807983 sec
+
 accuracy:
 
 for 'data'
 training data
 parks - 5 tables - 5+0, 1+4, 3+2 mixes
+          3+2: 0.7710871696472168
         10 tables - 0+10, 10+0, 5+5 mixes
+          0+10: 1.3138320446014404
+          10+0: 1.0686359405517578
+          5+5: 1.1869423389434814
 
 for 'iter+data' (weights)
 parks - same etc
@@ -226,3 +235,7 @@ for 'iter+data' (word2vec)
 parks - just table search
 
 vary number of tables as base table set
+
+how about matching names first
+what about values in column? mapped to topics
+measure topics for guiding table only, or topics for all related tables in repository

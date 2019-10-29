@@ -54,7 +54,7 @@ def compute_precision_and_recall(ground, set_of_labeling_set):
     for label in ground:
         for attr in ground[label]:
             if attr not in ground_truth_reverse_index: ground_truth_reverse_index[attr] = []
-            if label not in ground_truth_reverse_index[attr]: ground_truth_reverse_index[attr].append(label)
+            if label not in ground_truth_reverse_index[attr]: ground_truth_reverse_index[attr].append(label)    # for each topic, which tables have that topic
 
     num_ground_truth_labelings = len([label for label in ground for attr in ground[label]])
 
