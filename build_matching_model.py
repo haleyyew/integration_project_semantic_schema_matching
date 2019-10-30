@@ -460,52 +460,52 @@ def toy_example():
 def serialize_for_rdf(str):
     return str.replace(' ', '-')
 
-from rdflib import Graph
-from rdflib import URIRef, BNode, Literal
-from rdflib.namespace import RDFS, FOAF, RDF
-from rdflib.collection import Collection
-import pprint
-from urllib.parse import urlencode, quote_plus
-def build_kb(list_of_concepts):
-    kb = Graph()
-
-    for concept in list_of_concepts:
-        concept_rdf = URIRef(serialize_for_rdf(concept[0]))
-        datasources = concept[1]
-        # for datasource in datasources:
-        #     kb.add((concept_rdf, FOAF.name, URIRef(serialize_for_rdf(datasource))))
-
-    # for stmt in kb:
-    #     pprint.pprint(stmt)
-    return kb
-
-# TODO WRONG! correct RDF representation - collections, properties
-def update_kb_with_match(kb, match_entry):
-    concept_rdf = URIRef(serialize_for_rdf(match_entry['concept']))
-    datasource_rdf = Literal(match_entry['datasource'])
-    attribute_rdf = Literal(match_entry['attribute'])
-    match_score = Literal(match_entry['match_score'])
-    example_values = match_entry['example_values']
-
-    # for testing only
-    if example_values != None and len(example_values) > 2:
-        example_values = example_values[:2]
-
-    values_literal = []
-    if example_values != None:
-        values_literal = [Literal(value) for value in example_values]
-
-    kb.add((concept_rdf, FOAF.name, attribute_rdf))
-    kb.add((attribute_rdf, RDF.type, datasource_rdf))
-    kb.add((datasource_rdf, RDFS.label, match_score))
-
-    # c = Collection(kb, attribute_rdf, values_literal)
-    for value in values_literal:
-        kb.add((match_score, FOAF.knows, value))
-
-    for stmt in kb:
-        pprint.pprint(stmt)
-    return
+# from rdflib import Graph
+# from rdflib import URIRef, BNode, Literal
+# from rdflib.namespace import RDFS, FOAF, RDF
+# from rdflib.collection import Collection
+# import pprint
+# from urllib.parse import urlencode, quote_plus
+# def build_kb(list_of_concepts):
+#     kb = Graph()
+#
+#     for concept in list_of_concepts:
+#         concept_rdf = URIRef(serialize_for_rdf(concept[0]))
+#         datasources = concept[1]
+#         # for datasource in datasources:
+#         #     kb.add((concept_rdf, FOAF.name, URIRef(serialize_for_rdf(datasource))))
+#
+#     # for stmt in kb:
+#     #     pprint.pprint(stmt)
+#     return kb
+#
+# # TODO WRONG! correct RDF representation - collections, properties
+# def update_kb_with_match(kb, match_entry):
+#     concept_rdf = URIRef(serialize_for_rdf(match_entry['concept']))
+#     datasource_rdf = Literal(match_entry['datasource'])
+#     attribute_rdf = Literal(match_entry['attribute'])
+#     match_score = Literal(match_entry['match_score'])
+#     example_values = match_entry['example_values']
+#
+#     # for testing only
+#     if example_values != None and len(example_values) > 2:
+#         example_values = example_values[:2]
+#
+#     values_literal = []
+#     if example_values != None:
+#         values_literal = [Literal(value) for value in example_values]
+#
+#     kb.add((concept_rdf, FOAF.name, attribute_rdf))
+#     kb.add((attribute_rdf, RDF.type, datasource_rdf))
+#     kb.add((datasource_rdf, RDFS.label, match_score))
+#
+#     # c = Collection(kb, attribute_rdf, values_literal)
+#     for value in values_literal:
+#         kb.add((match_score, FOAF.knows, value))
+#
+#     for stmt in kb:
+#         pprint.pprint(stmt)
+#     return
 
 def build_kb_json(list_of_concepts, kb):
 
