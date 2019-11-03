@@ -11,6 +11,9 @@
 # pip3 install flask flask-jsonpify flask-sqlalchemy flask-restful
 # pip3 install flask-cors --upgrade
 
+# ssh haoran@52.151.20.94
+# H*!
+
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
 from flask_restful import Resource, Api

@@ -16,6 +16,8 @@ data_path = '/Users/haoran/Documents/thesis_schema_integration/outputs/data_driv
 iter_data_path = '/Users/haoran/Documents/thesis_schema_integration/outputs/iter+data/'
 iter_data_noch_path = '/Users/haoran/Documents/thesis_schema_integration/outputs/iter+data_no_check/'
 
+table_tags_orig_p = '/Users/haoran/Documents/thesis_schema_integration/inputs/datasource_and_tags.json'
+
 guiding_table = 'parks'
 print('guiding table(s):', guiding_table)
 
@@ -24,6 +26,17 @@ with open(eval_inputs_path, 'r') as eval_inputs_f:
 
 with open(eval_true_tables_path, 'r') as eval_true_tables_f:
     truth_tables_set = json.load(eval_true_tables_f)
+
+table_tags_orig = {}
+table_tags_diff = {}
+with open(table_tags_orig_p, 'r') as table_tags_orig_f:
+    table_tags_raw = json.load(table_tags_orig_f)
+
+for plan in eval_inputs:
+    truth_tables = truth_tables_set[plan]
+    table_tags_orig[plan] = {}
+    for table in truth_tables:
+        table_tags_orig[plan][table] = [tag['display_name'] for tag in table_tags_raw[table]['tags']]
 
 for plan in eval_inputs:
     truth_tables = truth_tables_set[plan]
@@ -37,6 +50,7 @@ for plan in eval_inputs:
             ground_truths[table] = list(topics_true)
 
     print(plan)
+    table_tags_diff[plan] = {}
     # pprint.pprint(reverse_dict(ground_truths))
 
     plan_output_topics = {}
@@ -58,6 +72,13 @@ for plan in eval_inputs:
 
     print('precision:', precision, 'recall:', recall)
 
+
+    table_tags_diff[plan]['brute'] = {tbl : set(plan_output_topics[tbl]) - set(table_tags_orig[plan][tbl])  for tbl in plan_output_topics if tbl in truth_tables_set[plan]}   # plan_output_topics - table_tags_orig[plan][table]
+
+    num_new_topics = 0
+    for tbl in table_tags_diff[plan]['brute']:
+        num_new_topics += len(list(table_tags_diff[plan]['brute'][tbl]))
+    print('avg new topics:', num_new_topics / len(truth_tables_set[plan]))
 
     print('iterative')
     with open(iter_path + 'kb_file_v1_parks_10_'+plan+'.json', 'r') as f:
@@ -89,6 +110,13 @@ for plan in eval_inputs:
 
     print('precision:', precision, 'recall:', recall)
 
+    table_tags_diff[plan]['iter'] = {tbl: set(plan_output_topics[tbl]) - set(table_tags_orig[plan][tbl]) for tbl in
+                                      plan_output_topics if tbl in truth_tables_set[plan]}
+
+    num_new_topics = 0
+    for tbl in table_tags_diff[plan]['iter']:
+        num_new_topics += len(list(table_tags_diff[plan]['iter'][tbl]))
+    print('avg new topics:', num_new_topics / len(truth_tables_set[plan]))
 
     print('data driven')
     with open(data_path+guiding_table+'_'+plan+'.json', 'r') as f:
@@ -107,6 +135,13 @@ for plan in eval_inputs:
                                                      [reverse_dict({guiding_table: new_topics})])
     print('guiding table precision:', precision, 'and recall:', recall)
 
+    table_tags_diff[plan]['data'] = {guiding_table: set(new_topics) - set(table_tags_orig[plan][guiding_table])}
+
+    num_new_topics = 0
+    for tbl in table_tags_diff[plan]['data']:
+        num_new_topics += len(list(table_tags_diff[plan]['data'][tbl]))
+    print('avg new topics:', num_new_topics / len(truth_tables_set[plan]))
+
 
     print('iterative and data driven')
     with open(iter_data_path + 'dataset_topics_v2_parks_10_'+plan+'.json', 'r') as f:
@@ -114,6 +149,14 @@ for plan in eval_inputs:
 
     precision, recall = compute_precision_and_recall(reverse_dict(ground_truths),[reverse_dict(plan_output_topics)])
     print('precision:', precision, 'recall:', recall)
+
+    table_tags_diff[plan]['iter+data'] = {tbl: set(plan_output_topics[tbl]) - set(table_tags_orig[plan][tbl]) for tbl in
+                                          plan_output_topics if tbl in truth_tables_set[plan]}
+
+    num_new_topics = 0
+    for tbl in table_tags_diff[plan]['iter+data']:
+        num_new_topics += len(list(table_tags_diff[plan]['iter+data'][tbl]))
+    print('avg new topics:', num_new_topics / len(truth_tables_set[plan]))
 
     print('iterative and data driven (no checks)')
 
@@ -126,3 +169,12 @@ for plan in eval_inputs:
     precision, recall = compute_precision_and_recall(reverse_dict(ground_truths),[reverse_dict(plan_output_topics)])
     print('precision:', precision, 'recall:', recall)
 
+    table_tags_diff[plan]['iter+data_noch'] = {tbl: set(plan_output_topics[tbl]) - set(table_tags_orig[plan][tbl]) for tbl in
+                                        plan_output_topics if tbl in truth_tables_set[plan]}
+
+    num_new_topics = 0
+    for tbl in table_tags_diff[plan]['iter+data_noch']:
+        num_new_topics += len(list(table_tags_diff[plan]['iter+data_noch'][tbl]))
+    print('avg new topics:', num_new_topics / len(truth_tables_set[plan]))
+
+# pprint.pprint(table_tags_diff)
