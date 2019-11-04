@@ -254,6 +254,10 @@ def build_local_context_similarity_matrix(topics_contexts, attributes_contexts, 
     topic_names = list(topics_contexts[source_name].keys())
     attribute_names = list(attributes_contexts.keys())
 
+    # ADDED
+    topic_names.sort()
+    attribute_names.sort()
+
     # print('=====', topic_names, attribute_names)
 
     matrix= np.zeros((len(topic_names), len(attribute_names)))

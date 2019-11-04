@@ -1,0 +1,292 @@
+park paths and trails
+park natural areas
+park specimen trees
+park unimproved parkland
+park outdoor recreation facilities
+park sports fields
+park structures
+trails and paths
+park structures
+trails and paths
+walking routes
+park screen trees
+drainage dyke infrastructure
+sanitary lift stations
+water utility facilities
+water valves
+water meters
+sanitary nodes
+heritage routes
+water assemblies
+water fittings
+road row requirements downtown
+aquatic hubs
+Create training data ...
+=create_training_data= self.columns :
+['age', 'air', 'bench', 'bike', 'code', 'community', 'corridor', 'depth', 'dimensions', 'disaster', 'donation', 'drainage', 'edges', 'elevation', 'facility', 'feature', 'fencing', 'fields', 'fitting', 'folio', 'heritage', 'house', 'hubs', 'image', 'infrastructure', 'land', 'light', 'location', 'nature', 'network', 'node', 'outdoor', 'owners', 'park', 'projects', 'protection', 'right of ways', 'road', 'route', 'routes', 'school', 'service', 'services', 'sites', 'size', 'station', 'status', 'street', 'structure', 'surface', 'trail', 'trees', 'type', 'urban', 'use', 'valve', 'water']
+=create_training_data= self.col_train_data :
+                               name       ...                 class
+0          bike infrastructure type       ...                  bike
+1                      bike network       ...               network
+2                     corridor name       ...              corridor
+3                     corridor type       ...                  type
+4                        facilityid       ...              facility
+5                     fencing side1       ...               fencing
+6                          location       ...              location
+7                             owner       ...                owners
+8                    park ownership       ...                  park
+9           prk trail service areas       ...                 trail
+10                       project no       ...              projects
+11                           status       ...                status
+12                    trees planted       ...                 trees
+13          adjcent land use rating       ...                  land
+14           dedicated urban forest       ...                 urban
+15            exposed edge length m       ...                 edges
+16                 forest age class       ...                   age
+17                      forest type       ...                  type
+18                natural area type       ...                nature
+19                        park name       ...                  park
+20                   park ownership       ...                owners
+21                     right of way       ...         right of ways
+22                          service       ...               service
+23                    trail present       ...                 trail
+24                    gift donation       ...              donation
+25        heritage significant tree       ...              heritage
+26                             park       ...                  park
+27                             tree       ...                 trees
+28         tree size classification       ...                  size
+29                        tree type       ...                  type
+..                              ...       ...                   ...
+50               operating location       ...              location
+51                       route type       ...                 route
+52                  number of trees       ...                 trees
+53             corrosion protection       ...            protection
+54              infrastructure type       ...        infrastructure
+55  public and private pump station       ...               station
+56                          site id       ...                 sites
+57                             size       ...                  size
+58                      watercourse       ...                 water
+59                   facility type2       ...                  type
+60              corrosion protected       ...            protection
+61                 disaster control       ...              disaster
+62                          node no       ...                  node
+63                      valve type2       ...                 valve
+64                            folio       ...                 folio
+65                            image       ...                 image
+66                           street       ...                street
+67                       node type2       ...                  node
+68                        structure       ...             structure
+69                   heritage value       ...              heritage
+70                       route type       ...                routes
+71                             type       ...                  type
+72                   air valve type       ...                   air
+73                     drain system       ...              drainage
+74                       valve type       ...                 valve
+75                            depth       ...                 depth
+76                    fitting type2       ...               fitting
+77                    rim elevation       ...             elevation
+78                       road width       ...                  road
+79                             name       ...                  hubs
+
+[80 rows x 3 columns]
+Training data done ...
+[[0.0625     0.0625     0.125      ... 0.0625     0.0625     0.08333333]
+ [0.04166667 0.08333333 0.20833333 ... 0.04166667 0.04166667 0.125     ]
+ [0.11538462 0.07692308 0.07692308 ... 0.03846154 0.03846154 0.03846154]
+ ...
+ [0.07692308 0.11538462 0.07692308 ... 0.03846154 0.15384615 0.15384615]
+ [0.1        0.15       0.05       ... 0.         0.1        0.1       ]
+ [0.375      0.25       0.         ... 0.125      0.3        0.3       ]]
+Train 0.7236819267272949
+fasttext err: right of way__right of ways
+fasttext err: outdoor rec fac type2__right of ways
+[[0.196934   0.20012476 0.22827865 ... 0.34493735 0.23513348 0.27525035]
+ [0.0487172  0.24729514 0.22827865 ... 0.15597358 0.23513348 0.22095762]
+ [0.16054104 0.21535183 0.21997611 ... 0.2595918  0.10373306 0.18017417]
+ ...
+ [0.13782448 0.18739247 0.30647057 ... 0.12214291 0.32061434 0.24808785]
+ [0.14377663 0.1509835  0.18051946 ... 0.16094536 0.18147197 0.20265108]
+ [0.16054104 0.06289688 0.05451409 ... 0.2595918  0.07427725 0.1115639 ]]
+Train 297.62599301338196
+[[0.         0.         0.25       ... 0.         0.14285714 0.16666667]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.16666667 ... 0.         1.         0.33333333]
+ ...
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]]
+Train 26.525935173034668
+=train_meta_learner= coeff_list : 0 age
+[[0.09485062 8.08060587 0.        ]]
+=train_meta_learner= coeff_list : 1 air
+[[0.76788491 7.98412639 0.        ]]
+=train_meta_learner= coeff_list : 2 bench
+[[ 3.28259581  6.88513397 -0.8439655 ]]
+=train_meta_learner= coeff_list : 3 bike
+[[ 0.01576805  7.89092204 -0.17298015]]
+=train_meta_learner= coeff_list : 4 code
+[[2.32192484 7.57632087 0.        ]]
+=train_meta_learner= coeff_list : 5 community
+[[ 5.04598506  4.12782856 -0.92111463]]
+=train_meta_learner= coeff_list : 6 corridor
+[[ 3.73903549  5.80095668 -0.39116595]]
+=train_meta_learner= coeff_list : 7 depth
+[[ 4.8562878   4.10455485 -1.13786156]]
+=train_meta_learner= coeff_list : 8 dimensions
+[[6.43550626 4.65639087 0.        ]]
+=train_meta_learner= coeff_list : 9 disaster
+[[2.51905856 7.13916869 0.        ]]
+=train_meta_learner= coeff_list : 10 donation
+[[ 1.88109712  7.38450541 -0.4496553 ]]
+=train_meta_learner= coeff_list : 11 drainage
+[[ 7.93967229  6.78645291 -0.66947223]]
+=train_meta_learner= coeff_list : 12 edges
+[[ 2.29012486  9.50241526 -0.58478079]]
+=train_meta_learner= coeff_list : 13 elevation
+[[2.19507164 7.26920961 0.        ]]
+=train_meta_learner= coeff_list : 14 facility
+[[ 8.60977045 -3.71510308  0.1072655 ]]
+=train_meta_learner= coeff_list : 15 feature
+[[ 2.21648537  8.91366758 -3.11763642]]
+=train_meta_learner= coeff_list : 16 fencing
+[[ 3.28513121  6.8253466  -0.61790562]]
+=train_meta_learner= coeff_list : 17 fields
+[[4.406251   6.98549852 0.87825226]]
+=train_meta_learner= coeff_list : 18 fitting
+[[ 2.74311165  7.11733319 -0.39054219]]
+=train_meta_learner= coeff_list : 19 folio
+[[4.19532866 4.75958737 0.        ]]
+=train_meta_learner= coeff_list : 20 heritage
+[[ 2.28239852  7.61234496 -0.52727022]]
+=train_meta_learner= coeff_list : 21 house
+[[4.81060382 5.8264454  0.        ]]
+=train_meta_learner= coeff_list : 22 hubs
+[[ -2.82805791  -4.76626527 -12.42257139]]
+=train_meta_learner= coeff_list : 23 image
+[[5.04635861 3.99935883 0.        ]]
+=train_meta_learner= coeff_list : 24 infrastructure
+[[ 4.31143964  5.42678275 -1.8686325 ]]
+=train_meta_learner= coeff_list : 25 land
+[[-0.07501783  8.45433653  0.        ]]
+=train_meta_learner= coeff_list : 26 light
+[[5.20980641 9.48681671 0.63209415]]
+=train_meta_learner= coeff_list : 27 location
+[[4.12107561 5.65713946 0.        ]]
+=train_meta_learner= coeff_list : 28 nature
+[[ 5.50381848 10.66972146 -1.14923707]]
+=train_meta_learner= coeff_list : 29 network
+[[ 3.69649513  6.36725266 -2.43233566]]
+=train_meta_learner= coeff_list : 30 node
+[[ 3.5050138   6.82563235 -0.49718124]]
+=train_meta_learner= coeff_list : 31 outdoor
+[[1.83401971 7.92132543 0.        ]]
+=train_meta_learner= coeff_list : 32 owners
+[[5.41464606 7.09643692 0.        ]]
+=train_meta_learner= coeff_list : 33 park
+[[ 3.58622842  5.97925454 -1.58651173]]
+=train_meta_learner= coeff_list : 34 projects
+[[5.5636929  5.56048246 0.        ]]
+=train_meta_learner= coeff_list : 35 protection
+[[ 1.80325004 10.11120827 -1.25418692]]
+=train_meta_learner= coeff_list : 36 right of ways
+[[ 7.68443907 -3.36719717  0.        ]]
+=train_meta_learner= coeff_list : 37 road
+[[ 2.85337365  6.97627248 -3.03489767]]
+=train_meta_learner= coeff_list : 38 route
+[[2.60125933 6.37339762 2.70187175]]
+=train_meta_learner= coeff_list : 39 routes
+[[ 4.79173079  7.35719031 -0.88600406]]
+=train_meta_learner= coeff_list : 40 school
+[[ 1.91266864  7.86075641 -0.42107002]]
+=train_meta_learner= coeff_list : 41 service
+[[4.12148107 5.72730851 0.        ]]
+=train_meta_learner= coeff_list : 42 services
+[[5.37997033 6.6197705  0.        ]]
+=train_meta_learner= coeff_list : 43 sites
+[[ 5.1524353   6.68524598 -2.73763034]]
+=train_meta_learner= coeff_list : 44 size
+[[1.85710801 7.77344844 0.        ]]
+=train_meta_learner= coeff_list : 45 station
+[[-0.99560839  8.4638152  -0.1591179 ]]
+=train_meta_learner= coeff_list : 46 status
+[[4.84368259 4.29852442 0.        ]]
+=train_meta_learner= coeff_list : 47 street
+[[ 4.98440851  4.3289715  -0.63356343]]
+=train_meta_learner= coeff_list : 48 structure
+[[ 3.79865761  6.18539302 -1.86620042]]
+=train_meta_learner= coeff_list : 49 surface
+[[ 3.51379676  6.4984598  -1.60182435]]
+=train_meta_learner= coeff_list : 50 trail
+[[ 1.32150033  8.10438286 -0.93400587]]
+=train_meta_learner= coeff_list : 51 trees
+[[2.83479417 6.8476409  1.01501925]]
+=train_meta_learner= coeff_list : 52 type
+[[5.07501845 3.86708234 0.        ]]
+=train_meta_learner= coeff_list : 53 urban
+[[0.80259853 8.16589693 0.        ]]
+=train_meta_learner= coeff_list : 54 use
+[[1.86789757 7.78503621 0.        ]]
+=train_meta_learner= coeff_list : 55 valve
+[[3.10030173 6.40415123 1.17143889]]
+=train_meta_learner= coeff_list : 56 water
+[[ 9.8216366   7.84087227 -1.22183613]]
+=====WEIGHTS=====
+array([[  0.09485062,   8.08060587,   0.        ],
+       [  0.76788491,   7.98412639,   0.        ],
+       [  3.28259581,   6.88513397,  -0.8439655 ],
+       [  0.01576805,   7.89092204,  -0.17298015],
+       [  2.32192484,   7.57632087,   0.        ],
+       [  5.04598506,   4.12782856,  -0.92111463],
+       [  3.73903549,   5.80095668,  -0.39116595],
+       [  4.8562878 ,   4.10455485,  -1.13786156],
+       [  6.43550626,   4.65639087,   0.        ],
+       [  2.51905856,   7.13916869,   0.        ],
+       [  1.88109712,   7.38450541,  -0.4496553 ],
+       [  7.93967229,   6.78645291,  -0.66947223],
+       [  2.29012486,   9.50241526,  -0.58478079],
+       [  2.19507164,   7.26920961,   0.        ],
+       [  8.60977045,  -3.71510308,   0.1072655 ],
+       [  2.21648537,   8.91366758,  -3.11763642],
+       [  3.28513121,   6.8253466 ,  -0.61790562],
+       [  4.406251  ,   6.98549852,   0.87825226],
+       [  2.74311165,   7.11733319,  -0.39054219],
+       [  4.19532866,   4.75958737,   0.        ],
+       [  2.28239852,   7.61234496,  -0.52727022],
+       [  4.81060382,   5.8264454 ,   0.        ],
+       [ -2.82805791,  -4.76626527, -12.42257139],
+       [  5.04635861,   3.99935883,   0.        ],
+       [  4.31143964,   5.42678275,  -1.8686325 ],
+       [ -0.07501783,   8.45433653,   0.        ],
+       [  5.20980641,   9.48681671,   0.63209415],
+       [  4.12107561,   5.65713946,   0.        ],
+       [  5.50381848,  10.66972146,  -1.14923707],
+       [  3.69649513,   6.36725266,  -2.43233566],
+       [  3.5050138 ,   6.82563235,  -0.49718124],
+       [  1.83401971,   7.92132543,   0.        ],
+       [  5.41464606,   7.09643692,   0.        ],
+       [  3.58622842,   5.97925454,  -1.58651173],
+       [  5.5636929 ,   5.56048246,   0.        ],
+       [  1.80325004,  10.11120827,  -1.25418692],
+       [  7.68443907,  -3.36719717,   0.        ],
+       [  2.85337365,   6.97627248,  -3.03489767],
+       [  2.60125933,   6.37339762,   2.70187175],
+       [  4.79173079,   7.35719031,  -0.88600406],
+       [  1.91266864,   7.86075641,  -0.42107002],
+       [  4.12148107,   5.72730851,   0.        ],
+       [  5.37997033,   6.6197705 ,   0.        ],
+       [  5.1524353 ,   6.68524598,  -2.73763034],
+       [  1.85710801,   7.77344844,   0.        ],
+       [ -0.99560839,   8.4638152 ,  -0.1591179 ],
+       [  4.84368259,   4.29852442,   0.        ],
+       [  4.98440851,   4.3289715 ,  -0.63356343],
+       [  3.79865761,   6.18539302,  -1.86620042],
+       [  3.51379676,   6.4984598 ,  -1.60182435],
+       [  1.32150033,   8.10438286,  -0.93400587],
+       [  2.83479417,   6.8476409 ,   1.01501925],
+       [  5.07501845,   3.86708234,   0.        ],
+       [  0.80259853,   8.16589693,   0.        ],
+       [  1.86789757,   7.78503621,   0.        ],
+       [  3.10030173,   6.40415123,   1.17143889],
+       [  9.8216366 ,   7.84087227,  -1.22183613]])
+[199.9498637  359.09961538 -38.02521547]
+Train Meta: 0.2951211929321289

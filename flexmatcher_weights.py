@@ -79,6 +79,7 @@ class FlexMatcher:
         self.create_training_data(dataframes, mappings, sample_size)
         print('Training data done ...')
         self.classifier_type = []
+        self.classifier_list = []
 
         # unigram_count_clf = NGramClassifier(ngram_range=(1, 1))
         # bigram_count_clf = NGramClassifier(ngram_range=(2, 2))
@@ -117,18 +118,19 @@ class FlexMatcher:
         #          col_word_count_clf, knn_clf]
         #     self.classifier_type = self.classifier_type + (['column'] * 6)
 
-        col_trichar_count_clf = NGramClassifier(analyzer='char_wb',
-                                                        ngram_range=(3, 3))
-        col_quadchar_count_clf = NGramClassifier(analyzer='char_wb',
-                                                         ngram_range=(4, 4))
-        self.classifier_list = [col_trichar_count_clf, col_quadchar_count_clf]
-        self.classifier_type = ['column'] * 2
+        # col_trichar_count_clf = NGramClassifier(analyzer='char_wb',
+        #                                                 ngram_range=(3, 3))
+        # col_quadchar_count_clf = NGramClassifier(analyzer='char_wb',
+        #                                                  ngram_range=(4, 4))
 
-        # ngram_general_c = NGramGeneralClassifier()
-        # wordnet_c = WordNetClassifier()
-        # fasttext_c = FastTextClassifier()
-        # self.classifier_list = [ngram_general_c, wordnet_c, fasttext_c]
-        # self.classifier_type = ['column'] * 3
+        # self.classifier_list += [col_trichar_count_clf, col_quadchar_count_clf]
+        # self.classifier_type += ['column'] * 2
+
+        ngram_general_c = NGramGeneralClassifier(self.columns)
+        wordnet_c = WordNetClassifier(self.columns)
+        fasttext_c = FastTextClassifier(self.columns)
+        self.classifier_list += [ngram_general_c, fasttext_c, wordnet_c]
+        self.classifier_type += ['column'] * 3
 
 
     def create_training_data(self, dataframes, mappings, sample_size):
@@ -181,12 +183,11 @@ class FlexMatcher:
                     available_columns.append(mapping[c])
         self.columns = sorted(list(set(available_columns)))
 
+        # TODO: 
         print('=create_training_data= self.columns :')
         print(self.columns)
-
-        print('=create_training_data= self.train_data :')
-        print(self.train_data)
-
+        # print('=create_training_data= self.train_data :')
+        # print(self.train_data)
         print('=create_training_data= self.col_train_data :')
         print(self.col_train_data)
 
@@ -216,12 +217,12 @@ class FlexMatcher:
                     data_prediction[:, range(3, 3 + len(self.columns))]
                 self.prediction_list.append(data_prediction)
                 
-                print('=train= col_data_prediction: ')
-                print(col_data_prediction)
-
-                print('=train= data_prediction: ')
-                print(len(data_prediction), len(data_prediction[0]))
-                print(data_prediction)
+                # TODO
+                # print('=train= col_data_prediction: ')
+                # print(col_data_prediction)
+                # print('=train= data_prediction: ')
+                # print(len(data_prediction), len(data_prediction[0]))
+                # print(data_prediction)
 
             print('Train', time.time() - start)
 
@@ -266,11 +267,13 @@ class FlexMatcher:
             print(stacker.coef_.reshape(1, -1))
 
         self.weights = np.concatenate(tuple(coeff_list))
-        print('=train_meta_learner= self.weights:')
+
+        # print('=train_meta_learner= self.weights:')
         from pprint import pprint
         print('=====WEIGHTS=====')
         pprint(self.weights)
         print(np.sum(self.weights, axis = 0) )
+
         # print(np.sum(self.weights, axis = 1) )
 
     def make_prediction(self, data):
@@ -361,41 +364,219 @@ class Classifier(object):
 
 
 class NGramGeneralClassifier(Classifier):
-    def __init__(self):
+    def __init__(self, labels):
+        self.labels = sorted(list(labels))
+        self.num_labels = len(self.labels)
         return
     def fit(self, data):
+        self.num_examples = data.shape[0]
+        self.examples = data
         return
     def predict_training(self, folds=2):
-        return
+        output = np.zeros((self.num_examples, self.num_labels))
+        for index, row in self.examples.iterrows():
+            # print(row['name'], row['class'])
+            source = row['name']
+            for j, labl in enumerate(self.labels):
+                target = labl
+                output = self.matcher(source, target, output, index, j)
+            pass
+
+        print(output)
+        return output
     def predict_proba_ordered(self, probs, classes):
         return
     def predict(self, data):
         return
+    def matcher(self, source, target, matrix, i, j):
+        from similarity.ngram import NGram
+        twogram = NGram(2)
+
+        sim_score = 1 - twogram.distance(source,target)
+        matrix[i, j] = sim_score
+
+        return matrix
 
 
 class WordNetClassifier(Classifier):
-    def __init__(self):
+
+    def __init__(self, labels):
+        self.labels = sorted(list(labels))
+        self.num_labels = len(self.labels)
+        self.enriched_attrs_json_dir = 'dataset_attrs_enriched.json'
+        self.enriched_topics_json_dir = "dataset_topics_enriched.json"
+
+        self.table_names = []
+
         return
     def fit(self, data):
+        self.num_examples = data.shape[0]
+        self.examples = data
         return
     def predict_training(self, folds=2):
-        return
+        output = np.zeros((self.num_examples, self.num_labels))
+
+        table_attr_list = []
+        for index, row in self.examples.iterrows():
+            # print(row['name'], row['class'])
+            source = row['name']
+            table_attr_list.append(source)
+
+        labels_list = []
+        for j, labl in enumerate(self.labels):
+            target = labl
+            # output = self.matcher(source, target, output, index, j)
+            labels_list.append(target)
+
+        output = self.matcher(output, labels_list, table_attr_list)
+
+        print(output)
+        return output
     def predict_proba_ordered(self, probs, classes):
         return
     def predict(self, data):
         return
+    def matcher(self, matrix, labels_list, table_attr_list):
+
+        import sys
+        path_lib = '/Users/haoran/Documents/thesis_schema_integration/'
+        sys.path.insert(0, path_lib)
+
+        import build_matching_model_new as bmmn
+        import build_matching_model_new_global as bmmng
+        import parse_dataset as pds
+        import build_matching_model as bmm
+        import preprocess_topic as pt
+
+        bmmn.m.datasources_with_tag = self.table_names
+        all_topics, attrs_contexts, topic_contexts = bmmn.load_prematching_metadata(bmmn.p, bmmn.m, pds)
+
+        table_ctxs = {}
+        for table in attrs_contexts:
+            table_ctx = attrs_contexts[table]
+            table_ctxs[table] = table_ctx
+
+        ds_topic_ctx = {}
+        for attr in table_attr_list:
+            for i, (table, table_ctx) in enumerate(attrs_contexts.items()):
+                if attr in table_ctx:
+                    # print('here', table_ctx[attr])
+                    ds_topic_ctx[attr] = table_ctx[attr]
+            if attr not in ds_topic_ctx:
+                ds_topic_ctx[attr] = {}
+
+        compose_topic_ctx = {}
+        # print(labels_list)
+        for label in labels_list:
+            # if label in all_topics:
+            #     key, value = all_topics[label].popitem()
+            #     compose_topic_ctx[label] = value
+            for i, (table, table_topic_ctx) in enumerate(topic_contexts.items()):
+                for j, (topic, topic_ctx) in enumerate(table_topic_ctx.items()):
+                    if topic == label:
+                        # print('here', topic)
+                        compose_topic_ctx[label] = topic_ctx
+            if label not in compose_topic_ctx:
+                compose_topic_ctx[label] = {}
+
+        wordnet = pt.load_dict()
+
+        # print(compose_topic_ctx)
+        # print(ds_topic_ctx)
+
+
+        topic_names = list(compose_topic_ctx.keys())
+        attribute_names = list(ds_topic_ctx.keys())
+
+        # ADDED
+        topic_names.sort()
+        attribute_names.sort()
+
+        # print(topic_names)
+        # print(attribute_names)
+
+        # matrix= np.zeros((len(topic_names), len(attribute_names)))
+
+        # print(matrix.shape )
+        # print(len(topic_names), len(attribute_names))
+
+        for i, topc in enumerate(topic_names):
+            for j, attrb in enumerate(attribute_names):
+
+                syn_attr_dict = ds_topic_ctx[attrb]
+                syn_top_dict = compose_topic_ctx[topc]
+
+                # print(syn_attr_dict)
+                # print(syn_top_dict)
+                # print(topc, attrb)
+
+                score = 0
+                pair = None
+                for attr in syn_attr_dict:
+                    for top in syn_top_dict:
+                        try:
+
+                            syn_attr = wordnet.synset(attr)
+                            syn_top = wordnet.synset(top)
+                            syn_score = syn_attr.path_similarity(syn_top)
+
+                            # print(syn_score)
+
+                            if syn_score > score:
+                                # print(score, attr, top)
+                                score = syn_score
+                                pair = (top, attr)
+
+                        except Exception as e:
+                            # print('error', attr, top)
+                            # print(e)
+                            pass
+
+                matrix[j, i] = score
+
+        return matrix        
 
 class FastTextClassifier(Classifier):
-    def __init__(self):
+    def __init__(self, labels):
+        self.labels = sorted(list(labels))
+        self.num_labels = len(self.labels)
+        self.server_ip = '52.151.20.94'
         return
     def fit(self, data):
+        self.num_examples = data.shape[0]
+        self.examples = data
         return
     def predict_training(self, folds=2):
-        return
+        output = np.zeros((self.num_examples, self.num_labels))
+        for index, row in self.examples.iterrows():
+            # print(row['name'], row['class'])
+            source = row['name']
+
+            for j, labl in enumerate(self.labels):
+                target = labl
+                score = self.matcher(source, target, output, index, j)
+                output[index, j] = score
+
+            pass
+
+        print(output)
+        return output
     def predict_proba_ordered(self, probs, classes):
         return
     def predict(self, data):
         return
+    def matcher(self, source, target, matrix, i, j):
+
+        import requests
+        response = requests.get("http://" + self.server_ip + ":5000/similarity/" + source+'__'+target)
+        # print(topic+'__'+attr)
+        ret_val = 0
+        try:
+            ret_val = float(response.json())
+        except:
+            print('fasttext err:', source+'__'+target)
+            pass
+        return ret_val     
 
 from sklearn.model_selection import StratifiedKFold
 # from flexmatcher.classify import Classifier
@@ -684,11 +865,11 @@ class NGramClassifier(Classifier):
         self.lrm = linear_model.LogisticRegression(class_weight='balanced')
         self.lrm.fit(self.features, self.labels)
 
-        print('=NGramClassifier.fit= self.all_classes:')
-        print(self.all_classes)
-
-        print('=NGramClassifier.fit= self.features:')
-        print(self.features)
+        # TODO
+        # print('=NGramClassifier.fit= self.all_classes:')
+        # print(self.all_classes)
+        # print('=NGramClassifier.fit= self.features:')
+        # print(self.features)
 
 
     def predict_training(self, folds=2):
@@ -736,11 +917,11 @@ class NGramClassifier(Classifier):
         # print('probs')
         # print(probs)
 
-        print('=NGramClassifier.predict_proba_ordered= proba_ordered[:, idx]')
-        print(proba_ordered[:, idx])
-
-        print('=NGramClassifier.predict_proba_ordered= proba_ordered')
-        print(proba_ordered)
+        # TODO
+        # print('=NGramClassifier.predict_proba_ordered= proba_ordered[:, idx]')
+        # print(proba_ordered[:, idx])
+        # print('=NGramClassifier.predict_proba_ordered= proba_ordered')
+        # print(proba_ordered)
         return proba_ordered
 
     def predict(self, data):
